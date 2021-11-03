@@ -58,7 +58,14 @@ Route::middleware('auth:sanctum')->post('/client/review-request/new', [ReviewReq
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}', [ReviewRequestController::class, 'get_review_request']);
 Route::middleware('auth:sanctum')->put('/client/review-request/{id}', [ReviewRequestController::class, 'update_review_request']);
 Route::middleware('auth:sanctum')->delete('/client/review-request/{id}', [ReviewRequestController::class, 'delete_review_request']);
+Route::middleware('auth:sanctum')->post('/client/review-request/{id}/assign-reviewer', [ReviewRequestController::class, 'assign_reviewer']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/products', [ReviewRequestController::class, 'get_review_request_products']);
+Route::middleware('auth:sanctum')->put('/client/review-request/{id}/status', [ReviewRequestController::class, 'set_status']);
+Route::middleware('auth:sanctum')->post('/client/review-request/{id}/audit-reports', [ReviewRequestController::class, 'get_review_request_audit_reports']);
+Route::middleware('auth:sanctum')->post('/client/review-request/{id}/review-reports', [ReviewRequestController::class, 'get_review_request_review_reports']);
+Route::middleware('auth:sanctum')->post('/client/review-request/{id}/audit-report', [ReviewRequestController::class, 'add_review_request_audit_report']);
+Route::middleware('auth:sanctum')->post('/client/review-request/{id}/review-report', [ReviewRequestController::class, 'add_review_request_review_report']);
+Route::middleware('auth:sanctum')->delete('/client/review-request/reports/{id}', [ReviewRequestController::class, 'delete_review_request_report']);
 // Products
 Route::middleware('auth:sanctum')->post('/client/facility/{id}/products', [ProductController::class, 'get_products']);
 Route::middleware('auth:sanctum')->put('/client/product', [ProductController::class, 'add_product']);

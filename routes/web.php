@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\FacilityController;
+use App\Http\Controllers\ReviewRequestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,10 @@ Route::get('/documents/{filename}', function ($filename) {
     return Storage::download('documents/' . $filename);
 });
 
+// reviewer review request docs
+Route::get('/reviewer/clients/request/{id}/documents', [ReviewRequestController::class, 'download_documents_by_id']);
+
+// client facility docs
 Route::get('/client/facility/document/{id}', [FacilityController::class, 'download_document_by_id']);
 
 Route::get('/previews/{filename}', function ($filename) {

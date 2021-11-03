@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Ingredient;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 use App\Models\ReviewRequest;
 use App\Models\Profile;
@@ -11,6 +12,7 @@ use App\Models\User;
 use App\Models\Facility;
 use App\Models\Product;
 use App\Models\Client;
+use App\Models\Report;
 
 const REVIEW_REQUEST_TYPE_COLOR_MAP = array(
     'NEW_FACILITY' => "#0BD074",
@@ -35,6 +37,7 @@ class ReviewRequestController extends Controller
             $review_request_client = User::find($review_request->client_id);
             $review_request->client_email = $review_request_client->email;
             $review_request->type_color = REVIEW_REQUEST_TYPE_COLOR_MAP[$review_request->type];
+            $review_request->reviewer = Profile::where('user_id', $review_request->reviewer_id)->first();
         }
 
         return $review_requests;
@@ -134,11 +137,14 @@ class ReviewRequestController extends Controller
         $review_request = ReviewRequest::findOrFail($review_requestId);
 
         // delete associated facility
-        Facility::find($review_request->facility_id)?->delete();
+        $facility = Facility::find($review_request->facility_id);
+        if ($facility !== null) $facility->delete();
         // delete products
-        Product::where('review_request_id', $review_request->id)?->delete();
+        $products = Product::where('review_request_id', $review_request->id);
+        if ($products !== null) $products->delete();
         // delete ingredients
-        Ingredient::where('review_request_id', $review_request->id)?->delete();
+        $ingredients = Ingredient::where('review_request_id', $review_request->id);
+        if ($ingredients !== null) $ingredients->delete();
         // delete review request
         $review_request->delete();
 
@@ -158,5 +164,105 @@ class ReviewRequestController extends Controller
         }
 
         return $products->reverse()->values();
+    }
+
+    public function set_status(Request $request, $review_request_id)
+    {
+        $data = $request->only('status');
+        $review_request = ReviewRequest::findOrFail($review_request_id);
+        $review_request->status = $data['status'];
+        $review_request->save();
+
+        return response('', 200);
+    }
+
+    public function download_documents_by_id($review_request_id)
+    {
+        $review_request = ReviewRequest::findOrFail($review_request_id);
+        $headers = ["Content-Type" => "application/zip"];
+        $zip = new \ZipArchive();
+        $file_name = 'review_request_' . $review_request_id . '_documents.zip';
+        $path = public_path($file_name);
+        $documents = [];
+
+        switch ($review_request->type) {
+            case 'NEW_FACILITY':
+                if ($rr_facility = Facility::find($review_request->facility_id))
+                    $documents = $rr_facility->documents;
+                break;
+
+            default:
+                return response('No documents found.', 404);
+                break;
+        }
+
+
+        if ($zip->open($path, \ZipArchive::CREATE) == TRUE) {
+            foreach ($documents as $doc) {
+                $ext = pathinfo($doc->path, PATHINFO_EXTENSION);
+                $entry_name = 'document_' . $doc->id . '_' . $doc->type . '.' . $ext;
+                $zip->addFile(storage_path('app/' . $doc->path), $entry_name);
+            }
+            $zip->close();
+        }
+
+        return response()->download($path, $file_name, $headers)->deleteFileAfterSend(true);
+    }
+
+    // reports
+
+    public function get_review_request_audit_reports($review_request_id)
+    {
+        $reports = Report::where(['request_id' => $review_request_id, 'type' => "AUDIT_REPORT"])->orderBy('id', 'DESC')->get();
+
+        return $reports;
+    }
+
+    public function get_review_request_review_reports($review_request_id)
+    {
+        $reports = Report::where(['request_id' => $review_request_id, 'type' => "REVIEW_REPORT"])->orderBy('id', 'DESC')->get();
+
+        return $reports;
+    }
+
+    public function add_review_request_audit_report(Request $request, $review_request_id)
+    {
+        $client_id = ReviewRequest::findOrFail($review_request_id)->client_id;
+        $path = Storage::putFile('documents', $request->file('document'));
+        $report = new Report;
+        $report->client_id = $client_id;
+        $report->request_id = $review_request_id;
+        $report->type = "AUDIT_REPORT";
+        $report->path = $path;
+        $report->save();
+
+        return response($report, 200);
+    }
+
+    public function add_review_request_review_report(Request $request, $review_request_id)
+    {
+        $client_id = ReviewRequest::findOrFail($review_request_id)->client_id;
+        $path = Storage::putFile('documents', $request->file('document'));
+        $report = new Report;
+        $report->client_id = $client_id;
+        $report->request_id = $review_request_id;
+        $report->type = "REVIEW_REPORT";
+        $report->path = $path;
+        $report->save();
+
+        return response($report, 200);
+    }
+
+    public function delete_review_request_report($report_id)
+    {
+        $report = Report::findOrFail($report_id);
+
+        // delete hard record
+        Storage::delete($report->path);
+
+        // delete record
+        $report->delete();
+
+        return response('', 200);
     }
 }
