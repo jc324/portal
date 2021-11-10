@@ -1,0 +1,15 @@
+webpackHotUpdate("main",{
+
+/***/ "./src/views/reviewer/common/PromptDialog.tsx":
+/*!****************************************************!*\
+  !*** ./src/views/reviewer/common/PromptDialog.tsx ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, exports) {
+
+throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nSyntaxError: C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\src\\views\\reviewer\\common\\PromptDialog.tsx: Unexpected token, expected \",\" (20:2)\n\n\u001b[0m \u001b[90m 18 | \u001b[39m  open \u001b[33m=\u001b[39m \u001b[36mfalse\u001b[39m\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 19 | \u001b[39m  title \u001b[33m=\u001b[39m \u001b[32m\"Confirm Prompt\"\u001b[39m\u001b[0m\n\u001b[0m\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 | \u001b[39m  message\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m    | \u001b[39m  \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 21 | \u001b[39m  onOk\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 22 | \u001b[39m  onCancel\u001b[33m,\u001b[39m\u001b[0m\n\u001b[0m \u001b[90m 23 | \u001b[39m}\u001b[33m:\u001b[39m \u001b[33mPromptDialogProps\u001b[39m) {\u001b[0m\n    at Object._raise (C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\node_modules\\@babel\\parser\\lib\\index.js:790:17)\n    at Object.raiseWithData (C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\node_modules\\@babel\\parser\\lib\\index.js:783:17)\n    at Object.raise (C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\node_modules\\@babel\\parser\\lib\\index.js:777:17)\n    at Object.unexpected (C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\node_modules\\@babel\\parser\\lib\\index.js:9095:16)\n    at Object.expect (C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\node_modules\\@babel\\parser\\lib\\index.js:9081:28)\n    at Object.parseObjectLike (C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\node_modules\\@babel\\parser\\lib\\index.js:10886:14)\n    at Object.parseBindingAtom (C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\node_modules\\@babel\\parser\\lib\\index.js:9455:21)\n    at Object.parseBindingAtom (C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\node_modules\\@babel\\parser\\lib\\index.js:7204:22)\n    at Object.parseMaybeDefault (C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\node_modules\\@babel\\parser\\lib\\index.js:9520:50)\n    at Object.parseMaybeDefault (C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\node_modules\\@babel\\parser\\lib\\index.js:7233:24)");
+
+/***/ })
+
+})
+//# sourceMappingURL=main.3ac2f9306466d7a8c0af.hot-update.js.map

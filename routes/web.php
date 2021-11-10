@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\FacilityController;
 use App\Http\Controllers\ReviewRequestController;
+use App\Http\Controllers\ReportsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,6 +24,8 @@ Route::get('/avatars/{filename}', function ($filename) {
 Route::get('/documents/{filename}', function ($filename) {
     return Storage::download('documents/' . $filename);
 });
+
+Route::get('/reports/document/{id}', [ReportsController::class, 'download_document_by_id']);
 
 // reviewer review request docs
 Route::get('/reviewer/clients/request/{id}/documents', [ReviewRequestController::class, 'download_documents_by_id']);
