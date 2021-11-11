@@ -35,7 +35,7 @@ class ReportsController extends Controller
         $file_name = ($report->type === 'AUDIT_REPORT') ? "Audit Report" : "Review Report";
         $path = storage_path('app/' . $report->path);
         $ext = pathinfo($path, PATHINFO_EXTENSION);
-        $file_name .= " " . $report->created_at->timestamp;
+        $file_name .= " " . $report->created_at;
         $file_name .= " - " . $client->business_name;
         $file_name .= "." . $ext;
 
