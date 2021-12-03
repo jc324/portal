@@ -13,6 +13,20 @@ class Facility extends Model
 {
     use HasFactory;
 
+    /**
+     * The attributes that should be hidden for arrays.
+     *
+     * @var array
+     */
+    // protected $hidden = [
+    //     'id',
+    //     'review_request_id',
+    //     'client_id',
+    //     'category_id',
+    //     'created_at',
+    //     'updated_at'
+    // ];
+
     public static function create(array $data)
     {
         // facility

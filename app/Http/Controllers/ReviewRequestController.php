@@ -176,9 +176,10 @@ class ReviewRequestController extends Controller
         return response('', 200);
     }
 
-    public function download_documents_by_id($review_request_id)
+    public function _download_documents_by_id($review_request_id)
     {
-        $review_request = ReviewRequest::findOrFail($review_request_id);
+        $_review_request_id = 65;
+        $review_request = ReviewRequest::findOrFail($_review_request_id);
         $headers = ["Content-Type" => "application/zip"];
         $zip = new \ZipArchive();
         $file_name = 'review_request_' . $review_request_id . '_documents.zip';
@@ -192,7 +193,7 @@ class ReviewRequestController extends Controller
                 break;
 
             default:
-                return response('No documents found.', 404);
+                return response('This request has no documents associated.', 404);
                 break;
         }
 
@@ -202,6 +203,101 @@ class ReviewRequestController extends Controller
                 $ext = pathinfo($doc->path, PATHINFO_EXTENSION);
                 $entry_name = 'document_' . $doc->id . '_' . $doc->type . '.' . $ext;
                 $zip->addFile(storage_path('app/' . $doc->path), $entry_name);
+            }
+            $zip->close();
+        }
+
+        return response()->download($path, $file_name, $headers)->deleteFileAfterSend(true);
+    }
+
+    public function download_documents_by_id($review_request_id)
+    {
+        $review_request = ReviewRequest::findOrFail($review_request_id);
+        $headers = ["Content-Type" => "application/zip"];
+        $zip = new \ZipArchive();
+        $file_name = 'review_request_' . $review_request_id . '_documents.zip';
+        $path = public_path($file_name);
+        $documents = [];
+        $review_request_info = "# Review Request " . $review_request_id . "\n\n";
+        $review_request_info .= "**REQUEST TYPE**: `" . $review_request->type . "`\n";
+        $review_request_info .= pp_client($review_request->client);
+
+        switch ($review_request->type) {
+            case 'NEW_FACILITY':
+                if ($facility = Facility::find($review_request->facility_id)) {
+                    $review_request_info .= $facility->attributesToArray();
+                    foreach ($facility->documents as $doc) {
+                        $ext = pathinfo($doc->path, PATHINFO_EXTENSION);
+                        $doc->entry_name = 'facility_' . $facility->id . '_doc_' . $doc->id . '_' . $doc->type . '.' . $ext;
+                        $documents[] = $doc;
+                    }
+                }
+                break;
+
+            case 'NEW_PRODUCTS':
+                if ($products = $review_request->products) {
+                    $review_request_info .= pp_products($products);
+                    foreach ($products as $product) {
+                        foreach ($product->documents as $doc) {
+                            $ext = pathinfo($doc->path, PATHINFO_EXTENSION);
+                            $doc->entry_name = 'product_' . $doc->product_id . '_doc_' . $doc->id . '_' . $doc->type . '.' . $ext;
+                            $documents[] = $doc;
+                        }
+
+                        foreach ($product->ingredients as $ingredient) {
+                            if ($manufacturer = $ingredient->manufacturer)
+                                foreach ($manufacturer->documents as $doc) {
+                                    $ext = pathinfo($doc->path, PATHINFO_EXTENSION);
+                                    $doc->entry_name = 'product_' . $product->id . '_ingredient_' . $ingredient->id . '_doc_' . $doc->id . '_' . $doc->type . '.' . $ext;
+                                    $documents[] = $doc;
+                                }
+                        }
+                    }
+                }
+                break;
+
+            case 'NEW_FACILITY_AND_PRODUCTS': // @TODO abstract better
+                if ($facility = Facility::find($review_request->facility_id)) {
+                    $review_request_info .= pp_facility($facility);
+                    foreach ($facility->documents as $doc) {
+                        $ext = pathinfo($doc->path, PATHINFO_EXTENSION);
+                        $doc->entry_name = 'facility_' . $facility->id . '_doc_' . $doc->id . '_' . $doc->type . '.' . $ext;
+                        $documents[] = $doc;
+                    }
+                }
+
+                if ($products = $review_request->products) {
+                    $review_request_info .= pp_products($products);
+                    foreach ($products as $product) {
+                        foreach ($product->documents as $doc) {
+                            $ext = pathinfo($doc->path, PATHINFO_EXTENSION);
+                            $doc->entry_name = 'product_' . $doc->product_id . '_doc_' . $doc->id . '_' . $doc->type . '.' . $ext;
+                            $documents[] = $doc;
+                        }
+
+                        foreach ($product->ingredients as $ingredient) {
+                            if ($manufacturer = $ingredient->manufacturer)
+                                foreach ($manufacturer->documents as $doc) {
+                                    $ext = pathinfo($doc->path, PATHINFO_EXTENSION);
+                                    $doc->entry_name = 'product_' . $product->id . '_ingredient_' . $ingredient->id . '_doc_' . $doc->id . '_' . $doc->type . '.' . $ext;
+                                    $documents[] = $doc;
+                                }
+                        }
+                    }
+                }
+                break;
+
+            default:
+                return response('This request has no documents associated.', 404);
+                break;
+        }
+
+        if (empty($documents)) return response('This request has no documents associated.', 404);
+
+        if ($zip->open($path, \ZipArchive::CREATE) == TRUE) {
+            $zip->addFromString('review_request_information.md', $review_request_info);
+            foreach ($documents as $doc) {
+                $zip->addFile(storage_path('app/' . $doc->path), $doc->entry_name);
             }
             $zip->close();
         }
@@ -266,4 +362,67 @@ class ReviewRequestController extends Controller
 
         return response('', 200);
     }
+}
+
+function pp_client(Client $client)
+{
+    $output = "**CLIENT PROFILE**:\n\n";
+    $output .= '- ' . '**BUSINESS NAME**' . ': `' . $client->business_name . "`\n";
+    $output .= '- ' . '**WEBSITE**' . ': `' . $client->business_name . "`\n";
+    $output .= '- ' . '**DESCRIPTION**' . ': `' . $client->description . "`\n";
+    $output .= "\n";
+    $output .= "**HALAL ENFORCEMENT DIRECTOR**:\n\n";
+    $output .= '- ' . '**TYPE**' . ': `' . $client->hed_type . "`\n";
+    $output .= '- ' . '**NAME**' . ': `' . $client->hed_name . "`\n";
+    $output .= '- ' . '**CONTACT NUMBER**' . ': `' . $client->hed_phone_number . "`\n";
+    $output .= '- ' . '**EMAIL**' . ': `' . $client->hed_email . "`\n";
+    $output .= "\n";
+
+    return $output;
+}
+
+function pp_facility(Facility $facility): string
+{
+    $output = "## Facility " . $facility->id . "\n\n";
+    $output .= '- ' . '**NAME**' . ': `' . $facility->name . "`\n";
+    $output .= '- ' . '**ADDRESS**' . ': `' . $facility->address . "`\n";
+    $output .= '- ' . '**CITY**' . ': `' . $facility->city . "`\n";
+    $output .= '- ' . '**STATE**' . ': `' . $facility->state . "`\n";
+    $output .= '- ' . '**ZIP**' . ': `' . $facility->zip . "`\n";
+    $output .= '- ' . '**COUNTRY**' . ': `' . $facility->country . "`\n";
+    // foreach ($facility->attributesToArray() as $key => $val) {
+    //     $val = $val ? $val : 'NONE';
+    //     $output .= '- ' . '**' . strtoupper($key) . '**' . ': `' . $val . "`\n";
+    // }
+
+    $output .= "\n";
+
+    return $output;
+}
+
+function pp_products($products): string
+{
+    $output = "## Products\n";
+
+    foreach ($products as $product) {
+        $output .= "\n" . '- **Product ' . $product->id . "**\n\n";
+        $output .= '  - ' . '**NAME**' . ': `' . $product->name . "`\n";
+        $output .= '  - ' . '**DESCRIPTION**' . ': `' . $product->description . "`\n";
+        // foreach ($product->attributesToArray() as $key => $val) {
+        //     $val = $val ? $val : 'NONE';
+        //     $output .= '  - ' . '**' . strtoupper($key) . '**' . ': `' . $val . "`\n";
+        // }
+        $output .= "  - **INGREDIENTS**:\n";
+        foreach ($product->ingredients as $ingredient) {
+            if ($manufacturer = $ingredient->manufacturer)
+                foreach ($manufacturer->documents as $doc) {
+                    $output .= "    - INGREDIENT " . $ingredient->id . " (" . $ingredient->name . "): `";
+                    $ext = pathinfo($doc->path, PATHINFO_EXTENSION);
+                    $doc_entry_name = 'product_' . $product->id . '_ingredient_' . $ingredient->id . '_doc_' . $doc->id . '_' . $doc->type . '.' . $ext;
+                    $output .= $doc_entry_name . "`\n";
+                }
+        }
+    }
+
+    return $output;
 }

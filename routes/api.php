@@ -33,6 +33,12 @@ Route::middleware('auth:sanctum')->put('/profile', [ProfileController::class, 'u
 Route::middleware('auth:sanctum')->post('/profile/avatar', [ProfileController::class, 'update_avatar']);
 Route::middleware('auth:sanctum')->put('/profile/change-password', [ProfileController::class, 'change_password']);
 
+// Client
+Route::middleware('auth:sanctum')->post('/client/dashboard', [ClientController::class, 'get_dashboard']);
+Route::middleware('auth:sanctum')->post('/client/dashboard/latest-requests', [ClientController::class, 'get_dashboard_latest_requests']);
+Route::middleware('auth:sanctum')->post('/client/profile', [ClientController::class, 'get_current_user_profile']);
+Route::middleware('auth:sanctum')->put('/client/profile', [ClientController::class, 'update_current_user_profile']);
+
 // Reviewer
 Route::middleware('auth:sanctum')->put('/reviewer/register-client', [ReviewerController::class, 'register_client']);
 Route::middleware('auth:sanctum')->post('/clients', [ClientController::class, 'get_clients']);
