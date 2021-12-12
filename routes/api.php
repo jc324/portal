@@ -12,6 +12,7 @@ use App\Http\Controllers\IngredientController;
 use App\Http\Controllers\ManufacturerController;
 use App\Http\Controllers\ReviewRequestController;
 use App\Http\Controllers\ReportsController;
+use App\Http\Controllers\CertificatesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -73,8 +74,12 @@ Route::middleware('auth:sanctum')->post('/client/review-request/{id}/review-repo
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/audit-report', [ReviewRequestController::class, 'add_review_request_audit_report']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/review-report', [ReviewRequestController::class, 'add_review_request_review_report']);
 Route::middleware('auth:sanctum')->delete('/client/review-request/reports/{id}', [ReviewRequestController::class, 'delete_review_request_report']);
+Route::middleware('auth:sanctum')->post('/client/review-request/{id}/certificates', [ReviewRequestController::class, 'get_review_request_certificates']);
+Route::middleware('auth:sanctum')->post('/client/review-request/{id}/certificate', [ReviewRequestController::class, 'add_review_request_certificate']);
+Route::middleware('auth:sanctum')->delete('/client/review-request/certificates/{id}', [ReviewRequestController::class, 'delete_review_request_certificate']);
 Route::middleware('auth:sanctum')->post('/client/reports/audit', [ReportsController::class, 'get_audit_reports']);
 Route::middleware('auth:sanctum')->post('/client/reports/review', [ReportsController::class, 'get_review_reports']);
+Route::middleware('auth:sanctum')->get('/client/certificates', [CertificatesController::class, 'get_certificates']);
 // Products
 Route::middleware('auth:sanctum')->post('/client/facility/{id}/products', [ProductController::class, 'get_products']);
 Route::middleware('auth:sanctum')->put('/client/product', [ProductController::class, 'add_product']);

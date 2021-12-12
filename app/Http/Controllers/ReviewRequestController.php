@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Certificate;
 use App\Models\Ingredient;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -12,6 +13,8 @@ use App\Models\User;
 use App\Models\Facility;
 use App\Models\Product;
 use App\Models\Client;
+use App\Models\FacilityCategories;
+use App\Models\ProductCategories;
 use App\Models\Report;
 
 const REVIEW_REQUEST_TYPE_COLOR_MAP = array(
@@ -34,8 +37,9 @@ class ReviewRequestController extends Controller
 
         // color code request by type
         foreach ($review_requests as $review_request) {
-            $review_request_client = User::find($review_request->client_id);
-            $review_request->client_email = $review_request_client->email;
+            $review_request_client_user = User::find($review_request->client_id);
+            $review_request->business_name = $review_request->client->business_name;
+            $review_request->client_email = $review_request_client_user->email;
             $review_request->type_color = REVIEW_REQUEST_TYPE_COLOR_MAP[$review_request->type];
             $review_request->reviewer = Profile::where('user_id', $review_request->reviewer_id)->first();
         }
@@ -308,6 +312,13 @@ class ReviewRequestController extends Controller
     // reports
     // @TODO add to reports controller
 
+    public function get_review_request_certificates($review_request_id)
+    {
+        $certificates = Certificate::where(['request_id' => $review_request_id])->orderBy('id', 'DESC')->get();
+
+        return $certificates;
+    }
+
     public function get_review_request_audit_reports($review_request_id)
     {
         $reports = Report::where(['request_id' => $review_request_id, 'type' => "AUDIT_REPORT"])->orderBy('id', 'DESC')->get();
@@ -320,6 +331,20 @@ class ReviewRequestController extends Controller
         $reports = Report::where(['request_id' => $review_request_id, 'type' => "REVIEW_REPORT"])->orderBy('id', 'DESC')->get();
 
         return $reports;
+    }
+
+    public function add_review_request_certificate(Request $request, $review_request_id)
+    {
+        $client_id = ReviewRequest::findOrFail($review_request_id)->client_id;
+        $path = Storage::putFile('documents', $request->file('document'));
+        $certificate = new Certificate;
+        $certificate->client_id = $client_id;
+        $certificate->request_id = $review_request_id;
+        $certificate->path = $path;
+        $certificate->expires_at = date('Y-m-d H:i:s', strtotime('+2 years - 45 days')); // from now
+        $certificate->save();
+
+        return response($certificate, 200);
     }
 
     public function add_review_request_audit_report(Request $request, $review_request_id)
@@ -348,6 +373,19 @@ class ReviewRequestController extends Controller
         $report->save();
 
         return response($report, 200);
+    }
+
+    public function delete_review_request_certificate($certificate_id)
+    {
+        $certificate = Certificate::findOrFail($certificate_id);
+
+        // delete hard record
+        Storage::delete($certificate->path);
+
+        // delete record
+        $certificate->delete();
+
+        return response('', 200);
     }
 
     public function delete_review_request_report($report_id)
@@ -383,7 +421,10 @@ function pp_client(Client $client)
 
 function pp_facility(Facility $facility): string
 {
+    $category_code = FacilityCategories::find($facility->category_id)->code;
+    $qualified_id = $category_code . $facility->id;
     $output = "## Facility " . $facility->id . "\n\n";
+    $output .= '- ' . '**ID**' . ': `' . $qualified_id . "`\n";
     $output .= '- ' . '**NAME**' . ': `' . $facility->name . "`\n";
     $output .= '- ' . '**ADDRESS**' . ': `' . $facility->address . "`\n";
     $output .= '- ' . '**CITY**' . ': `' . $facility->city . "`\n";
@@ -405,7 +446,11 @@ function pp_products($products): string
     $output = "## Products\n";
 
     foreach ($products as $product) {
+        $product_facility_category_code = FacilityCategories::find($product->facility->category_id)->code;
+        $product_category_code = ProductCategories::find($product->category_id)->code;
+        $qualified_id = $product_facility_category_code . $product->facility_id . '_' . $product_category_code . $product->id;
         $output .= "\n" . '- **Product ' . $product->id . "**\n\n";
+        $output .= '  - ' . '**ID**' . ': `' . $qualified_id . "`\n";
         $output .= '  - ' . '**NAME**' . ': `' . $product->name . "`\n";
         $output .= '  - ' . '**DESCRIPTION**' . ': `' . $product->description . "`\n";
         // foreach ($product->attributesToArray() as $key => $val) {

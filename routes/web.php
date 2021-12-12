@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Storage;
 use App\Http\Controllers\FacilityController;
 use App\Http\Controllers\ReviewRequestController;
 use App\Http\Controllers\ReportsController;
+use App\Http\Controllers\CertificatesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,8 @@ Route::get('/documents/{filename}', function ($filename) {
 });
 
 Route::get('/reports/document/{id}', [ReportsController::class, 'download_document_by_id']);
+
+Route::get('/certificates/document/{id}', [CertificatesController::class, 'download_document_by_id']);
 
 // reviewer review request docs
 Route::get('/reviewer/clients/request/{id}/documents', [ReviewRequestController::class, 'download_documents_by_id']);
