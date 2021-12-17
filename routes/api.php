@@ -38,6 +38,7 @@ Route::middleware('auth:sanctum')->put('/profile/change-password', [ProfileContr
 Route::middleware('auth:sanctum')->post('/client/dashboard', [ClientController::class, 'get_dashboard']);
 Route::middleware('auth:sanctum')->post('/client/dashboard/latest-requests', [ClientController::class, 'get_dashboard_latest_requests']);
 Route::middleware('auth:sanctum')->post('/client/profile', [ClientController::class, 'get_current_user_profile']);
+Route::middleware('auth:sanctum')->post('/client/{id}/profile', [ClientController::class, 'get_profile']);
 Route::middleware('auth:sanctum')->put('/client/profile', [ClientController::class, 'update_current_user_profile']);
 
 // Reviewer
@@ -80,6 +81,11 @@ Route::middleware('auth:sanctum')->delete('/client/review-request/certificates/{
 Route::middleware('auth:sanctum')->post('/client/reports/audit', [ReportsController::class, 'get_audit_reports']);
 Route::middleware('auth:sanctum')->post('/client/reports/review', [ReportsController::class, 'get_review_reports']);
 Route::middleware('auth:sanctum')->get('/client/certificates', [CertificatesController::class, 'get_certificates']);
+// admin
+Route::middleware('auth:sanctum')->post('/client/{id}/certificate', [CertificatesController::class, 'add_client_certificate']);
+Route::middleware('auth:sanctum')->post('/client/{id}/reports/audit', [ReportsController::class, 'get_client_audit_reports']);
+Route::middleware('auth:sanctum')->post('/client/{id}/reports/review', [ReportsController::class, 'get_client_review_reports']);
+Route::middleware('auth:sanctum')->get('/client/{id}/certificates', [CertificatesController::class, 'get_client_certificates']);
 // Products
 Route::middleware('auth:sanctum')->post('/client/facility/{id}/products', [ProductController::class, 'get_products']);
 Route::middleware('auth:sanctum')->put('/client/product', [ProductController::class, 'add_product']);

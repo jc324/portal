@@ -12,6 +12,21 @@ use App\Models\Profile;
 
 class ClientController extends Controller
 {
+    public function get_profile($client_id)
+    {
+        $client = Client::findOrFail($client_id);
+        $profile = $client->user->profile;
+
+        $client_info = $client->only([
+            'hed_type',
+            'hed_name',
+            'hed_phone_number',
+            'hed_email'
+        ]);
+
+        return array_merge($profile->toArray(), $client_info);
+    }
+
     public function get_dashboard(Request $request)
     {
         $client = Client::where('user_id', $request->user()->id)->first();
@@ -77,7 +92,7 @@ class ClientController extends Controller
 
     public function get_clients()
     {
-        $clients = Client::all();
+        $clients = Client::all()->reverse()->values();
 
         // get client user and reviewer
         foreach ($clients as $client) {

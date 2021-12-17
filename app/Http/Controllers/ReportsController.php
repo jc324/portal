@@ -3,13 +3,28 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 
 use App\Models\Report;
 use App\Models\Client;
 
 class ReportsController extends Controller
 {
+    // for admin
+    public function get_client_audit_reports($client_id)
+    {
+        $reports = Report::where(['client_id' => $client_id, 'type' => 'AUDIT_REPORT'])->get()->reverse()->values();;
+
+        return $reports;
+    }
+
+    // for admin
+    public function get_client_review_reports($client_id)
+    {
+        $reports = Report::where(['client_id' => $client_id, 'type' => 'REVIEW_REPORT'])->get()->reverse()->values();;
+
+        return $reports;
+    }
+
     // for client
     public function get_audit_reports(Request $request)
     {
