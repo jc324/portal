@@ -7,12 +7,12 @@
     "main.js": "/static/js/main.chunk.js",
     "main.js.map": "/static/js/main.chunk.js.map",
     "runtime-main.js": "/static/js/bundle.js",
-    "runtime-main.js.map": "/static/js/bundle.js.map",
-    "index.html": "/index.html"
+    "runtime-main.js.map": "/static/js/bundle.js.map"
   },
   "entrypoints": [
     "static/js/bundle.js",
     "static/js/0.chunk.js",
-    "static/js/main.chunk.js"
+    "static/js/main.chunk.js",
+    "main.ff40b9d5d69c2310c512.hot-update.js"
   ]
 }

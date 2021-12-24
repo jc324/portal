@@ -53,4 +53,13 @@ class CertificatesController extends Controller
 
         return response()->download($path, $file_name);
     }
+
+    public function update_certificate_expiration(Request $request, $certificate_id)
+    {
+        $certificate = Certificate::findOrFail($certificate_id);
+        $certificate->update(['expires_at' => $request['expires_at']]);
+        $certificate->save();
+
+        return response($certificate, 200);
+    }
 }

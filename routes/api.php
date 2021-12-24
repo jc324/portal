@@ -81,6 +81,7 @@ Route::middleware('auth:sanctum')->delete('/client/review-request/certificates/{
 Route::middleware('auth:sanctum')->post('/client/reports/audit', [ReportsController::class, 'get_audit_reports']);
 Route::middleware('auth:sanctum')->post('/client/reports/review', [ReportsController::class, 'get_review_reports']);
 Route::middleware('auth:sanctum')->get('/client/certificates', [CertificatesController::class, 'get_certificates']);
+Route::middleware('auth:sanctum')->put('/client/certificate/{id}/expires-at', [CertificatesController::class, 'update_certificate_expiration']);
 // admin
 Route::middleware('auth:sanctum')->post('/client/{id}/certificate', [CertificatesController::class, 'add_client_certificate']);
 Route::middleware('auth:sanctum')->post('/client/{id}/reports/audit', [ReportsController::class, 'get_client_audit_reports']);
