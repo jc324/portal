@@ -37,9 +37,10 @@ class ReviewRequestController extends Controller
 
         // color code request by type
         foreach ($review_requests as $review_request) {
-            $review_request_client_user = User::find($review_request->client_id);
-            $review_request->business_name = $review_request->client->business_name;
-            $review_request->client_email = $review_request_client_user->email;
+            $client = $review_request->client;
+            $client_user = User::find($client->user_id);
+            $review_request->business_name = $client->business_name;
+            $review_request->client_email = $client_user->email;
             $review_request->type_color = REVIEW_REQUEST_TYPE_COLOR_MAP[$review_request->type];
             $review_request->reviewer = Profile::where('user_id', $review_request->reviewer_id)->first();
         }
@@ -140,9 +141,11 @@ class ReviewRequestController extends Controller
     {
         $review_request = ReviewRequest::findOrFail($review_requestId);
 
-        // delete associated facility
-        $facility = Facility::find($review_request->facility_id);
-        if ($facility !== null) $facility->delete();
+        // delete associated facility if not existing before request
+        if ($review_request->type !== "NEW_PRODUCTS") {
+            $facility = Facility::find($review_request->facility_id);
+            if ($facility !== null) $facility->delete();
+        }
         // delete products
         $products = Product::where('review_request_id', $review_request->id);
         if ($products !== null) $products->delete();

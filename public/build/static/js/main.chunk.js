@@ -32870,10 +32870,8 @@ function IngredientDialog({
   const addIngredientHandler = ingredient => {
     // inject
     values.review_request_id = reviewRequestId;
-    console.log(ingredient);
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/ingredient`, ingredient).then(async response => {
-      console.log(response.data);
       setLoading(false);
 
       if (response.status == 200 || response.status == 201) {
@@ -32949,7 +32947,7 @@ function IngredientDialog({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 174,
+        lineNumber: 172,
         columnNumber: 22
       }
     }),
@@ -32960,7 +32958,7 @@ function IngredientDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 171,
+      lineNumber: 169,
       columnNumber: 9
     }
   }, "Ingredient"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Dialog"], {
@@ -32974,14 +32972,14 @@ function IngredientDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 181,
+      lineNumber: 179,
       columnNumber: 7
     }
   }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["LinearProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 190,
+      lineNumber: 188,
       columnNumber: 21
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["DialogTitle"], {
@@ -32992,7 +32990,7 @@ function IngredientDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 191,
+      lineNumber: 189,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
@@ -33000,21 +32998,21 @@ function IngredientDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 192,
+      lineNumber: 190,
       columnNumber: 11
     }
   }, mode === IngredientDialogMode.ADD && "Add" || "Edit", " Ingredient")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["DialogContent"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 196,
+      lineNumber: 194,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["DialogContentText"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 197,
+      lineNumber: 195,
       columnNumber: 11
     }
   }, mode === IngredientDialogMode.ADD && "Fill out this form to add a new ingredient to this product." || "Fill out this form to update this ingredient."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IngredientDetails, {
@@ -33024,14 +33022,14 @@ function IngredientDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 202,
+      lineNumber: 200,
       columnNumber: 11
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["DialogActions"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 209,
+      lineNumber: 207,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
@@ -33041,7 +33039,7 @@ function IngredientDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 210,
+      lineNumber: 208,
       columnNumber: 11
     }
   }, mode === IngredientDialogMode.ADD && "Add" || "Update", " ", "Ingredient"))));
@@ -33090,7 +33088,7 @@ function IngredientDetails({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 267,
+      lineNumber: 265,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
@@ -33099,7 +33097,7 @@ function IngredientDetails({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 268,
+      lineNumber: 266,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
@@ -33113,7 +33111,7 @@ function IngredientDetails({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 269,
+      lineNumber: 267,
       columnNumber: 9
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["DialogContentText"], {
@@ -33124,7 +33122,7 @@ function IngredientDetails({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 310,
+      lineNumber: 308,
       columnNumber: 7
     }
   }, "Ingredient Manufacturer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
@@ -33133,7 +33131,7 @@ function IngredientDetails({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 313,
+      lineNumber: 311,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_clients_client_ManufacturerSelector__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -33142,7 +33140,7 @@ function IngredientDetails({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 314,
+      lineNumber: 312,
       columnNumber: 9
     }
   })));
@@ -33156,14 +33154,14 @@ function PaperComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 347,
+      lineNumber: 345,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Paper"], Object.assign({}, props, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 351,
+      lineNumber: 349,
       columnNumber: 7
     }
   })));
@@ -33297,6 +33295,8 @@ var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchwor
 
 
 function IngredientsView({
+  ingredients,
+  setIngredients,
   productId
 }) {
   _s();
@@ -33306,7 +33306,6 @@ function IngredientsView({
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_6__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
-  const [ingredients, setIngredients] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
 
   const load = () => axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/product/${productId}/ingredients`).then(async response => {
     setLoading(false);
@@ -33350,14 +33349,14 @@ function IngredientsView({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 84,
       columnNumber: 5
     }
   }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CircularProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 93,
       columnNumber: 20
     }
   }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["List"], {
@@ -33365,7 +33364,7 @@ function IngredientsView({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89,
+      lineNumber: 94,
       columnNumber: 9
     }
   }, ingredients.length && ingredients.map((ingredient, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IngredientItem, {
@@ -33377,7 +33376,7 @@ function IngredientsView({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92,
+      lineNumber: 97,
       columnNumber: 15
     }
   })) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_3__["Alert"], {
@@ -33385,13 +33384,13 @@ function IngredientsView({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102,
+      lineNumber: 107,
       columnNumber: 13
     }
   }, "This product has no ingredients.")));
 }
 
-_s(IngredientsView, "JdglbgM/ea8AGlpmYB9irX/K1YI=", false, function () {
+_s(IngredientsView, "I/7Rghn+8WnPeP5aYmLzkQmardE=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_6__["useSnackbar"]];
 });
 
@@ -33454,28 +33453,28 @@ function IngredientItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 178,
+      lineNumber: 183,
       columnNumber: 7
     }
   }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["LinearProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 184,
+      lineNumber: 189,
       columnNumber: 21
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["ListItemIcon"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 185,
+      lineNumber: 190,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_SubdirectoryArrowRight__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 186,
+      lineNumber: 191,
       columnNumber: 11
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["ListItemText"], {
@@ -33485,14 +33484,14 @@ function IngredientItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 188,
+      lineNumber: 193,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["ListItemSecondaryAction"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 193,
+      lineNumber: 198,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UploadCertOrDisclosureBtn__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -33500,7 +33499,7 @@ function IngredientItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 194,
+      lineNumber: 199,
       columnNumber: 11
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
@@ -33509,14 +33508,14 @@ function IngredientItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 195,
+      lineNumber: 202,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 196,
+      lineNumber: 203,
       columnNumber: 13
     }
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IngredientDialog__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -33528,7 +33527,7 @@ function IngredientItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 200,
+      lineNumber: 207,
       columnNumber: 7
     }
   }));
@@ -36224,6 +36223,7 @@ function ProductItem({
 
   const [open, setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
   const [specSheet, setSpecSheet] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
+  const [ingredients, setIngredients] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
@@ -36233,8 +36233,9 @@ function ProductItem({
   };
 
   const handleIngredientAdd = ingredient => {
-    // cause refresh
-    setOpen(!open); // setOpen(true);
+    setIngredients([ingredient, ...ingredients]);
+    setOpen(true); // cause refresh
+    // setOpen(!open);
   }; // @TODO make real
 
 
@@ -36251,21 +36252,21 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 243,
+      lineNumber: 245,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 244,
+      lineNumber: 246,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_14__["ShoppingBag"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 245,
+      lineNumber: 247,
       columnNumber: 11
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -36273,7 +36274,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 247,
+      lineNumber: 249,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UploadSpecSheetBtn__WEBPACK_IMPORTED_MODULE_16__["default"], {
@@ -36281,7 +36282,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 257,
+      lineNumber: 259,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -36291,7 +36292,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 258,
+      lineNumber: 260,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IngredientDialog__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -36302,7 +36303,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 259,
+      lineNumber: 261,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
@@ -36310,21 +36311,21 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 265,
+      lineNumber: 267,
       columnNumber: 9
     }
   }, open ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_10___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 266,
+      lineNumber: 268,
       columnNumber: 19
     }
   }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_11___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 266,
+      lineNumber: 268,
       columnNumber: 36
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -36334,7 +36335,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 269,
+      lineNumber: 271,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -36343,21 +36344,23 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 270,
+      lineNumber: 272,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IngredientsView__WEBPACK_IMPORTED_MODULE_19__["default"], {
+    ingredients: ingredients,
+    setIngredients: setIngredients,
     productId: product.id,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 271,
+      lineNumber: 273,
       columnNumber: 11
     }
   }))));
 }
 
-_s2(ProductItem, "9wnZjnx5lItWUH4j7rvUTj0zt7Y=", false, function () {
+_s2(ProductItem, "tPuvoVbq5zjcZyezoPg6MJpI4+g=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
 

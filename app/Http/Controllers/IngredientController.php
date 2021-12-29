@@ -36,7 +36,10 @@ class IngredientController extends Controller
         if (empty($data['recommendation'])) $data['recommendation'] = 'HALAL_ASLAN';
         if (empty($data['source'])) $data['source'] = 'ANIMAL';
 
-        return Ingredient::create($data);
+        $ingredient = Ingredient::create($data);
+        $ingredient->manufacturer;
+
+        return $ingredient;
     }
 
     public function update_ingredient(Request $request, $ingredientId)
