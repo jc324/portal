@@ -62,4 +62,18 @@ class CertificatesController extends Controller
 
         return response($certificate, 200);
     }
+
+    public function request_hard_copy($certificate_id)
+    {
+        $certificate = Certificate::findOrFail($certificate_id);
+        $message = $certificate->client->business_name . " requested a hard copy for certificate " . $certificate_id . " (" . $certificate->created_at . ").";
+
+        $to = "ap@halalwatchworld.org";
+        $subject = "PORTAL: CERTIFICATE HARD COPY REQUEST";
+        $headers = "From: portal@halalwatchworld.org";
+
+        mail($to, $subject, $message, $headers);
+
+        return response($message, 200);
+    }
 }
