@@ -34068,7 +34068,21 @@ function PreStep({
       lineNumber: 94,
       columnNumber: 11
     }
-  }))));
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+    width: "320",
+    height: "180",
+    src: "https://www.youtube.com/embed/WD00bbgrVZ0",
+    title: "YouTube video player",
+    frameBorder: "0",
+    allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+    allowFullScreen: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101,
+      columnNumber: 7
+    }
+  }));
 }
 
 _s(PreStep, "bj6hncr95XTCyyZmI1FB1B7/6f4=", false, function () {
@@ -34858,6 +34872,20 @@ const FacilityDetailsStep = ({
       lineNumber: 101,
       columnNumber: 7
     }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+    width: "320",
+    height: "180",
+    src: "https://www.youtube.com/embed/zH4MI9ZHNes",
+    title: "YouTube video player",
+    frameBorder: "0",
+    allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+    allowFullScreen: true,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102,
+      columnNumber: 7
+    }
   }));
 };
 
@@ -35090,6 +35118,24 @@ const StepThree = ({
       lineNumber: 58,
       columnNumber: 7
     }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+    width: "320",
+    height: "180",
+    src: "https://www.youtube.com/embed/QXOG7UasZtw",
+    title: "YouTube video player",
+    frameBorder: "0",
+    allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+    allowFullScreen: true,
+    style: {
+      display: "flex",
+      alignSelf: "center"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 7
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
     style: {
       marginBottom: 30,
@@ -35098,7 +35144,7 @@ const StepThree = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 73,
       columnNumber: 7
     }
   }, "Upload documentation verifying that your company is legally permitted to do business in your locale."));
@@ -35327,6 +35373,24 @@ const StepThree = ({
       lineNumber: 58,
       columnNumber: 7
     }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+    width: "320",
+    height: "180",
+    src: "https://www.youtube.com/embed/xmGtowj8VhM",
+    title: "YouTube video player",
+    frameBorder: "0",
+    allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+    allowFullScreen: true,
+    style: {
+      display: "flex",
+      alignSelf: "center"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 7
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
     style: {
       marginBottom: 30,
@@ -35335,7 +35399,7 @@ const StepThree = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 73,
       columnNumber: 7
     }
   }, "Upload a traceability plan document that details the overall production process of your halal system. Your plan must include the following:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
@@ -35346,7 +35410,7 @@ const StepThree = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 77,
       columnNumber: 7
     }
   }, "a) Explain the means by which continuity is maintained within the halal product facility, such as the use of demarcation markers, colors, signage, designated locations, and/or computer systems utilized in your traceability plan."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
@@ -35357,7 +35421,7 @@ const StepThree = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 83,
       columnNumber: 7
     }
   }, "b) Preventative measures aiding against mislabeling, or mix-up of halal products."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
@@ -35368,7 +35432,7 @@ const StepThree = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 87,
       columnNumber: 7
     }
   }, "c) Logging/documenting incoming and outgoing HP\u2019s. Logs should include product identifiers, supplier/raw material manufacturer, date received, unit amount, production date, and lot number."));
@@ -35597,6 +35661,24 @@ const StepThree = ({
       lineNumber: 58,
       columnNumber: 7
     }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+    width: "320",
+    height: "180",
+    src: "https://www.youtube.com/embed/4ZOYX_NDGVM",
+    title: "YouTube video player",
+    frameBorder: "0",
+    allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+    allowFullScreen: true,
+    style: {
+      display: "flex",
+      alignSelf: "center"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 7
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
     style: {
       marginBottom: 30,
@@ -35605,7 +35687,7 @@ const StepThree = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 73,
       columnNumber: 7
     }
   }, "Upload a graphical representation of halal production showing how your HP\u2019s move throughout your facility."));
@@ -35834,6 +35916,24 @@ const StepThree = ({
       lineNumber: 58,
       columnNumber: 7
     }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+    width: "320",
+    height: "180",
+    src: "https://www.youtube.com/embed/PB8h0Xb8Hdk",
+    title: "YouTube video player",
+    frameBorder: "0",
+    allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+    allowFullScreen: true,
+    style: {
+      display: "flex",
+      alignSelf: "center"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 7
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
     style: {
       marginBottom: 30,
@@ -35842,7 +35942,7 @@ const StepThree = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 73,
       columnNumber: 7
     }
   }, "Upload a document that details your method of sanitation pertaining to the following:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
@@ -35853,7 +35953,7 @@ const StepThree = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
+      lineNumber: 77,
       columnNumber: 7
     }
   }, "a) Personnel (The HPH) - Any individual who makes physical contact with the halal product within the halal facility."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
@@ -35864,7 +35964,7 @@ const StepThree = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
+      lineNumber: 81,
       columnNumber: 7
     }
   }, "b) Equipment (The HPE) \u2013 Includes appliances, tools, machinery, apparatuses, and surfaces in contact with all halal products."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
@@ -35875,7 +35975,7 @@ const StepThree = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
+      lineNumber: 85,
       columnNumber: 7
     }
   }, "c) Products (The HP) \u2013 Sanitation measures must also be provided detailing how contamination is prevented for the halal product itself within the HPF."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
@@ -35886,7 +35986,7 @@ const StepThree = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 90,
       columnNumber: 7
     }
   }, "*NOT REQUIRED IF PRODUCT IS NEVER OPENED WITHIN THE FACILITY*"));
@@ -36115,6 +36215,24 @@ const StepThree = ({
       lineNumber: 58,
       columnNumber: 7
     }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+    width: "320",
+    height: "180",
+    src: "https://www.youtube.com/embed/6BiWV7X32_s",
+    title: "YouTube video player",
+    frameBorder: "0",
+    allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+    allowFullScreen: true,
+    style: {
+      display: "flex",
+      alignSelf: "center"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 7
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
     style: {
       marginBottom: 30,
@@ -36123,7 +36241,7 @@ const StepThree = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 73,
       columnNumber: 7
     }
   }, "Upload a written actionable recourse plan, which protects your halal consumers from products that have been contaminated (whether actual or potential) with nonhalal substances. The recall plan acts as the safety net for the HC and the HPF."));
@@ -36352,6 +36470,24 @@ const StepThree = ({
       lineNumber: 58,
       columnNumber: 7
     }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+    width: "320",
+    height: "180",
+    src: "https://www.youtube.com/embed/7j8wnMOgH4Y",
+    title: "YouTube video player",
+    frameBorder: "0",
+    allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+    allowFullScreen: true,
+    style: {
+      display: "flex",
+      alignSelf: "center"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 7
+    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
     style: {
       marginBottom: 30,
@@ -36360,7 +36496,7 @@ const StepThree = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 73,
       columnNumber: 7
     }
   }, "Upload pest control documentation which demonstrates that:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
@@ -36371,7 +36507,7 @@ const StepThree = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
+      lineNumber: 76,
       columnNumber: 7
     }
   }, "a) A pest control program is in place."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
@@ -36382,7 +36518,7 @@ const StepThree = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 79,
       columnNumber: 7
     }
   }, "b) The pest control program is current with results passing within the last 3 months."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
@@ -36392,7 +36528,7 @@ const StepThree = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 83,
       columnNumber: 7
     }
   }, "If pest control is being performed internally, as opposed to a third-party company, please also provide a pest control SOP."));
@@ -36758,7 +36894,26 @@ const FinishedProductsStep = ({
       lineNumber: 159,
       columnNumber: 11
     }
-  }))));
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+    width: "320",
+    height: "180",
+    src: "https://www.youtube.com/embed/yflEy1eCS2k",
+    title: "YouTube video player",
+    frameBorder: "0",
+    allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+    allowFullScreen: true,
+    style: {
+      display: "flex",
+      alignSelf: "center",
+      marginTop: 10
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 162,
+      columnNumber: 7
+    }
+  }));
 };
 
 _s(FinishedProductsStep, "eoZ39Q2wo4MFiPGMVcysDaGxZV0=", false, function () {
@@ -36808,21 +36963,21 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 206,
+      lineNumber: 216,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 207,
+      lineNumber: 217,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_14__["ShoppingBag"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 208,
+      lineNumber: 218,
       columnNumber: 11
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -36830,7 +36985,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 210,
+      lineNumber: 220,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UploadSpecSheetBtn__WEBPACK_IMPORTED_MODULE_16__["default"], {
@@ -36838,7 +36993,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 220,
+      lineNumber: 230,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -36848,7 +37003,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 221,
+      lineNumber: 231,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IngredientDialog__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -36859,7 +37014,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 222,
+      lineNumber: 232,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
@@ -36867,21 +37022,21 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 228,
+      lineNumber: 238,
       columnNumber: 9
     }
   }, open ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_10___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229,
+      lineNumber: 239,
       columnNumber: 19
     }
   }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_11___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229,
+      lineNumber: 239,
       columnNumber: 36
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -36891,7 +37046,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 232,
+      lineNumber: 242,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -36900,7 +37055,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 233,
+      lineNumber: 243,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IngredientsView__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -36910,7 +37065,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 234,
+      lineNumber: 244,
       columnNumber: 11
     }
   }))));
@@ -38321,10 +38476,29 @@ function SubmitStep({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
+      lineNumber: 64,
       columnNumber: 7
     }
-  }, "Submit Request"));
+  }, "Submit Request"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+    width: "320",
+    height: "180",
+    src: "https://www.youtube.com/embed/ZaAm4hMkYiE",
+    title: "YouTube video player",
+    frameBorder: "0",
+    allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
+    allowFullScreen: true,
+    style: {
+      display: "flex",
+      alignSelf: "center",
+      marginTop: 20
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 74,
+      columnNumber: 7
+    }
+  }));
 }
 
 _s(SubmitStep, "bj6hncr95XTCyyZmI1FB1B7/6f4=", false, function () {
