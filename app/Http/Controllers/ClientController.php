@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Client;
 use App\Models\Facility;
+use App\Models\FacilityCategories;
 use App\Models\Product;
+use App\Models\ProductCategories;
 use App\Models\ReviewRequest;
 use App\Models\User;
 use App\Models\Profile;
@@ -59,6 +61,7 @@ class ClientController extends Controller
         }
 
         return array(
+            'current_request_id' => $current_rr->id,
             'current_request_status' => $current_rr_status,
             'current_request_progress' => $current_request_progress,
             'facility_count' => $facility_count,
@@ -165,6 +168,35 @@ class ClientController extends Controller
     public function client_get_facility(Request $request, $facilityId)
     {
         return Facility::findOrFail($facilityId);
+    }
+
+    // for client only
+    public function client_get_all_facilities(Request $request)
+    {
+        $client_id = Client::where('user_id', $request->user()->id)->first()->id;
+        $facilities = Facility::where('client_id', $client_id)->get();
+
+        foreach ($facilities as $facility) {
+            $facility->qualified_id = FacilityCategories::find($facility->category_id)->code . $facility->id;
+        }
+
+        return $facilities;
+    }
+
+    // for client only
+    public function client_get_all_products(Request $request)
+    {
+        $client_id = Client::where('user_id', $request->user()->id)->first()->id;
+        $products = Product::where('client_id', $client_id)->get();
+
+        // foreach ($products as $product) {
+        //     $product_facility_category_code = FacilityCategories::find($product->facility->category_id)->code;
+        //     $product_category_code = ProductCategories::find($product->category_id)->code;
+        //     $qualified_id = $product_facility_category_code . $product->facility_id . '_' . $product_category_code . $product->id;
+        //     $product->qualified_id = $qualified_id;
+        // }
+
+        return $products;
     }
 
     public function client_get_facilities(Request $request)

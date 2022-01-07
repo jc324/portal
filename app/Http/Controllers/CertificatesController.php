@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\CertificateHardCopyRequest;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 use App\Models\Certificate;
 use App\Models\Client;
+use Illuminate\Support\Facades\Mail;
 
 class CertificatesController extends Controller
 {
@@ -65,15 +67,12 @@ class CertificatesController extends Controller
 
     public function request_hard_copy($certificate_id)
     {
-        $certificate = Certificate::findOrFail($certificate_id);
-        $message = $certificate->client->business_name . " requested a hard copy for certificate " . $certificate_id . " (" . $certificate->created_at . ").";
+        // $to = "ap@halalwatchworld.org";
+        $to = "rafiq.umar@halalwatchworld.org";
+        // $subject = "PORTAL: CERTIFICATE HARD COPY REQUEST";
 
-        $to = "ap@halalwatchworld.org";
-        $subject = "PORTAL: CERTIFICATE HARD COPY REQUEST";
-        $headers = "From: portal@halalwatchworld.org";
+        Mail::to($to)->send(new CertificateHardCopyRequest($certificate_id));
 
-        mail($to, $subject, $message, $headers);
-
-        return response($message, 200);
+        return response("", 200);
     }
 }

@@ -462,13 +462,19 @@ function pp_products($products): string
         // }
         $output .= "  - **INGREDIENTS**:\n";
         foreach ($product->ingredients as $ingredient) {
-            if ($manufacturer = $ingredient->manufacturer)
+            $output .= "    - INGREDIENT " . $ingredient->id . " | " . $ingredient->name;
+
+            if ($manufacturer = $ingredient->manufacturer) {
+                $output .= " (" . $manufacturer->name . "): ";
+
                 foreach ($manufacturer->documents as $doc) {
-                    $output .= "    - INGREDIENT " . $ingredient->id . " (" . $ingredient->name . "): `";
                     $ext = pathinfo($doc->path, PATHINFO_EXTENSION);
-                    $doc_entry_name = 'product_' . $product->id . '_ingredient_' . $ingredient->id . '_doc_' . $doc->id . '_' . $doc->type . '.' . $ext;
-                    $output .= $doc_entry_name . "`\n";
+                    $doc_entry_name = '`product_' . $product->id . '_ingredient_' . $ingredient->id . '_doc_' . $doc->id . '_' . $doc->type . '.' . $ext;
+                    $output .= $doc_entry_name . '`';
                 }
+            }
+
+            $output .= "\n";
         }
     }
 

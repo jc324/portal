@@ -50,6 +50,8 @@ Route::middleware('auth:sanctum')->post('/client/{id}/assign-reviewer', [ClientC
 // for client only
 Route::middleware('auth:sanctum')->get('/client/facility/{id}', [ClientController::class, 'client_get_facility']);
 Route::middleware('auth:sanctum')->get('/client/facilities', [ClientController::class, 'client_get_facilities']);
+Route::middleware('auth:sanctum')->get('/client/all-facilities', [ClientController::class, 'client_get_all_facilities']);
+Route::middleware('auth:sanctum')->get('/client/all-products', [ClientController::class, 'client_get_all_products']);
 // Facility
 Route::middleware('auth:sanctum')->put('/client/{id}/facility', [FacilityController::class, 'add_facility']);
 Route::middleware('auth:sanctum')->put('/client/facility/{id}', [FacilityController::class, 'update_facility']);
