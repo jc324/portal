@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\Storage;
 
 use App\Models\Product;
 use App\Models\Facility;
+use App\Models\Ingredient;
 use App\Models\ProductDocument;
 use App\Models\ProductCategories;
 
@@ -48,7 +49,12 @@ class ProductController extends Controller
 
     public function delete_product($productId)
     {
+        // delete product
         Product::findOrFail($productId)->delete();
+
+        // delete ingredients
+        $ingredients = Ingredient::where('product_id', $productId);
+        if ($ingredients !== null) $ingredients->delete();
 
         return response('', 200);
     }

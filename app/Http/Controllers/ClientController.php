@@ -189,12 +189,13 @@ class ClientController extends Controller
         $client_id = Client::where('user_id', $request->user()->id)->first()->id;
         $products = Product::where('client_id', $client_id)->get();
 
-        // foreach ($products as $product) {
-        //     $product_facility_category_code = FacilityCategories::find($product->facility->category_id)->code;
-        //     $product_category_code = ProductCategories::find($product->category_id)->code;
-        //     $qualified_id = $product_facility_category_code . $product->facility_id . '_' . $product_category_code . $product->id;
-        //     $product->qualified_id = $qualified_id;
-        // }
+        foreach ($products as $product) {
+            $facility = $product->facility;
+            $product_facility_category_code = $facility ? FacilityCategories::find($product->facility->category_id)->code : '00';
+            $product_category_code = ProductCategories::find($product->category_id)->code;
+            $qualified_id = $product_facility_category_code . $product->facility_id . '_' . $product_category_code . $product->id;
+            $product->qualified_id = $qualified_id;
+        }
 
         return $products;
     }
