@@ -33,7 +33,9 @@ class CertificateHardCopyRequest extends Mailable
     public function build()
     {
         $certificate = Certificate::findOrFail($this->certificate_id);
-        $this->message = "<strong>" . $certificate->client->business_name . "</strong> requested a hard copy for certificate <strong>" . $this->certificate_id . "</strong> (" . $certificate->created_at . ").";
+        $this->message = "<strong>" . $certificate->client->business_name . "</strong>";
+        $this->message .= $certificate->client->hed_email ? " (" . $certificate->client->hed_email . ")" : "";
+        $this->message .= " requested a hard copy for certificate <strong>" . $this->certificate_id . "</strong> (" . $certificate->created_at . ").";
 
         return $this->html(new HtmlString($this->message));
     }

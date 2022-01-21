@@ -89,6 +89,8 @@ Route::middleware('auth:sanctum')->put('/client/certificate/{id}/request-hard-co
 Route::middleware('auth:sanctum')->post('/client/{id}/certificate', [CertificatesController::class, 'add_client_certificate']);
 Route::middleware('auth:sanctum')->post('/client/{id}/reports/audit', [ReportsController::class, 'get_client_audit_reports']);
 Route::middleware('auth:sanctum')->post('/client/{id}/reports/review', [ReportsController::class, 'get_client_review_reports']);
+Route::middleware('auth:sanctum')->post('/client/{id}/reports/audit/add', [ReportsController::class, 'add_audit_report']);
+Route::middleware('auth:sanctum')->post('/client/{id}/reports/review/add', [ReportsController::class, 'add_review_report']);
 Route::middleware('auth:sanctum')->get('/client/{id}/certificates', [CertificatesController::class, 'get_client_certificates']);
 // Products
 Route::middleware('auth:sanctum')->post('/client/facility/{id}/products', [ProductController::class, 'get_products']);

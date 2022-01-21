@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use App\Models\Report;
 use App\Models\Client;
+use Illuminate\Support\Facades\Storage;
 
 class ReportsController extends Controller
 {
@@ -41,6 +42,32 @@ class ReportsController extends Controller
         $reports = Report::where(['client_id' => $client_id, 'type' => 'REVIEW_REPORT'])->get();
 
         return $reports;
+    }
+
+    public function add_audit_report(Request $request, $client_id)
+    {
+        $path = Storage::putFile('documents', $request->file('document'));
+        $report = new Report;
+        $report->client_id = $client_id;
+        $report->request_id = 0; // null
+        $report->type = "AUDIT_REPORT";
+        $report->path = $path;
+        $report->save();
+
+        return response($report, 200);
+    }
+
+    public function add_review_report(Request $request, $client_id)
+    {
+        $path = Storage::putFile('documents', $request->file('document'));
+        $report = new Report;
+        $report->client_id = $client_id;
+        $report->request_id = 0; // null
+        $report->type = "REVIEW_REPORT";
+        $report->path = $path;
+        $report->save();
+
+        return response($report, 200);
     }
 
     public function download_document_by_id($report_id)
