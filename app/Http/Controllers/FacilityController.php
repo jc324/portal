@@ -4,10 +4,13 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Mail;
 
 use App\Models\Facility;
 use App\Models\FacilityDocument;
 use App\Models\FacilityCategories;
+use App\Models\Client;
+use App\Mail\NewClientDocument;
 
 class FacilityController extends Controller
 {
@@ -70,6 +73,15 @@ class FacilityController extends Controller
         $document->expires_at = $request['expires_at'];
         $document->path = $path;
         $document->save();
+
+
+        // Send mail
+        if ($request->user()->role === "CLIENT")
+            Mail::to("review@halalwatchworld.org")->send(new NewClientDocument(
+                Client::where('user_id', $request->user()->id)->first(),
+                $document->id,
+                $document->type
+            ));
 
         return response($document, 200);
     }

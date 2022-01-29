@@ -3060,16 +3060,19 @@ const items = [{
 }, {
   href: "/client/requests",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_5__["Users"],
-  title: "Document Submission",
-  subnav: [{
-    href: "/client/new-request",
-    icon: react_feather__WEBPACK_IMPORTED_MODULE_5__["Plus"],
-    title: "New Request"
-  }, {
-    href: "/client/requests",
-    icon: react_feather__WEBPACK_IMPORTED_MODULE_5__["FileText"],
-    title: "All Review Requests"
-  }]
+  title: "Document Submissions" // subnav: [
+  //   {
+  //     href: "/client/new-request",
+  //     icon: PlusIcon,
+  //     title: "New Request",
+  //   },
+  //   {
+  //     href: "/client/requests",
+  //     icon: FileTextIcon,
+  //     title: "All Review Requests",
+  //   },
+  // ],
+
 }, {
   href: "/client/facilities",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_5__["MapPin"],
@@ -3083,15 +3086,15 @@ const items = [{
   icon: _material_ui_icons_VerifiedUserOutlined__WEBPACK_IMPORTED_MODULE_4___default.a,
   title: "Certificates"
 }, {
-  href: "/client/review-reports",
+  href: "/client/reports",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_5__["BarChart2"],
   title: "Reports",
   subnav: [{
-    href: "/client/review-reports",
+    href: "/client/reports/document",
     icon: react_feather__WEBPACK_IMPORTED_MODULE_5__["FileText"],
     title: "Document Reports"
   }, {
-    href: "/client/audit-reports",
+    href: "/client/reports/audit",
     icon: react_feather__WEBPACK_IMPORTED_MODULE_5__["FileText"],
     title: "Audit Reports"
   }]
@@ -3333,6 +3336,9 @@ function TopBar({
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
     color: "inherit",
+    style: {
+      marginRight: 10
+    },
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -3356,12 +3362,40 @@ function TopBar({
       lineNumber: 61,
       columnNumber: 15
     }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
-    startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Input__WEBPACK_IMPORTED_MODULE_6___default.a, {
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    to: "/client/new-request",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_5___default.a, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 66,
+        columnNumber: 26
+      }
+    }),
+    variant: "contained",
+    color: "secondary",
+    style: {
+      marginRight: 10
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 13
+    }
+  }, "New Submission")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Input__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76,
         columnNumber: 24
       }
     }),
@@ -3371,7 +3405,7 @@ function TopBar({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
+      lineNumber: 75,
       columnNumber: 11
     }
   }, "Logout")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Hidden"], {
@@ -3379,7 +3413,7 @@ function TopBar({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 84,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
@@ -3388,14 +3422,14 @@ function TopBar({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
+      lineNumber: 85,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 86,
       columnNumber: 13
     }
   })))));
@@ -3437,7 +3471,7 @@ function AddNewButton() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108,
+      lineNumber: 118,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Badge"], {
@@ -3446,14 +3480,14 @@ function AddNewButton() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114,
+      lineNumber: 124,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115,
+      lineNumber: 125,
       columnNumber: 11
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Menu"], {
@@ -3465,7 +3499,7 @@ function AddNewButton() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 128,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
@@ -3473,7 +3507,7 @@ function AddNewButton() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125,
+      lineNumber: 135,
       columnNumber: 9
     }
   }, "New Review"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
@@ -3481,7 +3515,7 @@ function AddNewButton() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126,
+      lineNumber: 136,
       columnNumber: 9
     }
   }, "New Business")));
@@ -4371,16 +4405,17 @@ _c = NavBar;
 const items = [{
   href: "/reviewer/clients/requests",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["Users"],
-  title: "Reviews",
+  title: "Document Submissions",
   subnav: [{
     href: "/reviewer/clients/requests",
     icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["FileText"],
-    title: "All Requests"
-  }, {
-    href: "/reviewer/clients/reports",
-    icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["BarChart2"],
-    title: "Reports"
+    title: "All Submissions"
   } // {
+  //   href: "/reviewer/clients/reports",
+  //   icon: BarChart2Icon,
+  //   title: "Reports",
+  // },
+  // {
   //   href: "/reviewer/clients/certificates",
   //   icon: VerifiedUserOutlinedIcon,
   //   title: "Certificates",
@@ -4403,15 +4438,17 @@ const items = [{
     href: "/reviewer/register-client",
     icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["UserPlus"],
     title: "New Profile"
-  }, {
-    href: "/reviewer/reviews-queue",
-    icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["Hash"],
-    title: "Queue"
-  }, {
-    href: "/reviewer/approved-reviews",
-    icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["ThumbsUp"],
-    title: "Approved"
   } // {
+  //   href: "/reviewer/reviews-queue",
+  //   icon: HashIcon,
+  //   title: "Queue",
+  // },
+  // {
+  //   href: "/reviewer/approved-reviews",
+  //   icon: ThumbsUpIcon,
+  //   title: "Approved",
+  // },
+  // {
   //   href: "/reviewer/review-drafts",
   //   icon: SaveIcon,
   //   title: "Draft",
@@ -5541,11 +5578,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_client_products__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./views/client/products */ "./src/views/client/products/index.js");
 /* harmony import */ var _views_client_requests_request__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./views/client/requests/request */ "./src/views/client/requests/request/index.tsx");
 /* harmony import */ var _views_client_requests_request_RequestCertificates__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./views/client/requests/request/RequestCertificates */ "./src/views/client/requests/request/RequestCertificates.tsx");
-/* harmony import */ var _views_client_reports_audit__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./views/client/reports/audit */ "./src/views/client/reports/audit/index.js");
-/* harmony import */ var _views_client_reports_review__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./views/client/reports/review */ "./src/views/client/reports/review/index.js");
-/* harmony import */ var _views_client_certificates__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./views/client/certificates */ "./src/views/client/certificates/index.js");
-/* harmony import */ var _views_client_profile_index__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./views/client/profile/index */ "./src/views/client/profile/index.tsx");
-/* harmony import */ var _views_client_profile_edit_index__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./views/client/profile/edit/index */ "./src/views/client/profile/edit/index.tsx");
+/* harmony import */ var _views_client_reports__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./views/client/reports */ "./src/views/client/reports/index.js");
+/* harmony import */ var _views_client_reports_audit__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./views/client/reports/audit */ "./src/views/client/reports/audit/index.js");
+/* harmony import */ var _views_client_reports_review__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./views/client/reports/review */ "./src/views/client/reports/review/index.js");
+/* harmony import */ var _views_client_certificates__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./views/client/certificates */ "./src/views/client/certificates/index.js");
+/* harmony import */ var _views_client_profile_index__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./views/client/profile/index */ "./src/views/client/profile/index.tsx");
+/* harmony import */ var _views_client_profile_edit_index__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./views/client/profile/edit/index */ "./src/views/client/profile/edit/index.tsx");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
@@ -5598,6 +5636,7 @@ var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchwor
 
 
 
+
  // Misc
 
 // import SettingsView from "./views/misc/settings/SettingsView";
@@ -5612,7 +5651,7 @@ const routes = [{
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 74,
       columnNumber: 14
     }
   }),
@@ -5622,7 +5661,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 75,
+        lineNumber: 76,
         columnNumber: 33
       }
     })
@@ -5632,7 +5671,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 76,
+        lineNumber: 77,
         columnNumber: 43
       }
     })
@@ -5642,7 +5681,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 77,
+        lineNumber: 78,
         columnNumber: 42
       }
     })
@@ -5652,7 +5691,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 78,
+        lineNumber: 79,
         columnNumber: 36
       }
     })
@@ -5662,7 +5701,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 79,
+        lineNumber: 80,
         columnNumber: 31
       }
     })
@@ -5672,7 +5711,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 80,
+        lineNumber: 81,
         columnNumber: 29
       }
     })
@@ -5684,7 +5723,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81,
+        lineNumber: 82,
         columnNumber: 29
       }
     })
@@ -5697,7 +5736,7 @@ const routes = [{
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 88,
       columnNumber: 14
     }
   }),
@@ -5707,7 +5746,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 89,
+        lineNumber: 90,
         columnNumber: 43
       }
     })
@@ -5717,7 +5756,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 90,
+        lineNumber: 91,
         columnNumber: 35
       }
     })
@@ -5727,7 +5766,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 91,
+        lineNumber: 92,
         columnNumber: 38
       }
     })
@@ -5737,7 +5776,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 94,
+        lineNumber: 95,
         columnNumber: 18
       }
     })
@@ -5747,7 +5786,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 96,
+        lineNumber: 97,
         columnNumber: 35
       }
     })
@@ -5757,7 +5796,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97,
+        lineNumber: 98,
         columnNumber: 35
       }
     })
@@ -5767,7 +5806,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98,
+        lineNumber: 99,
         columnNumber: 37
       }
     })
@@ -5777,7 +5816,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 99,
+        lineNumber: 100,
         columnNumber: 47
       }
     })
@@ -5787,7 +5826,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 100,
+        lineNumber: 101,
         columnNumber: 46
       }
     })
@@ -5801,7 +5840,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 104,
+        lineNumber: 105,
         columnNumber: 29
       }
     })
@@ -5814,7 +5853,7 @@ const routes = [{
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 111,
       columnNumber: 14
     }
   }),
@@ -5824,7 +5863,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 112,
+        lineNumber: 113,
         columnNumber: 44
       }
     })
@@ -5834,7 +5873,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 115,
+        lineNumber: 116,
         columnNumber: 18
       }
     })
@@ -5844,7 +5883,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 117,
+        lineNumber: 118,
         columnNumber: 35
       }
     })
@@ -5854,7 +5893,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 118,
+        lineNumber: 119,
         columnNumber: 43
       }
     })
@@ -5864,7 +5903,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 119,
+        lineNumber: 120,
         columnNumber: 41
       }
     })
@@ -5874,7 +5913,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 120,
+        lineNumber: 121,
         columnNumber: 44
       }
     })
@@ -5884,7 +5923,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 121,
+        lineNumber: 122,
         columnNumber: 43
       }
     })
@@ -5894,7 +5933,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 122,
+        lineNumber: 123,
         columnNumber: 38
       }
     })
@@ -5904,7 +5943,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 123,
+        lineNumber: 124,
         columnNumber: 38
       }
     })
@@ -5914,7 +5953,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 124,
+        lineNumber: 125,
         columnNumber: 35
       }
     })
@@ -5925,7 +5964,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 125,
+        lineNumber: 126,
         columnNumber: 29
       }
     })
@@ -5938,7 +5977,7 @@ const routes = [{
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131,
+      lineNumber: 132,
       columnNumber: 14
     }
   }),
@@ -5948,7 +5987,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 133,
+        lineNumber: 134,
         columnNumber: 37
       }
     })
@@ -5958,7 +5997,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 134,
+        lineNumber: 135,
         columnNumber: 39
       }
     })
@@ -5968,7 +6007,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 135,
+        lineNumber: 136,
         columnNumber: 36
       }
     })
@@ -5978,7 +6017,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 136,
+        lineNumber: 137,
         columnNumber: 38
       }
     })
@@ -5988,7 +6027,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 137,
+        lineNumber: 138,
         columnNumber: 36
       }
     })
@@ -5998,7 +6037,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 138,
+        lineNumber: 139,
         columnNumber: 39
       }
     })
@@ -6008,57 +6047,68 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 141,
+        lineNumber: 142,
         columnNumber: 18
       }
     })
   }, {
-    path: "audit-reports",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_audit__WEBPACK_IMPORTED_MODULE_38__["default"], {
+    path: "reports",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports__WEBPACK_IMPORTED_MODULE_38__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 143,
+        lineNumber: 146,
+        columnNumber: 18
+      }
+    }) // children: [],
+
+  }, {
+    path: "reports/document",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_review__WEBPACK_IMPORTED_MODULE_40__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 149,
+        columnNumber: 44
+      }
+    })
+  }, {
+    path: "reports/audit",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_audit__WEBPACK_IMPORTED_MODULE_39__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 150,
         columnNumber: 41
       }
     })
   }, {
-    path: "review-reports",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_review__WEBPACK_IMPORTED_MODULE_39__["default"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 144,
-        columnNumber: 42
-      }
-    })
-  }, {
     path: "certificates",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_certificates__WEBPACK_IMPORTED_MODULE_40__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_certificates__WEBPACK_IMPORTED_MODULE_41__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 145,
+        lineNumber: 151,
         columnNumber: 40
       }
     })
   }, {
     path: "profile",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_profile_index__WEBPACK_IMPORTED_MODULE_41__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_profile_index__WEBPACK_IMPORTED_MODULE_42__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 146,
+        lineNumber: 152,
         columnNumber: 35
       }
     })
   }, {
     path: "profile/edit",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_profile_edit_index__WEBPACK_IMPORTED_MODULE_42__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_profile_edit_index__WEBPACK_IMPORTED_MODULE_43__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 147,
+        lineNumber: 153,
         columnNumber: 40
       }
     })
@@ -6068,7 +6118,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 148,
+        lineNumber: 154,
         columnNumber: 43
       }
     })
@@ -6079,7 +6129,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 149,
+        lineNumber: 155,
         columnNumber: 29
       }
     })
@@ -6092,7 +6142,7 @@ function ClientRequestViewNew() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 157,
+      lineNumber: 163,
       columnNumber: 10
     }
   });
@@ -6111,7 +6161,7 @@ function PrivateRoute({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 166,
+      lineNumber: 172,
       columnNumber: 5
     }
   })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Navigate"], {
@@ -6122,7 +6172,7 @@ function PrivateRoute({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 168,
+      lineNumber: 174,
       columnNumber: 5
     }
   });
@@ -7166,7 +7216,7 @@ const ProfileDetails = ({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
     fullWidth: true,
     helperText: "Please specify the address",
-    label: "Address",
+    label: "Street Address",
     name: "address",
     onChange: handleChange,
     required: true,
@@ -9688,7 +9738,7 @@ function CertificateDateCell({
       columnNumber: 13
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Chip"], {
-    label: moment__WEBPACK_IMPORTED_MODULE_3___default()(date).diff(new Date(), "days") + " days",
+    label: moment__WEBPACK_IMPORTED_MODULE_3___default()(date).diff(new Date(), "days") <= 0 ? "EXPIRED" : moment__WEBPACK_IMPORTED_MODULE_3___default()(date).diff(new Date(), "days") + " days",
     size: "small",
     style: {
       marginLeft: 10
@@ -10044,7 +10094,7 @@ const ProfileDetails = () => {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
     className: "profile-view-field",
     fullWidth: true,
-    label: "Address",
+    label: "Street Address",
     name: "address",
     onChange: handleChange,
     required: true,
@@ -20126,7 +20176,7 @@ const EditReviewer = ({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
     fullWidth: true,
     helperText: "Please specify the address",
-    label: "Address",
+    label: "Street Address",
     name: "address",
     onChange: handleChange,
     required: true,
@@ -25152,7 +25202,7 @@ function Certificates() {
       columnNumber: 23
     }
   }, moment__WEBPACK_IMPORTED_MODULE_2___default()(certificate.expires_at).format("MM/DD/YY"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Chip"], {
-    label: moment__WEBPACK_IMPORTED_MODULE_2___default()(certificate.expires_at).diff(new Date(), "days") + " days",
+    label: moment__WEBPACK_IMPORTED_MODULE_2___default()(certificate.expires_at).diff(new Date(), "days") <= 0 ? "EXPIRED" : moment__WEBPACK_IMPORTED_MODULE_2___default()(certificate.expires_at).diff(new Date(), "days") + " days",
     size: "small",
     style: {
       marginLeft: 10
@@ -25167,7 +25217,7 @@ function Certificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127,
+      lineNumber: 132,
       columnNumber: 23
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_RequestHardCopyButton__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -25175,14 +25225,14 @@ function Certificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128,
+      lineNumber: 133,
       columnNumber: 25
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132,
+      lineNumber: 137,
       columnNumber: 23
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
@@ -25190,7 +25240,7 @@ function Certificates() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 134,
+        lineNumber: 139,
         columnNumber: 38
       }
     }),
@@ -25200,7 +25250,7 @@ function Certificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133,
+      lineNumber: 138,
       columnNumber: 25
     }
   }, "Download"))))))) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
@@ -25208,7 +25258,7 @@ function Certificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148,
+      lineNumber: 153,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_4__["Alert"], {
@@ -25216,14 +25266,14 @@ function Certificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149,
+      lineNumber: 154,
       columnNumber: 15
     }
   }, "You currently have no certificates. Certificates will be shown in this view once they are issued by the administrator."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 156,
+      lineNumber: 161,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
@@ -25233,7 +25283,7 @@ function Certificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 157,
+      lineNumber: 162,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
@@ -25242,7 +25292,7 @@ function Certificates() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 160,
+        lineNumber: 165,
         columnNumber: 20
       }
     }),
@@ -25251,7 +25301,7 @@ function Certificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 158,
+      lineNumber: 163,
       columnNumber: 9
     }
   }, "View More")));
@@ -27948,7 +27998,7 @@ function Results({
       lineNumber: 84,
       columnNumber: 17
     }
-  }, "Address")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TableCell"], {
+  }, "Street Address")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -29621,7 +29671,7 @@ const ProfileDetails = ({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
     className: "profile-view-field",
     fullWidth: true,
-    label: "Address",
+    label: "Street Address",
     name: "address",
     onChange: handleChange,
     required: true,
@@ -30362,7 +30412,7 @@ const ProfileDetails = ({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
     fullWidth: true,
     helperText: "Please specify the address",
-    label: "Address",
+    label: "Street Address",
     name: "address",
     onChange: handleChange,
     required: true,
@@ -31238,16 +31288,303 @@ if (true) {
 
 /***/ }),
 
-/***/ "./src/views/client/reports/audit/Results.tsx":
-/*!****************************************************!*\
-  !*** ./src/views/client/reports/audit/Results.tsx ***!
-  \****************************************************/
+/***/ "./src/views/client/reports/Results.tsx":
+/*!**********************************************!*\
+  !*** ./src/views/client/reports/Results.tsx ***!
+  \**********************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Reports; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _audit_Results__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./audit/Results */ "./src/views/client/reports/audit/Results.tsx");
+/* harmony import */ var _review_Results__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./review/Results */ "./src/views/client/reports/review/Results.tsx");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\src\\views\\client\\reports\\Results.tsx",
+    _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+function Reports() {
+  _s();
+
+  const [value, setValue] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], {
+    title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+      children: "Reports",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 24,
+        columnNumber: 26
+      }
+    }),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Divider"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["AppBar"], {
+    position: "static",
+    color: "default",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tabs"], {
+    value: value,
+    onChange: handleChange // variant="scrollable"
+    // scrollButtons="auto"
+    ,
+    indicatorColor: "primary",
+    textColor: "primary",
+    centered: true // aria-label="simple tabs example"
+    ,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tab"], Object.assign({
+    label: "Document Reports"
+  }, a11yProps(0), {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tab"], Object.assign({
+    label: "Audit Reports"
+  }, a11yProps(1), {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 11
+    }
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    p: 3,
+    minWidth: 800,
+    style: {
+      height: "calc(100vh - 214px)",
+      overflowY: "auto",
+      display: "flex",
+      justifyContent: "center"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
+    value: value,
+    index: 0,
+    style: {
+      width: "100%"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_review_Results__WEBPACK_IMPORTED_MODULE_3__["DocumentReportsList"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
+    value: value,
+    index: 1,
+    style: {
+      width: "100%"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_audit_Results__WEBPACK_IMPORTED_MODULE_2__["AuditReportsList"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 11
+    }
+  }))));
+}
+
+_s(Reports, "qPBOvRc2Co1iWTsdTL0g7j/rpjU=");
+
+_c = Reports;
+
+function TabPanel(props) {
+  const {
+    children,
+    value,
+    index,
+    ...other
+  } = props;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", Object.assign({
+    role: "tabpanel",
+    hidden: value !== index,
+    id: `simple-tabpanel-${index}`,
+    "aria-labelledby": `simple-tab-${index}`
+  }, other, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 5
+    }
+  }), value === index && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 73,
+      columnNumber: 27
+    }
+  }, children));
+}
+
+_c2 = TabPanel;
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`
+  };
+}
+
+var _c, _c2;
+
+__webpack_require__.$Refresh$.register(_c, "Reports");
+__webpack_require__.$Refresh$.register(_c2, "TabPanel");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/client/reports/audit/Results.tsx":
+/*!****************************************************!*\
+  !*** ./src/views/client/reports/audit/Results.tsx ***!
+  \****************************************************/
+/*! exports provided: default, AuditReportsList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AuditReports; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AuditReportsList", function() { return AuditReportsList; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
@@ -31273,6 +31610,62 @@ var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchwor
 
 
 function AuditReports() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Card"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CardHeader"], {
+    title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+      children: "Audit Reports",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 26
+      }
+    }),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    p: 3,
+    minWidth: 800,
+    style: {
+      height: "calc(100vh - 166px)",
+      overflowY: "auto",
+      display: "flex",
+      justifyContent: "center"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AuditReportsList, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 9
+    }
+  })));
+}
+_c = AuditReports;
+function AuditReportsList() {
   _s();
 
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
@@ -31288,143 +31681,98 @@ function AuditReports() {
       setLoading(false);
     });
   }, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Card"], {
+  return loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
-      columnNumber: 5
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CardHeader"], {
-    title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-      children: "Audit Reports",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 49,
-        columnNumber: 26
-      }
-    }),
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49,
-      columnNumber: 7
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 7
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
-    p: 3,
-    minWidth: 800,
-    style: {
-      height: "calc(100vh - 166px)",
-      overflowY: "auto",
-      display: "flex",
-      justifyContent: "center"
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 7
-    }
-  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61,
-      columnNumber: 22
+      lineNumber: 69,
+      columnNumber: 17
     }
   }) || reports.length && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     width: "100%",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
-      columnNumber: 13
+      lineNumber: 71,
+      columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Table"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
-      columnNumber: 15
+      lineNumber: 72,
+      columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableHead"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 17
+      lineNumber: 73,
+      columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 19
+      lineNumber: 74,
+      columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 21
+      lineNumber: 75,
+      columnNumber: 15
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
-      columnNumber: 21
+      lineNumber: 76,
+      columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 23
+      lineNumber: 77,
+      columnNumber: 17
     }
   }, "ID")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
-      columnNumber: 21
+      lineNumber: 79,
+      columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
-      columnNumber: 23
+      lineNumber: 80,
+      columnNumber: 17
     }
   }, "Request ID")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
-      columnNumber: 21
+      lineNumber: 82,
+      columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
-      columnNumber: 23
+      lineNumber: 83,
+      columnNumber: 17
     }
   }, "Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     sortDirection: "desc",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
-      columnNumber: 21
+      lineNumber: 85,
+      columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tooltip"], {
     enterDelay: 300,
@@ -31432,8 +31780,8 @@ function AuditReports() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
-      columnNumber: 23
+      lineNumber: 86,
+      columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableSortLabel"], {
     active: true,
@@ -31441,86 +31789,86 @@ function AuditReports() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
-      columnNumber: 25
+      lineNumber: 87,
+      columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
-      columnNumber: 27
+      lineNumber: 88,
+      columnNumber: 21
     }
   }, "Created")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91,
-      columnNumber: 21
+      lineNumber: 99,
+      columnNumber: 15
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableBody"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94,
-      columnNumber: 17
+      lineNumber: 102,
+      columnNumber: 11
     }
   }, reports.map((report, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
     hover: true,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
-      columnNumber: 21
+      lineNumber: 104,
+      columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
-      columnNumber: 23
+      lineNumber: 105,
+      columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_5__["FileText"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
-      columnNumber: 25
+      lineNumber: 106,
+      columnNumber: 19
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100,
-      columnNumber: 23
+      lineNumber: 108,
+      columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101,
-      columnNumber: 25
+      lineNumber: 109,
+      columnNumber: 19
     }
   }, report.id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103,
-      columnNumber: 23
+      lineNumber: 111,
+      columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104,
-      columnNumber: 25
+      lineNumber: 112,
+      columnNumber: 19
     }
   }, report.request_id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
-      columnNumber: 23
+      lineNumber: 114,
+      columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Chip"], {
     label: report.type,
@@ -31529,30 +31877,30 @@ function AuditReports() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107,
-      columnNumber: 25
+      lineNumber: 115,
+      columnNumber: 19
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116,
-      columnNumber: 23
+      lineNumber: 124,
+      columnNumber: 17
     }
-  }, moment__WEBPACK_IMPORTED_MODULE_2___default()(report.created_at).format("DD/MM/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+  }, moment__WEBPACK_IMPORTED_MODULE_2___default()(report.created_at).format("MM/DD/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128,
-      columnNumber: 23
+      lineNumber: 136,
+      columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
     startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6___default.a, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 130,
-        columnNumber: 38
+        lineNumber: 138,
+        columnNumber: 32
       }
     }),
     variant: "contained",
@@ -31560,35 +31908,36 @@ function AuditReports() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129,
-      columnNumber: 25
+      lineNumber: 137,
+      columnNumber: 19
     }
   }, "Download"))))))) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     flex: 1,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143,
-      columnNumber: 13
+      lineNumber: 151,
+      columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_4__["Alert"], {
     severity: "info",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 144,
-      columnNumber: 15
+      lineNumber: 152,
+      columnNumber: 9
     }
-  }, "You currently have no reports. Audit Reports will show here once the reviewer adds them."))));
+  }, "You currently have no reports. Audit Reports will show here once the reviewer adds them."));
 }
 
-_s(AuditReports, "NHozPeYVuZPNtkiITJRMMAGLUK8=");
+_s(AuditReportsList, "NHozPeYVuZPNtkiITJRMMAGLUK8=");
 
-_c = AuditReports;
+_c2 = AuditReportsList;
 
-var _c;
+var _c, _c2;
 
 __webpack_require__.$Refresh$.register(_c, "AuditReports");
+__webpack_require__.$Refresh$.register(_c2, "AuditReportsList");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -31706,7 +32055,7 @@ const ReviewListView = () => {
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Reports" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Audit Reports" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -31841,16 +32190,190 @@ if (true) {
 
 /***/ }),
 
-/***/ "./src/views/client/reports/review/Results.tsx":
-/*!*****************************************************!*\
-  !*** ./src/views/client/reports/review/Results.tsx ***!
-  \*****************************************************/
+/***/ "./src/views/client/reports/index.js":
+/*!*******************************************!*\
+  !*** ./src/views/client/reports/index.js ***!
+  \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReviewReports; });
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/Page */ "./src/components/Page.js");
+/* harmony import */ var _Results__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Results */ "./src/views/client/reports/Results.tsx");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\src\\views\\client\\reports\\index.js",
+    _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
+  root: {
+    backgroundColor: theme.palette.background.dark,
+    minHeight: "100%",
+    paddingBottom: theme.spacing(3),
+    paddingTop: theme.spacing(3)
+  }
+}));
+
+const ReviewListView = () => {
+  _s();
+
+  const classes = useStyles();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    className: classes.root,
+    title: "Reports",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+    maxWidth: "md",
+    style: {
+      marginLeft: 0
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    container: true,
+    spacing: 2,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    md: 12,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Results__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 13
+    }
+  })))));
+};
+
+_s(ReviewListView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
+  return [useStyles];
+});
+
+_c = ReviewListView;
+/* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "ReviewListView");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/client/reports/review/Results.tsx":
+/*!*****************************************************!*\
+  !*** ./src/views/client/reports/review/Results.tsx ***!
+  \*****************************************************/
+/*! exports provided: default, DocumentReportsList */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DocumentReports; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DocumentReportsList", function() { return DocumentReportsList; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
@@ -31875,7 +32398,63 @@ var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchwor
 
 
 
-function ReviewReports() {
+function DocumentReports() {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Card"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CardHeader"], {
+    title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+      children: "Document Reports",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 26
+      }
+    }),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    p: 3,
+    minWidth: 800,
+    style: {
+      height: "calc(100vh - 166px)",
+      overflowY: "auto",
+      display: "flex",
+      justifyContent: "center"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DocumentReportsList, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 9
+    }
+  })));
+}
+_c = DocumentReports;
+function DocumentReportsList() {
   _s();
 
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
@@ -31891,143 +32470,98 @@ function ReviewReports() {
       setLoading(false);
     });
   }, []);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Card"], {
+  return loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48,
-      columnNumber: 5
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CardHeader"], {
-    title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-      children: "Review Reports",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 49,
-        columnNumber: 26
-      }
-    }),
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49,
-      columnNumber: 7
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 50,
-      columnNumber: 7
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
-    p: 3,
-    minWidth: 800,
-    style: {
-      height: "calc(100vh - 166px)",
-      overflowY: "auto",
-      display: "flex",
-      justifyContent: "center"
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 51,
-      columnNumber: 7
-    }
-  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61,
-      columnNumber: 22
+      lineNumber: 69,
+      columnNumber: 17
     }
   }) || reports.length && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     width: "100%",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63,
-      columnNumber: 13
+      lineNumber: 71,
+      columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Table"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64,
-      columnNumber: 15
+      lineNumber: 72,
+      columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableHead"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 65,
-      columnNumber: 17
+      lineNumber: 73,
+      columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 66,
-      columnNumber: 19
+      lineNumber: 74,
+      columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 67,
-      columnNumber: 21
+      lineNumber: 75,
+      columnNumber: 15
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
-      columnNumber: 21
+      lineNumber: 76,
+      columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 23
+      lineNumber: 77,
+      columnNumber: 17
     }
   }, "ID")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
-      columnNumber: 21
+      lineNumber: 79,
+      columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
-      columnNumber: 23
+      lineNumber: 80,
+      columnNumber: 17
     }
   }, "Request ID")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
-      columnNumber: 21
+      lineNumber: 82,
+      columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75,
-      columnNumber: 23
+      lineNumber: 83,
+      columnNumber: 17
     }
   }, "Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     sortDirection: "desc",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
-      columnNumber: 21
+      lineNumber: 85,
+      columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tooltip"], {
     enterDelay: 300,
@@ -32035,8 +32569,8 @@ function ReviewReports() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
-      columnNumber: 23
+      lineNumber: 86,
+      columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableSortLabel"], {
     active: true,
@@ -32044,86 +32578,86 @@ function ReviewReports() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
-      columnNumber: 25
+      lineNumber: 87,
+      columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
-      columnNumber: 27
+      lineNumber: 88,
+      columnNumber: 21
     }
   }, "Created")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91,
-      columnNumber: 21
+      lineNumber: 99,
+      columnNumber: 15
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableBody"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94,
-      columnNumber: 17
+      lineNumber: 102,
+      columnNumber: 11
     }
   }, reports.map((report, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
     hover: true,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
-      columnNumber: 21
+      lineNumber: 104,
+      columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
-      columnNumber: 23
+      lineNumber: 105,
+      columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_5__["FileText"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
-      columnNumber: 25
+      lineNumber: 106,
+      columnNumber: 19
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100,
-      columnNumber: 23
+      lineNumber: 108,
+      columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101,
-      columnNumber: 25
+      lineNumber: 109,
+      columnNumber: 19
     }
   }, report.id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103,
-      columnNumber: 23
+      lineNumber: 111,
+      columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104,
-      columnNumber: 25
+      lineNumber: 112,
+      columnNumber: 19
     }
   }, report.request_id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
-      columnNumber: 23
+      lineNumber: 114,
+      columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Chip"], {
     label: report.type,
@@ -32132,30 +32666,30 @@ function ReviewReports() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107,
-      columnNumber: 25
+      lineNumber: 115,
+      columnNumber: 19
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116,
-      columnNumber: 23
+      lineNumber: 124,
+      columnNumber: 17
     }
-  }, moment__WEBPACK_IMPORTED_MODULE_2___default()(report.created_at).format("DD/MM/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+  }, moment__WEBPACK_IMPORTED_MODULE_2___default()(report.created_at).format("MM/DD/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128,
-      columnNumber: 23
+      lineNumber: 136,
+      columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
     startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6___default.a, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 130,
-        columnNumber: 38
+        lineNumber: 138,
+        columnNumber: 32
       }
     }),
     variant: "contained",
@@ -32163,35 +32697,36 @@ function ReviewReports() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129,
-      columnNumber: 25
+      lineNumber: 137,
+      columnNumber: 19
     }
   }, "Download"))))))) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     flex: 1,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143,
-      columnNumber: 13
+      lineNumber: 151,
+      columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_4__["Alert"], {
     severity: "info",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 144,
-      columnNumber: 15
+      lineNumber: 152,
+      columnNumber: 9
     }
-  }, "You currently have no reports. Review Reports will show here once the reviewer adds them."))));
+  }, "You currently have no reports. Review Reports will show here once the reviewer adds them."));
 }
 
-_s(ReviewReports, "NHozPeYVuZPNtkiITJRMMAGLUK8=");
+_s(DocumentReportsList, "NHozPeYVuZPNtkiITJRMMAGLUK8=");
 
-_c = ReviewReports;
+_c2 = DocumentReportsList;
 
-var _c;
+var _c, _c2;
 
-__webpack_require__.$Refresh$.register(_c, "ReviewReports");
+__webpack_require__.$Refresh$.register(_c, "DocumentReports");
+__webpack_require__.$Refresh$.register(_c2, "DocumentReportsList");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -32309,7 +32844,7 @@ const ReviewListView = () => {
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Reports" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Document Reports" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -32537,7 +33072,7 @@ function Results({
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["CardHeader"], {
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-      children: "Review Requests",
+      children: "Document Submissions",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -33031,8 +33566,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/MoreVert */ "./node_modules/@material-ui/icons/MoreVert.js");
 /* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/Delete */ "./node_modules/@material-ui/icons/Delete.js");
-/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_icons_Cancel__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/Cancel */ "./node_modules/@material-ui/icons/Cancel.js");
+/* harmony import */ var _material_ui_icons_Cancel__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Cancel__WEBPACK_IMPORTED_MODULE_5__);
 /* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/Edit */ "./node_modules/@material-ui/icons/Edit.js");
 /* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_6__);
 /* harmony import */ var _material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/Visibility */ "./node_modules/@material-ui/icons/Visibility.js");
@@ -33208,7 +33743,7 @@ function ReviewRequestMenu({
       lineNumber: 130,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_5___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Cancel__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -33226,7 +33761,7 @@ function ReviewRequestMenu({
       lineNumber: 135,
       columnNumber: 11
     }
-  }, "Delete")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
+  }, "Cancel Request")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
     onClick: () => contactSupportOrReviewer(reviewRequest),
     __self: this,
     __source: {
@@ -33381,7 +33916,7 @@ const ReviewListView = () => {
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Reviews" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Document Submissions" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -33993,7 +34528,7 @@ function FacilityDetails({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
     fullWidth: true // helperText="Please specify the address"
     ,
-    label: "Enter Address",
+    label: "Enter Street Address",
     name: "address",
     onChange: handleChange,
     required: true,
@@ -39579,34 +40114,27 @@ function HorizontalLinearStepper() {
       lineNumber: 298,
       columnNumber: 9
     }
-  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["LinearProgress"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 299,
-      columnNumber: 23
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["CardHeader"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["CardHeader"], {
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
       children: "Request",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 300,
+        lineNumber: 299,
         columnNumber: 30
       }
     }),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 300,
+      lineNumber: 299,
       columnNumber: 11
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Divider"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 301,
+      lineNumber: 300,
       columnNumber: 11
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
@@ -39618,14 +40146,14 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 303,
+      lineNumber: 301,
       columnNumber: 11
     }
   }, activeStep === steps.length ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 311,
+      lineNumber: 309,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -39633,7 +40161,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 312,
+      lineNumber: 310,
       columnNumber: 17
     }
   }, "All steps completed - you're finished"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -39642,7 +40170,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 315,
+      lineNumber: 313,
       columnNumber: 17
     }
   }, "Reset")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -39655,7 +40183,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 320,
+      lineNumber: 318,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
@@ -39667,18 +40195,25 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 328,
+      lineNumber: 326,
       columnNumber: 17
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["LinearProgress"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 333,
+      columnNumber: 32
+    }
+  }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
     className: classes.instructions,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 335,
-      columnNumber: 19
+      columnNumber: 23
     }
-  }, getStepContent(activeStep, reviewRequest, setRequestType, handleFacilitySelect, facilityStepValues, setFacilityStepValues, handleSubmission, setGreenLight))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, getStepContent(activeStep, reviewRequest, setRequestType, handleFacilitySelect, facilityStepValues, setFacilityStepValues, handleSubmission, setGreenLight)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       alignSelf: "flex-end",
       padding: 20
@@ -39686,7 +40221,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 348,
+      lineNumber: 350,
       columnNumber: 17
     }
   }, activeStep !== 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -39696,14 +40231,14 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 350,
+      lineNumber: 352,
       columnNumber: 21
     }
   }, "Back"), activeStep === steps.length - 1 || activeStep === steps.length - 2 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 375,
+      lineNumber: 377,
       columnNumber: 23
     }
   }) // <Button
@@ -39723,7 +40258,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 385,
+      lineNumber: 387,
       columnNumber: 23
     }
   }, "Next")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Grid"], {
@@ -39734,7 +40269,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 401,
+      lineNumber: 403,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Stepper__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -39747,7 +40282,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 402,
+      lineNumber: 404,
       columnNumber: 9
     }
   }, steps.map((label, index) => {
@@ -39768,21 +40303,21 @@ function HorizontalLinearStepper() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 419,
+        lineNumber: 421,
         columnNumber: 15
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_StepLabel__WEBPACK_IMPORTED_MODULE_7__["default"], Object.assign({}, labelProps, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 420,
+        lineNumber: 422,
         columnNumber: 17
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 421,
+        lineNumber: 423,
         columnNumber: 19
       }
     }, label)));
@@ -39814,7 +40349,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 478,
+      lineNumber: 480,
       columnNumber: 7
     }
   });
@@ -39827,7 +40362,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 488,
+          lineNumber: 490,
           columnNumber: 11
         }
       });
@@ -39839,7 +40374,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 496,
+          lineNumber: 498,
           columnNumber: 11
         }
       });
@@ -39851,7 +40386,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 503,
+          lineNumber: 505,
           columnNumber: 11
         }
       });
@@ -39863,7 +40398,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 510,
+          lineNumber: 512,
           columnNumber: 11
         }
       });
@@ -39875,7 +40410,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 517,
+          lineNumber: 519,
           columnNumber: 11
         }
       });
@@ -39887,7 +40422,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 524,
+          lineNumber: 526,
           columnNumber: 11
         }
       });
@@ -39899,7 +40434,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 531,
+          lineNumber: 533,
           columnNumber: 11
         }
       });
@@ -39910,7 +40445,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 537,
+          lineNumber: 539,
           columnNumber: 16
         }
       });
@@ -39920,7 +40455,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 539,
+          lineNumber: 541,
           columnNumber: 16
         }
       });
@@ -39936,7 +40471,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 548,
+          lineNumber: 550,
           columnNumber: 11
         }
       });
@@ -39947,7 +40482,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 554,
+          lineNumber: 556,
           columnNumber: 16
         }
       });
@@ -39958,7 +40493,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 556,
+          lineNumber: 558,
           columnNumber: 16
         }
       });
@@ -39968,7 +40503,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 558,
+          lineNumber: 560,
           columnNumber: 16
         }
       });
@@ -39985,7 +40520,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 567,
+          lineNumber: 569,
           columnNumber: 11
         }
       });
@@ -39997,7 +40532,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 575,
+          lineNumber: 577,
           columnNumber: 11
         }
       });
@@ -40009,7 +40544,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 582,
+          lineNumber: 584,
           columnNumber: 11
         }
       });
@@ -40021,7 +40556,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 589,
+          lineNumber: 591,
           columnNumber: 11
         }
       });
@@ -40033,7 +40568,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 596,
+          lineNumber: 598,
           columnNumber: 11
         }
       });
@@ -40045,7 +40580,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 603,
+          lineNumber: 605,
           columnNumber: 11
         }
       });
@@ -40057,7 +40592,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 610,
+          lineNumber: 612,
           columnNumber: 11
         }
       });
@@ -40068,7 +40603,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 616,
+          lineNumber: 618,
           columnNumber: 16
         }
       });
@@ -40079,7 +40614,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 618,
+          lineNumber: 620,
           columnNumber: 16
         }
       });
@@ -40089,7 +40624,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 620,
+          lineNumber: 622,
           columnNumber: 16
         }
       });
@@ -45746,7 +46281,7 @@ function FacilityDetails({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
     fullWidth: true // helperText="Please specify the address"
     ,
-    label: "Enter Address",
+    label: "Enter Street Address",
     name: "address",
     onChange: handleChange,
     required: true,
@@ -59058,7 +59593,7 @@ const ProfileDetails = ({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
     fullWidth: true,
     helperText: "Please specify the address",
-    label: "Address",
+    label: "Street Address",
     name: "address",
     onChange: handleChange,
     required: true,
@@ -59745,7 +60280,7 @@ function BusinessDetails() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
     fullWidth: true,
     helperText: "Please specify the address",
-    label: "Address",
+    label: "Street Address",
     name: "address",
     onChange: handleChange,
     required: true,
@@ -60609,7 +61144,7 @@ function Results({
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["CardHeader"], {
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-      children: "Review Requests",
+      children: "Document Submissions",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -60633,7 +61168,7 @@ function Results({
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
     minWidth: 800,
     style: {
-      height: "calc(100vh - 228px)",
+      height: "calc(100vh - 229px)",
       overflowY: "auto"
     },
     __self: this,
@@ -61707,7 +62242,7 @@ const ReviewListView = () => {
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Reviews" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Document Submissions" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
