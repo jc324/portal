@@ -13,6 +13,18 @@ class Client extends Model
 {
     use HasFactory;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'hed_type',
+        'hed_name',
+        'hed_phone_number',
+        'hed_email',
+    ];
+
     public static function create(array $data)
     {
         // client user

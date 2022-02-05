@@ -164,6 +164,38 @@ class ClientController extends Controller
         response(null, 200);
     }
 
+    public function update_user_profile(Request $request, $client_id)
+    {
+        $input = $request->only([
+            'first_name',
+            'last_name',
+            'phone_number',
+            'cell_number',
+            'address',
+            'country',
+            'city',
+            'state',
+            'zip',
+            'avatar',
+            'hed_type',
+            'hed_name',
+            'hed_phone_number',
+            'hed_email'
+        ]);
+        $client = Client::findOrFail($client_id);
+        $client->update([
+            'hed_type' => $input['hed_type'],
+            'hed_name' => $input['hed_name'],
+            'hed_phone_number' => $input['hed_phone_number'],
+            'hed_email' => $input['hed_email'],
+        ]);
+        $profile = $client->user->profile;
+        $profile->update($input);
+        $profile->save();
+
+        response(null, 200);
+    }
+
     // for client only
     public function client_get_facility(Request $request, $facilityId)
     {

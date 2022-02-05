@@ -40,6 +40,7 @@ Route::middleware('auth:sanctum')->post('/client/dashboard/latest-requests', [Cl
 Route::middleware('auth:sanctum')->post('/client/profile', [ClientController::class, 'get_current_user_profile']);
 Route::middleware('auth:sanctum')->post('/client/{id}/profile', [ClientController::class, 'get_profile']);
 Route::middleware('auth:sanctum')->put('/client/profile', [ClientController::class, 'update_current_user_profile']);
+Route::middleware('auth:sanctum')->put('/client/{id}/profile', [ClientController::class, 'update_user_profile']);
 
 // Reviewer
 Route::middleware('auth:sanctum')->put('/reviewer/register-client', [ReviewerController::class, 'register_client']);
