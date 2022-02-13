@@ -71,6 +71,7 @@ class FacilityController extends Controller
         $document->facility_id = $facilityId;
         $document->type = $request['type'];
         $document->status = 'SUBMITTED';
+        $document->note = '';
         $document->expires_at = $request['expires_at'];
         $document->path = $path;
         $document->save();

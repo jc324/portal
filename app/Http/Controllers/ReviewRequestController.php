@@ -186,11 +186,11 @@ class ReviewRequestController extends Controller
     public function set_status(Request $request, $review_request_id)
     {
         $data = $request->only('status');
-        $review_request = ReviewRequest::findOrFail($review_request_id);
-        $review_request->status = $data['status'];
-        $review_request->save();
+        // $review_request = ReviewRequest::findOrFail($review_request_id);
+        // $review_request->status = $data['status'];
+        // $review_request->save();
 
-        return response('', 200);
+        return response($data['status'], 200);
     }
 
     public function _download_documents_by_id($review_request_id)

@@ -63487,7 +63487,7 @@ function ReviewRequestMenu({
     const statusTableCell = document.querySelector(`#review-request-${id} .request-status`);
     let statusStr = status.toString();
     let data = {
-      status: statusStr
+      status: statusStr.replace(/\s/g, "_")
     };
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.put(`/api/client/review-request/${reviewRequest.id}/status`, data).then(async response => {

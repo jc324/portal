@@ -14,7 +14,7 @@ class CreateFacilityDocumentNoteColumn extends Migration
     public function up()
     {
         Schema::table('facility_documents', function (Blueprint $table) {
-            $table->text('note')->default('')->after('status');
+            $table->text('note')->after('status');
         });
     }
 
