@@ -70,10 +70,10 @@ class FacilityController extends Controller
         $document = new FacilityDocument;
         $document->facility_id = $facilityId;
         $document->type = $request['type'];
+        $document->status = 'SUBMITTED';
         $document->expires_at = $request['expires_at'];
         $document->path = $path;
         $document->save();
-
 
         // Send mail
         if ($request->user()->role === "CLIENT")
@@ -84,6 +84,26 @@ class FacilityController extends Controller
             ));
 
         return response($document, 200);
+    }
+
+    public function set_document_status(Request $request, $document_id)
+    {
+        $data = $request->only('status');
+        $document = FacilityDocument::findOrFail($document_id);
+        $document->status = $data['status'];
+        $document->save();
+
+        return response('', 200);
+    }
+
+    public function set_document_note(Request $request, $document_id)
+    {
+        $data = $request->only('note');
+        $document = FacilityDocument::findOrFail($document_id);
+        $document->note = $data['note'];
+        $document->save();
+
+        return response('', 200);
     }
 
     public function delete_document($documentId)

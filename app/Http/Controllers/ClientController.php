@@ -87,6 +87,7 @@ class ClientController extends Controller
             $reviewer_user = User::find($review_request->reviewer_id);
             $review_request->reviewer = Profile::find($review_request->reviewer_id);
             $review_request->type_color = REVIEW_REQUEST_TYPE_COLOR_MAP[$review_request->type];
+            $review_request->status_color = REVIEW_REQUEST_STATUS_COLOR_MAP[$review_request->status];
             if ($reviewer_user) $review_request->reviewer_email = $reviewer_user->email;
         }
 

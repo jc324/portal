@@ -28,6 +28,14 @@ const REVIEW_REQUEST_TYPE_COLOR_MAP = array(
     'MANUFACTURER_UPDATE' => "#76BA24",
 );
 
+const REVIEW_REQUEST_STATUS_COLOR_MAP = array(
+    'DRAFT' => "#E0E0E0",
+    'SUBMITTED' => "#F6BA23",
+    'IN_REVIEW' => "#329FCD",
+    'APPROVED' => "#0BD074",
+    'REJECTED' => "#F50057",
+);
+
 class ReviewRequestController extends Controller
 {
     // for reviewer
@@ -42,6 +50,7 @@ class ReviewRequestController extends Controller
             $review_request->business_name = $client->business_name;
             $review_request->client_email = $client_user->email;
             $review_request->type_color = REVIEW_REQUEST_TYPE_COLOR_MAP[$review_request->type];
+            $review_request->status_color = REVIEW_REQUEST_STATUS_COLOR_MAP[$review_request->status];
             $review_request->reviewer = Profile::where('user_id', $review_request->reviewer_id)->first();
         }
 
@@ -75,6 +84,7 @@ class ReviewRequestController extends Controller
             $reviewer_user = User::find($review_request->reviewer_id);
             $review_request->reviewer = Profile::find($review_request->reviewer_id);
             $review_request->type_color = REVIEW_REQUEST_TYPE_COLOR_MAP[$review_request->type];
+            $review_request->status_color = REVIEW_REQUEST_STATUS_COLOR_MAP[$review_request->status];
             if ($reviewer_user) $review_request->reviewer_email = $reviewer_user->email;
         }
 

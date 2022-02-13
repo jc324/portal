@@ -61,6 +61,8 @@ Route::middleware('auth:sanctum')->post('/client/facility/categories', [Facility
 Route::middleware('auth:sanctum')->post('/client/facility/{id}/documents', [FacilityController::class, 'get_documents']);
 Route::middleware('auth:sanctum')->post('/client/facility/{id}/document', [FacilityController::class, 'add_document']);
 Route::middleware('auth:sanctum')->post('/client/facility/document/{id}', [FacilityController::class, 'update_document']);
+Route::middleware('auth:sanctum')->post('/client/facility/document/{id}/status', [FacilityController::class, 'set_document_status']);
+Route::middleware('auth:sanctum')->post('/client/facility/document/{id}/note', [FacilityController::class, 'set_document_note']);
 Route::middleware('auth:sanctum')->delete('/client/facility/document/{id}', [FacilityController::class, 'delete_document']);
 Route::middleware('auth:sanctum')->put('/client/facility/document/{id}/expires-at', [FacilityController::class, 'update_document_expiration']);
 // @TODO why does it fail when prepended with '/client'
