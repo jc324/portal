@@ -13,6 +13,17 @@ class Ingredient extends Model
 {
     use HasFactory;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'recommendation',
+        'source',
+        'description'
+    ];
+
     public static function create(array $data)
     {
         // ingredient

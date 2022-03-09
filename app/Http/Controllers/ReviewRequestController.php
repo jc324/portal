@@ -14,6 +14,7 @@ use App\Models\Facility;
 use App\Models\Product;
 use App\Models\Client;
 use App\Models\FacilityCategories;
+use App\Models\Manufacturer;
 use App\Models\ProductCategories;
 use App\Models\Report;
 
@@ -183,14 +184,57 @@ class ReviewRequestController extends Controller
         return $products->reverse()->values();
     }
 
+    // with docs
+    public function get_review_request_products_docs($review_request_id)
+    {
+        $products = ReviewRequest::find($review_request_id)->products;
+
+        foreach ($products as $product) {
+            $ingredients = Ingredient::where([
+                'product_id' => $product->id,
+                'review_request_id' => $review_request_id
+            ])->get();
+            $product->ingredients = $ingredients;
+            $product->documents;
+        }
+
+        return $products->reverse()->values();
+    }
+
+    public function get_review_request_ingredients($review_request_id)
+    {
+        return ReviewRequest::find($review_request_id)->ingredients->reverse()->values();
+    }
+
+    public function get_review_request_manufacturers($review_request_id)
+    {
+        $ingredients = Ingredient::where([
+            'review_request_id' => $review_request_id
+        ])->get();
+        $manufacturer_ids = [];
+
+        foreach ($ingredients as $ingredient) {
+            $manufacturer_ids[] = $ingredient->manufacturer_id;
+        }
+
+        $manufacturer_ids = array_values(array_unique($manufacturer_ids));
+        $manufacturers = Manufacturer::findMany($manufacturer_ids);
+
+        foreach ($manufacturers as $manufacturer) {
+            $manufacturer->documents;
+        }
+
+        return $manufacturers;
+    }
+
     public function set_status(Request $request, $review_request_id)
     {
         $data = $request->only('status');
-        // $review_request = ReviewRequest::findOrFail($review_request_id);
-        // $review_request->status = $data['status'];
-        // $review_request->save();
+        $review_request = ReviewRequest::findOrFail($review_request_id);
+        $review_request->status = $data['status'];
+        $review_request->save();
 
-        return response($data['status'], 200);
+        return response('', 200);
     }
 
     public function _download_documents_by_id($review_request_id)
@@ -320,6 +364,63 @@ class ReviewRequestController extends Controller
         }
 
         return response()->download($path, $file_name, $headers)->deleteFileAfterSend(true);
+    }
+
+    public function generate_report($review_request_id)
+    {
+        $review_request = ReviewRequest::findOrFail($review_request_id);
+        $file_name = 'document_submission_' . $review_request_id . '_report.md';
+        $review_request_info = "# Document Submission " . $review_request_id . " Auto Report\n\n";
+        $review_request_info .= "**SUBMISSION TYPE**: `" . $review_request->type . "`\n";
+        $review_request_info .= pp_client($review_request->client);
+        $document_statuses = "\n\n";
+        $ingredient_document_statuses = "\n\n";
+        $ingredient_document_statuses .= "**Ingredient/RMM Document Statuses:**\n";
+        $ingredient_document_statuses .= "| Ingredient Name | Recommendation | Source | RMM | Status | Note |\n|-----------------|----------------|--------|-----|--------|------|\n";
+
+        if ($facility = Facility::find($review_request->facility_id)) {
+            // $review_request_info .= pp_facility($facility);
+            $document_statuses .= "## DOCUMENT STATUSES\n";
+            $document_statuses .= "**Facility Document Statuses:**\n";
+            $document_statuses .= "| **Document Type** | **Status** | **Note** |\n|-------------------|------------|----------|\n";
+            foreach ($facility->documents as $doc) {
+                $document_statuses .= "| " . $doc->type . " | " . $doc->status . " | " . $doc->note . " |\n";
+            }
+        }
+
+        if ($review_request->type == 'NEW_PRODUCTS' || $review_request->type == 'NEW_FACILITY_AND_PRODUCTS') {
+            if ($products = $review_request->products) {
+                $review_request_info .= pp_relationships($products);
+                $document_statuses .= "\n**Products Specification Sheet Document Statuses:**\n";
+                $document_statuses .= "| **Product Name** | **Status** | **Note** |\n|------------------|------------|----------|\n";
+                foreach ($products as $product) {
+                    $document_statuses .= "| " . $product->name;
+                    if ($docs = $product->documents)
+                        if (count($docs) == 0) $document_statuses .= " | | | |\n";
+                        else
+                            foreach ($docs as $doc) {
+                                $document_statuses .= " | " . $doc->status . " | " . $doc->note . " |\n";
+                                break;
+                            }
+
+                    foreach ($product->ingredients as $ingredient) {
+                        $ingredient_document_statuses .= "| " . $ingredient->name . " | " . $ingredient->recommendation . " | " . $ingredient->source;
+                        if ($manufacturer = $ingredient->manufacturer) {
+                            $ingredient_document_statuses .= " | " . $manufacturer->name;
+                            if ($docs = $manufacturer->documents)
+                                if (count($docs) == 0) $ingredient_document_statuses .= " | | | | |\n";
+                                else $ingredient_document_statuses .= " | " . $docs[0]->status . " | " . $docs[0]->note . " |\n";
+                        }
+                    }
+                }
+            }
+        }
+
+        $content = $review_request_info . $document_statuses . $ingredient_document_statuses;
+
+        return response()->streamDownload(function () use ($content) {
+            echo $content;
+        }, $file_name);
     }
 
     // reports
@@ -486,6 +587,33 @@ function pp_products($products): string
 
             $output .= "\n";
         }
+    }
+
+    return $output;
+}
+
+function pp_relationships($products): string
+{
+    $output = "## PRODUCT > INGREDIENT > RMM RELATIONSHIP\n";
+    $output .= "**PRODUCTS**:\n";
+
+    foreach ($products as $product) {
+        $output .= "\n" . '- ' . $product->name . "\n\n";
+        $output .= "  - DESCRIPTION: " . ($product->description ? $product->description : "NONE") . "\n";
+        $output .= "  - INGREDIENTS:";
+
+        if ($ingredients = $product->ingredients)
+            if (count($ingredients) == 0) $output .= " NONE\n";
+            else
+                foreach ($product->ingredients as $ingredient) {
+                    $output .= "\n    - " . $ingredient->name;
+
+                    if ($manufacturer = $ingredient->manufacturer) {
+                        $output .= " (" . $manufacturer->name . ")";
+                    }
+
+                    $output .= "\n";
+                }
     }
 
     return $output;

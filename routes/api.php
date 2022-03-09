@@ -74,6 +74,9 @@ Route::middleware('auth:sanctum')->put('/client/review-request/{id}', [ReviewReq
 Route::middleware('auth:sanctum')->delete('/client/review-request/{id}', [ReviewRequestController::class, 'delete_review_request']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/assign-reviewer', [ReviewRequestController::class, 'assign_reviewer']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/products', [ReviewRequestController::class, 'get_review_request_products']);
+Route::middleware('auth:sanctum')->post('/client/review-request/{id}/products/docs', [ReviewRequestController::class, 'get_review_request_products_docs']);
+Route::middleware('auth:sanctum')->post('/client/review-request/{id}/ingredients', [ReviewRequestController::class, 'get_review_request_ingredients']);
+Route::middleware('auth:sanctum')->post('/client/review-request/{id}/manufacturers', [ReviewRequestController::class, 'get_review_request_manufacturers']);
 Route::middleware('auth:sanctum')->put('/client/review-request/{id}/status', [ReviewRequestController::class, 'set_status']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/audit-reports', [ReviewRequestController::class, 'get_review_request_audit_reports']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/review-reports', [ReviewRequestController::class, 'get_review_request_review_reports']);
@@ -104,6 +107,8 @@ Route::middleware('auth:sanctum')->post('/client/product/categories', [ProductCo
 Route::middleware('auth:sanctum')->post('/client/product/{id}/documents', [ProductController::class, 'get_documents']);
 Route::middleware('auth:sanctum')->post('/client/product/{id}/document', [ProductController::class, 'add_document']);
 Route::middleware('auth:sanctum')->post('/client/product/document/{id}', [ProductController::class, 'update_document']);
+Route::middleware('auth:sanctum')->post('/client/product/document/{id}/status', [ProductController::class, 'set_document_status']);
+Route::middleware('auth:sanctum')->post('/client/product/document/{id}/note', [ProductController::class, 'set_document_note']);
 Route::middleware('auth:sanctum')->delete('/client/product/document/{id}', [ProductController::class, 'delete_document']);
 Route::middleware('auth:sanctum')->put('/client/product/document/{id}/expires-at', [ProductController::class, 'update_document_expiration']);
 Route::middleware('auth:sanctum')->post('/client/product/{id}/preview', [ProductController::class, 'update_preview_image']);
@@ -111,11 +116,18 @@ Route::middleware('auth:sanctum')->post('/client/product/{id}/preview', [Product
 Route::middleware('auth:sanctum')->post('/client/product/{id}/ingredients', [IngredientController::class, 'get_ingredients']);
 Route::middleware('auth:sanctum')->put('/client/ingredient', [IngredientController::class, 'add_ingredient']);
 Route::middleware('auth:sanctum')->put('/client/ingredient/{id}', [IngredientController::class, 'update_ingredient']);
+Route::middleware('auth:sanctum')->post('/client/ingredient/{id}/recommendation', [IngredientController::class, 'set_ingredient_recommendation']);
+Route::middleware('auth:sanctum')->post('/client/ingredient/{id}/source', [IngredientController::class, 'set_ingredient_source']);
+Route::middleware('auth:sanctum')->post('/client/ingredient/{id}/description', [IngredientController::class, 'set_ingredient_description']);
+Route::middleware('auth:sanctum')->delete('/client/ingredient/{id}', [IngredientController::class, 'delete_ingredient']);
 Route::middleware('auth:sanctum')->delete('/client/ingredient/{id}', [IngredientController::class, 'delete_ingredient']);
 // Manufacturer
 Route::middleware('auth:sanctum')->post('/manufacturers', [ManufacturerController::class, 'auto_suggest_search_list']);
 Route::middleware('auth:sanctum')->post('/manufacturer/{id}/documents', [ManufacturerController::class, 'get_documents']);
 Route::middleware('auth:sanctum')->post('/manufacturer/{id}/document', [ManufacturerController::class, 'add_document']);
+Route::middleware('auth:sanctum')->post('/client/manufacturer/document/{id}/status', [ManufacturerController::class, 'set_document_status']);
+Route::middleware('auth:sanctum')->post('/client/manufacturer/document/{id}/note', [ManufacturerController::class, 'set_document_note']);
+Route::middleware('auth:sanctum')->delete('/client/manufacturer/document/{id}', [ManufacturerController::class, 'delete_document']);
 Route::middleware('auth:sanctum')->post('/manufacturer/document/{id}', [ManufacturerController::class, 'update_document']);
 Route::middleware('auth:sanctum')->delete('/manufacturer/document/{id}', [ManufacturerController::class, 'delete_document']);
 Route::middleware('auth:sanctum')->put('/manufacturer/document/{id}/expires-at', [ManufacturerController::class, 'update_document_expiration']);

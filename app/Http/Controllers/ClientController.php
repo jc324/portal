@@ -61,7 +61,7 @@ class ClientController extends Controller
         }
 
         return array(
-            'current_request_id' => $current_rr->id,
+            'current_request_id' => $current_rr ? $current_rr->id : null,
             'current_request_status' => $current_rr_status,
             'current_request_progress' => $current_request_progress,
             'facility_count' => $facility_count,

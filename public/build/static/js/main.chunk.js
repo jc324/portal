@@ -4406,20 +4406,16 @@ const items = [{
   href: "/reviewer/clients/requests",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["Users"],
   title: "Document Submissions",
-  subnav: [{
-    href: "/reviewer/clients/requests",
-    icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["FileText"],
-    title: "All Submissions"
-  } // {
-  //   href: "/reviewer/clients/reports",
-  //   icon: BarChart2Icon,
-  //   title: "Reports",
-  // },
-  // {
-  //   href: "/reviewer/clients/certificates",
-  //   icon: VerifiedUserOutlinedIcon,
-  //   title: "Certificates",
-  // },
+  subnav: [// {
+    //   href: "/reviewer/clients/reports",
+    //   icon: BarChart2Icon,
+    //   title: "Reports",
+    // },
+    // {
+    //   href: "/reviewer/clients/certificates",
+    //   icon: VerifiedUserOutlinedIcon,
+    //   title: "Certificates",
+    // },
   ]
 }, {
   href: "/reviewer/clients",
@@ -25047,7 +25043,7 @@ function Certificates() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     minWidth: 800,
     style: {
-      height: "calc(100vh - 228px)",
+      height: "calc(100vh - 230px)",
       overflowY: "auto"
     },
     p: 3,
@@ -26852,7 +26848,7 @@ function Results({
       lineNumber: 149,
       columnNumber: 13
     }
-  }, "You currently have no review requests."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
+  }, "You currently have no document submissions."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
     display: "flex",
     justifyContent: "flex-end",
     p: 2,
@@ -27641,8 +27637,8 @@ function Dashboard() {
   });
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/client/dashboard").then(async response => {
-      setLoading(false);
-      console.log(response.data);
+      setLoading(false); // console.log(response.data);
+
       setDashboardStats(response.data);
     }).catch(e => {
       // @TODO handle
@@ -27986,7 +27982,7 @@ function Results({
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
     minWidth: 800,
     style: {
-      height: "calc(100vh - 228px)",
+      height: "calc(100vh - 229px)",
       overflowY: "auto"
     },
     __self: this,
@@ -28691,7 +28687,7 @@ function Results({
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
     minWidth: 800,
     style: {
-      height: "calc(100vh - 228px)",
+      height: "calc(100vh - 229px)",
       overflowY: "auto"
     },
     __self: this,
@@ -30345,7 +30341,7 @@ const ProfileDetails = ({
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardContent"], {
     style: {
-      maxHeight: "calc(100vh - 259px)",
+      maxHeight: "calc(100vh - 260px)",
       overflowY: "auto"
     },
     __self: undefined,
@@ -33063,12 +33059,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_lab__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/lab */ "./node_modules/@material-ui/lab/esm/index.js");
 /* harmony import */ var _material_ui_icons_ArrowRight__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/ArrowRight */ "./node_modules/@material-ui/icons/ArrowRight.js");
 /* harmony import */ var _material_ui_icons_ArrowRight__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ArrowRight__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _ReviewRequestMenu__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./ReviewRequestMenu */ "./src/views/client/requests/ReviewRequestMenu.tsx");
+/* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/Add */ "./node_modules/@material-ui/icons/Add.js");
+/* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _ReviewRequestMenu__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ReviewRequestMenu */ "./src/views/client/requests/ReviewRequestMenu.tsx");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\src\\views\\client\\requests\\Results.tsx",
     _s = __webpack_require__.$Refresh$.signature();
+
 
 
 
@@ -33120,14 +33119,14 @@ function Results({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 71,
       columnNumber: 5
     }
   }), loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["LinearProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
+      lineNumber: 72,
       columnNumber: 19
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["CardHeader"], {
@@ -33136,110 +33135,110 @@ function Results({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 72,
+        lineNumber: 73,
         columnNumber: 26
       }
     }),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
+      lineNumber: 73,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Divider"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 74,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Box"], {
     minWidth: 800,
     style: {
-      height: "calc(100vh - 228px)",
+      height: "calc(100vh - 229px)",
       overflowY: "auto"
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 75,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Table"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
+      lineNumber: 79,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableHead"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 80,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableRow"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 81,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 82,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 83,
       columnNumber: 17
     }
   }, "ID")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 85,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 86,
       columnNumber: 17
     }
   }, "Request Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 88,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 89,
       columnNumber: 17
     }
   }, "Reviewer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90,
+      lineNumber: 91,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91,
+      lineNumber: 92,
       columnNumber: 17
     }
   }, "Status")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
@@ -33247,7 +33246,7 @@ function Results({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93,
+      lineNumber: 94,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Tooltip"], {
@@ -33256,7 +33255,7 @@ function Results({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94,
+      lineNumber: 95,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableSortLabel"], {
@@ -33265,14 +33264,14 @@ function Results({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95,
+      lineNumber: 96,
       columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
+      lineNumber: 97,
       columnNumber: 21
     }
   }, "Created")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
@@ -33280,7 +33279,7 @@ function Results({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100,
+      lineNumber: 101,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Tooltip"], {
@@ -33289,7 +33288,7 @@ function Results({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 101,
+      lineNumber: 102,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableSortLabel"], {
@@ -33298,28 +33297,28 @@ function Results({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102,
+      lineNumber: 103,
       columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103,
+      lineNumber: 104,
       columnNumber: 21
     }
   }, "Last Updated")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107,
+      lineNumber: 108,
       columnNumber: 15
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableBody"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 111,
       columnNumber: 11
     }
   }, reviewRequests.map((request, i) => {
@@ -33331,28 +33330,28 @@ function Results({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 113,
+        lineNumber: 114,
         columnNumber: 17
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 114,
+        lineNumber: 115,
         columnNumber: 19
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 115,
+        lineNumber: 116,
         columnNumber: 21
       }
     }, request.id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 117,
+        lineNumber: 118,
         columnNumber: 19
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Chip"], {
@@ -33361,14 +33360,14 @@ function Results({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 118,
+        lineNumber: 119,
         columnNumber: 21
       }
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 123,
+        lineNumber: 124,
         columnNumber: 19
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -33379,7 +33378,7 @@ function Results({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 124,
+        lineNumber: 125,
         columnNumber: 21
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Avatar"], {
@@ -33392,7 +33391,7 @@ function Results({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 125,
+        lineNumber: 126,
         columnNumber: 23
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -33402,14 +33401,14 @@ function Results({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 130,
+        lineNumber: 131,
         columnNumber: 23
       }
     }, request.reviewer && `${request.reviewer.first_name} ${request.reviewer.last_name}` || "UNASSIGNED"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 137,
+        lineNumber: 138,
         columnNumber: 19
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
@@ -33417,7 +33416,7 @@ function Results({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 138,
+        lineNumber: 139,
         columnNumber: 21
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Chip"], {
@@ -33430,37 +33429,37 @@ function Results({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 139,
+        lineNumber: 140,
         columnNumber: 23
       }
     }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 152,
+        lineNumber: 153,
         columnNumber: 19
       }
     }, moment__WEBPACK_IMPORTED_MODULE_4___default()(request.created_at).format("MM/DD/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 155,
+        lineNumber: 156,
         columnNumber: 19
       }
     }, moment__WEBPACK_IMPORTED_MODULE_4___default()(request.updated_at).format("MM/DD/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 158,
+        lineNumber: 159,
         columnNumber: 19
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ReviewRequestMenu__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ReviewRequestMenu__WEBPACK_IMPORTED_MODULE_10__["default"], {
       reviewRequest: request,
       onDeleteReviewRequest: onDeleteReviewRequest,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 159,
+        lineNumber: 160,
         columnNumber: 21
       }
     })));
@@ -33471,7 +33470,7 @@ function Results({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 170,
+      lineNumber: 171,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_7__["Alert"], {
@@ -33481,33 +33480,41 @@ function Results({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 174,
+        lineNumber: 175,
         columnNumber: 17
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Button"], {
+      startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_9___default.a, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 177,
+          columnNumber: 32
+        }
+      }),
       color: "secondary",
       variant: "contained",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 175,
+        lineNumber: 176,
         columnNumber: 19
       }
-    }, "Create Review Request")),
+    }, "New Submission")),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 171,
+      lineNumber: 172,
       columnNumber: 13
     }
-  }, "You currently have no review requests."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Box"], {
+  }, "You currently have no document submissions."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Box"], {
     display: "flex",
     justifyContent: "flex-end",
     p: 2,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 186,
+      lineNumber: 191,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Button"], {
@@ -33516,7 +33523,7 @@ function Results({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 189,
+        lineNumber: 194,
         columnNumber: 20
       }
     }),
@@ -33525,7 +33532,7 @@ function Results({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 187,
+      lineNumber: 192,
       columnNumber: 9
     }
   }, "View More")));
@@ -36050,7 +36057,7 @@ function PreStep({
       lineNumber: 71,
       columnNumber: 7
     }
-  }, "Select the type of request you would like to make:", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+  }, "Select the type of submission you would like to make:", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
     width: "320",
     height: "180",
     src: "https://www.youtube.com/embed/WD00bbgrVZ0",
@@ -36077,7 +36084,7 @@ function PreStep({
       lineNumber: 99,
       columnNumber: 7
     }
-  }, "Be sure to select the appropriate request type as this step cannot be undone once set. If you would like to change this value after moving to the next step, delete this request and start over."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, "Be sure to select the appropriate submission type as this step cannot be undone once set. If you would like to change this value after moving to the next step, delete this submission and start over."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_8__["default"], {
     component: "fieldset",
     style: {
       alignSelf: "flex-start",
@@ -36097,7 +36104,7 @@ function PreStep({
       lineNumber: 111,
       columnNumber: 9
     }
-  }, "Select your request type:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_RadioGroup__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, "Select your submission type:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_RadioGroup__WEBPACK_IMPORTED_MODULE_6__["default"], {
     "aria-label": "gender",
     name: "gender1",
     value: requestType,
@@ -39082,25 +39089,22 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var _material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/ExpandMore */ "./node_modules/@material-ui/icons/ExpandMore.js");
 /* harmony import */ var _material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons/CloudDownload */ "./node_modules/@material-ui/icons/CloudDownload.js");
-/* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
-/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/icons/Delete */ "./node_modules/@material-ui/icons/Delete.js");
-/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _ProductDialog__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./ProductDialog */ "./src/views/client/requests/request/ProductDialog.tsx");
-/* harmony import */ var _IngredientDialog__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./IngredientDialog */ "./src/views/client/requests/request/IngredientDialog.tsx");
-/* harmony import */ var _UploadSpecSheetBtn__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./UploadSpecSheetBtn */ "./src/views/client/requests/request/UploadSpecSheetBtn.tsx");
-/* harmony import */ var _reviewer_common_PromptDialog__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../../reviewer/common/PromptDialog */ "./src/views/reviewer/common/PromptDialog.tsx");
-/* harmony import */ var _reviewer_common_utils__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../../reviewer/common/utils */ "./src/views/reviewer/common/utils.ts");
-/* harmony import */ var _AddProductDialog__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./AddProductDialog */ "./src/views/client/requests/request/AddProductDialog.tsx");
-/* harmony import */ var _IngredientsView__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./IngredientsView */ "./src/views/client/requests/request/IngredientsView.tsx");
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
+/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/icons/Delete */ "./node_modules/@material-ui/icons/Delete.js");
+/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _ProductDialog__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./ProductDialog */ "./src/views/client/requests/request/ProductDialog.tsx");
+/* harmony import */ var _IngredientDialog__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./IngredientDialog */ "./src/views/client/requests/request/IngredientDialog.tsx");
+/* harmony import */ var _UploadSpecSheetBtn__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./UploadSpecSheetBtn */ "./src/views/client/requests/request/UploadSpecSheetBtn.tsx");
+/* harmony import */ var _reviewer_common_PromptDialog__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../reviewer/common/PromptDialog */ "./src/views/reviewer/common/PromptDialog.tsx");
+/* harmony import */ var _reviewer_common_utils__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../../reviewer/common/utils */ "./src/views/reviewer/common/utils.ts");
+/* harmony import */ var _AddProductDialog__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./AddProductDialog */ "./src/views/client/requests/request/AddProductDialog.tsx");
+/* harmony import */ var _IngredientsView__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./IngredientsView */ "./src/views/client/requests/request/IngredientsView.tsx");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_08.tsx",
     _s = __webpack_require__.$Refresh$.signature(),
     _s2 = __webpack_require__.$Refresh$.signature();
-
 
 
 
@@ -39169,7 +39173,7 @@ const FinishedProductsStep = ({
   };
 
   const handleProductUpdate = (product, i) => {
-    const newProducts = Object(_reviewer_common_utils__WEBPACK_IMPORTED_MODULE_19__["insert"])(products, i, product);
+    const newProducts = Object(_reviewer_common_utils__WEBPACK_IMPORTED_MODULE_18__["insert"])(products, i, product);
     setProducts(newProducts);
   };
 
@@ -39215,7 +39219,7 @@ const FinishedProductsStep = ({
       lineNumber: 124,
       columnNumber: 19
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_PromptDialog__WEBPACK_IMPORTED_MODULE_18__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_PromptDialog__WEBPACK_IMPORTED_MODULE_17__["default"], {
     open: promptOpen,
     onOk: () => setPromptOpen(false),
     title: "Video Tutorial",
@@ -39275,46 +39279,28 @@ const FinishedProductsStep = ({
       lineNumber: 161,
       columnNumber: 7
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+    style: {
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center",
+      marginTop: 20,
+      marginBottom: 10
+    },
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 171,
       columnNumber: 7
     }
-  }, "Click on the button at the right to add your products and ingredients to this request:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
-    style: {
-      display: "flex",
-      justifyContent: "space-between",
-      alignItems: "center",
-      marginBottom: 10
-    },
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 175,
-      columnNumber: 7
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
-    href: "https://irp-cdn.multiscreensite.com/f2766bde/files/uploaded/Halal%20Disclosure%20Statement-v1.pdf",
-    startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_12___default.a, {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 185,
-        columnNumber: 22
-      }
-    }),
-    style: {
-      marginRight: 10
-    },
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 183,
+      lineNumber: 180,
       columnNumber: 9
     }
-  }, "Halal Disclosure Template"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AddProductDialog__WEBPACK_IMPORTED_MODULE_20__["default"], {
+  }, "Click on the button at the right to add your products and ingredients to this request:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AddProductDialog__WEBPACK_IMPORTED_MODULE_19__["default"], {
     onProductAdd: handleProductAdd,
     reviewRequestId: reviewRequest.id,
     facilityId: reviewRequest.facility_id,
@@ -39322,7 +39308,7 @@ const FinishedProductsStep = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 190,
+      lineNumber: 191,
       columnNumber: 9
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -39337,7 +39323,7 @@ const FinishedProductsStep = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 199,
+      lineNumber: 200,
       columnNumber: 7
     }
   }, products.map((product, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProductItem, {
@@ -39347,7 +39333,7 @@ const FinishedProductsStep = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 210,
+      lineNumber: 211,
       columnNumber: 11
     }
   }))));
@@ -39412,22 +39398,22 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 279,
+      lineNumber: 280,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 280,
+      lineNumber: 281,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_13__["ShoppingBag"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_12__["ShoppingBag"], {
     className: "product-item-icon",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 281,
+      lineNumber: 282,
       columnNumber: 11
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -39435,15 +39421,15 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 283,
+      lineNumber: 284,
       columnNumber: 9
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UploadSpecSheetBtn__WEBPACK_IMPORTED_MODULE_17__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UploadSpecSheetBtn__WEBPACK_IMPORTED_MODULE_16__["default"], {
     productId: product.id,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 293,
+      lineNumber: 294,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -39453,18 +39439,18 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 294,
+      lineNumber: 295,
       columnNumber: 9
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IngredientDialog__WEBPACK_IMPORTED_MODULE_16__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IngredientDialog__WEBPACK_IMPORTED_MODULE_15__["default"], {
     reviewRequestId: product.review_request_id,
     productId: product.id,
     onIngredientUpdate: handleIngredientAdd,
-    mode: _IngredientDialog__WEBPACK_IMPORTED_MODULE_16__["IngredientDialogMode"].ADD,
+    mode: _IngredientDialog__WEBPACK_IMPORTED_MODULE_15__["IngredientDialogMode"].ADD,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 295,
+      lineNumber: 296,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
@@ -39472,14 +39458,14 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 301,
+      lineNumber: 302,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_14___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_13___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 302,
+      lineNumber: 303,
       columnNumber: 11
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
@@ -39487,21 +39473,21 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 304,
+      lineNumber: 305,
       columnNumber: 9
     }
   }, open ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_10___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 305,
+      lineNumber: 306,
       columnNumber: 19
     }
   }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_11___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 305,
+      lineNumber: 306,
       columnNumber: 36
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -39511,7 +39497,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 308,
+      lineNumber: 309,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -39520,21 +39506,21 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 309,
+      lineNumber: 310,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IngredientsView__WEBPACK_IMPORTED_MODULE_21__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IngredientsView__WEBPACK_IMPORTED_MODULE_20__["default"], {
     ingredients: ingredients,
     setIngredients: setIngredients,
     productId: product.id,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 310,
+      lineNumber: 311,
       columnNumber: 11
     }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductDialog__WEBPACK_IMPORTED_MODULE_15__["default"], {
-    mode: _ProductDialog__WEBPACK_IMPORTED_MODULE_15__["ProductDialogMode"].EDIT,
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductDialog__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    mode: _ProductDialog__WEBPACK_IMPORTED_MODULE_14__["ProductDialogMode"].EDIT,
     open: editOpen,
     edit: product,
     onClose: () => setEditOpen(false),
@@ -39542,7 +39528,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 331,
+      lineNumber: 332,
       columnNumber: 7
     }
   }));
@@ -40167,8 +40153,8 @@ function HorizontalLinearStepper() {
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Grid"], {
     item: true,
-    lg: 8,
-    md: 6,
+    lg: 9,
+    md: 8,
     xs: 12,
     __self: this,
     __source: {
@@ -40186,7 +40172,7 @@ function HorizontalLinearStepper() {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["CardHeader"], {
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-      children: "Request",
+      children: "Document Submission",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -40208,7 +40194,6 @@ function HorizontalLinearStepper() {
       columnNumber: 11
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
-    minWidth: 800,
     style: {
       paddingLeft: 20,
       paddingRight: 20
@@ -40223,7 +40208,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 309,
+      lineNumber: 308,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -40231,7 +40216,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 310,
+      lineNumber: 309,
       columnNumber: 17
     }
   }, "All steps completed - you're finished"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -40240,7 +40225,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 313,
+      lineNumber: 312,
       columnNumber: 17
     }
   }, "Reset")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -40253,26 +40238,26 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 318,
+      lineNumber: 317,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
     style: {
-      height: "calc(100vh - 228px)",
+      height: "calc(100vh - 243px)",
       overflowY: "auto",
       overflowX: "hidden"
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 326,
+      lineNumber: 325,
       columnNumber: 17
     }
   }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["LinearProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 333,
+      lineNumber: 332,
       columnNumber: 32
     }
   }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -40280,7 +40265,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 335,
+      lineNumber: 334,
       columnNumber: 23
     }
   }, getStepContent(activeStep, reviewRequest, setRequestType, handleFacilitySelect, facilityStepValues, setFacilityStepValues, handleSubmission, setGreenLight)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -40291,7 +40276,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 350,
+      lineNumber: 349,
       columnNumber: 17
     }
   }, activeStep !== 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -40301,14 +40286,14 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 352,
+      lineNumber: 351,
       columnNumber: 21
     }
   }, "Back"), activeStep === steps.length - 1 || activeStep === steps.length - 2 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 377,
+      lineNumber: 376,
       columnNumber: 23
     }
   }) // <Button
@@ -40328,18 +40313,18 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 387,
+      lineNumber: 386,
       columnNumber: 23
     }
   }, "Next")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Grid"], {
     item: true,
-    lg: 4,
-    md: 6,
+    lg: 3,
+    md: 4,
     xs: 12,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 403,
+      lineNumber: 402,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Stepper__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -40352,7 +40337,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 404,
+      lineNumber: 403,
       columnNumber: 9
     }
   }, steps.map((label, index) => {
@@ -40373,21 +40358,21 @@ function HorizontalLinearStepper() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 421,
+        lineNumber: 420,
         columnNumber: 15
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_StepLabel__WEBPACK_IMPORTED_MODULE_7__["default"], Object.assign({}, labelProps, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 422,
+        lineNumber: 421,
         columnNumber: 17
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 423,
+        lineNumber: 422,
         columnNumber: 19
       }
     }, label)));
@@ -40401,7 +40386,7 @@ _s(HorizontalLinearStepper, "sow+IpKGQVuxhgx/j8xvCGW2lS0=", false, function () {
 _c = HorizontalLinearStepper;
 
 function getStepTitles(reviewType) {
-  let steps = ["Select request type"];
+  let steps = ["Select submission type"];
   if (reviewType === "NEW_FACILITY" || reviewType === "NEW_FACILITY_AND_PRODUCTS") steps = [...steps, "Facility details", "Legal Business Documents", "Traceability Plan", "Flowchart of Processing", "Sanitation Standard Operating Procedure", "Recall Plan", "Pest Control"];
   if (reviewType === "NEW_PRODUCTS") steps.push("Select Facility");
   if (reviewType === "NEW_PRODUCTS" || reviewType === "NEW_FACILITY_AND_PRODUCTS") steps.push("Finished Products"); // final step
@@ -40419,7 +40404,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 480,
+      lineNumber: 479,
       columnNumber: 7
     }
   });
@@ -40432,7 +40417,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 490,
+          lineNumber: 489,
           columnNumber: 11
         }
       });
@@ -40444,7 +40429,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 498,
+          lineNumber: 497,
           columnNumber: 11
         }
       });
@@ -40456,7 +40441,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 505,
+          lineNumber: 504,
           columnNumber: 11
         }
       });
@@ -40468,7 +40453,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 512,
+          lineNumber: 511,
           columnNumber: 11
         }
       });
@@ -40480,7 +40465,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 519,
+          lineNumber: 518,
           columnNumber: 11
         }
       });
@@ -40492,7 +40477,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 526,
+          lineNumber: 525,
           columnNumber: 11
         }
       });
@@ -40504,7 +40489,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 533,
+          lineNumber: 532,
           columnNumber: 11
         }
       });
@@ -40515,7 +40500,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 539,
+          lineNumber: 538,
           columnNumber: 16
         }
       });
@@ -40525,7 +40510,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 541,
+          lineNumber: 540,
           columnNumber: 16
         }
       });
@@ -40541,7 +40526,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 550,
+          lineNumber: 549,
           columnNumber: 11
         }
       });
@@ -40552,7 +40537,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 556,
+          lineNumber: 555,
           columnNumber: 16
         }
       });
@@ -40563,7 +40548,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 558,
+          lineNumber: 557,
           columnNumber: 16
         }
       });
@@ -40573,7 +40558,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 560,
+          lineNumber: 559,
           columnNumber: 16
         }
       });
@@ -40590,7 +40575,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 569,
+          lineNumber: 568,
           columnNumber: 11
         }
       });
@@ -40602,7 +40587,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 577,
+          lineNumber: 576,
           columnNumber: 11
         }
       });
@@ -40614,7 +40599,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 584,
+          lineNumber: 583,
           columnNumber: 11
         }
       });
@@ -40626,7 +40611,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 591,
+          lineNumber: 590,
           columnNumber: 11
         }
       });
@@ -40638,7 +40623,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 598,
+          lineNumber: 597,
           columnNumber: 11
         }
       });
@@ -40650,7 +40635,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 605,
+          lineNumber: 604,
           columnNumber: 11
         }
       });
@@ -40662,7 +40647,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 612,
+          lineNumber: 611,
           columnNumber: 11
         }
       });
@@ -40673,7 +40658,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 618,
+          lineNumber: 617,
           columnNumber: 16
         }
       });
@@ -40684,7 +40669,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 620,
+          lineNumber: 619,
           columnNumber: 16
         }
       });
@@ -40694,7 +40679,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 622,
+          lineNumber: 621,
           columnNumber: 16
         }
       });
@@ -41845,7 +41830,7 @@ const ClientNewRequest = () => {
     // @ts-ignore
     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
       className: classes.root,
-      title: "Request",
+      title: "Document Submission",
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -43681,7 +43666,7 @@ const ChangePassword = () => {
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CardContent"], {
     style: {
-      height: "calc(100vh - 259px)",
+      height: "calc(100vh - 260px)",
       overflowY: "auto"
     },
     __self: undefined,
@@ -57300,6 +57285,8 @@ var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchwor
 
 
 function UploadDocumentListItem({
+  nameField,
+  documentType,
   fileTypeName,
   document,
   setDocument,
@@ -57307,8 +57294,7 @@ function UploadDocumentListItem({
   updateHandler,
   deleteHandler,
   dateChangeHandler,
-  requireExpirationDate = true,
-  divider = false
+  requireExpirationDate = true
 }) {
   _s();
 
@@ -57323,7 +57309,7 @@ function UploadDocumentListItem({
   const documentCopy = document && Object.assign({}, document) || null;
   const [file, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(documentCopy);
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
-  const filename = file && "✓ Document uploaded" || document && "✓ Document uploaded" || "No file selected";
+  const filename = nameField && nameField || file && "✓ Document uploaded" || document && "✓ Document uploaded" || "No file selected";
   const [note, setNote] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(document === null || document === void 0 ? void 0 : document.note); // const filename =
   //   (file && file.path.substring(10)) ||
   //   (document && document.path.substring(10)) ||
@@ -57450,7 +57436,7 @@ function UploadDocumentListItem({
       status: statusStr
     };
     setLoading(true);
-    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/facility/document/${id}/status`, data).then(async response => {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/${documentType}/document/${id}/status`, data).then(async response => {
       setLoading(false);
 
       if (response.status == 200 || response.status == 201) {
@@ -57473,7 +57459,7 @@ function UploadDocumentListItem({
 
   const updateNote = id => {
     setLoading(true);
-    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/facility/document/${id}/note`, {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/${documentType}/document/${id}/note`, {
       note
     }).then(async response => {
       setLoading(false);
@@ -57535,14 +57521,14 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 322,
+      lineNumber: 325,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 327,
+      lineNumber: 330,
       columnNumber: 7
     }
   }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["CircularProgress"], {
@@ -57553,35 +57539,35 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 329,
+      lineNumber: 332,
       columnNumber: 11
     }
   }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_12__["Paperclip"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 330,
+      lineNumber: 333,
       columnNumber: 15
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 332,
+      lineNumber: 335,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 333,
+      lineNumber: 336,
       columnNumber: 9
     }
   }, filename)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 335,
+      lineNumber: 338,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Chip"], {
@@ -57590,14 +57576,14 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 336,
+      lineNumber: 339,
       columnNumber: 9
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 338,
+      lineNumber: 341,
       columnNumber: 7
     }
   },
@@ -57607,7 +57593,7 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 342,
+      lineNumber: 345,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_pickers__WEBPACK_IMPORTED_MODULE_6__["KeyboardDatePicker"], {
@@ -57622,14 +57608,14 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 343,
+      lineNumber: 346,
       columnNumber: 15
     }
   })) || "--"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 358,
+      lineNumber: 361,
       columnNumber: 7
     }
   }, (file || document) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
@@ -57637,7 +57623,7 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 360,
+      lineNumber: 363,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Chip"], {
@@ -57651,14 +57637,14 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 361,
+      lineNumber: 364,
       columnNumber: 13
     }
   })) || "--"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 379,
+      lineNumber: 382,
       columnNumber: 7
     }
   }, (file || document) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
@@ -57675,14 +57661,14 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 381,
+      lineNumber: 384,
       columnNumber: 11
     }
   }) || "--"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 394,
+      lineNumber: 397,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -57701,7 +57687,7 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 395,
+      lineNumber: 398,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -57718,7 +57704,7 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 407,
+      lineNumber: 410,
       columnNumber: 9
     }
   }), (file || document) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["IconButton"], {
@@ -57730,14 +57716,14 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 419,
+      lineNumber: 422,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_11___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 426,
+      lineNumber: 429,
       columnNumber: 15
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Menu"], {
@@ -57749,7 +57735,7 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 428,
+      lineNumber: 431,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
@@ -57757,14 +57743,14 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 435,
+      lineNumber: 438,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Refresh__WEBPACK_IMPORTED_MODULE_9___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 436,
+      lineNumber: 439,
       columnNumber: 17
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
@@ -57775,23 +57761,23 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 437,
+      lineNumber: 440,
       columnNumber: 17
     }
   }, "Update Document")), (file || document) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
     component: _material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Link"],
-    href: `/client/facility/document/${document === null || document === void 0 ? void 0 : document.id}`,
+    href: `/client/${documentType}/document/${document === null || document === void 0 ? void 0 : document.id}`,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 442,
+      lineNumber: 445,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_7___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 446,
+      lineNumber: 449,
       columnNumber: 19
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
@@ -57802,7 +57788,7 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 447,
+      lineNumber: 450,
       columnNumber: 19
     }
   }, "Download Document")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
@@ -57810,14 +57796,14 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 452,
+      lineNumber: 455,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_SaveOutlined__WEBPACK_IMPORTED_MODULE_13___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 453,
+      lineNumber: 456,
       columnNumber: 17
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
@@ -57828,7 +57814,7 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 454,
+      lineNumber: 457,
       columnNumber: 17
     }
   }, "Save Note")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_NestedMenuItem__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -57836,7 +57822,7 @@ function UploadDocumentListItem({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 461,
+        lineNumber: 464,
         columnNumber: 21
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
@@ -57847,7 +57833,7 @@ function UploadDocumentListItem({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 462,
+        lineNumber: 465,
         columnNumber: 21
       }
     }, "Set Status")),
@@ -57855,7 +57841,7 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 458,
+      lineNumber: 461,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
@@ -57863,14 +57849,14 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 469,
+      lineNumber: 472,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CheckCircleOutline__WEBPACK_IMPORTED_MODULE_15___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 477,
+      lineNumber: 480,
       columnNumber: 19
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
@@ -57881,7 +57867,7 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 478,
+      lineNumber: 481,
       columnNumber: 19
     }
   }, "APPROVED")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
@@ -57889,14 +57875,14 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 482,
+      lineNumber: 485,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_16___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 490,
+      lineNumber: 493,
       columnNumber: 19
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
@@ -57907,7 +57893,7 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 491,
+      lineNumber: 494,
       columnNumber: 19
     }
   }, "REJECTED"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
@@ -57915,14 +57901,14 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 496,
+      lineNumber: 499,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_DeleteForever__WEBPACK_IMPORTED_MODULE_10___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 497,
+      lineNumber: 500,
       columnNumber: 17
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
@@ -57933,7 +57919,7 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 498,
+      lineNumber: 501,
       columnNumber: 17
     }
   }, "Delete Document")))) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["IconButton"], {
@@ -57943,14 +57929,14 @@ function UploadDocumentListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 505,
+      lineNumber: 508,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudUpload__WEBPACK_IMPORTED_MODULE_8___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 510,
+      lineNumber: 513,
       columnNumber: 13
     }
   }))));
@@ -58451,7 +58437,7 @@ if (true) {
 /*!********************************************!*\
   !*** ./src/views/reviewer/common/types.ts ***!
   \********************************************/
-/*! exports provided: DocumentStatus, ClientStatus, ReviewRequestStatus, ReviewStatus, FacilityDocumentType, ProductDocumentType, IngredientRecommendation, IngredientSource, IngredientDocumentType, CertificateStatus */
+/*! exports provided: DocumentStatus, ClientStatus, ReviewRequestStatus, ReviewStatus, FacilityDocumentType, ProductDocumentType, IngredientRecommendation, IngredientSource, IngredientDocumentType, ManufacturerDocumentType, CertificateStatus */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -58465,6 +58451,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IngredientRecommendation", function() { return IngredientRecommendation; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IngredientSource", function() { return IngredientSource; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "IngredientDocumentType", function() { return IngredientDocumentType; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ManufacturerDocumentType", function() { return ManufacturerDocumentType; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CertificateStatus", function() { return CertificateStatus; });
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
@@ -58563,9 +58550,15 @@ let IngredientDocumentType;
   IngredientDocumentType["CERTIFICATE_OR_DISCLOSURE"] = "CERTIFICATE_OR_DISCLOSURE";
 })(IngredientDocumentType || (IngredientDocumentType = {}));
 
+let ManufacturerDocumentType;
 /**
  * Certificate types
  */
+
+(function (ManufacturerDocumentType) {
+  ManufacturerDocumentType["CERTIFICATE_OR_DISCLOSURE"] = "CERTIFICATE_OR_DISCLOSURE";
+})(ManufacturerDocumentType || (ManufacturerDocumentType = {}));
+
 let CertificateStatus;
 
 (function (CertificateStatus) {
@@ -63186,6 +63179,7 @@ function Results({
       style: {
         marginLeft: 10
       },
+      size: "small",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -63196,21 +63190,21 @@ function Results({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 178,
+        lineNumber: 179,
         columnNumber: 19
       }
     }, moment__WEBPACK_IMPORTED_MODULE_3___default()(request.created_at).format("MM/DD/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TableCell"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 181,
+        lineNumber: 182,
         columnNumber: 19
       }
     }, moment__WEBPACK_IMPORTED_MODULE_3___default()(request.updated_at).format("MM/DD/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TableCell"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 184,
+        lineNumber: 185,
         columnNumber: 19
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ReviewRequestMenu__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -63219,7 +63213,7 @@ function Results({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 185,
+        lineNumber: 186,
         columnNumber: 21
       }
     })));
@@ -63230,7 +63224,7 @@ function Results({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 212,
+      lineNumber: 213,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Button"], {
@@ -63239,7 +63233,7 @@ function Results({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 215,
+        lineNumber: 216,
         columnNumber: 20
       }
     }),
@@ -63248,7 +63242,7 @@ function Results({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 213,
+      lineNumber: 214,
       columnNumber: 9
     }
   }, "View More")));
@@ -65961,134 +65955,120 @@ function FacilityDocs({
       columnNumber: 23
     }
   });
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
-    style: {
-      maxHeight: "calc(100vh - 276px)",
-      overflowY: "auto",
-      overflowX: "hidden",
-      width: "100%",
-      // padding: "20px 0",
-      ...style
-    },
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Table"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 120,
       columnNumber: 5
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Table"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 130,
-      columnNumber: 7
-    }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableHead"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131,
-      columnNumber: 9
+      lineNumber: 121,
+      columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132,
-      columnNumber: 11
+      lineNumber: 122,
+      columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133,
-      columnNumber: 13
+      lineNumber: 123,
+      columnNumber: 11
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125,
+      columnNumber: 13
+    }
+  }, "Document")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 128,
+      columnNumber: 13
+    }
+  }, "Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 130,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 131,
+      columnNumber: 13
+    }
+  }, "Expiration Date")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 133,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 134,
       columnNumber: 13
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+  }, "Status")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135,
-      columnNumber: 15
+      lineNumber: 136,
+      columnNumber: 11
     }
-  }, "Document")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 137,
       columnNumber: 13
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 138,
-      columnNumber: 15
-    }
-  }, "Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 140,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 141,
-      columnNumber: 15
-    }
-  }, "Expiration Date")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 143,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 144,
-      columnNumber: 15
-    }
-  }, "Status")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 146,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 147,
-      columnNumber: 15
-    }
   }, "Note")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 163,
-      columnNumber: 13
+      lineNumber: 153,
+      columnNumber: 11
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableBody"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 166,
-      columnNumber: 9
+      lineNumber: 156,
+      columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    documentType: "facility",
     fileTypeName: "Legal Business Documents",
     document: docs.filter(d => d.type == "LEGAL_BUSINESS_DOCUMENTS")[0],
     setDocument: setDocumentHandler,
@@ -66096,14 +66076,14 @@ function FacilityDocs({
     updateHandler: updateDocHandler,
     deleteHandler: deleteDocHandler,
     dateChangeHandler: changeDateHandler,
-    divider: true,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167,
-      columnNumber: 11
+      lineNumber: 157,
+      columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    documentType: "facility",
     fileTypeName: "Traceability Plan",
     document: docs.filter(d => d.type == "TRACEABILITY_PLAN")[0],
     setDocument: setDocumentHandler,
@@ -66111,14 +66091,14 @@ function FacilityDocs({
     updateHandler: updateDocHandler,
     deleteHandler: deleteDocHandler,
     dateChangeHandler: changeDateHandler,
-    divider: true,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 185,
-      columnNumber: 11
+      lineNumber: 173,
+      columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    documentType: "facility",
     fileTypeName: "Flowchart of Processing",
     document: docs.filter(d => d.type == "FLOWCHART_OF_PROCESSING")[0],
     setDocument: setDocumentHandler,
@@ -66126,14 +66106,14 @@ function FacilityDocs({
     updateHandler: updateDocHandler,
     deleteHandler: deleteDocHandler,
     dateChangeHandler: changeDateHandler,
-    divider: true,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 201,
-      columnNumber: 11
+      lineNumber: 189,
+      columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    documentType: "facility",
     fileTypeName: "SSOP",
     document: docs.filter(d => d.type == "SSOP")[0],
     setDocument: setDocumentHandler,
@@ -66141,14 +66121,14 @@ function FacilityDocs({
     updateHandler: updateDocHandler,
     deleteHandler: deleteDocHandler,
     dateChangeHandler: changeDateHandler,
-    divider: true,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 219,
-      columnNumber: 11
+      lineNumber: 205,
+      columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    documentType: "facility",
     fileTypeName: "Recall Plan",
     document: docs.filter(d => d.type == "RECALL_PLAN")[0],
     setDocument: setDocumentHandler,
@@ -66156,14 +66136,14 @@ function FacilityDocs({
     updateHandler: updateDocHandler,
     deleteHandler: deleteDocHandler,
     dateChangeHandler: changeDateHandler,
-    divider: true,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 231,
-      columnNumber: 11
+      lineNumber: 217,
+      columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    documentType: "facility",
     fileTypeName: "Pest Control",
     document: docs.filter(d => d.type == "PEST_CONTROL")[0],
     setDocument: setDocumentHandler,
@@ -66171,14 +66151,14 @@ function FacilityDocs({
     updateHandler: updateDocHandler,
     deleteHandler: deleteDocHandler,
     dateChangeHandler: changeDateHandler,
-    divider: true,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 247,
-      columnNumber: 11
+      lineNumber: 233,
+      columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    documentType: "facility",
     fileTypeName: "Inspection Sheet",
     document: docs.filter(d => d.type == "INSPECTION_SHEET")[0],
     setDocument: setDocumentHandler,
@@ -66186,14 +66166,14 @@ function FacilityDocs({
     updateHandler: updateDocHandler,
     deleteHandler: deleteDocHandler,
     dateChangeHandler: changeDateHandler,
-    divider: true,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 263,
-      columnNumber: 11
+      lineNumber: 249,
+      columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    documentType: "facility",
     fileTypeName: "Halal Integrity Program (HIP)",
     document: docs.filter(d => d.type == "HIP")[0],
     setDocument: setDocumentHandler,
@@ -66201,14 +66181,14 @@ function FacilityDocs({
     updateHandler: updateDocHandler,
     deleteHandler: deleteDocHandler,
     dateChangeHandler: changeDateHandler,
-    divider: true,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 279,
-      columnNumber: 11
+      lineNumber: 265,
+      columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    documentType: "facility",
     fileTypeName: "Water Report",
     document: docs.filter(d => d.type == "WATER_REPORT")[0],
     setDocument: setDocumentHandler,
@@ -66220,10 +66200,10 @@ function FacilityDocs({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 291,
-      columnNumber: 11
+      lineNumber: 277,
+      columnNumber: 9
     }
-  }))));
+  })));
 }
 
 _s(FacilityDocs, "4tBsjWqY7xCp7qlQhCB1s/bzrNk=", false, function () {
@@ -66330,7 +66310,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
 /* harmony import */ var _FacilityDocs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./FacilityDocs */ "./src/views/reviewer/requests/review/FacilityDocs.tsx");
-/* harmony import */ var _common_LoadingButton__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../common/LoadingButton */ "./src/views/reviewer/common/LoadingButton.tsx");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
@@ -66342,7 +66321,6 @@ var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchwor
 
  // import { FacilityDialogMode } from "../../clients/client/FacilityDialog";
 // import FacilityDetails from "../../clients/client/FacilityDetails";
-
 
 
 function FacilityView({
@@ -66361,7 +66339,7 @@ function FacilityView({
       setLoading(false);
 
       if (response.status == 200 || response.status == 201) {
-        console.log(response.data);
+        // console.log(response.data);
         setValues(response.data);
       } else {
         console.log(response);
@@ -66403,77 +66381,38 @@ function FacilityView({
     });
   };
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
-    p: 3,
-    style: {
-      height: "calc(100vh - 284px)",
-      display: "flex",
-      justifyContent: "center",
-      overflow: "hidden"
-    },
+  return loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CircularProgress"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85,
+      columnNumber: 17
+    }
+  }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FacilityDocs__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    facilityId: facilityId // style={{ maxHeight: "calc(100vh - 328px)" }}
+    ,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 86,
       columnNumber: 7
     }
-  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CircularProgress"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 95,
-      columnNumber: 22
-    }
-  }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
-    container: true,
-    spacing: 3,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96,
-      columnNumber: 11
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FacilityDocs__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    facilityId: facilityId,
-    style: {
-      maxHeight: "calc(100vh - 328px)"
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 105,
-      columnNumber: 13
-    }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Divider"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 113,
-      columnNumber: 7
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
-    display: "flex",
-    p: 2,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 114,
-      columnNumber: 7
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_LoadingButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    loading: updatingFacility,
-    done: false,
-    onClick: handleFacilityUpdate,
-    variant: "contained",
-    color: "secondary",
-    loadingText: "Updating...",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 115,
-      columnNumber: 9
-    }
-  }, "Update")));
+  }) // <Grid container spacing={3}>
+  //   {/* <Grid item md={6}>
+  //         <FacilityDetails
+  //           mode={FacilityDialogMode.EDIT}
+  //           values={values}
+  //           setValues={setValues}
+  //         />
+  //       </Grid>
+  //       <Grid item md={6}> */}
+  //   <FacilityDocs
+  //     facilityId={facilityId}
+  //     // style={{ maxHeight: "calc(100vh - 328px)" }}
+  //   />
+  //   {/* </Grid> */}
+  // </Grid>
+  ;
 }
 
 _s(FacilityView, "Q4Ycm1Qz2SJ7WESdcbY9gvwCeKI=", false, function () {
@@ -66576,29 +66515,764 @@ if (true) {
 
 /***/ }),
 
-/***/ "./src/views/reviewer/requests/review/ProductsView.tsx":
-/*!*************************************************************!*\
-  !*** ./src/views/reviewer/requests/review/ProductsView.tsx ***!
-  \*************************************************************/
+/***/ "./src/views/reviewer/requests/review/IngredientsView.tsx":
+/*!****************************************************************!*\
+  !*** ./src/views/reviewer/requests/review/IngredientsView.tsx ***!
+  \****************************************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProductsView; });
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return IngredientsView; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
-/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
-/* harmony import */ var _common_LoadingButton__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../common/LoadingButton */ "./src/views/reviewer/common/LoadingButton.tsx");
-/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../config */ "./src/config.ts");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var _material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/CircularProgress */ "./node_modules/@material-ui/core/esm/CircularProgress/index.js");
+/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/MoreVert */ "./node_modules/@material-ui/icons/MoreVert.js");
+/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_icons_FiberManualRecord__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/FiberManualRecord */ "./node_modules/@material-ui/icons/FiberManualRecord.js");
+/* harmony import */ var _material_ui_icons_FiberManualRecord__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_FiberManualRecord__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _material_ui_icons_SaveOutlined__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/SaveOutlined */ "./node_modules/@material-ui/icons/SaveOutlined.js");
+/* harmony import */ var _material_ui_icons_SaveOutlined__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_SaveOutlined__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_icons_DeleteForever__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/DeleteForever */ "./node_modules/@material-ui/icons/DeleteForever.js");
+/* harmony import */ var _material_ui_icons_DeleteForever__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_DeleteForever__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _reviewer_common_utils__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../reviewer/common/utils */ "./src/views/reviewer/common/utils.ts");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ProductsView.tsx",
+var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\IngredientsView.tsx",
+    _s = __webpack_require__.$Refresh$.signature(),
+    _s2 = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+
+
+
+
+
+// @TODO handle avatar
+function IngredientsView({
+  reviewRequest
+}) {
+  _s();
+
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    enqueueSnackbar
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
+  const [ingredients, setIngredients] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    setLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/review-request/${reviewRequest.id}/ingredients`).then(async response => {
+      setLoading(false);
+
+      if (response.status == 200 || response.status == 201) {
+        console.log(response.data);
+        setIngredients(response.data);
+      } else {
+        console.log(response);
+        enqueueSnackbar("Failed to retrieve ingredients.", {
+          variant: "error"
+        });
+      }
+    }).catch(e => {
+      console.error(e);
+      setLoading(false);
+      enqueueSnackbar("Failed to retrieve ingredients.", {
+        variant: "error"
+      });
+    });
+  }, []);
+
+  const handleIngredientAdd = ingredient => {
+    setIngredients([ingredient, ...ingredients]);
+  };
+
+  const handleIngredientUpdate = (ingredient, i) => {
+    const newIngredients = Object(_reviewer_common_utils__WEBPACK_IMPORTED_MODULE_9__["insert"])(ingredients, i, ingredient);
+    setIngredients(newIngredients);
+  };
+
+  const handleIngredientDelete = ingredientId => {
+    const answer = window.confirm("Are you sure you would like to delete this ingredient from your request? Warning: this will delete all associated ingredients as well.");
+    if (!answer) return;
+    setLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete(`/api/client/ingredient/${ingredientId}`).then(async response => {
+      if (response.status == 200 || response.status == 201) {
+        setIngredients(ingredients.filter(p => p.id != ingredientId));
+        enqueueSnackbar("Ingredient deleted successfully.", {
+          variant: "success"
+        });
+      } else {
+        console.log(response);
+        enqueueSnackbar("Failed to delete ingredient.", {
+          variant: "error"
+        });
+      }
+
+      setLoading(false);
+    }).catch(e => {
+      console.error(e);
+      setLoading(false);
+      enqueueSnackbar("Failed to delete ingredient.", {
+        variant: "error"
+      });
+    });
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 111,
+      columnNumber: 20
+    }
+  }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Table"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 112,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableHead"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 113,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableRow"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115,
+      columnNumber: 15
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117,
+      columnNumber: 17
+    }
+  }, "Name")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 120,
+      columnNumber: 17
+    }
+  }, "Recommendation")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123,
+      columnNumber: 17
+    }
+  }, "Source")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 17
+    }
+  }, "Description")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 142,
+      columnNumber: 15
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableBody"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 145,
+      columnNumber: 11
+    }
+  }, ingredients.map(ingredient => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IngredientItem, {
+    ingredient: ingredient,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 147,
+      columnNumber: 15
+    }
+  })))));
+}
+
+_s(IngredientsView, "ijAYDrbRO7reNUnJimzf8MFtFNY=", false, function () {
+  return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
+});
+
+_c = IngredientsView;
+
+function IngredientItem({
+  ingredient
+}) {
+  _s2();
+
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    enqueueSnackbar
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
+  const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
+  const [ingredientRecom, setIngredientRecom] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(ingredient.recommendation);
+  const [ingredientSrc, setIngredientSrc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(ingredient.source);
+  const [ingredientDesc, setIngredientDesc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(ingredient.description);
+
+  const handleRecomChange = e => {
+    setLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/ingredient/${ingredient.id}/recommendation`, {
+      recommendation: e.target.value
+    }).then(async response => {
+      setLoading(false);
+
+      if (response.status == 200 || response.status == 201) {
+        setIngredientRecom(e.target.value);
+        enqueueSnackbar("Ingredient recommendation updated successfully.", {
+          variant: "success"
+        });
+      } else {
+        console.log(response);
+        enqueueSnackbar("Failed to update ingredient recommendation.", {
+          variant: "error"
+        });
+      }
+    }).catch(e => {
+      console.error(e);
+      setLoading(false);
+      enqueueSnackbar("Failed to update ingredient recommendation.", {
+        variant: "error"
+      });
+    });
+  };
+
+  const handleSrcChange = e => {
+    setLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/ingredient/${ingredient.id}/source`, {
+      source: e.target.value
+    }).then(async response => {
+      setLoading(false);
+
+      if (response.status == 200 || response.status == 201) {
+        setIngredientSrc(e.target.value);
+        enqueueSnackbar("Ingredient source updated successfully.", {
+          variant: "success"
+        });
+      } else {
+        console.log(response);
+        enqueueSnackbar("Failed to update ingredient source.", {
+          variant: "error"
+        });
+      }
+    }).catch(e => {
+      console.error(e);
+      setLoading(false);
+      enqueueSnackbar("Failed to update ingredient source.", {
+        variant: "error"
+      });
+    });
+  };
+
+  const handleClick = event => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const updateDescription = id => {
+    setLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/ingredient/${id}/description`, {
+      description: ingredientDesc
+    }).then(async response => {
+      setLoading(false);
+
+      if (response.status == 200 || response.status == 201) {
+        enqueueSnackbar("Ingredient description saved successfully.", {
+          variant: "success"
+        });
+      } else enqueueSnackbar("Failed to save ingredient description. Contact the reviewer.", {
+        variant: "error"
+      });
+    }).catch(e => {
+      console.error(e);
+      setLoading(false);
+      enqueueSnackbar("Failed to save ingredient description. Check your network connection and try again.", {
+        variant: "error"
+      });
+    });
+    setAnchorEl(null);
+  };
+
+  const handleIngredientDelete = () => {
+    const answer = window.confirm("Are you sure you would like to delete this ingredient?");
+    if (!answer) return;
+    setLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/ingredient/" + ingredient.id).then(async response => {
+      setLoading(false);
+
+      if (response.status == 200 || response.status == 201) {
+        // onIngredientDelete(ingredient.id as number);
+        enqueueSnackbar("Ingredient deleted successfully.", {
+          variant: "success"
+        });
+      } else enqueueSnackbar("Failed to delete ingredient. Contact the developer.", {
+        variant: "error"
+      });
+    }).catch(e => {
+      console.error(e);
+      setLoading(false);
+      enqueueSnackbar("Failed to delete ingredient. Check your network connection and try again.", {
+        variant: "error"
+      });
+    });
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableRow"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 306,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 307,
+      columnNumber: 7
+    }
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    style: {
+      width: 24,
+      height: 24
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 309,
+      columnNumber: 11
+    }
+  }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_FiberManualRecord__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 310,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 312,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 313,
+      columnNumber: 9
+    }
+  }, ingredient.name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 315,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Select"], {
+    value: ingredientRecom,
+    onChange: handleRecomChange,
+    displayEmpty: true,
+    fullWidth: true,
+    variant: "outlined",
+    autoWidth: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 316,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
+    value: "HALAL_ASLAN",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 324,
+      columnNumber: 11
+    }
+  }, "HALAL ASLAN"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
+    value: "MASHBUH",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 325,
+      columnNumber: 11
+    }
+  }, "MASHBUH"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
+    value: "HARAM",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 326,
+      columnNumber: 11
+    }
+  }, "HARAM"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 329,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Select"], {
+    value: ingredientSrc,
+    onChange: handleSrcChange,
+    displayEmpty: true,
+    fullWidth: true,
+    variant: "outlined",
+    autoWidth: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 330,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
+    value: "ANIMAL",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 338,
+      columnNumber: 11
+    }
+  }, "ANIMAL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
+    value: "PLANT",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 339,
+      columnNumber: 11
+    }
+  }, "PLANT"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
+    value: "SYNTHETIC",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 340,
+      columnNumber: 11
+    }
+  }, "SYNTHETIC"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
+    value: "MINERAL",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 341,
+      columnNumber: 11
+    }
+  }, "MINERAL"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
+    value: "GAS",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 342,
+      columnNumber: 11
+    }
+  }, "GAS"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 345,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
+    fullWidth: true,
+    onChange: e => setIngredientDesc(e.target.value),
+    value: ingredientDesc,
+    variant: "outlined",
+    multiline: true,
+    style: {
+      width: 250
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 346,
+      columnNumber: 9
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 355,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
+    edge: "end",
+    size: "small",
+    "aria-controls": "simple-menu",
+    "aria-haspopup": "true",
+    onClick: handleClick,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 356,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 363,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Menu"], {
+    id: "simple-menu",
+    anchorEl: anchorEl,
+    keepMounted: true,
+    open: Boolean(anchorEl),
+    onClose: () => setAnchorEl(null),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 365,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
+    onClick: () => updateDescription(ingredient.id),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 372,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_SaveOutlined__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 373,
+      columnNumber: 13
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
+    variant: "inherit",
+    style: {
+      marginLeft: 10
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 374,
+      columnNumber: 13
+    }
+  }, "Save Description")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
+    onClick: handleIngredientDelete,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 378,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_DeleteForever__WEBPACK_IMPORTED_MODULE_8___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 379,
+      columnNumber: 13
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
+    variant: "inherit",
+    style: {
+      marginLeft: 10
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 380,
+      columnNumber: 13
+    }
+  }, "Delete Ingredient")))));
+}
+
+_s2(IngredientItem, "twPn+c2GLFflYL5qqSGAR4kqVXg=", false, function () {
+  return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
+});
+
+_c2 = IngredientItem;
+const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
+  stepBox: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center" // alignItems: "center",
+
+  },
+  stepBtn: {
+    width: 500
+  },
+  root: {},
+  demo: {
+    backgroundColor: theme.palette.background.paper
+  },
+  title: {
+    margin: theme.spacing(4, 0, 2)
+  },
+  nested: {
+    paddingLeft: theme.spacing(4)
+  }
+}));
+
+function sleep(time) {
+  return new Promise(resolve => setTimeout(resolve, time));
+}
+
+var _c, _c2;
+
+__webpack_require__.$Refresh$.register(_c, "IngredientsView");
+__webpack_require__.$Refresh$.register(_c2, "IngredientItem");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/reviewer/requests/review/ManufacturerDocs.tsx":
+/*!*****************************************************************!*\
+  !*** ./src/views/reviewer/requests/review/ManufacturerDocs.tsx ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ManufacturerDocs; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var _common_types__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../common/types */ "./src/views/reviewer/common/types.ts");
+/* harmony import */ var _common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../common/UploadDocumentTableRow */ "./src/views/reviewer/common/UploadDocumentTableRow.tsx");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ManufacturerDocs.tsx",
     _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -66608,168 +67282,1242 @@ var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchwor
 
 
 
-function ProductsView() {
+function ManufacturerDocs({
+  manufacturer,
+  style = {}
+}) {
   _s();
 
-  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
-  const {
-    id
-  } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // reviewRequestId
-
-  const [reports, setReports] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/review-request/${id}/audit-reports`).then(async response => {
-      setLoading(false);
-      console.log(response.data);
-      setReports(response.data);
-    }).catch(e => {
-      // @TODO handle
-      console.error(e);
-      setLoading(false);
-    });
-  }, []); // file related
-
-  const [docUploadLoading, setDocUploadLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
-  const [doc, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
-  const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  const documentCopy = document && Object.assign({}, document) || null;
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(manufacturer === null || manufacturer === void 0 ? void 0 : manufacturer.documents);
 
-  const handleDocumentUploadButton = () => {
-    // @ts-ignore
-    if (inputRef) inputRef.current.click();
+  const setDocumentHandler = document => {
+    setDocs([...docs, document]);
+    console.log(docs);
   };
 
-  const handleDocumentUpload = e => {
-    const _doc = e.target.files[0];
-    if (!_doc) return;
-
-    if (_doc.size > _config__WEBPACK_IMPORTED_MODULE_6__["MAX_ALLOWED_SIZE"]) {
-      alert("File exceeds the maximum allowed size of 10 MB.");
-      return;
-    }
-
-    setDocUploadLoading(true);
+  const uploadDocHandler = (doc, docType, expiresAt) => {
     const formData = new FormData();
-    formData.append("document", _doc);
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/review-request/${id}/audit-report`, formData, {
+    formData.append("document", doc);
+    formData.append("type", docType.toString());
+    formData.append("expires_at", moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss"));
+    return axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/manufacturer/${manufacturer.id}/document`, formData, {
       headers: {
         "Content-Type": "multipart/form-data"
       }
-    }).then(async response => {
-      setDocUploadLoading(false);
+    });
+  };
+
+  const updateDocHandler = (doc, documentId) => {
+    const formData = new FormData();
+    formData.append("document", doc);
+    return axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/facility/document/${documentId}`, formData, {
+      headers: {
+        "Content-Type": "multipart/form-data"
+      }
+    });
+  };
+
+  const deleteDocHandler = documentId => {
+    setDocs(docs.filter(d => d.id !== documentId));
+    return axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/manufacturer/document/" + documentId);
+  };
+
+  const changeDateHandler = (documentId, expiresAt) => {
+    const _docs = docs.map(d => {
+      if (d.id !== documentId) return d;
+      d.expires_at = moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss");
+      return d;
+    });
+
+    setDocs(_docs);
+    return axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/manufacturer/document/${documentId}/expires-at`, {
+      expires_at: moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss")
+    });
+  };
+
+  if (loading) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 104,
+      columnNumber: 23
+    }
+  });
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, docs.map(d => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    nameField: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 121,
+        columnNumber: 22
+      }
+    }, manufacturer.name),
+    documentType: "manufacturer",
+    fileTypeName: "Certificate or Disclosure",
+    document: d,
+    setDocument: setDocumentHandler,
+    uploadHandler: (doc, selectedDate) => uploadDocHandler(doc, _common_types__WEBPACK_IMPORTED_MODULE_5__["ManufacturerDocumentType"].CERTIFICATE_OR_DISCLOSURE, selectedDate),
+    updateHandler: updateDocHandler,
+    deleteHandler: deleteDocHandler,
+    dateChangeHandler: changeDateHandler,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 120,
+      columnNumber: 9
+    }
+  })));
+}
+
+_s(ManufacturerDocs, "m2F1fTjdZj0KFHbeKxXO4aDA1VQ=", false, function () {
+  return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
+});
+
+_c = ManufacturerDocs;
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "ManufacturerDocs");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/reviewer/requests/review/ManufacturersView.tsx":
+/*!******************************************************************!*\
+  !*** ./src/views/reviewer/requests/review/ManufacturersView.tsx ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ManufacturersView; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var _material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/CircularProgress */ "./node_modules/@material-ui/core/esm/CircularProgress/index.js");
+/* harmony import */ var _reviewer_common_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../reviewer/common/utils */ "./src/views/reviewer/common/utils.ts");
+/* harmony import */ var _ManufacturerDocs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ManufacturerDocs */ "./src/views/reviewer/requests/review/ManufacturerDocs.tsx");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ManufacturersView.tsx",
+    _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+
+
+// @TODO handle avatar
+function ManufacturersView({
+  reviewRequest
+}) {
+  _s();
+
+  const classes = useStyles();
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    enqueueSnackbar
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
+  const [manufacturers, setManufacturers] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  const [promptOpen, setPromptOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    getManufacturers();
+    console.log(manufacturers);
+  }, []);
+
+  const getManufacturers = () => {
+    setLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/review-request/${reviewRequest.id}/manufacturers`).then(async response => {
+      setLoading(false);
 
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
-        // setDoc(response.data);
-        // setDocument(response.data);
-        setDoc(response.data);
-        setReports([response.data, ...reports]);
-        enqueueSnackbar(`Uploaded audit report successfully.`, {
-          variant: "success"
-        });
+        setManufacturers(response.data);
       } else {
         console.log(response);
-        enqueueSnackbar(`Audit report upload failed.`, {
+        enqueueSnackbar("Failed to retrieve manufacturers.", {
           variant: "error"
         });
       }
     }).catch(e => {
       console.error(e);
-      setDocUploadLoading(false);
-      enqueueSnackbar(`Product spec sheet upload failed.`, {
+      setLoading(false);
+      enqueueSnackbar("Failed to retrieve manufacturers.", {
         variant: "error"
       });
     });
   };
 
-  const handleReportDelete = id => {
-    setReports(reports.filter(r => r.id != id));
+  const handleManufacturerAdd = product => {
+    setManufacturers([product, ...manufacturers]);
   };
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
-    p: 3,
-    style: {
-      height: "calc(100vh - 284px)",
-      display: "flex",
-      justifyContent: "center"
-    },
+  const handleManufacturerUpdate = (product, i) => {
+    const newManufacturers = Object(_reviewer_common_utils__WEBPACK_IMPORTED_MODULE_5__["insert"])(manufacturers, i, product);
+    setManufacturers(newManufacturers);
+  };
+
+  const handleManufacturerDelete = productId => {
+    const answer = window.confirm("Are you sure you would like to delete this product from your request? Warning: this will delete all associated manufacturers as well.");
+    if (!answer) return;
+    setLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete(`/api/client/product/${productId}`).then(async response => {
+      if (response.status == 200 || response.status == 201) {
+        setManufacturers(manufacturers.filter(p => p.id != productId));
+        enqueueSnackbar("Manufacturer deleted successfully.", {
+          variant: "success"
+        });
+      } else {
+        console.log(response);
+        enqueueSnackbar("Failed to delete product.", {
+          variant: "error"
+        });
+      }
+
+      setLoading(false);
+    }).catch(e => {
+      console.error(e);
+      setLoading(false);
+      enqueueSnackbar("Failed to delete product.", {
+        variant: "error"
+      });
+    });
+  };
+
+  console.log(manufacturers);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 133,
+      columnNumber: 20
+    }
+  }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Table"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableHead"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableRow"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 136,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 137,
+      columnNumber: 15
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 138,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 139,
+      columnNumber: 17
+    }
+  }, "Manufacturer")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 141,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 142,
+      columnNumber: 17
+    }
+  }, "Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 144,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 145,
+      columnNumber: 17
+    }
+  }, "Expiration Date")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 147,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 148,
+      columnNumber: 17
+    }
+  }, "Status")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 150,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 151,
+      columnNumber: 17
+    }
+  }, "Note")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 167,
+      columnNumber: 15
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableBody"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 170,
+      columnNumber: 11
+    }
+  }, manufacturers.map(m => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ManufacturerDocs__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    manufacturer: m,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 172,
+      columnNumber: 15
+    }
+  })))));
+}
+
+_s(ManufacturersView, "TUQ+s5kGYHJsPvgNBFexy1406Wg=", false, function () {
+  return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
+});
+
+_c = ManufacturersView;
+const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
+  stepBox: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center" // alignItems: "center",
+
+  },
+  stepBtn: {
+    width: 500
+  },
+  root: {},
+  demo: {
+    backgroundColor: theme.palette.background.paper
+  },
+  title: {
+    margin: theme.spacing(4, 0, 2)
+  },
+  nested: {
+    paddingLeft: theme.spacing(4)
+  }
+}));
+
+function sleep(time) {
+  return new Promise(resolve => setTimeout(resolve, time));
+}
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "ManufacturersView");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/reviewer/requests/review/ProductDocs.tsx":
+/*!************************************************************!*\
+  !*** ./src/views/reviewer/requests/review/ProductDocs.tsx ***!
+  \************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProductDocs; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var _common_types__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../common/types */ "./src/views/reviewer/common/types.ts");
+/* harmony import */ var _common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../common/UploadDocumentTableRow */ "./src/views/reviewer/common/UploadDocumentTableRow.tsx");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ProductDocs.tsx",
+    _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+
+function ProductDocs({
+  products,
+  style = {}
+}) {
+  _s();
+
+  const {
+    enqueueSnackbar
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(products.map(p => p.documents[0]));
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    console.log(products);
+    console.log(docs);
+  }, []);
+
+  const setDocumentHandler = document => {
+    setDocs([...docs, document]);
+    console.log(docs);
+  };
+
+  const uploadDocHandler = (productId, doc, docType, expiresAt) => {
+    const formData = new FormData();
+    formData.append("document", doc);
+    formData.append("type", docType.toString());
+    formData.append("expires_at", moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss"));
+    return axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/product/${productId}/document`, formData, {
+      headers: {
+        "Content-Type": "multipart/form-data"
+      }
+    });
+  };
+
+  const updateDocHandler = (doc, documentId) => {
+    const formData = new FormData();
+    formData.append("document", doc);
+    return axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/product/document/${documentId}`, formData, {
+      headers: {
+        "Content-Type": "multipart/form-data"
+      }
+    });
+  };
+
+  const deleteDocHandler = documentId => {
+    setDocs(docs.filter(d => d && d.id !== documentId));
+    return axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/product/document/" + documentId);
+  };
+
+  const changeDateHandler = (documentId, expiresAt) => {
+    const _docs = docs.map(d => {
+      if (!d || d.id !== documentId) return d;
+      d.expires_at = moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss");
+      return d;
+    });
+
+    setDocs(_docs);
+    return axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/product/document/${documentId}/expires-at`, {
+      expires_at: moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss")
+    });
+  };
+
+  if (loading) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103,
+      columnNumber: 23
+    }
+  });
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Table"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 106,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableHead"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 107,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 108,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 110,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 111,
+      columnNumber: 13
+    }
+  }, "Name")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 113,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114,
+      columnNumber: 13
+    }
+  }, "Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 117,
-      columnNumber: 7
+      columnNumber: 13
     }
-  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
+  }, "Expiration Date")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 120,
+      columnNumber: 13
+    }
+  }, "Status")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123,
+      columnNumber: 13
+    }
+  }, "Note")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 125,
-      columnNumber: 21
+      columnNumber: 11
     }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 127,
-      columnNumber: 7
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
-    display: "flex",
-    justifyContent: "flex-end",
-    p: 2,
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableBody"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 128,
       columnNumber: 7
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
-    ref: inputRef,
-    type: "file",
-    name: "file",
-    id: Math.random().toString(),
-    accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
-    // data-multiple-caption="{count} files selected"
-    ,
-    onChange: handleDocumentUpload,
-    style: {
-      display: "none"
-    },
+  }, products && products.map((product, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    nameField: product.name,
+    documentType: "product",
+    fileTypeName: "Spec Sheet",
+    document: docs[i],
+    setDocument: setDocumentHandler,
+    uploadHandler: (doc, selectedDate) => uploadDocHandler(product.id, doc, _common_types__WEBPACK_IMPORTED_MODULE_5__["ProductDocumentType"].SPEC_SHEETS, selectedDate),
+    updateHandler: updateDocHandler,
+    deleteHandler: deleteDocHandler,
+    dateChangeHandler: changeDateHandler,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129,
-      columnNumber: 9
+      lineNumber: 131,
+      columnNumber: 13
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_LoadingButton__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    loading: docUploadLoading,
-    done: false,
-    onClick: handleDocumentUploadButton // startIcon={<AddIcon />}
-    ,
-    variant: "contained",
-    disabled: true,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 141,
-      columnNumber: 9
-    }
-  }, "Update")));
+  }))));
 }
 
-_s(ProductsView, "zHlaEeEJxUwX9qtBq1VfImq2zDg=", false, function () {
-  return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
+_s(ProductDocs, "5unu7OZguMWQA8Se57bG2Mo8AXk=", false, function () {
+  return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
+});
+
+_c = ProductDocs;
+
+var _c;
+
+__webpack_require__.$Refresh$.register(_c, "ProductDocs");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/reviewer/requests/review/ProductsView.tsx":
+/*!*************************************************************!*\
+  !*** ./src/views/reviewer/requests/review/ProductsView.tsx ***!
+  \*************************************************************/
+/*! exports provided: default, ProductItem */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProductsView; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductItem", function() { return ProductItem; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var _material_ui_core_List__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/List */ "./node_modules/@material-ui/core/esm/List/index.js");
+/* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/ListItem */ "./node_modules/@material-ui/core/esm/ListItem/index.js");
+/* harmony import */ var _material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/ListItemIcon */ "./node_modules/@material-ui/core/esm/ListItemIcon/index.js");
+/* harmony import */ var _material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/ListItemText */ "./node_modules/@material-ui/core/esm/ListItemText/index.js");
+/* harmony import */ var _material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Collapse */ "./node_modules/@material-ui/core/esm/Collapse/index.js");
+/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Divider */ "./node_modules/@material-ui/core/esm/Divider/index.js");
+/* harmony import */ var _material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/CircularProgress */ "./node_modules/@material-ui/core/esm/CircularProgress/index.js");
+/* harmony import */ var _material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/ExpandLess */ "./node_modules/@material-ui/icons/ExpandLess.js");
+/* harmony import */ var _material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons/ExpandMore */ "./node_modules/@material-ui/icons/ExpandMore.js");
+/* harmony import */ var _material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/icons/MoreVert */ "./node_modules/@material-ui/icons/MoreVert.js");
+/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
+/* harmony import */ var _client_requests_request_ProductDialog__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../client/requests/request/ProductDialog */ "./src/views/client/requests/request/ProductDialog.tsx");
+/* harmony import */ var _reviewer_common_utils__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../../reviewer/common/utils */ "./src/views/reviewer/common/utils.ts");
+/* harmony import */ var _client_requests_request_IngredientsView__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../client/requests/request/IngredientsView */ "./src/views/client/requests/request/IngredientsView.tsx");
+/* harmony import */ var _ProductDocs__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./ProductDocs */ "./src/views/reviewer/requests/review/ProductDocs.tsx");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ProductsView.tsx",
+    _s = __webpack_require__.$Refresh$.signature(),
+    _s2 = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// @TODO handle avatar
+function ProductsView({
+  reviewRequest
+}) {
+  _s();
+
+  const classes = useStyles();
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    enqueueSnackbar
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
+  const [products, setProducts] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  const [promptOpen, setPromptOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    getProducts();
+    console.log(products);
+  }, []);
+
+  const getProducts = () => {
+    setLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/review-request/${reviewRequest.id}/products/docs`).then(async response => {
+      setLoading(false);
+
+      if (response.status == 200 || response.status == 201) {
+        // console.log(response.data);
+        setProducts(response.data);
+      } else {
+        console.log(response);
+        enqueueSnackbar("Failed to retrieve products.", {
+          variant: "error"
+        });
+      }
+    }).catch(e => {
+      console.error(e);
+      setLoading(false);
+      enqueueSnackbar("Failed to retrieve products.", {
+        variant: "error"
+      });
+    });
+  };
+
+  const handleProductAdd = product => {
+    setProducts([product, ...products]);
+  };
+
+  const handleProductUpdate = (product, i) => {
+    const newProducts = Object(_reviewer_common_utils__WEBPACK_IMPORTED_MODULE_16__["insert"])(products, i, product);
+    setProducts(newProducts);
+  };
+
+  const handleProductDelete = productId => {
+    const answer = window.confirm("Are you sure you would like to delete this product from your request? Warning: this will delete all associated ingredients as well.");
+    if (!answer) return;
+    setLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete(`/api/client/product/${productId}`).then(async response => {
+      if (response.status == 200 || response.status == 201) {
+        setProducts(products.filter(p => p.id != productId));
+        enqueueSnackbar("Product deleted successfully.", {
+          variant: "success"
+        });
+      } else {
+        console.log(response);
+        enqueueSnackbar("Failed to delete product.", {
+          variant: "error"
+        });
+      }
+
+      setLoading(false);
+    }).catch(e => {
+      console.error(e);
+      setLoading(false);
+      enqueueSnackbar("Failed to delete product.", {
+        variant: "error"
+      });
+    });
+  };
+
+  console.log(products);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134,
+      columnNumber: 20
+    }
+  }) || products.length && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductDocs__WEBPACK_IMPORTED_MODULE_18__["default"], {
+    products: products,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135,
+      columnNumber: 29
+    }
+  }));
+}
+
+_s(ProductsView, "eoZ39Q2wo4MFiPGMVcysDaGxZV0=", false, function () {
+  return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
 
 _c = ProductsView;
 
-var _c;
+function getSome(array, some) {
+  return array.sort(() => Math.random() - Math.random()).slice(0, some);
+}
+
+function ProductItem({
+  product,
+  onUpdate,
+  onDelete
+}) {
+  _s2();
+
+  const [open, setOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const [editOpen, setEditOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const [specSheet, setSpecSheet] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const [ingredients, setIngredients] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  const {
+    enqueueSnackbar
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
+
+  const handleClick = () => {
+    setOpen(!open);
+  };
+
+  const handleIngredientAdd = ingredient => {
+    setIngredients([ingredient, ...ingredients]);
+    setOpen(true); // cause refresh
+    // setOpen(!open);
+  }; // @TODO make real
+
+
+  const uploadSpecSheet = () => {
+    sleep(2000).then(() => {
+      setSpecSheet(!specSheet);
+      if (!specSheet) enqueueSnackbar("Product Spec Sheet uploaded successfully", {
+        variant: "success"
+      });
+    });
+  };
+
+  const handleProductItemClick = e => {
+    // console.log(e);
+    // if (e.target.className.baseVal === "product-item-icon") setEditOpen(true);
+    if (e.target.className === "MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button") setEditOpen(true);
+    if (e.target.className === "MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock") setEditOpen(true);
+  };
+
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_5__["default"] // button
+
+  /*onClick={handleProductItemClick}*/
+  , {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 196,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 200,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_14__["ShoppingBag"], {
+    className: "product-item-icon",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 201,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    primary: product.name,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 203,
+      columnNumber: 9
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    primary: product.name,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 204,
+      columnNumber: 9
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    primary: product.name,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 205,
+      columnNumber: 9
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
+    onClick: handleClick,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 226,
+      columnNumber: 9
+    }
+  }, open ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_11___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 227,
+      columnNumber: 19
+    }
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_12___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 227,
+      columnNumber: 36
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
+    edge: "end",
+    size: "small",
+    "aria-controls": "simple-menu",
+    "aria-haspopup": "true" // onClick={handleClick}
+    ,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 229,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_13___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 236,
+      columnNumber: 11
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    in: open,
+    timeout: "auto",
+    unmountOnExit: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 239,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    component: "div",
+    disablePadding: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 240,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_client_requests_request_IngredientsView__WEBPACK_IMPORTED_MODULE_17__["default"], {
+    ingredients: ingredients,
+    setIngredients: setIngredients,
+    productId: product.id,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 241,
+      columnNumber: 11
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_client_requests_request_ProductDialog__WEBPACK_IMPORTED_MODULE_15__["default"], {
+    mode: _client_requests_request_ProductDialog__WEBPACK_IMPORTED_MODULE_15__["ProductDialogMode"].EDIT,
+    open: editOpen,
+    edit: product,
+    onClose: () => setEditOpen(false),
+    onProductUpdate: onUpdate,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 248,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 255,
+      columnNumber: 7
+    }
+  }));
+}
+
+_s2(ProductItem, "RqeKCkudCRPvwiEpf41gkbxPlFU=", false, function () {
+  return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
+});
+
+_c2 = ProductItem;
+const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
+  stepBox: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center" // alignItems: "center",
+
+  },
+  stepBtn: {
+    width: 500
+  },
+  root: {},
+  demo: {
+    backgroundColor: theme.palette.background.paper
+  },
+  title: {
+    margin: theme.spacing(4, 0, 2)
+  },
+  nested: {
+    paddingLeft: theme.spacing(4)
+  }
+}));
+
+function sleep(time) {
+  return new Promise(resolve => setTimeout(resolve, time));
+}
+
+var _c, _c2;
 
 __webpack_require__.$Refresh$.register(_c, "ProductsView");
+__webpack_require__.$Refresh$.register(_c2, "ProductItem");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -66867,12 +68615,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../components/Page */ "./src/components/Page.js");
 /* harmony import */ var _FacilityView__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./FacilityView */ "./src/views/reviewer/requests/review/FacilityView.tsx");
 /* harmony import */ var _ProductsView__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ProductsView */ "./src/views/reviewer/requests/review/ProductsView.tsx");
+/* harmony import */ var _IngredientsView__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./IngredientsView */ "./src/views/reviewer/requests/review/IngredientsView.tsx");
+/* harmony import */ var _ManufacturersView__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ManufacturersView */ "./src/views/reviewer/requests/review/ManufacturersView.tsx");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\index.tsx",
     _s = __webpack_require__.$Refresh$.signature(),
     _s2 = __webpack_require__.$Refresh$.signature();
+
+
 
 
 
@@ -66903,7 +68655,7 @@ function SingleReviewRequestView() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40,
+        lineNumber: 44,
         columnNumber: 5
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Container"], {
@@ -66914,7 +68666,7 @@ function SingleReviewRequestView() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41,
+        lineNumber: 45,
         columnNumber: 7
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
@@ -66923,7 +68675,7 @@ function SingleReviewRequestView() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43,
+        lineNumber: 47,
         columnNumber: 9
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
@@ -66932,14 +68684,14 @@ function SingleReviewRequestView() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45,
+        lineNumber: 49,
         columnNumber: 11
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SingleReviewRequest, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46,
+        lineNumber: 50,
         columnNumber: 13
       }
     })))))
@@ -66988,21 +68740,21 @@ function SingleReviewRequest() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 90,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Card"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 91,
       columnNumber: 7
     }
   }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["LinearProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 92,
       columnNumber: 21
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CardHeader"], {
@@ -67011,21 +68763,21 @@ function SingleReviewRequest() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 91,
+        lineNumber: 95,
         columnNumber: 13
       }
     }),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89,
+      lineNumber: 93,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94,
+      lineNumber: 98,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -67033,16 +68785,19 @@ function SingleReviewRequest() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95,
+      lineNumber: 99,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["AppBar"], {
     position: "static",
     color: "default",
+    style: {
+      position: "relative"
+    },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
+      lineNumber: 100,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tabs"], {
@@ -67056,43 +68811,73 @@ function SingleReviewRequest() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 105,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tab"], Object.assign({
-    label: "Facility Documents"
+    label: "Facility"
   }, a11yProps(0), {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 114,
       columnNumber: 15
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tab"], Object.assign({
-    label: "Products & Ingredients"
+    label: "Products"
   }, a11yProps(1), {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107,
+      lineNumber: 115,
       columnNumber: 15
     }
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tab"], Object.assign({
+    label: "Ingredients"
+  }, a11yProps(2), {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tab"], Object.assign({
+    label: "Manufacturers"
+  }, a11yProps(3), {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117,
+      columnNumber: 15
+    }
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    p: 3,
+    style: {
+      height: "calc(100vh - 284px)",
+      overflowX: "auto"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 120,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
     value: value,
     index: 0,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
-      columnNumber: 11
+      lineNumber: 127,
+      columnNumber: 13
     }
   }, reviewRequest && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FacilityView__WEBPACK_IMPORTED_MODULE_5__["default"], {
     facilityId: reviewRequest.facility_id,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112,
-      columnNumber: 15
+      lineNumber: 129,
+      columnNumber: 17
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
     value: value,
@@ -67100,17 +68885,79 @@ function SingleReviewRequest() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115,
-      columnNumber: 11
+      lineNumber: 134,
+      columnNumber: 13
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductsView__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, reviewRequest && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductsView__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    reviewRequest: reviewRequest,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116,
+      lineNumber: 135,
+      columnNumber: 33
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
+    value: value,
+    index: 2,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 137,
       columnNumber: 13
     }
-  })))));
+  }, reviewRequest && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IngredientsView__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    reviewRequest: reviewRequest,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 139,
+      columnNumber: 17
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
+    value: value,
+    index: 3,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 142,
+      columnNumber: 13
+    }
+  }, reviewRequest && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ManufacturersView__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    reviewRequest: reviewRequest,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 144,
+      columnNumber: 17
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 148,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    display: "flex",
+    p: 2,
+    justifyContent: "flex-end",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 149,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+    variant: "contained",
+    color: "secondary",
+    href: `/reviewer/clients/request/${53}/generate-report`,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 150,
+      columnNumber: 13
+    }
+  }, "Generate Report")))));
 }
 
 _s2(SingleReviewRequest, "gW2hhN//CHvLANtS1+fL4wigAeM=", false, function () {
@@ -67132,10 +68979,16 @@ function TabPanel(props) {
     id: `full-width-tabpanel-${index}`,
     "aria-labelledby": `full-width-tab-${index}`
   }, other, {
+    style: {
+      width: "100%",
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center"
+    },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135,
+      lineNumber: 175,
       columnNumber: 5
     }
   }), value === index && children);

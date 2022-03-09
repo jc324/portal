@@ -30,11 +30,33 @@ class ManufacturerController extends Controller
         $document = new ManufacturerDocument;
         $document->manufacturer_id = $manufacturer->id;
         $document->type = $request['type'];
+        $document->status = "SUBMITTED";
+        $document->note = "";
         $document->expires_at = $request['expires_at'];
         $document->path = $path;
         $document->save();
 
         return response($document, 200);
+    }
+
+    public function set_document_status(Request $request, $document_id)
+    {
+        $data = $request->only('status');
+        $document = ManufacturerDocument::findOrFail($document_id);
+        $document->status = $data['status'];
+        $document->save();
+
+        return response('', 200);
+    }
+
+    public function set_document_note(Request $request, $document_id)
+    {
+        $data = $request->only('note');
+        $document = ManufacturerDocument::findOrFail($document_id);
+        $document->note = $data['note'];
+        $document->save();
+
+        return response('', 200);
     }
 
     public function delete_document($documentId)

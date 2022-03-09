@@ -57,6 +57,34 @@ class IngredientController extends Controller
         return $ingredient->get()[0];
     }
 
+    public function set_ingredient_recommendation(Request $request, $ingredientId)
+    {
+        $ingredient = Ingredient::findOrFail($ingredientId);
+        $ingredient->update(['recommendation' => $request['recommendation']]);
+        $ingredient->save();
+
+        return response('', 200);
+    }
+
+    public function set_ingredient_source(Request $request, $ingredientId)
+    {
+        $ingredient = Ingredient::findOrFail($ingredientId);
+        $ingredient->update(['source' => $request['source']]);
+        $ingredient->save();
+
+        return response('', 200);
+    }
+
+    public function set_ingredient_description(Request $request, $ingredient_id)
+    {
+        $data = $request->only('description');
+        $ingredient = Ingredient::findOrFail($ingredient_id);
+        $ingredient->description = $data['description'];
+        $ingredient->save();
+
+        return response('', 200);
+    }
+
     public function delete_ingredient($ingredientId)
     {
         Ingredient::findOrFail($ingredientId)->delete();
