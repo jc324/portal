@@ -68950,7 +68950,7 @@ function SingleReviewRequest() {
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
     variant: "contained",
     color: "secondary",
-    href: `/reviewer/clients/request/${53}/generate-report`,
+    href: `/reviewer/clients/request/${reviewRequest ? reviewRequest.id : 0}/generate-report`,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -68988,7 +68988,7 @@ function TabPanel(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 175,
+      lineNumber: 177,
       columnNumber: 5
     }
   }), value === index && children);
