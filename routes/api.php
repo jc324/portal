@@ -41,6 +41,7 @@ Route::middleware('auth:sanctum')->post('/client/profile', [ClientController::cl
 Route::middleware('auth:sanctum')->post('/client/{id}/profile', [ClientController::class, 'get_profile']);
 Route::middleware('auth:sanctum')->put('/client/profile', [ClientController::class, 'update_current_user_profile']);
 Route::middleware('auth:sanctum')->put('/client/{id}/profile', [ClientController::class, 'update_user_profile']);
+Route::middleware('auth:sanctum')->post('/client/last-draft-submission', [ClientController::class, 'get_last_draft_submission']);
 
 // Reviewer
 Route::middleware('auth:sanctum')->put('/reviewer/register-client', [ReviewerController::class, 'register_client']);
@@ -128,6 +129,7 @@ Route::middleware('auth:sanctum')->post('/manufacturer/{id}/document', [Manufact
 Route::middleware('auth:sanctum')->post('/client/manufacturer/document/{id}/status', [ManufacturerController::class, 'set_document_status']);
 Route::middleware('auth:sanctum')->post('/client/manufacturer/document/{id}/note', [ManufacturerController::class, 'set_document_note']);
 Route::middleware('auth:sanctum')->delete('/client/manufacturer/document/{id}', [ManufacturerController::class, 'delete_document']);
+Route::middleware('auth:sanctum')->put('/client/manufacturer/document/{id}/expires-at', [ManufacturerController::class, 'update_document_expiration']);
 Route::middleware('auth:sanctum')->post('/manufacturer/document/{id}', [ManufacturerController::class, 'update_document']);
 Route::middleware('auth:sanctum')->delete('/manufacturer/document/{id}', [ManufacturerController::class, 'delete_document']);
 Route::middleware('auth:sanctum')->put('/manufacturer/document/{id}/expires-at', [ManufacturerController::class, 'update_document_expiration']);

@@ -50,6 +50,7 @@ Route::middleware('auth:sanctum')->get('/certificates/document/{id}', [Certifica
 // reviewer review request docs
 Route::middleware('auth:sanctum')->get('/reviewer/clients/request/{id}/documents', [ReviewRequestController::class, 'download_documents_by_id']);
 Route::middleware('auth:sanctum')->get('/reviewer/clients/request/{id}/generate-report', [ReviewRequestController::class, 'generate_report']);
+Route::middleware('auth:sanctum')->get('/reviewer/clients/request/{id}/send-report', [ReviewRequestController::class, 'generate_progress_report']);
 // client facility docs
 Route::middleware('auth:sanctum')->get('/client/facility/document/{id}', [FacilityController::class, 'download_document_by_id']);
 

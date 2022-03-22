@@ -165,6 +165,15 @@ class ClientController extends Controller
         response(null, 200);
     }
 
+    public function get_last_draft_submission(Request $request)
+    {
+        $client_id = Client::where('user_id', $request->user()->id)->first()->id;
+
+        $current_draft = ReviewRequest::where(['client_id' => $client_id, 'status' => 'DRAFT'])->orderBy('id', 'DESC')->first();
+
+        return $current_draft;
+    }
+
     public function update_user_profile(Request $request, $client_id)
     {
         $input = $request->only([

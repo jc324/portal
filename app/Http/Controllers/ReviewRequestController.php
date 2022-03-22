@@ -6,6 +6,7 @@ use App\Models\Certificate;
 use App\Models\Ingredient;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Parsedown;
 
 use App\Models\ReviewRequest;
 use App\Models\Profile;
@@ -369,9 +370,11 @@ class ReviewRequestController extends Controller
     public function generate_report($review_request_id)
     {
         $review_request = ReviewRequest::findOrFail($review_request_id);
+        $progress = self::get_progress($review_request_id);
         $file_name = 'document_submission_' . $review_request_id . '_report.md';
         $review_request_info = "# Document Submission " . $review_request_id . " Auto Report\n\n";
         $review_request_info .= "**SUBMISSION TYPE**: `" . $review_request->type . "`\n";
+        $review_request_info .= "**PROGRESS**: `" . floor($progress) . "%`\n";
         $review_request_info .= pp_client($review_request->client);
         $document_statuses = "\n\n";
         $ingredient_document_statuses = "\n\n";
@@ -417,6 +420,105 @@ class ReviewRequestController extends Controller
         }
 
         $content = $review_request_info . $document_statuses . $ingredient_document_statuses;
+
+        return response()->streamDownload(function () use ($content) {
+            echo $content;
+        }, $file_name);
+    }
+
+    public function get_progress($review_request_id)
+    {
+        $review_request = ReviewRequest::findOrFail($review_request_id);
+        $facility_docs = Facility::find($review_request->facility_id)->documents;
+        $facility_docs_count = $facility_docs->count();
+        $approved_facility_docs_count = 0;
+
+        foreach ($facility_docs as $doc)
+            if ($doc->status == "APPROVED") $approved_facility_docs_count++;
+
+        $facility_docs_progress = ($approved_facility_docs_count * 100) / $facility_docs_count;
+
+        if ($products = $review_request->products) {
+            $product_count = $products->count();
+            $ingredient_count = 0;
+            $approved_product_docs_count = 0;
+            $approved_ingredient_docs_count = 0;
+            $haram_ingredients = 0;
+
+            foreach ($products as $product) {
+                if ($docs = $product->documents)
+                    if (count($docs) > 0 && $docs[0]->status == "APPROVED") $approved_product_docs_count++;
+
+                if ($ingredients = $product->ingredients) {
+                    $ingredient_count += $ingredients->count();
+
+                    foreach ($ingredients as $ingredient) {
+                        if ($ingredient->recommendation == "HARAM") $haram_ingredients++;
+                        if ($manufacturer = $ingredient->manufacturer) {
+                            if ($docs = $manufacturer->documents)
+                                if (count($docs) > 0 && $docs[0]->status == "APPROVED") $approved_ingredient_docs_count++;
+                        }
+                    }
+                }
+            }
+
+            $product_docs_progress = ($approved_product_docs_count * 100) / $product_count;
+
+            // considering all
+            if ($ingredient_count > 0) {
+                $ingredients_progress = (($ingredient_count - $haram_ingredients) * 100) / $ingredient_count;
+                $ingredient_docs_progress = ($approved_ingredient_docs_count * 100) / $ingredient_count;
+
+                return ($facility_docs_progress + $product_docs_progress + $ingredients_progress + $ingredient_docs_progress) / 4;
+            }
+
+            // considering facility and products only
+            return ($facility_docs_progress + $product_docs_progress) / 2;
+        }
+
+        // considering facility only
+        return $facility_docs_progress;
+    }
+
+    public function generate_progress_report($review_request_id)
+    {
+        $review_request = ReviewRequest::findOrFail($review_request_id);
+        $file_name = 'document_submission_' . $review_request_id . '_progress_report.html';
+        $client_name = $review_request->client->hed_name;
+        $review_request_info = "Dear " . $client_name . ",\n\nBelow is your weekly document review progress report:";
+        $document_statuses = "\n\n";
+        $review_notes = "\n\n#### Document Analysis\n\n";
+
+        if ($facility = Facility::find($review_request->facility_id)) {
+            $document_statuses .= "| **Document Type** | **Status** |\n|-------------------|------------|\n";
+            foreach ($facility->documents as $doc) {
+                $document_statuses .= "| " . $doc->type . " | " . $doc->status . " |\n";
+                if (!empty($doc->note)) $review_notes .= '**' . $doc->type . '** (' . $doc->note . ")\n\n";
+            }
+        }
+
+        if ($review_request->type == 'NEW_PRODUCTS' || $review_request->type == 'NEW_FACILITY_AND_PRODUCTS') {
+            if ($products = $review_request->products) {
+                foreach ($products as $product) {
+                    if ($docs = $product->documents)
+                        if (count($docs) > 0) foreach ($docs as $doc) {
+                            if (!empty($doc->note)) $review_notes .= '**' . $product->name . ' SPEC SHEET** (' . $doc->note . ")\n\n";
+                            break;
+                        }
+
+                    foreach ($product->ingredients as $ingredient) {
+                        if ($manufacturer = $ingredient->manufacturer) {
+                            if ($docs = $manufacturer->documents)
+                                if (count($docs) > 0 && !empty($docs[0]->note)) $review_notes .= '**' . $manufacturer->name . '** (' . $docs[0]->note . ")\n\n";
+                        }
+                    }
+                }
+            }
+        }
+
+        $Parsedown = new Parsedown();
+        // $content = $review_request_info . $document_statuses . $review_notes;
+        $content = $Parsedown->text($review_request_info . $document_statuses . $review_notes);
 
         return response()->streamDownload(function () use ($content) {
             echo $content;
