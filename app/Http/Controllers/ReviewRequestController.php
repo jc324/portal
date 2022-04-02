@@ -2,11 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\DocumentSubmissionCompleted;
+use App\Mail\DocumentSubmissionReceived;
 use App\Models\Certificate;
 use App\Models\Ingredient;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
-use Parsedown;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\ProgressReport;
 
 use App\Models\ReviewRequest;
 use App\Models\Profile;
@@ -132,7 +135,7 @@ class ReviewRequestController extends Controller
         return $review_request;
     }
 
-    public function update_review_request(Request $request, $review_requestId)
+    public function update_review_request(Request $request, $review_request_id)
     {
         $data = $request->only(
             'facility_id',
@@ -140,8 +143,23 @@ class ReviewRequestController extends Controller
             'status',
             'current_step_index'
         );
-        $review_request = ReviewRequest::where('id', $review_requestId);
+        $review_request = ReviewRequest::where('id', $review_request_id);
         $review_request->update($data);
+
+        if ($data['status'] == 'SUBMITTED') {
+            // send confirmation email to client
+            $client = Client::where('user_id', $request->user()->id)->first();
+            $name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
+            $intro = "Dear " . $name . ",\n\n";
+            $intro .= "This email is to confirm that your document submission (ID: " . $review_request_id . ") for " . $data['type'] . " has been received.\n\n";
+            $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+            $body = "Dear Review Team,\n\n";
+            $body .= $name . " completed their document submission (ID: " . $review_request_id . ") for " . $data['type'] . ".\n\n";
+            $link = "https://portal.halalwatchworld.org/reviewer/clients/request/" . $review_request_id . "/review";
+
+            Mail::to($to)->send(new DocumentSubmissionReceived($intro));
+            Mail::to("review@halalwatchworld.org")->send(new DocumentSubmissionCompleted($body, $link));
+        }
 
         // @TODO set facility with given id
         // @TODO deleted any associated products and facilities
@@ -483,10 +501,10 @@ class ReviewRequestController extends Controller
     public function generate_progress_report($review_request_id)
     {
         $review_request = ReviewRequest::findOrFail($review_request_id);
-        $file_name = 'document_submission_' . $review_request_id . '_progress_report.html';
         $client_name = $review_request->client->hed_name;
         $review_request_info = "Dear " . $client_name . ",\n\nBelow is your weekly document review progress report:";
         $document_statuses = "\n\n";
+        $review_counts = "\n\n#### Review & Release\n\n";
         $review_notes = "\n\n#### Document Analysis\n\n";
 
         if ($facility = Facility::find($review_request->facility_id)) {
@@ -499,6 +517,7 @@ class ReviewRequestController extends Controller
 
         if ($review_request->type == 'NEW_PRODUCTS' || $review_request->type == 'NEW_FACILITY_AND_PRODUCTS') {
             if ($products = $review_request->products) {
+                $total_ingredients = 0;
                 foreach ($products as $product) {
                     if ($docs = $product->documents)
                         if (count($docs) > 0) foreach ($docs as $doc) {
@@ -507,22 +526,26 @@ class ReviewRequestController extends Controller
                         }
 
                     foreach ($product->ingredients as $ingredient) {
+                        $total_ingredients++;
                         if ($manufacturer = $ingredient->manufacturer) {
                             if ($docs = $manufacturer->documents)
                                 if (count($docs) > 0 && !empty($docs[0]->note)) $review_notes .= '**' . $manufacturer->name . '** (' . $docs[0]->note . ")\n\n";
                         }
                     }
                 }
+                $review_counts .= "Total Products: " . $products->count() . "\n\n";
+                $review_counts .= "Total Ingredients: " . $total_ingredients . "\n\n";
+            } else {
+                $review_counts .= "Total Products: 0\n";
+                $review_counts .= "Total Ingredients: 0\n\n";
             }
         }
 
-        $Parsedown = new Parsedown();
-        // $content = $review_request_info . $document_statuses . $review_notes;
-        $content = $Parsedown->text($review_request_info . $document_statuses . $review_notes);
+        $body = $review_request_info . $document_statuses . $review_counts . $review_notes;
+        $client = $review_request->client;
+        $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
 
-        return response()->streamDownload(function () use ($content) {
-            echo $content;
-        }, $file_name);
+        Mail::to($to)->send(new ProgressReport($body));
     }
 
     // reports

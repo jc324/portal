@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NewAccount;
 use Illuminate\Http\Request;
 use App\Models\Client;
+use Illuminate\Support\Facades\Mail;
 
 class ReviewerController extends Controller
 {
@@ -11,7 +13,7 @@ class ReviewerController extends Controller
     public function register_client(Request $request)
     {
         $validated = $request->validate([
-            'business_name' => 'required',
+            'business_name' => '',
             'website' => '',
             'description' => '',
             'address' => '',
@@ -19,23 +21,30 @@ class ReviewerController extends Controller
             'city' => '',
             'state' => '',
             'zip' => '',
-            'first_name' => 'required',
-            'last_name' => 'required',
-            'email' => 'required',
+            'first_name' => '',
+            'last_name' => '',
+            'email' => '',
             'phone_number' => '',
             'cell_number' => '',
-            'password' => 'required',
-            'confirm_password' => 'required'
+            'password' => '',
+            'confirm_password' => ''
         ]);
         $validated['reviewer_id'] = $request->user()->id;
 
-        if ($validated['password'] !== $validated['confirm_password'])
-            return response()->json([
-                'message' => 'Passwords do not match.'
-            ], 422);
+        // if ($validated['password'] !== $validated['confirm_password'])
+        //     return response()->json([
+        //         'message' => 'Passwords do not match.'
+        //     ], 422);
 
-        $client = Client::create($validated);
+        // $client = Client::create($validated);
+        $to = $validated['email'];
+        $body = 'Dear ' . $validated['first_name'] . ' ' . $validated['last_name'] . ",\n\n";
+        $body .= "A new Client Portal account has been registered at [portal.halalwatchworld.org](https://portal.halalwatchworld.org/). You may complete your profile after logging in using the below credentials:\n\n";
+        $body .= " - Username: **" . $to . "**\n";
+        $body .= " - Password: **" . $validated['password'] . "**\n";
 
-        return $client;
+        Mail::to($to)->send(new NewAccount($body));
+
+        // return $client;
     }
 }

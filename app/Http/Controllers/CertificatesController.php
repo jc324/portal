@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Mail\CertificateHardCopyRequest;
+use App\Mail\ExpiringCertificates;
+use App\Mail\NewCertificate;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 use App\Models\Certificate;
 use App\Models\Client;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 
 class CertificatesController extends Controller
@@ -30,6 +33,11 @@ class CertificatesController extends Controller
         $certificate->path = $path;
         $certificate->expires_at = date('Y-m-d H:i:s', strtotime('+2 years - 45 days')); // from now
         $certificate->save();
+
+        $client = $certificate->client;
+        $to = $client->user->email;
+
+        Mail::to($to)->send(new NewCertificate($client->business_name));
 
         return response($certificate, 200);
     }
@@ -74,5 +82,25 @@ class CertificatesController extends Controller
         Mail::to($to)->send(new CertificateHardCopyRequest($certificate_id));
 
         return response("", 200);
+    }
+
+    public function notify_expired_certs()
+    {
+        $to = "review@halalwatchworld.org";
+        $expired_certs_table = "";
+        $certs = Certificate::whereDate('expires_at', DB::raw('CURDATE()'))->get();
+
+        if (!count($certs)) return;
+
+        foreach ($certs as $cert) {
+            $client = $cert->client;
+            $expired_certs_table .= '|' . $client->business_name;
+            $expired_certs_table .= '|' . $client->hed_name;
+            $expired_certs_table .= '|' . $client->hed_email;
+            $expired_certs_table .= '|' . $cert->created_at;
+            $expired_certs_table .= '|[[DOWNLOAD]](http://127.0.0.1:8000/' . $cert->path . ")|\n";
+        }
+
+        Mail::to($to)->send(new ExpiringCertificates($expired_certs_table));
     }
 }

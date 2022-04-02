@@ -74,6 +74,7 @@ Route::middleware('auth:sanctum')->post('/client/review-request/{id}', [ReviewRe
 Route::middleware('auth:sanctum')->put('/client/review-request/{id}', [ReviewRequestController::class, 'update_review_request']);
 Route::middleware('auth:sanctum')->delete('/client/review-request/{id}', [ReviewRequestController::class, 'delete_review_request']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/assign-reviewer', [ReviewRequestController::class, 'assign_reviewer']);
+Route::middleware('auth:sanctum')->post('/client/review-request/{id}/send-report', [ReviewRequestController::class, 'generate_progress_report']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/products', [ReviewRequestController::class, 'get_review_request_products']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/products/docs', [ReviewRequestController::class, 'get_review_request_products_docs']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/ingredients', [ReviewRequestController::class, 'get_review_request_ingredients']);
