@@ -38774,7 +38774,7 @@ const StepThree = ({
       lineNumber: 73,
       columnNumber: 7
     }
-  }, "Upload a written actionable recourse plan, which protects your halal consumers from products that have been contaminated (whether actual or potential) with nonhalal substances. The recall plan acts as the safety net for the HC and the HPF."));
+  }, "Upload a written actionable recourse plan, which protects your halal consumers from products that have been contaminated (whether actual or potential) with non-halal substances. The recall plan acts as the safety net for the HC and the HPF."));
 };
 
 _s(StepThree, "bj6hncr95XTCyyZmI1FB1B7/6f4=", false, function () {
@@ -39215,7 +39215,8 @@ var _jsxFileName = "C:\\Users\\baeyun\\Documents\\bukharim96\\HWW\\halalwatchwor
 
 // @TODO handle avatar
 const FinishedProductsStep = ({
-  reviewRequest
+  reviewRequest,
+  setGreenLight
 }) => {
   _s();
 
@@ -39227,6 +39228,7 @@ const FinishedProductsStep = ({
   const [products, setProducts] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const [promptOpen, setPromptOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    setGreenLight(true);
     getProducts();
   }, []);
 
@@ -39254,7 +39256,10 @@ const FinishedProductsStep = ({
   };
 
   const handleProductAdd = product => {
-    setProducts([product, ...products]);
+    // console.log(products);
+    // console.log(product);
+    setProducts([]);
+    setProducts([product, ...products]); // getProducts();
   };
 
   const handleProductUpdate = (product, i) => {
@@ -39268,6 +39273,7 @@ const FinishedProductsStep = ({
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete(`/api/client/product/${productId}`).then(async response => {
       if (response.status == 200 || response.status == 201) {
+        setProducts([]);
         setProducts(products.filter(p => p.id != productId));
         enqueueSnackbar("Product deleted successfully.", {
           variant: "success"
@@ -39294,14 +39300,14 @@ const FinishedProductsStep = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123,
+      lineNumber: 133,
       columnNumber: 5
     }
   }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_LinearProgress__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124,
+      lineNumber: 134,
       columnNumber: 19
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_PromptDialog__WEBPACK_IMPORTED_MODULE_17__["default"], {
@@ -39320,14 +39326,14 @@ const FinishedProductsStep = ({
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 131,
+        lineNumber: 141,
         columnNumber: 11
       }
     }),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125,
+      lineNumber: 135,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
@@ -39342,29 +39348,10 @@ const FinishedProductsStep = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142,
+      lineNumber: 152,
       columnNumber: 7
     }
-  }, "Finished Products", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
-    width: "320",
-    height: "180",
-    src: "https://www.youtube.com/embed/yflEy1eCS2k",
-    title: "YouTube video player",
-    frameBorder: "0",
-    allow: "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture",
-    allowFullScreen: true,
-    style: {
-      display: "flex",
-      alignSelf: "center",
-      marginTop: 10
-    },
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 161,
-      columnNumber: 7
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+  }, "Finished Products", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
     style: {
       display: "flex",
       justifyContent: "space-between",
@@ -39375,14 +39362,14 @@ const FinishedProductsStep = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 171,
+      lineNumber: 181,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 180,
+      lineNumber: 190,
       columnNumber: 9
     }
   }, "Click on the button at the right to add your products and ingredients to this request:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AddProductDialog__WEBPACK_IMPORTED_MODULE_19__["default"], {
@@ -39393,32 +39380,28 @@ const FinishedProductsStep = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 191,
+      lineNumber: 201,
       columnNumber: 9
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
     component: "nav",
-    "aria-labelledby": "nested-list-subheader" // subheader={
-    //   <ListSubheader component="div" id="nested-list-subheader">
-    //     Products and Ingredients
-    //   </ListSubheader>
-    // }
-    ,
+    "aria-labelledby": "nested-list-subheader",
     className: classes.root,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 200,
+      lineNumber: 210,
       columnNumber: 7
     }
   }, products.map((product, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProductItem, {
+    key: i,
     product: product,
     onUpdate: product => handleProductUpdate(product, i),
     onDelete: handleProductDelete,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 211,
+      lineNumber: 216,
       columnNumber: 11
     }
   }))));
@@ -39458,16 +39441,6 @@ function ProductItem({
     setIngredients([ingredient, ...ingredients]);
     setOpen(true); // cause refresh
     // setOpen(!open);
-  }; // @TODO make real
-
-
-  const uploadSpecSheet = () => {
-    sleep(2000).then(() => {
-      setSpecSheet(!specSheet);
-      if (!specSheet) enqueueSnackbar("Product Spec Sheet uploaded successfully", {
-        variant: "success"
-      });
-    });
   };
 
   const handleProductItemClick = e => {
@@ -39477,20 +39450,27 @@ function ProductItem({
     if (e.target.className === "MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock") setEditOpen(true);
   };
 
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_5__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 274,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_5__["default"], {
     button: true,
     onClick: handleProductItemClick,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 280,
+      lineNumber: 275,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 281,
+      lineNumber: 276,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_12__["ShoppingBag"], {
@@ -39498,7 +39478,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 282,
+      lineNumber: 277,
       columnNumber: 11
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -39506,7 +39486,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 284,
+      lineNumber: 279,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UploadSpecSheetBtn__WEBPACK_IMPORTED_MODULE_16__["default"], {
@@ -39514,7 +39494,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 294,
+      lineNumber: 280,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -39524,7 +39504,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 295,
+      lineNumber: 281,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IngredientDialog__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -39535,7 +39515,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 296,
+      lineNumber: 282,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
@@ -39543,14 +39523,14 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 302,
+      lineNumber: 288,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_13___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 303,
+      lineNumber: 289,
       columnNumber: 11
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
@@ -39558,21 +39538,21 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 305,
+      lineNumber: 291,
       columnNumber: 9
     }
   }, open ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_10___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 306,
+      lineNumber: 292,
       columnNumber: 19
     }
   }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_11___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 306,
+      lineNumber: 292,
       columnNumber: 36
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -39582,7 +39562,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 309,
+      lineNumber: 295,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -39591,7 +39571,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 310,
+      lineNumber: 296,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IngredientsView__WEBPACK_IMPORTED_MODULE_20__["default"], {
@@ -39601,7 +39581,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 311,
+      lineNumber: 297,
       columnNumber: 11
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductDialog__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -39613,7 +39593,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 332,
+      lineNumber: 318,
       columnNumber: 7
     }
   }));
@@ -40619,11 +40599,12 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
     case 2:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_08__WEBPACK_IMPORTED_MODULE_22__["default"], {
         reviewRequest: reviewRequest,
+        setGreenLight: setGreenLight,
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 555,
-          columnNumber: 16
+          lineNumber: 556,
+          columnNumber: 11
         }
       });
 
@@ -40633,7 +40614,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 557,
+          lineNumber: 562,
           columnNumber: 16
         }
       });
@@ -40643,7 +40624,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 559,
+          lineNumber: 564,
           columnNumber: 16
         }
       });
@@ -40660,7 +40641,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 568,
+          lineNumber: 573,
           columnNumber: 11
         }
       });
@@ -40672,7 +40653,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 576,
+          lineNumber: 581,
           columnNumber: 11
         }
       });
@@ -40684,7 +40665,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 583,
+          lineNumber: 588,
           columnNumber: 11
         }
       });
@@ -40696,7 +40677,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 590,
+          lineNumber: 595,
           columnNumber: 11
         }
       });
@@ -40708,7 +40689,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 597,
+          lineNumber: 602,
           columnNumber: 11
         }
       });
@@ -40720,7 +40701,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 604,
+          lineNumber: 609,
           columnNumber: 11
         }
       });
@@ -40732,7 +40713,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 611,
+          lineNumber: 616,
           columnNumber: 11
         }
       });
@@ -40740,11 +40721,12 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
     case 8:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_08__WEBPACK_IMPORTED_MODULE_22__["default"], {
         reviewRequest: reviewRequest,
+        setGreenLight: setGreenLight,
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 617,
-          columnNumber: 16
+          lineNumber: 623,
+          columnNumber: 11
         }
       });
 
@@ -40754,7 +40736,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 619,
+          lineNumber: 629,
           columnNumber: 16
         }
       });
@@ -40764,7 +40746,7 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 621,
+          lineNumber: 631,
           columnNumber: 16
         }
       });
@@ -41637,10 +41619,6 @@ function UploadSpecSheetBtn({
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [doc, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  const updateInputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-  const documentCopy = document && Object.assign({}, document) || null; // const [file, setFile] = useState<Document | null>(documentCopy);
-
-  const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/product/${productId}/documents`).then(async response => {
       setLoading(false);
@@ -41663,36 +41641,10 @@ function UploadSpecSheetBtn({
     });
   }, []);
 
-  const handleClick = event => {
-    setAnchorEl(event.currentTarget);
-  };
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
-  const handleDocumentUpdateButton = () => {
-    // @ts-ignore
-    if (inputRef) updateInputRef.current.click();
-  }; // const setDocumentHandler = (document: Document) => {
-  //   setDoc(document as ProductDocument);
-  //   console.log(doc);
-  // };
-  // const updateDocHandler = (doc: Document, documentId: number) => {
-  //   const formData = new FormData();
-  //   formData.append("document", doc);
-  //   return axios.post(`/api/client/product/document/${documentId}`, formData, {
-  //     headers: {
-  //       "Content-Type": "multipart/form-data",
-  //     },
-  //   });
-  // };
-  // const deleteDocHandler = (documentId: number) => {
-  //   setDoc(doc.filter((d) => d.id !== documentId));
-  //   return axios.delete("/api/client/product/document/" + documentId);
-  // };
-
 
   const handleDocumentUpload = e => {
     const _doc = e.target.files[0];
@@ -41715,9 +41667,6 @@ function UploadSpecSheetBtn({
       setLoading(false);
 
       if (response.status == 200 || response.status == 201) {
-        // console.log(response.data);
-        // setDoc(response.data);
-        // setDocument(response.data);
         setDoc(response.data);
         enqueueSnackbar(`Uploaded product spec successfully.`, {
           variant: "success"
@@ -41741,19 +41690,24 @@ function UploadSpecSheetBtn({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139,
+      lineNumber: 100,
       columnNumber: 23
     }
   });
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     ref: inputRef,
     type: "file",
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
-    // data-multiple-caption="{count} files selected"
-    ,
+    "data-title": "Upload",
     onChange: handleDocumentUpload,
     style: {
       display: "none"
@@ -41761,18 +41715,10 @@ function UploadSpecSheetBtn({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143,
+      lineNumber: 104,
       columnNumber: 7
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Tooltip"], {
-    title: "A product specification sheet is a technical document that outlines the features of a product in detail. It explains and describes the product, what it is, what it does, what its components are and any special features it has. It also provides any other important additional information such as hazard and allergy warnings.",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 165,
-      columnNumber: 7
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_LoadingButton__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_LoadingButton__WEBPACK_IMPORTED_MODULE_4__["default"], {
     loading: loading,
     done: doc != null,
     onClick: handleDocumentUploadButton,
@@ -41780,21 +41726,21 @@ function UploadSpecSheetBtn({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 170,
-        columnNumber: 22
+        lineNumber: 118,
+        columnNumber: 20
       }
     }),
     variant: "contained",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 166,
-      columnNumber: 9
+      lineNumber: 114,
+      columnNumber: 7
     }
-  }, "Product Spec Sheet")));
+  }, "Product Spec Sheet"));
 }
 
-_s(UploadSpecSheetBtn, "+xLhmwEHpPrHAySkyxo3OSvwl6k=", false, function () {
+_s(UploadSpecSheetBtn, "F5MbKJl5ODUokOsv2zvnWfBxz2s=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
 
