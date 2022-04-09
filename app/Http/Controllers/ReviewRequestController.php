@@ -509,10 +509,16 @@ class ReviewRequestController extends Controller
 
         if ($facility = Facility::find($review_request->facility_id)) {
             $document_statuses .= "| **Document Type** | **Status** |\n|-------------------|------------|\n";
+            $docs_by_type = array();
             foreach ($facility->documents as $doc) {
-                $document_statuses .= "| " . $doc->type . " | " . $doc->status . " |\n";
+                // $document_statuses .= "| " . $doc->type . " | " . $doc->status . " |\n";
+                if (!array_key_exists($doc->type, $docs_by_type))
+                    $docs_by_type[$doc->type] = "| " . $doc->type . " | " . $doc->status . " |\n";
                 if (!empty($doc->note)) $review_notes .= '**' . $doc->type . '** (' . $doc->note . ")\n\n";
             }
+
+            foreach ($docs_by_type as $doc_stat)
+                $document_statuses .= $doc_stat;
         }
 
         if ($review_request->type == 'NEW_PRODUCTS' || $review_request->type == 'NEW_FACILITY_AND_PRODUCTS') {
@@ -545,7 +551,7 @@ class ReviewRequestController extends Controller
         $client = $review_request->client;
         $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
 
-        Mail::to($to)->send(new ProgressReport($body));
+        Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new ProgressReport($body));
     }
 
     // reports

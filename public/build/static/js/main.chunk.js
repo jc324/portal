@@ -35332,8 +35332,10 @@ function IngredientDialog({
       }
     }),
     style: {
-      marginRight: 15
-    },
+      marginLeft: 15,
+      marginBottom: 15
+    } // style={{ display: "flex", margin: "0 auto" }}
+    ,
     onClick: handleClickOpen,
     __self: this,
     __source: {
@@ -35341,7 +35343,7 @@ function IngredientDialog({
       lineNumber: 177,
       columnNumber: 9
     }
-  }, "Ingredient"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Dialog"], {
+  }, "Add Ingredient"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Dialog"], {
     keepMounted: true,
     open: mode === IngredientDialogMode.ADD && _open || open,
     onClose: mode === IngredientDialogMode.ADD && handleClose || onClose,
@@ -35352,14 +35354,14 @@ function IngredientDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 187,
+      lineNumber: 188,
       columnNumber: 7
     }
   }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["LinearProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 196,
+      lineNumber: 197,
       columnNumber: 21
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["DialogTitle"], {
@@ -35370,7 +35372,7 @@ function IngredientDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 197,
+      lineNumber: 198,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
@@ -35378,21 +35380,21 @@ function IngredientDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 198,
+      lineNumber: 199,
       columnNumber: 11
     }
   }, mode === IngredientDialogMode.ADD && "Add" || "Edit", " Ingredient")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["DialogContent"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 202,
+      lineNumber: 203,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["DialogContentText"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 203,
+      lineNumber: 204,
       columnNumber: 11
     }
   }, mode === IngredientDialogMode.ADD && "Fill out this form to add a new ingredient to this product." || "Fill out this form to update this ingredient."), values && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(IngredientDetails, {
@@ -35402,14 +35404,14 @@ function IngredientDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 209,
+      lineNumber: 210,
       columnNumber: 13
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["DialogActions"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 217,
+      lineNumber: 218,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
@@ -35419,7 +35421,7 @@ function IngredientDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 218,
+      lineNumber: 219,
       columnNumber: 11
     }
   }, mode === IngredientDialogMode.ADD && "Add" || "Update", " ", "Ingredient"))));
@@ -35468,7 +35470,7 @@ function IngredientDetails({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 275,
+      lineNumber: 276,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
@@ -35477,7 +35479,7 @@ function IngredientDetails({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 276,
+      lineNumber: 277,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
@@ -35491,7 +35493,7 @@ function IngredientDetails({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 277,
+      lineNumber: 278,
       columnNumber: 9
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["DialogContentText"], {
@@ -35502,7 +35504,7 @@ function IngredientDetails({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 318,
+      lineNumber: 319,
       columnNumber: 7
     }
   }, "Ingredient Manufacturer"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
@@ -35511,7 +35513,7 @@ function IngredientDetails({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 321,
+      lineNumber: 322,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_clients_client_ManufacturerSelector__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -35520,7 +35522,7 @@ function IngredientDetails({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 322,
+      lineNumber: 323,
       columnNumber: 9
     }
   })));
@@ -35534,14 +35536,14 @@ function PaperComponent(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 355,
+      lineNumber: 356,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Paper"], Object.assign({}, props, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 359,
+      lineNumber: 360,
       columnNumber: 7
     }
   })));
@@ -35691,7 +35693,7 @@ function IngredientsView({
     setLoading(false);
 
     if (response.status == 200 || response.status == 201) {
-      setIngredients(response.data.reverse());
+      setIngredients(response.data);
     } else {
       console.log(response);
       enqueueSnackbar("Failed to retrieve product ingredients.", {
@@ -39425,7 +39427,7 @@ function ProductItem({
 }) {
   _s2();
 
-  const [open, setOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const [open, setOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [editOpen, setEditOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [specSheet, setSpecSheet] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [ingredients, setIngredients] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
@@ -39438,7 +39440,7 @@ function ProductItem({
   };
 
   const handleIngredientAdd = ingredient => {
-    setIngredients([ingredient, ...ingredients]);
+    setIngredients([...ingredients, ingredient]);
     setOpen(true); // cause refresh
     // setOpen(!open);
   };
@@ -39507,17 +39509,6 @@ function ProductItem({
       lineNumber: 281,
       columnNumber: 9
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IngredientDialog__WEBPACK_IMPORTED_MODULE_15__["default"], {
-    reviewRequestId: product.review_request_id,
-    productId: product.id,
-    onIngredientUpdate: handleIngredientAdd,
-    mode: _IngredientDialog__WEBPACK_IMPORTED_MODULE_15__["IngredientDialogMode"].ADD,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 282,
-      columnNumber: 9
-    }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
     onClick: () => onDelete(product.id),
     __self: this,
@@ -39584,7 +39575,18 @@ function ProductItem({
       lineNumber: 297,
       columnNumber: 11
     }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductDialog__WEBPACK_IMPORTED_MODULE_14__["default"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IngredientDialog__WEBPACK_IMPORTED_MODULE_15__["default"], {
+    reviewRequestId: product.review_request_id,
+    productId: product.id,
+    onIngredientUpdate: handleIngredientAdd,
+    mode: _IngredientDialog__WEBPACK_IMPORTED_MODULE_15__["IngredientDialogMode"].ADD,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 317,
+      columnNumber: 9
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductDialog__WEBPACK_IMPORTED_MODULE_14__["default"], {
     mode: _ProductDialog__WEBPACK_IMPORTED_MODULE_14__["ProductDialogMode"].EDIT,
     open: editOpen,
     edit: product,
@@ -39593,13 +39595,13 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 318,
+      lineNumber: 324,
       columnNumber: 7
     }
   }));
 }
 
-_s2(ProductItem, "RqeKCkudCRPvwiEpf41gkbxPlFU=", false, function () {
+_s2(ProductItem, "rk6QL7TwYtCSem2mOMsy3Cvj8D4=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
 

@@ -37,7 +37,7 @@ class CertificatesController extends Controller
         $client = $certificate->client;
         $to = $client->user->email;
 
-        Mail::to($to)->send(new NewCertificate($client->business_name));
+        Mail::to($to)->cc(['Rafiq.umar@halalwatchworld.org'])->send(new NewCertificate($client->business_name));
 
         return response($certificate, 200);
     }
