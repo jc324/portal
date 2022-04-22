@@ -3,8 +3,8 @@
 
 {!! $body !!}
 
-@component('mail::button', ['url' => 'mailto:support@halalwatchworld.org'])
-Contact Support
+@component('mail::button', ['url' => 'mailto:review@halalwatchworld.org'])
+Contact Review
 @endcomponent
 
 Thanks,<br>

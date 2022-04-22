@@ -4,13 +4,14 @@ namespace App\Http\Controllers;
 
 use App\Mail\DocumentSubmissionCompleted;
 use App\Mail\DocumentSubmissionReceived;
+use App\Mail\FinalProgressReport;
 use App\Models\Certificate;
 use App\Models\Ingredient;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ProgressReport;
-
+use App\Mail\ScheduleAudit;
 use App\Models\ReviewRequest;
 use App\Models\Profile;
 use App\Models\User;
@@ -21,6 +22,7 @@ use App\Models\FacilityCategories;
 use App\Models\Manufacturer;
 use App\Models\ProductCategories;
 use App\Models\Report;
+use Illuminate\Support\Facades\Response;
 
 const REVIEW_REQUEST_TYPE_COLOR_MAP = array(
     'NEW_FACILITY' => "#0BD074",
@@ -244,16 +246,6 @@ class ReviewRequestController extends Controller
         }
 
         return $manufacturers;
-    }
-
-    public function set_status(Request $request, $review_request_id)
-    {
-        $data = $request->only('status');
-        $review_request = ReviewRequest::findOrFail($review_request_id);
-        $review_request->status = $data['status'];
-        $review_request->save();
-
-        return response('', 200);
     }
 
     public function _download_documents_by_id($review_request_id)
@@ -498,23 +490,61 @@ class ReviewRequestController extends Controller
         return $facility_docs_progress;
     }
 
+    public function set_status(Request $request, $review_request_id)
+    {
+        $data = $request->only('status');
+        $review_request = ReviewRequest::findOrFail($review_request_id);
+        $review_request->status = $data['status'];
+        $review_request->save();
+
+        if ($data['status'] === "APPROVED") {
+            $client = $review_request->client;
+            $client_name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
+            $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+
+            $review_request = ReviewRequest::findOrFail($review_request_id);
+            if ($body = $this->generate_progress_report_email($review_request, true)) {
+                Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new FinalProgressReport($body));
+                Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new ScheduleAudit($client_name));
+            } else return Response::json(array(
+                'status' => 'error',
+                'message' => 'This submission is not ready for approval. Please check all dependecies.'
+            ), 400);
+        }
+
+        return response('', 200);
+    }
+
     public function generate_progress_report($review_request_id)
     {
         $review_request = ReviewRequest::findOrFail($review_request_id);
+        $body = $this->generate_progress_report_email($review_request);
+        $client = $review_request->client;
+        $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+
+        Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new ProgressReport($body));
+    }
+
+    public function generate_progress_report_email($review_request, $is_final = false)
+    {
         $client_name = $review_request->client->hed_name;
-        $review_request_info = "Dear " . $client_name . ",\n\nBelow is your weekly document review progress report:";
+        $time_type = $is_final ? "final" : "weekly";
+        $review_request_info = "Dear " . $client_name . ",\n\n";
+        $review_request_info .= $is_final ? "Congratulations! You have successfully passed the document review.\n\n" : "";
+        $review_request_info .= "Below is your " . $time_type . " document review progress report:";
         $document_statuses = "\n\n";
-        $review_counts = "\n\n#### Review & Release\n\n";
-        $review_notes = "\n\n#### Document Analysis\n\n";
+        $product_statuses = "\n\n";
+        $review_counts = "\n\n#### Overview\n\n";
+        $review_notes = "\n\n#### Failures\n\n";
 
         if ($facility = Facility::find($review_request->facility_id)) {
-            $document_statuses .= "| **Document Type** | **Status** |\n|-------------------|------------|\n";
+            $document_statuses .= "| **Facility Document Type** | **Status** |\n|-------------------|------------|\n";
             $docs_by_type = array();
             foreach ($facility->documents as $doc) {
                 // $document_statuses .= "| " . $doc->type . " | " . $doc->status . " |\n";
                 if (!array_key_exists($doc->type, $docs_by_type))
                     $docs_by_type[$doc->type] = "| " . $doc->type . " | " . $doc->status . " |\n";
-                if (!empty($doc->note)) $review_notes .= '**' . $doc->type . '** (' . $doc->note . ")\n\n";
+                if (!empty($doc->note)) $review_notes .= '**' . $doc->type . "** " . $doc->note . "\n\n";
             }
 
             foreach ($docs_by_type as $doc_stat)
@@ -523,19 +553,24 @@ class ReviewRequestController extends Controller
 
         if ($review_request->type == 'NEW_PRODUCTS' || $review_request->type == 'NEW_FACILITY_AND_PRODUCTS') {
             if ($products = $review_request->products) {
+                $product_statuses .= "\n\n| **Product Name** | **Status** |\n|-------------------|------------|\n";
                 $total_ingredients = 0;
                 foreach ($products as $product) {
                     if ($docs = $product->documents)
                         if (count($docs) > 0) foreach ($docs as $doc) {
-                            if (!empty($doc->note)) $review_notes .= '**' . $product->name . ' SPEC SHEET** (' . $doc->note . ")\n\n";
+                            $product_statuses .= "|" . $product->name . "|" . $doc->status . "|\n";
+                            if (!empty($doc->note)) $review_notes .= '**' . $product->name . "** " . $doc->note . "\n\n";
                             break;
+                        }
+                        else {
+                            $product_statuses .= "|" . $product->name . "| NONE |\n";
                         }
 
                     foreach ($product->ingredients as $ingredient) {
                         $total_ingredients++;
                         if ($manufacturer = $ingredient->manufacturer) {
                             if ($docs = $manufacturer->documents)
-                                if (count($docs) > 0 && !empty($docs[0]->note)) $review_notes .= '**' . $manufacturer->name . '** (' . $docs[0]->note . ")\n\n";
+                                if (count($docs) > 0 && !empty($docs[0]->note)) $review_notes .= '**' . $manufacturer->name . "** " . $docs[0]->note . "\n\n";
                         }
                     }
                 }
@@ -547,11 +582,14 @@ class ReviewRequestController extends Controller
             }
         }
 
-        $body = $review_request_info . $document_statuses . $review_counts . $review_notes;
-        $client = $review_request->client;
-        $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+        $body = $is_final
+            ? $review_request_info . $review_counts . $document_statuses . $product_statuses
+            : $review_request_info . $review_counts . $document_statuses . $product_statuses . $review_notes;
 
-        Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new ProgressReport($body));
+        if ($is_final && $this->get_progress($review_request->id) < 100)
+            return null;
+
+        return $body;
     }
 
     // reports

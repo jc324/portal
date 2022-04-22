@@ -31,20 +31,20 @@ class ReviewerController extends Controller
         ]);
         $validated['reviewer_id'] = $request->user()->id;
 
-        // if ($validated['password'] !== $validated['confirm_password'])
-        //     return response()->json([
-        //         'message' => 'Passwords do not match.'
-        //     ], 422);
+        if ($validated['password'] !== $validated['confirm_password'])
+            return response()->json([
+                'message' => 'Passwords do not match.'
+            ], 422);
 
-        // $client = Client::create($validated);
+        $client = Client::create($validated);
         $to = $validated['email'];
         $body = 'Dear ' . $validated['first_name'] . ' ' . $validated['last_name'] . ",\n\n";
         $body .= "A new Client Portal account has been registered at [portal.halalwatchworld.org](https://portal.halalwatchworld.org/). You may complete your profile after logging in using the below credentials:\n\n";
         $body .= " - Username: **" . $to . "**\n";
         $body .= " - Password: **" . $validated['password'] . "**\n";
 
-        Mail::to($to)->send(new NewAccount($body));
+        Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new NewAccount($body));
 
-        // return $client;
+        return $client;
     }
 }

@@ -121,7 +121,7 @@ class ProductController extends Controller
     {
         $data = $request->only('note');
         $document = ProductDocument::findOrFail($document_id);
-        $document->note = $data['note'];
+        $document->note = $data['note'] ? $data['note'] : "";
         $document->save();
 
         return response('', 200);

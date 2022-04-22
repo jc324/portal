@@ -3,9 +3,13 @@
 
 Dear {{ $client_name }},
 
-A new certificate has been uploaded to your profile. You may find it under the **Certificates** section in the Client Portal.
+Congratulations! Your facility and/or products have been approved as halal certified!
 
-@component('mail::button', ['url' => 'https://www.halalwatchworld.org/client/certificates'])
+A new certificate has been uploaded to your profile. You may find it under the **Certificates** section on the left side of your client portal.
+
+If you are a new client, welcome to the Halal Watch World Family!
+
+@component('mail::button', ['url' => 'https://portal.halalwatchworld.org/client/certificates'])
 View Certificates
 @endcomponent
 

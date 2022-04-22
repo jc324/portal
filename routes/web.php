@@ -7,6 +7,7 @@ use App\Http\Controllers\ReviewRequestController;
 use App\Http\Controllers\ReportsController;
 use App\Http\Controllers\CertificatesController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\ManufacturerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -54,6 +55,7 @@ Route::middleware('auth:sanctum')->get('/reviewer/clients/request/{id}/generate-
 // client facility docs
 Route::middleware('auth:sanctum')->get('/client/facility/document/{id}', [FacilityController::class, 'download_document_by_id']);
 Route::middleware('auth:sanctum')->get('/client/product/document/{id}', [ProductController::class, 'download_document_by_id']);
+Route::middleware('auth:sanctum')->get('/client/manufacturer/document/{id}', [ManufacturerController::class, 'download_document_by_id']);
 
 // temp
 Route::middleware('auth:sanctum')->get('/notify-expired-certs', [CertificatesController::class, 'notify_expired_certs']);

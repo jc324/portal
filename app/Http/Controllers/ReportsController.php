@@ -2,10 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NewAuditReport;
+use App\Mail\NewDocumentReport;
 use Illuminate\Http\Request;
 
 use App\Models\Report;
 use App\Models\Client;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 
 class ReportsController extends Controller
@@ -54,6 +57,12 @@ class ReportsController extends Controller
         $report->path = $path;
         $report->save();
 
+        $client = Client::find($client_id);
+        $client_name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
+        $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+
+        Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new NewAuditReport($client_name));
+
         return response($report, 200);
     }
 
@@ -66,6 +75,12 @@ class ReportsController extends Controller
         $report->type = "REVIEW_REPORT";
         $report->path = $path;
         $report->save();
+
+        $client = Client::find($client_id);
+        $client_name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
+        $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+
+        Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new NewDocumentReport($client_name));
 
         return response($report, 200);
     }

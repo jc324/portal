@@ -53,7 +53,7 @@ class ManufacturerController extends Controller
     {
         $data = $request->only('note');
         $document = ManufacturerDocument::findOrFail($document_id);
-        $document->note = $data['note'];
+        $document->note = $data['note'] ? $data['note'] : "";
         $document->save();
 
         return response('', 200);
@@ -90,11 +90,11 @@ class ManufacturerController extends Controller
     public function download_document_by_id($documentId)
     {
         $document = ManufacturerDocument::findOrFail($documentId);
-        $client_name = $document->ingredient->client->business_name;
+        $manufacturer_name = $document->manufacturer->name;
         $type = $document->type;
         $created_at = $document->created_at->format('Ymd');
         $ext = pathinfo($document->path, PATHINFO_EXTENSION);
-        $qualified_name = $client_name . '_' . $type . '_' . $created_at . '.' . $ext;
+        $qualified_name = $manufacturer_name . '_' . $type . '_' . $created_at . '.' . $ext;
 
         return Storage::download($document->path, $qualified_name);
     }
