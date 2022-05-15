@@ -291,7 +291,7 @@ class ReviewRequestController extends Controller
         $path = public_path($file_name);
         $documents = [];
         $review_request_info = "# Review Request " . $review_request_id . "\n\n";
-        $review_request_info .= "**REQUEST TYPE**: `" . $review_request->type . "`\n";
+        $review_request_info .= "**SUBMISSIOM TYPE**: `" . $review_request->type . "`\n";
         $review_request_info .= pp_client($review_request->client);
 
         switch ($review_request->type) {
@@ -391,13 +391,15 @@ class ReviewRequestController extends Controller
         $ingredient_document_statuses .= "**Ingredient/RMM Document Statuses:**\n";
         $ingredient_document_statuses .= "| Ingredient Name | Recommendation | Source | RMM | Status | Note |\n|-----------------|----------------|--------|-----|--------|------|\n";
 
-        if ($facility = Facility::find($review_request->facility_id)) {
-            // $review_request_info .= pp_facility($facility);
-            $document_statuses .= "## DOCUMENT STATUSES\n";
-            $document_statuses .= "**Facility Document Statuses:**\n";
-            $document_statuses .= "| **Document Type** | **Status** | **Note** |\n|-------------------|------------|----------|\n";
-            foreach ($facility->documents as $doc) {
-                $document_statuses .= "| " . $doc->type . " | " . $doc->status . " | " . $doc->note . " |\n";
+        if ($review_request->type !== 'NEW_PRODUCTS') {
+            if ($facility = Facility::find($review_request->facility_id)) {
+                // $review_request_info .= pp_facility($facility);
+                $document_statuses .= "## DOCUMENT STATUSES\n";
+                $document_statuses .= "**Facility Document Statuses:**\n";
+                $document_statuses .= "| **Document Type** | **Status** | **Note** |\n|-------------------|------------|----------|\n";
+                foreach ($facility->documents as $doc) {
+                    $document_statuses .= "| " . $doc->type . " | " . $doc->status . " | " . $doc->note . " |\n";
+                }
             }
         }
 
@@ -505,7 +507,8 @@ class ReviewRequestController extends Controller
             $review_request = ReviewRequest::findOrFail($review_request_id);
             if ($body = $this->generate_progress_report_email($review_request, true)) {
                 Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new FinalProgressReport($body));
-                Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new ScheduleAudit($client_name));
+                if ($review_request->type !== "NEW_PRODUCTS")
+                    Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new ScheduleAudit($client_name));
             } else return Response::json(array(
                 'status' => 'error',
                 'message' => 'This submission is not ready for approval. Please check all dependecies.'
@@ -537,18 +540,20 @@ class ReviewRequestController extends Controller
         $review_counts = "\n\n#### Overview\n\n";
         $review_notes = "\n\n#### Failures\n\n";
 
-        if ($facility = Facility::find($review_request->facility_id)) {
-            $document_statuses .= "| **Facility Document Type** | **Status** |\n|-------------------|------------|\n";
-            $docs_by_type = array();
-            foreach ($facility->documents as $doc) {
-                // $document_statuses .= "| " . $doc->type . " | " . $doc->status . " |\n";
-                if (!array_key_exists($doc->type, $docs_by_type))
-                    $docs_by_type[$doc->type] = "| " . $doc->type . " | " . $doc->status . " |\n";
-                if (!empty($doc->note)) $review_notes .= '**' . $doc->type . "** " . $doc->note . "\n\n";
-            }
+        if ($review_request->type !== 'NEW_PRODUCTS') {
+            if ($facility = Facility::find($review_request->facility_id)) {
+                $document_statuses .= "| **Facility Document Type** | **Status** |\n|-------------------|------------|\n";
+                $docs_by_type = array();
+                foreach ($facility->documents as $doc) {
+                    // $document_statuses .= "| " . $doc->type . " | " . $doc->status . " |\n";
+                    if (!array_key_exists($doc->type, $docs_by_type))
+                        $docs_by_type[$doc->type] = "| " . $doc->type . " | " . $doc->status . " |\n";
+                    if (!empty($doc->note)) $review_notes .= '**' . $doc->type . "** " . $doc->note . "\n\n";
+                }
 
-            foreach ($docs_by_type as $doc_stat)
-                $document_statuses .= $doc_stat;
+                foreach ($docs_by_type as $doc_stat)
+                    $document_statuses .= $doc_stat;
+            }
         }
 
         if ($review_request->type == 'NEW_PRODUCTS' || $review_request->type == 'NEW_FACILITY_AND_PRODUCTS') {
@@ -682,6 +687,11 @@ class ReviewRequestController extends Controller
         $report->delete();
 
         return response('', 200);
+    }
+
+    public function step_eight_check(Request $request, $review_request_id)
+    {
+        return false;
     }
 }
 

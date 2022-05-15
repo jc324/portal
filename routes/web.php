@@ -58,7 +58,8 @@ Route::middleware('auth:sanctum')->get('/client/product/document/{id}', [Product
 Route::middleware('auth:sanctum')->get('/client/manufacturer/document/{id}', [ManufacturerController::class, 'download_document_by_id']);
 
 // temp
-Route::middleware('auth:sanctum')->get('/notify-expired-certs', [CertificatesController::class, 'notify_expired_certs']);
+// Route::middleware('auth:sanctum')->get('/notify-expired-certs', [CertificatesController::class, 'cron_notify_expired_certs']);
+// Route::middleware('auth:sanctum')->get('/notify-pre-expired-certs', [CertificatesController::class, 'cron_notify_pre_expired_certs']);
 
 Route::any('{all}', function () {
     return view('index');

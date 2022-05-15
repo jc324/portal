@@ -12,15 +12,17 @@ class CertificateRenewal extends Mailable
     use Queueable, SerializesModels;
 
     public $client_name;
+    public $form_d_link;
 
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct($client_name)
+    public function __construct($client_name, $form_d_link)
     {
         $this->client_name = $client_name;
+        $this->form_d_link = $form_d_link;
     }
 
     /**
@@ -30,6 +32,9 @@ class CertificateRenewal extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.certificate_renewal', ['client_name' => $this->client_name]);
+        return $this->markdown('emails.certificate_renewal', [
+            'client_name' => $this->client_name,
+            'form_d_link' => $this->form_d_link,
+        ]);
     }
 }

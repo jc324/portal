@@ -1,5 +1,5 @@
 @component('mail::message')
-# Certificate Expired
+# Halal Certificate Expired
 
 Dear {{ $client_name }},
 

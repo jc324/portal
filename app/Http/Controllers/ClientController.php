@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Certificate;
 use Illuminate\Http\Request;
 use App\Models\Client;
 use App\Models\Facility;
@@ -39,6 +40,7 @@ class ClientController extends Controller
         $current_rr = ReviewRequest::where('client_id', $client_id)->latest()->first();
         $current_rr_status = "NONE";
         $current_request_progress = 0;
+        $has_expired_certs = Certificate::where('client_id', $client_id)->where('expires_at', '<=', now())->first() ? true : false;
 
         if ($current_rr) {
             $current_rr_status = $current_rr->status;
@@ -67,7 +69,8 @@ class ClientController extends Controller
             'facility_count' => $facility_count,
             'product_count' => $product_count,
             'has_hed' => $this->has_hed($client),
-            'review_request_count' => $review_request_count
+            'review_request_count' => $review_request_count,
+            'has_expired_certs' => $has_expired_certs
         );
     }
 
@@ -270,6 +273,15 @@ class ClientController extends Controller
         $client = Client::findOrFail($clientId);
         $client->reviewer_id = $request['reviewer_id'];
         // $client->qualified_id_scheme = $client->reviewer->id . '::' . $client->reviewer->name;
+        $client->save();
+
+        return response('', 200);
+    }
+
+    public function set_risk_type(Request $request, $client_id)
+    {
+        $client = Client::findOrFail($client_id);
+        $client->update(['risk_type' => $request['risk_type']]);
         $client->save();
 
         return response('', 200);

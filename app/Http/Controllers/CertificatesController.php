@@ -3,14 +3,12 @@
 namespace App\Http\Controllers;
 
 use App\Mail\CertificateHardCopyRequest;
-use App\Mail\ExpiringCertificates;
 use App\Mail\NewCertificate;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 use App\Models\Certificate;
 use App\Models\Client;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Mail;
 
 class CertificatesController extends Controller
@@ -31,13 +29,27 @@ class CertificatesController extends Controller
         $certificate->client_id = $client_id;
         $certificate->request_id = 0;
         $certificate->path = $path;
-        $certificate->expires_at = date('Y-m-d H:i:s', strtotime('+2 years - 45 days')); // from now
+        $certificate->expires_at = date('Y-m-d H:i:s', strtotime('+1 year - 1 day')); // from now
+        $certificate->save();
+
+        return response($certificate, 200);
+    }
+
+    public function add_client_certificate_auto_email(Request $request, $client_id)
+    {
+        $path = Storage::putFile('documents', $request->file('document'));
+        $certificate = new Certificate;
+        $certificate->client_id = $client_id;
+        $certificate->request_id = 0;
+        $certificate->path = $path;
+        $certificate->expires_at = date('Y-m-d H:i:s', strtotime('+1 year - 1 day')); // from now
         $certificate->save();
 
         $client = $certificate->client;
-        $to = $client->user->email;
+        $client_name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
+        $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
 
-        Mail::to($to)->cc(['Rafiq.umar@halalwatchworld.org'])->send(new NewCertificate($client->business_name));
+        Mail::to($to)->bcc(['Rafiq.umar@halalwatchworld.org'])->send(new NewCertificate($client_name));
 
         return response($certificate, 200);
     }
@@ -73,34 +85,14 @@ class CertificatesController extends Controller
         return response($certificate, 200);
     }
 
-    public function request_hard_copy($certificate_id)
+    public function request_hard_copy(Request $request, $certificate_id)
     {
-        // $to = "ap@halalwatchworld.org";
-        $to = "rafiq.umar@halalwatchworld.org";
-        // $subject = "PORTAL: CERTIFICATE HARD COPY REQUEST";
+        $client = Client::where('user_id', $request->user()->id)->first();
+        $client_name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
+        $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
 
-        Mail::to($to)->send(new CertificateHardCopyRequest($certificate_id));
+        Mail::to($to)->bcc(['Rafiq.umar@halalwatchworld.org'])->send(new CertificateHardCopyRequest($client_name, $certificate_id));
 
         return response("", 200);
-    }
-
-    public function notify_expired_certs()
-    {
-        $to = "review@halalwatchworld.org";
-        $expired_certs_table = "";
-        $certs = Certificate::whereDate('expires_at', DB::raw('CURDATE()'))->get();
-
-        if (!count($certs)) return;
-
-        foreach ($certs as $cert) {
-            $client = $cert->client;
-            $expired_certs_table .= '|' . $client->business_name;
-            $expired_certs_table .= '|' . $client->hed_name;
-            $expired_certs_table .= '|' . $client->hed_email;
-            $expired_certs_table .= '|' . $cert->created_at;
-            $expired_certs_table .= '|[[DOWNLOAD]](http://127.0.0.1:8000/' . $cert->path . ")|\n";
-        }
-
-        Mail::to($to)->send(new ExpiringCertificates($expired_certs_table));
     }
 }

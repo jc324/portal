@@ -48,6 +48,7 @@ Route::middleware('auth:sanctum')->put('/reviewer/register-client', [ReviewerCon
 Route::middleware('auth:sanctum')->post('/clients', [ClientController::class, 'get_clients']);
 Route::middleware('auth:sanctum')->post('/client/{id}', [ClientController::class, 'get_client']);
 Route::middleware('auth:sanctum')->post('/client/{id}/assign-reviewer', [ClientController::class, 'assign_reviewer']);
+Route::middleware('auth:sanctum')->post('/client/{id}/risk-type', [ClientController::class, 'set_risk_type']);
 // Route::middleware('auth:sanctum')->post('/client/{id}/facilities', [ClientController::class, 'get_facilities']);
 // for client only
 Route::middleware('auth:sanctum')->get('/client/facility/{id}', [ClientController::class, 'client_get_facility']);
@@ -88,6 +89,7 @@ Route::middleware('auth:sanctum')->delete('/client/review-request/reports/{id}',
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/certificates', [ReviewRequestController::class, 'get_review_request_certificates']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/certificate', [ReviewRequestController::class, 'add_review_request_certificate']);
 Route::middleware('auth:sanctum')->delete('/client/review-request/certificates/{id}', [ReviewRequestController::class, 'delete_review_request_certificate']);
+Route::middleware('auth:sanctum')->post('/client/review-request/{id}/step-eight-check', [ReviewRequestController::class, 'step_eight_check']);
 Route::middleware('auth:sanctum')->post('/client/reports/audit', [ReportsController::class, 'get_audit_reports']);
 Route::middleware('auth:sanctum')->post('/client/reports/review', [ReportsController::class, 'get_review_reports']);
 Route::middleware('auth:sanctum')->get('/client/certificates', [CertificatesController::class, 'get_certificates']);
@@ -95,6 +97,7 @@ Route::middleware('auth:sanctum')->put('/client/certificate/{id}/expires-at', [C
 Route::middleware('auth:sanctum')->put('/client/certificate/{id}/request-hard-copy', [CertificatesController::class, 'request_hard_copy']);
 // admin
 Route::middleware('auth:sanctum')->post('/client/{id}/certificate', [CertificatesController::class, 'add_client_certificate']);
+Route::middleware('auth:sanctum')->post('/client/{id}/certificate/auto-email', [CertificatesController::class, 'add_client_certificate_auto_email']);
 Route::middleware('auth:sanctum')->post('/client/{id}/reports/audit', [ReportsController::class, 'get_client_audit_reports']);
 Route::middleware('auth:sanctum')->post('/client/{id}/reports/review', [ReportsController::class, 'get_client_review_reports']);
 Route::middleware('auth:sanctum')->post('/client/{id}/reports/audit/add', [ReportsController::class, 'add_audit_report']);

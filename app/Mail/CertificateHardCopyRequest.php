@@ -2,17 +2,16 @@
 
 namespace App\Mail;
 
-use App\Models\Certificate;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
-use Illuminate\Support\HtmlString;
 
 class CertificateHardCopyRequest extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $client_name;
     public $certificate_id;
 
     /**
@@ -20,8 +19,9 @@ class CertificateHardCopyRequest extends Mailable
      *
      * @return void
      */
-    public function __construct(int $certificate_id)
+    public function __construct($client_name, int $certificate_id)
     {
+        $this->client_name = $client_name;
         $this->certificate_id = $certificate_id;
     }
 
@@ -32,11 +32,9 @@ class CertificateHardCopyRequest extends Mailable
      */
     public function build()
     {
-        $certificate = Certificate::findOrFail($this->certificate_id);
-        $this->message = "<strong>" . $certificate->client->business_name . "</strong>";
-        $this->message .= $certificate->client->hed_email ? " (" . $certificate->client->hed_email . ")" : "";
-        $this->message .= " requested a hard copy for certificate <strong>" . $this->certificate_id . "</strong> (" . $certificate->created_at . ").";
-
-        return $this->html(new HtmlString($this->message));
+        return $this->markdown('emails.certificate_hard_copy_request', [
+            'client_name' => $this->client_name,
+            'certificate_id' => $this->certificate_id,
+        ]);
     }
 }
