@@ -34,9 +34,9 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->call(function () {
-            cron_weekly_progress_report();
-        })->tuesdays();
+        // $schedule->call(function () {
+        //     cron_weekly_progress_report();
+        // })->tuesdays();
 
         $schedule->call(function () {
             cron_notify_expired_certs();

@@ -81,6 +81,7 @@ Route::middleware('auth:sanctum')->post('/client/review-request/{id}/products/do
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/ingredients', [ReviewRequestController::class, 'get_review_request_ingredients']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/manufacturers', [ReviewRequestController::class, 'get_review_request_manufacturers']);
 Route::middleware('auth:sanctum')->put('/client/review-request/{id}/status', [ReviewRequestController::class, 'set_status']);
+Route::middleware('auth:sanctum')->put('/client/review-request/{id}/corrections', [ReviewRequestController::class, 'submit_corrections']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/audit-reports', [ReviewRequestController::class, 'get_review_request_audit_reports']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/review-reports', [ReviewRequestController::class, 'get_review_request_review_reports']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/audit-report', [ReviewRequestController::class, 'add_review_request_audit_report']);

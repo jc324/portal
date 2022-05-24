@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Mail\DocumentSubmissionCompleted;
 use App\Mail\DocumentSubmissionReceived;
 use App\Mail\FinalProgressReport;
+use App\Mail\NewCorrections;
 use App\Models\Certificate;
 use App\Models\Ingredient;
 use Illuminate\Http\Request;
@@ -514,6 +515,22 @@ class ReviewRequestController extends Controller
                 'message' => 'This submission is not ready for approval. Please check all dependecies.'
             ), 400);
         }
+
+        return response('', 200);
+    }
+
+    public function submit_corrections($review_request_id)
+    {
+        $review_request = ReviewRequest::findOrFail($review_request_id);
+        $review_request->status = "SUBMITTED";
+        $review_request->save();
+
+        // notify the review team
+        $client = $review_request->client;
+        $client_name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
+        $to = 'review@halalwatchworld.org';
+
+        Mail::to($to)->send(new NewCorrections($client_name, $review_request_id));
 
         return response('', 200);
     }
