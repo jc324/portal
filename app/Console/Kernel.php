@@ -40,11 +40,11 @@ class Kernel extends ConsoleKernel
 
         $schedule->call(function () {
             cron_notify_expired_certs();
-        })->daily();
+        })->dailyAt('16:00');
 
         $schedule->call(function () {
             cron_notify_pre_expired_certs();
-        })->daily();
+        })->dailyAt('16:00');
     }
 
     /**

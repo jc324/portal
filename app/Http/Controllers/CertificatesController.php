@@ -95,4 +95,13 @@ class CertificatesController extends Controller
 
         return response("", 200);
     }
+
+    public function set_tags(Request $request, $certificate_id)
+    {
+        $certificate = Certificate::findOrFail($certificate_id);
+        $certificate->update(['tags' => $request['tags']]);
+        $certificate->save();
+
+        return response($certificate, 200);
+    }
 }

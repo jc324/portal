@@ -1,9 +1,9 @@
 @component('mail::message')
-# Halal Certificate Expired
+# Halal Certificate Expiring
 
 Dear {{ $client_name }},
 
-This is a notice to let you know that your certificate expired today.
+This is a notice to let you know that your certificate will expire by 11:59pm today.
 
 If you have already been approved for recertification, CONGRATULATIONS! you will receive an email with a link to your updated certificate for the new year.
 

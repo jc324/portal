@@ -24,6 +24,7 @@ class Client extends Model
         'hed_phone_number',
         'hed_email',
         'risk_type',
+        'status'
     ];
 
     public static function create(array $data)

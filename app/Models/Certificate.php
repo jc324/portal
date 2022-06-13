@@ -19,6 +19,7 @@ class Certificate extends Model
      */
     protected $fillable = [
         'expires_at',
+        'tags',
     ];
 
     public function client()

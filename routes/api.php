@@ -49,6 +49,7 @@ Route::middleware('auth:sanctum')->post('/clients', [ClientController::class, 'g
 Route::middleware('auth:sanctum')->post('/client/{id}', [ClientController::class, 'get_client']);
 Route::middleware('auth:sanctum')->post('/client/{id}/assign-reviewer', [ClientController::class, 'assign_reviewer']);
 Route::middleware('auth:sanctum')->post('/client/{id}/risk-type', [ClientController::class, 'set_risk_type']);
+Route::middleware('auth:sanctum')->post('/client/{id}/status', [ClientController::class, 'set_status']);
 // Route::middleware('auth:sanctum')->post('/client/{id}/facilities', [ClientController::class, 'get_facilities']);
 // for client only
 Route::middleware('auth:sanctum')->get('/client/facility/{id}', [ClientController::class, 'client_get_facility']);
@@ -96,6 +97,7 @@ Route::middleware('auth:sanctum')->post('/client/reports/review', [ReportsContro
 Route::middleware('auth:sanctum')->get('/client/certificates', [CertificatesController::class, 'get_certificates']);
 Route::middleware('auth:sanctum')->put('/client/certificate/{id}/expires-at', [CertificatesController::class, 'update_certificate_expiration']);
 Route::middleware('auth:sanctum')->put('/client/certificate/{id}/request-hard-copy', [CertificatesController::class, 'request_hard_copy']);
+Route::middleware('auth:sanctum')->post('/client/certificate/{id}/tags', [CertificatesController::class, 'set_tags']);
 // admin
 Route::middleware('auth:sanctum')->post('/client/{id}/certificate', [CertificatesController::class, 'add_client_certificate']);
 Route::middleware('auth:sanctum')->post('/client/{id}/certificate/auto-email', [CertificatesController::class, 'add_client_certificate_auto_email']);

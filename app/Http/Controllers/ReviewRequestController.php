@@ -13,6 +13,7 @@ use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\ProgressReport;
 use App\Mail\ScheduleAudit;
+use App\Mail\DocumentFailures;
 use App\Models\ReviewRequest;
 use App\Models\Profile;
 use App\Models\User;
@@ -514,6 +515,13 @@ class ReviewRequestController extends Controller
                 'status' => 'error',
                 'message' => 'This submission is not ready for approval. Please check all dependecies.'
             ), 400);
+        } else if ($data['status'] === "REJECTED") {
+            // notify the review team
+            $client = $review_request->client;
+            $client_name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
+            $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+
+            Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new DocumentFailures($client_name, $review_request_id));
         }
 
         return response('', 200);

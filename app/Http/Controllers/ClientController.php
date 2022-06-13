@@ -63,6 +63,7 @@ class ClientController extends Controller
         }
 
         return array(
+            'account_status' => $client->status,
             'current_request_id' => $current_rr ? $current_rr->id : null,
             'current_request_status' => $current_rr_status,
             'current_request_progress' => $current_request_progress,
@@ -282,6 +283,15 @@ class ClientController extends Controller
     {
         $client = Client::findOrFail($client_id);
         $client->update(['risk_type' => $request['risk_type']]);
+        $client->save();
+
+        return response('', 200);
+    }
+
+    public function set_status(Request $request, $client_id)
+    {
+        $client = Client::findOrFail($client_id);
+        $client->update(['status' => $request['status']]);
         $client->save();
 
         return response('', 200);
