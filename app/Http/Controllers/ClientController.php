@@ -21,6 +21,7 @@ class ClientController extends Controller
         $profile = $client->user->profile;
 
         $client_info = $client->only([
+            'heds',
             'hed_type',
             'hed_name',
             'hed_phone_number',
@@ -127,6 +128,7 @@ class ClientController extends Controller
     {
         $profile = $request->user()->profile;
         $client_info = Client::where('user_id', $request->user()->id)->get([
+            'heds',
             'hed_type',
             'hed_name',
             'hed_phone_number',
@@ -150,6 +152,7 @@ class ClientController extends Controller
             'state',
             'zip',
             'avatar',
+            'heds',
             'hed_type',
             'hed_name',
             'hed_phone_number',
@@ -160,6 +163,7 @@ class ClientController extends Controller
         $profile->save();
         $client = Client::where('user_id', $request->user()->id);
         $client->update([
+            'heds' => $input['heds'],
             'hed_type' => $input['hed_type'],
             'hed_name' => $input['hed_name'],
             'hed_phone_number' => $input['hed_phone_number'],
@@ -191,6 +195,7 @@ class ClientController extends Controller
             'state',
             'zip',
             'avatar',
+            'heds',
             'hed_type',
             'hed_name',
             'hed_phone_number',
@@ -198,6 +203,7 @@ class ClientController extends Controller
         ]);
         $client = Client::findOrFail($client_id);
         $client->update([
+            'heds' => $input['heds'],
             'hed_type' => $input['hed_type'],
             'hed_name' => $input['hed_name'],
             'hed_phone_number' => $input['hed_phone_number'],

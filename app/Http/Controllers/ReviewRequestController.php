@@ -153,10 +153,10 @@ class ReviewRequestController extends Controller
         if ($data['status'] == 'SUBMITTED') {
             // send confirmation email to client
             $client = Client::where('user_id', $request->user()->id)->first();
-            $name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
+            $name = $client->business_name;
             $intro = "Dear " . $name . ",\n\n";
             $intro .= "This email is to confirm that your document submission (ID: " . $review_request_id . ") for " . $data['type'] . " has been received.\n\n";
-            $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+            $to = $client->get_emails();
             $body = "Dear Review Team,\n\n";
             $body .= $name . " completed their document submission (ID: " . $review_request_id . ") for " . $data['type'] . ".\n\n";
             $link = "https://portal.halalwatchworld.org/reviewer/clients/request/" . $review_request_id . "/review";
@@ -503,8 +503,8 @@ class ReviewRequestController extends Controller
 
         if ($data['status'] === "APPROVED") {
             $client = $review_request->client;
-            $client_name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
-            $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+            $client_name = $client->business_name;
+            $to = $client->get_emails();
 
             $review_request = ReviewRequest::findOrFail($review_request_id);
             if ($body = $this->generate_progress_report_email($review_request, true)) {
@@ -518,8 +518,8 @@ class ReviewRequestController extends Controller
         } else if ($data['status'] === "REJECTED") {
             // notify the review team
             $client = $review_request->client;
-            $client_name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
-            $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+            $client_name = $client->business_name;
+            $to = $client->get_emails();
 
             Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new DocumentFailures($client_name, $review_request_id));
         }
@@ -535,7 +535,7 @@ class ReviewRequestController extends Controller
 
         // notify the review team
         $client = $review_request->client;
-        $client_name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
+        $client_name = $client->business_name;
         $to = 'review@halalwatchworld.org';
 
         Mail::to($to)->send(new NewCorrections($client_name, $review_request_id));
@@ -548,7 +548,7 @@ class ReviewRequestController extends Controller
         $review_request = ReviewRequest::findOrFail($review_request_id);
         $body = $this->generate_progress_report_email($review_request);
         $client = $review_request->client;
-        $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+        $to = $client->get_emails();
 
         Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new ProgressReport($body));
     }

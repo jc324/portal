@@ -23,6 +23,7 @@ class Client extends Model
         'hed_name',
         'hed_phone_number',
         'hed_email',
+        'heds',
         'risk_type',
         'status'
     ];
@@ -85,5 +86,17 @@ class Client extends Model
     public function facilities_count()
     {
         return $this->facilities->count();
+    }
+
+    function get_emails()
+    {
+        $to = [$this->user->email];
+        $heds = json_decode($this->heds, true);
+
+        foreach ($heds as $hed) {
+            array_push($to, $hed['email']);
+        }
+
+        return $to;
     }
 }

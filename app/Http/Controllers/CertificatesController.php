@@ -46,8 +46,8 @@ class CertificatesController extends Controller
         $certificate->save();
 
         $client = $certificate->client;
-        $client_name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
-        $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+        $client_name = $client->business_name;
+        $to = $client->get_emails();
 
         Mail::to($to)->bcc(['Rafiq.umar@halalwatchworld.org'])->send(new NewCertificate($client_name));
 
@@ -88,8 +88,8 @@ class CertificatesController extends Controller
     public function request_hard_copy(Request $request, $certificate_id)
     {
         $client = Client::where('user_id', $request->user()->id)->first();
-        $client_name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
-        $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+        $client_name = $client->business_name;
+        $to = $client->get_emails();
 
         Mail::to($to)->bcc(['Rafiq.umar@halalwatchworld.org'])->send(new CertificateHardCopyRequest($client_name, $certificate_id));
 

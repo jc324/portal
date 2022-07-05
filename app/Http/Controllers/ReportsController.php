@@ -58,8 +58,8 @@ class ReportsController extends Controller
         $report->save();
 
         $client = Client::find($client_id);
-        $client_name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
-        $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+        $client_name = $client->business_name;
+        $to = $client->get_emails();
 
         Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new NewAuditReport($client_name));
 
@@ -77,8 +77,8 @@ class ReportsController extends Controller
         $report->save();
 
         $client = Client::find($client_id);
-        $client_name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
-        $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+        $client_name = $client->business_name;
+        $to = $client->get_emails();
 
         Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new NewDocumentReport($client_name));
 
