@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\NewAuditPrintout;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Mail;
@@ -155,4 +156,82 @@ class FacilityController extends Controller
 
         return response($document, 200);
     }
+
+    public function generate_audit_printout(Request $request, $facility_id)
+    {
+        $facility = Facility::find($facility_id);
+        $body = "**DATE GENERATED**: " . now() . "\n\n";
+        $body .= pp_facility_client($facility->client);
+        $body .= pp_facility_details($facility);
+        $body .= pp_relationship_details($facility->products);
+
+        Mail::to("audits@halalwatchworld.org")->send(new NewAuditPrintout($body));
+
+        return response('', 200);
+    }
+}
+
+function pp_facility_client(Client $client)
+{
+    $output = "## CLIENT PROFILE\n\n";
+    $output .= '- ' . '**BUSINESS NAME**' . ': `' . $client->business_name . "`\n";
+    $output .= '- ' . '**WEBSITE**' . ': `' . $client->business_name . "`\n";
+    $output .= '- ' . '**DESCRIPTION**' . ': `' . $client->description . "`\n";
+    $output .= "\n";
+    $output .= "**HALAL ENFORCEMENT DIRECTOR(S)**:\n\n";
+
+    foreach (json_decode($client->heds) as $hed) {
+        $output .= '- ' . '**NAME**' . ': `' . $hed->name . "`\n";
+        $output .= '  - ' . '**CONTACT NUMBER**' . ': `' . $hed->phone_number . "`\n";
+        $output .= '  - ' . '**EMAIL**' . ': `' . $hed->email . "`\n";
+    }
+
+    $output .= "\n---\n";
+
+    return $output;
+}
+
+function pp_facility_details(Facility $facility): string
+{
+    $category_code = FacilityCategories::find($facility->category_id)->code;
+    $qualified_id = $category_code . $facility->id;
+    $output = "## Facility " . $facility->id . "\n\n";
+    $output .= '- ' . '**ID**' . ': `' . $qualified_id . "`\n";
+    $output .= '- ' . '**NAME**' . ': `' . $facility->name . "`\n";
+    $output .= '- ' . '**ADDRESS**' . ': `' . $facility->address . "`\n";
+    $output .= '- ' . '**CITY**' . ': `' . $facility->city . "`\n";
+    $output .= '- ' . '**STATE**' . ': `' . $facility->state . "`\n";
+    $output .= '- ' . '**ZIP**' . ': `' . $facility->zip . "`\n";
+    $output .= '- ' . '**COUNTRY**' . ': `' . $facility->country . "`\n";
+
+    $output .= "\n---\n";
+
+    return $output;
+}
+
+function pp_relationship_details($products): string
+{
+    $output = "## PRODUCT > INGREDIENT > RMM RELATIONSHIP\n";
+    $output .= "**PRODUCTS**:\n";
+
+    foreach ($products as $product) {
+        $output .= "\n" . '- ' . $product->name . "\n\n";
+        $output .= "  - DESCRIPTION: " . ($product->description ? $product->description : "NONE") . "\n";
+        $output .= "  - INGREDIENTS:\n";
+
+        if ($ingredients = $product->ingredients)
+            if (count($ingredients) == 0) $output .= " NONE\n";
+            else
+                foreach ($product->ingredients as $ingredient) {
+                    $output .= "    - " . $ingredient->name;
+
+                    if ($manufacturer = $ingredient->manufacturer) {
+                        $output .= " (" . $manufacturer->name . ")";
+                    }
+
+                    $output .= "\n";
+                }
+    }
+
+    return $output;
 }

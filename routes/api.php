@@ -68,6 +68,7 @@ Route::middleware('auth:sanctum')->post('/client/facility/document/{id}/status',
 Route::middleware('auth:sanctum')->post('/client/facility/document/{id}/note', [FacilityController::class, 'set_document_note']);
 Route::middleware('auth:sanctum')->delete('/client/facility/document/{id}', [FacilityController::class, 'delete_document']);
 Route::middleware('auth:sanctum')->put('/client/facility/document/{id}/expires-at', [FacilityController::class, 'update_document_expiration']);
+Route::middleware('auth:sanctum')->post('/client/facility/{id}/audit-printout', [FacilityController::class, 'generate_audit_printout']);
 // @TODO why does it fail when prepended with '/client'
 Route::middleware('auth:sanctum')->post('/review-requests', [ReviewRequestController::class, 'get_client_review_requests']);
 Route::middleware('auth:sanctum')->post('/clients/review-requests', [ReviewRequestController::class, 'get_review_requests']);
@@ -110,6 +111,7 @@ Route::middleware('auth:sanctum')->get('/client/{id}/certificates', [Certificate
 Route::middleware('auth:sanctum')->post('/client/facility/{id}/products', [ProductController::class, 'get_products']);
 Route::middleware('auth:sanctum')->put('/client/product', [ProductController::class, 'add_product']);
 Route::middleware('auth:sanctum')->put('/client/product/{id}', [ProductController::class, 'update_product']);
+Route::middleware('auth:sanctum')->post('/client/product/{id}/duplicate', [ProductController::class, 'duplicate_product']);
 Route::middleware('auth:sanctum')->delete('/client/product/{id}', [ProductController::class, 'delete_product']);
 Route::middleware('auth:sanctum')->post('/client/product/categories', [ProductController::class, 'get_categories']);
 Route::middleware('auth:sanctum')->post('/client/product/{id}/documents', [ProductController::class, 'get_documents']);

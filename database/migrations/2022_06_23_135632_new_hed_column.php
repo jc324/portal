@@ -14,7 +14,7 @@ class NewHedColumn extends Migration
     public function up()
     {
         Schema::table('clients', function (Blueprint $table) {
-            $table->json('heds')->default('[]')->after('risk_type');
+            $table->json('heds')->after('risk_type');
         });
     }
 

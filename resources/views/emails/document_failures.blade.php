@@ -5,7 +5,7 @@ Dear {{ $client_name }},
 
 The review team rejected some of your documents in submission (ID: {{ $request_id }}). Click the button below to view the details and update all failed documents.
 
-@component('mail::button', ['url' => 'http://127.0.0.1:8000/client/request/' . $request_id . '/corrections'])
+@component('mail::button', ['url' => 'https://portal.halalwatchworld.org/client/request/' . $request_id . '/corrections'])
 View Failures
 @endcomponent
 

@@ -18,20 +18,22 @@ class DeprecateOldHedColumn extends Migration
         $clients = Client::all();
 
         foreach ($clients as $client) {
+            $heds = [];
+
             if (
                 !empty($client->hed_name)
                 && !empty($client->hed_email)
             ) {
-                $heds = [];
                 $phone_number = !empty($client->hed_phone_number) ? $client->hed_phone_number : "";
                 array_push($heds, array(
                     "name" => $client->hed_name,
                     "phone_number" => $phone_number,
                     "email" => $client->hed_email
                 ));
-                $client->heds = json_encode($heds);
-                $client->save();
             }
+
+            $client->heds = json_encode($heds);
+            $client->save();
         }
 
         // @TODO Drop columns

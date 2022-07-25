@@ -555,7 +555,7 @@ class ReviewRequestController extends Controller
 
     public function generate_progress_report_email($review_request, $is_final = false)
     {
-        $client_name = $review_request->client->hed_name;
+        $client_name = $review_request->client->business_name;
         $time_type = $is_final ? "final" : "weekly";
         $review_request_info = "Dear " . $client_name . ",\n\n";
         $review_request_info .= $is_final ? "Congratulations! You have successfully passed the document review.\n\n" : "";

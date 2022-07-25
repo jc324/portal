@@ -175,4 +175,23 @@ class ProductController extends Controller
 
         return response($document, 200);
     }
+
+    public function duplicate_product($product_id)
+    {
+        $product = Product::find($product_id);
+        $product_copy = $product->replicate();
+        preg_match('/\((\d+)\)$/', $product_copy->name, $matches);
+        if (!empty($matches))
+            $product_copy->name = preg_replace('/\(\d+\)$/', '(' . $matches[1] + 1 . ')', $product_copy->name);
+        else $product_copy->name .= ' (1)';
+        $product_copy->push();
+
+        foreach ($product->ingredients as $ingredient) {
+            $ingredient_copy = $ingredient->replicate();
+            $ingredient_copy->product_id = $product_copy->id;
+            $ingredient_copy->push();
+        }
+
+        return response($product_copy, 200);
+    }
 }

@@ -5,12 +5,12 @@ Dear {{ $client_name }},
 
 Halal Watch World LLC would like to thank you for remaining a loyal customer of ours and to welcome you in another year of Halal compliance.
 
-Your certificate is set to **expire within 30 days**. To view your expiring certificate, login to your [client portal](https://portal.halalwatchworld.org/).
+Your certificate is set to **expire within 30 days**. To view your expiring certificate, you may login to your [client portal account](https://portal.halalwatchworld.org/).
 
 In order to extend your certificate an additional year, and maintain your premises as a Halal producing facility, the following must be completed prior to expiration.
 
 1. **Document Submission Form D - [Recertification]({{ $form_d_link }})**
-2. **Remote Audit**
+2. **Remote Audit - [Schedule here](https://portal.halalwatchworld.org/client/scheduling)**
 3. **Invoice payment**
 
 After renewal, you will receive a new certificate in the mail for the upcoming year.

@@ -60,6 +60,7 @@ class Client extends Model
         $client->business_name = $data['business_name'];
         $client->website = $data['website'];
         $client->description = $data['description'];
+        $client->heds = '[]';
         $client->save();
 
         return $client;
