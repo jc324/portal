@@ -145,7 +145,8 @@ class ReviewRequestController extends Controller
             'facility_id',
             'type',
             'status',
-            'current_step_index'
+            'current_step_index',
+            'assured_space_check'
         );
         $review_request = ReviewRequest::where('id', $review_request_id);
         $review_request->update($data);
@@ -166,7 +167,7 @@ class ReviewRequestController extends Controller
         }
 
         // @TODO set facility with given id
-        // @TODO deleted any associated products and facilities
+        // @TODO delete any associated products and facilities
 
         return $review_request->get()[0];
     }
@@ -310,6 +311,11 @@ class ReviewRequestController extends Controller
 
             case 'NEW_PRODUCTS':
                 if ($products = $review_request->products) {
+                    if ($review_request->assured_space_check)
+                        $review_request_info .= "**DESIGNATED ASSURED SPACE**: `TRUE`\n\n";
+                    else
+                        $review_request_info .= "**DESIGNATED ASSURED SPACE**: `FALSE`\n\n";
+
                     $review_request_info .= pp_products($products);
                     foreach ($products as $product) {
                         foreach ($product->documents as $doc) {

@@ -23,9 +23,11 @@ class Client extends Model
         'hed_name',
         'hed_phone_number',
         'hed_email',
-        'heds',
         'risk_type',
-        'status'
+        'status',
+        'heds',
+        'check_expired_certs',
+        'check_new_certs'
     ];
 
     public static function create(array $data)
@@ -61,6 +63,8 @@ class Client extends Model
         $client->website = $data['website'];
         $client->description = $data['description'];
         $client->heds = '[]';
+        $client->check_expired_certs = false;
+        $client->check_new_certs = false;
         $client->save();
 
         return $client;

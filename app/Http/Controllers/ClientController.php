@@ -39,40 +39,20 @@ class ClientController extends Controller
         $product_count = Product::where('client_id', $client_id)->count();
         $review_request_count = ReviewRequest::where('client_id', $client_id)->count();
         $current_rr = ReviewRequest::where('client_id', $client_id)->latest()->first();
-        $current_rr_status = "NONE";
-        $current_request_progress = 0;
-        $has_expired_certs = Certificate::where('client_id', $client_id)->where('expires_at', '<=', now())->first() ? true : false;
-
-        if ($current_rr) {
-            $current_rr_status = $current_rr->status;
-
-            if ($current_rr->status == "DRAFT") {
-                switch ($current_rr->type) {
-                    case 'NEW_FACILITY':
-                        $current_request_progress = (($current_rr->current_step_index + 1) * 100) / 9;
-                        break;
-
-                    case 'NEW_PRODUCTS':
-                        $current_request_progress = (($current_rr->current_step_index + 1) * 100) / 4;
-                        break;
-
-                    case 'NEW_FACILITY_AND_PRODUCTS':
-                        $current_request_progress = (($current_rr->current_step_index + 1) * 100) / 10;
-                        break;
-                }
-            }
-        }
+        $current_rr_status = $current_rr ? $current_rr->status : "NONE";
 
         return array(
             'account_status' => $client->status,
             'current_request_id' => $current_rr ? $current_rr->id : null,
             'current_request_status' => $current_rr_status,
-            'current_request_progress' => $current_request_progress,
+            'current_request_submission_progress' => $current_rr ? $current_rr->get_submission_progress() : 0,
+            'current_request_review_progress' => $current_rr ? $current_rr->get_review_progress() : 0,
             'facility_count' => $facility_count,
             'product_count' => $product_count,
             'has_hed' => $this->has_hed($client),
             'review_request_count' => $review_request_count,
-            'has_expired_certs' => $has_expired_certs
+            'has_expired_certs' => $client->check_expired_certs,
+            'has_new_certs' => $client->check_new_certs,
         );
     }
 
@@ -244,7 +224,8 @@ class ClientController extends Controller
         foreach ($products as $product) {
             $facility = $product->facility;
             $product_facility_category_code = $facility ? FacilityCategories::find($product->facility->category_id)->code : '00';
-            $product_category_code = ProductCategories::find($product->category_id)->code;
+            $product_category_code = '00';
+            if ($p = ProductCategories::find($product->category_id)) $product_category_code = $p->code;
             $qualified_id = $product_facility_category_code . $product->facility_id . '_' . $product_category_code . $product->id;
             $product->qualified_id = $qualified_id;
         }

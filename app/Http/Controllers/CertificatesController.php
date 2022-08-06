@@ -32,6 +32,11 @@ class CertificatesController extends Controller
         $certificate->expires_at = date('Y-m-d H:i:s', strtotime('+1 year - 1 day')); // from now
         $certificate->save();
 
+        $client = $certificate->client;
+        // show tracker
+        $client->update(['check_new_certs' => true]);
+        $client->save();
+
         return response($certificate, 200);
     }
 
@@ -48,6 +53,9 @@ class CertificatesController extends Controller
         $client = $certificate->client;
         $client_name = $client->business_name;
         $to = $client->get_emails();
+        // show tracker
+        $client->update(['check_new_certs' => true]);
+        $client->save();
 
         Mail::to($to)->bcc(['Rafiq.umar@halalwatchworld.org'])->send(new NewCertificate($client_name));
 
@@ -57,8 +65,14 @@ class CertificatesController extends Controller
     // for client
     public function get_certificates(Request $request)
     {
-        $client_id = Client::where('user_id', $request->user()->id)->first()->id;
-        $certificates = Certificate::where(['client_id' => $client_id])->get()->reverse()->values();
+        $client = Client::where('user_id', $request->user()->id)->first();
+        $certificates = Certificate::where(['client_id' => $client->id])->get()->reverse()->values();
+        // hide tracker
+        $client->update([
+            'check_expired_certs' => false,
+            'check_new_certs' => false
+        ]);
+        $client->save();
 
         return $certificates;
     }

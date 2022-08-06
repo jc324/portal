@@ -3,7 +3,7 @@
 namespace App\Console;
 
 use App\Http\Controllers\ReviewRequestController;
-use App\Mail\CertificateExpired;
+use App\Mail\CertificateExpiresToday;
 use App\Mail\CertificateRenewal;
 use App\Mail\ExpiringCertificates;
 use App\Mail\ProgressReport;
@@ -75,7 +75,8 @@ function cron_weekly_progress_report()
         $controller = new ReviewRequestController();
         $body = $controller->generate_progress_report_email($review_request);
         $client = $review_request->client;
-        $to = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+        $client_name = $client->business_name;
+        $to = $client->get_emails();
 
         Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new ProgressReport($body));
     }
@@ -91,11 +92,15 @@ function cron_notify_expired_certs()
 
     foreach ($certs as $cert) {
         $client = $cert->client;
-        $client_name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
-        $client_email = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+        $client_name = $client->business_name;
+        $to = $client->get_emails();
+
+        // show tracker
+        $client->update(['check_expired_certs' => true]);
+        $client->save();
 
         // to client
-        Mail::to($client_email)->cc(['review@halalwatchworld.org'])->send(new CertificateExpired($client_name));
+        Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new CertificateExpiresToday($client_name));
 
         $expired_certs_table .= '|' . $client->business_name;
         $expired_certs_table .= '|' . $client->hed_name;
@@ -116,14 +121,14 @@ function cron_notify_pre_expired_certs()
 
     foreach ($certs as $cert) {
         $client = $cert->client;
-        $client_name = !empty($client->hed_name) ? $client->hed_name : $client->business_name;
-        $client_email = !empty($client->hed_email) ? $client->hed_email : $client->user->email;
+        $client_name = $client->business_name;
+        $to = $client->get_emails();
         $form_d_link = $client->risk_type === "HIGH"
             ? "https://www.halalwatchworld.org/docsubmit/form-d-highrisk"
             : "https://www.halalwatchworld.org/docsubmit/form-d-lowrisk";
         // $form_d_link = "https://www.halalwatchworld.org/docsubmit/form-d-highrisk";
 
         // to client
-        Mail::to($client_email)->cc(['review@halalwatchworld.org'])->send(new CertificateRenewal($client_name, $form_d_link));
+        Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new CertificateRenewal($cert->id, $client_name, $form_d_link));
     }
 }

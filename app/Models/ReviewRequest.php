@@ -27,17 +27,18 @@ class ReviewRequest extends Model
 
     public static function create(array $data)
     {
-        // product
-        $product = new self();
-        $product->client_id = $data['client_id'];
-        $product->reviewer_id = $data['reviewer_id'];
-        $product->facility_id = $data['facility_id'];
-        $product->type = $data['type'];
-        $product->status = $data['status'];
-        $product->current_step_index = $data['current_step_index'];
-        $product->save();
+        // review_request
+        $review_request = new self();
+        $review_request->client_id = $data['client_id'];
+        $review_request->reviewer_id = $data['reviewer_id'];
+        $review_request->facility_id = $data['facility_id'];
+        $review_request->type = $data['type'];
+        $review_request->status = $data['status'];
+        $review_request->current_step_index = $data['current_step_index'];
+        $review_request->assured_space_check = false;
+        $review_request->save();
 
-        return $product;
+        return $review_request;
     }
 
     public function client()
@@ -68,5 +69,78 @@ class ReviewRequest extends Model
     public function reports()
     {
         return $this->hasMany(Report::class);
+    }
+
+    public function get_submission_progress()
+    {
+
+        if ($this->status == "DRAFT") {
+            switch ($this->type) {
+                case 'NEW_FACILITY':
+                    return (($this->current_step_index + 1) * 100) / 9;
+                    break;
+
+                case 'NEW_PRODUCTS':
+                    return (($this->current_step_index + 1) * 100) / 5;
+                    break;
+
+                case 'NEW_FACILITY_AND_PRODUCTS':
+                    return (($this->current_step_index + 1) * 100) / 10;
+                    break;
+            }
+        } else return 100;
+    }
+
+    public function get_review_progress()
+    {
+        $facility_docs = Facility::find($this->facility_id)->documents;
+        $facility_docs_count = $facility_docs->count();
+        $approved_facility_docs_count = 0;
+
+        foreach ($facility_docs as $doc)
+            if ($doc->status == "APPROVED") $approved_facility_docs_count++;
+
+        $facility_docs_progress = ($approved_facility_docs_count * 100) / $facility_docs_count;
+
+        if ($products = $this->products) {
+            $product_count = $products->count();
+            $ingredient_count = 0;
+            $approved_product_docs_count = 0;
+            $approved_ingredient_docs_count = 0;
+            $haram_ingredients = 0;
+
+            foreach ($products as $product) {
+                if ($docs = $product->documents)
+                    if (count($docs) > 0 && $docs[0]->status == "APPROVED") $approved_product_docs_count++;
+
+                if ($ingredients = $product->ingredients) {
+                    $ingredient_count += $ingredients->count();
+
+                    foreach ($ingredients as $ingredient) {
+                        if ($ingredient->recommendation == "HARAM") $haram_ingredients++;
+                        if ($manufacturer = $ingredient->manufacturer) {
+                            if ($docs = $manufacturer->documents)
+                                if (count($docs) > 0 && $docs[0]->status == "APPROVED") $approved_ingredient_docs_count++;
+                        }
+                    }
+                }
+            }
+
+            $product_docs_progress = $product_count > 0 ? ($approved_product_docs_count * 100) / $product_count : 0;
+
+            // considering all
+            if ($ingredient_count > 0) {
+                $ingredients_progress = (($ingredient_count - $haram_ingredients) * 100) / $ingredient_count;
+                $ingredient_docs_progress = ($approved_ingredient_docs_count * 100) / $ingredient_count;
+
+                return ($facility_docs_progress + $product_docs_progress + $ingredients_progress + $ingredient_docs_progress) / 4;
+            }
+
+            // considering facility and products only
+            return ($facility_docs_progress + $product_docs_progress) / 2;
+        }
+
+        // considering facility only
+        return $facility_docs_progress;
     }
 }
