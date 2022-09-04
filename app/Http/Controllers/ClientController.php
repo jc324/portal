@@ -12,6 +12,7 @@ use App\Models\ProductCategories;
 use App\Models\ReviewRequest;
 use App\Models\User;
 use App\Models\Profile;
+use App\Models\Report;
 
 class ClientController extends Controller
 {
@@ -39,20 +40,29 @@ class ClientController extends Controller
         $product_count = Product::where('client_id', $client_id)->count();
         $review_request_count = ReviewRequest::where('client_id', $client_id)->count();
         $current_rr = ReviewRequest::where('client_id', $client_id)->latest()->first();
+        $current_rr_type = $current_rr ? $current_rr->type : "NONE";
         $current_rr_status = $current_rr ? $current_rr->status : "NONE";
+        $cr_doc_report = $current_rr ? !is_null(Report::where(['request_id' => $current_rr->id, 'type' => "REVIEW_REPORT"])->first()) : false;
+        $cr_audit_report = $current_rr ? !is_null(Report::where(['request_id' => $current_rr->id, 'type' => "AUDIT_REPORT"])->first()) : false;
+        $cr_certificate = $current_rr ? !is_null(Certificate::whereDate('created_at', '>', $current_rr->created_at)->first()) : false;
 
         return array(
             'account_status' => $client->status,
-            'current_request_id' => $current_rr ? $current_rr->id : null,
-            'current_request_status' => $current_rr_status,
-            'current_request_submission_progress' => $current_rr ? $current_rr->get_submission_progress() : 0,
-            'current_request_review_progress' => $current_rr ? $current_rr->get_review_progress() : 0,
+            'cr_id' => $current_rr ? $current_rr->id : null,
+            'cr_type' => $current_rr_type,
+            'cr_status' => $current_rr_status,
+            'cr_submission_progress' => $current_rr ? $current_rr->get_submission_progress() : 0,
+            'cr_review_progress' => $current_rr ? $current_rr->get_review_progress() : 0,
+            'cr_doc_report' => $cr_doc_report,
+            'cr_audit_report' => $cr_audit_report,
+            'cr_certificate' => $cr_certificate,
             'facility_count' => $facility_count,
             'product_count' => $product_count,
             'has_hed' => $this->has_hed($client),
             'review_request_count' => $review_request_count,
             'has_expired_certs' => $client->check_expired_certs,
             'has_new_certs' => $client->check_new_certs,
+            'has_failed_submissions' => $client->has_failed_submissions(),
         );
     }
 
@@ -87,7 +97,8 @@ class ClientController extends Controller
         foreach ($clients as $client) {
             $client->user->profile;
             $client->reviewer->profile;
-            $client['facilities_count'] = $client->facilities->count();
+            $client['facility_count'] = $client->facilities->count();
+            $client['product_count'] = $client->products->count();
         }
 
         return $clients;

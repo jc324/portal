@@ -1,5 +1,5 @@
 @component('mail::message')
-# Weekly Progress Report
+# Progress Report
 
 {!! $body !!}
 

@@ -14,8 +14,6 @@ You are expected to complete the following prior to certificate expiry in order 
 
 After renewal, you will receive a new certificate in the mail for the upcoming year.
 
-Please complete **Form D as soon as possible**. Your audit will be scheduled thereafter.
-
 You will receive an email specifying the exact date and time soon.
 
 If you need to reschedule, **inform us immediately**. You may do so via your audit email.

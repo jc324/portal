@@ -59,28 +59,33 @@ class IngredientController extends Controller
 
     public function set_ingredient_recommendation(Request $request, $ingredientId)
     {
-        $ingredient = Ingredient::findOrFail($ingredientId);
-        $ingredient->update(['recommendation' => $request['recommendation']]);
-        $ingredient->save();
+        if ($request['ids']) {
+            $ingredients = Ingredient::whereIn('id', $request['ids']);
+        } else $ingredients = Ingredient::findOrFail($ingredientId);
+
+        $ingredients->update(['recommendation' => $request['recommendation']]);
 
         return response('', 200);
     }
 
     public function set_ingredient_source(Request $request, $ingredientId)
     {
-        $ingredient = Ingredient::findOrFail($ingredientId);
-        $ingredient->update(['source' => $request['source']]);
-        $ingredient->save();
+        if ($request['ids']) {
+            $ingredients = Ingredient::whereIn('id', $request['ids']);
+        } else $ingredients = Ingredient::findOrFail($ingredientId);
+
+        $ingredients->update(['source' => $request['source']]);
 
         return response('', 200);
     }
 
     public function set_ingredient_description(Request $request, $ingredient_id)
     {
-        $data = $request->only('description');
-        $ingredient = Ingredient::findOrFail($ingredient_id);
-        $ingredient->description = $data['description'];
-        $ingredient->save();
+        if ($request['ids']) {
+            $ingredients = Ingredient::whereIn('id', $request['ids']);
+        } else $ingredients = Ingredient::findOrFail($ingredient_id);
+
+        $ingredients->update(['description' => $request['description']]);
 
         return response('', 200);
     }

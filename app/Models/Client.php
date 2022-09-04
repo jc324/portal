@@ -8,6 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\User;
 use App\Models\Profile;
 use App\Models\Facility;
+use App\Models\Product;
+use App\Models\ReviewRequest;
 
 class Client extends Model
 {
@@ -88,20 +90,47 @@ class Client extends Model
         return $this->hasMany(Facility::class);
     }
 
+    public function products()
+    {
+        return $this->hasMany(Product::class);
+    }
+
     public function facilities_count()
     {
         return $this->facilities->count();
     }
 
-    function get_emails()
+    function get_email()
     {
-        $to = [$this->user->email];
+        return $this->user->email;
+    }
+
+    function get_hed_emails()
+    {
+        $email = [];
         $heds = json_decode($this->heds, true);
 
         foreach ($heds as $hed) {
-            array_push($to, $hed['email']);
+            array_push($email, $hed['email']);
         }
 
-        return $to;
+        return $email;
+    }
+
+    function get_emails()
+    {
+        $emails = [$this->user->email];
+        $heds = json_decode($this->heds, true);
+
+        foreach ($heds as $hed) {
+            array_push($emails, $hed['email']);
+        }
+
+        return $emails;
+    }
+
+    function has_failed_submissions()
+    {
+        return ReviewRequest::where(['client_id' => $this->id, 'status' => 'REJECTED'])->first() ? true : false;
     }
 }

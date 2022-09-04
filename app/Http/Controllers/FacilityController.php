@@ -174,6 +174,7 @@ class FacilityController extends Controller
 function pp_facility_client(Client $client)
 {
     $output = "## CLIENT PROFILE\n\n";
+    $output .= '- ' . '**ID**' . ': `' . $client->id . "`\n";
     $output .= '- ' . '**BUSINESS NAME**' . ': `' . $client->business_name . "`\n";
     $output .= '- ' . '**WEBSITE**' . ': `' . $client->business_name . "`\n";
     $output .= '- ' . '**DESCRIPTION**' . ': `' . $client->description . "`\n";

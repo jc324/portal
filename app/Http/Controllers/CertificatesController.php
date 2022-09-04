@@ -52,12 +52,13 @@ class CertificatesController extends Controller
 
         $client = $certificate->client;
         $client_name = $client->business_name;
-        $to = $client->get_emails();
+        $to = $client->get_email();
+        $cc = $client->get_hed_emails();
         // show tracker
         $client->update(['check_new_certs' => true]);
         $client->save();
 
-        Mail::to($to)->bcc(['Rafiq.umar@halalwatchworld.org'])->send(new NewCertificate($client_name));
+        Mail::to($to)->cc($cc)->bcc(['Rafiq.umar@halalwatchworld.org'])->send(new NewCertificate($client_name));
 
         return response($certificate, 200);
     }
