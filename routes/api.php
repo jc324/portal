@@ -6,6 +6,7 @@ use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ReviewerController;
 use App\Http\Controllers\ClientController;
+use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\FacilityController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\IngredientController;
@@ -42,6 +43,10 @@ Route::middleware('auth:sanctum')->post('/client/{id}/profile', [ClientControlle
 Route::middleware('auth:sanctum')->put('/client/profile', [ClientController::class, 'update_current_user_profile']);
 Route::middleware('auth:sanctum')->put('/client/{id}/profile', [ClientController::class, 'update_user_profile']);
 Route::middleware('auth:sanctum')->post('/client/last-draft-submission', [ClientController::class, 'get_last_draft_submission']);
+Route::middleware('auth:sanctum')->post('/client/documents/recent', [DocumentController::class, 'get_recent_documents']);
+Route::middleware('auth:sanctum')->post('/client/documents/uploaded', [DocumentController::class, 'get_documents']);
+Route::middleware('auth:sanctum')->post('/client/documents/add', [DocumentController::class, 'add_document']);
+Route::middleware('auth:sanctum')->delete('/client/documents/{id}', [DocumentController::class, 'delete_document']);
 
 // Reviewer
 Route::middleware('auth:sanctum')->put('/reviewer/register-client', [ReviewerController::class, 'register_client']);
@@ -61,6 +66,7 @@ Route::middleware('auth:sanctum')->put('/client/{id}/facility', [FacilityControl
 Route::middleware('auth:sanctum')->put('/client/facility/{id}', [FacilityController::class, 'update_facility']);
 Route::middleware('auth:sanctum')->delete('/client/facility/{id}', [FacilityController::class, 'delete_facility']);
 Route::middleware('auth:sanctum')->post('/client/facility/categories', [FacilityController::class, 'get_categories']);
+Route::middleware('auth:sanctum')->post('/client/facility/documents', [FacilityController::class, 'get_all_documents']);
 Route::middleware('auth:sanctum')->post('/client/facility/{id}/documents', [FacilityController::class, 'get_documents']);
 Route::middleware('auth:sanctum')->post('/client/facility/{id}/document', [FacilityController::class, 'add_document']);
 Route::middleware('auth:sanctum')->post('/client/facility/document/{id}', [FacilityController::class, 'update_document']);
@@ -114,6 +120,7 @@ Route::middleware('auth:sanctum')->put('/client/product/{id}', [ProductControlle
 Route::middleware('auth:sanctum')->post('/client/product/{id}/duplicate', [ProductController::class, 'duplicate_product']);
 Route::middleware('auth:sanctum')->delete('/client/product/{id}', [ProductController::class, 'delete_product']);
 Route::middleware('auth:sanctum')->post('/client/product/categories', [ProductController::class, 'get_categories']);
+Route::middleware('auth:sanctum')->post('/client/product/documents', [ProductController::class, 'get_all_documents']);
 Route::middleware('auth:sanctum')->post('/client/product/{id}/documents', [ProductController::class, 'get_documents']);
 Route::middleware('auth:sanctum')->post('/client/product/{id}/document', [ProductController::class, 'add_document']);
 Route::middleware('auth:sanctum')->post('/client/product/document/{id}', [ProductController::class, 'update_document']);
@@ -133,6 +140,7 @@ Route::middleware('auth:sanctum')->delete('/client/ingredient/{id}', [Ingredient
 Route::middleware('auth:sanctum')->delete('/client/ingredient/{id}', [IngredientController::class, 'delete_ingredient']);
 // Manufacturer
 Route::middleware('auth:sanctum')->post('/manufacturers', [ManufacturerController::class, 'auto_suggest_search_list']);
+Route::middleware('auth:sanctum')->post('/client/manufacturer/documents', [ManufacturerController::class, 'get_all_documents']);
 Route::middleware('auth:sanctum')->post('/manufacturer/{id}/documents', [ManufacturerController::class, 'get_documents']);
 Route::middleware('auth:sanctum')->post('/manufacturer/{id}/document', [ManufacturerController::class, 'add_document']);
 Route::middleware('auth:sanctum')->post('/client/manufacturer/document/{id}/status', [ManufacturerController::class, 'set_document_status']);

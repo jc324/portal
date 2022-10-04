@@ -60,6 +60,19 @@ class FacilityController extends Controller
         return FacilityCategories::all();
     }
 
+    public function get_all_documents(Request $request)
+    {
+        $client = Client::where('user_id', $request->user()->id)->first();
+        $facilities = $client->facilities;
+        $docs = [];
+
+        foreach ($facilities as $facility) {
+            $docs = array_merge($docs, $facility->documents->toArray());
+        }
+
+        return $docs;
+    }
+
     public function get_documents($facilityId)
     {
         return Facility::find($facilityId)->documents;

@@ -9,6 +9,7 @@ use App\Models\User;
 use App\Models\Profile;
 use App\Models\Facility;
 use App\Models\Product;
+use App\Models\Ingredient;
 use App\Models\ReviewRequest;
 
 class Client extends Model
@@ -93,6 +94,11 @@ class Client extends Model
     public function products()
     {
         return $this->hasMany(Product::class);
+    }
+
+    public function ingredients()
+    {
+        return $this->hasMany(Ingredient::class);
     }
 
     public function facilities_count()

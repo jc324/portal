@@ -79,6 +79,19 @@ class ProductController extends Controller
         return ProductCategories::all();
     }
 
+    public function get_all_documents(Request $request)
+    {
+        $client = Client::where('user_id', $request->user()->id)->first();
+        $products = $client->products;
+        $docs = [];
+
+        foreach ($products as $product) {
+            $docs = array_merge($docs, $product->documents->toArray());
+        }
+
+        return $docs;
+    }
+
     public function get_documents($productId)
     {
         return Product::findOrFail($productId)->documents;
@@ -178,20 +191,20 @@ class ProductController extends Controller
 
     public function duplicate_product($product_id)
     {
-        $product = Product::find($product_id);
-        $product_copy = $product->replicate();
-        preg_match('/\((\d+)\)$/', $product_copy->name, $matches);
-        if (!empty($matches))
-            $product_copy->name = preg_replace('/\(\d+\)$/', '(' . $matches[1] + 1 . ')', $product_copy->name);
-        else $product_copy->name .= ' (1)';
-        $product_copy->push();
+        // $product = Product::find($product_id);
+        // $product_copy = $product->replicate();
+        // preg_match('/\((\d+)\)$/', $product_copy->name, $matches);
+        // if (!empty($matches))
+        //     $product_copy->name = preg_replace('/\(\d+\)$/', '(' . $matches[1] + 1 . ')', $product_copy->name);
+        // else $product_copy->name .= ' (1)';
+        // $product_copy->push();
 
-        foreach ($product->ingredients as $ingredient) {
-            $ingredient_copy = $ingredient->replicate();
-            $ingredient_copy->product_id = $product_copy->id;
-            $ingredient_copy->push();
-        }
+        // foreach ($product->ingredients as $ingredient) {
+        //     $ingredient_copy = $ingredient->replicate();
+        //     $ingredient_copy->product_id = $product_copy->id;
+        //     $ingredient_copy->push();
+        // }
 
-        return response($product_copy, 200);
+        // return response($product_copy, 200);
     }
 }

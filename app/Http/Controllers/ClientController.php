@@ -68,7 +68,7 @@ class ClientController extends Controller
 
     public function has_hed(Client $client)
     {
-        return ($client->hed_name && $client->hed_phone_number && $client->hed_email) ? true : false;
+        return count(json_decode($client->heds)) > 0 ? true : false;
     }
 
     public function get_dashboard_latest_requests(Request $request)

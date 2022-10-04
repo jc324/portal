@@ -622,8 +622,8 @@ class ReviewRequestController extends Controller
             ? $review_request_info . $review_counts . $document_statuses . $product_statuses
             : $review_request_info . $review_counts . $document_statuses . $product_statuses . $review_notes;
 
-        if ($is_final && $this->get_progress($review_request->id) < 100)
-            return null;
+        // if ($is_final && $this->get_progress($review_request->id) < 100)
+        //     return null;
 
         return $body;
     }

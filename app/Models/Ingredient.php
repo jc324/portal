@@ -55,4 +55,9 @@ class Ingredient extends Model
     {
         return $this->belongsTo(Manufacturer::class);
     }
+
+    // public function documents()
+    // {
+    //     return $this->manufacturer()->documents;
+    // }
 }

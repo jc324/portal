@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Storage;
+use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\FacilityController;
 use App\Http\Controllers\ReviewRequestController;
 use App\Http\Controllers\ReportsController;
@@ -47,6 +48,7 @@ Route::middleware('auth:sanctum')->get('/documents/{filename}', function ($filen
     return Storage::download('documents/' . $filename);
 });
 // http://127.0.0.1:8000/reports/document/3
+Route::middleware('auth:sanctum')->get('/client/document/{id}', [DocumentController::class, 'download_document_by_id']);
 Route::middleware('auth:sanctum')->get('/reports/document/{id}', [ReportsController::class, 'download_document_by_id']);
 Route::middleware('auth:sanctum')->get('/certificates/document/{id}', [CertificatesController::class, 'download_document_by_id']);
 // reviewer review request docs

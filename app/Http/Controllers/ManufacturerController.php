@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
+use App\Models\Client;
 use App\Models\Manufacturer;
 use App\Models\ManufacturerDocument;
 // use App\Models\Ingredient;
@@ -16,6 +17,29 @@ class ManufacturerController extends Controller
         // return Manufacturer::whereLike('name', $request['name'])->get();
         // return Manufacturer::all()->pluck('name')->toArray();
         return Manufacturer::all();
+    }
+
+    public function get_all_documents(Request $request)
+    {
+        $client = Client::where('user_id', $request->user()->id)->first();
+        $ingredients = $client->ingredients;
+        $manufacturer_ids = [];
+
+        foreach ($ingredients as $ingredient) {
+            $manufacturer_id = $ingredient->manufacturer->id;
+            if (!in_array($manufacturer_id, $manufacturer_ids))
+                $manufacturer_ids[] = $manufacturer_id;
+            // $docs = array_merge($docs, $ingredient->manufacturer->toArray());
+        }
+
+        $manufacturers = Manufacturer::findMany($manufacturer_ids);
+        $docs = [];
+
+        foreach ($manufacturers as $manufacturer) {
+            $docs = array_merge($docs, $manufacturer->documents->toArray());
+        }
+
+        return $docs;
     }
 
     public function get_documents($manufacturerId)
