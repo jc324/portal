@@ -30,6 +30,8 @@ use App\Http\Controllers\CertificatesController;
 Route::middleware('auth:sanctum')->post('/user', [UserController::class, 'get_current_user']);
 
 // Common
+Route::middleware('auth:sanctum')->post('/users', [UserController::class, 'auto_suggest_users']);
+Route::middleware('auth')->post('/login-as/{id}', [UserController::class, 'login_as']);
 Route::middleware('auth:sanctum')->post('/profile', [ProfileController::class, 'get_current_user_profile']);
 Route::middleware('auth:sanctum')->put('/profile', [ProfileController::class, 'update_current_user_profile']);
 Route::middleware('auth:sanctum')->post('/profile/avatar', [ProfileController::class, 'update_avatar']);
@@ -85,6 +87,7 @@ Route::middleware('auth:sanctum')->delete('/client/review-request/{id}', [Review
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/assign-reviewer', [ReviewRequestController::class, 'assign_reviewer']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/send-report', [ReviewRequestController::class, 'generate_progress_report']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/products', [ReviewRequestController::class, 'get_review_request_products']);
+// Route::middleware('auth:sanctum')->post('/client/review-request/{id}/products-step', [ReviewRequestController::class, 'get_review_request_products_step']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/products/docs', [ReviewRequestController::class, 'get_review_request_products_docs']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/ingredients', [ReviewRequestController::class, 'get_review_request_ingredients']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/manufacturers', [ReviewRequestController::class, 'get_review_request_manufacturers']);
@@ -131,6 +134,7 @@ Route::middleware('auth:sanctum')->put('/client/product/document/{id}/expires-at
 Route::middleware('auth:sanctum')->post('/client/product/{id}/preview', [ProductController::class, 'update_preview_image']);
 // Ingredients
 Route::middleware('auth:sanctum')->post('/client/product/{id}/ingredients', [IngredientController::class, 'get_ingredients']);
+Route::middleware('auth:sanctum')->post('/client/product/{id}/ingredients-deep', [IngredientController::class, 'get_ingredients_deep']);
 Route::middleware('auth:sanctum')->put('/client/ingredient', [IngredientController::class, 'add_ingredient']);
 Route::middleware('auth:sanctum')->put('/client/ingredient/{id}', [IngredientController::class, 'update_ingredient']);
 Route::middleware('auth:sanctum')->post('/client/ingredient/{id}/recommendation', [IngredientController::class, 'set_ingredient_recommendation']);
@@ -141,7 +145,7 @@ Route::middleware('auth:sanctum')->delete('/client/ingredient/{id}', [Ingredient
 // Manufacturer
 Route::middleware('auth:sanctum')->post('/manufacturers', [ManufacturerController::class, 'auto_suggest_search_list']);
 Route::middleware('auth:sanctum')->post('/client/manufacturer/documents', [ManufacturerController::class, 'get_all_documents']);
-Route::middleware('auth:sanctum')->post('/manufacturer/{id}/documents', [ManufacturerController::class, 'get_documents']);
+Route::middleware('auth:sanctum', 'throttle:300,1')->post('/manufacturer/{id}/documents', [ManufacturerController::class, 'get_documents']);
 Route::middleware('auth:sanctum')->post('/manufacturer/{id}/document', [ManufacturerController::class, 'add_document']);
 Route::middleware('auth:sanctum')->post('/client/manufacturer/document/{id}/status', [ManufacturerController::class, 'set_document_status']);
 Route::middleware('auth:sanctum')->post('/client/manufacturer/document/{id}/note', [ManufacturerController::class, 'set_document_note']);

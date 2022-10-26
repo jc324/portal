@@ -300,7 +300,7 @@ class ReviewRequestController extends Controller
         switch ($review_request->type) {
             case 'NEW_FACILITY':
                 if ($facility = Facility::find($review_request->facility_id)) {
-                    $review_request_info .= $facility->attributesToArray();
+                    $review_request_info .= pp_facility($facility);
                     foreach ($facility->documents as $doc) {
                         $ext = pathinfo($doc->path, PATHINFO_EXTENSION);
                         $doc->entry_name = 'facility_' . $facility->id . '_doc_' . $doc->id . '_' . $doc->type . '.' . $ext;
@@ -328,7 +328,9 @@ class ReviewRequestController extends Controller
                             if ($manufacturer = $ingredient->manufacturer)
                                 foreach ($manufacturer->documents as $doc) {
                                     $ext = pathinfo($doc->path, PATHINFO_EXTENSION);
-                                    $doc->entry_name = 'product_' . $product->id . '_ingredient_' . $ingredient->id . '_doc_' . $doc->id . '_' . $doc->type . '.' . $ext;
+                                    $doc->entry_name = 'doc_' . $doc->id . '_' . $doc->type . '.' . $ext;
+
+                                    if (in_array($doc->id, array_column($documents, 'id'))) continue;
                                     $documents[] = $doc;
                                 }
                         }
@@ -359,7 +361,9 @@ class ReviewRequestController extends Controller
                             if ($manufacturer = $ingredient->manufacturer)
                                 foreach ($manufacturer->documents as $doc) {
                                     $ext = pathinfo($doc->path, PATHINFO_EXTENSION);
-                                    $doc->entry_name = 'product_' . $product->id . '_ingredient_' . $ingredient->id . '_doc_' . $doc->id . '_' . $doc->type . '.' . $ext;
+                                    $doc->entry_name = 'doc_' . $doc->id . '_' . $doc->type . '.' . $ext;
+
+                                    if (in_array($doc->id, array_column($documents, 'id'))) continue;
                                     $documents[] = $doc;
                                 }
                         }
@@ -790,7 +794,7 @@ function pp_products($products): string
 
                 foreach ($manufacturer->documents as $doc) {
                     $ext = pathinfo($doc->path, PATHINFO_EXTENSION);
-                    $doc_entry_name = '`product_' . $product->id . '_ingredient_' . $ingredient->id . '_doc_' . $doc->id . '_' . $doc->type . '.' . $ext;
+                    $doc_entry_name = '`doc_' . $doc->id . '_' . $doc->type . '.' . $ext;
                     $output .= $doc_entry_name . '`';
                 }
             }

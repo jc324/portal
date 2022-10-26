@@ -17,6 +17,17 @@ class IngredientController extends Controller
         return Ingredient::with('manufacturer')->where('product_id', $productId)->get();
     }
 
+    public function get_ingredients_deep($productId)
+    {
+        $ingredients = Ingredient::with('manufacturer')->where('product_id', $productId)->get();
+
+        foreach ($ingredients as $ingredient) {
+            $ingredient->manufacturer_docs = $ingredient->manufacturer->documents;
+        }
+
+        return $ingredients;
+    }
+
     public function add_ingredient(Request $request)
     {
         $data = $request->only(

@@ -3,15 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 
 use App\Models\Client;
 use App\Models\Document;
 use App\Models\Manufacturer;
-use App\Models\FacilityDocument;
-use App\Models\ProductDocument;
-use App\Models\ManufacturerDocument;
 
 class DocumentController extends Controller
 {
