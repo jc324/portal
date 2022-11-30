@@ -18,7 +18,8 @@
         "laravel/sanctum": "^2.9",
         "laravel/tinker": "^2.5",
         "mll-lab/laravel-graphql-playground": "^2.5",
-        "nuwave/lighthouse": "^5.25"
+        "nuwave/lighthouse": "^5.25",
+        "shetabit/visitor": "^3.1"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
@@ -40,7 +41,8 @@
     },
     "autoload": {
         "psr-0": {
-            "ParseDown": "/vendor/erusev/parsedown/"
+            "ParseDown": "/vendor/erusev/parsedown/",
+            "Shetabit": "/vendor/shetabit/visitor/src/"
         },
         "psr-4": {
             "App\\": "app/",

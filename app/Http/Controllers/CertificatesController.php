@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Storage;
 
 use App\Models\Certificate;
 use App\Models\Client;
+use App\Models\Hed;
 use Illuminate\Support\Facades\Mail;
 
 class CertificatesController extends Controller
@@ -66,7 +67,9 @@ class CertificatesController extends Controller
     // for client
     public function get_certificates(Request $request)
     {
-        $client = Client::where('user_id', $request->user()->id)->first();
+        $client = $request->user()->role === "HED"
+            ? Hed::where('user_id', $request->user()->id)->first()->client
+            : Client::where('user_id', $request->user()->id)->first();
         $certificates = Certificate::where(['client_id' => $client->id])->get()->reverse()->values();
         // hide tracker
         $client->update([
@@ -102,7 +105,9 @@ class CertificatesController extends Controller
 
     public function request_hard_copy(Request $request, $certificate_id)
     {
-        $client = Client::where('user_id', $request->user()->id)->first();
+        $client = $request->user()->role === "HED"
+            ? Hed::where('user_id', $request->user()->id)->first()->client
+            : Client::where('user_id', $request->user()->id)->first();
         $client_name = $client->business_name;
         $to = $client->get_emails();
 

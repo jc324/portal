@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 use App\Models\User;
 use App\Models\Profile;
+use App\Models\Hed;
 use App\Models\Facility;
 use App\Models\Product;
 use App\Models\Ingredient;
@@ -113,23 +114,23 @@ class Client extends Model
 
     function get_hed_emails()
     {
-        $email = [];
-        $heds = json_decode($this->heds, true);
+        $emails = [];
+        $heds = Hed::where('client_id', $this->id)->get();
 
         foreach ($heds as $hed) {
-            array_push($email, $hed['email']);
+            $emails[] = $hed->user->email;
         }
 
-        return $email;
+        return $emails;
     }
 
     function get_emails()
     {
-        $emails = [$this->user->email];
-        $heds = json_decode($this->heds, true);
+        $emails = [$this->get_email()];
+        $heds = Hed::where('client_id', $this->id)->get();
 
         foreach ($heds as $hed) {
-            array_push($emails, $hed['email']);
+            $emails[] = $hed->user->email;
         }
 
         return $emails;

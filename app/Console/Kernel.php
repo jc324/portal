@@ -132,3 +132,33 @@ function cron_notify_pre_expired_certs()
         Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new CertificateRenewal($cert->id, $client_name, $form_d_link));
     }
 }
+
+/**
+cert expires
+12hrs expire: send to admin @midnight am ""
+to admin only:
+
+Dear Rafiq.,
+
+
+This is a notice to
+let you know that <client>s certificate will expire by 11:59pm today.
+
+If you have already
+uploaded the certificate, no further action is necessary. 
+
+If <client> has not paid or completed their surveillance audit, they will receive an email notifying them of the expiring certificate.
+
+
+Second email:
+
+Dear ResinTech, Inc.,
+
+
+This is a notice to
+let you know that your certificate will expire by 11:59pm today.
+
+
+Please contact your account specialist at
+877-425-2599 extension 3.
+*/

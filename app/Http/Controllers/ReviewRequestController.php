@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Mail;
 use App\Mail\ProgressReport;
 use App\Mail\ScheduleAudit;
 use App\Mail\DocumentFailures;
+use App\Mail\VendorApprovalRequest;
 use App\Models\ReviewRequest;
 use App\Models\Profile;
 use App\Models\User;
@@ -21,6 +22,7 @@ use App\Models\Facility;
 use App\Models\Product;
 use App\Models\Client;
 use App\Models\FacilityCategories;
+use App\Models\Hed;
 use App\Models\Manufacturer;
 use App\Models\ProductCategories;
 use App\Models\Report;
@@ -61,6 +63,7 @@ class ReviewRequestController extends Controller
             $review_request->type_color = REVIEW_REQUEST_TYPE_COLOR_MAP[$review_request->type];
             $review_request->status_color = REVIEW_REQUEST_STATUS_COLOR_MAP[$review_request->status];
             $review_request->reviewer = Profile::where('user_id', $review_request->reviewer_id)->first();
+            $review_request->hed = Profile::where('user_id', $review_request->hed_id)->first();
         }
 
         return $review_requests;
@@ -76,15 +79,53 @@ class ReviewRequestController extends Controller
         return response('', 200);
     }
 
-    public function get_review_request($review_request_id)
+    // for reviewer
+    public function request_docs(Request $request, $reviewRequestId)
     {
-        return ReviewRequest::findOrFail($review_request_id);
+        $rr = ReviewRequest::findOrFail($reviewRequestId);
+        $data = $request->only(['manufacturer_id', 'email']);
+        $manufacturer = Manufacturer::findOrFail($data['manufacturer_id']);
+        $products = "";
+        $ingredients = Ingredient::where([
+            'review_request_id' => $reviewRequestId,
+            'manufacturer_id' => $data['manufacturer_id']
+        ])->get();
+        $cc = ['review@halalwatchworld.org'];
+        $cc[] = $rr->client->get_email();
+
+        if ($rr->hed_id) $cc[] = User::find($rr->hed_id)->email;
+
+        foreach ($ingredients as $ingredient) {
+            $products .= " - " . $ingredient->name . "\n";
+        }
+
+        Mail::to($data['email'])->cc($cc)->send(new VendorApprovalRequest(
+            $manufacturer->name,
+            $request->user()->name,
+            $rr->client->business_name,
+            $products
+        ));
+
+        return response("", 200);
+    }
+
+    public function get_review_request(Request $request, $review_request_id)
+    {
+        $rr = ReviewRequest::findOrFail($review_request_id);
+
+        if ($request->user()->role === "HED") {
+            $rr->hed_id = $request->user()->id;
+            $rr->save();
+        }
+
+        return $rr;
     }
 
     // for client
     public function get_client_review_requests(Request $request)
     {
-        $client_id = Client::where('user_id', $request->user()->id)->first()->id;
+        // $client_id = Client::where('user_id', $request->user()->id)->first()->id;
+        $client_id = 34; // 44
 
         $review_requests = ReviewRequest::where('client_id', $client_id)->orderBy('id', 'DESC')->get();
 
@@ -92,6 +133,9 @@ class ReviewRequestController extends Controller
         foreach ($review_requests as $review_request) {
             $reviewer_user = User::find($review_request->reviewer_id);
             $review_request->reviewer = Profile::find($review_request->reviewer_id);
+            // $review_request->reviewer = Profile::where('user_id', $review_request->reviewer_id)->first();
+            $review_request->hed = Profile::where('user_id', $review_request->hed_id)->first();
+            $review_request->is_locked = $review_request->is_locked($request->user()->id);
             $review_request->type_color = REVIEW_REQUEST_TYPE_COLOR_MAP[$review_request->type];
             $review_request->status_color = REVIEW_REQUEST_STATUS_COLOR_MAP[$review_request->status];
             if ($reviewer_user) $review_request->reviewer_email = $reviewer_user->email;
@@ -105,10 +149,16 @@ class ReviewRequestController extends Controller
         $data = $request->only(
             'type'
         );
-        $data['client_id'] = Client::where('user_id', $request->user()->id)->first()->id;
+        $data['client_id'] = $request->user()->role === "HED"
+            ? Hed::where('user_id', $request->user()->id)->first()->client->id
+            : Client::where('user_id', $request->user()->id)->first()->id;
         $data['reviewer_id'] = 0; // starts with no reviewer
         $data['status'] = "DRAFT"; // by default
         $data['current_step_index'] = 1; // next immediate step
+
+        if ($request->user()->role === "HED") {
+            $data['hed_id'] = $request->user()->id;
+        }
 
         if ($data['type'] === "NEW_FACILITY" || $data['type'] === "NEW_FACILITY_AND_PRODUCTS") {
             // create a facility
@@ -148,6 +198,9 @@ class ReviewRequestController extends Controller
             'current_step_index',
             'assured_space_check'
         );
+
+        if ($request->user()->role === "HED") $data['hed_id'] = $request->user()->id;
+
         $review_request = ReviewRequest::where('id', $review_request_id);
         $review_request->update($data);
 
@@ -170,6 +223,15 @@ class ReviewRequestController extends Controller
         // @TODO delete any associated products and facilities
 
         return $review_request->get()[0];
+    }
+
+    public function unassign_review_request_hed($review_requestId)
+    {
+        $review_request = ReviewRequest::findOrFail($review_requestId);
+        $review_request->hed_id = null;
+        $review_request->save();
+
+        return response('', 200);
     }
 
     public function delete_review_request($review_requestId)

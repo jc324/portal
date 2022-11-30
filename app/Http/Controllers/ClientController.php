@@ -7,12 +7,15 @@ use Illuminate\Http\Request;
 use App\Models\Client;
 use App\Models\Facility;
 use App\Models\FacilityCategories;
+use App\Models\Hed;
 use App\Models\Product;
 use App\Models\ProductCategories;
 use App\Models\ReviewRequest;
 use App\Models\User;
 use App\Models\Profile;
 use App\Models\Report;
+use App\Mail\NewAccount;
+use Illuminate\Support\Facades\Mail;
 
 class ClientController extends Controller
 {
@@ -34,7 +37,9 @@ class ClientController extends Controller
 
     public function get_dashboard(Request $request)
     {
-        $client = Client::where('user_id', $request->user()->id)->first();
+        $client = $request->user()->role === "HED"
+            ? Hed::where('user_id', $request->user()->id)->first()->client
+            : Client::where('user_id', $request->user()->id)->first();
         $client_id = $client->id;
         $facility_count = Facility::where('client_id', $client_id)->count();
         $product_count = Product::where('client_id', $client_id)->count();
@@ -66,14 +71,50 @@ class ClientController extends Controller
         );
     }
 
+    public function get_heds(Request $request)
+    {
+        $client_id = Client::where('user_id', $request->user()->id)->first()->id;
+        $heds = Hed::where('client_id', $client_id);
+        $profiles = Profile::whereIn('user_id', $heds->pluck('user_id')->toArray())->get();
+
+        return $profiles;
+    }
+
+    public function register_hed(Request $request)
+    {
+        $client = Client::where('user_id', $request->user()->id)->first();
+        $password = generateRandomString(8);
+        $validated = $request->validate([
+            'first_name' => '',
+            'last_name' => '',
+            'email' => '',
+            'phone_number' => '',
+        ]);
+        $validated['client_id'] = $client->id;
+        $validated['password'] = $password;
+
+        $hed = Hed::create($validated);
+        $to = $validated['email'];
+        $body = 'Dear ' . $validated['first_name'] . ' ' . $validated['last_name'] . ",\n\n";
+        $body .= "**" . $client->business_name . "** registered you as a Halal Enforcement Director on their Client Portal account at [portal.halalwatchworld.org](https://portal.halalwatchworld.org/). You may complete your profile after logging in using the below credentials:\n\n";
+        $body .= " - Username: **" . $to . "**\n";
+        $body .= " - Password: **" . $password . "**\n";
+
+        Mail::to($to)->bcc(['review@halalwatchworld.org'])->send(new NewAccount($body));
+
+        return $hed->user->profile;
+    }
+
     public function has_hed(Client $client)
     {
-        return count(json_decode($client->heds)) > 0 ? true : false;
+        return Hed::where('client_id', $client->id)->first() ? true : false;
     }
 
     public function get_dashboard_latest_requests(Request $request)
     {
-        $client_id = Client::where('user_id', $request->user()->id)->first()->id;
+        $client_id = $request->user()->role === "HED"
+            ? Hed::where('user_id', $request->user()->id)->first()->client_id
+            : Client::where('user_id', $request->user()->id)->first()->id;
 
         $review_requests = ReviewRequest::where('client_id', $client_id)->orderBy('id', 'DESC')->take(5)->get();
 
@@ -166,7 +207,9 @@ class ClientController extends Controller
 
     public function get_last_draft_submission(Request $request)
     {
-        $client_id = Client::where('user_id', $request->user()->id)->first()->id;
+        $client_id = $request->user()->role === "HED"
+            ? Hed::where('user_id', $request->user()->id)->first()->client_id
+            : Client::where('user_id', $request->user()->id)->first()->id;
 
         $current_draft = ReviewRequest::where(['client_id' => $client_id, 'status' => 'DRAFT'])->orderBy('id', 'DESC')->first();
 
@@ -216,7 +259,9 @@ class ClientController extends Controller
     // for client only
     public function client_get_all_facilities(Request $request)
     {
-        $client_id = Client::where('user_id', $request->user()->id)->first()->id;
+        $client_id = $request->user()->role === "HED"
+            ? Hed::where('user_id', $request->user()->id)->first()->client_id
+            : Client::where('user_id', $request->user()->id)->first()->id;
         $facilities = Facility::where('client_id', $client_id)->get();
 
         foreach ($facilities as $facility) {
@@ -229,7 +274,9 @@ class ClientController extends Controller
     // for client only
     public function client_get_all_products(Request $request)
     {
-        $client_id = Client::where('user_id', $request->user()->id)->first()->id;
+        $client_id = $request->user()->role === "HED"
+            ? Hed::where('user_id', $request->user()->id)->first()->client_id
+            : Client::where('user_id', $request->user()->id)->first()->id;
         $products = Product::where('client_id', $client_id)->get();
 
         foreach ($products as $product) {
@@ -246,7 +293,9 @@ class ClientController extends Controller
 
     public function client_get_facilities(Request $request)
     {
-        $client_id = Client::where('user_id', $request->user()->id)->first()->id;
+        $client_id = $request->user()->role === "HED"
+            ? Hed::where('user_id', $request->user()->id)->first()->client_id
+            : Client::where('user_id', $request->user()->id)->first()->id;
 
         return Facility::where('client_id', $client_id)->select('id', 'name', 'address')->get();
     }
@@ -294,4 +343,12 @@ class ClientController extends Controller
 
         return response('', 200);
     }
+}
+
+function generateRandomString($length = 10)
+{
+    return substr(str_shuffle(str_repeat(
+        $x = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ',
+        ceil($length / strlen($x))
+    )), 1, $length);
 }

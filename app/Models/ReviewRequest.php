@@ -31,6 +31,7 @@ class ReviewRequest extends Model
         $review_request = new self();
         $review_request->client_id = $data['client_id'];
         $review_request->reviewer_id = $data['reviewer_id'];
+        $review_request->hed_id = $data['hed_id'];
         $review_request->facility_id = $data['facility_id'];
         $review_request->type = $data['type'];
         $review_request->status = $data['status'];
@@ -71,9 +72,15 @@ class ReviewRequest extends Model
         return $this->hasMany(Report::class);
     }
 
+    public function is_locked($current_user_id)
+    {
+        if (!$this->hed_id || $this->hed_id === $current_user_id) return false;
+
+        return User::find($this->hed_id)->isOnline();
+    }
+
     public function get_submission_progress()
     {
-
         if ($this->status == "DRAFT") {
             switch ($this->type) {
                 case 'NEW_FACILITY':
@@ -81,11 +88,11 @@ class ReviewRequest extends Model
                     break;
 
                 case 'NEW_PRODUCTS':
-                    return (($this->current_step_index + 1) * 100) / 5;
+                    return (($this->current_step_index + 1) * 100) / 6;
                     break;
 
                 case 'NEW_FACILITY_AND_PRODUCTS':
-                    return (($this->current_step_index + 1) * 100) / 10;
+                    return (($this->current_step_index + 1) * 100) / 11;
                     break;
             }
         } else return 100;
@@ -100,7 +107,7 @@ class ReviewRequest extends Model
         foreach ($facility_docs as $doc)
             if ($doc->status == "APPROVED") $approved_facility_docs_count++;
 
-        $facility_docs_progress = ($approved_facility_docs_count * 100) / $facility_docs_count;
+        $facility_docs_progress = $facility_docs_count > 0 ? ($approved_facility_docs_count * 100) / $facility_docs_count : 0;
 
         if ($products = $this->products) {
             $product_count = $products->count();

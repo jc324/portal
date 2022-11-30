@@ -49,6 +49,8 @@ Route::middleware('auth:sanctum')->post('/client/documents/recent', [DocumentCon
 Route::middleware('auth:sanctum')->post('/client/documents/uploaded', [DocumentController::class, 'get_documents']);
 Route::middleware('auth:sanctum')->post('/client/documents/add', [DocumentController::class, 'add_document']);
 Route::middleware('auth:sanctum')->delete('/client/documents/{id}', [DocumentController::class, 'delete_document']);
+Route::middleware('auth:sanctum')->get('/client/heds', [ClientController::class, 'get_heds']);
+Route::middleware('auth:sanctum')->put('/client/register-hed', [ClientController::class, 'register_hed']);
 
 // Reviewer
 Route::middleware('auth:sanctum')->put('/reviewer/register-client', [ReviewerController::class, 'register_client']);
@@ -83,8 +85,10 @@ Route::middleware('auth:sanctum')->post('/clients/review-requests', [ReviewReque
 Route::middleware('auth:sanctum')->post('/client/review-request/new', [ReviewRequestController::class, 'add_review_request']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}', [ReviewRequestController::class, 'get_review_request']);
 Route::middleware('auth:sanctum')->put('/client/review-request/{id}', [ReviewRequestController::class, 'update_review_request']);
+Route::middleware('auth:sanctum')->post('/client/review-request/{id}/unassign-hed', [ReviewRequestController::class, 'unassign_review_request_hed']);
 Route::middleware('auth:sanctum')->delete('/client/review-request/{id}', [ReviewRequestController::class, 'delete_review_request']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/assign-reviewer', [ReviewRequestController::class, 'assign_reviewer']);
+Route::middleware('auth:sanctum')->post('/client/review-request/{id}/request-docs', [ReviewRequestController::class, 'request_docs']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/send-report', [ReviewRequestController::class, 'generate_progress_report']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/products', [ReviewRequestController::class, 'get_review_request_products']);
 // Route::middleware('auth:sanctum')->post('/client/review-request/{id}/products-step', [ReviewRequestController::class, 'get_review_request_products_step']);
@@ -145,6 +149,7 @@ Route::middleware('auth:sanctum')->delete('/client/ingredient/{id}', [Ingredient
 // Manufacturer
 Route::middleware('auth:sanctum')->post('/manufacturers', [ManufacturerController::class, 'auto_suggest_search_list']);
 Route::middleware('auth:sanctum')->post('/client/manufacturer/documents', [ManufacturerController::class, 'get_all_documents']);
+// Route::middleware('auth:sanctum')->post('/client/manufacturer/documents/request/{id}', [ManufacturerController::class, 'get_documents_by_request']);
 Route::middleware('auth:sanctum', 'throttle:300,1')->post('/manufacturer/{id}/documents', [ManufacturerController::class, 'get_documents']);
 Route::middleware('auth:sanctum')->post('/manufacturer/{id}/document', [ManufacturerController::class, 'add_document']);
 Route::middleware('auth:sanctum')->post('/client/manufacturer/document/{id}/status', [ManufacturerController::class, 'set_document_status']);

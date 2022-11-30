@@ -72,7 +72,7 @@ class UserController extends Controller
         if ($user->role === "ADMIN") {
             return User::orderBy('id', 'DESC')->get();
         } elseif ($user->role === "REVIEWER") {
-            return User::where(['role' => 'CLIENT'])->orderBy('id', 'DESC')->get();
+            return User::whereIn('role', ['CLIENT', 'HED'])->orderBy('id', 'DESC')->get();
         } else {
             return null;
         }

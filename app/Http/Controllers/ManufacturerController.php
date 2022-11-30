@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 
 use App\Models\Client;
+use App\Models\Ingredient;
 use App\Models\Manufacturer;
 use App\Models\ManufacturerDocument;
 // use App\Models\Ingredient;
@@ -37,6 +38,18 @@ class ManufacturerController extends Controller
 
         foreach ($manufacturers as $manufacturer) {
             $docs = array_merge($docs, $manufacturer->documents->toArray());
+        }
+
+        return $docs;
+    }
+
+    public function get_documents_by_request($request_id)
+    {
+        $ingredients = Ingredient::with('manufacturer')->where('request_id', $request_id)->get();
+        $docs = [];
+
+        foreach ($ingredients as $ingredient) {
+            $docs = array_merge($docs, $ingredient->manufacturer->documents);
         }
 
         return $docs;
