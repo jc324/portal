@@ -156,9 +156,7 @@ class ReviewRequestController extends Controller
         $data['status'] = "DRAFT"; // by default
         $data['current_step_index'] = 1; // next immediate step
 
-        if ($request->user()->role === "HED") {
-            $data['hed_id'] = $request->user()->id;
-        }
+        $data['hed_id'] = ($request->user()->role === "HED") ? $request->user()->id : null;
 
         if ($data['type'] === "NEW_FACILITY" || $data['type'] === "NEW_FACILITY_AND_PRODUCTS") {
             // create a facility

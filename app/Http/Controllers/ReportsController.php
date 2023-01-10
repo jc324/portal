@@ -85,6 +85,16 @@ class ReportsController extends Controller
         return response($report, 200);
     }
 
+    public function set_status(Request $request, $report_id)
+    {
+        $data = $request->only('status');
+        $report = Report::findOrFail($report_id);
+        $report->status = $data['status'];
+        $report->save();
+
+        return response('', 200);
+    }
+
     public function download_document_by_id($report_id)
     {
         $report = Report::findOrFail($report_id);

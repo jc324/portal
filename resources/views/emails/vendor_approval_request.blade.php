@@ -3,7 +3,7 @@
 
 Dear {{ $manufacturer_name }},
 
-My name is {{ $reviewer_name }}, review agent of Halal Watch World LLC. We are a Halal certification agency based out of Albany, New York.
+My name is {{ $reviewer_name }}, review agent at Halal Watch World LLC. We are a Halal certification agency based out of Albany, New York.
 
 **{{ $business_name }}** is requesting Halal vendor approval for your company and products. In full disclosure, signing of this form will give halal producing companies the ability to purchase your listed products from the listed producing facility.
 

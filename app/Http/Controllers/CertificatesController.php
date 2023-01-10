@@ -4,8 +4,12 @@ namespace App\Http\Controllers;
 
 use App\Mail\CertificateHardCopyRequest;
 use App\Mail\NewCertificate;
+use App\Mail\CertificateExpiresToday;
+use App\Mail\CertificateRenewal;
+use App\Mail\ExpiringCertificates;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\DB;
 
 use App\Models\Certificate;
 use App\Models\Client;
@@ -123,5 +127,69 @@ class CertificatesController extends Controller
         $certificate->save();
 
         return response($certificate, 200);
+    }
+
+    /**
+     * CRONJOBS
+     */
+
+    function certifcates_cron()
+    {
+        ignore_user_abort(true);
+        $this->notify_expired_certs();
+        $this->notify_pre_expired_certs();
+
+        return response("", 200);
+    }
+
+    function notify_expired_certs()
+    {
+        $to = "Rafiq.umar@halalwatchworld.org";
+        $expired_certs_table = "";
+        $certs = Certificate::whereDate('expires_at', DB::raw('CURDATE()'))->get();
+
+        if (!count($certs)) return;
+
+        foreach ($certs as $cert) {
+            $client = $cert->client;
+            $client_name = $client->business_name;
+            $to = $client->get_emails();
+
+            // show tracker
+            $client->update(['check_expired_certs' => true]);
+            $client->save();
+
+            // to client
+            Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new CertificateExpiresToday($client_name));
+
+            $expired_certs_table .= '|' . $client->business_name;
+            $expired_certs_table .= '|' . $client->hed_name;
+            $expired_certs_table .= '|' . $client->hed_email;
+            $expired_certs_table .= '|' . $cert->created_at;
+            $expired_certs_table .= '|[[DOWNLOAD]](https://portal.halalwatchworld.org/' . $cert->path . ")|\n";
+        }
+
+        // to admin/review-team
+        Mail::to($to)->send(new ExpiringCertificates($expired_certs_table));
+    }
+
+    function notify_pre_expired_certs()
+    {
+        $certs = Certificate::whereDate('expires_at', date("Y-m-d", strtotime("+30 days")))->get();
+
+        if (!count($certs)) return;
+
+        foreach ($certs as $cert) {
+            $client = $cert->client;
+            $client_name = $client->business_name;
+            $to = $client->get_emails();
+            $form_d_link = $client->risk_type === "HIGH"
+                ? "https://www.halalwatchworld.org/docsubmit/form-d-highrisk"
+                : "https://www.halalwatchworld.org/docsubmit/form-d-lowrisk";
+            // $form_d_link = "https://www.halalwatchworld.org/docsubmit/form-d-highrisk";
+
+            // to client
+            Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new CertificateRenewal($cert->id, $client_name, $form_d_link));
+        }
     }
 }

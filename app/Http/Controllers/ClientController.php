@@ -15,6 +15,7 @@ use App\Models\User;
 use App\Models\Profile;
 use App\Models\Report;
 use App\Mail\NewAccount;
+use Exception;
 use Illuminate\Support\Facades\Mail;
 
 class ClientController extends Controller
@@ -140,6 +141,8 @@ class ClientController extends Controller
             $client->reviewer->profile;
             $client['facility_count'] = $client->facilities->count();
             $client['product_count'] = $client->products->count();
+            $client['report_count'] = $client->reports->count();
+            $client['approved_report_count'] = $client->approved_report_count();
         }
 
         return $clients;
@@ -151,6 +154,8 @@ class ClientController extends Controller
         $client->user->profile;
         $client->reviewer->profile;
         $client->facilities;
+        $client['report_count'] = $client->reports->count();
+        $client['approved_report_count'] = $client->approved_report_count();
 
         return $client;
     }

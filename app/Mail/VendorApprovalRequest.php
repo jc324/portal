@@ -3,7 +3,6 @@
 namespace App\Mail;
 
 use Illuminate\Bus\Queueable;
-use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
@@ -11,7 +10,10 @@ class VendorApprovalRequest extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $client_name;
+    public $manufacturer_name;
+    public $reviewer_name;
+    public $business_name;
+    public $products;
 
     /**
      * Create a new message instance.

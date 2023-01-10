@@ -108,6 +108,7 @@ Route::middleware('auth:sanctum')->delete('/client/review-request/certificates/{
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/step-eight-check', [ReviewRequestController::class, 'step_eight_check']);
 Route::middleware('auth:sanctum')->post('/client/reports/audit', [ReportsController::class, 'get_audit_reports']);
 Route::middleware('auth:sanctum')->post('/client/reports/review', [ReportsController::class, 'get_review_reports']);
+Route::middleware('auth:sanctum')->put('/client/report/{id}/status', [ReportsController::class, 'set_status']);
 Route::middleware('auth:sanctum')->get('/client/certificates', [CertificatesController::class, 'get_certificates']);
 Route::middleware('auth:sanctum')->put('/client/certificate/{id}/expires-at', [CertificatesController::class, 'update_certificate_expiration']);
 Route::middleware('auth:sanctum')->put('/client/certificate/{id}/request-hard-copy', [CertificatesController::class, 'request_hard_copy']);

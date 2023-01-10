@@ -102,6 +102,16 @@ class Client extends Model
         return $this->hasMany(Ingredient::class);
     }
 
+    public function reports()
+    {
+        return $this->hasMany(Report::class);
+    }
+
+    public function approved_report_count()
+    {
+        return Report::where(['client_id' => $this->id, 'status' => 'APPROVED'])->count();
+    }
+
     public function facilities_count()
     {
         return $this->facilities->count();
