@@ -160,3 +160,6 @@ Route::middleware('auth:sanctum')->put('/client/manufacturer/document/{id}/expir
 Route::middleware('auth:sanctum')->post('/manufacturer/document/{id}', [ManufacturerController::class, 'update_document']);
 Route::middleware('auth:sanctum')->delete('/manufacturer/document/{id}', [ManufacturerController::class, 'delete_document']);
 Route::middleware('auth:sanctum')->put('/manufacturer/document/{id}/expires-at', [ManufacturerController::class, 'update_document_expiration']);
+
+// Webhooks
+Route::post('/webhooks/audit-report', [ReportsController::class, 'audit_report_webhook']);

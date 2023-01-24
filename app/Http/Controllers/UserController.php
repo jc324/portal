@@ -69,22 +69,25 @@ class UserController extends Controller
     public function auto_suggest_users(Request $request)
     {
         $user = $request->user();
-        if ($user->role === "ADMIN") {
+        if ($user->role === 'ADMIN') {
             return User::orderBy('id', 'DESC')->get();
-        } elseif ($user->role === "REVIEWER") {
+        } elseif ($user->role === 'MANAGER') {
+            return User::whereIn('role', ['REVIEWER', 'CLIENT', 'HED'])->orderBy('id', 'DESC')->get();
+        } elseif ($user->role === 'REVIEWER') {
             return User::whereIn('role', ['CLIENT', 'HED'])->orderBy('id', 'DESC')->get();
         } else {
-            return null;
+            return [];
         }
     }
 
     public function login_as(Request $request, $user_id)
     {
         $user = $request->user();
-        if ($user->role === "ADMIN") {
-            Auth::loginUsingId($user_id);
-            return response('', 200);
-        } elseif ($user->role === "REVIEWER") {
+        if (
+            $user->role === "ADMIN"
+            || $user->role === "MANAGER"
+            || $user->role === "REVIEWER"
+        ) {
             Auth::loginUsingId($user_id);
             return response('', 200);
         } else {

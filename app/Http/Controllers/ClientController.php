@@ -78,6 +78,10 @@ class ClientController extends Controller
         $heds = Hed::where('client_id', $client_id);
         $profiles = Profile::whereIn('user_id', $heds->pluck('user_id')->toArray())->get();
 
+        foreach ($profiles as $profile) {
+            $profile->email = User::find($profile->user_id)->email;
+        }
+
         return $profiles;
     }
 
@@ -133,7 +137,7 @@ class ClientController extends Controller
 
     public function get_clients()
     {
-        $clients = Client::all()->reverse()->values();
+        $clients = Client::all()->values();
 
         // get client user and reviewer
         foreach ($clients as $client) {
@@ -145,7 +149,13 @@ class ClientController extends Controller
             $client['approved_report_count'] = $client->approved_report_count();
         }
 
-        return $clients;
+        $clients_list = $clients->toArray();
+
+        usort($clients_list, function ($a, $b) {
+            return $a['report_count'] - $a['approved_report_count'];
+        });
+
+        return array_reverse($clients_list);
     }
 
     public function get_client($clientId)
