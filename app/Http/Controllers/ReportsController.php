@@ -5,9 +5,11 @@ namespace App\Http\Controllers;
 use App\Mail\AuditReportApproved;
 use App\Mail\NewAuditReport;
 use App\Mail\NewDocumentReport;
+use App\Mail\PendingReportsNotification;
 use Illuminate\Http\Request;
 
 use App\Models\Report;
+use App\Models\User;
 use App\Models\Client;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
@@ -93,8 +95,12 @@ class ReportsController extends Controller
         $report = Report::findOrFail($report_id);
         $report->status = $data['status'];
         $report->save();
+        $non_approved = Report::where([
+            ['client_id', '=', $report->client_id],
+            ['status', '!=', 'APPROVED']
+        ])->count();
 
-        if ($report->type === 'AUDIT_REPORT' && $data['status'] === "APPROVED") {
+        if ($report->type === 'AUDIT_REPORT' && $data['status'] === 'APPROVED' && $non_approved === 0) {
             $client = Client::find($report->client_id);
             $client_name = $client->business_name;
             $to = $client->get_emails();
@@ -152,6 +158,19 @@ class ReportsController extends Controller
         $report->save();
 
         Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new NewAuditReport($client_name));
+
+        return response('', 200);
+    }
+
+    public function pending_status_notification()
+    {
+        ignore_user_abort(true);
+
+        if ($pending_count = Report::where('status', '=', 'PENDING')->count()) {
+            $to = User::where('role', '=', 'MANAGER')->pluck('email')->toArray();
+
+            Mail::to($to)->send(new PendingReportsNotification($pending_count));
+        }
 
         return response('', 200);
     }

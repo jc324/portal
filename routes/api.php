@@ -163,3 +163,7 @@ Route::middleware('auth:sanctum')->put('/manufacturer/document/{id}/expires-at',
 
 // Webhooks
 Route::post('/webhooks/audit-report', [ReportsController::class, 'audit_report_webhook']);
+
+// Crons
+// https://portal.halalwatchworld.org/api/cron/reports/pending-status-notification
+Route::get('/cron/reports/pending-status-notification', [ReportsController::class, 'pending_status_notification']);
