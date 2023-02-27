@@ -12,6 +12,15 @@ class Report extends Model
 {
     use HasFactory;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    protected $fillable = [
+        'tags',
+    ];
+
     public function client()
     {
         return $this->belongsTo(Client::class);

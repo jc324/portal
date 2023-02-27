@@ -124,8 +124,8 @@ class ReviewRequestController extends Controller
     // for client
     public function get_client_review_requests(Request $request)
     {
-        // $client_id = Client::where('user_id', $request->user()->id)->first()->id;
-        $client_id = 34; // 44
+        $client_id = Client::where('user_id', $request->user()->id)->first()->id;
+        // $client_id = 34; // 44
 
         $review_requests = ReviewRequest::where('client_id', $client_id)->orderBy('id', 'DESC')->get();
 
@@ -621,6 +621,7 @@ class ReviewRequestController extends Controller
         $to = $client->get_emails();
 
         Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new ProgressReport($body));
+        // Mail::to("bukhaar.mahamed@halalwatchworld.org")->send(new ProgressReport($body));
     }
 
     public function generate_progress_report_email($review_request, $is_final = false)
@@ -632,7 +633,8 @@ class ReviewRequestController extends Controller
         $review_request_info .= "Below is your " . $time_type . " document review progress report:";
         $document_statuses = "\n\n";
         $product_statuses = "\n\n";
-        $review_counts = "\n\n#### Overview\n\n";
+        $prod_count = 0;
+        $ingr_count = 0;
         $review_notes = "\n\n#### Failures\n\n";
 
         if ($review_request->type !== 'NEW_PRODUCTS') {
@@ -674,17 +676,18 @@ class ReviewRequestController extends Controller
                         }
                     }
                 }
-                $review_counts .= "Total Products: " . $products->count() . "\n\n";
-                $review_counts .= "Total Ingredients: " . $total_ingredients . "\n\n";
-            } else {
-                $review_counts .= "Total Products: 0\n";
-                $review_counts .= "Total Ingredients: 0\n\n";
+                $prod_count = $products->count();
+                $ingr_count = $total_ingredients;
             }
         }
 
+        // @TODO
+        // $progress = $this->get_progress($review_request->id);
+        $overview = render_email_overview($prod_count, $ingr_count, 10);
+
         $body = $is_final
-            ? $review_request_info . $review_counts . $document_statuses . $product_statuses
-            : $review_request_info . $review_counts . $document_statuses . $product_statuses . $review_notes;
+            ? $review_request_info . $overview . $document_statuses . $product_statuses
+            : $review_request_info . $overview . $document_statuses . $product_statuses . $review_notes;
 
         // if ($is_final && $this->get_progress($review_request->id) < 100)
         //     return null;
@@ -891,4 +894,52 @@ function pp_relationships($products): string
     }
 
     return $output;
+}
+
+function render_email_overview($prod_count, $ingr_count, $progress)
+{
+    return <<<EOD
+    <table cellspacing="0" cellpadding="0" class="x_x_TableGrid" style="box-sizing:border-box; margin-top:0pt; margin-bottom:0pt; border-collapse:collapse">
+    <tbody style="box-sizing:border-box">
+        <tr>
+            <td style="box-sizing:border-box; width:177.9pt; padding-right:5.4pt; padding-left:5.4pt; vertical-align:middle">
+                <p style="box-sizing:border-box; margin:0pt 0pt 8pt; font-size:16px; margin-top:0; margin-bottom:0pt; text-align:center; line-height:18pt"><span style="box-sizing:border-box; font-family:Arial,serif,EmojiFont; font-size:12pt; font-weight:bold">Overview</span> </p>
+            </td>
+            <td style="box-sizing:border-box; width:177.9pt; padding-right:5.4pt; padding-left:5.4pt; vertical-align:top">
+                <p style="box-sizing:border-box; margin:0pt 0pt 8pt; font-size:16px; margin-top:0; margin-bottom:0pt; text-align:center; line-height:18pt"><span style="box-sizing:border-box; font-family:Arial,serif,EmojiFont; font-size:12pt; font-weight:bold">Progress</span> </p>
+            </td>
+        </tr>
+        <tr>
+            <td style="box-sizing:border-box; width:177.9pt; padding-right:5.4pt; padding-left:5.4pt; vertical-align:middle">
+                <table cellspacing="0" cellpadding="0" class="x_x_TableGrid" style="box-sizing:border-box; margin-top:0pt; margin-bottom:0pt; border-collapse:collapse">
+                    <tbody style="box-sizing:border-box">
+                        <tr>
+                            <td style="box-sizing:border-box; width:178.7pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.4pt; padding-left:5.4pt; vertical-align:middle">
+                                <p style="box-sizing:border-box; margin:0pt 0pt 8pt; font-size:16px; margin-top:0; margin-bottom:0pt; text-align:right; line-height:18pt"><span style="box-sizing:border-box; font-family:Arial,serif,EmojiFont; font-size:12pt">PRODUCTS</span> </p>
+                            </td>
+                            <td style="box-sizing:border-box; width:178.7pt; border-bottom-style:solid; border-bottom-width:0.75pt; padding-right:5.4pt; padding-left:5.4pt; vertical-align:top">
+                                <p style="box-sizing:border-box; margin:0pt 0pt 8pt; font-size:16px; margin-top:0; text-align:left; margin-bottom:0pt; line-height:36pt"><span style="box-sizing:border-box; font-family:Arial,serif,EmojiFont; font-size:36pt; font-weight:bold; color:green">$prod_count</span> </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="box-sizing:border-box; width:178.7pt; border-top-style:solid; border-top-width:0.75pt; padding-right:5.4pt; padding-left:5.4pt; vertical-align:middle">
+                                <p style="box-sizing:border-box; margin:0pt 0pt 8pt; font-size:16px; margin-top:0; margin-bottom:0pt; text-align:right; line-height:18pt"><span style="box-sizing:border-box; font-family:Arial,serif,EmojiFont; font-size:12pt">INGREDIENTS</span> </p>
+                            </td>
+                            <td style="box-sizing:border-box; width:178.7pt; border-top-style:solid; border-top-width:0.75pt; padding-right:5.4pt; padding-left:5.4pt; vertical-align:top">
+                                <p style="box-sizing:border-box; margin:0pt 0pt 8pt; font-size:16px; margin-top:0; text-align:left; margin-bottom:0pt; line-height:36pt"><span style="box-sizing:border-box; font-family:Arial,serif,EmojiFont; font-size:36pt; font-weight:bold; color:green">$ingr_count</span> </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p style="box-sizing:border-box; margin:0pt 0pt 8pt; font-size:16px; margin-top:0; margin-bottom:0pt; text-align:center; line-height:18pt"></p>
+            </td>
+            <td style="box-sizing:border-box; width:177.9pt; padding-right:5.4pt; padding-left:5.4pt; vertical-align:top">
+                <div style="box-sizing:border-box;margin-bottom:0pt;text-align:center;line-height:18pt;display: flex;justify-content: center;">
+                    <div class="x_x_pie x_x_no-round" style="box-sizing:border-box;display:inline-grid;margin:5px;font-size:25px;font-weight:bold;font-family:sans-serif,serif,EmojiFont;width:120px;height:120px;/* position: absolute; *//* top: 55px; *//* left: 65px; */background: url(&quot;https://portal.halalwatchworld.org/static/images/email/progress-report-email-percentage-gfx-$progress.png&quot;);background-size: cover;background-repeat: no-repeat;background-position: center center;display: flex;justify-content: center;align-items: center;"><span>$progress%</span></div>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>
+EOD;
 }

@@ -31,6 +31,7 @@ Route::middleware('auth:sanctum')->post('/user', [UserController::class, 'get_cu
 
 // Common
 Route::middleware('auth:sanctum')->post('/users', [UserController::class, 'auto_suggest_users']);
+Route::middleware('auth:sanctum')->post('/user/{id}/notifications', [UserController::class, 'get_notifications']);
 Route::middleware('auth')->post('/login-as/{id}', [UserController::class, 'login_as']);
 Route::middleware('auth:sanctum')->post('/profile', [ProfileController::class, 'get_current_user_profile']);
 Route::middleware('auth:sanctum')->put('/profile', [ProfileController::class, 'update_current_user_profile']);
@@ -109,10 +110,11 @@ Route::middleware('auth:sanctum')->post('/client/review-request/{id}/step-eight-
 Route::middleware('auth:sanctum')->post('/client/reports/audit', [ReportsController::class, 'get_audit_reports']);
 Route::middleware('auth:sanctum')->post('/client/reports/review', [ReportsController::class, 'get_review_reports']);
 Route::middleware('auth:sanctum')->put('/client/report/{id}/status', [ReportsController::class, 'set_status']);
+Route::middleware('auth:sanctum')->put('/client/report/{id}/tags', [ReportsController::class, 'set_tags']);
 Route::middleware('auth:sanctum')->get('/client/certificates', [CertificatesController::class, 'get_certificates']);
 Route::middleware('auth:sanctum')->put('/client/certificate/{id}/expires-at', [CertificatesController::class, 'update_certificate_expiration']);
 Route::middleware('auth:sanctum')->put('/client/certificate/{id}/request-hard-copy', [CertificatesController::class, 'request_hard_copy']);
-Route::middleware('auth:sanctum')->post('/client/certificate/{id}/tags', [CertificatesController::class, 'set_tags']);
+Route::middleware('auth:sanctum')->put('/client/certificate/{id}/tags', [CertificatesController::class, 'set_tags']);
 // admin
 Route::middleware('auth:sanctum')->post('/client/{id}/certificate', [CertificatesController::class, 'add_client_certificate']);
 Route::middleware('auth:sanctum')->post('/client/{id}/certificate/auto-email', [CertificatesController::class, 'add_client_certificate_auto_email']);
@@ -149,6 +151,8 @@ Route::middleware('auth:sanctum')->delete('/client/ingredient/{id}', [Ingredient
 Route::middleware('auth:sanctum')->delete('/client/ingredient/{id}', [IngredientController::class, 'delete_ingredient']);
 // Manufacturer
 Route::middleware('auth:sanctum')->post('/manufacturers', [ManufacturerController::class, 'auto_suggest_search_list']);
+Route::middleware('auth:sanctum')->post('/manufacturer/{id}', [ManufacturerController::class, 'get_manufacturer']);
+Route::middleware('auth:sanctum')->put('/manufacturer/{id}', [ManufacturerController::class, 'update_manufacturer']);
 Route::middleware('auth:sanctum')->post('/client/manufacturer/documents', [ManufacturerController::class, 'get_all_documents']);
 // Route::middleware('auth:sanctum')->post('/client/manufacturer/documents/request/{id}', [ManufacturerController::class, 'get_documents_by_request']);
 Route::middleware('auth:sanctum', 'throttle:300,1')->post('/manufacturer/{id}/documents', [ManufacturerController::class, 'get_documents']);

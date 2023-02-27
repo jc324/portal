@@ -20,6 +20,24 @@ class ManufacturerController extends Controller
         return Manufacturer::all();
     }
 
+    public function get_manufacturer(Request $request, $id)
+    {
+        $manufacturer = Manufacturer::findOrFail($id);
+        $manufacturer->documents;
+
+        return $manufacturer;
+    }
+
+    public function update_manufacturer(Request $request, $id)
+    {
+        $data = $request->only('name');
+        $manufacturer = Manufacturer::findOrFail($id);
+        $manufacturer->name = $data['name'];
+        $manufacturer->save();
+
+        return $manufacturer;
+    }
+
     public function get_all_documents(Request $request)
     {
         $client = Client::where('user_id', $request->user()->id)->first();

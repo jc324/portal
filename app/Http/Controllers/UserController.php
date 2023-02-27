@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Models\User;
-use Illuminate\Support\Facades\Redirect;
 
 class UserController extends Controller
 {
@@ -93,5 +92,25 @@ class UserController extends Controller
         } else {
             return null;
         }
+    }
+
+    public function get_notifications(Request $request, $user_id)
+    {
+        $user_email = User::findOrFail($user_id)->email;
+        $apiKey = getenv('SENDGRID_API_KEY');
+        $sg = new \SendGrid($apiKey);
+        $query_params = json_decode('{
+    "query": "from_email=\"' . $user_email . '\"",
+    "limit": 10
+}');
+
+        $response = $sg->client->messages()->get(null, $query_params);
+        // print $response->statusCode() . "\n";
+        // print_r($response->headers());
+        // print $response->body() . "\n";
+
+        print $apiKey;
+
+        return response($response->body(), 200);
     }
 }

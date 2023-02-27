@@ -125,6 +125,15 @@ class ReportsController extends Controller
         return response()->download($path, $file_name);
     }
 
+    public function set_tags(Request $request, $report_id)
+    {
+        $report = Report::findOrFail($report_id);
+        $report->update(['tags' => $request['tags']]);
+        $report->save();
+
+        return response($report, 200);
+    }
+
     // webhook: https://portal.halalwatchworld.org/api/webhooks/audit-report
     public function audit_report_webhook(Request $request)
     {
