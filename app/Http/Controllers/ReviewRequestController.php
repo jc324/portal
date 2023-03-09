@@ -124,8 +124,9 @@ class ReviewRequestController extends Controller
     // for client
     public function get_client_review_requests(Request $request)
     {
-        $client_id = Client::where('user_id', $request->user()->id)->first()->id;
-        // $client_id = 34; // 44
+        $client_id = $request->user()->role === "HED"
+            ? Hed::where('user_id', $request->user()->id)->first()->client_id
+            : Client::where('user_id', $request->user()->id)->first()->id;
 
         $review_requests = ReviewRequest::where('client_id', $client_id)->orderBy('id', 'DESC')->get();
 
@@ -263,6 +264,7 @@ class ReviewRequestController extends Controller
                 'review_request_id' => $review_request_id
             ])->get();
             $product->ingredients = $ingredients;
+            $product->documents;
         }
 
         return $products->reverse()->values();
@@ -621,7 +623,6 @@ class ReviewRequestController extends Controller
         $to = $client->get_emails();
 
         Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new ProgressReport($body));
-        // Mail::to("bukhaar.mahamed@halalwatchworld.org")->send(new ProgressReport($body));
     }
 
     public function generate_progress_report_email($review_request, $is_final = false)
@@ -630,52 +631,57 @@ class ReviewRequestController extends Controller
         $time_type = $is_final ? "final" : "weekly";
         $review_request_info = "Dear " . $client_name . ",\n\n";
         $review_request_info .= $is_final ? "Congratulations! You have successfully passed the document review.\n\n" : "";
+        // @TODO Below is your halal product/facility registration progress report
         $review_request_info .= "Below is your " . $time_type . " document review progress report:";
-        $document_statuses = "\n\n";
-        $product_statuses = "\n\n";
+        $document_statuses = "";
+        $product_statuses = "";
         $prod_count = 0;
         $ingr_count = 0;
-        $review_notes = "\n\n#### Failures\n\n";
+        $review_notes = "";
 
         if ($review_request->type !== 'NEW_PRODUCTS') {
             if ($facility = Facility::find($review_request->facility_id)) {
-                $document_statuses .= "| **Facility Document Type** | **Status** |\n|-------------------|------------|\n";
+                $tb_rows = "";
                 $docs_by_type = array();
                 foreach ($facility->documents as $doc) {
-                    // $document_statuses .= "| " . $doc->type . " | " . $doc->status . " |\n";
+                    $clean_doc_type = str_replace("_", " ", $doc->type);
                     if (!array_key_exists($doc->type, $docs_by_type))
-                        $docs_by_type[$doc->type] = "| " . $doc->type . " | " . $doc->status . " |\n";
-                    if (!empty($doc->note)) $review_notes .= '**' . $doc->type . "** " . $doc->note . "\n\n";
+                        $docs_by_type[$doc->type] = render_email_table_row($clean_doc_type, $doc->status);
+                    if (!empty($doc->note)) $review_notes .= '**' . $clean_doc_type . "**: " . $doc->note . "\n\n";
                 }
 
                 foreach ($docs_by_type as $doc_stat)
-                    $document_statuses .= $doc_stat;
+                    $tb_rows .= $doc_stat;
+
+                $document_statuses = render_email_table("Facility Document Type", "Status", $tb_rows);
             }
         }
 
         if ($review_request->type == 'NEW_PRODUCTS' || $review_request->type == 'NEW_FACILITY_AND_PRODUCTS') {
             if ($products = $review_request->products) {
-                $product_statuses .= "\n\n| **Product Name** | **Status** |\n|-------------------|------------|\n";
+                $tb_rows = "";
                 $total_ingredients = 0;
                 foreach ($products as $product) {
                     if ($docs = $product->documents)
                         if (count($docs) > 0) foreach ($docs as $doc) {
-                            $product_statuses .= "|" . $product->name . "|" . $doc->status . "|\n";
-                            if (!empty($doc->note)) $review_notes .= '**' . $product->name . "** " . $doc->note . "\n\n";
+                            $tb_rows .= render_email_table_row($product->name, $doc->status);
+                            if (!empty($doc->note)) $review_notes .= '**' . $product->name . "**: " . $doc->note . "\n\n";
                             break;
                         }
                         else {
-                            $product_statuses .= "|" . $product->name . "| NONE |\n";
+                            $tb_rows .= render_email_table_row($product->name, "NONE");
                         }
 
                     foreach ($product->ingredients as $ingredient) {
                         $total_ingredients++;
                         if ($manufacturer = $ingredient->manufacturer) {
                             if ($docs = $manufacturer->documents)
-                                if (count($docs) > 0 && !empty($docs[0]->note)) $review_notes .= '**' . $manufacturer->name . "** " . $docs[0]->note . "\n\n";
+                                if (count($docs) > 0 && !empty($docs[0]->note)) $review_notes .= '**' . $manufacturer->name . "**: " . $docs[0]->note . "\n\n";
                         }
                     }
                 }
+
+                $product_statuses = render_email_table("Product Name", "Status", $tb_rows);
                 $prod_count = $products->count();
                 $ingr_count = $total_ingredients;
             }
@@ -684,10 +690,10 @@ class ReviewRequestController extends Controller
         // @TODO
         // $progress = $this->get_progress($review_request->id);
         $overview = render_email_overview($prod_count, $ingr_count, 10);
-
+        $review_notes = $review_notes === "" ? "" : "\n\n#### Failures\n\n" . $review_notes;
         $body = $is_final
-            ? $review_request_info . $overview . $document_statuses . $product_statuses
-            : $review_request_info . $overview . $document_statuses . $product_statuses . $review_notes;
+            ? $review_request_info . "<br />" . $overview . "<br />" . $document_statuses . $product_statuses
+            : $review_request_info . "<br />" . $overview . "<br />" . $document_statuses . $product_statuses . $review_notes;
 
         // if ($is_final && $this->get_progress($review_request->id) < 100)
         //     return null;
@@ -899,7 +905,7 @@ function pp_relationships($products): string
 function render_email_overview($prod_count, $ingr_count, $progress)
 {
     return <<<EOD
-    <table cellspacing="0" cellpadding="0" class="x_x_TableGrid" style="box-sizing:border-box; margin-top:0pt; margin-bottom:0pt; border-collapse:collapse">
+<table cellspacing="0" cellpadding="0" class="x_x_TableGrid" style="box-sizing:border-box; margin-top:0pt; margin-bottom:0pt; border-collapse:collapse">
     <tbody style="box-sizing:border-box">
         <tr>
             <td style="box-sizing:border-box; width:177.9pt; padding-right:5.4pt; padding-left:5.4pt; vertical-align:middle">
@@ -942,4 +948,199 @@ function render_email_overview($prod_count, $ingr_count, $progress)
     </tbody>
 </table>
 EOD;
+}
+
+function render_email_table($first_head, $second_head, $rows)
+{
+    return <<<EOD
+<table
+  cellspacing="0"
+  cellpadding="0"
+  style="
+    box-sizing: border-box;
+    margin-top: 0pt;
+    width: 100%;
+    margin-bottom: 0pt;
+    border-collapse: collapse;
+  "
+>
+  <tbody style="box-sizing: border-box">
+    <tr style="height: 14.25pt">
+      <td
+        style="
+          box-sizing: border-box;
+          width: 77.18%;
+          border-top-style: solid;
+          border-top-width: 1pt;
+          border-left-style: solid;
+          border-left-width: 1pt;
+          border-bottom-style: solid;
+          border-bottom-width: 1pt;
+          padding-right: 5.4pt;
+          padding-left: 4.9pt;
+          vertical-align: bottom;
+          background-color: #ffffff;
+        "
+      >
+        <p
+          style="
+            box-sizing: border-box;
+            margin: 0pt 0pt 8pt;
+            line-height: 1.5em;
+            margin-top: 0;
+            text-align: left;
+            margin-bottom: 0pt;
+            font-size: 11pt;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial, serif, EmojiFont;
+              font-weight: bold;
+            "
+            >$first_head</span
+          >
+        </p>
+      </td>
+      <td
+        style="
+          box-sizing: border-box;
+          width: 22.82%;
+          border-top-style: solid;
+          border-top-width: 1pt;
+          border-right-style: solid;
+          border-right-width: 0.75pt;
+          border-bottom-style: solid;
+          border-bottom-width: 1pt;
+          padding-right: 5.03pt;
+          padding-left: 5.4pt;
+          vertical-align: middle;
+          background-color: #ffffff;
+        "
+      >
+        <p
+          style="
+            box-sizing: border-box;
+            margin: 0pt 0pt 8pt;
+            line-height: 1.5em;
+            margin-top: 0;
+            text-align: left;
+            margin-bottom: 0pt;
+            font-size: 11pt;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial, serif, EmojiFont;
+              font-weight: bold;
+            "
+            >$second_head</span
+          >
+        </p>
+      </td>
+    </tr>
+$rows
+  </tbody>
+</table>
+EOD;
+}
+
+function render_email_table_row($title, $status)
+{
+    $color = status_to_color($status);
+    $bgcolor = status_to_bgcolor($status);
+
+    return <<<EOD
+    <tr style="height: 15pt">
+      <td
+        style="
+          box-sizing: border-box;
+          width: 77.18%;
+          padding-right: 5.4pt;
+          padding-left: 5.4pt;
+          vertical-align: middle;
+          background-color: #ffffff;
+        "
+      >
+        <p
+          style="
+            box-sizing: border-box;
+            margin: 0pt 0pt 8pt;
+            line-height: 1.5em;
+            margin-top: 0;
+            text-align: left;
+            margin-bottom: 0pt;
+            font-size: 11pt;
+          "
+        >
+          <span
+            style="box-sizing: border-box; font-family: Arial, serif, EmojiFont"
+            >$title</span
+          >
+        </p>
+      </td>
+      <td
+        style="
+          box-sizing: border-box;
+          width: 22.82%;
+          padding-right: 5.4pt;
+          padding-left: 5.4pt;
+          vertical-align: middle;
+          background-color: $bgcolor;
+        "
+      >
+        <p
+          style="
+            box-sizing: border-box;
+            margin: 0pt 0pt 8pt;
+            line-height: 1.5em;
+            margin-top: 0;
+            text-align: left;
+            margin-bottom: 0pt;
+            font-size: 11pt;
+          "
+        >
+          <span
+            style="
+              box-sizing: border-box;
+              font-family: Arial, serif, EmojiFont;
+              font-weight: bold;
+              color: $color;
+            "
+            >$status</span
+          >
+        </p>
+      </td>
+    </tr>
+EOD;
+}
+
+function status_to_color($status)
+{
+    switch ($status) {
+        case 'APPROVED':
+            return "rgb(0, 97, 0)";
+        case 'REJECTED':
+            return "rgb(192, 0, 0)";
+        case 'SUBMITTED':
+            return "rgb(128, 96, 0)";
+        default: // NONE
+            return "#000000";
+    }
+}
+
+function status_to_bgcolor($status)
+{
+    switch ($status) {
+        case 'APPROVED':
+            return "#c6efce";
+        case 'REJECTED':
+            return "#fbe5d5";
+        case 'SUBMITTED':
+            return "#fef2cc";
+        default: // NONE
+            return "#e7e6e6";
+    }
 }

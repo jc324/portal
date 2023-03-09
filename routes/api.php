@@ -131,7 +131,7 @@ Route::middleware('auth:sanctum')->post('/client/product/{id}/duplicate', [Produ
 Route::middleware('auth:sanctum')->delete('/client/product/{id}', [ProductController::class, 'delete_product']);
 Route::middleware('auth:sanctum')->post('/client/product/categories', [ProductController::class, 'get_categories']);
 Route::middleware('auth:sanctum')->post('/client/product/documents', [ProductController::class, 'get_all_documents']);
-Route::middleware('auth:sanctum')->post('/client/product/{id}/documents', [ProductController::class, 'get_documents']);
+Route::middleware('auth:sanctum', 'throttle:300,1')->post('/client/product/{id}/documents', [ProductController::class, 'get_documents']);
 Route::middleware('auth:sanctum')->post('/client/product/{id}/document', [ProductController::class, 'add_document']);
 Route::middleware('auth:sanctum')->post('/client/product/document/{id}', [ProductController::class, 'update_document']);
 Route::middleware('auth:sanctum')->post('/client/product/document/{id}/status', [ProductController::class, 'set_document_status']);
@@ -141,7 +141,7 @@ Route::middleware('auth:sanctum')->put('/client/product/document/{id}/expires-at
 Route::middleware('auth:sanctum')->post('/client/product/{id}/preview', [ProductController::class, 'update_preview_image']);
 // Ingredients
 Route::middleware('auth:sanctum')->post('/client/product/{id}/ingredients', [IngredientController::class, 'get_ingredients']);
-Route::middleware('auth:sanctum')->post('/client/product/{id}/ingredients-deep', [IngredientController::class, 'get_ingredients_deep']);
+Route::middleware('auth:sanctum', 'throttle:300,1')->post('/client/product/{id}/ingredients-deep', [IngredientController::class, 'get_ingredients_deep']);
 Route::middleware('auth:sanctum')->put('/client/ingredient', [IngredientController::class, 'add_ingredient']);
 Route::middleware('auth:sanctum')->put('/client/ingredient/{id}', [IngredientController::class, 'update_ingredient']);
 Route::middleware('auth:sanctum')->post('/client/ingredient/{id}/recommendation', [IngredientController::class, 'set_ingredient_recommendation']);
