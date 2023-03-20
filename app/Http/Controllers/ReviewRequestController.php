@@ -208,10 +208,10 @@ class ReviewRequestController extends Controller
             $client = Client::where('user_id', $request->user()->id)->first();
             $name = $client->business_name;
             $intro = "Dear " . $name . ",\n\n";
-            $intro .= "This email is to confirm that your document submission (ID: " . $review_request_id . ") for " . $data['type'] . " has been received.\n\n";
+            $intro .= "This email is to confirm that your registration (ID: " . $review_request_id . ") for " . $data['type'] . " has been received.\n\n";
             $to = $client->get_emails();
             $body = "Dear Review Team,\n\n";
-            $body .= $name . " completed their document submission (ID: " . $review_request_id . ") for " . $data['type'] . ".\n\n";
+            $body .= $name . " completed their registration (ID: " . $review_request_id . ") for " . $data['type'] . ".\n\n";
             $link = "https://portal.halalwatchworld.org/reviewer/clients/request/" . $review_request_id . "/review";
 
             Mail::to($to)->send(new DocumentSubmissionReceived($intro));
@@ -456,8 +456,8 @@ class ReviewRequestController extends Controller
         $review_request = ReviewRequest::findOrFail($review_request_id);
         $progress = self::get_progress($review_request_id);
         $file_name = 'document_submission_' . $review_request_id . '_report.md';
-        $review_request_info = "# Document Submission " . $review_request_id . " Auto Report\n\n";
-        $review_request_info .= "**SUBMISSION TYPE**: `" . $review_request->type . "`\n";
+        $review_request_info = "# Registration " . $review_request_id . " Auto Report\n\n";
+        $review_request_info .= "**REGISTRATION TYPE**: `" . $review_request->type . "`\n";
         $review_request_info .= "**PROGRESS**: `" . floor($progress) . "%`\n";
         $review_request_info .= pp_client($review_request->client);
         $document_statuses = "\n\n";
@@ -688,8 +688,8 @@ class ReviewRequestController extends Controller
         }
 
         // @TODO
-        // $progress = $this->get_progress($review_request->id);
-        $overview = render_email_overview($prod_count, $ingr_count, 10);
+        $progress = intval($this->get_progress($review_request->id));
+        $overview = render_email_overview($prod_count, $ingr_count, $progress);
         $review_notes = $review_notes === "" ? "" : "\n\n#### Failures\n\n" . $review_notes;
         $body = $is_final
             ? $review_request_info . "<br />" . $overview . "<br />" . $document_statuses . $product_statuses

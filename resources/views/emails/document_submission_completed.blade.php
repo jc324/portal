@@ -1,5 +1,5 @@
 @component('mail::message')
-# Document Submission Completed
+# Registration Completed
 
 {!! $body !!}
 

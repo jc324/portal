@@ -33,7 +33,10 @@ class ProductController extends Controller
         );
         $data['client_id'] = Facility::find($data['facility_id'])->client->id;
 
-        return Product::create($data);
+        $product = Product::create($data);
+        $product->documents = [];
+
+        return $product;
     }
 
     public function update_product(Request $request, $productId)
@@ -46,8 +49,10 @@ class ProductController extends Controller
         );
         $product = Product::where('id', $productId);
         $product->update($data);
+        $product = $product->get()[0];
+        $product->documents;
 
-        return $product->get()[0];
+        return $product;
     }
 
     public function delete_product($productId)
@@ -198,6 +203,7 @@ class ProductController extends Controller
             $product_copy->name = preg_replace('/\(\d+\)$/', '(' . ($matches[1] + 1) . ')', $product_copy->name);
         else $product_copy->name .= ' (1)';
         $product_copy->push();
+        $product_copy->documents;
 
         foreach ($product->ingredients as $ingredient) {
             $ingredient_copy = $ingredient->replicate();

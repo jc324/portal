@@ -1,9 +1,9 @@
 @component('mail::message')
-# Document Submission Received
+# Registration Received
 
 {!! $intro !!}
 
-Your document submission will be picked up by a review agent shortly. Once assigned, you will be notified via email. Reviews are typically completed between a 2 and 5 week timeframe.
+Your registration will be picked up by a review agent shortly. Once assigned, you will be notified via email. Reviews are typically completed between a 2 and 5 week timeframe.
 
 For questions/comments, please contact our review team:
 

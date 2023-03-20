@@ -1178,25 +1178,23 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return NotificationsDialog; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
-/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
-/* harmony import */ var _material_ui_core_Popper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Popper */ "./node_modules/@material-ui/core/esm/Popper/index.js");
-/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
-/* harmony import */ var _material_ui_core_Fade__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Fade */ "./node_modules/@material-ui/core/esm/Fade/index.js");
-/* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/Card */ "./node_modules/@material-ui/core/esm/Card/index.js");
-/* harmony import */ var _material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/List */ "./node_modules/@material-ui/core/esm/List/index.js");
-/* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/ListItem */ "./node_modules/@material-ui/core/esm/ListItem/index.js");
-/* harmony import */ var _material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/ListItemText */ "./node_modules/@material-ui/core/esm/ListItemText/index.js");
-/* harmony import */ var _material_ui_core_ListItemAvatar__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/ListItemAvatar */ "./node_modules/@material-ui/core/esm/ListItemAvatar/index.js");
-/* harmony import */ var _material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/Avatar */ "./node_modules/@material-ui/core/esm/Avatar/index.js");
-/* harmony import */ var _material_ui_icons_NotificationsOutlined__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/icons/NotificationsOutlined */ "./node_modules/@material-ui/icons/NotificationsOutlined.js");
-/* harmony import */ var _material_ui_icons_NotificationsOutlined__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_NotificationsOutlined__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _material_ui_icons_MailOutlined__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/icons/MailOutlined */ "./node_modules/@material-ui/icons/MailOutlined.js");
-/* harmony import */ var _material_ui_icons_MailOutlined__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MailOutlined__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _material_ui_icons_DraftsOutlined__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/icons/DraftsOutlined */ "./node_modules/@material-ui/icons/DraftsOutlined.js");
-/* harmony import */ var _material_ui_icons_DraftsOutlined__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_DraftsOutlined__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+/* harmony import */ var _material_ui_core_Popper__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Popper */ "./node_modules/@material-ui/core/esm/Popper/index.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+/* harmony import */ var _material_ui_core_Fade__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Fade */ "./node_modules/@material-ui/core/esm/Fade/index.js");
+/* harmony import */ var _material_ui_core_Card__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/Card */ "./node_modules/@material-ui/core/esm/Card/index.js");
+/* harmony import */ var _material_ui_core_List__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/List */ "./node_modules/@material-ui/core/esm/List/index.js");
+/* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/ListItem */ "./node_modules/@material-ui/core/esm/ListItem/index.js");
+/* harmony import */ var _material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/ListItemText */ "./node_modules/@material-ui/core/esm/ListItemText/index.js");
+/* harmony import */ var _material_ui_core_ListItemAvatar__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/ListItemAvatar */ "./node_modules/@material-ui/core/esm/ListItemAvatar/index.js");
+/* harmony import */ var _material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/Avatar */ "./node_modules/@material-ui/core/esm/Avatar/index.js");
+/* harmony import */ var _material_ui_icons_NotificationsOutlined__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons/NotificationsOutlined */ "./node_modules/@material-ui/icons/NotificationsOutlined.js");
+/* harmony import */ var _material_ui_icons_NotificationsOutlined__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_NotificationsOutlined__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _material_ui_icons_MailOutlined__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/icons/MailOutlined */ "./node_modules/@material-ui/icons/MailOutlined.js");
+/* harmony import */ var _material_ui_icons_MailOutlined__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MailOutlined__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _material_ui_icons_DraftsOutlined__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/icons/DraftsOutlined */ "./node_modules/@material-ui/icons/DraftsOutlined.js");
+/* harmony import */ var _material_ui_icons_DraftsOutlined__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_DraftsOutlined__WEBPACK_IMPORTED_MODULE_14__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
@@ -1218,28 +1216,46 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
 function NotificationsDialog({
   user_id
 }) {
   _s();
 
-  const theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["useTheme"])();
+  const theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["useTheme"])();
   const classes = useStyles();
   const [open, setOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [notifications, setNotifications] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
+  const ref = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/user/${user_id}/notifications`).then(async response => {
-      setNotifications(response.data);
-    }).catch(e => {
-      console.error(e);
-    });
-  }, []);
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [ref]);
+
+  function handleClickOutside(event) {
+    // @ts-ignore
+    if (ref.current && !ref.current.contains(event.target)) setOpen(false);
+  } // useEffect(() => {
+  //   axios
+  //     .post(`/api/user/${user_id}/notifications`)
+  //     .then(async (response) => {
+  //       // setNotifications(response.data);
+  //     })
+  //     .catch((e) => {
+  //       console.error(e);
+  //     });
+  // }, []);
+  // const handleClick = (event: React.MouseEvent<HTMLElement>) => {
+  //   setAnchorEl(anchorEl ? null : event.currentTarget);
+  //   setOpen((prev) => !prev);
+  // };
+
 
   const handleClick = event => {
-    setAnchorEl(anchorEl ? null : event.currentTarget);
-    setOpen(prev => !prev);
+    setAnchorEl(event.currentTarget);
+    if (!ref.current) setOpen(true); // setOpen((prev) => !prev);
   };
 
   const handleSelect = () => {};
@@ -1248,10 +1264,12 @@ function NotificationsDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60,
+      lineNumber: 80,
       columnNumber: 5
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Popper__WEBPACK_IMPORTED_MODULE_4__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Popper__WEBPACK_IMPORTED_MODULE_3__["default"] // @ts-ignore
+  , {
+    ref: ref,
     open: open,
     anchorEl: anchorEl,
     placement: "bottom",
@@ -1262,337 +1280,135 @@ function NotificationsDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 81,
       columnNumber: 7
     }
   }, ({
     TransitionProps
-  }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Fade__WEBPACK_IMPORTED_MODULE_6__["default"], Object.assign({}, TransitionProps, {
+  }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Fade__WEBPACK_IMPORTED_MODULE_5__["default"], Object.assign({}, TransitionProps, {
     timeout: 350,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69,
+      lineNumber: 91,
       columnNumber: 11
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_6__["default"], {
     elevation: 24,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 92,
       columnNumber: 13
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_7__["default"], {
     className: classes.root,
     dense: true,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
+      lineNumber: 93,
       columnNumber: 15
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }, notifications.length > 0 && notifications.map(n => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_8__["default"], {
     button: true,
     alignItems: "flex-start",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
-      columnNumber: 17
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemAvatar__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73,
-      columnNumber: 19
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_12__["default"], {
-    style: {
-      backgroundColor: theme.palette.primary.main
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 96,
       columnNumber: 21
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_MailOutlined__WEBPACK_IMPORTED_MODULE_14___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemAvatar__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 97,
       columnNumber: 23
     }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    primary: "Products Registered",
-    secondary: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 83,
-        columnNumber: 23
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      component: "span",
-      variant: "body2",
-      className: classes.inline,
-      color: "textPrimary",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 84,
-        columnNumber: 25
-      }
-    }, "John Doe"), " — Your products have been successfully regist..."),
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 80,
-      columnNumber: 19
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    button: true,
-    alignItems: "flex-start",
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    style: {
+      backgroundColor: !n.read ? theme.palette.primary.main : "#bdbdbd"
+    },
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 98,
-      columnNumber: 17
+      columnNumber: 25
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemAvatar__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }, !n.read && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_MailOutlined__WEBPACK_IMPORTED_MODULE_13___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99,
-      columnNumber: 19
+      lineNumber: 105,
+      columnNumber: 40
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_12__["default"], {
-    style: {
-      backgroundColor: theme.palette.primary.main
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 100,
-      columnNumber: 21
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_MailOutlined__WEBPACK_IMPORTED_MODULE_14___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 103,
-      columnNumber: 23
-    }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    primary: "New Document Uploaded",
-    secondary: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 109,
-        columnNumber: 23
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      component: "span",
-      variant: "body2",
-      className: classes.inline,
-      color: "textPrimary",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 110,
-        columnNumber: 25
-      }
-    }, "Ali Connors"), " — Check your document directory..."),
+  }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_DraftsOutlined__WEBPACK_IMPORTED_MODULE_14___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 106,
-      columnNumber: 19
+      columnNumber: 29
     }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    button: true,
-    alignItems: "flex-start",
-    style: {
-      backgroundColor: "rgb(0 0 0 / 4%)"
-    },
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    primary: n.title,
+    secondary: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
+      component: "span",
+      variant: "body2",
+      className: classes.inline,
+      color: "textPrimary",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 114,
+        columnNumber: 29
+      }
+    }, n.to), n.excerpt),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124,
-      columnNumber: 17
+      lineNumber: 110,
+      columnNumber: 23
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemAvatar__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }))) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    alignItems: "flex-start",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 128,
+      columnNumber: 19
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemAvatar__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 129,
-      columnNumber: 19
+      columnNumber: 21
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_12__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 130,
-      columnNumber: 21
+      columnNumber: 23
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_DraftsOutlined__WEBPACK_IMPORTED_MODULE_15___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_DraftsOutlined__WEBPACK_IMPORTED_MODULE_14___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 131,
-      columnNumber: 23
+      columnNumber: 25
     }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    primary: "Document Submission Progress",
-    secondary: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 137,
-        columnNumber: 23
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      component: "span",
-      variant: "body2",
-      className: classes.inline,
-      color: "textPrimary",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 138,
-        columnNumber: 25
-      }
-    }, "to John, Mark, HED"), " — Your document submission is 75% complet..."),
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    primary: "No Notifications",
+    secondary: "You currently have no notifications.",
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 134,
-      columnNumber: 19
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    button: true,
-    alignItems: "flex-start",
-    style: {
-      backgroundColor: "rgb(0 0 0 / 4%)"
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 152,
-      columnNumber: 17
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemAvatar__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 157,
-      columnNumber: 19
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_12__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 158,
       columnNumber: 21
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_DraftsOutlined__WEBPACK_IMPORTED_MODULE_15___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 159,
-      columnNumber: 23
-    }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    primary: "New HED Added",
-    secondary: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 165,
-        columnNumber: 23
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      component: "span",
-      variant: "body2",
-      className: classes.inline,
-      color: "textPrimary",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 166,
-        columnNumber: 25
-      }
-    }, "Sandra Adams"), " — A new Halal Enforcement Director has been added to your account."),
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 162,
-      columnNumber: 19
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    button: true,
-    alignItems: "flex-start",
-    style: {
-      backgroundColor: "rgb(0 0 0 / 4%)"
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 182,
-      columnNumber: 17
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemAvatar__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 187,
-      columnNumber: 19
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_12__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 188,
-      columnNumber: 21
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_DraftsOutlined__WEBPACK_IMPORTED_MODULE_15___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 189,
-      columnNumber: 23
-    }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    primary: "Audit Report Approved",
-    secondary: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 195,
-        columnNumber: 23
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_5__["default"], {
-      component: "span",
-      variant: "body2",
-      className: classes.inline,
-      color: "textPrimary",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 196,
-        columnNumber: 25
-      }
-    }, "Sandra Adams"), " — Congrats! Your audit report has been approved by the committee..."),
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 192,
-      columnNumber: 19
-    }
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
+  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["IconButton"], {
     color: "inherit",
     style: {
       marginRight: 10
@@ -1601,35 +1417,35 @@ function NotificationsDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 216,
+      lineNumber: 145,
       columnNumber: 7
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Badge"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Badge"], {
     badgeContent: notifications.length,
     color: "primary",
     variant: "dot",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 221,
+      lineNumber: 150,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_NotificationsOutlined__WEBPACK_IMPORTED_MODULE_13___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_NotificationsOutlined__WEBPACK_IMPORTED_MODULE_12___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 226,
+      lineNumber: 155,
       columnNumber: 11
     }
   }))));
 }
 
-_s(NotificationsDialog, "/Dl2B17yYDjtU3cvM5T6kikoQas=", false, function () {
-  return [_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["useTheme"], useStyles];
+_s(NotificationsDialog, "Vz+Boroc92QkyO64Ocwl833Yh4s=", false, function () {
+  return [_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["useTheme"], useStyles];
 });
 
 _c = NotificationsDialog;
-const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(theme => Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["createStyles"])({
+const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["createStyles"])({
   root: {
     width: "100%",
     maxWidth: "36ch",
@@ -1639,6 +1455,32 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["
     display: "inline"
   }
 }));
+const defaults = [{
+  title: "Products Registered",
+  to: "John Doe",
+  excerpt: "Your products have been successfully regist...",
+  read: false
+}, {
+  title: "New Document Uploaded",
+  to: "Ali Connors",
+  excerpt: "Check your document directory...",
+  read: false
+}, {
+  title: "Registration Progress",
+  to: "John, Mark, HED",
+  excerpt: "Your registration is 75% complet...",
+  read: true
+}, {
+  title: "New HED Added",
+  to: "Sandra Adams",
+  excerpt: "A new Halal Enforcement Director has been added to your account.",
+  read: true
+}, {
+  title: "Audit Report Approved",
+  to: "Sam Doe",
+  excerpt: "Congrats! Your audit report has been approved by the committee...",
+  read: true
+}];
 
 var _c;
 
@@ -3373,7 +3215,7 @@ const items = [// {
 {
   href: "/admin/review-requests",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["FileText"],
-  title: "Document Submissions"
+  title: "Registrations"
 }, {
   href: "/admin/clients",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["Users"],
@@ -4221,7 +4063,7 @@ let items = [{
 }, {
   href: "/client/requests",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_5__["Users"],
-  title: "Document Submissions"
+  title: "Registrations"
 }, {
   href: "/client/documents",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_5__["Folder"],
@@ -4482,7 +4324,7 @@ function TopBar({
     open: promptOpen,
     onOk: onPromptOk,
     onCancel: onPromptCancel,
-    title: "New Submission",
+    title: "New Registrations",
     maxWidth: "xs",
     okText: "Yes",
     cancelText: "No",
@@ -4493,7 +4335,7 @@ function TopBar({
         lineNumber: 83,
         columnNumber: 11
       }
-    }, "You have a submission currently in progress. Would you like to resume your current submission?"),
+    }, "You have a registration currently in progress. Would you like to resume your current registration?"),
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -4555,34 +4397,15 @@ function TopBar({
       lineNumber: 105,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
-    color: "inherit",
-    style: {
-      marginRight: 10
-    },
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NotificationsDialog__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    user_id: auth.user.id,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 109,
       columnNumber: 11
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Badge"], {
-    color: "primary",
-    variant: "dot",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 111,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_NotificationsOutlined__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 112,
-      columnNumber: 15
-    }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
     startIcon: loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
       color: "#000000",
       size: 20,
@@ -4612,7 +4435,7 @@ function TopBar({
       lineNumber: 115,
       columnNumber: 11
     }
-  }, "New Submission"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+  }, "New Registration"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
     startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Input__WEBPACK_IMPORTED_MODULE_7___default.a, {
       __self: this,
       __source: {
@@ -5651,7 +5474,7 @@ _c = NavBar;
 const items = [{
   href: "/reviewer/clients/requests",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["FileText"],
-  title: "Document Submissions",
+  title: "Registrations",
   subnav: [// {
     //   href: "/reviewer/clients/reports",
     //   icon: BarChart2Icon,
@@ -18356,7 +18179,7 @@ function Results({
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["CardHeader"], {
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-      children: "Document Submissions",
+      children: "Registrations",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -19143,7 +18966,7 @@ const ReviewListView = () => {
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Document Submissions" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Registrations" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -27941,7 +27764,7 @@ const CurrentRequestProgress = ({
       lineNumber: 39,
       columnNumber: 13
     }
-  }, dashboardStats.cr_status === "DRAFT" && "RESUME " || "", "CURRENT SUBMISSION")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+  }, dashboardStats.cr_status === "DRAFT" && "RESUME " || "", "CURRENT REGISTRATION")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
     item: true,
     __self: undefined,
     __source: {
@@ -28046,7 +27869,7 @@ const useStyles1 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSt
 }));
 
 function getSteps() {
-  return ["Submission", "Review", "Document Report", "Audit & Report", "Contract & Certificate"];
+  return ["Registration", "Review", "Document Report", "Audit & Report", "Contract & Certificate"];
 }
 
 function CurrentRequestSteps({
@@ -28115,7 +27938,7 @@ function CurrentRequestSteps({
       lineNumber: 189,
       columnNumber: 9
     }
-  }, "Submission")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ArrowForwardIos__WEBPACK_IMPORTED_MODULE_5___default.a, {
+  }, "Registration")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ArrowForwardIos__WEBPACK_IMPORTED_MODULE_5___default.a, {
     style: {
       marginTop: 11,
       color: "#546e7a"
@@ -28772,7 +28595,7 @@ function Results({
       columnNumber: 19
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["CardHeader"], {
-    subheader: "View your latest document submissions",
+    subheader: "View your latest registrations",
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
       display: "flex",
       justifyContent: "space-between",
@@ -28783,7 +28606,7 @@ function Results({
         lineNumber: 76,
         columnNumber: 11
       }
-    }, "Document Submissions", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
+    }, "Registrations", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
       to: "/client/requests",
       __self: this,
       __source: {
@@ -29050,7 +28873,7 @@ function Results({
       lineNumber: 177,
       columnNumber: 13
     }
-  }, "You currently have no document submissions."))));
+  }, "You currently have no registrations."))));
 }
 
 _s(Results, "WLlTIW3Sw8l+trB+awgNgeAOQnE=", false, function () {
@@ -29576,7 +29399,7 @@ function Tasks({
       columnNumber: 19
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["ListItemText"], {
-    primary: "Start Your First Doc Submission Request",
+    primary: "Start Your First Doc Registration",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -29738,7 +29561,7 @@ function Tasks({
       columnNumber: 17
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["ListItemText"], {
-    primary: "View rejected submission(s)",
+    primary: "View rejected registration(s)",
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -40135,7 +39958,7 @@ function Results({
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["CardHeader"], {
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-      children: "Document Submissions",
+      children: "Registrations",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -40517,7 +40340,7 @@ function Results({
     /*#__PURE__*/
     //request.is_locked
     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Tooltip"], {
-      title: "This submission is currently being edited by another Halal Enforcement Director. Please try again later.",
+      title: "This registration is currently being edited by another Halal Enforcement Director. Please try again later.",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -40586,14 +40409,14 @@ function Results({
         lineNumber: 210,
         columnNumber: 19
       }
-    }, "New Submission")),
+    }, "New Registration")),
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 206,
       columnNumber: 13
     }
-  }, "You currently have no document submissions."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Box"], {
+  }, "You currently have no registrations."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Box"], {
     display: "flex",
     justifyContent: "flex-end",
     p: 2,
@@ -40807,16 +40630,16 @@ function ReviewRequestMenu({
 
         if (avatar) avatar.remove();
         if (text) text.innerHTML = "UNASSIGNED";
-        enqueueSnackbar("Submission HED unassigned successfully.", {
+        enqueueSnackbar("Registration HED unassigned successfully.", {
           variant: "success"
         });
-      } else enqueueSnackbar("Failed to unassign submission HED. Contact the reviewer.", {
+      } else enqueueSnackbar("Failed to unassign registration HED. Contact the reviewer.", {
         variant: "error"
       });
     }).catch(e => {
       console.error(e);
       setLoading(false);
-      enqueueSnackbar("Failed to unassign submission HED. Check your network connection and try again.", {
+      enqueueSnackbar("Failed to unassign registration HED. Check your network connection and try again.", {
         variant: "error"
       });
     });
@@ -40824,7 +40647,7 @@ function ReviewRequestMenu({
   };
 
   const deleteReviewRequest = () => {
-    const answer = window.confirm("Are you sure you would like to delete this submission?");
+    const answer = window.confirm("Are you sure you would like to delete this registration?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.delete(`/api/client/review-request/${reviewRequest.id}`).then(async response => {
@@ -40832,16 +40655,16 @@ function ReviewRequestMenu({
 
       if (response.status == 200 || response.status == 201) {
         onDeleteReviewRequest(reviewRequest.id);
-        enqueueSnackbar("Submission deleted successfully.", {
+        enqueueSnackbar("Registration deleted successfully.", {
           variant: "success"
         });
-      } else enqueueSnackbar("Failed to delete submission. Contact the reviewer.", {
+      } else enqueueSnackbar("Failed to delete registration. Contact the reviewer.", {
         variant: "error"
       });
     }).catch(e => {
       console.error(e);
       setLoading(false);
-      enqueueSnackbar("Failed to delete submission. Check your network connection and try again.", {
+      enqueueSnackbar("Failed to delete registration. Check your network connection and try again.", {
         variant: "error"
       });
     });
@@ -41175,7 +40998,7 @@ const ReviewListView = () => {
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Document Submissions" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Registrations" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -45197,7 +45020,7 @@ function RequestCorrectionsView() {
     // @ts-ignore
     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_5__["default"], {
       className: classes.root,
-      title: "Document Submission Corrections",
+      title: "Registration Corrections",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -45346,7 +45169,7 @@ function RequestCorrections() {
         columnNumber: 13
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-      children: `CORRECTIONS: Document Submission ${requestId}`,
+      children: `CORRECTIONS: Registration ${requestId}`,
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -47753,7 +47576,7 @@ function PreStep({
       lineNumber: 71,
       columnNumber: 7
     }
-  }, "Select the type of submission you would like to make:", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
+  }, "Select the type of registration you would like to make:", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
     width: "320",
     height: "180",
     src: "https://www.youtube.com/embed/WD00bbgrVZ0",
@@ -47780,7 +47603,7 @@ function PreStep({
       lineNumber: 99,
       columnNumber: 7
     }
-  }, "Be sure to select the appropriate submission type as this step cannot be undone once set. If you would like to change this value after moving to the next step, delete this submission and start over."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, "Be sure to select the appropriate registration type as this step cannot be undone once set. If you would like to change this value after moving to the next step, delete this registration and start over."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_8__["default"], {
     component: "fieldset",
     style: {
       alignSelf: "flex-start",
@@ -47800,7 +47623,7 @@ function PreStep({
       lineNumber: 111,
       columnNumber: 9
     }
-  }, "Select your submission type:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_RadioGroup__WEBPACK_IMPORTED_MODULE_6__["default"], {
+  }, "Select your registration type:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_RadioGroup__WEBPACK_IMPORTED_MODULE_6__["default"], {
     "aria-label": "gender",
     name: "gender1",
     value: requestType,
@@ -51296,6 +51119,7 @@ const FinishedProductsStep = ({
     // console.log(products);
     // console.log(product);
     setProducts([]);
+    product.open = true;
     setProducts([product, ...products]); // getProducts();
   };
 
@@ -51366,14 +51190,14 @@ const FinishedProductsStep = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 169,
+      lineNumber: 170,
       columnNumber: 5
     }
   }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_LinearProgress__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 170,
+      lineNumber: 171,
       columnNumber: 19
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_PromptDialog__WEBPACK_IMPORTED_MODULE_18__["default"], {
@@ -51392,14 +51216,14 @@ const FinishedProductsStep = ({
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 177,
+        lineNumber: 178,
         columnNumber: 11
       }
     }),
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 171,
+      lineNumber: 172,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
@@ -51414,7 +51238,7 @@ const FinishedProductsStep = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 188,
+      lineNumber: 189,
       columnNumber: 7
     }
   }, "Finished Products", " "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
@@ -51428,14 +51252,14 @@ const FinishedProductsStep = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 217,
+      lineNumber: 218,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 226,
+      lineNumber: 227,
       columnNumber: 9
     }
   }, "Click on the button at the right to add your products and ingredients to this request:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AddProductDialog__WEBPACK_IMPORTED_MODULE_20__["default"], {
@@ -51446,7 +51270,7 @@ const FinishedProductsStep = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 237,
+      lineNumber: 238,
       columnNumber: 9
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -51456,7 +51280,7 @@ const FinishedProductsStep = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 246,
+      lineNumber: 247,
       columnNumber: 7
     }
   }, products.map((product, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProductItem, {
@@ -51468,7 +51292,7 @@ const FinishedProductsStep = ({
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 252,
+      lineNumber: 253,
       columnNumber: 11
     }
   }))));
@@ -51493,7 +51317,8 @@ function ProductItem({
 }) {
   _s2();
 
-  const [open, setOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false); // const [promptOpen, setPromptOpen] = useState<boolean>(false);
+  const [open, setOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false); // product.open ? product.open : false
+  // const [promptOpen, setPromptOpen] = useState<boolean>(false);
 
   const [editOpen, setEditOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [specSheet, setSpecSheet] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
@@ -51527,7 +51352,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 322,
+      lineNumber: 323,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -51536,14 +51361,14 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 338,
+      lineNumber: 339,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 339,
+      lineNumber: 340,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_12__["ShoppingBag"], {
@@ -51551,7 +51376,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 340,
+      lineNumber: 341,
       columnNumber: 11
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7__["default"], {
@@ -51559,7 +51384,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 342,
+      lineNumber: 343,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductDocsDialog__WEBPACK_IMPORTED_MODULE_22__["default"], {
@@ -51568,7 +51393,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 343,
+      lineNumber: 344,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -51578,7 +51403,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 345,
+      lineNumber: 346,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
@@ -51586,14 +51411,14 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 352,
+      lineNumber: 353,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_15___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 353,
+      lineNumber: 354,
       columnNumber: 11
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
@@ -51601,14 +51426,14 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 355,
+      lineNumber: 356,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_FileCopy__WEBPACK_IMPORTED_MODULE_14___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 356,
+      lineNumber: 357,
       columnNumber: 11
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
@@ -51616,14 +51441,14 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 358,
+      lineNumber: 359,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_13___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 359,
+      lineNumber: 360,
       columnNumber: 11
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
@@ -51631,21 +51456,21 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 361,
+      lineNumber: 362,
       columnNumber: 9
     }
   }, open ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_10___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 362,
+      lineNumber: 363,
       columnNumber: 19
     }
   }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_11___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 362,
+      lineNumber: 363,
       columnNumber: 36
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -51655,7 +51480,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 365,
+      lineNumber: 366,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -51664,7 +51489,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 366,
+      lineNumber: 367,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IngredientsView__WEBPACK_IMPORTED_MODULE_21__["default"], {
@@ -51674,7 +51499,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 367,
+      lineNumber: 368,
       columnNumber: 11
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_IngredientDialog__WEBPACK_IMPORTED_MODULE_17__["default"], {
@@ -51686,7 +51511,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 387,
+      lineNumber: 388,
       columnNumber: 9
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductDialog__WEBPACK_IMPORTED_MODULE_16__["default"], {
@@ -51698,7 +51523,7 @@ function ProductItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 397,
+      lineNumber: 398,
       columnNumber: 7
     }
   }));
@@ -52945,7 +52770,7 @@ function HorizontalLinearStepper() {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["CardHeader"], {
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-      children: "Document Submission",
+      children: "Registration",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -53159,7 +52984,7 @@ _s(HorizontalLinearStepper, "sow+IpKGQVuxhgx/j8xvCGW2lS0=", false, function () {
 _c = HorizontalLinearStepper;
 
 function getStepTitles(reviewType) {
-  let steps = ["Select submission type"];
+  let steps = ["Select registration type"];
   if (reviewType === "NEW_FACILITY" || reviewType === "NEW_FACILITY_AND_PRODUCTS") steps = [...steps, "Facility details", "Legal Business Documents", "Traceability Plan", "Flowchart of Processing", "Sanitation Standard Operating Procedure", "Recall Plan", "Pest Control"];
   if (reviewType === "NEW_PRODUCTS") steps.push("Select Facility", "Assured Space Check");
 
@@ -53715,7 +53540,7 @@ function SubmitStep({
       lineNumber: 58,
       columnNumber: 9
     }
-  }, "Info"), "Be sure to correctly complete all steps before submitting this request. You will not be able to edit this request after submission for review. You may use the ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+  }, "Info"), "Be sure to correctly complete all steps before submitting this request. You will not be able to edit this request after registration for review. You may use the ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -53930,7 +53755,7 @@ function SuccessfulSubmissionStep() {
       lineNumber: 21,
       columnNumber: 7
     }
-  }, "Your submitted request will be picked up by a review agent shortly. Once assigned, you will be notified via email. Requests are typically completed between a 2 and 5 week timeframe. For questions/comments, please contact", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, "Your submitted request will be picked up by a review agent shortly. Once assigned, you will be notified via email. Registrations are typically completed between a 2 and 5 week timeframe. For questions/comments, please contact", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "mailto:review@halalwatchworld.org",
     __self: this,
     __source: {
@@ -54094,7 +53919,7 @@ const ClientNewRequest = () => {
     // @ts-ignore
     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
       className: classes.root,
-      title: "Document Submission",
+      title: "Registration",
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -77262,7 +77087,7 @@ function Results({
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["CardHeader"], {
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-      children: "Document Submissions",
+      children: "Registrations",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -77956,7 +77781,7 @@ function ReviewRequestMenu({
 
   const contactClient = reviewRequest => {
     let email = reviewRequest.client_email || "";
-    let subject = `Halal Watch World | RE: Document Submission #${reviewRequest.id}`;
+    let subject = `Halal Watch World | RE: Registration #${reviewRequest.id}`;
     window.location.assign(`mailto:${email}?Subject=${encodeURIComponent(subject)}`); //  + "&body=" + encodeURIComponent(bod)
   };
 
@@ -78556,7 +78381,7 @@ const ReviewListView = () => {
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Document Submissions" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Registrations" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -79039,7 +78864,7 @@ function AuditReports() {
       lineNumber: 199,
       columnNumber: 15
     }
-  }, "This submission has no audit reports. Use the control below to add some."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Divider"], {
+  }, "This registration has no audit reports. Use the control below to add some."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Divider"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -79792,7 +79617,7 @@ function ReviewReports() {
       lineNumber: 203,
       columnNumber: 15
     }
-  }, "This submission has no document reports. Use the control below to add some."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Divider"], {
+  }, "This registration has no document reports. Use the control below to add some."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Divider"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -80112,7 +79937,7 @@ function SingleReviewRequest() {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CardHeader"], {
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-      children: `Document Submission ${requestId} Reports`,
+      children: `Registration ${requestId} Reports`,
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -83758,7 +83583,7 @@ function SingleReviewRequest() {
         columnNumber: 13
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-      children: `REVIEW: Document Submission ${requestId}`,
+      children: `REVIEW: Registration ${requestId}`,
       __self: this,
       __source: {
         fileName: _jsxFileName,
