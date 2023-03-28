@@ -73351,11 +73351,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
-/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../components/Page */ "./src/components/Page.js");
-/* harmony import */ var _requests_review_ManufacturerDocs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../requests/review/ManufacturerDocs */ "./src/views/reviewer/requests/review/ManufacturerDocs.tsx");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/Add */ "./node_modules/@material-ui/icons/Add.js");
+/* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _common_types__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../common/types */ "./src/views/reviewer/common/types.ts");
+/* harmony import */ var _common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../common/UploadDocumentTableRow */ "./src/views/reviewer/common/UploadDocumentTableRow.tsx");
+/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../../components/Page */ "./src/components/Page.js");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ../../../../config */ "./src/config.ts");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
@@ -73370,7 +73376,12 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["makeStyles"])(theme => ({
+
+
+
+ // import ManufacturerDocs from "../../requests/review/ManufacturerDocs";
+
+const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["makeStyles"])(theme => ({
   root: {
     // @ts-ignore
     backgroundColor: theme.palette.background.dark,
@@ -73386,16 +73397,16 @@ function SingleManufacturerView() {
   return (
     /*#__PURE__*/
     // @ts-ignore
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_9__["default"], {
       className: classes.root,
       title: "Manufacturers",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39,
+        lineNumber: 53,
         columnNumber: 5
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Container"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Container"], {
       maxWidth: "lg",
       style: {
         marginLeft: 0
@@ -73403,32 +73414,32 @@ function SingleManufacturerView() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40,
+        lineNumber: 54,
         columnNumber: 7
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Grid"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Grid"], {
       container: true,
       spacing: 2,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42,
+        lineNumber: 56,
         columnNumber: 9
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Grid"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Grid"], {
       item: true,
       md: 12,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43,
+        lineNumber: 57,
         columnNumber: 11
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ManufacturerDetails, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44,
+        lineNumber: 58,
         columnNumber: 13
       }
     })))))
@@ -73445,18 +73456,24 @@ function ManufacturerDetails() {
 
   const {
     id
-  } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useParams"])();
+  } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["useParams"])();
   const {
     enqueueSnackbar
-  } = Object(notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"])();
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [manufacturer, setManufacturer] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
     name: ""
   });
+  const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+  const defaultExpireDate = moment__WEBPACK_IMPORTED_MODULE_2___default()().add(1, "year").subtract(45, "days").toDate();
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/manufacturer/" + id).then(async response => {
+      var _response$data;
+
       setLoading(false);
       setManufacturer(response.data);
+      setDocs(((_response$data = response.data) === null || _response$data === void 0 ? void 0 : _response$data.documents).reverse() || []);
     }).catch(e => {
       // @TODO handle
       console.error(e);
@@ -73491,52 +73508,137 @@ function ManufacturerDetails() {
     });
   };
 
+  const setDocumentHandler = document => {
+    setDocs([...docs, document]);
+    console.log(docs);
+  };
+
+  const handleDocumentUploadButton = () => {
+    // @ts-ignore
+    if (inputRef) inputRef.current.click();
+  };
+
+  const handleDocumentUpload = e => {
+    const doc = e.target.files[0];
+    if (!doc) return;
+
+    if (doc.size > _config__WEBPACK_IMPORTED_MODULE_10__["MAX_ALLOWED_SIZE"]) {
+      enqueueSnackbar(`File exceeds the maximum allowed size of 10 MB.`, {
+        variant: "error"
+      });
+      return;
+    }
+
+    setLoading(true);
+    uploadDocHandler(doc, _common_types__WEBPACK_IMPORTED_MODULE_7__["ManufacturerDocumentType"].CERTIFICATE_OR_DISCLOSURE, defaultExpireDate).then(async response => {
+      setLoading(false);
+
+      if (response.status == 200 || response.status == 201) {
+        setDocs([response.data, ...docs]);
+        enqueueSnackbar(`Uploaded document successfully.`, {
+          variant: "success"
+        });
+      } else {
+        console.log(response);
+        enqueueSnackbar(`Document upload failed.`, {
+          variant: "error"
+        });
+      }
+    }).catch(e => {
+      console.error(e);
+      setLoading(false);
+      enqueueSnackbar(`Document upload failed.`, {
+        variant: "error"
+      });
+    });
+  };
+
+  const uploadDocHandler = (doc, docType, expiresAt) => {
+    const formData = new FormData();
+    formData.append("document", doc);
+    formData.append("type", docType.toString());
+    formData.append("expires_at", moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss"));
+    return axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/manufacturer/${manufacturer.id}/document`, formData, {
+      headers: {
+        "Content-Type": "multipart/form-data"
+      }
+    });
+  };
+
+  const updateDocHandler = (doc, documentId) => {
+    const formData = new FormData();
+    formData.append("document", doc);
+    return axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/facility/document/${documentId}`, formData, {
+      headers: {
+        "Content-Type": "multipart/form-data"
+      }
+    });
+  };
+
+  const deleteDocHandler = documentId => {
+    setDocs(docs.filter(d => d.id !== documentId));
+    return axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/manufacturer/document/" + documentId);
+  };
+
+  const changeDateHandler = (documentId, expiresAt) => {
+    const _docs = docs.map(d => {
+      if (d.id !== documentId) return d;
+      d.expires_at = moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss");
+      return d;
+    });
+
+    setDocs(_docs);
+    return axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/manufacturer/document/${documentId}/expires-at`, {
+      expires_at: moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss")
+    });
+  };
+
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     autoComplete: "off",
     noValidate: true,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 236,
       columnNumber: 5
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Card"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Card"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107,
+      lineNumber: 237,
       columnNumber: 7
     }
-  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["LinearProgress"], {
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["LinearProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108,
+      lineNumber: 238,
       columnNumber: 21
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["CardHeader"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["CardHeader"], {
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, "Manufacturers / ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 112,
+        lineNumber: 242,
         columnNumber: 31
       }
     }, manufacturer.name)),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 239,
       columnNumber: 9
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Divider"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Divider"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116,
+      lineNumber: 246,
       columnNumber: 9
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["CardContent"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["CardContent"], {
     style: {
       height: "calc(100vh - 236px)",
       overflowY: "auto"
@@ -73544,46 +73646,46 @@ function ManufacturerDetails() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117,
+      lineNumber: 247,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Grid"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Grid"], {
     container: true,
     spacing: 3,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120,
+      lineNumber: 250,
       columnNumber: 11
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Grid"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Grid"], {
     item: true,
     xs: 12,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121,
+      lineNumber: 251,
       columnNumber: 13
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
     variant: "h5",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122,
+      lineNumber: 252,
       columnNumber: 15
     }
-  }, "Manufacturer Details")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Grid"], {
+  }, "Manufacturer Details")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Grid"], {
     item: true,
     md: 12,
     xs: 12,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124,
+      lineNumber: 254,
       columnNumber: 13
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TextField"], {
     fullWidth: true,
     helperText: "Please specify the manufacturer name",
     label: "Name",
@@ -73595,76 +73697,231 @@ function ManufacturerDetails() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125,
+      lineNumber: 255,
       columnNumber: 15
     }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Grid"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Grid"], {
     item: true,
     xs: 12,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 137,
+      lineNumber: 267,
       columnNumber: 13
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
     variant: "h5",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138,
+      lineNumber: 268,
       columnNumber: 15
     }
-  }, "Manufacturer Documents")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Grid"], {
+  }, "Manufacturer Documents")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Grid"], {
     item: true,
     xs: 12,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140,
+      lineNumber: 270,
       columnNumber: 13
     }
-  }, manufacturer.name != "" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_requests_review_ManufacturerDocs__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    manufacturer: manufacturer,
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Table"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142,
+      lineNumber: 271,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TableHead"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 272,
       columnNumber: 17
     }
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Divider"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TableRow"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147,
+      lineNumber: 273,
+      columnNumber: 19
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 274,
+      columnNumber: 21
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 275,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 276,
+      columnNumber: 23
+    }
+  }, "Created")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 278,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 279,
+      columnNumber: 23
+    }
+  }, "Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 281,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 282,
+      columnNumber: 23
+    }
+  }, "Expires")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 284,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 285,
+      columnNumber: 23
+    }
+  }, "Status")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 287,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 288,
+      columnNumber: 23
+    }
+  }, "Notes")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 290,
+      columnNumber: 21
+    }
+  }))), manufacturer.name != "" && docs.map(d => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    key: `manufacturer-doc-${d.id}`,
+    nameField: moment__WEBPACK_IMPORTED_MODULE_2___default()(d.created_at).format("MM/DD/YY"),
+    documentType: "manufacturer",
+    fileTypeName: "Certificate or Disclosure",
+    document: d,
+    setDocument: setDocumentHandler,
+    uploadHandler: (doc, selectedDate) => uploadDocHandler(doc, _common_types__WEBPACK_IMPORTED_MODULE_7__["ManufacturerDocumentType"].CERTIFICATE_OR_DISCLOSURE, selectedDate),
+    updateHandler: updateDocHandler,
+    deleteHandler: deleteDocHandler,
+    dateChangeHandler: changeDateHandler,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 295,
+      columnNumber: 21
+    }
+  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Divider"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 318,
       columnNumber: 9
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
     display: "flex",
     justifyContent: "flex-end",
     p: 2,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148,
+      lineNumber: 319,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Button"], {
-    color: "secondary",
-    variant: "contained",
-    disabled: loading,
-    onClick: onSubmitHandler,
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    ref: inputRef,
+    type: "file",
+    name: "file",
+    id: Math.random().toString(),
+    accept: "application/msword, application/pdf",
+    "data-title": "Upload" // multiple
+    // data-multiple-caption="{count} files selected"
+    ,
+    onChange: handleDocumentUpload,
+    style: {
+      display: "none"
+    },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149,
+      lineNumber: 320,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Button"], {
+    disabled: loading,
+    onClick: handleDocumentUploadButton,
+    startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 335,
+        columnNumber: 24
+      }
+    }),
+    style: {
+      marginRight: 10
+    },
+    color: "secondary",
+    variant: "contained",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 332,
+      columnNumber: 11
+    }
+  }, "Document"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Button"], {
+    disabled: loading,
+    onClick: onSubmitHandler,
+    color: "primary",
+    variant: "contained",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 342,
       columnNumber: 11
     }
   }, "Update"))));
 }
 
-_s2(ManufacturerDetails, "w3viT0dBJ73PYF1q41xDG2T28EA=", false, function () {
-  return [react_router_dom__WEBPACK_IMPORTED_MODULE_3__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"]];
+_s2(ManufacturerDetails, "1dtyd2x5bYCnVEeFwv8QmNv/wy4=", false, function () {
+  return [react_router_dom__WEBPACK_IMPORTED_MODULE_4__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
 
 _c2 = ManufacturerDetails;
