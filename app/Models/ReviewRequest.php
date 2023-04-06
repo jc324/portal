@@ -76,7 +76,11 @@ class ReviewRequest extends Model
     {
         if (!$this->hed_id || $this->hed_id === $current_user_id) return false;
 
-        return User::find($this->hed_id)->isOnline();
+        try {
+            return User::find($this->hed_id)->isOnline();
+        } catch (\Throwable $th) {
+            return true;
+        }
     }
 
     public function get_submission_progress()

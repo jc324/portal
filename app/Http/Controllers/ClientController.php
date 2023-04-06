@@ -75,10 +75,16 @@ class ClientController extends Controller
     public function get_heds(Request $request)
     {
         $client_id = Client::where('user_id', $request->user()->id)->first()->id;
-        $heds = Hed::where('client_id', $client_id);
+        $heds = Hed::where('client_id', $client_id)->get();
         $profiles = Profile::whereIn('user_id', $heds->pluck('user_id')->toArray())->get();
 
-        foreach ($profiles as $profile) {
+        // foreach ($profiles as $profile) {
+        //     $profile->email = User::find($profile->user_id)->email;
+        // }
+
+        for ($i=0; $i < $profiles->count(); $i++) {
+            $profile = $profiles[$i];
+            $profile->hed_id = $heds[$i]->id;
             $profile->email = User::find($profile->user_id)->email;
         }
 
@@ -107,12 +113,29 @@ class ClientController extends Controller
 
         Mail::to($to)->bcc(['review@halalwatchworld.org'])->send(new NewAccount($body));
 
-        return $hed->user->profile;
+        $profile = $hed->user->profile;
+        $profile->hed_id = $hed->id;
+        $profile->email = $to;
+
+        return $profile;
     }
 
     public function has_hed(Client $client)
     {
         return Hed::where('client_id', $client->id)->first() ? true : false;
+    }
+
+    public function delete_hed(Request $request, $hed_id)
+    {
+        $hed = Hed::findOrFail($hed_id);
+        $user = $hed->user;
+        $profile = $user->profile;
+
+        $profile->delete();
+        $user->delete();
+        $hed->delete();
+
+        return response(null, 200);
     }
 
     public function get_dashboard_latest_requests(Request $request)
@@ -217,7 +240,7 @@ class ClientController extends Controller
             'hed_email' => $input['hed_email'],
         ]);
 
-        response(null, 200);
+        return response(null, 200);
     }
 
     public function get_last_draft_submission(Request $request)

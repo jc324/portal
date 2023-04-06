@@ -52,6 +52,7 @@ Route::middleware('auth:sanctum')->post('/client/documents/add', [DocumentContro
 Route::middleware('auth:sanctum')->delete('/client/documents/{id}', [DocumentController::class, 'delete_document']);
 Route::middleware('auth:sanctum')->get('/client/heds', [ClientController::class, 'get_heds']);
 Route::middleware('auth:sanctum')->put('/client/register-hed', [ClientController::class, 'register_hed']);
+Route::middleware('auth:sanctum')->delete('/client/heds/{id}', [ClientController::class, 'delete_hed']);
 
 // Reviewer
 Route::middleware('auth:sanctum')->put('/reviewer/register-client', [ReviewerController::class, 'register_client']);
