@@ -692,7 +692,7 @@ class ReviewRequestController extends Controller
         $overview = render_email_overview($prod_count, $ingr_count, $progress);
         $review_notes = $review_notes === "" ? "" : "\n\n#### Failures\n\n" . $review_notes;
         $body = $is_final
-            ? $review_request_info . "<br />" . $overview . "<br />" . $document_statuses . $product_statuses
+            ? $review_request_info . "<br />" . $overview . "<br />" . render_email_next_phase() . "<br />" . $document_statuses . $product_statuses
             : $review_request_info . "<br />" . $overview . "<br />" . $document_statuses . $product_statuses . $review_notes;
 
         // if ($is_final && $this->get_progress($review_request->id) < 100)
@@ -912,7 +912,7 @@ function render_email_overview($prod_count, $ingr_count, $progress)
                 <p style="box-sizing:border-box; margin:0pt 0pt 8pt; font-size:16px; margin-top:0; margin-bottom:0pt; text-align:center; line-height:18pt"><span style="box-sizing:border-box; font-family:Arial,serif,EmojiFont; font-size:12pt; font-weight:bold">Overview</span> </p>
             </td>
             <td style="box-sizing:border-box; width:177.9pt; padding-right:5.4pt; padding-left:5.4pt; vertical-align:top">
-                <p style="box-sizing:border-box; margin:0pt 0pt 8pt; font-size:16px; margin-top:0; margin-bottom:0pt; text-align:center; line-height:18pt"><span style="box-sizing:border-box; font-family:Arial,serif,EmojiFont; font-size:12pt; font-weight:bold">Progress</span> </p>
+                <p style="box-sizing:border-box; margin:0pt 0pt 8pt; font-size:16px; margin-top:0; margin-bottom:0pt; text-align:center; line-height:18pt"><span style="box-sizing:border-box; font-family:Arial,serif,EmojiFont; font-size:12pt; font-weight:bold">Overall Progress</span> </p>
             </td>
         </tr>
         <tr>
@@ -947,6 +947,32 @@ function render_email_overview($prod_count, $ingr_count, $progress)
         </tr>
     </tbody>
 </table>
+EOD;
+}
+
+function render_email_next_phase()
+{
+    return <<<EOD
+<p
+  style="
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 1.5em;
+    margin-top: 0;
+    text-align: left;
+  "
+>
+  Next phase:
+  <span
+    style="
+      box-sizing: border-box;
+      font-family: Arial, serif, EmojiFont;
+      font-size: 12pt;
+      font-weight: bold;
+    "
+    >Audit</span
+  ><br aria-hidden="true" />
+</p>
 EOD;
 }
 

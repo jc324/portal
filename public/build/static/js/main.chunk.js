@@ -4087,7 +4087,7 @@ let items = [{
   subnav: [{
     href: "/client/reports/document",
     icon: react_feather__WEBPACK_IMPORTED_MODULE_5__["FileText"],
-    title: "Document Reports"
+    title: "Registration Reports"
   }, {
     href: "/client/reports/audit",
     icon: react_feather__WEBPACK_IMPORTED_MODULE_5__["FileText"],
@@ -27869,7 +27869,7 @@ const useStyles1 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSt
 }));
 
 function getSteps() {
-  return ["Registration", "Review", "Document Report", "Audit & Report", "Contract & Certificate"];
+  return ["Registration", "Review", "Registration Report", "Audit & Report", "Contract & Certificate"];
 }
 
 function CurrentRequestSteps({
@@ -28050,7 +28050,7 @@ function CurrentRequestSteps({
       lineNumber: 237,
       columnNumber: 9
     }
-  }, "Document Report")), dashboardStats.cr_type === "NEW_FACILITY_AND_PRODUCT" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ArrowForwardIos__WEBPACK_IMPORTED_MODULE_5___default.a, {
+  }, "Registration Report")), dashboardStats.cr_type === "NEW_FACILITY_AND_PRODUCT" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ArrowForwardIos__WEBPACK_IMPORTED_MODULE_5___default.a, {
     style: {
       marginTop: 11,
       color: "#546e7a"
@@ -38044,7 +38044,7 @@ function Reports() {
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tab"], Object.assign({
-    label: "Document Reports"
+    label: "Registration Reports"
   }, a11yProps(0), {
     __self: this,
     __source: {
@@ -39239,7 +39239,7 @@ function DocumentReports() {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CardHeader"], {
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-      children: "Document Reports",
+      children: "Registration Reports",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -39594,7 +39594,7 @@ function DocumentReportsList() {
       lineNumber: 165,
       columnNumber: 9
     }
-  }, "You currently have no reports. Document Reports will show here once the reviewer adds them."));
+  }, "You currently have no reports. Registration Reports will show here once the reviewer adds them."));
 }
 
 _s(DocumentReportsList, "NHozPeYVuZPNtkiITJRMMAGLUK8=");
@@ -39722,7 +39722,7 @@ const ReviewListView = () => {
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Document Reports" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Registration Reports" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -48488,11 +48488,11 @@ function ProductDocsDialog({
       lineNumber: 141,
       columnNumber: 13
     }
-  }, "Click on the button at the right to add your product product spec sheet:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, "Click on the button at the right to add your product spec sheet:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145,
+      lineNumber: 144,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AddProductDoc__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -48501,14 +48501,14 @@ function ProductDocsDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 146,
+      lineNumber: 145,
       columnNumber: 15
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["List"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 152,
+      lineNumber: 151,
       columnNumber: 11
     }
   }, docs.map(doc => {
@@ -48519,21 +48519,21 @@ function ProductDocsDialog({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 155,
+        lineNumber: 154,
         columnNumber: 17
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItemIcon"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 160,
+        lineNumber: 159,
         columnNumber: 19
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_InsertDriveFile__WEBPACK_IMPORTED_MODULE_6___default.a, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 161,
+        lineNumber: 160,
         columnNumber: 21
       }
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItemText"], {
@@ -48545,14 +48545,14 @@ function ProductDocsDialog({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 163,
+        lineNumber: 162,
         columnNumber: 19
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItemSecondaryAction"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 172,
+        lineNumber: 171,
         columnNumber: 19
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
@@ -48560,14 +48560,14 @@ function ProductDocsDialog({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 173,
+        lineNumber: 172,
         columnNumber: 21
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_7___default.a, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 174,
+        lineNumber: 173,
         columnNumber: 23
       }
     }))));
@@ -48575,7 +48575,7 @@ function ProductDocsDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 188,
+      lineNumber: 187,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
@@ -48584,7 +48584,7 @@ function ProductDocsDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 189,
+      lineNumber: 188,
       columnNumber: 11
     }
   }, "Close"))));
@@ -51293,7 +51293,7 @@ const FinishedProductsStep = ({
       columnNumber: 26
     }
   }) || null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProductItem, {
-    key: i,
+    key: `product-${product.id}`,
     product: product,
     onUpdate: product => handleProductUpdate(product, i),
     onDuplicate: handleProductDuplicate,
@@ -65311,7 +65311,7 @@ function ReviewReports() {
       lineNumber: 224,
       columnNumber: 15
     }
-  }, "This profile has no document reports. Use the control below to add some."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Divider"], {
+  }, "This profile has no registration reports. Use the control below to add some."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Divider"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -65366,7 +65366,7 @@ function ReviewReports() {
       lineNumber: 245,
       columnNumber: 9
     }
-  }, "Document Report")));
+  }, "Registration Report")));
 }
 
 _s(ReviewReports, "YZhVQIZBXMmSwyv05lxzTwqMR+8=", false, function () {
@@ -65712,7 +65712,7 @@ function ClientProfile() {
       columnNumber: 15
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tab"], Object.assign({
-    label: "Document Reports"
+    label: "Registration Reports"
   }, a11yProps(3), {
     __self: this,
     __source: {
@@ -79889,7 +79889,7 @@ function ReviewReports() {
       lineNumber: 203,
       columnNumber: 15
     }
-  }, "This registration has no document reports. Use the control below to add some."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Divider"], {
+  }, "This registration has no registration reports. Use the control below to add some."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Divider"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -79944,7 +79944,7 @@ function ReviewReports() {
       lineNumber: 224,
       columnNumber: 9
     }
-  }, "Document Report")));
+  }, "Registration Report")));
 }
 
 _s(ReviewReports, "zHlaEeEJxUwX9qtBq1VfImq2zDg=", false, function () {
@@ -80329,7 +80329,7 @@ function SingleReviewRequestTabs() {
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Tab"], Object.assign({
-    label: "Document Reports"
+    label: "Registration Reports"
   }, a11yProps(0), {
     __self: this,
     __source: {
@@ -82649,11 +82649,12 @@ function ProductDocs({
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(products.map(p => p.documents[0]));
-  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
-    console.log(products);
-    console.log(docs);
-  }, []);
+  const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])( // products.map((p: Product) => (p.documents as ProductDocument[])[0])
+  products.map(p => p.documents && p.documents.map(d => {
+    // @ts-ignore
+    d.product_name = p.name;
+    return d;
+  }) || []).flat(1));
 
   const setDocumentHandler = document => {
     setDocs([...docs, document]);
@@ -82704,7 +82705,7 @@ function ProductDocs({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103,
+      lineNumber: 110,
       columnNumber: 23
     }
   });
@@ -82712,134 +82713,136 @@ function ProductDocs({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 113,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableHead"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107,
+      lineNumber: 114,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108,
+      lineNumber: 115,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 116,
       columnNumber: 11
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
-      columnNumber: 11
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 111,
-      columnNumber: 13
-    }
-  }, "Name")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 113,
-      columnNumber: 11
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 114,
-      columnNumber: 13
-    }
-  }, "Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 116,
-      columnNumber: 11
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 117,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118,
+      columnNumber: 13
+    }
+  }, "Product Name")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 120,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 121,
+      columnNumber: 13
+    }
+  }, "Document Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124,
       columnNumber: 13
     }
   }, "Expiration Date")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119,
+      lineNumber: 126,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120,
+      lineNumber: 127,
       columnNumber: 13
     }
   }, "Status")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122,
+      lineNumber: 129,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123,
+      lineNumber: 130,
       columnNumber: 13
     }
   }, "Note")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125,
+      lineNumber: 132,
       columnNumber: 11
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableBody"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128,
+      lineNumber: 135,
       columnNumber: 7
     }
-  }, products && products.map((product, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    nameField: product.name,
+  }, docs.map((doc, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__["default"] // @ts-ignore
+  , {
+    nameField: doc.product_name,
     documentType: "product",
     fileTypeName: "Spec Sheet",
     document: docs[i],
     setDocument: setDocumentHandler,
-    uploadHandler: (doc, selectedDate) => uploadDocHandler(product.id, doc, _common_types__WEBPACK_IMPORTED_MODULE_5__["ProductDocumentType"].SPEC_SHEETS, selectedDate),
+    uploadHandler: (doc, selectedDate) => uploadDocHandler( // @ts-ignore
+    doc.product_id, doc, _common_types__WEBPACK_IMPORTED_MODULE_5__["ProductDocumentType"].SPEC_SHEETS, selectedDate),
     updateHandler: updateDocHandler,
     deleteHandler: deleteDocHandler,
     dateChangeHandler: changeDateHandler,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131,
-      columnNumber: 13
+      lineNumber: 137,
+      columnNumber: 11
     }
   }))));
 }
 
-_s(ProductDocs, "5unu7OZguMWQA8Se57bG2Mo8AXk=", false, function () {
+_s(ProductDocs, "krPagrlJHaMFos2N2y2eH60SqeY=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
 
@@ -82930,55 +82933,26 @@ if (true) {
 /*!*************************************************************!*\
   !*** ./src/views/reviewer/requests/review/ProductsView.tsx ***!
   \*************************************************************/
-/*! exports provided: default, ProductItem */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProductsView; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProductItem", function() { return ProductItem; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
-/* harmony import */ var _material_ui_core_List__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/List */ "./node_modules/@material-ui/core/esm/List/index.js");
-/* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/ListItem */ "./node_modules/@material-ui/core/esm/ListItem/index.js");
-/* harmony import */ var _material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/ListItemIcon */ "./node_modules/@material-ui/core/esm/ListItemIcon/index.js");
-/* harmony import */ var _material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/ListItemText */ "./node_modules/@material-ui/core/esm/ListItemText/index.js");
-/* harmony import */ var _material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Collapse */ "./node_modules/@material-ui/core/esm/Collapse/index.js");
-/* harmony import */ var _material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Divider */ "./node_modules/@material-ui/core/esm/Divider/index.js");
-/* harmony import */ var _material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/CircularProgress */ "./node_modules/@material-ui/core/esm/CircularProgress/index.js");
-/* harmony import */ var _material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/ExpandLess */ "./node_modules/@material-ui/icons/ExpandLess.js");
-/* harmony import */ var _material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons/ExpandMore */ "./node_modules/@material-ui/icons/ExpandMore.js");
-/* harmony import */ var _material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/icons/MoreVert */ "./node_modules/@material-ui/icons/MoreVert.js");
-/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
-/* harmony import */ var _client_requests_request_ProductDialog__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../client/requests/request/ProductDialog */ "./src/views/client/requests/request/ProductDialog.tsx");
-/* harmony import */ var _reviewer_common_utils__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../../../reviewer/common/utils */ "./src/views/reviewer/common/utils.ts");
-/* harmony import */ var _client_requests_request_IngredientsView__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ../../../client/requests/request/IngredientsView */ "./src/views/client/requests/request/IngredientsView.tsx");
-/* harmony import */ var _ProductDocs__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./ProductDocs */ "./src/views/reviewer/requests/review/ProductDocs.tsx");
+/* harmony import */ var _material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/CircularProgress */ "./node_modules/@material-ui/core/esm/CircularProgress/index.js");
+/* harmony import */ var _reviewer_common_utils__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../reviewer/common/utils */ "./src/views/reviewer/common/utils.ts");
+/* harmony import */ var _ProductDocs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ProductDocs */ "./src/views/reviewer/requests/review/ProductDocs.tsx");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ProductsView.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
-
-
-
-
-
-
-
-
-
-
-
-
+    _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -83033,7 +83007,7 @@ function ProductsView({
   };
 
   const handleProductUpdate = (product, i) => {
-    const newProducts = Object(_reviewer_common_utils__WEBPACK_IMPORTED_MODULE_16__["insert"])(products, i, product);
+    const newProducts = Object(_reviewer_common_utils__WEBPACK_IMPORTED_MODULE_5__["insert"])(products, i, product);
     setProducts(newProducts);
   };
 
@@ -83065,14 +83039,14 @@ function ProductsView({
   };
 
   console.log(products);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 134,
       columnNumber: 20
     }
-  }) || products.length && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductDocs__WEBPACK_IMPORTED_MODULE_18__["default"], {
+  }) || products.length && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductDocs__WEBPACK_IMPORTED_MODULE_6__["default"], {
     products: products,
     __self: this,
     __source: {
@@ -83088,199 +83062,6 @@ _s(ProductsView, "eoZ39Q2wo4MFiPGMVcysDaGxZV0=", false, function () {
 });
 
 _c = ProductsView;
-
-function getSome(array, some) {
-  return array.sort(() => Math.random() - Math.random()).slice(0, some);
-}
-
-function ProductItem({
-  product,
-  onUpdate,
-  onDelete
-}) {
-  _s2();
-
-  const [open, setOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const [editOpen, setEditOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const [specSheet, setSpecSheet] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const [ingredients, setIngredients] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
-  const {
-    enqueueSnackbar
-  } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
-
-  const handleClick = () => {
-    setOpen(!open);
-  };
-
-  const handleIngredientAdd = ingredient => {
-    setIngredients([ingredient, ...ingredients]);
-    setOpen(true); // cause refresh
-    // setOpen(!open);
-  }; // @TODO make real
-
-
-  const uploadSpecSheet = () => {
-    sleep(2000).then(() => {
-      setSpecSheet(!specSheet);
-      if (!specSheet) enqueueSnackbar("Product Spec Sheet uploaded successfully", {
-        variant: "success"
-      });
-    });
-  };
-
-  const handleProductItemClick = e => {
-    // console.log(e);
-    // if (e.target.className.baseVal === "product-item-icon") setEditOpen(true);
-    if (e.target.className === "MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button") setEditOpen(true);
-    if (e.target.className === "MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock") setEditOpen(true);
-  };
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_5__["default"] // button
-
-  /*onClick={handleProductItemClick}*/
-  , {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 196,
-      columnNumber: 7
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 200,
-      columnNumber: 9
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_14__["ShoppingBag"], {
-    className: "product-item-icon",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 201,
-      columnNumber: 11
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    primary: product.name,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 203,
-      columnNumber: 9
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    primary: product.name,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 204,
-      columnNumber: 9
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    primary: product.name,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 205,
-      columnNumber: 9
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
-    onClick: handleClick,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 226,
-      columnNumber: 9
-    }
-  }, open ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 227,
-      columnNumber: 19
-    }
-  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_12___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 227,
-      columnNumber: 36
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
-    edge: "end",
-    size: "small",
-    "aria-controls": "simple-menu",
-    "aria-haspopup": "true" // onClick={handleClick}
-    ,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 229,
-      columnNumber: 9
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_13___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 236,
-      columnNumber: 11
-    }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Collapse__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    in: open,
-    timeout: "auto",
-    unmountOnExit: true,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 239,
-      columnNumber: 7
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    component: "div",
-    disablePadding: true,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 240,
-      columnNumber: 9
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_client_requests_request_IngredientsView__WEBPACK_IMPORTED_MODULE_17__["default"], {
-    ingredients: ingredients,
-    setIngredients: setIngredients,
-    productId: product.id,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 241,
-      columnNumber: 11
-    }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_client_requests_request_ProductDialog__WEBPACK_IMPORTED_MODULE_15__["default"], {
-    mode: _client_requests_request_ProductDialog__WEBPACK_IMPORTED_MODULE_15__["ProductDialogMode"].EDIT,
-    open: editOpen,
-    edit: product,
-    onClose: () => setEditOpen(false),
-    onProductUpdate: onUpdate,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 248,
-      columnNumber: 7
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Divider__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 255,
-      columnNumber: 7
-    }
-  }));
-}
-
-_s2(ProductItem, "RqeKCkudCRPvwiEpf41gkbxPlFU=", false, function () {
-  return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
-});
-
-_c2 = ProductItem;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
   stepBox: {
     display: "flex",
@@ -83303,14 +83084,9 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
   }
 }));
 
-function sleep(time) {
-  return new Promise(resolve => setTimeout(resolve, time));
-}
-
-var _c, _c2;
+var _c;
 
 __webpack_require__.$Refresh$.register(_c, "ProductsView");
-__webpack_require__.$Refresh$.register(_c2, "ProductItem");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);

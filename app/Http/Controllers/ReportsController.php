@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Mail\AuditReportApproved;
 use App\Mail\NewAuditReport;
-use App\Mail\NewDocumentReport;
+use App\Mail\NewRegistrationReport;
 use App\Mail\PendingReportsNotification;
 use Illuminate\Http\Request;
 
@@ -84,7 +84,7 @@ class ReportsController extends Controller
         $client_name = $client->business_name;
         $to = $client->get_emails();
 
-        Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new NewDocumentReport($client_name));
+        Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new NewRegistrationReport($client_name));
 
         return response($report, 200);
     }

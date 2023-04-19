@@ -186,11 +186,12 @@ class FacilityController extends Controller
 
 function pp_facility_client(Client $client)
 {
+    $clean_desc = preg_replace('/\s+/', ' ', trim($client->description));
     $output = "## CLIENT PROFILE\n\n";
     $output .= '- ' . '**ID**' . ': `' . $client->id . "`\n";
     $output .= '- ' . '**BUSINESS NAME**' . ': `' . $client->business_name . "`\n";
     $output .= '- ' . '**WEBSITE**' . ': `' . $client->business_name . "`\n";
-    $output .= '- ' . '**DESCRIPTION**' . ': `' . $client->description . "`\n";
+    $output .= '- ' . '**DESCRIPTION**' . ': `' . $clean_desc . "`\n";
     $output .= "\n";
     $output .= "**HALAL ENFORCEMENT DIRECTOR(S)**:\n\n";
 
@@ -229,9 +230,12 @@ function pp_relationship_details($products): string
     $output .= "**PRODUCTS**:\n";
 
     foreach ($products as $product) {
-        $output .= "\n" . '- ' . $product->name . "\n\n";
-        $output .= "  - DESCRIPTION: " . ($product->description ? $product->description : "NONE") . "\n";
-        $output .= "  - INGREDIENTS:\n";
+        $clean_desc = $product->description
+            ? preg_replace('/\s+/', ' ', trim($product->description))
+            : "NONE";
+        $output .= "\n" . '- **' . $product->name . "**\n\n";
+        $output .= "  - **DESCRIPTION**: " . $clean_desc . "\n";
+        $output .= "  - **INGREDIENTS**:\n";
 
         if ($ingredients = $product->ingredients)
             if (count($ingredients) == 0) $output .= " NONE\n";

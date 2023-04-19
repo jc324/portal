@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class NewDocumentReport extends Mailable
+class NewRegistrationReport extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -30,6 +30,6 @@ class NewDocumentReport extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.new_document_report', ['client_name' => $this->client_name]);
+        return $this->markdown('emails.new_registration_report', ['client_name' => $this->client_name]);
     }
 }
