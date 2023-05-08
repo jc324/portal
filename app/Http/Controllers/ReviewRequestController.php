@@ -522,7 +522,7 @@ class ReviewRequestController extends Controller
         foreach ($facility_docs as $doc)
             if ($doc->status == "APPROVED") $approved_facility_docs_count++;
 
-        $facility_docs_progress = ($approved_facility_docs_count * 100) / $facility_docs_count;
+        $facility_docs_progress = $facility_docs_count ? ($approved_facility_docs_count * 100) / $facility_docs_count : 0;
 
         if ($products = $review_request->products) {
             $product_count = $products->count();
@@ -548,7 +548,7 @@ class ReviewRequestController extends Controller
                 }
             }
 
-            $product_docs_progress = ($approved_product_docs_count * 100) / $product_count;
+            $product_docs_progress = $product_count ? ($approved_product_docs_count * 100) / $product_count : 0;
 
             // considering all
             if ($ingredient_count > 0) {
@@ -637,7 +637,7 @@ class ReviewRequestController extends Controller
         $product_statuses = "";
         $prod_count = 0;
         $ingr_count = 0;
-        $review_notes = "";
+        $review_notes = array();
 
         if ($review_request->type !== 'NEW_PRODUCTS') {
             if ($facility = Facility::find($review_request->facility_id)) {
@@ -647,7 +647,7 @@ class ReviewRequestController extends Controller
                     $clean_doc_type = str_replace("_", " ", $doc->type);
                     if (!array_key_exists($doc->type, $docs_by_type))
                         $docs_by_type[$doc->type] = render_email_table_row($clean_doc_type, $doc->status);
-                    if (!empty($doc->note)) $review_notes .= '**' . $clean_doc_type . "**: " . $doc->note . "\n\n";
+                    if (!empty($doc->note)) $review_notes []= '**' . $clean_doc_type . "**: " . $doc->note;
                 }
 
                 foreach ($docs_by_type as $doc_stat)
@@ -665,7 +665,7 @@ class ReviewRequestController extends Controller
                     if ($docs = $product->documents)
                         if (count($docs) > 0) foreach ($docs as $doc) {
                             $tb_rows .= render_email_table_row($product->name, $doc->status);
-                            if (!empty($doc->note)) $review_notes .= '**' . $product->name . "**: " . $doc->note . "\n\n";
+                            if (!empty($doc->note)) $review_notes []= '**' . $product->name . "**: " . $doc->note;
                             break;
                         }
                         else {
@@ -676,7 +676,9 @@ class ReviewRequestController extends Controller
                         $total_ingredients++;
                         if ($manufacturer = $ingredient->manufacturer) {
                             if ($docs = $manufacturer->documents)
-                                if (count($docs) > 0 && !empty($docs[0]->note)) $review_notes .= '**' . $manufacturer->name . "**: " . $docs[0]->note . "\n\n";
+                                if (count($docs) > 0) foreach ($docs as $doc) {
+                                    if (!empty($doc->note)) $review_notes []= '**' . $manufacturer->name . "**: " . $doc->note;
+                                }
                         }
                     }
                 }
@@ -690,7 +692,7 @@ class ReviewRequestController extends Controller
         // @TODO
         $progress = intval($this->get_progress($review_request->id));
         $overview = render_email_overview($prod_count, $ingr_count, $progress);
-        $review_notes = $review_notes === "" ? "" : "\n\n#### Failures\n\n" . $review_notes;
+        $review_notes = !$review_notes ? "" : "\n\n#### Failures\n\n" . implode("\n\n", array_unique($review_notes));
         $body = $is_final
             ? $review_request_info . "<br />" . $overview . "<br />" . render_email_next_phase() . "<br />" . $document_statuses . $product_statuses
             : $review_request_info . "<br />" . $overview . "<br />" . $document_statuses . $product_statuses . $review_notes;

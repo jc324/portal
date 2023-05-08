@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use App\Models\Report;
 use App\Models\User;
 use App\Models\Client;
+use App\Models\Hed;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Facades\Http;
@@ -36,7 +37,10 @@ class ReportsController extends Controller
     // for client
     public function get_audit_reports(Request $request)
     {
-        $client_id = Client::where('user_id', $request->user()->id)->first()->id;
+        $client_id = $request->user()->role === "HED"
+            ? Hed::where('user_id', $request->user()->id)->first()->client_id
+            : Client::where('user_id', $request->user()->id)->first()->id;
+
         $reports = Report::where(['client_id' => $client_id, 'type' => 'AUDIT_REPORT'])->get()->reverse()->values();
 
         return $reports;
@@ -45,7 +49,10 @@ class ReportsController extends Controller
     // for client
     public function get_review_reports(Request $request)
     {
-        $client_id = Client::where('user_id', $request->user()->id)->first()->id;
+        $client_id = $request->user()->role === "HED"
+            ? Hed::where('user_id', $request->user()->id)->first()->client_id
+            : Client::where('user_id', $request->user()->id)->first()->id;
+
         $reports = Report::where(['client_id' => $client_id, 'type' => 'REVIEW_REPORT'])->get()->reverse()->values();
 
         return $reports;

@@ -80,14 +80,41 @@ class ManufacturerController extends Controller
 
     public function add_document(Request $request, $manufacturerId)
     {
+        // @CHECK no replace for manufacturer docs
+        // if (
+        //     $document = ManufacturerDocument::where(
+        //         ['manufacturer_id' => $manufacturerId, 'type' => $request['type'], 'name' => $request['name']]
+        //     )->first()
+        // ) {
+        //     $this->update_document($request, $document->id);
+
+        //     return response(null, 204);
+        // }
+
         $path = Storage::putFile('documents', $request->file('document'));
         $manufacturer = Manufacturer::findOrFail($manufacturerId);
         $document = new ManufacturerDocument;
         $document->manufacturer_id = $manufacturer->id;
         $document->type = $request['type'];
         $document->status = "SUBMITTED";
+        $document->name = $request['name'] ? $request['name'] : '';
         $document->note = "";
         $document->expires_at = $request['expires_at'];
+        $document->path = $path;
+        $document->save();
+
+        return response($document, 200);
+    }
+
+    // update/replace
+    public function update_document(Request $request, $documentId)
+    {
+        $document = ManufacturerDocument::findOrFail($documentId);
+        $path = Storage::putFile('documents', $request->file('document'));
+
+        // delete previous hard record
+        Storage::delete($document->path);
+
         $document->path = $path;
         $document->save();
 
@@ -125,21 +152,6 @@ class ManufacturerController extends Controller
         $document->delete();
 
         return response('', 200);
-    }
-
-    // update/replace
-    public function update_document(Request $request, $documentId)
-    {
-        $document = ManufacturerDocument::findOrFail($documentId);
-        $path = Storage::putFile('documents', $request->file('document'));
-
-        // delete previous hard record
-        Storage::delete($document->path);
-
-        $document->path = $path;
-        $document->save();
-
-        return response($document, 200);
     }
 
     public function download_document_by_id($documentId)

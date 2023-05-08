@@ -104,11 +104,22 @@ class ProductController extends Controller
 
     public function add_document(Request $request, $productId)
     {
+        if (
+            $document = ProductDocument::where(
+                ['product_id' => $productId, 'type' => $request['type'], 'name' => $request['name']]
+            )->first()
+        ) {
+            $this->update_document($request, $document->id);
+
+            return response(null, 204);
+        }
+
         $path = Storage::putFile('documents', $request->file('document'));
         $document = new ProductDocument;
         $document->product_id = $productId;
         $document->type = $request['type'];
         $document->status = "SUBMITTED";
+        $document->name = $request['name'];
         $document->note = "";
         $document->expires_at = $request['expires_at'];
         $document->path = $path;
@@ -121,6 +132,21 @@ class ProductController extends Controller
                 $document->id,
                 $document->type
             ));
+
+        return response($document, 200);
+    }
+
+    // update/replace
+    public function update_document(Request $request, $documentId)
+    {
+        $document = ProductDocument::findOrFail($documentId);
+        $path = Storage::putFile('documents', $request->file('document'));
+
+        // delete previous hard record
+        Storage::delete($document->path);
+
+        $document->path = $path;
+        $document->save();
 
         return response($document, 200);
     }
@@ -156,21 +182,6 @@ class ProductController extends Controller
         $document->delete();
 
         return response('', 200);
-    }
-
-    // update/replace
-    public function update_document(Request $request, $documentId)
-    {
-        $document = ProductDocument::findOrFail($documentId);
-        $path = Storage::putFile('documents', $request->file('document'));
-
-        // delete previous hard record
-        Storage::delete($document->path);
-
-        $document->path = $path;
-        $document->save();
-
-        return response($document, 200);
     }
 
     public function download_document_by_id($documentId)

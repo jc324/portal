@@ -35,7 +35,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_perfect_scrollbar_dist_css_styles_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_perfect_scrollbar_dist_css_styles_css__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _components_GlobalStyles__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./components/GlobalStyles */ "./src/components/GlobalStyles.js");
 /* harmony import */ var _mixins_chartjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./mixins/chartjs */ "./src/mixins/chartjs.js");
@@ -46,9 +46,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\App.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -60,7 +58,6 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 const App = () => {
   _s();
-
   const routing = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useRoutes"])(_routes__WEBPACK_IMPORTED_MODULE_7__["default"]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ThemeProvider"], {
     theme: _theme__WEBPACK_IMPORTED_MODULE_6__["default"],
@@ -87,15 +84,16 @@ const App = () => {
     }
   }), routing));
 };
-
 _s(App, "pNQKaCUX+oDVx070qYUd1XbbuOI=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useRoutes"]];
 });
-
 _c = App;
-/* harmony default export */ __webpack_exports__["default"] = (App); // import React from 'react';
+/* harmony default export */ __webpack_exports__["default"] = (App);
+
+// import React from 'react';
 // import logo from './logo.svg';
 // import './App.css';
+
 // function App() {
 //   return (
 //     <div className="App">
@@ -116,10 +114,9 @@ _c = App;
 //     </div>
 //   );
 // }
+
 // export default App;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "App");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -218,7 +215,6 @@ __webpack_require__.$Refresh$.setup(module.i);
 // @ts-ignore
 window.axios = axios__WEBPACK_IMPORTED_MODULE_0___default.a;
 let instance = null;
-
 class Auth {
   constructor() {
     this._user = null;
@@ -226,9 +222,9 @@ class Auth {
     instance = this;
     axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.withCredentials = true;
     this.getSanctumCookie();
-  } // Get X-XSRF-TOKEN
+  }
 
-
+  // Get X-XSRF-TOKEN
   getSanctumCookie() {
     axios__WEBPACK_IMPORTED_MODULE_0___default.a.defaults.withCredentials = true;
     axios__WEBPACK_IMPORTED_MODULE_0___default.a.get("/sanctum/csrf-cookie").then(() => {}); // console.log(document.cookie)
@@ -240,22 +236,18 @@ class Auth {
         resolve(this._user);
         return;
       }
-
       axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("/api/user").then(async response => {
         this._user = response.data;
         resolve(response.data);
       }).catch(e => reject(e));
     });
   }
-
   get user() {
     return this._user;
   }
-
   isAuthenticated() {
     return this._user != null;
   }
-
   login(credentials) {
     console.log(credentials);
     return new Promise((resolve, reject) => {
@@ -264,19 +256,16 @@ class Auth {
         console.log(response.status);
         if (response.status === 422) reject({
           error: "Authentication failed. Check your credentials."
-        }); // Get user
-
+        });
+        // Get user
         if (response.status === 200) this.authenticate().then(_user => resolve(_user)).catch(reject);
       }).catch(e => reject(e));
     });
   }
-
   logout() {
     return axios__WEBPACK_IMPORTED_MODULE_0___default.a.post("/logout");
   }
-
 }
-
 /* harmony default export */ __webpack_exports__["default"] = (Auth);
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -378,29 +367,26 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\components\\AuthenticateByUserId.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
 
-
-function AuthenticateByUserId({
-  defaultValue
-}) {
+function AuthenticateByUserId(_ref) {
   _s();
-
+  let {
+    defaultValue
+  } = _ref;
   const [open, setOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [options, setOptions] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const loading = open && options.length === 0;
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     let active = true;
-
     if (!loading) {
       return undefined;
     }
-
     (async () => {
       axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/users`).then(async response => {
         if (response.status == 200 || response.status == 201) {
@@ -412,7 +398,6 @@ function AuthenticateByUserId({
         console.error(e);
       });
     })();
-
     return () => {
       active = false;
     };
@@ -422,7 +407,6 @@ function AuthenticateByUserId({
       setOptions([]);
     }
   }, [open]);
-
   const handleSelect = user => {
     if (!user) return;
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/login-as/${user.id}`).then(async response => {
@@ -435,7 +419,6 @@ function AuthenticateByUserId({
       console.error(e);
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab_Autocomplete__WEBPACK_IMPORTED_MODULE_4__["default"], {
     fullWidth: true,
     freeSolo: true,
@@ -448,7 +431,8 @@ function AuthenticateByUserId({
     },
     onChange: (event, newValue) => {
       handleSelect(newValue);
-    } // @ts-ignore
+    }
+    // @ts-ignore
     ,
     defaultValue: {
       name: defaultValue
@@ -461,11 +445,14 @@ function AuthenticateByUserId({
     renderInput: params => {
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_2__["default"], Object.assign({}, params, {
         // label="User Name"
-        name: "user_name" // variant="outlined"
+        name: "user_name"
+        // variant="outlined"
         ,
-        required: true // onChange={handleChange}
+        required: true
+        // onChange={handleChange}
         ,
-        InputProps: { ...params.InputProps,
+        InputProps: {
+          ...params.InputProps,
           disableUnderline: true,
           startAdornment: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_InputAdornment__WEBPACK_IMPORTED_MODULE_3__["default"], {
             position: "start",
@@ -503,13 +490,9 @@ function AuthenticateByUserId({
     }
   });
 }
-
 _s(AuthenticateByUserId, "NAnsH/wQUpBOztFs1nPXEavBw+I=");
-
 _c = AuthenticateByUserId;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "AuthenticateByUserId");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -604,7 +587,6 @@ __webpack_require__.$Refresh$.setup(module.i);
 
 var _s = __webpack_require__.$Refresh$.signature();
 
-
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["makeStyles"])(() => Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["createStyles"])({
   '@global': {
     '*': {
@@ -632,23 +614,17 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_0__["makeSty
     }
   }
 }));
-
 const GlobalStyles = () => {
   _s();
-
   useStyles();
   return null;
 };
-
 _s(GlobalStyles, "LpG94fGMPG7B/LCQ+ela2fKlpdc=", false, function () {
   return [useStyles];
 });
-
 _c = GlobalStyles;
 /* harmony default export */ __webpack_exports__["default"] = (GlobalStyles);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "GlobalStyles");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -744,7 +720,6 @@ __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\components\\Logo.js";
 
-
 const Logo = props => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", Object.assign({
     alt: "Logo",
@@ -760,12 +735,9 @@ const Logo = props => {
     }
   }));
 };
-
 _c = Logo;
 /* harmony default export */ __webpack_exports__["default"] = (Logo);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Logo");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -857,7 +829,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return NavList; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/ExpandLess */ "./node_modules/@material-ui/icons/ExpandLess.js");
@@ -870,8 +842,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\components\\NavList.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -880,21 +852,18 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function NavList({
-  list
-}) {
+function NavList(_ref) {
   _s();
-
+  let {
+    list
+  } = _ref;
   const classes = useStyles();
   const auth = new _api_Auth__WEBPACK_IMPORTED_MODULE_7__["default"]();
-
   const onLogoutHandler = () => {
     auth.logout().then(async () => {
       window.location.href = "/";
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["List"], {
     __self: this,
     __source: {
@@ -910,19 +879,20 @@ function NavList({
     // if (item.subnav) subnavProps.expand = open;
     const open = true;
     const subnavProps = true;
-    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavListItem, Object.assign({
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavListItem, {
       href: item.href,
       key: item.title,
       title: item.title,
       icon: item.icon
-    }, subnavProps, {
+      // {...subnavProps}
+      ,
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 44,
         columnNumber: 13
       }
-    })), item.subnav && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Collapse"], {
+    }), item.subnav && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Collapse"], {
       in: open,
       timeout: "auto",
       unmountOnExit: true,
@@ -941,7 +911,9 @@ function NavList({
         lineNumber: 53,
         columnNumber: 17
       }
-    }, item.subnav.map(subnav => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavListItem, {
+    }, item.subnav.map(subnav => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavListItem
+    // @ts-ignore
+    , {
       className: classes.nested,
       href: subnav.href,
       key: subnav.title,
@@ -962,43 +934,46 @@ function NavList({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 71,
       columnNumber: 7
     }
   }));
 }
-
 _s(NavList, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = NavList;
-
-function NavListItem({
-  className = "",
-  href,
-  icon: Icon,
-  title,
-  expand,
-  onClick,
-  ...rest
-}) {
+function NavListItem(_ref2) {
   _s2();
-
+  let {
+    className = "",
+    href,
+    icon: Icon,
+    title,
+    expand,
+    onClick,
+    ...rest
+  } = _ref2;
   const classes = useStyles();
   console.log("expand: ", typeof expand);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItem"], Object.assign({
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItem"]
+  // @ts-ignore
+  , Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(classes.item, className),
     disableGutters: true
   }, rest, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104,
+      lineNumber: 105,
       columnNumber: 5
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
-    activeClassName: !onClick && classes.active || classes.inactive,
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"]
+  // @ts-ignore
+  , {
+    activeClassName: !onClick && classes.active || classes.inactive
+    // @ts-ignore
+    ,
     className: classes.button,
     component: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["NavLink"],
     onClick: onClick,
@@ -1006,48 +981,50 @@ function NavListItem({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 111,
       columnNumber: 7
     }
-  }, Icon && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
+  }, Icon &&
+  /*#__PURE__*/
+  // @ts-ignore
+  react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Icon, {
     className: classes.icon,
     size: "20",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116,
-      columnNumber: 18
+      lineNumber: 121,
+      columnNumber: 11
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     className: classes.title,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117,
+      lineNumber: 124,
       columnNumber: 9
     }
   }, title), typeof expand === "boolean" && expand && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 125,
       columnNumber: 51
     }
   }), typeof expand === "boolean" && !expand && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119,
+      lineNumber: 126,
       columnNumber: 52
     }
   })));
 }
-
 _s2(NavListItem, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c2 = NavListItem;
+// @ts-ignore
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(theme => ({
   item: {
     display: "flex",
@@ -1083,9 +1060,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeSty
     paddingLeft: theme.spacing(4)
   }
 }));
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "NavList");
 __webpack_require__.$Refresh$.register(_c2, "NavListItem");
 
@@ -1199,7 +1174,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\components\\NotificationsDialog.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -1215,12 +1190,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function NotificationsDialog({
-  user_id
-}) {
+function NotificationsDialog(_ref) {
   _s();
-
+  let {
+    user_id
+  } = _ref;
   const theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["useTheme"])();
   const classes = useStyles();
   const [open, setOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
@@ -1233,11 +1207,12 @@ function NotificationsDialog({
       document.removeEventListener("mousedown", handleClickOutside);
     };
   }, [ref]);
-
   function handleClickOutside(event) {
     // @ts-ignore
     if (ref.current && !ref.current.contains(event.target)) setOpen(false);
-  } // useEffect(() => {
+  }
+
+  // useEffect(() => {
   //   axios
   //     .post(`/api/user/${user_id}/notifications`)
   //     .then(async (response) => {
@@ -1247,19 +1222,19 @@ function NotificationsDialog({
   //       console.error(e);
   //     });
   // }, []);
+
   // const handleClick = (event: React.MouseEvent<HTMLElement>) => {
   //   setAnchorEl(anchorEl ? null : event.currentTarget);
   //   setOpen((prev) => !prev);
   // };
 
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
-    if (!ref.current) setOpen(true); // setOpen((prev) => !prev);
+    if (!ref.current) setOpen(true);
+    // setOpen((prev) => !prev);
   };
 
   const handleSelect = () => {};
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __self: this,
     __source: {
@@ -1267,7 +1242,8 @@ function NotificationsDialog({
       lineNumber: 80,
       columnNumber: 5
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Popper__WEBPACK_IMPORTED_MODULE_3__["default"] // @ts-ignore
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Popper__WEBPACK_IMPORTED_MODULE_3__["default"]
+  // @ts-ignore
   , {
     ref: ref,
     open: open,
@@ -1283,132 +1259,135 @@ function NotificationsDialog({
       lineNumber: 81,
       columnNumber: 7
     }
-  }, ({
-    TransitionProps
-  }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Fade__WEBPACK_IMPORTED_MODULE_5__["default"], Object.assign({}, TransitionProps, {
-    timeout: 350,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 91,
-      columnNumber: 11
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    elevation: 24,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 92,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    className: classes.root,
-    dense: true,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 93,
-      columnNumber: 15
-    }
-  }, notifications.length > 0 && notifications.map(n => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    button: true,
-    alignItems: "flex-start",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 96,
-      columnNumber: 21
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemAvatar__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 97,
-      columnNumber: 23
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    style: {
-      backgroundColor: !n.read ? theme.palette.primary.main : "#bdbdbd"
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 98,
-      columnNumber: 25
-    }
-  }, !n.read && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_MailOutlined__WEBPACK_IMPORTED_MODULE_13___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 105,
-      columnNumber: 40
-    }
-  }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_DraftsOutlined__WEBPACK_IMPORTED_MODULE_14___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 106,
-      columnNumber: 29
-    }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    primary: n.title,
-    secondary: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
-      component: "span",
-      variant: "body2",
-      className: classes.inline,
-      color: "textPrimary",
+  }, _ref2 => {
+    let {
+      TransitionProps
+    } = _ref2;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Fade__WEBPACK_IMPORTED_MODULE_5__["default"], Object.assign({}, TransitionProps, {
+      timeout: 350,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 114,
+        lineNumber: 91,
+        columnNumber: 11
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Card__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      elevation: 24,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 92,
+        columnNumber: 13
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      className: classes.root,
+      dense: true,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 93,
+        columnNumber: 15
+      }
+    }, notifications.length > 0 && notifications.map(n => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      button: true,
+      alignItems: "flex-start",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 96,
+        columnNumber: 21
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemAvatar__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 97,
+        columnNumber: 23
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      style: {
+        backgroundColor: !n.read ? theme.palette.primary.main : "#bdbdbd"
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 98,
+        columnNumber: 25
+      }
+    }, !n.read && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_MailOutlined__WEBPACK_IMPORTED_MODULE_13___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 105,
+        columnNumber: 40
+      }
+    }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_DraftsOutlined__WEBPACK_IMPORTED_MODULE_14___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 106,
         columnNumber: 29
       }
-    }, n.to), n.excerpt),
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 110,
-      columnNumber: 23
-    }
-  }))) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    alignItems: "flex-start",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 128,
-      columnNumber: 19
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemAvatar__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 129,
-      columnNumber: 21
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 130,
-      columnNumber: 23
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_DraftsOutlined__WEBPACK_IMPORTED_MODULE_14___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 131,
-      columnNumber: 25
-    }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_9__["default"], {
-    primary: "No Notifications",
-    secondary: "You currently have no notifications.",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 134,
-      columnNumber: 21
-    }
-  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["IconButton"], {
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      primary: n.title,
+      secondary: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_4__["default"], {
+        component: "span",
+        variant: "body2",
+        className: classes.inline,
+        color: "textPrimary",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 114,
+          columnNumber: 29
+        }
+      }, n.to), n.excerpt),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 110,
+        columnNumber: 23
+      }
+    }))) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      alignItems: "flex-start",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 128,
+        columnNumber: 19
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemAvatar__WEBPACK_IMPORTED_MODULE_10__["default"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 129,
+        columnNumber: 21
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Avatar__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 130,
+        columnNumber: 23
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_DraftsOutlined__WEBPACK_IMPORTED_MODULE_14___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 131,
+        columnNumber: 25
+      }
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      primary: "No Notifications",
+      secondary: "You currently have no notifications.",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 134,
+        columnNumber: 21
+      }
+    })))));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["IconButton"], {
     color: "inherit",
     style: {
       marginRight: 10
@@ -1439,11 +1418,9 @@ function NotificationsDialog({
     }
   }))));
 }
-
 _s(NotificationsDialog, "Vz+Boroc92QkyO64Ocwl833Yh4s=", false, function () {
   return [_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["useTheme"], useStyles];
 });
-
 _c = NotificationsDialog;
 const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["createStyles"])({
   root: {
@@ -1481,9 +1458,7 @@ const defaults = [{
   excerpt: "Congrats! Your audit report has been approved by the committee...",
   read: true
 }];
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "NotificationsDialog");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -1584,11 +1559,12 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-const Page = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(_c = ({
-  children,
-  title = '',
-  ...rest
-}, ref) => {
+const Page = /*#__PURE__*/Object(react__WEBPACK_IMPORTED_MODULE_0__["forwardRef"])(_c = (_ref, ref) => {
+  let {
+    children,
+    title = '',
+    ...rest
+  } = _ref;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", Object.assign({
     ref: ref
   }, rest, {
@@ -1620,9 +1596,7 @@ Page.propTypes = {
   title: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string
 };
 /* harmony default export */ __webpack_exports__["default"] = (Page);
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "Page$forwardRef");
 __webpack_require__.$Refresh$.register(_c2, "Page");
 
@@ -1722,58 +1696,63 @@ const createImage = url => new Promise((resolve, reject) => {
   image.addEventListener('load', () => resolve(image));
   image.addEventListener('error', error => reject(error));
   image.setAttribute('crossOrigin', 'anonymous'); // needed to avoid cross-origin issues on CodeSandbox
-
   image.src = url;
 });
-
 function getRadianAngle(degreeValue) {
   return degreeValue * Math.PI / 180;
 }
+
 /**
  * This function was adapted from the one in the ReadMe of https://github.com/DominicTobias/react-image-crop
  * @param {File} image - Image File url
  * @param {Object} pixelCrop - pixelCrop Object provided by react-easy-crop
  * @param {number} rotation - optional rotation parameter
  */
-
-
-async function getCroppedImg(imageSrc, pixelCrop, rotation = 0) {
+async function getCroppedImg(imageSrc, pixelCrop) {
+  let rotation = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 0;
   const image = await createImage(imageSrc);
   const canvas = document.createElement('canvas');
   const ctx = canvas.getContext('2d');
   const maxSize = Math.max(image.width, image.height);
-  const safeArea = 2 * (maxSize / 2 * Math.sqrt(2)); // set each dimensions to double largest dimension to allow for a safe area for the
+  const safeArea = 2 * (maxSize / 2 * Math.sqrt(2));
+
+  // set each dimensions to double largest dimension to allow for a safe area for the
   // image to rotate in without being clipped by canvas context
-
   canvas.width = safeArea;
-  canvas.height = safeArea; // translate canvas context to a central location on image to allow rotating around the center.
+  canvas.height = safeArea;
 
+  // translate canvas context to a central location on image to allow rotating around the center.
   ctx.translate(safeArea / 2, safeArea / 2);
   ctx.rotate(getRadianAngle(rotation));
-  ctx.translate(-safeArea / 2, -safeArea / 2); // draw rotated image and store data.
+  ctx.translate(-safeArea / 2, -safeArea / 2);
 
+  // draw rotated image and store data.
   ctx.drawImage(image, safeArea / 2 - image.width * 0.5, safeArea / 2 - image.height * 0.5);
-  const data = ctx.getImageData(0, 0, safeArea, safeArea); // set canvas width to final desired crop size - this will clear existing context
+  const data = ctx.getImageData(0, 0, safeArea, safeArea);
 
+  // set canvas width to final desired crop size - this will clear existing context
   canvas.width = pixelCrop.width;
-  canvas.height = pixelCrop.height; // paste generated rotate image with correct offsets for x,y crop values.
+  canvas.height = pixelCrop.height;
 
-  ctx.putImageData(data, Math.round(0 - safeArea / 2 + image.width * 0.5 - pixelCrop.x), Math.round(0 - safeArea / 2 + image.height * 0.5 - pixelCrop.y)); // As Base64 string
+  // paste generated rotate image with correct offsets for x,y crop values.
+  ctx.putImageData(data, Math.round(0 - safeArea / 2 + image.width * 0.5 - pixelCrop.x), Math.round(0 - safeArea / 2 + image.height * 0.5 - pixelCrop.y));
+
+  // As Base64 string
   // return canvas.toDataURL('image/jpeg');
-  // As a blob
 
+  // As a blob
   return new Promise(resolve => {
     canvas.toBlob(file => {
       resolve(URL.createObjectURL(file));
     }, 'image/png');
   });
 }
-async function getRotatedImage(imageSrc, rotation = 0) {
+async function getRotatedImage(imageSrc) {
+  let rotation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 0;
   const image = await createImage(imageSrc);
   const canvas = document.createElement('canvas');
   const ctx = canvas.getContext('2d');
   const orientationChanged = rotation === 90 || rotation === -90 || rotation === 270 || rotation === -270;
-
   if (orientationChanged) {
     canvas.width = image.height;
     canvas.height = image.width;
@@ -1781,7 +1760,6 @@ async function getRotatedImage(imageSrc, rotation = 0) {
     canvas.width = image.width;
     canvas.height = image.height;
   }
-
   ctx.translate(canvas.width / 2, canvas.height / 2);
   ctx.rotate(rotation * Math.PI / 180);
   ctx.drawImage(image, -image.width / 2, -image.height / 2);
@@ -1890,8 +1868,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\components\\PicSelector\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 // @ts-nocheck
 
 
@@ -1903,12 +1880,12 @@ const ORIENTATION_TO_ANGLE = {
   "6": 90,
   "8": -90
 };
-function PicSelector({
-  onSelect,
-  cropOptions
-}) {
+function PicSelector(_ref) {
   _s();
-
+  let {
+    onSelect,
+    cropOptions
+  } = _ref;
   const classes = useStyles();
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const [imageSrc, setImageSrc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
@@ -1925,28 +1902,24 @@ function PicSelector({
     setCroppedImage(null);
     setOpen(false);
   }, []);
-
   const handleImageUploadButton = () => {
     if (inputRef) inputRef.current.click();
   };
-
   const onFileChange = async e => {
     if (e.target.files && e.target.files.length > 0) {
       const file = e.target.files[0];
-      let imageDataUrl = await readFile(file); // apply rotation if needed
+      let imageDataUrl = await readFile(file);
 
+      // apply rotation if needed
       const orientation = await Object(get_orientation_browser__WEBPACK_IMPORTED_MODULE_2__["getOrientation"])(file);
       const rotation = ORIENTATION_TO_ANGLE[orientation];
-
       if (rotation) {
         imageDataUrl = await Object(_canvasUtils__WEBPACK_IMPORTED_MODULE_3__["getRotatedImage"])(imageDataUrl, rotation);
       }
-
       setImageSrc(imageDataUrl);
       setOpen(true);
     }
   };
-
   const onCropComplete = Object(react__WEBPACK_IMPORTED_MODULE_0__["useCallback"])((croppedArea, croppedAreaPixels) => {
     setCroppedAreaPixels(croppedAreaPixels);
   }, []);
@@ -1958,7 +1931,6 @@ function PicSelector({
     } catch (e) {
       console.error(e);
     }
-
     setOpen(false);
   }, [imageSrc, croppedAreaPixels, rotation]);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Dialog"], {
@@ -2004,7 +1976,8 @@ function PicSelector({
     image: imageSrc,
     crop: crop,
     rotation: rotation,
-    zoom: zoom // aspect={4 / 3}
+    zoom: zoom
+    // aspect={4 / 3}
     // showGrid={false}
     // cropShape="round"
     ,
@@ -2159,13 +2132,10 @@ function PicSelector({
     }
   }, "Upload picture"));
 }
-
 _s(PicSelector, "CdAxVhEbbTdeaAwRU/8YSYPyWcc=", false, function () {
   return [useStyles];
 });
-
 _c = PicSelector;
-
 function readFile(file) {
   return new Promise(resolve => {
     const reader = new FileReader();
@@ -2173,7 +2143,6 @@ function readFile(file) {
     reader.readAsDataURL(file);
   });
 }
-
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["makeStyles"])(theme => ({
   cropContainer: {
     position: "relative",
@@ -2218,9 +2187,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["makeSty
     }
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "PicSelector");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -2323,7 +2290,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\components\\TagsInput.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -2331,20 +2298,18 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function TagsInput({
-  putUrl,
-  tags: _tags,
-  setLoading
-}) {
+function TagsInput(_ref) {
   _s();
-
+  let {
+    putUrl,
+    tags: _tags,
+    setLoading
+  } = _ref;
   const classes = useStyles();
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_6__["useSnackbar"])();
   const [tags, setTags] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_tags && JSON.parse(_tags) || []);
-
   const handleTagsChange = (event, value) => {
     // setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(putUrl, {
@@ -2363,14 +2328,13 @@ function TagsInput({
         });
       }
     }).catch(e => {
-      console.error(e); // setLoading(false);
-
+      console.error(e);
+      // setLoading(false);
       enqueueSnackbar("Failed to update tags.", {
         variant: "error"
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.root,
     __self: this,
@@ -2386,7 +2350,8 @@ function TagsInput({
     defaultValue: tags,
     freeSolo: true,
     onChange: handleTagsChange,
-    renderTags: (value, getTagProps) => value.map((option, index) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Chip"] // variant="outlined"
+    renderTags: (value, getTagProps) => value.map((option, index) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Chip"]
+    // variant="outlined"
     , Object.assign({
       label: option,
       size: "small",
@@ -2403,7 +2368,8 @@ function TagsInput({
     }))),
     renderInput: params => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_5__["default"], Object.assign({}, params, {
       variant: "standard",
-      placeholder: "Add Tags..." // InputProps={{ disableUnderline: true }}
+      placeholder: "Add Tags..."
+      // InputProps={{ disableUnderline: true }}
       // onBlur={(e) => {
       //   console.log(e.target);
       //   console.log(params);
@@ -2424,11 +2390,9 @@ function TagsInput({
     }
   }));
 }
-
 _s(TagsInput, "OK4dWo75cEfuRGclZ+ajw+ELfVI=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_6__["useSnackbar"]];
 });
-
 _c = TagsInput;
 const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__["makeStyles"])(theme => Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__["createStyles"])({
   root: {
@@ -2438,9 +2402,7 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_4__["
     }
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "TagsInput");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -2539,9 +2501,10 @@ __webpack_require__.$Refresh$.setup(module.i);
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\components\\TagsView.tsx";
 
 
-function TagsView({
-  tags
-}) {
+function TagsView(_ref) {
+  let {
+    tags
+  } = _ref;
   return JSON.parse(tags).map(tag => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Chip"], {
     label: tag,
     size: "small",
@@ -2558,9 +2521,7 @@ function TagsView({
   }));
 }
 _c = TagsView;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "TagsView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -2657,7 +2618,9 @@ __webpack_require__.$Refresh$.setup(module.i);
  * Maximum allowed size in bytes
  * Change first operand(multiplier) for your needs
  */
-const MAX_ALLOWED_SIZE = 10 * 1024 * 1024; // @TODO, 1 year minus 45 days
+const MAX_ALLOWED_SIZE = 10 * 1024 * 1024;
+
+// @TODO, 1 year minus 45 days
 // export const DEFAULT_EXPIRE_DATE =
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -2842,7 +2805,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-dom */ "./node_modules/react-dom/index.js");
 /* harmony import */ var react_dom__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react_dom__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./index.css */ "./src/index.css");
 /* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_index_css__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var _App__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./App */ "./src/App.tsx");
@@ -2878,10 +2841,11 @@ react_dom__WEBPACK_IMPORTED_MODULE_1___default.a.render( /*#__PURE__*/react__WEB
     lineNumber: 11,
     columnNumber: 7
   }
-}))), document.getElementById("root")); // If you want to start measuring performance in your app, pass a function
+}))), document.getElementById("root"));
+
+// If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-
 Object(_reportWebVitals__WEBPACK_IMPORTED_MODULE_5__["default"])();
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -2972,7 +2936,7 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
 /* harmony import */ var _api_Auth__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../api/Auth */ "./src/api/Auth.ts");
@@ -2982,7 +2946,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\AdminDashboardLayout\\NavBar\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -2990,24 +2954,21 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-
-const NavBar = ({
-  onMobileClose,
-  openMobile
-}) => {
+const NavBar = _ref => {
   _s();
-
   var _user$profile, _user$profile2;
-
+  let {
+    onMobileClose,
+    openMobile
+  } = _ref;
   const classes = useStyles();
   const location = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"])();
   const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_4__["default"]().user;
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     if (openMobile && onMobileClose) {
       onMobileClose();
-    } // eslint-disable-next-line react-hooks/exhaustive-deps
-
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname]);
   const content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
     height: "100%",
@@ -3032,7 +2993,8 @@ const NavBar = ({
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Avatar"], {
     className: classes.avatar,
-    component: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"] // src={user.avatar}
+    component: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"]
+    // src={user.avatar}
     ,
     to: "/admin/account",
     __self: undefined,
@@ -3199,14 +3161,13 @@ const NavBar = ({
     }
   }, content)));
 };
-
 _s(NavBar, "2lzOY2yYzx3UvbUChEh2Zqtbnl0=", false, function () {
   return [useStyles, react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"]];
 });
-
 _c = NavBar;
 /* harmony default export */ __webpack_exports__["default"] = (NavBar);
-const items = [// {
+const items = [
+// {
 //   // @TODO add screen, remove from dummy route
 //   href: "/admin/dashboard",
 //   icon: BarChartIcon,
@@ -3220,7 +3181,8 @@ const items = [// {
   href: "/admin/clients",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["Users"],
   title: "Clients"
-}, // {
+},
+// {
 //   href: "/admin/reviews",
 //   icon: PhoneIncomingIcon,
 //   title: "Reviews",
@@ -3251,7 +3213,8 @@ const items = [// {
   href: "/admin/account",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["User"],
   title: "Account"
-} // {
+}
+// {
 //   href: "/admin/settings",
 //   icon: SettingsIcon,
 //   title: "Settings",
@@ -3267,6 +3230,7 @@ const items = [// {
 //   title: "Error",
 // },
 ];
+
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(() => ({
   mobileDrawer: {
     width: 256
@@ -3285,9 +3249,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     textTransform: "uppercase"
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "NavBar");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -3378,7 +3340,7 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
@@ -3395,8 +3357,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\AdminDashboardLayout\\TopBar.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -3414,24 +3375,21 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["makeSty
     height: 60
   }
 }));
-
-const TopBar = ({
-  className,
-  onMobileNavOpen,
-  ...rest
-}) => {
+const TopBar = _ref => {
   _s();
-
+  let {
+    className,
+    onMobileNavOpen,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   const [notifications] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const auth = new _api_Auth__WEBPACK_IMPORTED_MODULE_8__["default"]();
-
   const onLogoutHandler = () => {
     auth.logout().then(async () => {
       window.location.href = "/";
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["AppBar"], Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(classes.root, className),
     elevation: 0
@@ -3472,8 +3430,8 @@ const TopBar = ({
     style: {
       color: "#fff",
       fontSize: 24,
-      marginLeft: 15 // fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-
+      marginLeft: 15
+      // fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
     },
     __self: undefined,
     __source: {
@@ -3566,20 +3524,16 @@ const TopBar = ({
     }
   })))));
 };
-
 _s(TopBar, "ZNwIArZujB/he3ZUSwbupm0gQF4=", false, function () {
   return [useStyles];
 });
-
 _c = TopBar;
 TopBar.propTypes = {
   className: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string,
   onMobileNavOpen: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.func
 };
 /* harmony default export */ __webpack_exports__["default"] = (TopBar);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "TopBar");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -3670,7 +3624,7 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NavBar */ "./src/layouts/AdminDashboardLayout/NavBar/index.tsx");
 /* harmony import */ var _TopBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./TopBar */ "./src/layouts/AdminDashboardLayout/TopBar.js");
@@ -3678,8 +3632,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\AdminDashboardLayout\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -3713,10 +3666,8 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     overflow: 'auto'
   }
 }));
-
 const DashboardLayout = () => {
   _s();
-
   const classes = useStyles();
   const [isMobileNavOpen, setMobileNavOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -3777,16 +3728,12 @@ const DashboardLayout = () => {
     }
   })))));
 };
-
 _s(DashboardLayout, "eSTS7Dh3ZCF34evXX4JUHtEKbiA=", false, function () {
   return [useStyles];
 });
-
 _c = DashboardLayout;
 /* harmony default export */ __webpack_exports__["default"] = (DashboardLayout);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "DashboardLayout");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -3877,7 +3824,7 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _material_ui_icons_Assessment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Assessment */ "./node_modules/@material-ui/icons/Assessment.js");
 /* harmony import */ var _material_ui_icons_Assessment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Assessment__WEBPACK_IMPORTED_MODULE_3__);
@@ -3892,8 +3839,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\ClientDashboardLayout\\NavBar\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -3904,15 +3850,13 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_7__["default"]().user;
-
-const NavBar = ({
-  onMobileClose,
-  openMobile
-}) => {
+const NavBar = _ref => {
   _s();
-
   var _user$profile, _user$profile2, _user$profile3;
-
+  let {
+    onMobileClose,
+    openMobile
+  } = _ref;
   const classes = useStyles();
   const location = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"])();
   const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_7__["default"]().user;
@@ -3920,12 +3864,11 @@ const NavBar = ({
     if (openMobile && onMobileClose) {
       onMobileClose();
     }
-
     setTimeout(function () {
       var _document$querySelect;
-
       if ((user === null || user === void 0 ? void 0 : user.role) !== "CLIENT") (_document$querySelect = document.querySelector('a[href$="/client/heds"]')) === null || _document$querySelect === void 0 ? void 0 : _document$querySelect.remove();
-    }, 1000); // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, 1000);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname]);
   const content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
     height: "100%",
@@ -4049,11 +3992,9 @@ const NavBar = ({
     }
   }, content)));
 };
-
 _s(NavBar, "2lzOY2yYzx3UvbUChEh2Zqtbnl0=", false, function () {
   return [useStyles, react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"]];
 });
-
 _c = NavBar;
 /* harmony default export */ __webpack_exports__["default"] = (NavBar);
 let items = [{
@@ -4093,9 +4034,10 @@ let items = [{
     icon: react_feather__WEBPACK_IMPORTED_MODULE_5__["FileText"],
     title: "Audit Reports"
   }]
-}]; // HEDs shouldn't be here
-// if (user?.role === "CLIENT")
+}];
 
+// HEDs shouldn't be here
+// if (user?.role === "CLIENT")
 items.push({
   href: "/client/heds",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_5__["Users"],
@@ -4137,9 +4079,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     textTransform: "uppercase"
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "NavBar");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -4233,7 +4173,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/Menu */ "./node_modules/@material-ui/icons/Menu.js");
 /* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_4__);
@@ -4251,8 +4191,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\ClientDashboardLayout\\TopBar.js",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -4265,23 +4205,20 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function TopBar({
-  onMobileNavOpen
-}) {
+function TopBar(_ref) {
   _s();
-
+  let {
+    onMobileNavOpen
+  } = _ref;
   const auth = new _api_Auth__WEBPACK_IMPORTED_MODULE_8__["default"]();
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useNavigate"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [promptOpen, setPromptOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [currentSubmissionId, setCurrentSubmissionId] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
-
   const handleNewSubmission = () => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/last-draft-submission`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         if (response.data.id) {
           setCurrentSubmissionId(response.data.id);
@@ -4295,23 +4232,19 @@ function TopBar({
       console.error(e);
     });
   };
-
   const onPromptOk = () => {
     setPromptOpen(false);
     navigate(`/client/request/${currentSubmissionId}`);
   };
-
   const onPromptCancel = () => {
     setPromptOpen(false);
     navigate("/client/new-request");
   };
-
   const onLogoutHandler = () => {
     auth.logout().then(async () => {
       window.location.href = "/";
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["AppBar"], {
     elevation: 0,
     __self: this,
@@ -4372,8 +4305,8 @@ function TopBar({
     style: {
       color: "#fff",
       fontSize: 24,
-      marginLeft: 15 // fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-
+      marginLeft: 15
+      // fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
     },
     __self: this,
     __source: {
@@ -4479,37 +4412,28 @@ function TopBar({
     }
   })))));
 }
-
 _s(TopBar, "9XuQ1+uhIq6jMR3r3QzPxzmM5rE=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useNavigate"]];
 });
-
 _c = TopBar;
-
 function AddNewButton() {
   _s2();
-
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useNavigate"])();
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleClose = () => {
     setAnchorEl(null);
   };
-
   const handleNewReview = () => {
     navigate("/new-review");
     handleClose();
   };
-
   const handleNewBusiness = () => {
     navigate("/new-business");
     handleClose();
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
     color: "inherit",
     "aria-controls": "create-new-menu",
@@ -4567,15 +4491,11 @@ function AddNewButton() {
     }
   }, "New Business")));
 }
-
 _s2(AddNewButton, "pYXoAqUaju4H0wrmywGcseSEGlw=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useNavigate"]];
 });
-
 _c2 = AddNewButton;
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "TopBar");
 __webpack_require__.$Refresh$.register(_c2, "AddNewButton");
 
@@ -4667,7 +4587,7 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NavBar */ "./src/layouts/ClientDashboardLayout/NavBar/index.tsx");
 /* harmony import */ var _TopBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./TopBar */ "./src/layouts/ClientDashboardLayout/TopBar.js");
@@ -4675,8 +4595,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\ClientDashboardLayout\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -4710,10 +4629,8 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     overflow: 'auto'
   }
 }));
-
 const DashboardLayout = () => {
   _s();
-
   const classes = useStyles();
   const [isMobileNavOpen, setMobileNavOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -4774,16 +4691,12 @@ const DashboardLayout = () => {
     }
   })))));
 };
-
 _s(DashboardLayout, "eSTS7Dh3ZCF34evXX4JUHtEKbiA=", false, function () {
   return [useStyles];
 });
-
 _c = DashboardLayout;
 /* harmony default export */ __webpack_exports__["default"] = (DashboardLayout);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "DashboardLayout");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -4874,7 +4787,7 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
@@ -4884,8 +4797,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\MainLayout\\TopBar.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -4898,13 +4810,12 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["makeSty
     height: 64
   }
 });
-
-const TopBar = ({
-  className,
-  ...rest
-}) => {
+const TopBar = _ref => {
   _s();
-
+  let {
+    className,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["AppBar"], Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(classes.root, className),
@@ -4941,19 +4852,15 @@ const TopBar = ({
     }
   }))));
 };
-
 _s(TopBar, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = TopBar;
 TopBar.propTypes = {
   className: prop_types__WEBPACK_IMPORTED_MODULE_3___default.a.string
 };
 /* harmony default export */ __webpack_exports__["default"] = (TopBar);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "TopBar");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -5044,23 +4951,20 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _TopBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./TopBar */ "./src/layouts/MainLayout/TopBar.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\MainLayout\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 const MainLayout = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.root,
@@ -5110,11 +5014,9 @@ const MainLayout = () => {
     }
   })))));
 };
-
 _s(MainLayout, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = MainLayout;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
   root: {
@@ -5142,9 +5044,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
   }
 }));
 /* harmony default export */ __webpack_exports__["default"] = (MainLayout);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "MainLayout");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -5235,7 +5135,7 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
 /* harmony import */ var _api_Auth__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../api/Auth */ "./src/api/Auth.ts");
@@ -5245,7 +5145,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\ReviewerDashboardLayout\\NavBar\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -5253,24 +5153,21 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-
-const NavBar = ({
-  onMobileClose,
-  openMobile
-}) => {
+const NavBar = _ref => {
   _s();
-
   var _user$profile, _user$profile2, _user$profile3, _user$profile4, _user$profile5;
-
+  let {
+    onMobileClose,
+    openMobile
+  } = _ref;
   const classes = useStyles();
   const location = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"])();
   const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_4__["default"]().user;
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     if (openMobile && onMobileClose) {
       onMobileClose();
-    } // eslint-disable-next-line react-hooks/exhaustive-deps
-
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location.pathname]);
   const content = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
     height: "100%",
@@ -5464,18 +5361,17 @@ const NavBar = ({
     }
   }, content)));
 };
-
 _s(NavBar, "2lzOY2yYzx3UvbUChEh2Zqtbnl0=", false, function () {
   return [useStyles, react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useLocation"]];
 });
-
 _c = NavBar;
 /* harmony default export */ __webpack_exports__["default"] = (NavBar);
 const items = [{
   href: "/reviewer/clients/requests",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["FileText"],
   title: "Registrations",
-  subnav: [// {
+  subnav: [
+    // {
     //   href: "/reviewer/clients/reports",
     //   icon: BarChart2Icon,
     //   title: "Reports",
@@ -5490,7 +5386,8 @@ const items = [{
   href: "/reviewer/clients",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["Users"],
   title: "Clients",
-  subnav: [// {
+  subnav: [
+  // {
   //   href: "/reviewer/new-review",
   //   icon: PlusIcon,
   //   title: "New",
@@ -5503,7 +5400,8 @@ const items = [{
     href: "/reviewer/register-client",
     icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["UserPlus"],
     title: "New Profile"
-  } // {
+  }
+  // {
   //   href: "/reviewer/reviews-queue",
   //   icon: HashIcon,
   //   title: "Queue",
@@ -5559,9 +5457,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     textTransform: "uppercase"
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "NavBar");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -5653,7 +5549,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return TopBar; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/Menu */ "./node_modules/@material-ui/icons/Menu.js");
 /* harmony import */ var _material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Menu__WEBPACK_IMPORTED_MODULE_3__);
@@ -5669,8 +5565,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\ReviewerDashboardLayout\\TopBar.js",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -5680,21 +5576,18 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function TopBar({
-  onMobileNavOpen
-}) {
+function TopBar(_ref) {
   _s();
-
+  let {
+    onMobileNavOpen
+  } = _ref;
   const [notifications] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const auth = new _api_Auth__WEBPACK_IMPORTED_MODULE_7__["default"]();
-
   const onLogoutHandler = () => {
     auth.logout().then(async () => {
       window.location.href = "/";
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["AppBar"], {
     elevation: 0,
     __self: this,
@@ -5733,8 +5626,8 @@ function TopBar({
     style: {
       color: "#fff",
       fontSize: 24,
-      marginLeft: 15 // fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
-
+      marginLeft: 15
+      // fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
     },
     __self: this,
     __source: {
@@ -5827,35 +5720,26 @@ function TopBar({
     }
   })))));
 }
-
 _s(TopBar, "EoCfkFOjy/kCkbe+8JBSrfS5A2w=");
-
 _c = TopBar;
-
 function AddNewButton() {
   _s2();
-
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleClose = () => {
     setAnchorEl(null);
   };
-
   const handleNewReview = () => {
     navigate("/new-review");
     handleClose();
   };
-
   const handleNewBusiness = () => {
     navigate("/new-business");
     handleClose();
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
     color: "inherit",
     "aria-controls": "create-new-menu",
@@ -5913,15 +5797,11 @@ function AddNewButton() {
     }
   }, "New Business")));
 }
-
 _s2(AddNewButton, "pYXoAqUaju4H0wrmywGcseSEGlw=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
 });
-
 _c2 = AddNewButton;
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "TopBar");
 __webpack_require__.$Refresh$.register(_c2, "AddNewButton");
 
@@ -6013,7 +5893,7 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _NavBar__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./NavBar */ "./src/layouts/ReviewerDashboardLayout/NavBar/index.tsx");
 /* harmony import */ var _TopBar__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./TopBar */ "./src/layouts/ReviewerDashboardLayout/TopBar.js");
@@ -6021,8 +5901,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\ReviewerDashboardLayout\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -6056,10 +5935,8 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     overflow: 'auto'
   }
 }));
-
 const DashboardLayout = () => {
   _s();
-
   const classes = useStyles();
   const [isMobileNavOpen, setMobileNavOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -6120,16 +5997,12 @@ const DashboardLayout = () => {
     }
   })))));
 };
-
 _s(DashboardLayout, "eSTS7Dh3ZCF34evXX4JUHtEKbiA=", false, function () {
   return [useStyles];
 });
-
 _c = DashboardLayout;
 /* harmony default export */ __webpack_exports__["default"] = (DashboardLayout);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "DashboardLayout");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -6223,9 +6096,10 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
- // ChartJS extension rounded bar chart
-// https://codepen.io/jedtrow/full/ygRYgo
 
+
+// ChartJS extension rounded bar chart
+// https://codepen.io/jedtrow/full/ygRYgo
 function draw() {
   const {
     ctx
@@ -6241,21 +6115,19 @@ function draw() {
   let signX;
   let signY;
   let borderSkipped;
-  let radius; // If radius is less than 0 or is large enough to cause drawing errors a max
-  //      radius is imposed. If cornerRadius is not defined set it to 0.
+  let radius;
 
+  // If radius is less than 0 or is large enough to cause drawing errors a max
+  //      radius is imposed. If cornerRadius is not defined set it to 0.
   let {
     cornerRadius
   } = this._chart.config.options;
-
   if (cornerRadius < 0) {
     cornerRadius = 0;
   }
-
   if (typeof cornerRadius === 'undefined') {
     cornerRadius = 0;
   }
-
   if (!vm.horizontal) {
     // bar
     left = vm.x - vm.width / 2;
@@ -6274,79 +6146,72 @@ function draw() {
     signX = right > left ? 1 : -1;
     signY = 1;
     borderSkipped = vm.borderSkipped || 'left';
-  } // Canvas doesn't allow us to stroke inside the width so we can
+  }
+
+  // Canvas doesn't allow us to stroke inside the width so we can
   // adjust the sizes to fit if we're setting a stroke on the line
-
-
   if (borderWidth) {
     // borderWidth shold be less than bar width and bar height.
     const barSize = Math.min(Math.abs(left - right), Math.abs(top - bottom));
     borderWidth = borderWidth > barSize ? barSize : borderWidth;
-    const halfStroke = borderWidth / 2; // Adjust borderWidth when bar top position is near vm.base(zero).
-
+    const halfStroke = borderWidth / 2;
+    // Adjust borderWidth when bar top position is near vm.base(zero).
     const borderLeft = left + (borderSkipped !== 'left' ? halfStroke * signX : 0);
     const borderRight = right + (borderSkipped !== 'right' ? -halfStroke * signX : 0);
     const borderTop = top + (borderSkipped !== 'top' ? halfStroke * signY : 0);
-    const borderBottom = bottom + (borderSkipped !== 'bottom' ? -halfStroke * signY : 0); // not become a vertical line?
-
+    const borderBottom = bottom + (borderSkipped !== 'bottom' ? -halfStroke * signY : 0);
+    // not become a vertical line?
     if (borderLeft !== borderRight) {
       top = borderTop;
       bottom = borderBottom;
-    } // not become a horizontal line?
-
-
+    }
+    // not become a horizontal line?
     if (borderTop !== borderBottom) {
       left = borderLeft;
       right = borderRight;
     }
   }
-
   ctx.beginPath();
   ctx.fillStyle = vm.backgroundColor;
   ctx.strokeStyle = vm.borderColor;
-  ctx.lineWidth = borderWidth; // Corner points, from bottom-left to bottom-right clockwise
+  ctx.lineWidth = borderWidth;
+
+  // Corner points, from bottom-left to bottom-right clockwise
   // | 1 2 |
   // | 0 3 |
+  const corners = [[left, bottom], [left, top], [right, top], [right, bottom]];
 
-  const corners = [[left, bottom], [left, top], [right, top], [right, bottom]]; // Find first (starting) corner with fallback to 'bottom'
-
+  // Find first (starting) corner with fallback to 'bottom'
   const borders = ['bottom', 'left', 'top', 'right'];
   let startCorner = borders.indexOf(borderSkipped, 0);
-
   if (startCorner === -1) {
     startCorner = 0;
   }
-
   function cornerAt(index) {
     return corners[(startCorner + index) % 4];
-  } // Draw rectangle from 'startCorner'
+  }
 
-
+  // Draw rectangle from 'startCorner'
   let corner = cornerAt(0);
   ctx.moveTo(corner[0], corner[1]);
-
   for (let i = 1; i < 4; i += 1) {
     corner = cornerAt(i);
     let nextCornerId = i + 1;
-
     if (nextCornerId === 4) {
       nextCornerId = 0;
     }
-
     const width = corners[2][0] - corners[1][0];
     const height = corners[0][1] - corners[1][1];
     const x = corners[1][0];
     const y = corners[1][1];
-    radius = cornerRadius; // Fix radius being too large
-
+    radius = cornerRadius;
+    // Fix radius being too large
     if (radius > Math.abs(height) / 2) {
       radius = Math.floor(Math.abs(height) / 2);
     }
-
     if (radius > Math.abs(width) / 2) {
       radius = Math.floor(Math.abs(width) / 2);
     }
-
     if (height < 0) {
       // Negative values in a standard bar chart
       const xTl = x;
@@ -6356,8 +6221,9 @@ function draw() {
       const xBl = x;
       const xBr = x + width;
       const yBl = y;
-      const yBr = y; // Draw
+      const yBr = y;
 
+      // Draw
       ctx.moveTo(xBl + radius, yBl);
       ctx.lineTo(xBr - radius, yBr);
       ctx.quadraticCurveTo(xBr, yBr, xBr, yBr - radius);
@@ -6376,8 +6242,9 @@ function draw() {
       const xBl = x + width;
       const xBr = x;
       const yBl = y + height;
-      const yBr = y + height; // Draw
+      const yBr = y + height;
 
+      // Draw
       ctx.moveTo(xBl + radius, yBl);
       ctx.lineTo(xBr - radius, yBr);
       ctx.quadraticCurveTo(xBr, yBr, xBr, yBr - radius);
@@ -6400,14 +6267,11 @@ function draw() {
       ctx.quadraticCurveTo(x, y, x + radius, y);
     }
   }
-
   ctx.fill();
-
   if (borderWidth) {
     ctx.stroke();
   }
 }
-
 react_chartjs_2__WEBPACK_IMPORTED_MODULE_0__["Chart"].helpers.extend(react_chartjs_2__WEBPACK_IMPORTED_MODULE_0__["Chart"].elements.Rectangle.prototype, {
   draw
 });
@@ -6503,13 +6367,14 @@ __webpack_require__.$Refresh$.setup(module.i);
 
 const reportWebVitals = onPerfEntry => {
   if (onPerfEntry && onPerfEntry instanceof Function) {
-    __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! web-vitals */ "./node_modules/web-vitals/dist/web-vitals.es5.min.js")).then(({
-      getCLS,
-      getFID,
-      getFCP,
-      getLCP,
-      getTTFB
-    }) => {
+    __webpack_require__.e(/*! import() */ 1).then(__webpack_require__.bind(null, /*! web-vitals */ "./node_modules/web-vitals/dist/web-vitals.es5.min.js")).then(_ref => {
+      let {
+        getCLS,
+        getFID,
+        getFCP,
+        getLCP,
+        getTTFB
+      } = _ref;
       getCLS(onPerfEntry);
       getFID(onPerfEntry);
       getFCP(onPerfEntry);
@@ -6518,7 +6383,6 @@ const reportWebVitals = onPerfEntry => {
     });
   }
 };
-
 /* harmony default export */ __webpack_exports__["default"] = (reportWebVitals);
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -6609,7 +6473,7 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _api_Auth__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./api/Auth */ "./src/api/Auth.ts");
 /* harmony import */ var _layouts_MainLayout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./layouts/MainLayout */ "./src/layouts/MainLayout/index.js");
 /* harmony import */ var _layouts_AdminDashboardLayout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./layouts/AdminDashboardLayout */ "./src/layouts/AdminDashboardLayout/index.js");
@@ -6666,20 +6530,15 @@ __webpack_require__.$Refresh$.setup(module.i);
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\routes.tsx";
 
 
- // Layouts
 
 
-
-
- // Universal screens
+// Layouts
 
 
 
 
 
-
- // Admin screens
-
+// Universal screens
 
 
 
@@ -6687,8 +6546,18 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
+// Admin screens
 
- // import AdminDashboardView from "./views/admin/reports/DashboardView";
+
+
+
+
+
+
+
+
+// import AdminDashboardView from "./views/admin/reports/DashboardView";
+
 // Reviewer screens
 
 
@@ -6704,7 +6573,8 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // Client screens
+
+// Client screens
 
 
 
@@ -6721,14 +6591,17 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // Misc
+
+// Misc
 
 // import SettingsView from "./views/misc/settings/SettingsView";
+
 // const auth = new Auth();
 // const user = getDummyUserAuthContext(UserRole.REVIEWER);
-const REFERRER = document.location; // COMMON/PUBLIC routes
-// PartialRouteObject
+const REFERRER = document.location;
 
+// COMMON/PUBLIC routes
+// PartialRouteObject
 const routes = [{
   path: "/",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_layouts_MainLayout__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -6799,7 +6672,8 @@ const routes = [{
         columnNumber: 29
       }
     })
-  }, // <Navigate to="/login" />
+  },
+  // <Navigate to="/login" />
   {
     path: "*",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Navigate"], {
@@ -6812,7 +6686,8 @@ const routes = [{
       }
     })
   }]
-}, // ADMIN routes
+},
+// ADMIN routes
 {
   path: "/admin",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PrivateRoute, {
@@ -6914,7 +6789,8 @@ const routes = [{
         columnNumber: 46
       }
     })
-  }, // { path: "dashboard", element: <AdminDashboardView /> },
+  },
+  // { path: "dashboard", element: <AdminDashboardView /> },
   // { path: "products", element: <ProductListView /> },
   // { path: "settings", element: <SettingsView /> },
   {
@@ -6929,7 +6805,8 @@ const routes = [{
       }
     })
   }]
-}, // REVIEWER routes
+},
+// REVIEWER routes
 {
   path: "/reviewer",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PrivateRoute, {
@@ -7093,7 +6970,8 @@ const routes = [{
       }
     })
   }]
-}, // CLIENT routes
+},
+// CLIENT routes
 {
   path: "/client",
   element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(PrivateRoute, {
@@ -7224,8 +7102,8 @@ const routes = [{
         lineNumber: 168,
         columnNumber: 18
       }
-    }) // children: [],
-
+    })
+    // children: [],
   }, {
     path: "reports/document",
     element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_review__WEBPACK_IMPORTED_MODULE_48__["default"], {
@@ -7298,9 +7176,10 @@ const routes = [{
       }
     })
   }]
-}]; // necessary to wrap, to prevent link cache from same comp
-// eg: loading this from /client/request/:id
+}];
 
+// necessary to wrap, to prevent link cache from same comp
+// eg: loading this from /client/request/:id
 function ClientRequestViewNew() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request__WEBPACK_IMPORTED_MODULE_43__["default"], {
     __self: this,
@@ -7310,15 +7189,15 @@ function ClientRequestViewNew() {
       columnNumber: 10
     }
   });
-} // @TODO type
+}
 
-
+// @TODO type
 _c = ClientRequestViewNew;
-
-function PrivateRoute({
-  component,
-  ...rest
-}) {
+function PrivateRoute(_ref) {
+  let {
+    component,
+    ...rest
+  } = _ref;
   const Component = component;
   const auth = new _api_Auth__WEBPACK_IMPORTED_MODULE_2__["default"]();
   return auth.isAuthenticated() ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, Object.assign({}, rest, {
@@ -7341,12 +7220,9 @@ function PrivateRoute({
     }
   });
 }
-
 _c2 = PrivateRoute;
 /* harmony default export */ __webpack_exports__["default"] = (routes);
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "ClientRequestViewNew");
 __webpack_require__.$Refresh$.register(_c2, "PrivateRoute");
 
@@ -7773,7 +7649,10 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-/* harmony default export */ __webpack_exports__["default"] = ((name = '') => name.replace(/\s+/, ' ').split(' ').slice(0, 2).map(v => v && v[0].toUpperCase()).join(''));
+/* harmony default export */ __webpack_exports__["default"] = (function () {
+  let name = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  return name.replace(/\s+/, ' ').split(' ').slice(0, 2).map(v => v && v[0].toUpperCase()).join('');
+});
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -7873,8 +7752,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\account\\AccountView\\Profile.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -7895,33 +7773,28 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["makeSty
     width: 100
   }
 }));
-
-const Profile = ({
-  className,
-  ...rest
-}) => {
+const Profile = _ref => {
   _s();
-
+  let {
+    className,
+    ...rest
+  } = _ref;
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const classes = useStyles();
   const [file, setFile] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
-
   const handleImageUpload = e => {
     return; // @TODO fix
 
     var file = e.target.files[0];
     const reader = new FileReader();
     var url = reader.readAsDataURL(file);
-
     reader.onloadend = () => setFile(reader.result);
-
     console.log(url); // Would see a path?
   };
 
   const handleImageUploadButton = () => {
     if (inputRef) inputRef.current.click();
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Card"], Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(classes.root, className)
   }, rest, {
@@ -8028,19 +7901,15 @@ const Profile = ({
     }
   }, "Upload picture")));
 };
-
 _s(Profile, "Zdxiw2KDZkJSZ1EPZfXYmSWDajQ=", false, function () {
   return [useStyles];
 });
-
 _c = Profile;
 Profile.propTypes = {
   className: prop_types__WEBPACK_IMPORTED_MODULE_1___default.a.string
 };
 /* harmony default export */ __webpack_exports__["default"] = (Profile);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Profile");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -8140,8 +8009,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\account\\AccountView\\ProfileDetails.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -8177,22 +8045,20 @@ const user = {
   password: "12345678",
   confirmPassword: "12345678"
 };
-
-const ProfileDetails = ({
-  className,
-  ...rest
-}) => {
+const ProfileDetails = _ref => {
   _s();
-
+  let {
+    className,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(user);
-
   const handleChange = event => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [event.target.name]: event.target.value
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", Object.assign({
     autoComplete: "off",
     noValidate: true,
@@ -8564,19 +8430,15 @@ const ProfileDetails = ({
     }
   }, "Update"))));
 };
-
 _s(ProfileDetails, "cQGFnBFRltmAwpyDQwe9w1MbMbQ=", false, function () {
   return [useStyles];
 });
-
 _c = ProfileDetails;
 ProfileDetails.propTypes = {
   className: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string
 };
 /* harmony default export */ __webpack_exports__["default"] = (ProfileDetails);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProfileDetails");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -8675,8 +8537,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\account\\AccountView\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -8690,10 +8551,8 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const Account = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
@@ -8759,16 +8618,12 @@ const Account = () => {
     }
   })))));
 };
-
 _s(Account, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = Account;
 /* harmony default export */ __webpack_exports__["default"] = (Account);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Account");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -8860,7 +8715,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ClientMenu; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/MoreVert */ "./node_modules/@material-ui/icons/MoreVert.js");
 /* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_3__);
@@ -8872,7 +8727,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\ClientMenu.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -8880,12 +8735,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ClientMenu({
-  client
-}) {
+function ClientMenu(_ref) {
   _s();
-
+  let {
+    client
+  } = _ref;
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
   const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_6__["default"]().user;
   const [anchorEl, setAnchorEl] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
@@ -8893,13 +8747,10 @@ function ClientMenu({
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"])();
-
   const viewClient = () => navigate(`/admin/client/${client.id}`);
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
     edge: "end",
     size: "small",
@@ -8966,15 +8817,11 @@ function ClientMenu({
     }
   }, "View Client"))));
 }
-
 _s(ClientMenu, "lFiqq0ykb9m24LKKt0ZblVImzrM=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"], notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"]];
 });
-
 _c = ClientMenu;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ClientMenu");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -9066,7 +8913,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Results; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_3__);
@@ -9084,8 +8931,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -9096,6 +8943,8 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
+
+// import { getColorByClientStatus } from "./utils";
 
 
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["makeStyles"])(() => ({
@@ -9104,21 +8953,21 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["makeSty
     justifyContent: "flex-end"
   }
 }));
-function Results({
-  className,
-  data,
-  rowClick,
-  ...rest
-}) {
+function Results(_ref) {
   _s();
-
+  let {
+    className,
+    data,
+    rowClick,
+    ...rest
+  } = _ref;
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const classes = useStyles();
   const [clients, setClients] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_8___default.a.post("/api/clients").then(async response => {
-      setLoading(false); // console.log(response.data);
-
+      setLoading(false);
+      // console.log(response.data);
       setClients(response.data);
     }).catch(e => {
       // @TODO handle
@@ -9390,18 +9239,15 @@ function Results({
     }
   }, "View More")));
 }
-
 _s(Results, "DJOVhqus2nKo5henSWgKf2eN5Gk=", false, function () {
   return [useStyles];
 });
-
 _c = Results;
-
-function ClientItem({
-  client
-}) {
+function ClientItem(_ref2) {
   _s2();
-
+  let {
+    client
+  } = _ref2;
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
@@ -9409,16 +9255,13 @@ function ClientItem({
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"])();
   const [riskType, setRiskType] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(client.risk_type);
   const [status, setStatus] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(client.status);
-
   const handleRowClick = id => navigate(`/admin/client/${id}`);
-
   const handleRiskTypeChange = e => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_8___default.a.post(`/api/client/${client.id}/risk-type`, {
       risk_type: e.target.value
     }).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setRiskType(e.target.value);
         enqueueSnackbar("Client risk type updated successfully.", {
@@ -9438,14 +9281,12 @@ function ClientItem({
       });
     });
   };
-
   const handleStatusChange = e => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_8___default.a.post(`/api/client/${client.id}/status`, {
       status: e.target.value
     }).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setStatus(e.target.value);
         enqueueSnackbar("Client status updated successfully.", {
@@ -9465,12 +9306,13 @@ function ClientItem({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableRow"], {
-    hover: true // @ts-ignore
+    hover: true
+    // @ts-ignore
     ,
     key: client.id,
-    id: `client-${client.id}` // @ts-ignore
+    id: `client-${client.id}`
+    // @ts-ignore
     ,
     style: {
       cursor: "pointer"
@@ -9772,7 +9614,8 @@ function ClientItem({
       lineNumber: 331,
       columnNumber: 7
     }
-  }, // @ts-ignore
+  },
+  // @ts-ignore
   moment__WEBPACK_IMPORTED_MODULE_3___default()(client.date_updated).format("MM/DD/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
     __self: this,
     __source: {
@@ -9790,15 +9633,11 @@ function ClientItem({
     }
   })));
 }
-
 _s2(ClientItem, "AfORq/KOmzrvVkXVFJzTkbisddA=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"], notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"]];
 });
-
 _c2 = ClientItem;
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 __webpack_require__.$Refresh$.register(_c2, "ClientItem");
 
@@ -9892,14 +9731,13 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-let ReviewStatus;
-
-(function (ReviewStatus) {
+let ReviewStatus = /*#__PURE__*/function (ReviewStatus) {
   ReviewStatus["APPROVED"] = "APPROVED";
   ReviewStatus["PENDING"] = "PENDING";
   ReviewStatus["REJECTED"] = "REJECTED";
   ReviewStatus["NOT_APPLICABLE"] = "NOT APPLICABLE";
-})(ReviewStatus || (ReviewStatus = {}));
+  return ReviewStatus;
+}({});
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -9990,7 +9828,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AuditReports; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
@@ -10008,8 +9846,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\AuditReports.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -10024,12 +9861,10 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function AuditReports() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // reviewRequestId
-
   const [reports, setReports] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/${id}/reports/audit`).then(async response => {
@@ -10041,8 +9876,9 @@ function AuditReports() {
       console.error(e);
       setLoading(false);
     });
-  }, []); // file related
+  }, []);
 
+  // file related
   const [docUploadLoading, setDocUploadLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
@@ -10050,21 +9886,17 @@ function AuditReports() {
   const [doc, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const documentCopy = document && Object.assign({}, document) || null;
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpload = e => {
     const _doc = e.target.files[0];
     if (!_doc) return;
-
     if (_doc.size > _config__WEBPACK_IMPORTED_MODULE_10__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setDocUploadLoading(true);
     const formData = new FormData();
     formData.append("document", _doc);
@@ -10074,7 +9906,6 @@ function AuditReports() {
       }
     }).then(async response => {
       setDocUploadLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDoc(response.data);
@@ -10098,11 +9929,9 @@ function AuditReports() {
       });
     });
   };
-
   const handleReportDelete = id => {
     setReports(reports.filter(r => r.id != id));
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
     p: 3,
     style: {
@@ -10349,7 +10178,8 @@ function AuditReports() {
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -10384,15 +10214,11 @@ function AuditReports() {
     }
   }, "Audit Report")));
 }
-
 _s(AuditReports, "zHlaEeEJxUwX9qtBq1VfImq2zDg=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_8__["useSnackbar"]];
 });
-
 _c = AuditReports;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "AuditReports");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -10486,7 +10312,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/MoreVert */ "./node_modules/@material-ui/icons/MoreVert.js");
 /* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_4__);
@@ -10499,7 +10325,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\CertificateMenu.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -10508,31 +10334,27 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function CertificateMenu({
-  certificate,
-  onDeleteCertificate
-}) {
+function CertificateMenu(_ref) {
   _s();
-
+  let {
+    certificate,
+    onDeleteCertificate
+  } = _ref;
   const [anchorEl, setAnchorEl] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"])();
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useNavigate"])();
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const deleteCertificate = () => {
     const answer = window.confirm("Are you sure you would like to delete this certificate?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete(`/api/client/review-request/certificates/${certificate.id}`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onDeleteCertificate(certificate.id);
         enqueueSnackbar("Certificate deleted successfully.", {
@@ -10550,7 +10372,6 @@ function CertificateMenu({
     });
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
     edge: "end",
     size: "small",
@@ -10644,15 +10465,11 @@ function CertificateMenu({
     }
   }, "Delete"))));
 }
-
 _s(CertificateMenu, "zvSaOP1yWrte1ZkMurojDOus2/0=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useNavigate"]];
 });
-
 _c = CertificateMenu;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "CertificateMenu");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -10745,7 +10562,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CertificateDateCell", function() { return CertificateDateCell; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
@@ -10767,9 +10584,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\Certificates.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -10788,7 +10604,6 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function RequestCertificates() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const {
     id
@@ -10817,20 +10632,18 @@ function RequestCertificates() {
       setLoading(false);
     });
   }, []);
-
   const onPromptOk = () => {
     setPromptOpen(false);
     setMailClient(true);
     handleDocumentUploadButton();
   };
-
   const onPromptCancel = () => {
     setPromptOpen(false);
     setMailClient(false);
     handleDocumentUploadButton();
-  }; // file related
+  };
 
-
+  // file related
   const [docUploadLoading, setDocUploadLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
@@ -10838,21 +10651,17 @@ function RequestCertificates() {
   const [doc, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const documentCopy = document && Object.assign({}, document) || null;
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpload = e => {
     const _doc = e.target.files[0];
     if (!_doc) return;
-
     if (_doc.size > _config__WEBPACK_IMPORTED_MODULE_12__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setDocUploadLoading(true);
     const formData = new FormData();
     formData.append("document", _doc);
@@ -10863,7 +10672,6 @@ function RequestCertificates() {
       }
     }).then(async response => {
       setDocUploadLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDoc(response.data);
@@ -10887,11 +10695,9 @@ function RequestCertificates() {
       });
     });
   };
-
   const handleCertificateDelete = id => {
     setCertificates(certificates.filter(r => r.id != id));
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_PromptDialog__WEBPACK_IMPORTED_MODULE_13__["default"], {
     open: promptOpen,
     onOk: onPromptOk,
@@ -11239,7 +11045,8 @@ function RequestCertificates() {
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -11273,30 +11080,26 @@ function RequestCertificates() {
     }
   }, "Certificate")));
 }
-
 _s(RequestCertificates, "ehQEzxShocRfjYb74xjt9ru0f9A=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_10__["useSnackbar"]];
 });
-
 _c = RequestCertificates;
-function CertificateDateCell({
-  certificate
-}) {
+function CertificateDateCell(_ref) {
   _s2();
-
+  let {
+    certificate
+  } = _ref;
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [date, setDate] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(moment__WEBPACK_IMPORTED_MODULE_3___default()(certificate.expires_at).toDate());
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_10__["useSnackbar"])();
-
   const handleDateChange = (certificateId, date) => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.put(`/api/client/certificate/${certificateId}/expires-at`, {
       expires_at: moment__WEBPACK_IMPORTED_MODULE_3___default()(date).format("YYYY-MM-DD HH:mm:ss")
     }).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setDate(date);
         enqueueSnackbar(`Certificate expiration date updated successfully.`, {
@@ -11316,7 +11119,6 @@ function CertificateDateCell({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["CircularProgress"], {
     size: 24,
     style: {
@@ -11337,7 +11139,8 @@ function CertificateDateCell({
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_pickers__WEBPACK_IMPORTED_MODULE_6__["KeyboardDatePicker"], {
-    id: "date-picker-dialog" // label="Date picker dialog"
+    id: "date-picker-dialog"
+    // label="Date picker dialog"
     ,
     format: "MM/dd/yyyy",
     value: date,
@@ -11368,15 +11171,11 @@ function CertificateDateCell({
     }
   })));
 }
-
 _s2(CertificateDateCell, "/+dnrQ0r4rnPfobrQ73tDqSAzCU=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_10__["useSnackbar"]];
 });
-
 _c2 = CertificateDateCell;
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "RequestCertificates");
 __webpack_require__.$Refresh$.register(_c2, "CertificateDateCell");
 
@@ -11468,7 +11267,7 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
@@ -11477,9 +11276,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\ClientProfile.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -11490,12 +11287,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 // }
 const ProfileDetails = () => {
   _s();
-
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
-  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true); // const [profile, setProfile] = useState<Profile>(defaults);
-
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
+  // const [profile, setProfile] = useState<Profile>(defaults);
   const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaults);
   const {
     id
@@ -11504,26 +11300,25 @@ const ProfileDetails = () => {
     axios__WEBPACK_IMPORTED_MODULE_3___default.a.post(`/api/client/${id}/profile`).then(async response => {
       console.log(response.data);
       setLoading(false);
-      setValues(response.data); // setProfile(response.data);
+      setValues(response.data);
+      // setProfile(response.data);
     }).catch(e => {
       // @TODO handle
       console.error(e);
       setLoading(false);
     });
   }, []);
-
   const handleChange = event => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [event.target.name]: event.target.value
     });
   };
-
   const onSubmitHandler = () => {
-    setLoading(true); // setProfile(values);
-
+    setLoading(true);
+    // setProfile(values);
     axios__WEBPACK_IMPORTED_MODULE_3___default.a.put("/api/profile", values).then(async response => {
       setLoading(false);
-
       if (response.status == 200) {
         const profileNameTag = document.getElementById("profile-nametag");
         if (profileNameTag) profileNameTag.textContent = `${values.first_name} ${values.last_name}`;
@@ -11542,7 +11337,6 @@ const ProfileDetails = () => {
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
     p: 3,
     style: {
@@ -11861,16 +11655,14 @@ const ProfileDetails = () => {
     }
   }, "Update")));
 };
-
 _s(ProfileDetails, "7HjmktgJhl+Ryl80N7ZEaG3mLXg=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"]];
 });
-
 _c = ProfileDetails;
-
-function HedViewer({
-  heds = []
-}) {
+function HedViewer(_ref) {
+  let {
+    heds = []
+  } = _ref;
   if (!heds.length) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
     variant: "h3",
@@ -11933,7 +11725,8 @@ function HedViewer({
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
     fullWidth: true,
     label: "Halal Enforcement Director Name",
-    name: "name" // // required
+    name: "name"
+    // // required
     ,
     value: hed.name,
     disabled: true,
@@ -11993,7 +11786,6 @@ function HedViewer({
     }
   })))))));
 }
-
 _c2 = HedViewer;
 const defaults = {
   id: 0,
@@ -12017,9 +11809,7 @@ const defaults = {
   hed_email: ""
 };
 /* harmony default export */ __webpack_exports__["default"] = (ProfileDetails);
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "ProfileDetails");
 __webpack_require__.$Refresh$.register(_c2, "HedViewer");
 
@@ -12112,7 +11902,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReportMenu; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
@@ -12127,7 +11917,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\ReportMenu.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -12136,31 +11926,27 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ReportMenu({
-  report,
-  onDeleteReport
-}) {
+function ReportMenu(_ref) {
   _s();
-
+  let {
+    report,
+    onDeleteReport
+  } = _ref;
   const [anchorEl, setAnchorEl] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"])();
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const deleteReport = () => {
     const answer = window.confirm("Are you sure you would like to delete this report?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.delete(`/api/client/review-request/reports/${report.id}`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onDeleteReport(report.id);
         enqueueSnackbar("Report deleted successfully.", {
@@ -12178,7 +11964,6 @@ function ReportMenu({
     });
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
     edge: "end",
     size: "small",
@@ -12272,15 +12057,11 @@ function ReportMenu({
     }
   }, "Delete"))));
 }
-
 _s(ReportMenu, "zvSaOP1yWrte1ZkMurojDOus2/0=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
 });
-
 _c = ReportMenu;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReportMenu");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -12372,7 +12153,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReviewReports; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
@@ -12390,8 +12171,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\ReviewReports.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -12406,12 +12186,10 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function ReviewReports() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // reviewRequestId
-
   const [reports, setReports] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/${id}/reports/review`).then(async response => {
@@ -12423,8 +12201,9 @@ function ReviewReports() {
       console.error(e);
       setLoading(false);
     });
-  }, []); // file related
+  }, []);
 
+  // file related
   const [docUploadLoading, setDocUploadLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
@@ -12432,21 +12211,17 @@ function ReviewReports() {
   const [doc, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const documentCopy = document && Object.assign({}, document) || null;
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpload = e => {
     const _doc = e.target.files[0];
     if (!_doc) return;
-
     if (_doc.size > _config__WEBPACK_IMPORTED_MODULE_10__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setDocUploadLoading(true);
     const formData = new FormData();
     formData.append("document", _doc);
@@ -12456,7 +12231,6 @@ function ReviewReports() {
       }
     }).then(async response => {
       setDocUploadLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDoc(response.data);
@@ -12480,11 +12254,9 @@ function ReviewReports() {
       });
     });
   };
-
   const handleReportDelete = id => {
     setReports(reports.filter(r => r.id != id));
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
     p: 3,
     style: {
@@ -12731,7 +12503,8 @@ function ReviewReports() {
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -12766,15 +12539,11 @@ function ReviewReports() {
     }
   }, "Review Report")));
 }
-
 _s(ReviewReports, "zHlaEeEJxUwX9qtBq1VfImq2zDg=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_8__["useSnackbar"]];
 });
-
 _c = ReviewReports;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewReports");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -12867,7 +12636,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SingleClientTabs", function() { return SingleClientTabs; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../components/Page */ "./src/components/Page.js");
 /* harmony import */ var _ClientProfile__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ClientProfile */ "./src/views/admin/clients/client/ClientProfile.tsx");
@@ -12878,16 +12647,16 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature(),
-    _s3 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature(),
+  _s3 = __webpack_require__.$Refresh$.signature();
 
 
- // import SwipeableViews from "react-swipeable-views";
+// import SwipeableViews from "react-swipeable-views";
 
 
- // import Toolbar from "../../common/Toolbar";
 
+// import Toolbar from "../../common/Toolbar";
 
 
 
@@ -12903,14 +12672,14 @@ const useStyles1 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSt
 }));
 function SingleClientView() {
   _s();
-
   const classes = useStyles1();
   return (
     /*#__PURE__*/
     // @ts-ignore
     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
       className: classes.root,
-      title: "Client" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+      title: "Client"
+      // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
       ,
       __self: this,
       __source: {
@@ -12957,11 +12726,9 @@ function SingleClientView() {
     })))))
   );
 }
-
 _s(SingleClientView, "iUcwKsj7H3p1LotITUwukOjPOtY=", false, function () {
   return [useStyles1];
 });
-
 _c = SingleClientView;
 const useStyles2 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["createStyles"])({
   root: {
@@ -12978,11 +12745,11 @@ const useStyles2 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSt
     padding: theme.spacing(3)
   }
 }));
-const defaults = {}; // @TODO add report section
+const defaults = {};
 
+// @TODO add report section
 function SingleClient() {
   _s2();
-
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
@@ -12990,9 +12757,11 @@ function SingleClient() {
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const classes = useStyles2();
   const params = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
-  const clientId = Number.parseInt(params.id); // const review: Client = data[reviewId];
+  const clientId = Number.parseInt(params.id);
+  // const review: Client = data[reviewId];
   // const [form, setForm] = useState<Client>(review);
   // const [values, setValues] = useState<Client>({} as Client);
+
   // useEffect(() => {
   //   axios
   //     .post("/api/client/" + id)
@@ -13008,6 +12777,7 @@ function SingleClient() {
   //       setLoading(false);
   //     });
   // }, []);
+
   // const handleChange = (event: any) => {
   //   setForm({
   //     ...form,
@@ -13063,13 +12833,10 @@ function SingleClient() {
     }
   })));
 }
-
 _s2(SingleClient, "P1vxp22ynd5xfSbyRe4gcs6likE=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"], useStyles2, react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"]];
 });
-
 _c2 = SingleClient;
-
 function TabPanel(props) {
   const {
     children,
@@ -13091,16 +12858,13 @@ function TabPanel(props) {
     }
   }), value === index && children);
 }
-
 _c3 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `full-width-tab-${index}`,
     "aria-controls": `full-width-tabpanel-${index}`
   };
 }
-
 const useStyles3 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
   root: {
     backgroundColor: theme.palette.background.paper
@@ -13108,19 +12872,15 @@ const useStyles3 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSt
 }));
 function SingleClientTabs() {
   _s3();
-
   const classes = useStyles3();
   const theme = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"])();
   const [value, setValue] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   const handleChangeIndex = index => {
     setValue(index);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.root,
     __self: this,
@@ -13258,15 +13018,11 @@ function SingleClientTabs() {
     }
   })));
 }
-
 _s3(SingleClientTabs, "67ZhIY4U/gr9mAurA18r85H/UwI=", false, function () {
   return [useStyles3, _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"]];
 });
-
 _c4 = SingleClientTabs;
-
 var _c, _c2, _c3, _c4;
-
 __webpack_require__.$Refresh$.register(_c, "SingleClientView");
 __webpack_require__.$Refresh$.register(_c2, "SingleClient");
 __webpack_require__.$Refresh$.register(_c3, "TabPanel");
@@ -13369,15 +13125,14 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
- // import Results from "./Results";
+// import Results from "./Results";
 
 
- // import Toolbar from "./Toolbar";
-
+// import Toolbar from "./Toolbar";
 
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
   root: {
@@ -13387,23 +13142,20 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ReviewListView = () => {
   _s();
-
-  const classes = useStyles(); // const [customers] = useState(data);
-
+  const classes = useStyles();
+  // const [customers] = useState(data);
   const [viewing, setViewing] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
-
-  const handleReviewClick = review => {}; // const handleReviewClick = (review) => setViewing(review);
-
-
-  const handleViewCancel = () => setViewing(null); // const handleAddReview = () => setEditing(null);
-
+  const handleReviewClick = review => {};
+  // const handleReviewClick = (review) => setViewing(review);
+  const handleViewCancel = () => setViewing(null);
+  // const handleAddReview = () => setEditing(null);
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Reviews" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Reviews"
+    // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -13472,16 +13224,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "6VzI2pxkOwIPUcUozfVIZQ9q8gw=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -13588,10 +13336,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-function CertificateView({
-  review,
-  certStatus
-}) {
+function CertificateView(_ref) {
+  let {
+    review,
+    certStatus
+  } = _ref;
   switch (certStatus) {
     case CertificateStatus.ISSUED:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_2__["Alert"], {
@@ -13631,7 +13380,6 @@ function CertificateView({
           columnNumber: 11
         }
       }));
-
     case CertificateStatus.SUSPENDED:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_2__["Alert"], {
         severity: "error",
@@ -13663,7 +13411,6 @@ function CertificateView({
           columnNumber: 11
         }
       }, review.businessName), "'s certificate has been suspended. Use the drop down menu to issue certificate.");
-
     case CertificateStatus.PENDING:
     default:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_2__["Alert"], {
@@ -13699,14 +13446,12 @@ function CertificateView({
   }
 }
 _c = CertificateView;
-let CertificateStatus;
-
-(function (CertificateStatus) {
+let CertificateStatus = /*#__PURE__*/function (CertificateStatus) {
   CertificateStatus[CertificateStatus["ISSUED"] = 0] = "ISSUED";
   CertificateStatus[CertificateStatus["PENDING"] = 1] = "PENDING";
   CertificateStatus[CertificateStatus["SUSPENDED"] = 2] = "SUSPENDED";
-})(CertificateStatus || (CertificateStatus = {}));
-
+  return CertificateStatus;
+}({});
 function CertificateList() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["List"], {
     style: {
@@ -13828,11 +13573,8 @@ function CertificateList() {
     }
   })))));
 }
-
 _c2 = CertificateList;
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "CertificateView");
 __webpack_require__.$Refresh$.register(_c2, "CertificateList");
 
@@ -13938,12 +13680,14 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import { Download as DownloadIcon } from "react-feather";
+
+// import { Download as DownloadIcon } from "react-feather";
 
 
-function DocumentsView({
-  review
-}) {
+function DocumentsView(_ref) {
+  let {
+    review
+  } = _ref;
   const documents = data[15];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["List"], {
     __self: this,
@@ -14018,18 +13762,17 @@ function DocumentsView({
   }))))));
 }
 _c = DocumentsView;
-let DocumentStatus;
-
-(function (DocumentStatus) {
+let DocumentStatus = /*#__PURE__*/function (DocumentStatus) {
   DocumentStatus["APPROVED"] = "APPROVED";
   DocumentStatus["PENDING"] = "PENDING";
   DocumentStatus["REJECTED"] = "REJECTED";
   DocumentStatus["NOT_APPLICABLE"] = "NOT APPLICABLE";
-})(DocumentStatus || (DocumentStatus = {}));
-
-function DocumentHeader({
-  document
-}) {
+  return DocumentStatus;
+}({});
+function DocumentHeader(_ref2) {
+  let {
+    document
+  } = _ref2;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       display: "flex",
@@ -14071,7 +13814,6 @@ function DocumentHeader({
     }
   })));
 }
-
 _c2 = DocumentHeader;
 const data = {
   15: [{
@@ -14126,9 +13868,7 @@ const data = {
     expire_date: Date.now()
   }]
 };
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "DocumentsView");
 __webpack_require__.$Refresh$.register(_c2, "DocumentHeader");
 
@@ -14235,7 +13975,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\Header.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -14245,25 +13985,21 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function Header({
-  review,
-  certStatus,
-  setCertStatus
-}) {
+function Header(_ref) {
   _s();
-
+  let {
+    review,
+    certStatus,
+    setCertStatus
+  } = _ref;
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleClose = certStatus => {
     setCertStatus(certStatus);
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CardHeader"], {
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       style: {
@@ -14461,13 +14197,9 @@ function Header({
     }
   });
 }
-
 _s(Header, "+aMDa7FPcESUyQDF1vq0RSMn4/k=");
-
 _c = Header;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Header");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -14573,11 +14305,13 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import { Download as DownloadIcon } from "react-feather";
 
-function ProductsView({
-  review
-}) {
+// import { Download as DownloadIcon } from "react-feather";
+
+function ProductsView(_ref) {
+  let {
+    review
+  } = _ref;
   const documents = data[15];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["List"], {
     __self: this,
@@ -14661,9 +14395,7 @@ const data = {
     date: Date.now()
   }]
 };
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProductsView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -14768,12 +14500,14 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import { Download as DownloadIcon } from "react-feather";
+
+// import { Download as DownloadIcon } from "react-feather";
 
 
-function ReportsView({
-  review
-}) {
+function ReportsView(_ref) {
+  let {
+    review
+  } = _ref;
   const reports = data[15];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["List"], {
     __self: this,
@@ -14848,18 +14582,17 @@ function ReportsView({
   }))))));
 }
 _c = ReportsView;
-let ReportStatus;
-
-(function (ReportStatus) {
+let ReportStatus = /*#__PURE__*/function (ReportStatus) {
   ReportStatus["APPROVED"] = "APPROVED";
   ReportStatus["PENDING"] = "PENDING";
   ReportStatus["REJECTED"] = "REJECTED";
   ReportStatus["NOT_APPLICABLE"] = "NOT APPLICABLE";
-})(ReportStatus || (ReportStatus = {}));
-
-function ReportHeader({
-  report
-}) {
+  return ReportStatus;
+}({});
+function ReportHeader(_ref2) {
+  let {
+    report
+  } = _ref2;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       display: "flex",
@@ -14901,7 +14634,6 @@ function ReportHeader({
     }
   })));
 }
-
 _c2 = ReportHeader;
 const data = {
   15: [{
@@ -14926,9 +14658,7 @@ const data = {
     expire_date: Date.now()
   }]
 };
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "ReportsView");
 __webpack_require__.$Refresh$.register(_c2, "ReportHeader");
 
@@ -15032,7 +14762,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -15042,23 +14772,20 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ViewReview({
-  className,
-  review,
-  onCancel,
-  ...rest
-}) {
+function ViewReview(_ref) {
   _s();
-
+  let {
+    className,
+    review,
+    onCancel,
+    ...rest
+  } = _ref;
   // const classes = useStyles();
   const [value, setValue] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
   const [certStatus, setCertStatus] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(_CertificateView__WEBPACK_IMPORTED_MODULE_7__["CertificateStatus"].PENDING);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
     __self: this,
     __source: {
@@ -15087,12 +14814,14 @@ function ViewReview({
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tabs"], {
     value: value,
-    onChange: handleChange // variant="scrollable"
+    onChange: handleChange
+    // variant="scrollable"
     // scrollButtons="auto"
     ,
     indicatorColor: "primary",
     textColor: "primary",
-    centered: true // aria-label="simple tabs example"
+    centered: true
+    // aria-label="simple tabs example"
     ,
     __self: this,
     __source: {
@@ -15230,11 +14959,8 @@ function ViewReview({
     }
   }))));
 }
-
 _s(ViewReview, "2ECjX3f3pMZZ+NPctQVXElvqix4=");
-
 _c = ViewReview;
-
 function TabPanel(props) {
   const {
     children,
@@ -15268,18 +14994,14 @@ function TabPanel(props) {
     }
   }, children));
 }
-
 _c2 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`
   };
 }
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "ViewReview");
 __webpack_require__.$Refresh$.register(_c2, "TabPanel");
 
@@ -15386,11 +15108,9 @@ function getColorByReviewStatus(status) {
     case _Review__WEBPACK_IMPORTED_MODULE_1__["ReviewStatus"].APPROVED:
     case _review_DocumentsView__WEBPACK_IMPORTED_MODULE_2__["DocumentStatus"].APPROVED:
       return "primary";
-
     case _Review__WEBPACK_IMPORTED_MODULE_1__["ReviewStatus"].REJECTED:
     case _review_DocumentsView__WEBPACK_IMPORTED_MODULE_2__["DocumentStatus"].REJECTED:
       return "secondary";
-
     case _Review__WEBPACK_IMPORTED_MODULE_1__["ReviewStatus"].PENDING:
     case _review_DocumentsView__WEBPACK_IMPORTED_MODULE_2__["DocumentStatus"].PENDING:
     case _review_DocumentsView__WEBPACK_IMPORTED_MODULE_2__["DocumentStatus"].NOT_APPLICABLE:
@@ -15495,35 +15215,31 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\facility-categories\\EditFacilityCategory.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
-
-var Mode;
-
-(function (Mode) {
+var Mode = /*#__PURE__*/function (Mode) {
   Mode[Mode["CREATE"] = 0] = "CREATE";
   Mode[Mode["UPDATE"] = 1] = "UPDATE";
-})(Mode || (Mode = {}));
-
-const EditFacilityCategory = ({
-  className,
-  facilitycategory,
-  onCancel,
-  ...rest
-}) => {
+  return Mode;
+}(Mode || {});
+const EditFacilityCategory = _ref => {
   _s();
-
+  let {
+    className,
+    facilitycategory,
+    onCancel,
+    ...rest
+  } = _ref;
   const [form, setForm] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_FacilityCategory__WEBPACK_IMPORTED_MODULE_2__["facilitycategoryDefaults"]);
   const mode = facilitycategory.id && Mode.UPDATE || Mode.CREATE;
-
   const handleChange = event => {
-    setForm({ ...form,
+    setForm({
+      ...form,
       [event.target.name]: event.target.value
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", Object.assign({
     autoComplete: "off",
     noValidate: true
@@ -15639,9 +15355,7 @@ const EditFacilityCategory = ({
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], {
     color: "secondary",
-    variant: "contained"
-    /*disabled*/
-    ,
+    variant: "contained" /*disabled*/,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -15650,14 +15364,10 @@ const EditFacilityCategory = ({
     }
   }, mode === Mode.UPDATE && "Update" || "Create"))));
 };
-
 _s(EditFacilityCategory, "f0IK264fggUyKDp15lNDVBQ7dFE=");
-
 _c = EditFacilityCategory;
 /* harmony default export */ __webpack_exports__["default"] = (EditFacilityCategory);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "EditFacilityCategory");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -15852,8 +15562,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\facility-categories\\Results.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -15864,37 +15573,31 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeSty
     marginRight: theme.spacing(2)
   }
 }));
-
-const Results = ({
-  className,
-  customers,
-  rowClick,
-  ...rest
-}) => {
+const Results = _ref => {
   _s();
-
+  let {
+    className,
+    customers,
+    rowClick,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   const [selectedCustomerIds, setSelectedCustomerIds] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const [limit, setLimit] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(10);
   const [page, setPage] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
   console.log(customers);
-
   const handleSelectAll = event => {
     let newSelectedCustomerIds;
-
     if (event.target.checked) {
       newSelectedCustomerIds = customers.map(customer => customer.id);
     } else {
       newSelectedCustomerIds = [];
     }
-
     setSelectedCustomerIds(newSelectedCustomerIds);
   };
-
   const handleSelectOne = (event, id) => {
     const selectedIndex = selectedCustomerIds.indexOf(id);
     let newSelectedCustomerIds = [];
-
     if (selectedIndex === -1) {
       newSelectedCustomerIds = newSelectedCustomerIds.concat(selectedCustomerIds, id);
     } else if (selectedIndex === 0) {
@@ -15904,18 +15607,14 @@ const Results = ({
     } else if (selectedIndex > 0) {
       newSelectedCustomerIds = newSelectedCustomerIds.concat(selectedCustomerIds.slice(0, selectedIndex), selectedCustomerIds.slice(selectedIndex + 1));
     }
-
     setSelectedCustomerIds(newSelectedCustomerIds);
   };
-
   const handleLimitChange = event => {
     setLimit(event.target.value);
   };
-
   const handlePageChange = (event, newPage) => {
     setPage(newPage);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Card"], Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.root, className)
   }, rest, {
@@ -15925,7 +15624,8 @@ const Results = ({
       lineNumber: 80,
       columnNumber: 5
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"] // minWidth={1050}
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"]
+  // minWidth={1050}
   , {
     style: {
       height: "calc(100vh - 250px)",
@@ -16092,20 +15792,16 @@ const Results = ({
     }
   }));
 };
-
 _s(Results, "TJBnraLDnOIKSDTBUfOpU6qU9rI=", false, function () {
   return [useStyles];
 });
-
 _c = Results;
 Results.propTypes = {
   className: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
   customers: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.array.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Results);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -16203,8 +15899,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\facility-categories\\Toolbar.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -16220,14 +15915,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     marginLeft: theme.spacing(1)
   }
 }));
-
-const Toolbar = ({
-  className,
-  onAddFacilityCategory,
-  ...rest
-}) => {
+const Toolbar = _ref => {
   _s();
-
+  let {
+    className,
+    onAddFacilityCategory,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.root, className)
@@ -16332,11 +16026,9 @@ const Toolbar = ({
     }
   }))))));
 };
-
 _s(Toolbar, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = Toolbar;
 const styles = {
   toolbar: {
@@ -16348,9 +16040,7 @@ const styles = {
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (Toolbar);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Toolbar");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -16567,8 +16257,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\facility-categories\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -16585,20 +16274,14 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const FacilityCategoriesView = () => {
   _s();
-
   const classes = useStyles();
   const [customers] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_data__WEBPACK_IMPORTED_MODULE_6__["default"]);
   const [editing, setEditing] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_FacilityCategory__WEBPACK_IMPORTED_MODULE_7__["facilitycategoryDefaults"]);
-
   const handleFacilityCategoryClick = facilitycategory => setEditing(facilitycategory);
-
   const handleEditCancel = () => setEditing(null);
-
   const handleAddFacilityCategory = () => setEditing(_FacilityCategory__WEBPACK_IMPORTED_MODULE_7__["facilitycategoryDefaults"]);
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
     title: "Facility Categories",
@@ -16679,16 +16362,12 @@ const FacilityCategoriesView = () => {
     }
   })))));
 };
-
 _s(FacilityCategoriesView, "LFn+z0GycjkcUAWGI98IFpzyi84=", false, function () {
   return [useStyles];
 });
-
 _c = FacilityCategoriesView;
 /* harmony default export */ __webpack_exports__["default"] = (FacilityCategoriesView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "FacilityCategoriesView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -16785,35 +16464,31 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\product-categories\\EditProductCategory.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
-
-var Mode;
-
-(function (Mode) {
+var Mode = /*#__PURE__*/function (Mode) {
   Mode[Mode["CREATE"] = 0] = "CREATE";
   Mode[Mode["UPDATE"] = 1] = "UPDATE";
-})(Mode || (Mode = {}));
-
-const EditProductCategory = ({
-  className,
-  productCategory,
-  onCancel,
-  ...rest
-}) => {
+  return Mode;
+}(Mode || {});
+const EditProductCategory = _ref => {
   _s();
-
+  let {
+    className,
+    productCategory,
+    onCancel,
+    ...rest
+  } = _ref;
   const [form, setForm] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_ProductCategory__WEBPACK_IMPORTED_MODULE_2__["productCategoryDefaults"]);
   const mode = productCategory.id && Mode.UPDATE || Mode.CREATE;
-
   const handleChange = event => {
-    setForm({ ...form,
+    setForm({
+      ...form,
       [event.target.name]: event.target.value
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", Object.assign({
     autoComplete: "off",
     noValidate: true
@@ -16929,9 +16604,7 @@ const EditProductCategory = ({
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], {
     color: "secondary",
-    variant: "contained"
-    /*disabled*/
-    ,
+    variant: "contained" /*disabled*/,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -16940,14 +16613,10 @@ const EditProductCategory = ({
     }
   }, mode === Mode.UPDATE && "Update" || "Create"))));
 };
-
 _s(EditProductCategory, "bqdZj1WO4qbX7SRtEmiqtxfI0rU=");
-
 _c = EditProductCategory;
 /* harmony default export */ __webpack_exports__["default"] = (EditProductCategory);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "EditProductCategory");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -17142,8 +16811,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\product-categories\\Results.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -17154,37 +16822,31 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeSty
     marginRight: theme.spacing(2)
   }
 }));
-
-const Results = ({
-  className,
-  customers,
-  rowClick,
-  ...rest
-}) => {
+const Results = _ref => {
   _s();
-
+  let {
+    className,
+    customers,
+    rowClick,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   const [selectedCustomerIds, setSelectedCustomerIds] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const [limit, setLimit] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(10);
   const [page, setPage] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
   console.log(customers);
-
   const handleSelectAll = event => {
     let newSelectedCustomerIds;
-
     if (event.target.checked) {
       newSelectedCustomerIds = customers.map(customer => customer.id);
     } else {
       newSelectedCustomerIds = [];
     }
-
     setSelectedCustomerIds(newSelectedCustomerIds);
   };
-
   const handleSelectOne = (event, id) => {
     const selectedIndex = selectedCustomerIds.indexOf(id);
     let newSelectedCustomerIds = [];
-
     if (selectedIndex === -1) {
       newSelectedCustomerIds = newSelectedCustomerIds.concat(selectedCustomerIds, id);
     } else if (selectedIndex === 0) {
@@ -17194,18 +16856,14 @@ const Results = ({
     } else if (selectedIndex > 0) {
       newSelectedCustomerIds = newSelectedCustomerIds.concat(selectedCustomerIds.slice(0, selectedIndex), selectedCustomerIds.slice(selectedIndex + 1));
     }
-
     setSelectedCustomerIds(newSelectedCustomerIds);
   };
-
   const handleLimitChange = event => {
     setLimit(event.target.value);
   };
-
   const handlePageChange = (event, newPage) => {
     setPage(newPage);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Card"], Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.root, className)
   }, rest, {
@@ -17215,7 +16873,8 @@ const Results = ({
       lineNumber: 80,
       columnNumber: 5
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"] // minWidth={1050}
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"]
+  // minWidth={1050}
   , {
     style: {
       height: "calc(100vh - 250px)",
@@ -17382,20 +17041,16 @@ const Results = ({
     }
   }));
 };
-
 _s(Results, "TJBnraLDnOIKSDTBUfOpU6qU9rI=", false, function () {
   return [useStyles];
 });
-
 _c = Results;
 Results.propTypes = {
   className: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
   customers: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.array.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Results);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -17493,8 +17148,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\product-categories\\Toolbar.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -17510,14 +17164,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     marginLeft: theme.spacing(1)
   }
 }));
-
-const Toolbar = ({
-  className,
-  onAddProductCategory,
-  ...rest
-}) => {
+const Toolbar = _ref => {
   _s();
-
+  let {
+    className,
+    onAddProductCategory,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.root, className)
@@ -17622,11 +17275,9 @@ const Toolbar = ({
     }
   }))))));
 };
-
 _s(Toolbar, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = Toolbar;
 const styles = {
   toolbar: {
@@ -17638,9 +17289,7 @@ const styles = {
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (Toolbar);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Toolbar");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -17889,8 +17538,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\product-categories\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -17907,20 +17555,14 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ProductCategoriesView = () => {
   _s();
-
   const classes = useStyles();
   const [customers] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_data__WEBPACK_IMPORTED_MODULE_6__["default"]);
   const [editing, setEditing] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_ProductCategory__WEBPACK_IMPORTED_MODULE_7__["productCategoryDefaults"]);
-
   const handleProductCategoryClick = productCategory => setEditing(productCategory);
-
   const handleEditCancel = () => setEditing(null);
-
   const handleAddProductCategory = () => setEditing(_ProductCategory__WEBPACK_IMPORTED_MODULE_7__["productCategoryDefaults"]);
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
     title: "Product Categories",
@@ -18001,16 +17643,12 @@ const ProductCategoriesView = () => {
     }
   })))));
 };
-
 _s(ProductCategoriesView, "AU/Kt0W+Q2PfgLGs4qJNPGoYMBU=", false, function () {
   return [useStyles];
 });
-
 _c = ProductCategoriesView;
 /* harmony default export */ __webpack_exports__["default"] = (ProductCategoriesView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProductCategoriesView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -18117,8 +17755,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -18136,24 +17773,22 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["makeSty
     cursor: "pointer"
   }
 }));
-function Results({
-  className,
-  ...rest
-}) {
+function Results(_ref) {
   _s();
-
+  let {
+    className,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [reviewRequests, setReviewRequests] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
-
   const onDeleteReviewRequest = id => {
     setReviewRequests(reviewRequests.filter(r => r.id != id));
   };
-
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/clients/review-requests").then(async response => {
-      setLoading(false); // console.log(response.data);
-
+      setLoading(false);
+      // console.log(response.data);
       setReviewRequests(response.data);
     }).catch(e => {
       // @TODO handle
@@ -18506,15 +18141,11 @@ function Results({
     }
   }, "View More")));
 }
-
 _s(Results, "WLlTIW3Sw8l+trB+awgNgeAOQnE=", false, function () {
   return [useStyles];
 });
-
 _c = Results;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -18606,7 +18237,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReviewRequestMenu; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
@@ -18624,7 +18255,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\ReviewRequestMenu.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -18635,13 +18266,12 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ReviewRequestMenu({
-  reviewRequest,
-  onDeleteReviewRequest
-}) {
+function ReviewRequestMenu(_ref) {
   _s();
-
+  let {
+    reviewRequest,
+    onDeleteReviewRequest
+  } = _ref;
   const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_9__["default"]().user;
   const [anchorEl, setAnchorEl] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
@@ -18649,18 +18279,14 @@ function ReviewRequestMenu({
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_8__["useSnackbar"])();
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const viewReviewRequest = id => navigate(`/admin/clients/request/${id}`);
-
   const copyClientCertRepoLink = id => {
     const link = `https://portal.halalwatchworld.org/client/request/${id}/certificates`;
     navigator.clipboard.writeText(link).then(() => enqueueSnackbar("Copied Client Certificate Repository Link to clipboard."), err => console.error("Could not copy link: ", err));
   };
-
   const contactClient = reviewRequest => {
     let email = reviewRequest.client_email || "";
     let subject = `Halal Watch World | RE: Review Request #${reviewRequest.id}`;
@@ -18676,7 +18302,6 @@ function ReviewRequestMenu({
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.put(`/api/client/review-request/${reviewRequest.id}/status`, data).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         if (statusTableCell) statusTableCell.textContent = statusStr;
         enqueueSnackbar("Review request status updated successfully.", {
@@ -18694,14 +18319,12 @@ function ReviewRequestMenu({
     });
     setAnchorEl(null);
   };
-
   const deleteReviewRequest = () => {
     const answer = window.confirm("Are you sure you would like to delete this review request?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.delete(`/api/client/review-request/${reviewRequest.id}`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onDeleteReviewRequest(reviewRequest.id);
         enqueueSnackbar("Review request deleted successfully.", {
@@ -18719,7 +18342,6 @@ function ReviewRequestMenu({
     });
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
     edge: "end",
     size: "small",
@@ -18839,15 +18461,11 @@ function ReviewRequestMenu({
     }
   }, "Client Certificate Repository Link"))));
 }
-
 _s(ReviewRequestMenu, "zvSaOP1yWrte1ZkMurojDOus2/0=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_8__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
 });
-
 _c = ReviewRequestMenu;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewRequestMenu");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -18945,8 +18563,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -18959,14 +18576,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ReviewListView = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Registrations" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Registrations"
+    // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -19012,16 +18628,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -19113,7 +18725,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AuditReports; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
@@ -19131,8 +18743,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\AuditReports.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -19147,12 +18758,10 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function AuditReports() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // reviewRequestId
-
   const [reports, setReports] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/review-request/${id}/audit-reports`).then(async response => {
@@ -19164,8 +18773,9 @@ function AuditReports() {
       console.error(e);
       setLoading(false);
     });
-  }, []); // file related
+  }, []);
 
+  // file related
   const [docUploadLoading, setDocUploadLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
@@ -19173,21 +18783,17 @@ function AuditReports() {
   const [doc, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const documentCopy = document && Object.assign({}, document) || null;
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpload = e => {
     const _doc = e.target.files[0];
     if (!_doc) return;
-
     if (_doc.size > _config__WEBPACK_IMPORTED_MODULE_10__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setDocUploadLoading(true);
     const formData = new FormData();
     formData.append("document", _doc);
@@ -19197,7 +18803,6 @@ function AuditReports() {
       }
     }).then(async response => {
       setDocUploadLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDoc(response.data);
@@ -19221,11 +18826,9 @@ function AuditReports() {
       });
     });
   };
-
   const handleReportDelete = id => {
     setReports(reports.filter(r => r.id != id));
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
     p: 3,
     style: {
@@ -19472,7 +19075,8 @@ function AuditReports() {
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -19507,15 +19111,11 @@ function AuditReports() {
     }
   }, "Audit Report")));
 }
-
 _s(AuditReports, "zHlaEeEJxUwX9qtBq1VfImq2zDg=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_8__["useSnackbar"]];
 });
-
 _c = AuditReports;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "AuditReports");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -19607,7 +19207,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CertificateMenu; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
@@ -19622,7 +19222,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\CertificateMenu.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -19631,31 +19231,27 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function CertificateMenu({
-  certificate,
-  onDeleteCertificate
-}) {
+function CertificateMenu(_ref) {
   _s();
-
+  let {
+    certificate,
+    onDeleteCertificate
+  } = _ref;
   const [anchorEl, setAnchorEl] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"])();
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const deleteCertificate = () => {
     const answer = window.confirm("Are you sure you would like to delete this certificate?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.delete(`/api/client/review-request/certificates/${certificate.id}`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onDeleteCertificate(certificate.id);
         enqueueSnackbar("Certificate deleted successfully.", {
@@ -19673,7 +19269,6 @@ function CertificateMenu({
     });
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
     edge: "end",
     size: "small",
@@ -19767,15 +19362,11 @@ function CertificateMenu({
     }
   }, "Delete"))));
 }
-
 _s(CertificateMenu, "zvSaOP1yWrte1ZkMurojDOus2/0=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
 });
-
 _c = CertificateMenu;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "CertificateMenu");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -19867,7 +19458,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReportMenu; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
@@ -19882,7 +19473,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\ReportMenu.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -19891,31 +19482,27 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ReportMenu({
-  report,
-  onDeleteReport
-}) {
+function ReportMenu(_ref) {
   _s();
-
+  let {
+    report,
+    onDeleteReport
+  } = _ref;
   const [anchorEl, setAnchorEl] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"])();
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const deleteReport = () => {
     const answer = window.confirm("Are you sure you would like to delete this report?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.delete(`/api/client/review-request/reports/${report.id}`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onDeleteReport(report.id);
         enqueueSnackbar("Report deleted successfully.", {
@@ -19933,7 +19520,6 @@ function ReportMenu({
     });
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
     edge: "end",
     size: "small",
@@ -20027,15 +19613,11 @@ function ReportMenu({
     }
   }, "Delete"))));
 }
-
 _s(ReportMenu, "zvSaOP1yWrte1ZkMurojDOus2/0=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
 });
-
 _c = ReportMenu;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReportMenu");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -20127,7 +19709,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RequestCertificates; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
@@ -20145,8 +19727,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\RequestCertificates.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -20161,12 +19742,10 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function RequestCertificates() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // reviewRequestId
-
   const [certificates, setCertificates] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/review-request/${id}/certificates`).then(async response => {
@@ -20178,8 +19757,9 @@ function RequestCertificates() {
       console.error(e);
       setLoading(false);
     });
-  }, []); // file related
+  }, []);
 
+  // file related
   const [docUploadLoading, setDocUploadLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
@@ -20187,21 +19767,17 @@ function RequestCertificates() {
   const [doc, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const documentCopy = document && Object.assign({}, document) || null;
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpload = e => {
     const _doc = e.target.files[0];
     if (!_doc) return;
-
     if (_doc.size > _config__WEBPACK_IMPORTED_MODULE_10__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setDocUploadLoading(true);
     const formData = new FormData();
     formData.append("document", _doc);
@@ -20211,7 +19787,6 @@ function RequestCertificates() {
       }
     }).then(async response => {
       setDocUploadLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDoc(response.data);
@@ -20235,11 +19810,9 @@ function RequestCertificates() {
       });
     });
   };
-
   const handleCertificateDelete = id => {
     setCertificates(certificates.filter(r => r.id != id));
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
     p: 3,
     style: {
@@ -20508,7 +20081,8 @@ function RequestCertificates() {
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -20542,15 +20116,11 @@ function RequestCertificates() {
     }
   }, "Certificate")));
 }
-
 _s(RequestCertificates, "hjBnqxcOJHQ5V0yJjz0F+GEhlDE=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_8__["useSnackbar"]];
 });
-
 _c = RequestCertificates;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "RequestCertificates");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -20642,7 +20212,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReviewReports; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
@@ -20660,8 +20230,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\ReviewReports.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -20676,12 +20245,10 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function ReviewReports() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // reviewRequestId
-
   const [reports, setReports] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/review-request/${id}/review-reports`).then(async response => {
@@ -20693,8 +20260,9 @@ function ReviewReports() {
       console.error(e);
       setLoading(false);
     });
-  }, []); // file related
+  }, []);
 
+  // file related
   const [docUploadLoading, setDocUploadLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
@@ -20702,21 +20270,17 @@ function ReviewReports() {
   const [doc, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const documentCopy = document && Object.assign({}, document) || null;
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpload = e => {
     const _doc = e.target.files[0];
     if (!_doc) return;
-
     if (_doc.size > _config__WEBPACK_IMPORTED_MODULE_10__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setDocUploadLoading(true);
     const formData = new FormData();
     formData.append("document", _doc);
@@ -20726,7 +20290,6 @@ function ReviewReports() {
       }
     }).then(async response => {
       setDocUploadLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDoc(response.data);
@@ -20750,11 +20313,9 @@ function ReviewReports() {
       });
     });
   };
-
   const handleReportDelete = id => {
     setReports(reports.filter(r => r.id != id));
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
     p: 3,
     style: {
@@ -21001,7 +20562,8 @@ function ReviewReports() {
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -21036,15 +20598,11 @@ function ReviewReports() {
     }
   }, "Review Report")));
 }
-
 _s(ReviewReports, "zHlaEeEJxUwX9qtBq1VfImq2zDg=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_8__["useSnackbar"]];
 });
-
 _c = ReviewReports;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewReports");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -21137,7 +20695,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SingleReviewRequestTabs", function() { return SingleReviewRequestTabs; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../components/Page */ "./src/components/Page.js");
 /* harmony import */ var _RequestCertificates__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./RequestCertificates */ "./src/views/admin/requests/request/RequestCertificates.tsx");
@@ -21147,16 +20705,16 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature(),
-    _s3 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature(),
+  _s3 = __webpack_require__.$Refresh$.signature();
 
 
- // import SwipeableViews from "react-swipeable-views";
+// import SwipeableViews from "react-swipeable-views";
 
 
- // import Toolbar from "../../common/Toolbar";
 
+// import Toolbar from "../../common/Toolbar";
 
 
 
@@ -21171,14 +20729,14 @@ const useStyles1 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSt
 }));
 function SingleReviewRequestView() {
   _s();
-
   const classes = useStyles1();
   return (
     /*#__PURE__*/
     // @ts-ignore
     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
       className: classes.root,
-      title: "Client" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+      title: "Client"
+      // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
       ,
       __self: this,
       __source: {
@@ -21225,11 +20783,9 @@ function SingleReviewRequestView() {
     })))))
   );
 }
-
 _s(SingleReviewRequestView, "iUcwKsj7H3p1LotITUwukOjPOtY=", false, function () {
   return [useStyles1];
 });
-
 _c = SingleReviewRequestView;
 const useStyles2 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["createStyles"])({
   root: {
@@ -21246,11 +20802,11 @@ const useStyles2 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSt
     padding: theme.spacing(3)
   }
 }));
-const defaults = {}; // @TODO add report section
+const defaults = {};
 
+// @TODO add report section
 function SingleReviewRequest() {
   _s2();
-
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
@@ -21258,9 +20814,11 @@ function SingleReviewRequest() {
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const classes = useStyles2();
   const params = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
-  const requestId = Number.parseInt(params.id); // const review: Client = data[reviewId];
+  const requestId = Number.parseInt(params.id);
+  // const review: Client = data[reviewId];
   // const [form, setForm] = useState<Client>(review);
   // const [values, setValues] = useState<Client>({} as Client);
+
   // useEffect(() => {
   //   axios
   //     .post("/api/client/" + id)
@@ -21276,6 +20834,7 @@ function SingleReviewRequest() {
   //       setLoading(false);
   //     });
   // }, []);
+
   // const handleChange = (event: any) => {
   //   setForm({
   //     ...form,
@@ -21331,13 +20890,10 @@ function SingleReviewRequest() {
     }
   })));
 }
-
 _s2(SingleReviewRequest, "P1vxp22ynd5xfSbyRe4gcs6likE=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"], useStyles2, react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"]];
 });
-
 _c2 = SingleReviewRequest;
-
 function TabPanel(props) {
   const {
     children,
@@ -21359,16 +20915,13 @@ function TabPanel(props) {
     }
   }), value === index && children);
 }
-
 _c3 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `full-width-tab-${index}`,
     "aria-controls": `full-width-tabpanel-${index}`
   };
 }
-
 const useStyles3 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
   root: {
     backgroundColor: theme.palette.background.paper
@@ -21376,19 +20929,15 @@ const useStyles3 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSt
 }));
 function SingleReviewRequestTabs() {
   _s3();
-
   const classes = useStyles3();
   const theme = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"])();
   const [value, setValue] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   const handleChangeIndex = index => {
     setValue(index);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.root,
     __self: this,
@@ -21500,15 +21049,11 @@ function SingleReviewRequestTabs() {
     }
   })));
 }
-
 _s3(SingleReviewRequestTabs, "67ZhIY4U/gr9mAurA18r85H/UwI=", false, function () {
   return [useStyles3, _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"]];
 });
-
 _c4 = SingleReviewRequestTabs;
-
 var _c, _c2, _c3, _c4;
-
 __webpack_require__.$Refresh$.register(_c, "SingleReviewRequestView");
 __webpack_require__.$Refresh$.register(_c2, "SingleReviewRequest");
 __webpack_require__.$Refresh$.register(_c3, "TabPanel");
@@ -21608,40 +21153,38 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviewers\\EditReviewer.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
-
-var Mode;
-
-(function (Mode) {
+var Mode = /*#__PURE__*/function (Mode) {
   Mode[Mode["CREATE"] = 0] = "CREATE";
   Mode[Mode["UPDATE"] = 1] = "UPDATE";
-})(Mode || (Mode = {}));
-
-const EditReviewer = ({
-  className,
-  reviewer,
-  onCancel,
-  ...rest
-}) => {
+  return Mode;
+}(Mode || {});
+const EditReviewer = _ref => {
   _s();
-
+  let {
+    className,
+    reviewer,
+    onCancel,
+    ...rest
+  } = _ref;
   const [form, setForm] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_Reviewer__WEBPACK_IMPORTED_MODULE_2__["reviewerDefaults"]);
-  const mode = reviewer.id && Mode.UPDATE || Mode.CREATE; // just for now
+  const mode = reviewer.id && Mode.UPDATE || Mode.CREATE;
 
-  reviewer = { ...reviewer,
+  // just for now
+  reviewer = {
+    ...reviewer,
     password: _Reviewer__WEBPACK_IMPORTED_MODULE_2__["reviewerDefaults"].password,
     confirmPassword: _Reviewer__WEBPACK_IMPORTED_MODULE_2__["reviewerDefaults"].confirmPassword
   };
-
   const handleChange = event => {
-    setForm({ ...form,
+    setForm({
+      ...form,
       [event.target.name]: event.target.value
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", Object.assign({
     autoComplete: "off",
     noValidate: true
@@ -22014,9 +21557,7 @@ const EditReviewer = ({
     }
   }, "Cancel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], {
     color: "secondary",
-    variant: "contained"
-    /*disabled*/
-    ,
+    variant: "contained" /*disabled*/,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
@@ -22025,14 +21566,10 @@ const EditReviewer = ({
     }
   }, mode === Mode.UPDATE && "Update" || "Create"))));
 };
-
 _s(EditReviewer, "iSxrW9oZWKj8slfxtPTajw88ml8=");
-
 _c = EditReviewer;
 /* harmony default export */ __webpack_exports__["default"] = (EditReviewer);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "EditReviewer");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -22134,8 +21671,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviewers\\Results.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -22148,36 +21684,30 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["makeSty
     marginRight: theme.spacing(2)
   }
 }));
-
-const Results = ({
-  className,
-  customers,
-  rowClick,
-  ...rest
-}) => {
+const Results = _ref => {
   _s();
-
+  let {
+    className,
+    customers,
+    rowClick,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   const [selectedCustomerIds, setSelectedCustomerIds] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const [limit, setLimit] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(10);
   const [page, setPage] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
-
   const handleSelectAll = event => {
     let newSelectedCustomerIds;
-
     if (event.target.checked) {
       newSelectedCustomerIds = customers.map(customer => customer.id);
     } else {
       newSelectedCustomerIds = [];
     }
-
     setSelectedCustomerIds(newSelectedCustomerIds);
   };
-
   const handleSelectOne = (event, id) => {
     const selectedIndex = selectedCustomerIds.indexOf(id);
     let newSelectedCustomerIds = [];
-
     if (selectedIndex === -1) {
       newSelectedCustomerIds = newSelectedCustomerIds.concat(selectedCustomerIds, id);
     } else if (selectedIndex === 0) {
@@ -22187,18 +21717,14 @@ const Results = ({
     } else if (selectedIndex > 0) {
       newSelectedCustomerIds = newSelectedCustomerIds.concat(selectedCustomerIds.slice(0, selectedIndex), selectedCustomerIds.slice(selectedIndex + 1));
     }
-
     setSelectedCustomerIds(newSelectedCustomerIds);
   };
-
   const handleLimitChange = event => {
     setLimit(event.target.value);
   };
-
   const handlePageChange = (event, newPage) => {
     setPage(newPage);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Card"], Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.root, className)
   }, rest, {
@@ -22444,20 +21970,16 @@ const Results = ({
     }
   }));
 };
-
 _s(Results, "TJBnraLDnOIKSDTBUfOpU6qU9rI=", false, function () {
   return [useStyles];
 });
-
 _c = Results;
 Results.propTypes = {
   className: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.string,
   customers: prop_types__WEBPACK_IMPORTED_MODULE_2___default.a.array.isRequired
 };
 /* harmony default export */ __webpack_exports__["default"] = (Results);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -22664,8 +22186,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviewers\\Toolbar.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -22681,14 +22202,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     marginRight: theme.spacing(1)
   }
 }));
-
-const Toolbar = ({
-  className,
-  onAddReviewer,
-  ...rest
-}) => {
+const Toolbar = _ref => {
   _s();
-
+  let {
+    className,
+    onAddReviewer,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.root, className)
@@ -22793,11 +22313,9 @@ const Toolbar = ({
     }
   }, "Add Reviewer"))))));
 };
-
 _s(Toolbar, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = Toolbar;
 const styles = {
   toolbar: {
@@ -22809,9 +22327,7 @@ const styles = {
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (Toolbar);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Toolbar");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -23156,8 +22672,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviewers\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -23174,20 +22689,14 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ReviewerListView = () => {
   _s();
-
   const classes = useStyles();
   const [customers] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(_data__WEBPACK_IMPORTED_MODULE_6__["default"]);
   const [editing, setEditing] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
-
   const handleReviewerClick = reviewer => setEditing(reviewer);
-
   const handleEditCancel = () => setEditing(null);
-
   const handleAddReviewer = () => setEditing(_Reviewer__WEBPACK_IMPORTED_MODULE_7__["reviewerDefaults"]);
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
     title: "Reviewers",
@@ -23268,16 +22777,12 @@ const ReviewerListView = () => {
     }
   })))));
 };
-
 _s(ReviewerListView, "1m/jWIh8G+bv3Ry+TVVAze4GTC4=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewerListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewerListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewerListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -23382,8 +22887,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -23397,14 +22901,14 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["makeSty
     justifyContent: "flex-end"
   }
 }));
-function Results({
-  className,
-  data,
-  rowClick,
-  ...rest
-}) {
+function Results(_ref) {
   _s();
-
+  let {
+    className,
+    data,
+    rowClick,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   const [reviews] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(data);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Card"], Object.assign({
@@ -23660,15 +23164,11 @@ function Results({
     }
   }, "View More")));
 }
-
 _s(Results, "svS2smp9QGGk3PT6sCYq8VJ+6tY=", false, function () {
   return [useStyles];
 });
-
 _c = Results;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -23761,14 +23261,13 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-let ReviewStatus;
-
-(function (ReviewStatus) {
+let ReviewStatus = /*#__PURE__*/function (ReviewStatus) {
   ReviewStatus["APPROVED"] = "APPROVED";
   ReviewStatus["PENDING"] = "PENDING";
   ReviewStatus["REJECTED"] = "REJECTED";
   ReviewStatus["NOT_APPLICABLE"] = "NOT APPLICABLE";
-})(ReviewStatus || (ReviewStatus = {}));
+  return ReviewStatus;
+}({});
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -23865,8 +23364,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\Toolbar.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -23882,14 +23380,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     marginRight: theme.spacing(1)
   }
 }));
-
-const Toolbar = ({
-  className,
-  onAddReview,
-  ...rest
-}) => {
+const Toolbar = _ref => {
   _s();
-
+  let {
+    className,
+    onAddReview,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.root, className)
@@ -23969,11 +23466,9 @@ const Toolbar = ({
     }
   }))))));
 };
-
 _s(Toolbar, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = Toolbar;
 const styles = {
   toolbar: {
@@ -23985,9 +23480,7 @@ const styles = {
   }
 };
 /* harmony default export */ __webpack_exports__["default"] = (Toolbar);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Toolbar");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -24252,12 +23745,11 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
- // import Results from "./Results";
-
+// import Results from "./Results";
 
 
 
@@ -24270,18 +23762,14 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ReviewListView = () => {
   _s();
-
-  const classes = useStyles(); // const [customers] = useState(data);
-
+  const classes = useStyles();
+  // const [customers] = useState(data);
   const [viewing, setViewing] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
-
   const handleReviewClick = review => setViewing(review);
-
-  const handleViewCancel = () => setViewing(null); // const handleAddReview = () => setEditing(null);
-
+  const handleViewCancel = () => setViewing(null);
+  // const handleAddReview = () => setEditing(null);
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
@@ -24362,16 +23850,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "6VzI2pxkOwIPUcUozfVIZQ9q8gw=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -24478,10 +23962,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-function CertificateView({
-  review,
-  certStatus
-}) {
+function CertificateView(_ref) {
+  let {
+    review,
+    certStatus
+  } = _ref;
   switch (certStatus) {
     case CertificateStatus.ISSUED:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_2__["Alert"], {
@@ -24521,7 +24006,6 @@ function CertificateView({
           columnNumber: 11
         }
       }));
-
     case CertificateStatus.SUSPENDED:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_2__["Alert"], {
         severity: "error",
@@ -24553,7 +24037,6 @@ function CertificateView({
           columnNumber: 11
         }
       }, review.businessName), "'s certificate has been suspended. Use the drop down menu to issue certificate.");
-
     case CertificateStatus.PENDING:
     default:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_2__["Alert"], {
@@ -24589,14 +24072,12 @@ function CertificateView({
   }
 }
 _c = CertificateView;
-let CertificateStatus;
-
-(function (CertificateStatus) {
+let CertificateStatus = /*#__PURE__*/function (CertificateStatus) {
   CertificateStatus[CertificateStatus["ISSUED"] = 0] = "ISSUED";
   CertificateStatus[CertificateStatus["PENDING"] = 1] = "PENDING";
   CertificateStatus[CertificateStatus["SUSPENDED"] = 2] = "SUSPENDED";
-})(CertificateStatus || (CertificateStatus = {}));
-
+  return CertificateStatus;
+}({});
 function CertificateList() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["List"], {
     style: {
@@ -24718,11 +24199,8 @@ function CertificateList() {
     }
   })))));
 }
-
 _c2 = CertificateList;
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "CertificateView");
 __webpack_require__.$Refresh$.register(_c2, "CertificateList");
 
@@ -24828,12 +24306,14 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import { Download as DownloadIcon } from "react-feather";
+
+// import { Download as DownloadIcon } from "react-feather";
 
 
-function DocumentsView({
-  review
-}) {
+function DocumentsView(_ref) {
+  let {
+    review
+  } = _ref;
   const documents = data[15];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["List"], {
     __self: this,
@@ -24908,18 +24388,17 @@ function DocumentsView({
   }))))));
 }
 _c = DocumentsView;
-let DocumentStatus;
-
-(function (DocumentStatus) {
+let DocumentStatus = /*#__PURE__*/function (DocumentStatus) {
   DocumentStatus["APPROVED"] = "APPROVED";
   DocumentStatus["PENDING"] = "PENDING";
   DocumentStatus["REJECTED"] = "REJECTED";
   DocumentStatus["NOT_APPLICABLE"] = "NOT APPLICABLE";
-})(DocumentStatus || (DocumentStatus = {}));
-
-function DocumentHeader({
-  document
-}) {
+  return DocumentStatus;
+}({});
+function DocumentHeader(_ref2) {
+  let {
+    document
+  } = _ref2;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       display: "flex",
@@ -24961,7 +24440,6 @@ function DocumentHeader({
     }
   })));
 }
-
 _c2 = DocumentHeader;
 const data = {
   15: [{
@@ -25016,9 +24494,7 @@ const data = {
     expire_date: Date.now()
   }]
 };
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "DocumentsView");
 __webpack_require__.$Refresh$.register(_c2, "DocumentHeader");
 
@@ -25125,7 +24601,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\Header.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -25135,25 +24611,21 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function Header({
-  review,
-  certStatus,
-  setCertStatus
-}) {
+function Header(_ref) {
   _s();
-
+  let {
+    review,
+    certStatus,
+    setCertStatus
+  } = _ref;
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleClose = certStatus => {
     setCertStatus(certStatus);
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CardHeader"], {
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       style: {
@@ -25351,13 +24823,9 @@ function Header({
     }
   });
 }
-
 _s(Header, "+aMDa7FPcESUyQDF1vq0RSMn4/k=");
-
 _c = Header;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Header");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -25463,11 +24931,13 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import { Download as DownloadIcon } from "react-feather";
 
-function ProductsView({
-  review
-}) {
+// import { Download as DownloadIcon } from "react-feather";
+
+function ProductsView(_ref) {
+  let {
+    review
+  } = _ref;
   const documents = data[15];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["List"], {
     __self: this,
@@ -25551,9 +25021,7 @@ const data = {
     date: Date.now()
   }]
 };
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProductsView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -25658,12 +25126,14 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import { Download as DownloadIcon } from "react-feather";
+
+// import { Download as DownloadIcon } from "react-feather";
 
 
-function ReportsView({
-  review
-}) {
+function ReportsView(_ref) {
+  let {
+    review
+  } = _ref;
   const reports = data[15];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["List"], {
     __self: this,
@@ -25738,18 +25208,17 @@ function ReportsView({
   }))))));
 }
 _c = ReportsView;
-let ReportStatus;
-
-(function (ReportStatus) {
+let ReportStatus = /*#__PURE__*/function (ReportStatus) {
   ReportStatus["APPROVED"] = "APPROVED";
   ReportStatus["PENDING"] = "PENDING";
   ReportStatus["REJECTED"] = "REJECTED";
   ReportStatus["NOT_APPLICABLE"] = "NOT APPLICABLE";
-})(ReportStatus || (ReportStatus = {}));
-
-function ReportHeader({
-  report
-}) {
+  return ReportStatus;
+}({});
+function ReportHeader(_ref2) {
+  let {
+    report
+  } = _ref2;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       display: "flex",
@@ -25791,7 +25260,6 @@ function ReportHeader({
     }
   })));
 }
-
 _c2 = ReportHeader;
 const data = {
   15: [{
@@ -25816,9 +25284,7 @@ const data = {
     expire_date: Date.now()
   }]
 };
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "ReportsView");
 __webpack_require__.$Refresh$.register(_c2, "ReportHeader");
 
@@ -25922,7 +25388,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -25932,23 +25398,20 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ViewReview({
-  className,
-  review,
-  onCancel,
-  ...rest
-}) {
+function ViewReview(_ref) {
   _s();
-
+  let {
+    className,
+    review,
+    onCancel,
+    ...rest
+  } = _ref;
   // const classes = useStyles();
   const [value, setValue] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
   const [certStatus, setCertStatus] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(_CertificateView__WEBPACK_IMPORTED_MODULE_7__["CertificateStatus"].PENDING);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
     __self: this,
     __source: {
@@ -25977,12 +25440,14 @@ function ViewReview({
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tabs"], {
     value: value,
-    onChange: handleChange // variant="scrollable"
+    onChange: handleChange
+    // variant="scrollable"
     // scrollButtons="auto"
     ,
     indicatorColor: "primary",
     textColor: "primary",
-    centered: true // aria-label="simple tabs example"
+    centered: true
+    // aria-label="simple tabs example"
     ,
     __self: this,
     __source: {
@@ -26120,11 +25585,8 @@ function ViewReview({
     }
   }))));
 }
-
 _s(ViewReview, "2ECjX3f3pMZZ+NPctQVXElvqix4=");
-
 _c = ViewReview;
-
 function TabPanel(props) {
   const {
     children,
@@ -26158,18 +25620,14 @@ function TabPanel(props) {
     }
   }, children));
 }
-
 _c2 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`
   };
 }
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "ViewReview");
 __webpack_require__.$Refresh$.register(_c2, "TabPanel");
 
@@ -26276,11 +25734,9 @@ function getColorByReviewStatus(status) {
     case _Review__WEBPACK_IMPORTED_MODULE_1__["ReviewStatus"].APPROVED:
     case _review_DocumentsView__WEBPACK_IMPORTED_MODULE_2__["DocumentStatus"].APPROVED:
       return "primary";
-
     case _Review__WEBPACK_IMPORTED_MODULE_1__["ReviewStatus"].REJECTED:
     case _review_DocumentsView__WEBPACK_IMPORTED_MODULE_2__["DocumentStatus"].REJECTED:
       return "secondary";
-
     case _Review__WEBPACK_IMPORTED_MODULE_1__["ReviewStatus"].PENDING:
     case _review_DocumentsView__WEBPACK_IMPORTED_MODULE_2__["DocumentStatus"].PENDING:
     case _review_DocumentsView__WEBPACK_IMPORTED_MODULE_2__["DocumentStatus"].NOT_APPLICABLE:
@@ -26391,30 +25847,27 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\certificates\\RequestHardCopyButton.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
 
-
-function RequestHardCopyButton({
-  certificateId
-}) {
+function RequestHardCopyButton(_ref) {
   _s();
-
+  let {
+    certificateId
+  } = _ref;
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [promptOpen, setPromptOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
-
   const handleHardCopyRequest = () => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/certificate/${certificateId}/request-hard-copy`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setPromptOpen(true);
       } else enqueueSnackbar("Failed to request certificate hard copy.", {
@@ -26428,7 +25881,6 @@ function RequestHardCopyButton({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_PromptDialog__WEBPACK_IMPORTED_MODULE_4__["default"], {
     open: promptOpen,
     onOk: () => setPromptOpen(false),
@@ -26470,15 +25922,11 @@ function RequestHardCopyButton({
     }
   }, "Request Hard Copy"));
 }
-
 _s(RequestHardCopyButton, "aKG/rVRkPLrGpx+ZSFgvQbGBGHA=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = RequestHardCopyButton;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "RequestHardCopyButton");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -26587,8 +26035,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\certificates\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -26601,7 +26048,6 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function Certificates() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [certificates, setCertificates] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const [promptOpen, setPromptOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
@@ -27006,13 +26452,9 @@ function Certificates() {
     }
   }, "View More")));
 }
-
 _s(Certificates, "oS2eUxf4XaZqs6heMjyhHXOxfY0=");
-
 _c = Certificates;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Certificates");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -27111,13 +26553,12 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\certificates\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
- // import Toolbar from "../common/Toolbar";
-
+// import Toolbar from "../common/Toolbar";
 
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
   root: {
@@ -27128,14 +26569,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
   }
 }));
 let reversedData = [..._common_data__WEBPACK_IMPORTED_MODULE_4__["reviews"]].reverse();
-
 const ReviewListView = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Certificates" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Certificates"
+    // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -27143,9 +26583,7 @@ const ReviewListView = () => {
       lineNumber: 24,
       columnNumber: 5
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Container"]
-  /*maxWidth="md"*/
-  , {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Container"] /*maxWidth="md"*/, {
     style: {
       marginLeft: 0
     },
@@ -27183,16 +26621,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -27688,7 +27122,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "CurrentRequestSteps", function() { return CurrentRequestSteps; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
 /* harmony import */ var _material_ui_icons_CheckCircle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/CheckCircle */ "./node_modules/@material-ui/icons/CheckCircle.js");
@@ -27702,8 +27136,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\CurrentRequestProgress.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -27712,13 +27146,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-
-const CurrentRequestProgress = ({
-  dashboardStats
-}) => {
+const CurrentRequestProgress = _ref => {
   _s();
-
+  let {
+    dashboardStats
+  } = _ref;
   const classes = useStyles1();
   const theme = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"])();
   const body = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Card"], {
@@ -27809,17 +27241,15 @@ const CurrentRequestProgress = ({
     }
   }, body) || body;
 };
-
 _s(CurrentRequestProgress, "KqsuGf3FnFNq6eN80CYbjOwL8vo=", false, function () {
   return [useStyles1, _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"]];
 });
-
 _c = CurrentRequestProgress;
 /* harmony default export */ __webpack_exports__["default"] = (CurrentRequestProgress);
-
-function ProgressIndicator({
-  progress
-}) {
+function ProgressIndicator(_ref2) {
+  let {
+    progress
+  } = _ref2;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       position: "relative",
@@ -27855,7 +27285,6 @@ function ProgressIndicator({
     }
   }));
 }
-
 _c2 = ProgressIndicator;
 const useStyles1 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(() => ({
   root: {
@@ -27867,16 +27296,14 @@ const useStyles1 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSt
     width: 56
   }
 }));
-
 function getSteps() {
   return ["Registration", "Review", "Registration Report", "Audit & Report", "Contract & Certificate"];
 }
-
-function CurrentRequestSteps({
-  dashboardStats
-}) {
+function CurrentRequestSteps(_ref3) {
   _s2();
-
+  let {
+    dashboardStats
+  } = _ref3;
   const [activeStep, setActiveStep] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
   const steps = getSteps();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -28164,13 +27591,9 @@ function CurrentRequestSteps({
     }
   }, "Contract & Certificate"))) || null);
 }
-
 _s2(CurrentRequestSteps, "cJXWosTT0XUh3gGn3cCcv/Y+Hws=");
-
 _c3 = CurrentRequestSteps;
-
 var _c, _c2, _c3;
-
 __webpack_require__.$Refresh$.register(_c, "CurrentRequestProgress");
 __webpack_require__.$Refresh$.register(_c2, "ProgressIndicator");
 __webpack_require__.$Refresh$.register(_c3, "CurrentRequestSteps");
@@ -28263,25 +27686,23 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\FacilitiesStat.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
-
-
-const FacilitiesStat = ({
-  count
-}) => {
+const FacilitiesStat = _ref => {
   _s();
-
+  let {
+    count
+  } = _ref;
   const classes = useStyles();
   const theme = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"])();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
@@ -28403,11 +27824,9 @@ const FacilitiesStat = ({
     }
   }, "View Facilities")))));
 };
-
 _s(FacilitiesStat, "VtevrTi9kvKTG+vqc/SYVHiEGOM=", false, function () {
   return [useStyles, _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"]];
 });
-
 _c = FacilitiesStat;
 /* harmony default export */ __webpack_exports__["default"] = (FacilitiesStat);
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(() => ({
@@ -28420,9 +27839,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     width: 56
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "FacilitiesStat");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -28514,7 +27931,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Results; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
@@ -28529,8 +27946,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\LatestReviews.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -28549,20 +27965,18 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["makeSty
     cursor: "pointer"
   }
 }));
-function Results({
-  className,
-  ...rest
-}) {
+function Results(_ref) {
   _s();
-
+  let {
+    className,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [reviewRequests, setReviewRequests] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
-
   const onDeleteReviewRequest = id => {
     setReviewRequests(reviewRequests.filter(r => r.id != id));
   };
-
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("/api/client/dashboard/latest-requests").then(async response => {
       setLoading(false);
@@ -28743,7 +28157,6 @@ function Results({
     }
   }, reviewRequests.map((request, i) => {
     var _request$reviewer, _request$reviewer2;
-
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TableRow"], {
       hover: true,
       key: request.id,
@@ -28875,15 +28288,11 @@ function Results({
     }
   }, "You currently have no registrations."))));
 }
-
 _s(Results, "WLlTIW3Sw8l+trB+awgNgeAOQnE=", false, function () {
   return [useStyles];
 });
-
 _c = Results;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -28974,25 +28383,23 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\ProductsStat.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
-
-
-const ProductsStat = ({
-  count
-}) => {
+const ProductsStat = _ref => {
   _s();
-
+  let {
+    count
+  } = _ref;
   const classes = useStyles();
   const theme = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"])();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
@@ -29114,11 +28521,9 @@ const ProductsStat = ({
     }
   }, "View Products")))));
 };
-
 _s(ProductsStat, "VtevrTi9kvKTG+vqc/SYVHiEGOM=", false, function () {
   return [useStyles, _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"]];
 });
-
 _c = ProductsStat;
 /* harmony default export */ __webpack_exports__["default"] = (ProductsStat);
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(() => ({
@@ -29131,9 +28536,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     width: 56
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProductsStat");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -29225,7 +28628,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Tasks; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _material_ui_icons_KeyboardArrowRight__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/KeyboardArrowRight */ "./node_modules/@material-ui/icons/KeyboardArrowRight.js");
 /* harmony import */ var _material_ui_icons_KeyboardArrowRight__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_KeyboardArrowRight__WEBPACK_IMPORTED_MODULE_3__);
@@ -29243,7 +28646,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\Tasks.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -29253,16 +28656,15 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function Tasks({
-  hasHed = false,
-  checkStartFirstRequest = false,
-  hasExpiredCerts = false,
-  hasNewCerts = false,
-  hasFailedSubmissions = false
-}) {
+function Tasks(_ref) {
   _s();
-
+  let {
+    hasHed = false,
+    checkStartFirstRequest = false,
+    hasExpiredCerts = false,
+    hasNewCerts = false,
+    hasFailedSubmissions = false
+  } = _ref;
   const theme = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"])();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Card"], {
     style: {
@@ -29608,17 +29010,15 @@ function Tasks({
     }
   })) || null));
 }
-
 _s(Tasks, "VrMvFCCB9Haniz3VCRPNUiCauHs=", false, function () {
   return [_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"]];
 });
-
 _c = Tasks;
-
-function ListItemLink({
-  href,
-  ...rest
-}) {
+function ListItemLink(_ref2) {
+  let {
+    href,
+    ...rest
+  } = _ref2;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: href,
     __self: this,
@@ -29638,11 +29038,8 @@ function ListItemLink({
     }
   })));
 }
-
 _c2 = ListItemLink;
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "Tasks");
 __webpack_require__.$Refresh$.register(_c2, "ListItemLink");
 
@@ -29752,8 +29149,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 // @ts-nocheck
 
 
@@ -29769,7 +29165,6 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function Dashboard() {
   _s();
-
   const classes = useStyles();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [dashboardStats, setDashboardStats] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
@@ -29791,9 +29186,12 @@ function Dashboard() {
   });
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/client/dashboard").then(async response => {
-      setLoading(false); // console.log(response.data);
-
-      setDashboardStats(response.data);
+      setLoading(false);
+      // console.log(response.data);
+      setDashboardStats({
+        ...dashboardStats,
+        ...response.data
+      });
     }).catch(e => {
       // @TODO handle
       console.error(e);
@@ -29864,13 +29262,13 @@ function Dashboard() {
       lineNumber: 65,
       columnNumber: 17
     }
-  }))), dashboardStats.account_status === "DECOMMISSIONED" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+  }))) || null, dashboardStats.account_status === "DECOMMISSIONED" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
     item: true,
     md: 12,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70,
+      lineNumber: 71,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_10__["Alert"], {
@@ -29878,31 +29276,31 @@ function Dashboard() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 71,
+      lineNumber: 72,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_10__["AlertTitle"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
+      lineNumber: 73,
       columnNumber: 17
     }
   }, "ACCOUNT DECOMMISSIONED"), "Your account has been decommissioned due to a breach of contract. As a consequence, you will not be able to access this portal. For more information, contact", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 77,
       columnNumber: 17
     }
   }, "support@halalwatchworld.org"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AccessBlocker, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 78,
       columnNumber: 17
     }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+  }))) || null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
     item: true,
     lg: 6,
     sm: 6,
@@ -29911,7 +29309,7 @@ function Dashboard() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81,
+      lineNumber: 83,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CurrentRequestProgress__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -29919,7 +29317,7 @@ function Dashboard() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 84,
       columnNumber: 13
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
@@ -30003,22 +29401,17 @@ function Dashboard() {
     }
   })))));
 }
-
 _s(Dashboard, "DMFK2J5uF9pdXzsZ1UQA7Vz9F+s=", false, function () {
   return [useStyles];
 });
-
 _c = Dashboard;
-
 function AccessBlocker() {
   const auth = new _api_Auth__WEBPACK_IMPORTED_MODULE_11__["default"]();
-
   const onLogoutHandler = () => {
     auth.logout().then(async () => {
       window.location.href = "/";
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       position: "absolute",
@@ -30059,7 +29452,6 @@ function AccessBlocker() {
     }
   }, "Logout"));
 }
-
 _c2 = AccessBlocker;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
   root: {
@@ -30070,9 +29462,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "Dashboard");
 __webpack_require__.$Refresh$.register(_c2, "AccessBlocker");
 
@@ -30165,7 +29555,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DocumentMenu; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
@@ -30180,7 +29570,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\DocumentMenu.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -30189,32 +29579,30 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import { Document } from "../../common/types";
 
-function DocumentMenu({
-  document,
-  onDeleteDocument
-}) {
+// import { Document } from "../../common/types";
+
+function DocumentMenu(_ref) {
   _s();
-
+  let {
+    document,
+    onDeleteDocument
+  } = _ref;
   const [anchorEl, setAnchorEl] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"])();
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const deleteDocument = () => {
     const answer = window.confirm("Are you sure you would like to delete this document?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.delete(`/api/client/documents/${document.id}`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onDeleteDocument(document.id);
         enqueueSnackbar("Document deleted successfully.", {
@@ -30232,7 +29620,6 @@ function DocumentMenu({
     });
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
     edge: "end",
     size: "small",
@@ -30326,15 +29713,11 @@ function DocumentMenu({
     }
   }, "Delete"))));
 }
-
 _s(DocumentMenu, "zvSaOP1yWrte1ZkMurojDOus2/0=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
 });
-
 _c = DocumentMenu;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "DocumentMenu");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -30439,8 +29822,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\FacilityDocs.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -30450,13 +29832,12 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function FacilityDocs() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/facility/documents`).then(async response => {
-      setLoading(false); // console.log(response.data);
-
+      setLoading(false);
+      // console.log(response.data);
       setDocs(response.data.reverse());
     }).catch(e => {
       // @TODO handle
@@ -30684,13 +30065,9 @@ function FacilityDocs() {
     }
   }, "You currently have no docs. Document Docs will show here once the reviewer adds them."));
 }
-
 _s(FacilityDocs, "LPiVTm26nLyLgCdY+dbpI96fGHg=");
-
 _c = FacilityDocs;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "FacilityDocs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -30795,8 +30172,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\ManufacturerDocs.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -30806,13 +30182,12 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function ManufacturerDocs() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/manufacturer/documents`).then(async response => {
-      setLoading(false); // console.log(response.data);
-
+      setLoading(false);
+      // console.log(response.data);
       setDocs(response.data.reverse());
     }).catch(e => {
       // @TODO handle
@@ -31040,13 +30415,9 @@ function ManufacturerDocs() {
     }
   }, "You currently have no docs. Document Docs will show here once the reviewer adds them."));
 }
-
 _s(ManufacturerDocs, "LPiVTm26nLyLgCdY+dbpI96fGHg=");
-
 _c = ManufacturerDocs;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ManufacturerDocs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -31151,8 +30522,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\ProductDocs.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -31162,13 +30532,12 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function ProductDocs() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/product/documents`).then(async response => {
-      setLoading(false); // console.log(response.data);
-
+      setLoading(false);
+      // console.log(response.data);
       setDocs(response.data.reverse());
     }).catch(e => {
       // @TODO handle
@@ -31396,13 +30765,9 @@ function ProductDocs() {
     }
   }, "You currently have no docs. Document Docs will show here once the reviewer adds them."));
 }
-
 _s(ProductDocs, "LPiVTm26nLyLgCdY+dbpI96fGHg=");
-
 _c = ProductDocs;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProductDocs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -31507,8 +30872,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\RecentDocs.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -31518,13 +30882,12 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function RecentDocs() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/documents/recent`).then(async response => {
-      setLoading(false); // console.log(response.data);
-
+      setLoading(false);
+      // console.log(response.data);
       setDocs(response.data);
     }).catch(e => {
       // @TODO handle
@@ -31752,13 +31115,9 @@ function RecentDocs() {
     }
   }, "You currently have no docs. Document Docs will show here once the reviewer adds them."));
 }
-
 _s(RecentDocs, "LPiVTm26nLyLgCdY+dbpI96fGHg=");
-
 _c = RecentDocs;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "RecentDocs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -31860,8 +31219,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -31871,13 +31229,10 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function Reports() {
   _s();
-
   const [value, setValue] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
     __self: this,
     __source: {
@@ -31919,7 +31274,8 @@ function Reports() {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tabs"], {
     value: value,
-    onChange: handleChange // variant="scrollable"
+    onChange: handleChange
+    // variant="scrollable"
     // scrollButtons="auto"
     ,
     indicatorColor: "primary",
@@ -32088,11 +31444,8 @@ function Reports() {
     }
   }))));
 }
-
 _s(Reports, "qPBOvRc2Co1iWTsdTL0g7j/rpjU=");
-
 _c = Reports;
-
 function TabPanel(props) {
   const {
     children,
@@ -32121,18 +31474,14 @@ function TabPanel(props) {
     }
   }, children));
 }
-
 _c2 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`
   };
 }
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "Reports");
 __webpack_require__.$Refresh$.register(_c2, "TabPanel");
 
@@ -32242,8 +31591,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\UploadedDocs.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -32257,7 +31605,6 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function UploadedDocs() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [documents, setDocuments] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
@@ -32270,8 +31617,9 @@ function UploadedDocs() {
       console.error(e);
       setLoading(false);
     });
-  }, []); // file related
+  }, []);
 
+  // file related
   const [docUploadLoading, setDocUploadLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
@@ -32279,21 +31627,17 @@ function UploadedDocs() {
   const [doc, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const documentCopy = document && Object.assign({}, document) || null;
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpload = e => {
     const _doc = e.target.files[0];
     if (!_doc) return;
-
     if (_doc.size > _config__WEBPACK_IMPORTED_MODULE_9__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setDocUploadLoading(true);
     const formData = new FormData();
     formData.append("document", _doc);
@@ -32303,7 +31647,6 @@ function UploadedDocs() {
       }
     }).then(async response => {
       setDocUploadLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDoc(response.data);
@@ -32327,11 +31670,9 @@ function UploadedDocs() {
       });
     });
   };
-
   const handleDocumentDelete = id => {
     setDocuments(documents.filter(r => r.id != id));
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     style: {
       height: "calc(100vh - 317px)",
@@ -32506,7 +31847,8 @@ function UploadedDocs() {
       lineNumber: 162,
       columnNumber: 23
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Chip"] // label={document.type}
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Chip"]
+  // label={document.type}
   , {
     label: "NONE",
     size: "small",
@@ -32579,7 +31921,8 @@ function UploadedDocs() {
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -32613,15 +31956,11 @@ function UploadedDocs() {
     }
   }, "Document")));
 }
-
 _s(UploadedDocs, "1wg0/4AlKIuBQQBuGbU5TnqrzYQ=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"]];
 });
-
 _c = UploadedDocs;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "UploadedDocs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -32719,8 +32058,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -32733,10 +32071,8 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ReviewListView = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
@@ -32785,16 +32121,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -32901,8 +32233,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\facilities\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -32920,20 +32251,18 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["makeSty
     cursor: "pointer"
   }
 }));
-function Results({
-  className,
-  ...rest
-}) {
+function Results(_ref) {
   _s();
-
+  let {
+    className,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [facilities, setFacilities] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
-
   const onDeleteFacility = id => {
     setFacilities(facilities.filter(r => r.id != id));
   };
-
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/client/all-facilities").then(async response => {
       setLoading(false);
@@ -33317,15 +32646,11 @@ function Results({
     }
   }, "View More")));
 }
-
 _s(Results, "wMfGiOVNwm9hMxbIOrshR7OvSL0=", false, function () {
   return [useStyles];
 });
-
 _c = Results;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -33423,8 +32748,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\facilities\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -33437,14 +32761,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ReviewListView = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Facilities" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Facilities"
+    // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -33490,16 +32813,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -33601,8 +32920,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\heds\\AddHed.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -33622,31 +32940,26 @@ const Transition = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.for
   }));
 });
 _c2 = Transition;
-function AddHed({
-  onHedAdd
-}) {
+function AddHed(_ref) {
   _s();
-
+  let {
+    onHedAdd
+  } = _ref;
   const classes = useStyles();
   const [_open, _setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false); // internal
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
   const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaults);
-
   const addHedHandler = () => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/register-hed`, values).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onHedAdd(response.data);
         setValues(defaults);
-
         _setOpen(false);
-
         enqueueSnackbar("HED added successfully.", {
           variant: "success"
         });
@@ -33664,21 +32977,18 @@ function AddHed({
       });
     });
   };
-
   const handleChange = event => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [event.target.name]: event.target.value
     });
   };
-
   const handleClickOpen = () => {
     _setOpen(true);
   };
-
   const handleClose = () => {
     _setOpen(false);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
     color: "primary",
     startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_4___default.a, {
@@ -33915,11 +33225,9 @@ function AddHed({
     }
   }, "Add HED"))));
 }
-
 _s(AddHed, "AlTVlh/Kn0R1+BZRANfFHuChMwE=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c3 = AddHed;
 const defaults = {
   id: 1,
@@ -33944,9 +33252,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     overflowY: "hidden"
   }
 }));
-
 var _c, _c2, _c3;
-
 __webpack_require__.$Refresh$.register(_c, "Transition$React.forwardRef");
 __webpack_require__.$Refresh$.register(_c2, "Transition");
 __webpack_require__.$Refresh$.register(_c3, "AddHed");
@@ -34059,8 +33365,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\heds\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -34082,14 +33387,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["makeSty
     cursor: "pointer"
   }
 }));
-function Results({
-  className,
-  ...rest
-}) {
+function Results(_ref) {
   _s();
-
   var _user$profile, _user$profile2, _user$profile3, _user$profile4, _user$profile5;
-
+  let {
+    className,
+    ...rest
+  } = _ref;
   const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_11__["default"]().user;
   const classes = useStyles();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
@@ -34108,18 +33412,15 @@ function Results({
       setLoading(false);
     });
   }, []);
-
   const onAddHed = hed => {
     setHeds([...heds, hed]);
   };
-
   const onDeleteHed = id => {
     const answer = window.confirm("Are you sure you would like to delete this HED? This action is not reversible.");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/heds/" + id).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setHeds(heds.filter(r => r.hed_id != id));
         enqueueSnackbar("HED deleted successfully.", {
@@ -34136,7 +33437,6 @@ function Results({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Card"], Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(classes.root, className)
   }, rest, {
@@ -34576,15 +33876,11 @@ function Results({
     }
   })));
 }
-
 _s(Results, "21+MVyMFolX1CZA4ggb24K4LvAU=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_9__["useSnackbar"]];
 });
-
 _c = Results;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -34682,8 +33978,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\heds\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -34696,14 +33991,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const HedListView = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Halal Enforcement Directors" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Halal Enforcement Directors"
+    // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -34749,16 +34043,12 @@ const HedListView = () => {
     }
   })))));
 };
-
 _s(HedListView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = HedListView;
 /* harmony default export */ __webpack_exports__["default"] = (HedListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "HedListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -34855,8 +34145,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\help\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -34868,14 +34157,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const HelpView = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Help" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Help"
+    // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -34921,14 +34209,11 @@ const HelpView = () => {
     }
   })))));
 };
-
 _s(HelpView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = HelpView;
 /* harmony default export */ __webpack_exports__["default"] = (HelpView);
-
 function Help() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
     __self: this,
@@ -34981,9 +34266,7 @@ function Help() {
     }
   })));
 }
-
 _c2 = Help;
-
 function VCitaEmbed() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("iframe", {
     src: "https://live.vcita.com/site/HalalWatchWorldLLC/online-scheduling?service=f0g5618kbz8d57ma",
@@ -35001,11 +34284,8 @@ function VCitaEmbed() {
     }
   });
 }
-
 _c3 = VCitaEmbed;
-
 var _c, _c2, _c3;
-
 __webpack_require__.$Refresh$.register(_c, "HelpView");
 __webpack_require__.$Refresh$.register(_c2, "Help");
 __webpack_require__.$Refresh$.register(_c3, "VCitaEmbed");
@@ -35114,8 +34394,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\products\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -35133,20 +34412,18 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["makeSty
     cursor: "pointer"
   }
 }));
-function Results({
-  className,
-  ...rest
-}) {
+function Results(_ref) {
   _s();
-
+  let {
+    className,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [products, setProducts] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
-
   const onDeleteProduct = id => {
     setProducts(products.filter(r => r.id != id));
   };
-
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("/api/client/all-products").then(async response => {
       setLoading(false);
@@ -35446,15 +34723,11 @@ function Results({
     }
   }, "View More")));
 }
-
 _s(Results, "nmT4nK/VWjd1WY5/sMhPCkZf7JY=", false, function () {
   return [useStyles];
 });
-
 _c = Results;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -35552,8 +34825,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\products\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -35566,14 +34838,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ReviewListView = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Products" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Products"
+    // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -35619,16 +34890,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -35720,7 +34987,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProfileCard; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
@@ -35730,20 +34997,19 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\profile\\ProfileCard.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
 
-
-function ProfileCard({
-  profile,
-  role
-}) {
+function ProfileCard(_ref) {
   _s();
-
+  let {
+    profile,
+    role
+  } = _ref;
   const classes = useStyles();
   const {
     enqueueSnackbar
@@ -35752,7 +35018,6 @@ function ProfileCard({
   const [imgSrc, setImgSrc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const sidenavAvatarEl = document.getElementById("sidenav-avatar");
   const formData = new FormData();
-
   const handleImageSelect = imgSrc => {
     setLoading(true);
     fetch(imgSrc).then(async res => {
@@ -35763,7 +35028,6 @@ function ProfileCard({
         }
       }).then(async response => {
         setLoading(false);
-
         if (response.status == 200 || response.status == 201) {
           setImgSrc(imgSrc);
           if (sidenavAvatarEl) sidenavAvatarEl.innerHTML = `<img src="${imgSrc}" class="MuiAvatar-img">`;
@@ -35785,7 +35049,6 @@ function ProfileCard({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Card"], {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.root),
     __self: this,
@@ -35895,11 +35158,9 @@ function ProfileCard({
     }
   }, "Edit Profile"))));
 }
-
 _s(ProfileCard, "XGd1nRtBumYEmI6L1ABr9SvzaoM=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"]];
 });
-
 _c = ProfileCard;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["makeStyles"])(() => ({
   root: {},
@@ -35908,9 +35169,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["makeSty
     width: 100
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProfileCard");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -36009,18 +35268,16 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\profile\\ProfileDetails.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
-
-
-const ProfileDetails = ({
-  setProfile
-}) => {
+const ProfileDetails = _ref => {
   _s();
-
+  let {
+    setProfile
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
@@ -36037,19 +35294,17 @@ const ProfileDetails = ({
       setLoading(false);
     });
   }, []);
-
   const handleChange = event => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [event.target.name]: event.target.value
     });
   };
-
   const onSubmitHandler = () => {
     setLoading(true);
     setProfile(values);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.put("/api/profile", values).then(async response => {
       setLoading(false);
-
       if (response.status == 200) {
         const profileNameTag = document.getElementById("profile-nametag");
         if (profileNameTag) profileNameTag.textContent = `${values.first_name} ${values.last_name}`;
@@ -36068,7 +35323,6 @@ const ProfileDetails = ({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     autoComplete: "off",
     noValidate: true,
@@ -36092,7 +35346,8 @@ const ProfileDetails = ({
       lineNumber: 76,
       columnNumber: 21
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardHeader"] // subheader="The information can be edited"
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardHeader"]
+  // subheader="The information can be edited"
   , {
     title: "Profile",
     __self: undefined,
@@ -36352,11 +35607,9 @@ const ProfileDetails = ({
     }
   }))))));
 };
-
 _s(ProfileDetails, "2lzOAqwYl6gQYwJbeaG+VRJ216E=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = ProfileDetails;
 const defaults = {
   id: 0,
@@ -36375,9 +35628,7 @@ const defaults = {
   updated_at: ""
 };
 /* harmony default export */ __webpack_exports__["default"] = (ProfileDetails);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProfileDetails");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -36479,20 +35730,19 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\profile\\edit\\ProfileCard.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
 
-
-function ProfileCard({
-  profile,
-  role
-}) {
+function ProfileCard(_ref) {
   _s();
-
+  let {
+    profile,
+    role
+  } = _ref;
   const classes = useStyles();
   const {
     enqueueSnackbar
@@ -36501,7 +35751,6 @@ function ProfileCard({
   const [imgSrc, setImgSrc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const sidenavAvatarEl = document.getElementById("sidenav-avatar");
   const formData = new FormData();
-
   const handleImageSelect = imgSrc => {
     setLoading(true);
     fetch(imgSrc).then(async res => {
@@ -36512,7 +35761,6 @@ function ProfileCard({
         }
       }).then(async response => {
         setLoading(false);
-
         if (response.status == 200 || response.status == 201) {
           console.log(response.data);
           setImgSrc(imgSrc);
@@ -36535,7 +35783,6 @@ function ProfileCard({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Card"], {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(classes.root),
     __self: this,
@@ -36637,11 +35884,9 @@ function ProfileCard({
     }
   })));
 }
-
 _s(ProfileCard, "XGd1nRtBumYEmI6L1ABr9SvzaoM=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c = ProfileCard;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(() => ({
   root: {},
@@ -36650,9 +35895,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeSty
     width: 100
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProfileCard");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -36756,8 +35999,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\profile\\edit\\ProfileDetails.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -36765,13 +36008,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-
-const ProfileDetails = ({
-  setProfile
-}) => {
+const ProfileDetails = _ref => {
   _s();
-
+  let {
+    setProfile
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
@@ -36789,27 +36030,26 @@ const ProfileDetails = ({
       setLoading(false);
     });
   }, []);
-
   const handleChange = event => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [event.target.name]: event.target.value
     });
   };
-
   const setHeds = heds => {
-    setValues({ ...values // heds: JSON.stringify(heds),
-
+    setValues({
+      ...values
+      // heds: JSON.stringify(heds),
     });
   };
 
   const onSubmitHandler = () => {
     setLoading(true);
-    setProfile(values); // @ts-ignore
-
+    setProfile(values);
+    // @ts-ignore
     delete values.avatar;
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.put("/api/profile", values).then(async response => {
       setLoading(false);
-
       if (response.status == 200) {
         const profileNameTag = document.getElementById("profile-nametag");
         if (profileNameTag) profileNameTag.textContent = `${values.first_name} ${values.last_name}`;
@@ -36828,7 +36068,6 @@ const ProfileDetails = ({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     autoComplete: "off",
     noValidate: true,
@@ -37133,58 +36372,48 @@ const ProfileDetails = ({
     }
   }, "Update"))));
 };
-
 _s(ProfileDetails, "2lzOAqwYl6gQYwJbeaG+VRJ216E=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = ProfileDetails;
-
-function HedSelector({
-  defaultHeds = [],
-  setHeds
-}) {
+function HedSelector(_ref2) {
   _s2();
+  let {
+    defaultHeds = [],
+    setHeds
+  } = _ref2;
+  const [heds, _setHeds] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaultHeds);
 
-  const [heds, _setHeds] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaultHeds); // useEffect(() => {
+  // useEffect(() => {
   //   _setHeds(defaultHeds);
   // }, [defaultHeds]);
 
   console.log(defaultHeds);
   console.log(heds);
-
   const addHed = () => {
     let update = [...heds, {
       name: "",
       phone_number: "",
       email: ""
     }];
-
     _setHeds(update);
-
     setHeds(update);
   };
-
   const deleteHed = i => {
     heds.splice(i, 1);
     let update = [...heds];
-
     _setHeds(update);
-
     setHeds(update);
   };
-
   const handleChange = (i, event) => {
     const prevHed = heds[i];
-    const update = Object(_reviewer_common_utils__WEBPACK_IMPORTED_MODULE_6__["insert"])(heds, i, { ...prevHed,
+    const update = Object(_reviewer_common_utils__WEBPACK_IMPORTED_MODULE_6__["insert"])(heds, i, {
+      ...prevHed,
       [event.target.name]: event.target.value
     });
-
     _setHeds(update);
-
     setHeds(update);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
     variant: "h3",
     __self: this,
@@ -37289,7 +36518,8 @@ function HedSelector({
     fullWidth: true,
     label: "Halal Enforcement Director Name",
     name: "name",
-    onChange: e => handleChange(i, e) // // required
+    onChange: e => handleChange(i, e)
+    // // required
     ,
     value: hed.name,
     variant: "outlined",
@@ -37405,7 +36635,8 @@ function HedSelector({
         lineNumber: 352,
         columnNumber: 22
       }
-    }) // style={{ marginTop: 20 }}
+    })
+    // style={{ marginTop: 20 }}
     ,
     __self: this,
     __source: {
@@ -37415,9 +36646,7 @@ function HedSelector({
     }
   }, heds.length > 0 && "More Directors" || "Halal Enforcement Director")));
 }
-
 _s2(HedSelector, "Avglf2AvPkh64mMJLevFHYaOpn8=");
-
 _c2 = HedSelector;
 const defaults = {
   id: 0,
@@ -37436,9 +36665,7 @@ const defaults = {
   updated_at: ""
 };
 /* harmony default export */ __webpack_exports__["default"] = (ProfileDetails);
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "ProfileDetails");
 __webpack_require__.$Refresh$.register(_c2, "HedSelector");
 
@@ -37538,9 +36765,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\profile\\edit\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -37549,7 +36774,6 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 // @TODO handle avatar
 const ReviewerProfile = () => {
   _s();
-
   const [profile, setProfile] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaults);
   const classes = useStyles();
   return (
@@ -37621,13 +36845,12 @@ const ReviewerProfile = () => {
       }
     })))))
   );
-}; // @TODO move to common data
+};
 
-
+// @TODO move to common data
 _s(ReviewerProfile, "K+FDwPqDl7w8AMhoIfFuikioAqA=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewerProfile;
 const defaults = {
   id: 0,
@@ -37655,9 +36878,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
   }
 }));
 /* harmony default export */ __webpack_exports__["default"] = (ReviewerProfile);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewerProfile");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -37756,9 +36977,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\profile\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -37767,7 +36986,6 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 // @TODO handle avatar
 const ReviewerProfile = () => {
   _s();
-
   const [profile, setProfile] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaults);
   const classes = useStyles();
   return (
@@ -37839,13 +37057,12 @@ const ReviewerProfile = () => {
       }
     })))))
   );
-}; // @TODO move to common data
+};
 
-
+// @TODO move to common data
 _s(ReviewerProfile, "K+FDwPqDl7w8AMhoIfFuikioAqA=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewerProfile;
 const defaults = {
   id: 0,
@@ -37873,9 +37090,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
   }
 }));
 /* harmony default export */ __webpack_exports__["default"] = (ReviewerProfile);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewerProfile");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -37974,21 +37189,17 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\reports\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 function Reports() {
   _s();
-
   const [value, setValue] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
     __self: this,
     __source: {
@@ -38030,12 +37241,14 @@ function Reports() {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tabs"], {
     value: value,
-    onChange: handleChange // variant="scrollable"
+    onChange: handleChange
+    // variant="scrollable"
     // scrollButtons="auto"
     ,
     indicatorColor: "primary",
     textColor: "primary",
-    centered: true // aria-label="simple tabs example"
+    centered: true
+    // aria-label="simple tabs example"
     ,
     __self: this,
     __source: {
@@ -38116,11 +37329,8 @@ function Reports() {
     }
   }))));
 }
-
 _s(Reports, "qPBOvRc2Co1iWTsdTL0g7j/rpjU=");
-
 _c = Reports;
-
 function TabPanel(props) {
   const {
     children,
@@ -38149,18 +37359,14 @@ function TabPanel(props) {
     }
   }, children));
 }
-
 _c2 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`
   };
 }
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "Reports");
 __webpack_require__.$Refresh$.register(_c2, "TabPanel");
 
@@ -38275,9 +37481,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\reports\\audit\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -38349,7 +37554,6 @@ function AuditReports() {
 _c = AuditReports;
 function AuditReportsList() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [reports, setReports] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
@@ -38676,24 +37880,18 @@ function AuditReportsList() {
     }
   }, "You currently have no reports. Audit Reports will show here once the reviewer adds them."));
 }
-
 _s(AuditReportsList, "NHozPeYVuZPNtkiITJRMMAGLUK8=");
-
 _c2 = AuditReportsList;
 function AuditReportView() {
   _s2();
-
   const [open, setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
   const theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_6__["useTheme"])();
-
   const handleClickOpen = () => {
     setOpen(true);
   };
-
   const handleClose = () => {
     setOpen(false);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __self: this,
     __source: {
@@ -38753,15 +37951,11 @@ function AuditReportView() {
     }
   })));
 }
-
 _s2(AuditReportView, "3bda+PT0YzPDfCaBc1ThioJdzgo=", false, function () {
   return [_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_6__["useTheme"]];
 });
-
 _c3 = AuditReportView;
-
 var _c, _c2, _c3;
-
 __webpack_require__.$Refresh$.register(_c, "AuditReports");
 __webpack_require__.$Refresh$.register(_c2, "AuditReportsList");
 __webpack_require__.$Refresh$.register(_c3, "AuditReportView");
@@ -38861,8 +38055,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\reports\\audit\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -38875,14 +38068,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ReviewListView = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Audit Reports" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Audit Reports"
+    // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -38928,16 +38120,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -39035,8 +38223,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\reports\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -39049,10 +38236,8 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ReviewListView = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
@@ -39101,16 +38286,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -39218,8 +38399,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\reports\\review\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -39287,7 +38467,6 @@ function DocumentReports() {
 _c = DocumentReports;
 function DocumentReportsList() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [reports, setReports] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
@@ -39596,13 +38775,9 @@ function DocumentReportsList() {
     }
   }, "You currently have no reports. Registration Reports will show here once the reviewer adds them."));
 }
-
 _s(DocumentReportsList, "NHozPeYVuZPNtkiITJRMMAGLUK8=");
-
 _c2 = DocumentReportsList;
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "DocumentReports");
 __webpack_require__.$Refresh$.register(_c2, "DocumentReportsList");
 
@@ -39701,8 +38876,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\reports\\review\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -39715,14 +38889,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ReviewListView = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Registration Reports" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Registration Reports"
+    // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -39768,16 +38941,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -39869,7 +39038,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Results; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
@@ -39891,8 +39060,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -39915,21 +39083,19 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["makeSty
     cursor: "pointer"
   }
 }));
-function Results({
-  className,
-  ...rest
-}) {
+function Results(_ref) {
   _s();
-
+  let {
+    className,
+    ...rest
+  } = _ref;
   const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_11__["default"]().user;
   const classes = useStyles();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [reviewRequests, setReviewRequests] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
-
   const onDeleteReviewRequest = id => {
     setReviewRequests(reviewRequests.filter(r => r.id != id));
   };
-
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("/api/review-requests").then(async response => {
       setLoading(false);
@@ -40165,7 +39331,6 @@ function Results({
     }
   }, reviewRequests.map((request, i) => {
     var _request$hed, _request$hed2, _request$reviewer, _request$reviewer2, _request$hed3;
-
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableRow"], {
       hover: true,
       key: request.id,
@@ -40447,15 +39612,11 @@ function Results({
     }
   }, "View More")));
 }
-
 _s(Results, "WLlTIW3Sw8l+trB+awgNgeAOQnE=", false, function () {
   return [useStyles];
 });
-
 _c = Results;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -40547,7 +39708,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReviewRequestMenu; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
@@ -40571,7 +39732,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\ReviewRequestMenu.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -40585,15 +39746,13 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ReviewRequestMenu({
-  reviewRequest,
-  onDeleteReviewRequest
-}) {
+function ReviewRequestMenu(_ref) {
   _s();
-
   var _reviewRequest$hed;
-
+  let {
+    reviewRequest,
+    onDeleteReviewRequest
+  } = _ref;
   const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_12__["default"]().user;
   const [anchorEl, setAnchorEl] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
@@ -40601,17 +39760,12 @@ function ReviewRequestMenu({
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_11__["useSnackbar"])();
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const editReviewRequest = id => navigate(`/client/request/${reviewRequest.id}`);
-
   const correctReviewRequest = id => navigate(`/client/request/${reviewRequest.id}/corrections`);
-
   const viewReviewRequestCertificates = id => navigate(`/client/request/${reviewRequest.id}/certificates`);
-
   const contactSupportOrReviewer = reviewRequest => {
     let email = reviewRequest.reviewer_email || "review@halalwatchworld.org";
     let subject = `PORTAL | RE: Review Request #${reviewRequest.id}`;
@@ -40624,11 +39778,10 @@ function ReviewRequestMenu({
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/review-request/${reviewRequest.id}/unassign-hed`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         const avatar = document.querySelector(`#request-${reviewRequest.id}-hed-cell img`);
-        const text = document.querySelector(`#request-${reviewRequest.id}-hed-cell > span`); // if (avatar) avatar.setAttribute("src", "");
-
+        const text = document.querySelector(`#request-${reviewRequest.id}-hed-cell > span`);
+        // if (avatar) avatar.setAttribute("src", "");
         if (avatar) avatar.remove();
         if (text) text.innerHTML = "UNASSIGNED";
         enqueueSnackbar("Registration HED unassigned successfully.", {
@@ -40646,14 +39799,12 @@ function ReviewRequestMenu({
     });
     setAnchorEl(null);
   };
-
   const deleteReviewRequest = () => {
     const answer = window.confirm("Are you sure you would like to delete this registration?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.delete(`/api/client/review-request/${reviewRequest.id}`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onDeleteReviewRequest(reviewRequest.id);
         enqueueSnackbar("Registration deleted successfully.", {
@@ -40671,7 +39822,6 @@ function ReviewRequestMenu({
     });
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
     edge: "end",
     size: "small",
@@ -40872,15 +40022,11 @@ function ReviewRequestMenu({
     }
   }, "Contact ", reviewRequest.reviewer_email && "Reviewer" || "Support"))));
 }
-
 _s(ReviewRequestMenu, "zvSaOP1yWrte1ZkMurojDOus2/0=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_11__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
 });
-
 _c = ReviewRequestMenu;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewRequestMenu");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -40978,8 +40124,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -40992,14 +40137,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ReviewListView = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Registrations" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Registrations"
+    // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -41045,16 +40189,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -41159,7 +40299,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\AddManufacturerDoc.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -41168,36 +40308,32 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function AddManufacturerDoc({
-  manufacturerId,
-  onDocumentUpload
-}) {
+function AddManufacturerDoc(_ref) {
   _s();
-
+  let {
+    manufacturerId,
+    onDocumentUpload
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpload = e => {
     const _doc = e.target.files[0];
     if (!_doc) return;
-
     if (_doc.size > _config__WEBPACK_IMPORTED_MODULE_6__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setLoading(true);
     const formData = new FormData();
     formData.append("document", _doc);
+    formData.append("name", _doc.name);
     formData.append("type", _reviewer_common_types__WEBPACK_IMPORTED_MODULE_7__["IngredientDocumentType"].CERTIFICATE_OR_DISCLOSURE.toString());
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/manufacturer/${manufacturerId}/document`, formData, {
       headers: {
@@ -41205,13 +40341,13 @@ function AddManufacturerDoc({
       }
     }).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
-        // console.log(response.data);
-        // setDoc(response.data);
-        // setDocument(response.data);
         onDocumentUpload(response.data);
         enqueueSnackbar(`Uploaded document successfully.`, {
+          variant: "success"
+        });
+      } else if (response.status == 204) {
+        enqueueSnackbar(`Document replaced successfully.`, {
           variant: "success"
         });
       } else {
@@ -41228,12 +40364,11 @@ function AddManufacturerDoc({
       });
     });
   };
-
   if (loading) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CircularProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 88,
       columnNumber: 23
     }
   });
@@ -41243,7 +40378,8 @@ function AddManufacturerDoc({
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -41253,7 +40389,7 @@ function AddManufacturerDoc({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90,
+      lineNumber: 92,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_LoadingButton__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -41264,8 +40400,8 @@ function AddManufacturerDoc({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 117,
-        columnNumber: 22
+        lineNumber: 119,
+        columnNumber: 20
       }
     }),
     variant: "contained",
@@ -41273,20 +40409,16 @@ function AddManufacturerDoc({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113,
-      columnNumber: 9
+      lineNumber: 115,
+      columnNumber: 7
     }
   }, "Document"));
 }
-
 _s(AddManufacturerDoc, "0mCFdFANnen57Loy/Z69g+pmQ84=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = AddManufacturerDoc;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "AddManufacturerDoc");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -41387,8 +40519,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\AddProductDialog.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -41407,44 +40538,38 @@ const Transition = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.for
   }));
 });
 _c2 = Transition;
-let AddProductDialogMode;
-
-(function (AddProductDialogMode) {
+let AddProductDialogMode = /*#__PURE__*/function (AddProductDialogMode) {
   AddProductDialogMode[AddProductDialogMode["EDIT"] = 0] = "EDIT";
   AddProductDialogMode[AddProductDialogMode["ADD"] = 1] = "ADD";
-})(AddProductDialogMode || (AddProductDialogMode = {}));
-
-function AddProductDialog({
-  onProductAdd,
-  reviewRequestId,
-  facilityId,
-  addProductText = "Add Product"
-}) {
+  return AddProductDialogMode;
+}({});
+function AddProductDialog(_ref) {
   _s();
-
+  let {
+    onProductAdd,
+    reviewRequestId,
+    facilityId,
+    addProductText = "Add Product"
+  } = _ref;
   const classes = useStyles();
   const [_open, _setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false); // internal
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
-  const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaults); // inject appropriate review_request and facility IDs
+  const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaults);
 
+  // inject appropriate review_request and facility IDs
   values.review_request_id = reviewRequestId;
   values.facility_id = facilityId;
-
   const addProductHandler = () => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/product`, values).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onProductAdd(response.data);
         setValues(defaults);
-
         _setOpen(false);
-
         enqueueSnackbar("Product added successfully.", {
           variant: "success"
         });
@@ -41462,21 +40587,18 @@ function AddProductDialog({
       });
     });
   };
-
   const handleChange = event => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [event.target.name]: event.target.value
     });
   };
-
   const handleClickOpen = () => {
     _setOpen(true);
   };
-
   const handleClose = () => {
     _setOpen(false);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
     color: "primary",
     variant: "contained",
@@ -41609,11 +40731,9 @@ function AddProductDialog({
     }
   }, "Add Product"))));
 }
-
 _s(AddProductDialog, "AlTVlh/Kn0R1+BZRANfFHuChMwE=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c3 = AddProductDialog;
 const defaults = {
   id: null,
@@ -41626,7 +40746,6 @@ const defaults = {
   date: Date.now(),
   ingredients: []
 };
-
 function TabPanel(props) {
   const {
     children,
@@ -41661,24 +40780,19 @@ function TabPanel(props) {
     }
   }, children));
 }
-
 _c4 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`
   };
 }
-
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(() => ({
   dialogContentRoot: {
     overflowY: "hidden"
   }
 }));
-
 var _c, _c2, _c3, _c4;
-
 __webpack_require__.$Refresh$.register(_c, "Transition$React.forwardRef");
 __webpack_require__.$Refresh$.register(_c2, "Transition");
 __webpack_require__.$Refresh$.register(_c3, "AddProductDialog");
@@ -41786,7 +40900,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\AddProductDoc.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -41795,36 +40909,32 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function AddProductDoc({
-  productId,
-  onDocumentUpload
-}) {
+function AddProductDoc(_ref) {
   _s();
-
+  let {
+    productId,
+    onDocumentUpload
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpload = e => {
     const _doc = e.target.files[0];
     if (!_doc) return;
-
     if (_doc.size > _config__WEBPACK_IMPORTED_MODULE_6__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setLoading(true);
     const formData = new FormData();
     formData.append("document", _doc);
+    formData.append("name", _doc.name);
     formData.append("type", _reviewer_common_types__WEBPACK_IMPORTED_MODULE_7__["ProductDocumentType"].SPEC_SHEETS.toString());
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/product/${productId}/document`, formData, {
       headers: {
@@ -41832,13 +40942,13 @@ function AddProductDoc({
       }
     }).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
-        // console.log(response.data);
-        // setDoc(response.data);
-        // setDocument(response.data);
         onDocumentUpload(response.data);
         enqueueSnackbar(`Uploaded document successfully.`, {
+          variant: "success"
+        });
+      } else if (response.status == 204) {
+        enqueueSnackbar(`Document replaced successfully.`, {
           variant: "success"
         });
       } else {
@@ -41855,12 +40965,11 @@ function AddProductDoc({
       });
     });
   };
-
   if (loading) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CircularProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 82,
       columnNumber: 23
     }
   });
@@ -41870,7 +40979,8 @@ function AddProductDoc({
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -41880,7 +40990,7 @@ function AddProductDoc({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 86,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_LoadingButton__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -41891,7 +41001,7 @@ function AddProductDoc({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 114,
+        lineNumber: 113,
         columnNumber: 20
       }
     }),
@@ -41900,20 +41010,16 @@ function AddProductDoc({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 109,
       columnNumber: 7
     }
   }, "Document"));
 }
-
 _s(AddProductDoc, "0mCFdFANnen57Loy/Z69g+pmQ84=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = AddProductDoc;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "AddProductDoc");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -42017,7 +41123,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\FacilityDocs.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -42025,13 +41131,12 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function FacilityDocs({
-  facilityId,
-  style = {}
-}) {
+function FacilityDocs(_ref) {
   _s();
-
+  let {
+    facilityId,
+    style = {}
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
@@ -42040,7 +41145,6 @@ function FacilityDocs({
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/facility/${facilityId}/documents`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setDocs(response.data);
       } else {
@@ -42057,12 +41161,10 @@ function FacilityDocs({
       });
     });
   }, []);
-
   const setDocumentHandler = document => {
     setDocs([...docs, document]);
     console.log(docs);
   };
-
   const uploadDocHandler = (doc, docType, expiresAt) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -42074,7 +41176,6 @@ function FacilityDocs({
       }
     });
   };
-
   const updateDocHandler = (doc, documentId) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -42084,25 +41185,21 @@ function FacilityDocs({
       }
     });
   };
-
   const deleteDocHandler = documentId => {
     setDocs(docs.filter(d => d.id !== documentId));
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/facility/document/" + documentId);
   };
-
   const changeDateHandler = (documentId, expiresAt) => {
     const _docs = docs.map(d => {
       if (d.id !== documentId) return d;
       d.expires_at = moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss");
       return d;
     });
-
     setDocs(_docs);
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/facility/document/${documentId}/expires-at`, {
       expires_at: moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss")
     });
   };
-
   if (loading) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
     __self: this,
     __source: {
@@ -42165,15 +41262,11 @@ function FacilityDocs({
     }
   }))));
 }
-
 _s(FacilityDocs, "4tBsjWqY7xCp7qlQhCB1s/bzrNk=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c = FacilityDocs;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "FacilityDocs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -42274,20 +41367,20 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\FacilityView.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
- // import { FacilityDialogMode } from "../../clients/client/FacilityDialog";
+
+// import { FacilityDialogMode } from "../../clients/client/FacilityDialog";
 // import FacilityDetails from "../../clients/client/FacilityDetails";
 
-
-function FacilityView({
-  facilityId
-}) {
+function FacilityView(_ref) {
   _s();
-
+  let {
+    facilityId
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
@@ -42297,7 +41390,6 @@ function FacilityView({
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(`/api/client/facility/${facilityId}`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         setValues(response.data);
@@ -42315,12 +41407,10 @@ function FacilityView({
       });
     });
   }, []);
-
   const handleFacilityUpdate = () => {
     setUpdatingFacility(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/facility/${facilityId}`, values).then(async response => {
       setUpdatingFacility(false);
-
       if (response.status == 200 || response.status == 201) {
         setValues(response.data);
         enqueueSnackbar("Facility updated successfully.", {
@@ -42340,7 +41430,6 @@ function FacilityView({
       });
     });
   };
-
   return loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CircularProgress"], {
     __self: this,
     __source: {
@@ -42349,7 +41438,8 @@ function FacilityView({
       columnNumber: 17
     }
   }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FacilityDocs__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    facilityId: facilityId // style={{ maxHeight: "calc(100vh - 328px)" }}
+    facilityId: facilityId
+    // style={{ maxHeight: "calc(100vh - 328px)" }}
     ,
     __self: this,
     __source: {
@@ -42357,7 +41447,8 @@ function FacilityView({
       lineNumber: 86,
       columnNumber: 7
     }
-  }) // <Grid container spacing={3}>
+  })
+  // <Grid container spacing={3}>
   //   {/* <Grid item md={6}>
   //         <FacilityDetails
   //           mode={FacilityDialogMode.EDIT}
@@ -42374,11 +41465,9 @@ function FacilityView({
   // </Grid>
   ;
 }
-
 _s(FacilityView, "Q4Ycm1Qz2SJ7WESdcbY9gvwCeKI=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = FacilityView;
 const defaults = {
   id: null,
@@ -42393,9 +41482,7 @@ const defaults = {
   updated_at: "",
   created_at: ""
 };
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "FacilityView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -42499,7 +41586,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\ManufacturerDocs.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -42507,25 +41594,22 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ManufacturerDocs({
-  manufacturerId,
-  manufacturerName,
-  documents
-}) {
+function ManufacturerDocs(_ref) {
   _s();
-
+  let {
+    manufacturerId,
+    manufacturerName,
+    documents
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(documents);
-
   const setDocumentHandler = document => {
     setDocs([...docs, document]);
     console.log(docs);
   };
-
   const uploadDocHandler = (doc, docType, expiresAt) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -42537,7 +41621,6 @@ function ManufacturerDocs({
       }
     });
   };
-
   const updateDocHandler = (doc, documentId) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -42547,25 +41630,21 @@ function ManufacturerDocs({
       }
     });
   };
-
   const deleteDocHandler = documentId => {
     setDocs(docs.filter(d => d.id !== documentId));
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/manufacturer/document/" + documentId);
   };
-
   const changeDateHandler = (documentId, expiresAt) => {
     const _docs = docs.map(d => {
       if (d.id !== documentId) return d;
       d.expires_at = moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss");
       return d;
     });
-
     setDocs(_docs);
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/manufacturer/document/${documentId}/expires-at`, {
       expires_at: moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss")
     });
   };
-
   if (loading) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
     __self: this,
     __source: {
@@ -42593,15 +41672,11 @@ function ManufacturerDocs({
     }
   }) || null;
 }
-
 _s(ManufacturerDocs, "kupcK17Z1mpf2rIpH8LKb4tjn8Q=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c = ManufacturerDocs;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ManufacturerDocs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -42702,20 +41777,20 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\ManufacturersView.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
- // import { ManufacturerDialogMode } from "../../clients/client/ManufacturerDialog";
+
+// import { ManufacturerDialogMode } from "../../clients/client/ManufacturerDialog";
 // import ManufacturerDetails from "../../clients/client/ManufacturerDetails";
 
-
-function ManufacturersView({
-  reviewRequestId
-}) {
+function ManufacturersView(_ref) {
   _s();
-
+  let {
+    reviewRequestId
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
@@ -42724,7 +41799,6 @@ function ManufacturersView({
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/review-request/${reviewRequestId}/manufacturers`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         Metmanufacturers(response.data);
@@ -42773,7 +41847,8 @@ function ManufacturersView({
   }, manufacturers.map(manufacturer => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ManufacturerDocs__WEBPACK_IMPORTED_MODULE_4__["default"], {
     manufacturerId: manufacturer.id,
     manufacturerName: manufacturer.name,
-    documents: manufacturer.documents || [] // style={{ maxHeight: "calc(100vh - 328px)" }}
+    documents: manufacturer.documents || []
+    // style={{ maxHeight: "calc(100vh - 328px)" }}
     ,
     __self: this,
     __source: {
@@ -42783,15 +41858,11 @@ function ManufacturersView({
     }
   })));
 }
-
 _s(ManufacturersView, "IydCryhwlwq4Ku3ogVdosg/QrPE=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = ManufacturersView;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ManufacturersView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -42895,7 +41966,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\ProductDocs.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -42903,25 +41974,22 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ProductDocs({
-  productId,
-  productName,
-  documents
-}) {
+function ProductDocs(_ref) {
   _s();
-
+  let {
+    productId,
+    productName,
+    documents
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(documents);
-
   const setDocumentHandler = document => {
     setDocs([...docs, document]);
     console.log(docs);
   };
-
   const uploadDocHandler = (doc, docType, expiresAt) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -42933,7 +42001,6 @@ function ProductDocs({
       }
     });
   };
-
   const updateDocHandler = (doc, documentId) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -42943,25 +42010,21 @@ function ProductDocs({
       }
     });
   };
-
   const deleteDocHandler = documentId => {
     setDocs(docs.filter(d => d.id !== documentId));
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/product/document/" + documentId);
   };
-
   const changeDateHandler = (documentId, expiresAt) => {
     const _docs = docs.map(d => {
       if (d.id !== documentId) return d;
       d.expires_at = moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss");
       return d;
     });
-
     setDocs(_docs);
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/product/document/${documentId}/expires-at`, {
       expires_at: moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss")
     });
   };
-
   if (loading) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
     __self: this,
     __source: {
@@ -42989,15 +42052,11 @@ function ProductDocs({
     }
   }) || null;
 }
-
 _s(ProductDocs, "kupcK17Z1mpf2rIpH8LKb4tjn8Q=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c = ProductDocs;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProductDocs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -43098,20 +42157,20 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\ProductsView.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
- // import { ProductDialogMode } from "../../clients/client/ProductDialog";
+
+// import { ProductDialogMode } from "../../clients/client/ProductDialog";
 // import ProductDetails from "../../clients/client/ProductDetails";
 
-
-function ProductsView({
-  reviewRequestId
-}) {
+function ProductsView(_ref) {
   _s();
-
+  let {
+    reviewRequestId
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
@@ -43120,7 +42179,6 @@ function ProductsView({
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/review-request/${reviewRequestId}/products/docs`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         setProducts(response.data);
@@ -43169,7 +42227,8 @@ function ProductsView({
   }, products.map(product => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductDocs__WEBPACK_IMPORTED_MODULE_4__["default"], {
     productId: product.id,
     productName: product.name,
-    documents: product.documents || [] // style={{ maxHeight: "calc(100vh - 328px)" }}
+    documents: product.documents || []
+    // style={{ maxHeight: "calc(100vh - 328px)" }}
     ,
     __self: this,
     __source: {
@@ -43179,15 +42238,11 @@ function ProductsView({
     }
   })));
 }
-
 _s(ProductsView, "aTszB0D56B64wgM9odj3z4A/suk=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = ProductsView;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProductsView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -43298,8 +42353,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\UploadDocumentListItem_1.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -43312,21 +42367,20 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function UploadDocumentListItem({
-  fileTypeName,
-  document,
-  setDocument,
-  uploadHandler,
-  updateHandler,
-  deleteHandler,
-  dateChangeHandler,
-  requireExpirationDate = true,
-  showNote = false,
-  divider = false
-}) {
+function UploadDocumentListItem(_ref) {
   _s();
-
+  let {
+    fileTypeName,
+    document,
+    setDocument,
+    uploadHandler,
+    updateHandler,
+    deleteHandler,
+    dateChangeHandler,
+    requireExpirationDate = true,
+    showNote = false,
+    divider = false
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"])();
@@ -43338,7 +42392,8 @@ function UploadDocumentListItem({
   const documentCopy = document && Object.assign({}, document) || null;
   const [file, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(documentCopy);
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
-  const filename = file && "✓ Document uploaded" || document && "✓ Document uploaded" || "No file selected"; // const filename =
+  const filename = file && "✓ Document uploaded" || document && "✓ Document uploaded" || "No file selected";
+  // const filename =
   //   (file && file.path.substring(10)) ||
   //   (document && document.path.substring(10)) ||
   //   "No file selected";
@@ -43346,12 +42401,10 @@ function UploadDocumentListItem({
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleDateChange = date => {
     setLoading(true);
     if (dateChangeHandler) dateChangeHandler(document === null || document === void 0 ? void 0 : document.id, date).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // setSelectedDate(date as Date);
         enqueueSnackbar(`Document expiration date updated successfully.`, {
@@ -43371,20 +42424,16 @@ function UploadDocumentListItem({
       });
     });
   };
-
   const handleDocumentUpload = e => {
     const doc = e.target.files[0];
     if (!doc) return;
-
     if (doc.size > _config__WEBPACK_IMPORTED_MODULE_11__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setLoading(true);
     if (uploadHandler) uploadHandler(doc, defaultExpireDate).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDocs(response.data);
@@ -43407,30 +42456,24 @@ function UploadDocumentListItem({
       });
     });
   };
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpdateButton = () => {
     // @ts-ignore
     if (inputRef) updateInputRef.current.click();
   };
-
   const handleUpdateDocument = e => {
     const doc = e.target.files[0];
     if (!doc) return;
-
     if (doc.size > _config__WEBPACK_IMPORTED_MODULE_11__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setLoading(true);
     if (updateHandler) updateHandler(doc, document === null || document === void 0 ? void 0 : document.id).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDocs(response.data);
@@ -43452,21 +42495,17 @@ function UploadDocumentListItem({
       });
     });
   };
-
   const handleDeleteDocument = () => {
     const answer = window.confirm("Are you sure you would like to delete this document?");
     if (!answer) return;
     setLoading(true);
-
     if (!document || !document.id) {
       setDoc(null);
       return;
     }
-
     if (deleteHandler) deleteHandler(document.id).then(async response => {
       // console.log(response);
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setDoc(null);
         enqueueSnackbar("Document deleted successfully.", {
@@ -43483,7 +42522,6 @@ function UploadDocumentListItem({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
     style: {
       backgroundColor: (file || document) && "#fff" || "#f5f5f5"
@@ -43542,8 +42580,7 @@ function UploadDocumentListItem({
         lineNumber: 259,
         columnNumber: 15
       }
-    }, filename),
-    /* Expiration Date Field */
+    }, filename), /* Expiration Date Field */
     requireExpirationDate && (file || document) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       style: {
         display: "flex",
@@ -43572,7 +42609,8 @@ function UploadDocumentListItem({
         columnNumber: 19
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_pickers__WEBPACK_IMPORTED_MODULE_5__["KeyboardDatePicker"], {
-      id: "date-picker-dialog" // label="Date picker dialog"
+      id: "date-picker-dialog"
+      // label="Date picker dialog"
       ,
       format: "MM/dd/yyyy",
       value: defaultExpireDate,
@@ -43667,7 +42705,8 @@ function UploadDocumentListItem({
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -43715,22 +42754,17 @@ function UploadDocumentListItem({
     }
   }))));
 }
-
 _s(UploadDocumentListItem, "Qa1FDSUyXT3uJchlahseMtZ4c/g=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"]];
 });
-
 _c = UploadDocumentListItem;
-
-function DocNote({
-  note
-}) {
+function DocNote(_ref2) {
   _s2();
-
+  let {
+    note
+  } = _ref2;
   const [truncate, setTruncate] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
-
   const truncateText = input => input.length > 100 ? `${input.substring(0, 100)}...` : input;
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItemText"], {
     primary: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab_Alert__WEBPACK_IMPORTED_MODULE_10__["default"], {
       severity: "error",
@@ -43779,13 +42813,9 @@ function DocNote({
     }
   });
 }
-
 _s2(DocNote, "JX6UKFBluSmijb3sCOlLBBrj77Q=");
-
 _c2 = DocNote;
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "UploadDocumentListItem");
 __webpack_require__.$Refresh$.register(_c2, "DocNote");
 
@@ -43897,7 +42927,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\UploadDocumentListItem_2.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -43910,21 +42940,20 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function UploadDocumentListItem({
-  fileTypeName,
-  document,
-  setDocument,
-  uploadHandler,
-  updateHandler,
-  deleteHandler,
-  dateChangeHandler,
-  requireExpirationDate = true,
-  showNote = false,
-  divider = false
-}) {
+function UploadDocumentListItem(_ref) {
   _s();
-
+  let {
+    fileTypeName,
+    document,
+    setDocument,
+    uploadHandler,
+    updateHandler,
+    deleteHandler,
+    dateChangeHandler,
+    requireExpirationDate = true,
+    showNote = false,
+    divider = false
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"])();
@@ -43936,7 +42965,8 @@ function UploadDocumentListItem({
   const documentCopy = document && Object.assign({}, document) || null;
   const [file, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(documentCopy);
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
-  const filename = file && "✓ Document uploaded" || document && "✓ Document uploaded" || "No file selected"; // const filename =
+  const filename = file && "✓ Document uploaded" || document && "✓ Document uploaded" || "No file selected";
+  // const filename =
   //   (file && file.path.substring(10)) ||
   //   (document && document.path.substring(10)) ||
   //   "No file selected";
@@ -43944,12 +42974,10 @@ function UploadDocumentListItem({
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleDateChange = date => {
     setLoading(true);
     if (dateChangeHandler) dateChangeHandler(document === null || document === void 0 ? void 0 : document.id, date).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // setSelectedDate(date as Date);
         enqueueSnackbar(`Document expiration date updated successfully.`, {
@@ -43969,20 +42997,16 @@ function UploadDocumentListItem({
       });
     });
   };
-
   const handleDocumentUpload = e => {
     const doc = e.target.files[0];
     if (!doc) return;
-
     if (doc.size > _config__WEBPACK_IMPORTED_MODULE_11__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setLoading(true);
     if (uploadHandler) uploadHandler(doc, defaultExpireDate).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDocs(response.data);
@@ -44005,30 +43029,24 @@ function UploadDocumentListItem({
       });
     });
   };
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpdateButton = () => {
     // @ts-ignore
     if (inputRef) updateInputRef.current.click();
   };
-
   const handleUpdateDocument = e => {
     const doc = e.target.files[0];
     if (!doc) return;
-
     if (doc.size > _config__WEBPACK_IMPORTED_MODULE_11__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setLoading(true);
     if (updateHandler) updateHandler(doc, document === null || document === void 0 ? void 0 : document.id).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDocs(response.data);
@@ -44050,21 +43068,17 @@ function UploadDocumentListItem({
       });
     });
   };
-
   const handleDeleteDocument = () => {
     const answer = window.confirm("Are you sure you would like to delete this document?");
     if (!answer) return;
     setLoading(true);
-
     if (!document || !document.id) {
       setDoc(null);
       return;
     }
-
     if (deleteHandler) deleteHandler(document.id).then(async response => {
       // console.log(response);
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setDoc(null);
         enqueueSnackbar("Document deleted successfully.", {
@@ -44081,7 +43095,6 @@ function UploadDocumentListItem({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
     style: {
       backgroundColor: (file || document) && "#fff" || "#f5f5f5"
@@ -44107,7 +43120,8 @@ function UploadDocumentListItem({
       lineNumber: 251,
       columnNumber: 9
     }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItemText"] // style={{ maxWidth: 296 }}
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItemText"]
+  // style={{ maxWidth: 296 }}
   , {
     primary: fileTypeName,
     secondary: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -44138,8 +43152,7 @@ function UploadDocumentListItem({
         lineNumber: 259,
         columnNumber: 15
       }
-    }, filename),
-    /* Expiration Date Field */
+    }, filename), /* Expiration Date Field */
     requireExpirationDate && (file || document) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       style: {
         display: "flex",
@@ -44168,7 +43181,8 @@ function UploadDocumentListItem({
         columnNumber: 19
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_pickers__WEBPACK_IMPORTED_MODULE_5__["KeyboardDatePicker"], {
-      id: "date-picker-dialog" // label="Date picker dialog"
+      id: "date-picker-dialog"
+      // label="Date picker dialog"
       ,
       format: "MM/dd/yyyy",
       value: defaultExpireDate,
@@ -44278,7 +43292,8 @@ function UploadDocumentListItem({
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -44326,15 +43341,11 @@ function UploadDocumentListItem({
     }
   }))));
 }
-
 _s(UploadDocumentListItem, "Qa1FDSUyXT3uJchlahseMtZ4c/g=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"]];
 });
-
 _c = UploadDocumentListItem;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "UploadDocumentListItem");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -44445,7 +43456,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\UploadDocumentListItem_3.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -44458,21 +43469,20 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function UploadDocumentListItem({
-  fileTypeName,
-  document,
-  setDocument,
-  uploadHandler,
-  updateHandler,
-  deleteHandler,
-  dateChangeHandler,
-  requireExpirationDate = true,
-  showNote = false,
-  divider = false
-}) {
+function UploadDocumentListItem(_ref) {
   _s();
-
+  let {
+    fileTypeName,
+    document,
+    setDocument,
+    uploadHandler,
+    updateHandler,
+    deleteHandler,
+    dateChangeHandler,
+    requireExpirationDate = true,
+    showNote = false,
+    divider = false
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"])();
@@ -44484,7 +43494,8 @@ function UploadDocumentListItem({
   const documentCopy = document && Object.assign({}, document) || null;
   const [file, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(documentCopy);
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
-  const filename = file && "✓ Document uploaded" || document && "✓ Document uploaded" || "No file selected"; // const filename =
+  const filename = file && "✓ Document uploaded" || document && "✓ Document uploaded" || "No file selected";
+  // const filename =
   //   (file && file.path.substring(10)) ||
   //   (document && document.path.substring(10)) ||
   //   "No file selected";
@@ -44492,12 +43503,10 @@ function UploadDocumentListItem({
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleDateChange = date => {
     setLoading(true);
     if (dateChangeHandler) dateChangeHandler(document === null || document === void 0 ? void 0 : document.id, date).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // setSelectedDate(date as Date);
         enqueueSnackbar(`Document expiration date updated successfully.`, {
@@ -44517,20 +43526,16 @@ function UploadDocumentListItem({
       });
     });
   };
-
   const handleDocumentUpload = e => {
     const doc = e.target.files[0];
     if (!doc) return;
-
     if (doc.size > _config__WEBPACK_IMPORTED_MODULE_11__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setLoading(true);
     if (uploadHandler) uploadHandler(doc, defaultExpireDate).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDocs(response.data);
@@ -44553,30 +43558,24 @@ function UploadDocumentListItem({
       });
     });
   };
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpdateButton = () => {
     // @ts-ignore
     if (inputRef) updateInputRef.current.click();
   };
-
   const handleUpdateDocument = e => {
     const doc = e.target.files[0];
     if (!doc) return;
-
     if (doc.size > _config__WEBPACK_IMPORTED_MODULE_11__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setLoading(true);
     if (updateHandler) updateHandler(doc, document === null || document === void 0 ? void 0 : document.id).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDocs(response.data);
@@ -44598,21 +43597,17 @@ function UploadDocumentListItem({
       });
     });
   };
-
   const handleDeleteDocument = () => {
     const answer = window.confirm("Are you sure you would like to delete this document?");
     if (!answer) return;
     setLoading(true);
-
     if (!document || !document.id) {
       setDoc(null);
       return;
     }
-
     if (deleteHandler) deleteHandler(document.id).then(async response => {
       // console.log(response);
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setDoc(null);
         enqueueSnackbar("Document deleted successfully.", {
@@ -44629,7 +43624,6 @@ function UploadDocumentListItem({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
     style: {
       backgroundColor: (file || document) && "#fff" || "#f5f5f5"
@@ -44655,7 +43649,8 @@ function UploadDocumentListItem({
       lineNumber: 251,
       columnNumber: 9
     }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItemText"] // style={{ maxWidth: 296 }}
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItemText"]
+  // style={{ maxWidth: 296 }}
   , {
     primary: fileTypeName,
     secondary: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -44686,8 +43681,7 @@ function UploadDocumentListItem({
         lineNumber: 259,
         columnNumber: 15
       }
-    }, filename),
-    /* Expiration Date Field */
+    }, filename), /* Expiration Date Field */
     requireExpirationDate && (file || document) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       style: {
         display: "flex",
@@ -44716,7 +43710,8 @@ function UploadDocumentListItem({
         columnNumber: 19
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_pickers__WEBPACK_IMPORTED_MODULE_5__["KeyboardDatePicker"], {
-      id: "date-picker-dialog" // label="Date picker dialog"
+      id: "date-picker-dialog"
+      // label="Date picker dialog"
       ,
       format: "MM/dd/yyyy",
       value: defaultExpireDate,
@@ -44826,7 +43821,8 @@ function UploadDocumentListItem({
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -44874,15 +43870,11 @@ function UploadDocumentListItem({
     }
   }))));
 }
-
 _s(UploadDocumentListItem, "Qa1FDSUyXT3uJchlahseMtZ4c/g=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"]];
 });
-
 _c = UploadDocumentListItem;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "UploadDocumentListItem");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -44974,7 +43966,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RequestCorrectionsView; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
@@ -44987,19 +43979,19 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
 
- // import ReviewRequestMenu from "../ReviewRequestMenu";
+// import ReviewRequestMenu from "../ReviewRequestMenu";
 
 
 
- // import ProductsView from "./ProductsView";
+// import ProductsView from "./ProductsView";
 // import IngredientsView from "./IngredientsView";
 // import ManufacturersView from "./ManufacturersView";
 
@@ -45014,7 +44006,6 @@ const useStyles1 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeSt
 }));
 function RequestCorrectionsView() {
   _s();
-
   const classes = useStyles1();
   return (
     /*#__PURE__*/
@@ -45067,16 +44058,12 @@ function RequestCorrectionsView() {
     })))))
   );
 }
-
 _s(RequestCorrectionsView, "iUcwKsj7H3p1LotITUwukOjPOtY=", false, function () {
   return [useStyles1];
 });
-
 _c = RequestCorrectionsView;
-
 function RequestCorrections() {
   _s2();
-
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
@@ -45086,15 +44073,14 @@ function RequestCorrections() {
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // reviewRequestId
-
   const [reviewRequest, setReviewRequest] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(undefined);
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/review-request/${id}`).then(async response => {
-      setLoading(false); // console.log(response.data);
-
+      setLoading(false);
+      // console.log(response.data);
       setReviewRequest(response.data);
     }).catch(e => {
       // @TODO handle
@@ -45102,13 +44088,11 @@ function RequestCorrections() {
       setLoading(false);
     });
   }, []);
-
   const requestSubmissionHandler = () => {
     if (!reviewRequest) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.put(`/api/client/review-request/${id}/corrections`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         navigate("/");
         enqueueSnackbar("Corrections submitted successfully.", {
@@ -45120,7 +44104,6 @@ function RequestCorrections() {
     }).catch(e => {
       console.error(e);
       setLoading(false);
-
       if (e.response) {
         enqueueSnackbar(e.response.data.message, {
           variant: "error"
@@ -45132,7 +44115,6 @@ function RequestCorrections() {
       }
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     autoComplete: "off",
     noValidate: true,
@@ -45299,13 +44281,10 @@ function RequestCorrections() {
     }
   }, "Submit Corrections")))));
 }
-
 _s2(RequestCorrections, "DqH6kU+agq7GajwLfFrO/qBWnDY=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"], useStyles3, react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
 });
-
 _c2 = RequestCorrections;
-
 function TabPanel(props) {
   const {
     children,
@@ -45333,25 +44312,20 @@ function TabPanel(props) {
     }
   }), value === index && children);
 }
-
 _c3 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `full-width-tab-${index}`,
     "aria-controls": `full-width-tabpanel-${index}`
   };
 }
-
 const useStyles3 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(theme => ({
   root: {
     height: "calc(100vh - 166px)",
     backgroundColor: theme.palette.background.paper
   }
 }));
-
 var _c, _c2, _c3;
-
 __webpack_require__.$Refresh$.register(_c, "RequestCorrectionsView");
 __webpack_require__.$Refresh$.register(_c2, "RequestCorrections");
 __webpack_require__.$Refresh$.register(_c3, "TabPanel");
@@ -45454,22 +44428,23 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-function FacilityDetails({
-  values,
-  setValues
-}) {
+function FacilityDetails(_ref) {
+  let {
+    values,
+    setValues
+  } = _ref;
   const handleChange = event => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [event.target.name]: event.target.value
     });
   };
-
   const handleCategorySelect = id => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       category_id: id
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
     container: true,
     spacing: 3,
@@ -45489,7 +44464,8 @@ function FacilityDetails({
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
-    fullWidth: true // helperText="Please specify the facility name"
+    fullWidth: true
+    // helperText="Please specify the facility name"
     ,
     label: "Enter Facility Name",
     name: "name",
@@ -45513,7 +44489,8 @@ function FacilityDetails({
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
-    fullWidth: true // helperText="Please specify the address"
+    fullWidth: true
+    // helperText="Please specify the address"
     ,
     label: "Enter Street Address",
     name: "address",
@@ -45648,9 +44625,7 @@ function FacilityDetails({
   })));
 }
 _c = FacilityDetails;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "FacilityDetails");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -45763,8 +44738,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\FacilityDocsView.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -45776,13 +44751,12 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function FacilityDocsView({
-  facilityId,
-  type
-}) {
+function FacilityDocsView(_ref) {
   _s();
-
+  let {
+    facilityId,
+    type
+  } = _ref;
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
@@ -45791,7 +44765,6 @@ function FacilityDocsView({
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/facility/${facilityId}/documents`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         let docs = response.data.filter(d => d.type == type.toString());
         setDocs(docs.reverse());
@@ -45809,18 +44782,16 @@ function FacilityDocsView({
       });
     });
   }, []);
-
   const handleDocumentUpload = doc => {
+    console.log(doc);
     setDocs([doc, ...docs]);
   };
-
   const handleDocumentDelete = docId => {
     const answer = window.confirm("Are you sure you would like to delete this document?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/facility/document/" + docId).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setDocs(docs.filter(p => p.id != docId));
         enqueueSnackbar("Document deleted successfully.", {
@@ -45837,7 +44808,6 @@ function FacilityDocsView({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
     style: {
       display: "flex",
@@ -45848,7 +44818,7 @@ function FacilityDocsView({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 110,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
@@ -45858,14 +44828,14 @@ function FacilityDocsView({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117,
+      lineNumber: 118,
       columnNumber: 9
     }
   }, "Click on the button at the right to add your documents:"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 120,
+      lineNumber: 121,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(AddFacilityDoc, {
@@ -45875,55 +44845,57 @@ function FacilityDocsView({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121,
+      lineNumber: 122,
       columnNumber: 11
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["List"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128,
+      lineNumber: 129,
       columnNumber: 7
     }
   }, docs.map(doc => {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["ListItem"], {
-      key: doc.id // divider={divider}
+      key: doc.id
+      // divider={divider}
       ,
       button: true,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 131,
+        lineNumber: 132,
         columnNumber: 13
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["ListItemIcon"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 136,
+        lineNumber: 137,
         columnNumber: 15
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_InsertDriveFile__WEBPACK_IMPORTED_MODULE_6___default.a, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 137,
+        lineNumber: 138,
         columnNumber: 17
       }
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["ListItemText"], {
-      primary: `${doc.type}_${moment__WEBPACK_IMPORTED_MODULE_2___default()(doc.created_at).format("YYYYMMDD")}_${doc.id}` // secondary={moment(doc.created_at).format("YYYYMMDD")}
+      primary: doc.name || `${doc.type}_${moment__WEBPACK_IMPORTED_MODULE_2___default()(doc.created_at).format("YYYYMMDD")}_${doc.id}`
+      // secondary={moment(doc.created_at).format("YYYYMMDD")}
       ,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 139,
+        lineNumber: 140,
         columnNumber: 15
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["ListItemSecondaryAction"], {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 145,
+        lineNumber: 149,
         columnNumber: 15
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["IconButton"], {
@@ -45931,14 +44903,14 @@ function FacilityDocsView({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 146,
+        lineNumber: 150,
         columnNumber: 17
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_7___default.a, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 147,
+        lineNumber: 151,
         columnNumber: 19
       }
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["IconButton"], {
@@ -45947,55 +44919,50 @@ function FacilityDocsView({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 149,
+        lineNumber: 153,
         columnNumber: 17
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_8___default.a, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 153,
+        lineNumber: 157,
         columnNumber: 19
       }
     }))));
   })));
 }
-
 _s(FacilityDocsView, "HVClJn6Deei+4T8F4d1qm1R85lg=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = FacilityDocsView;
-function AddFacilityDoc({
-  facilityId,
-  type,
-  onDocumentUpload
-}) {
+function AddFacilityDoc(_ref2) {
   _s2();
-
+  let {
+    facilityId,
+    type,
+    onDocumentUpload
+  } = _ref2;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpload = e => {
     const _doc = e.target.files[0];
     if (!_doc) return;
-
     if (_doc.size > _config__WEBPACK_IMPORTED_MODULE_9__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setLoading(true);
     const formData = new FormData();
     formData.append("document", _doc);
+    formData.append("name", _doc.name);
     formData.append("type", type.toString());
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/facility/${facilityId}/document`, formData, {
       headers: {
@@ -46003,13 +44970,13 @@ function AddFacilityDoc({
       }
     }).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
-        // console.log(response.data);
-        // setDoc(response.data);
-        // setDocument(response.data);
         onDocumentUpload(response.data);
         enqueueSnackbar(`Uploaded document successfully.`, {
+          variant: "success"
+        });
+      } else if (response.status == 204) {
+        enqueueSnackbar(`Document replaced successfully.`, {
           variant: "success"
         });
       } else {
@@ -46026,12 +44993,11 @@ function AddFacilityDoc({
       });
     });
   };
-
   if (loading) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["CircularProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 231,
+      lineNumber: 237,
       columnNumber: 23
     }
   });
@@ -46049,7 +45015,7 @@ function AddFacilityDoc({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 235,
+      lineNumber: 241,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_LoadingButton__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -46060,7 +45026,7 @@ function AddFacilityDoc({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 249,
+        lineNumber: 255,
         columnNumber: 20
       }
     }),
@@ -46069,20 +45035,16 @@ function AddFacilityDoc({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 245,
+      lineNumber: 251,
       columnNumber: 7
     }
   }, "Document"));
 }
-
 _s2(AddFacilityDoc, "0mCFdFANnen57Loy/Z69g+pmQ84=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c2 = AddFacilityDoc;
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "FacilityDocsView");
 __webpack_require__.$Refresh$.register(_c2, "AddFacilityDoc");
 
@@ -46190,8 +45152,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\IngredientDialog.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -46224,52 +45185,45 @@ const defaults = {
   recommendation: "",
   source: ""
 };
-let IngredientDialogMode;
-
-(function (IngredientDialogMode) {
+let IngredientDialogMode = /*#__PURE__*/function (IngredientDialogMode) {
   IngredientDialogMode[IngredientDialogMode["EDIT"] = 0] = "EDIT";
   IngredientDialogMode[IngredientDialogMode["ADD"] = 1] = "ADD";
-})(IngredientDialogMode || (IngredientDialogMode = {}));
-
-function IngredientDialog({
-  onIngredientUpdate,
-  reviewRequestId,
-  productId,
-  mode,
-  open = false,
-  onClose,
-  edit,
-  addIngredientText = "Add Ingredient"
-}) {
+  return IngredientDialogMode;
+}({});
+function IngredientDialog(_ref) {
   _s();
-
   var _edit$manufacturer;
-
+  let {
+    onIngredientUpdate,
+    reviewRequestId,
+    productId,
+    mode,
+    open = false,
+    onClose,
+    edit,
+    addIngredientText = "Add Ingredient"
+  } = _ref;
   if (edit) edit.manufacturer_name = (_edit$manufacturer = edit.manufacturer) === null || _edit$manufacturer === void 0 ? void 0 : _edit$manufacturer.name;
   const [_open, _setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false); // internal
-
   const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(mode === IngredientDialogMode.ADD && defaults || edit);
   const ingredientId = edit === null || edit === void 0 ? void 0 : edit.id;
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
-  } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])(); // inject appropriate facility id
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
 
+  // inject appropriate facility id
   values.product_id = productId;
-
   const addIngredientHandler = ingredient => {
     // inject
     values.review_request_id = reviewRequestId;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/ingredient`, ingredient).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onIngredientUpdate(response.data);
         setValues(defaults);
-
         _setOpen(false);
-
         enqueueSnackbar("Ingredient added successfully.", {
           variant: "success"
         });
@@ -46287,19 +45241,15 @@ function IngredientDialog({
       });
     });
   };
-
   const updateIngredientHandler = ingredient => {
     // if (mode === IngredientDialogMode.ADD)
     //   ingredient.manufacturer_name = ingredient.manufacturer?.name;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/ingredient/${ingredient.id}`, ingredient).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onIngredientUpdate(response.data);
-
         _setOpen(false);
-
         enqueueSnackbar("Ingredient updated successfully.", {
           variant: "success"
         });
@@ -46317,26 +45267,25 @@ function IngredientDialog({
       });
     });
   };
-
   const handleIngredientUpdate = () => {
-    if (mode === IngredientDialogMode.ADD) addIngredientHandler(values);else updateIngredientHandler(values); // _setOpen(false);
+    if (mode === IngredientDialogMode.ADD) addIngredientHandler(values);else updateIngredientHandler(values);
+    // _setOpen(false);
   };
 
   const handleClickOpen = () => {
     var _document, _document$querySelect;
+    _setOpen(true);
 
-    _setOpen(true); // clear RMM auto complete to avoid confusion
-
-
-    (_document = document) === null || _document === void 0 ? void 0 : (_document$querySelect = _document.querySelector(".MuiAutocomplete-endAdornment button.MuiButtonBase-root.MuiIconButton-root.MuiAutocomplete-clearIndicator.MuiAutocomplete-clearIndicatorDirty") // @ts-ignore
+    // clear RMM auto complete to avoid confusion
+    (_document = document) === null || _document === void 0 ? void 0 : (_document$querySelect = _document.querySelector(".MuiAutocomplete-endAdornment button.MuiButtonBase-root.MuiIconButton-root.MuiAutocomplete-clearIndicator.MuiAutocomplete-clearIndicatorDirty")
+    // @ts-ignore
     ) === null || _document$querySelect === void 0 ? void 0 : _document$querySelect.click();
   };
-
   const handleClose = () => {
     _setOpen(false);
   };
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, mode === IngredientDialogMode.ADD && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"] // variant="contained"
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, mode === IngredientDialogMode.ADD && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"]
+  // variant="contained"
   , {
     color: "primary",
     startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_5___default.a, {
@@ -46350,7 +45299,8 @@ function IngredientDialog({
     style: {
       marginLeft: 15,
       marginBottom: 15
-    } // style={{ display: "flex", margin: "0 auto" }}
+    }
+    // style={{ display: "flex", margin: "0 auto" }}
     ,
     onClick: handleClickOpen,
     __self: this,
@@ -46442,42 +45392,42 @@ function IngredientDialog({
     }
   }, mode === IngredientDialogMode.ADD && "Add" || "Update", " ", "Ingredient"))));
 }
-
 _s(IngredientDialog, "EUIsv66h3vZjn3NK/h2zcHzYD84=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c3 = IngredientDialog;
-function IngredientDetails({
-  values,
-  setValues,
-  mode
-}) {
+function IngredientDetails(_ref2) {
   var _values$manufacturer;
-
+  let {
+    values,
+    setValues,
+    mode
+  } = _ref2;
   const handleChange = event => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [event.target.name]: event.target.value
     });
   };
-
   const handleRecommendationSelect = value => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       recommendation: value
     });
   };
-
   const handleSourceSelect = value => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       source: value
     });
   };
-
   const handleManufacturerSelect = manufacturer => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       manufacturer_name: (manufacturer === null || manufacturer === void 0 ? void 0 : manufacturer.name) || manufacturer,
       manufacturer
-    }); // console.log(values);
+    });
+    // console.log(values);
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
@@ -46544,7 +45494,6 @@ function IngredientDetails({
   })));
 }
 _c4 = IngredientDetails;
-
 function PaperComponent(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_draggable__WEBPACK_IMPORTED_MODULE_3___default.a, {
     handle: "#draggable-dialog-title",
@@ -46564,11 +45513,8 @@ function PaperComponent(props) {
     }
   })));
 }
-
 _c5 = PaperComponent;
-
 var _c, _c2, _c3, _c4, _c5;
-
 __webpack_require__.$Refresh$.register(_c, "Transition$React.forwardRef");
 __webpack_require__.$Refresh$.register(_c2, "Transition");
 __webpack_require__.$Refresh$.register(_c3, "IngredientDialog");
@@ -46679,8 +45625,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\IngredientsView.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -46689,25 +45635,23 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import ManufacturerDocsDialog from "./ManufacturerDocsDialog";
+// import ManufacturerDocsDialog from "./ManufacturerDocsDialog";
 
-function IngredientsView({
-  reviewRequestId,
-  ingredients,
-  setIngredients,
-  productId
-}) {
+function IngredientsView(_ref) {
   _s();
-
+  let {
+    reviewRequestId,
+    ingredients,
+    setIngredients,
+    productId
+  } = _ref;
   const classes = useStyles();
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_6__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
-
   const load = () => axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/product/${productId}/ingredients-deep`).then(async response => {
     setLoading(false);
-
     if (response.status == 200 || response.status == 201) {
       setIngredients(response.data);
     } else {
@@ -46723,26 +45667,21 @@ function IngredientsView({
       variant: "error"
     });
   });
-
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     load();
   }, []);
-
   const handleIngredientAdd = product => {
     // setIngredients([product, ...ingredients]);
     load();
   };
-
   const handleIngredientUpdate = (product, i) => {
     // const newIngredients = insert<Ingredient>(ingredients, i, product);
     // setIngredients(newIngredients);
     load();
   };
-
   const handleIngredientDelete = productId => {
     setIngredients(ingredients.filter(p => p.id != productId));
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
     display: "flex",
     justifyContent: "center",
@@ -46812,45 +45751,37 @@ function IngredientsView({
     }
   }))));
 }
-
 _s(IngredientsView, "I/7Rghn+8WnPeP5aYmLzkQmardE=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_6__["useSnackbar"]];
 });
-
 _c = IngredientsView;
-function IngredientItem({
-  divider = false,
-  ingredient,
-  onIngredientUpdate,
-  onIngredientDelete,
-  breadcrumbsList
-}) {
+function IngredientItem(_ref2) {
   _s2();
-
   var _ingredient$manufactu;
-
+  let {
+    divider = false,
+    ingredient,
+    onIngredientUpdate,
+    onIngredientDelete,
+    breadcrumbsList
+  } = _ref2;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_6__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [open, setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
-
   const handleIngredientItemClick = () => setOpen(true);
-
   const handleIngredientDialogClose = () => setOpen(false);
-
   const _onIngredientUpdate = ingredient => {
     setOpen(false);
     onIngredientUpdate(ingredient);
   };
-
   const handleIngredientDelete = () => {
     const answer = window.confirm("Are you sure you would like to delete this ingredient?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/ingredient/" + ingredient.id).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onIngredientDelete(ingredient.id);
         enqueueSnackbar("Ingredient deleted successfully.", {
@@ -46867,9 +45798,9 @@ function IngredientItem({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["ListItem"], {
-    key: ingredient.id // divider={divider}
+    key: ingredient.id
+    // divider={divider}
     ,
     button: true,
     onClick: handleIngredientItemClick,
@@ -46901,7 +45832,8 @@ function IngredientItem({
       columnNumber: 11
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["ListItemText"], {
-    primary: `${ingredient.name} (${(_ingredient$manufactu = ingredient.manufacturer) === null || _ingredient$manufactu === void 0 ? void 0 : _ingredient$manufactu.name})` // secondary={ingredient.manufacturer?.name}
+    primary: `${ingredient.name} (${(_ingredient$manufactu = ingredient.manufacturer) === null || _ingredient$manufactu === void 0 ? void 0 : _ingredient$manufactu.name})`
+    // secondary={ingredient.manufacturer?.name}
     // secondary={moment(ingredient.date).format("DD/MM/YY")}
     ,
     __self: this,
@@ -46947,11 +45879,9 @@ function IngredientItem({
     }
   }));
 }
-
 _s2(IngredientItem, "ltc5vh2PxhGd/dY+MsbrRfgYBLs=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_6__["useSnackbar"]];
 });
-
 _c2 = IngredientItem;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(() => ({
   header: {
@@ -46966,9 +45896,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     marginLeft: 15
   }
 }));
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "IngredientsView");
 __webpack_require__.$Refresh$.register(_c2, "IngredientItem");
 
@@ -47079,8 +46007,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\ManufacturerDocsDialog.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -47105,22 +46032,23 @@ const Transition = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.for
   }));
 });
 _c2 = Transition;
-function ManufacturerDocsDialog({
-  manufacturerId,
-  manufacturerDocs,
-  onClose
-}) {
+function ManufacturerDocsDialog(_ref) {
   _s();
-
+  let {
+    manufacturerId,
+    manufacturerDocs,
+    onClose
+  } = _ref;
   const [_open, _setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false); // internal
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
   console.log(manufacturerDocs);
   const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(manufacturerDocs);
-  const [docCount, setDocCount] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(manufacturerDocs.length); // useEffect(() => {
+  const [docCount, setDocCount] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(manufacturerDocs.length);
+
+  // useEffect(() => {
   //   axios
   //     .post(`/api/manufacturer/${manufacturerId}/documents`)
   //     .then(async (response) => {
@@ -47148,14 +46076,12 @@ function ManufacturerDocsDialog({
     setDocs([doc, ...docs]);
     setDocCountSpan(manufacturerId, docs.length + 1);
   };
-
   const handleDocumentDelete = docId => {
     const answer = window.confirm("Are you sure you would like to delete this document?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/manufacturer/document/" + docId).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setDocs(docs.filter(p => p.id != docId));
         setDocCountSpan(manufacturerId, docs.length - 1);
@@ -47173,15 +46099,12 @@ function ManufacturerDocsDialog({
       });
     });
   };
-
   const handleClickOpen = () => {
     _setOpen(true);
   };
-
   const handleClose = () => {
     _setOpen(false);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
     id: `manufacturer-${manufacturerId}-docs-btn`,
     variant: "contained",
@@ -47306,7 +46229,8 @@ function ManufacturerDocsDialog({
     }
   }, docs.map(doc => {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
-      key: doc.id // divider={divider}
+      key: doc.id
+      // divider={divider}
       ,
       button: true,
       __self: this,
@@ -47330,7 +46254,8 @@ function ManufacturerDocsDialog({
         columnNumber: 21
       }
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItemText"], {
-      primary: `${doc.type}_${moment__WEBPACK_IMPORTED_MODULE_2___default()(doc.created_at).format("YYYYMMDD")}_${doc.id}` // secondary={moment(doc.created_at).format("YYYYMMDD")}
+      primary: doc.name || `${doc.type}_${moment__WEBPACK_IMPORTED_MODULE_2___default()(doc.created_at).format("YYYYMMDD")}_${doc.id}`
+      // secondary={moment(doc.created_at).format("YYYYMMDD")}
       ,
       __self: this,
       __source: {
@@ -47342,7 +46267,7 @@ function ManufacturerDocsDialog({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 210,
+        lineNumber: 213,
         columnNumber: 19
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
@@ -47350,14 +46275,14 @@ function ManufacturerDocsDialog({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 211,
+        lineNumber: 214,
         columnNumber: 21
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_7___default.a, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 214,
+        lineNumber: 217,
         columnNumber: 23
       }
     }))));
@@ -47365,7 +46290,7 @@ function ManufacturerDocsDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 228,
+      lineNumber: 231,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
@@ -47374,27 +46299,22 @@ function ManufacturerDocsDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229,
+      lineNumber: 232,
       columnNumber: 11
     }
   }, "Close"))));
 }
-
 _s(ManufacturerDocsDialog, "OP7kzh+482RnyhL1ZBGRzpCD8DM=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c3 = ManufacturerDocsDialog;
-
 function setDocCountSpan(manufacturerId, value) {
   const btn = document.getElementById(`manufacturer-${manufacturerId}-docs-btn`);
   const span = document.getElementById(`manufacturer-${manufacturerId}-doc-count`);
   if (btn) btn.style.backgroundColor = "rgb(200, 230, 201)";
   if (span) span.innerHTML = value.toString();
 }
-
 var _c, _c2, _c3;
-
 __webpack_require__.$Refresh$.register(_c, "Transition$React.forwardRef");
 __webpack_require__.$Refresh$.register(_c2, "Transition");
 __webpack_require__.$Refresh$.register(_c3, "ManufacturerDocsDialog");
@@ -47510,7 +46430,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\PreStep.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -47522,7 +46442,7 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import Button from "@material-ui/core/Button";
+// import Button from "@material-ui/core/Button";
 // import HelpIcon from "@material-ui/icons/Help";
 
 
@@ -47530,14 +46450,13 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
 // @TODO add update support
-function PreStep({
-  requestType,
-  setRequestType
-}) {
+function PreStep(_ref) {
   _s();
-
+  let {
+    requestType,
+    setRequestType
+  } = _ref;
   const classes = useStyles();
   const [promptOpen, setPromptOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [facilities, setFacilities] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
@@ -47547,14 +46466,13 @@ function PreStep({
       setFacilities(response.data);
     }).catch(e => {
       // @TODO handle
-      console.error(e); // setLoading(false);
+      console.error(e);
+      // setLoading(false);
     });
   }, []);
-
   const handleChange = event => {
     setRequestType(event.target.value);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     className: classes.stepBox,
     __self: this,
@@ -47753,11 +46671,9 @@ function PreStep({
     }
   })))))));
 }
-
 _s(PreStep, "rpzkTmIn4LeHmKYsn4UX+LDHkNg=", false, function () {
   return [useStyles];
 });
-
 _c = PreStep;
 const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["createStyles"])({
   stepBox: {
@@ -47770,9 +46686,7 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
     width: 500
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "PreStep");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -47873,12 +46787,12 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\ProductDialog.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
- // import { Alert } from "@material-ui/lab";
+// import { Alert } from "@material-ui/lab";
 
 const Transition = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(_c = function Transition(props, ref) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Slide"], Object.assign({
@@ -47894,51 +46808,44 @@ const Transition = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.for
   }));
 });
 _c2 = Transition;
-let ProductDialogMode;
-
-(function (ProductDialogMode) {
+let ProductDialogMode = /*#__PURE__*/function (ProductDialogMode) {
   ProductDialogMode[ProductDialogMode["EDIT"] = 0] = "EDIT";
   ProductDialogMode[ProductDialogMode["ADD"] = 1] = "ADD";
-})(ProductDialogMode || (ProductDialogMode = {}));
-
-function ProductDialog({
-  onProductUpdate,
-  facilityId,
-  mode,
-  open = false,
-  onClose,
-  edit
-}) {
+  return ProductDialogMode;
+}({});
+function ProductDialog(_ref) {
   _s();
-
+  let {
+    onProductUpdate,
+    facilityId,
+    mode,
+    open = false,
+    onClose,
+    edit
+  } = _ref;
   const classes = useStyles();
   const productId = edit === null || edit === void 0 ? void 0 : edit.id;
   const [_open, _setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false); // internal
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
   const [currentTab, setCurrentTab] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
-  const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(mode === ProductDialogMode.ADD && defaults || edit); // inject appropriate facility id
+  const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(mode === ProductDialogMode.ADD && defaults || edit);
 
+  // inject appropriate facility id
   values.facility_id = facilityId;
-
   const handleTabChange = (event, newValue) => {
     setCurrentTab(newValue);
   };
-
   const addProductHandler = product => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/product`, product).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onProductUpdate(response.data);
         setValues(defaults);
-
         _setOpen(false);
-
         enqueueSnackbar("Product added successfully.", {
           variant: "success"
         });
@@ -47956,17 +46863,13 @@ function ProductDialog({
       });
     });
   };
-
   const updateProductHandler = product => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/product/${product.id}`, product).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onProductUpdate(response.data);
-
         _setOpen(false);
-
         enqueueSnackbar("Product updated successfully.", {
           variant: "success"
         });
@@ -47984,25 +46887,21 @@ function ProductDialog({
       });
     });
   };
-
   const handleProductUpdate = () => {
     if (mode === ProductDialogMode.ADD) addProductHandler(values);else updateProductHandler(values);
   };
-
   const handleChange = event => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [event.target.name]: event.target.value
     });
   };
-
   const handleClickOpen = () => {
     _setOpen(true);
   };
-
   const handleClose = () => {
     _setOpen(false);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, mode === ProductDialogMode.ADD && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
     color: "primary",
     variant: "contained",
@@ -48154,11 +47053,9 @@ function ProductDialog({
     }
   }, mode === ProductDialogMode.ADD && "Add" || "Update", " Product"))));
 }
-
 _s(ProductDialog, "f91YQWbJDU/s4LW5A+/iCV16c4s=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c3 = ProductDialog;
 const defaults = {
   id: null,
@@ -48171,7 +47068,6 @@ const defaults = {
   date: Date.now(),
   ingredients: []
 };
-
 function TabPanel(props) {
   const {
     children,
@@ -48206,24 +47102,19 @@ function TabPanel(props) {
     }
   }, children));
 }
-
 _c4 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`
   };
 }
-
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(() => ({
   dialogContentRoot: {
     overflowY: "hidden"
   }
 }));
-
 var _c, _c2, _c3, _c4;
-
 __webpack_require__.$Refresh$.register(_c, "Transition$React.forwardRef");
 __webpack_require__.$Refresh$.register(_c2, "Transition");
 __webpack_require__.$Refresh$.register(_c3, "ProductDialog");
@@ -48336,8 +47227,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\ProductDocsDialog.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -48362,16 +47252,15 @@ const Transition = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.for
   }));
 });
 _c2 = Transition;
-function ProductDocsDialog({
-  product,
-  productDocs,
-  onUpdate,
-  onClose
-}) {
+function ProductDocsDialog(_ref) {
   _s();
-
+  let {
+    product,
+    productDocs,
+    onUpdate,
+    onClose
+  } = _ref;
   const [_open, _setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false); // internal
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
@@ -48379,23 +47268,21 @@ function ProductDocsDialog({
   const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(productDocs);
   const [docCount, setDocCount] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(productDocs.length);
   const productId = product.id;
-
   const handleDocumentUpload = doc => {
     const newDocs = [doc, ...docs];
     setDocs(newDocs);
-    onUpdate({ ...product,
+    onUpdate({
+      ...product,
       documents: newDocs
     });
     setDocCountSpan(productId, docs.length + 1);
   };
-
   const handleDocumentDelete = docId => {
     const answer = window.confirm("Are you sure you would like to delete this document?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/product/document/" + docId).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setDocs(docs.filter(p => p.id != docId));
         setDocCountSpan(productId, docs.length - 1);
@@ -48413,15 +47300,12 @@ function ProductDocsDialog({
       });
     });
   };
-
   const handleClickOpen = () => {
     _setOpen(true);
   };
-
   const handleClose = () => {
     _setOpen(false);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
     id: `product-${productId}-docs-btn`,
     variant: "contained",
@@ -48546,7 +47430,8 @@ function ProductDocsDialog({
     }
   }, docs.map(doc => {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
-      key: doc.id // divider={divider}
+      key: doc.id
+      // divider={divider}
       ,
       button: true,
       __self: this,
@@ -48570,7 +47455,8 @@ function ProductDocsDialog({
         columnNumber: 21
       }
     })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItemText"], {
-      primary: `PRODUCT_SPEC_SHEET_${moment__WEBPACK_IMPORTED_MODULE_2___default()(doc.created_at).format("YYYYMMDD")}_${doc.id}` // primary={`${doc.type}_${moment(doc.created_at).format(
+      primary: doc.name || `PRODUCT_SPEC_SHEET_${moment__WEBPACK_IMPORTED_MODULE_2___default()(doc.created_at).format("YYYYMMDD")}_${doc.id}`
+      // primary={`${doc.type}_${moment(doc.created_at).format(
       //   "YYYYMMDD"
       // )}_${doc.id}`}
       // secondary={moment(doc.created_at).format("YYYYMMDD")}
@@ -48585,7 +47471,7 @@ function ProductDocsDialog({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 176,
+        lineNumber: 179,
         columnNumber: 19
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
@@ -48593,14 +47479,14 @@ function ProductDocsDialog({
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 177,
+        lineNumber: 180,
         columnNumber: 21
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_7___default.a, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 178,
+        lineNumber: 181,
         columnNumber: 23
       }
     }))));
@@ -48608,7 +47494,7 @@ function ProductDocsDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 192,
+      lineNumber: 195,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
@@ -48617,27 +47503,22 @@ function ProductDocsDialog({
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 193,
+      lineNumber: 196,
       columnNumber: 11
     }
   }, "Close"))));
 }
-
 _s(ProductDocsDialog, "m645NEK7jA9OtXn7GK8ZZZPRXLI=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c3 = ProductDocsDialog;
-
 function setDocCountSpan(productId, value) {
   const btn = document.getElementById(`product-${productId}-docs-btn`);
   const span = document.getElementById(`product-${productId}-doc-count`);
   if (btn) btn.style.backgroundColor = "rgb(200, 230, 201)";
   if (span) span.innerHTML = value.toString();
 }
-
 var _c, _c2, _c3;
-
 __webpack_require__.$Refresh$.register(_c, "Transition$React.forwardRef");
 __webpack_require__.$Refresh$.register(_c2, "Transition");
 __webpack_require__.$Refresh$.register(_c3, "ProductDocsDialog");
@@ -48732,7 +47613,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RequestCertificates", function() { return RequestCertificates; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
@@ -48749,9 +47630,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\RequestCertificates.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -48773,14 +47653,14 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["makeSty
 }));
 function RequestCertificatesPage() {
   _s();
-
   const classes = useStyles();
   return (
     /*#__PURE__*/
     // @ts-ignore
     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_9__["default"], {
       className: classes.root,
-      title: "Reviews" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+      title: "Reviews"
+      // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
       ,
       __self: this,
       __source: {
@@ -48827,20 +47707,16 @@ function RequestCertificatesPage() {
     })))))
   );
 }
-
 _s(RequestCertificatesPage, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = RequestCertificatesPage;
 function RequestCertificates() {
   _s2();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // reviewRequestId
-
   const [certificates, setCertificates] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/review-request/${id}/certificates`).then(async response => {
@@ -49171,15 +48047,11 @@ function RequestCertificates() {
     }
   }, "View More")));
 }
-
 _s2(RequestCertificates, "gkEGE3izXpTTOtG4BrrBzpRLZ+8=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"]];
 });
-
 _c2 = RequestCertificates;
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "RequestCertificatesPage");
 __webpack_require__.$Refresh$.register(_c2, "RequestCertificates");
 
@@ -49281,22 +48153,20 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_01.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
 
-
-
-const FacilityDetailsStep = ({
-  facilityId,
-  values,
-  setValues
-}) => {
+const FacilityDetailsStep = _ref => {
   _s();
-
+  let {
+    facilityId,
+    values,
+    setValues
+  } = _ref;
   const classes = useStyles();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [promptOpen, setPromptOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
@@ -49306,7 +48176,6 @@ const FacilityDetailsStep = ({
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(`/api/client/facility/${facilityId}`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setValues(response.data);
       } else {
@@ -49404,11 +48273,9 @@ const FacilityDetailsStep = ({
     }
   }));
 };
-
 _s(FacilityDetailsStep, "8QbAME7AVmGIxhrRHlhZI3y426s=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = FacilityDetailsStep;
 /* harmony default export */ __webpack_exports__["default"] = (FacilityDetailsStep);
 const defaults = {
@@ -49435,9 +48302,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     width: 500
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "FacilityDetailsStep");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -49536,21 +48401,19 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_02.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
 // @TODO handle avatar
-const StepThree = ({
-  facilityId,
-  setGreenLight
-}) => {
+const StepThree = _ref => {
   _s();
-
+  let {
+    facilityId,
+    setGreenLight
+  } = _ref;
   const classes = useStyles();
   const [promptOpen, setPromptOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
@@ -49645,20 +48508,19 @@ const StepThree = ({
     }
   }, "Upload documentation verifying that your company is legally permitted to do business in your locale."));
 };
-
 _s(StepThree, "EjAHzUpGb0KjN8d6WUsdJ5qqrS0=", false, function () {
   return [useStyles];
 });
-
 _c = StepThree;
 /* harmony default export */ __webpack_exports__["default"] = (StepThree);
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
   stepBox: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center" // alignItems: "center",
-
+    justifyContent: "center"
+    // alignItems: "center",
   },
+
   stepBtn: {
     width: 500
   },
@@ -49670,9 +48532,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     margin: theme.spacing(4, 0, 2)
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "StepThree");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -49771,21 +48631,19 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_03.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
 // @TODO handle avatar
-const StepThree = ({
-  facilityId,
-  setGreenLight
-}) => {
+const StepThree = _ref => {
   _s();
-
+  let {
+    facilityId,
+    setGreenLight
+  } = _ref;
   const classes = useStyles();
   const [promptOpen, setPromptOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
@@ -49913,20 +48771,19 @@ const StepThree = ({
     }
   }, "c) Logging/documenting incoming and outgoing HP\u2019s. Logs should include product identifiers, supplier/raw material manufacturer, date received, unit amount, production date, and lot number."));
 };
-
 _s(StepThree, "EjAHzUpGb0KjN8d6WUsdJ5qqrS0=", false, function () {
   return [useStyles];
 });
-
 _c = StepThree;
 /* harmony default export */ __webpack_exports__["default"] = (StepThree);
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
   stepBox: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center" // alignItems: "center",
-
+    justifyContent: "center"
+    // alignItems: "center",
   },
+
   stepBtn: {
     width: 500
   },
@@ -49938,9 +48795,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     margin: theme.spacing(4, 0, 2)
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "StepThree");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -50039,21 +48894,19 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_04.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
 // @TODO handle avatar
-const StepThree = ({
-  facilityId,
-  setGreenLight
-}) => {
+const StepThree = _ref => {
   _s();
-
+  let {
+    facilityId,
+    setGreenLight
+  } = _ref;
   const classes = useStyles();
   const [promptOpen, setPromptOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
@@ -50148,20 +49001,19 @@ const StepThree = ({
     }
   }, "Upload a graphical representation of halal production showing how your HP\u2019s move throughout your facility."));
 };
-
 _s(StepThree, "EjAHzUpGb0KjN8d6WUsdJ5qqrS0=", false, function () {
   return [useStyles];
 });
-
 _c = StepThree;
 /* harmony default export */ __webpack_exports__["default"] = (StepThree);
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
   stepBox: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center" // alignItems: "center",
-
+    justifyContent: "center"
+    // alignItems: "center",
   },
+
   stepBtn: {
     width: 500
   },
@@ -50173,9 +49025,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     margin: theme.spacing(4, 0, 2)
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "StepThree");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -50274,21 +49124,19 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_05.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
 // @TODO handle avatar
-const StepThree = ({
-  facilityId,
-  setGreenLight
-}) => {
+const StepThree = _ref => {
   _s();
-
+  let {
+    facilityId,
+    setGreenLight
+  } = _ref;
   const classes = useStyles();
   const [promptOpen, setPromptOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
@@ -50427,20 +49275,19 @@ const StepThree = ({
     }
   }, "*NOT REQUIRED IF PRODUCT IS NEVER OPENED WITHIN THE FACILITY*"));
 };
-
 _s(StepThree, "EjAHzUpGb0KjN8d6WUsdJ5qqrS0=", false, function () {
   return [useStyles];
 });
-
 _c = StepThree;
 /* harmony default export */ __webpack_exports__["default"] = (StepThree);
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
   stepBox: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center" // alignItems: "center",
-
+    justifyContent: "center"
+    // alignItems: "center",
   },
+
   stepBtn: {
     width: 500
   },
@@ -50452,9 +49299,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     margin: theme.spacing(4, 0, 2)
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "StepThree");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -50553,21 +49398,19 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_06.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
 // @TODO handle avatar
-const StepThree = ({
-  facilityId,
-  setGreenLight
-}) => {
+const StepThree = _ref => {
   _s();
-
+  let {
+    facilityId,
+    setGreenLight
+  } = _ref;
   const classes = useStyles();
   const [promptOpen, setPromptOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
@@ -50662,20 +49505,19 @@ const StepThree = ({
     }
   }, "Upload a written actionable recourse plan, which protects your halal consumers from products that have been contaminated (whether actual or potential) with non-halal substances. The recall plan acts as the safety net for the HC and the HPF."));
 };
-
 _s(StepThree, "EjAHzUpGb0KjN8d6WUsdJ5qqrS0=", false, function () {
   return [useStyles];
 });
-
 _c = StepThree;
 /* harmony default export */ __webpack_exports__["default"] = (StepThree);
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
   stepBox: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center" // alignItems: "center",
-
+    justifyContent: "center"
+    // alignItems: "center",
   },
+
   stepBtn: {
     width: 500
   },
@@ -50687,9 +49529,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     margin: theme.spacing(4, 0, 2)
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "StepThree");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -50788,21 +49628,19 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_07.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
 // @TODO handle avatar
-const StepThree = ({
-  facilityId,
-  setGreenLight
-}) => {
+const StepThree = _ref => {
   _s();
-
+  let {
+    facilityId,
+    setGreenLight
+  } = _ref;
   const classes = useStyles();
   const [promptOpen, setPromptOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
@@ -50929,20 +49767,19 @@ const StepThree = ({
     }
   }, "If pest control is being performed internally, as opposed to a third-party company, please also provide a pest control SOP."));
 };
-
 _s(StepThree, "EjAHzUpGb0KjN8d6WUsdJ5qqrS0=", false, function () {
   return [useStyles];
 });
-
 _c = StepThree;
 /* harmony default export */ __webpack_exports__["default"] = (StepThree);
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
   stepBox: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center" // alignItems: "center",
-
+    justifyContent: "center"
+    // alignItems: "center",
   },
+
   stepBtn: {
     width: 500
   },
@@ -50954,9 +49791,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     margin: theme.spacing(4, 0, 2)
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "StepThree");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -51079,10 +49914,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_08.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
-
-
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -51106,12 +49939,12 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 // @TODO handle avatar
-const FinishedProductsStep = ({
-  reviewRequest,
-  setGreenLight
-}) => {
+const FinishedProductsStep = _ref => {
   _s();
-
+  let {
+    reviewRequest,
+    setGreenLight
+  } = _ref;
   const classes = useStyles();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
@@ -51124,12 +49957,10 @@ const FinishedProductsStep = ({
     setGreenLight(true);
     getProducts();
   }, []);
-
   const getProducts = () => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/review-request/${reviewRequest.id}/products`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         setProducts(response.data);
@@ -51147,20 +49978,19 @@ const FinishedProductsStep = ({
       });
     });
   };
-
   const handleProductAdd = product => {
     // console.log(products);
     // console.log(product);
     setProducts([]);
     product.open = true;
-    setProducts([product, ...products]); // getProducts();
+    setProducts([product, ...products]);
+    // getProducts();
   };
 
   const handleProductUpdate = (product, i) => {
     const newProducts = Object(_reviewer_common_utils__WEBPACK_IMPORTED_MODULE_18__["insert"])(products, i, product);
     setProducts(newProducts);
   };
-
   const handleProductDelete = productId => {
     const answer = window.confirm("Are you sure you would like to delete this product from your request? Warning: this will delete all associated ingredients as well.");
     if (!answer) return;
@@ -51178,7 +50008,6 @@ const FinishedProductsStep = ({
           variant: "error"
         });
       }
-
       setLoading(false);
     }).catch(e => {
       console.error(e);
@@ -51188,7 +50017,6 @@ const FinishedProductsStep = ({
       });
     });
   };
-
   const handleProductDuplicate = productId => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/product/${productId}/duplicate`).then(async response => {
@@ -51207,7 +50035,6 @@ const FinishedProductsStep = ({
           variant: "error"
         });
       }
-
       setLoading(false);
     }).catch(e => {
       console.error(e);
@@ -51217,7 +50044,6 @@ const FinishedProductsStep = ({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
     className: classes.stepBox,
     __self: undefined,
@@ -51339,28 +50165,24 @@ const FinishedProductsStep = ({
     }
   })))));
 };
-
 _s(FinishedProductsStep, "rzmcT+KDqm9xCPM9818D/2Sqsu8=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = FinishedProductsStep;
 /* harmony default export */ __webpack_exports__["default"] = (FinishedProductsStep);
-
 function getSome(array, some) {
   return array.sort(() => Math.random() - Math.random()).slice(0, some);
 }
-
-function ProductItem({
-  product,
-  onUpdate,
-  onDuplicate,
-  onDelete,
-  open,
-  setOpen
-}) {
+function ProductItem(_ref2) {
   _s2();
-
+  let {
+    product,
+    onUpdate,
+    onDuplicate,
+    onDelete,
+    open,
+    setOpen
+  } = _ref2;
   // const [open, setOpen] = useState<boolean>(false); // product.open ? product.open : false
   // const [promptOpen, setPromptOpen] = useState<boolean>(false);
   const [editOpen, setEditOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
@@ -51369,7 +50191,6 @@ function ProductItem({
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
-
   const handleClick = () => {
     setOpen(); //!open
   };
@@ -51387,11 +50208,9 @@ function ProductItem({
     if (e.target.className === "MuiButtonBase-root MuiListItem-root MuiListItem-gutters MuiListItem-button") setEditOpen(true);
     if (e.target.className === "MuiTypography-root MuiListItemText-primary MuiTypography-body1 MuiTypography-displayBlock") setEditOpen(true);
   };
-
   const handleEditBtnClick = e => {
     setEditOpen(true);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __self: this,
     __source: {
@@ -51562,19 +50381,18 @@ function ProductItem({
     }
   }));
 }
-
 _s2(ProductItem, "sZGfLEk2+UM5NArjZEPwAO1VTn0=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c2 = ProductItem;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
   stepBox: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center" // alignItems: "center",
-
+    justifyContent: "center"
+    // alignItems: "center",
   },
+
   stepBtn: {
     width: 500
   },
@@ -51589,13 +50407,10 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     paddingLeft: theme.spacing(4)
   }
 }));
-
 function sleep(time) {
   return new Promise(resolve => setTimeout(resolve, time));
 }
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "FinishedProductsStep");
 __webpack_require__.$Refresh$.register(_c2, "ProductItem");
 
@@ -51697,20 +50512,19 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_09.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
 
-
-function SelectFacility({
-  selected,
-  handleFacilitySelect
-}) {
+function SelectFacility(_ref) {
   _s();
-
+  let {
+    selected,
+    handleFacilitySelect
+  } = _ref;
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
     className: classes.stepBox,
@@ -51769,11 +50583,9 @@ function SelectFacility({
     }
   }));
 }
-
 _s(SelectFacility, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = SelectFacility;
 const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["createStyles"])({
   stepBox: {
@@ -51786,9 +50598,7 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["
     width: 500
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "SelectFacility");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -51892,7 +50702,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_10.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -51902,19 +50712,16 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function AssuredSpaceCheck({
-  value,
-  handleAssuredSpaceCheck
-}) {
+function AssuredSpaceCheck(_ref) {
   _s();
-
+  let {
+    value,
+    handleAssuredSpaceCheck
+  } = _ref;
   const classes = useStyles();
-
   const handleChange = event => {
     handleAssuredSpaceCheck(JSON.parse(event.target.value));
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
     className: classes.stepBox,
     __self: this,
@@ -52004,11 +50811,9 @@ function AssuredSpaceCheck({
     }
   }))));
 }
-
 _s(AssuredSpaceCheck, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = AssuredSpaceCheck;
 const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["createStyles"])({
   stepBox: {
@@ -52021,9 +50826,7 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["
     width: 500
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "AssuredSpaceCheck");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -52137,7 +50940,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_11.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -52154,14 +50957,15 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // @TODO add disclosure temp file link
 
-function VendorApproval({
-  reviewRequest,
-  setGreenLight
-}) {
+// @TODO add disclosure temp file link
+
+function VendorApproval(_ref) {
   _s();
-
+  let {
+    reviewRequest,
+    setGreenLight
+  } = _ref;
   const classes = useStyles();
   const {
     enqueueSnackbar
@@ -52174,13 +50978,11 @@ function VendorApproval({
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/review-request/${reviewRequest.id}/manufacturers`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         console.log(response.data);
         setManufacturers(response.data);
         let approvedCount = response.data.filter(m => {
           var _m$documents;
-
           return (_m$documents = m.documents) === null || _m$documents === void 0 ? void 0 : _m$documents.length;
         }).length;
         let nonApprovedCount = response.data.length - approvedCount;
@@ -52295,9 +51097,11 @@ function VendorApproval({
       columnNumber: 7
     }
   }, manufacturers.map((manufacturer, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    key: manufacturer.id // divider={divider}
+    key: manufacturer.id
+    // divider={divider}
     ,
-    button: true // onClick={handleIngredientItemClick}
+    button: true
+    // onClick={handleIngredientItemClick}
     ,
     __self: this,
     __source: {
@@ -52320,7 +51124,8 @@ function VendorApproval({
       columnNumber: 15
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
-    primary: manufacturer.name // secondary={ingredient.manufacturer?.name}
+    primary: manufacturer.name
+    // secondary={ingredient.manufacturer?.name}
     // secondary={moment(ingredient.date).format("DD/MM/YY")}
     ,
     __self: this,
@@ -52347,19 +51152,18 @@ function VendorApproval({
     }
   }))))));
 }
-
 _s(VendorApproval, "sWju5i35VD0atPvEQK3lh1gOXxg=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"]];
 });
-
 _c = VendorApproval;
 const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(theme => Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["createStyles"])({
   stepBox: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center" // alignItems: "center",
-
+    justifyContent: "center"
+    // alignItems: "center",
   },
+
   stepBtn: {
     width: 500
   },
@@ -52374,9 +51178,7 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["
     paddingLeft: theme.spacing(4)
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "VendorApproval");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -52470,7 +51272,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _material_ui_core_Stepper__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Stepper */ "./node_modules/@material-ui/core/esm/Stepper/index.js");
@@ -52498,8 +51300,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Stepper.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature(),
+  _this = undefined;
 
 
 
@@ -52528,7 +51330,6 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function HorizontalLinearStepper() {
   _s();
-
   const classes = useStyles();
   const {
     id
@@ -52551,8 +51352,8 @@ function HorizontalLinearStepper() {
       // if editing
       setLoading(true);
       axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/review-request/${id}`).then(async response => {
-        setLoading(false); // console.log(response.data);
-
+        setLoading(false);
+        // console.log(response.data);
         setReviewRequest(response.data);
         setActiveStep(response.data.current_step_index);
       }).catch(e => {
@@ -52562,52 +51363,50 @@ function HorizontalLinearStepper() {
       });
     }
   }, []);
-
   const setRequestType = type => {
-    setReviewRequest({ ...reviewRequest,
+    setReviewRequest({
+      ...reviewRequest,
       type
     });
     console.log(reviewRequest);
   };
-
   const handleFacilitySelect = id => {
-    setReviewRequest({ ...reviewRequest,
+    setReviewRequest({
+      ...reviewRequest,
       facility_id: id
     });
   };
-
   const handleAssuredSpaceCheck = value => {
-    setReviewRequest({ ...reviewRequest,
+    setReviewRequest({
+      ...reviewRequest,
       assured_space_check: value
     });
   };
-
   const updateReviewRequest = current_step_index => {
     // if (!reviewRequest) return;
     setLoading(true);
-    let data = { ...reviewRequest,
+    let data = {
+      ...reviewRequest,
       current_step_index
     };
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/review-request/${reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.id}`, data);
   };
-
   const isStepOptional = step => {
     return step === 1;
   };
-
   const isStepSkipped = step => {
     return skipped.has(step);
   };
-
   const handleSubmission = () => {
     setLoading(true);
-    let data = { ...reviewRequest,
+    let data = {
+      ...reviewRequest,
       current_step_index: 0,
       status: "SUBMITTED"
     };
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/review-request/${reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.id}`, data).then(async response => {
-      setLoading(false); // navigate(`/client/requests`);
-
+      setLoading(false);
+      // navigate(`/client/requests`);
       setActiveStep(prevActiveStep => prevActiveStep + 1);
       enqueueSnackbar("Review request submitted successfully.", {
         variant: "success"
@@ -52620,7 +51419,6 @@ function HorizontalLinearStepper() {
       });
     });
   };
-
   const createReviewRequest = () => {
     let data = {
       type: (reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.type) || "NEW_FACILITY_AND_PRODUCTS"
@@ -52640,10 +51438,11 @@ function HorizontalLinearStepper() {
       });
     });
   };
-
   const handleFacilityUpdate = () => {
     setLoading(true);
-    return axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/facility/${reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.facility_id}`, facilityStepValues); // .then(async (response) => {
+    return axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/facility/${reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.facility_id}`, facilityStepValues);
+
+    // .then(async (response) => {
     //   setLoading(false);
     //   if (response.status == 200 || response.status == 201) {
     //     enqueueSnackbar("Facility updated successfully.", {
@@ -52668,7 +51467,8 @@ function HorizontalLinearStepper() {
     // });
   };
 
-  const handleNext = (confirm = false) => {
+  const handleNext = function () {
+    let confirm = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
     if (!confirm) {
       if ((reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.type) === "NEW_PRODUCTS" && activeStep == 2 || (reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.type) === "NEW_FACILITY_AND_PRODUCTS" && activeStep == 8) {
         axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/review-request/${reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.id}/step-eight-check`).then(async response => {
@@ -52684,29 +51484,23 @@ function HorizontalLinearStepper() {
         return;
       }
     }
-
     if (!reviewRequest.id) {
       console.log("creating");
       createReviewRequest();
       return;
     }
-
     let nextFunctionCallback = updateReviewRequest(activeStep + 1);
-
     if ((reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.type) === "NEW_FACILITY" && activeStep == 1 || (reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.type) === "NEW_FACILITY_AND_PRODUCTS" && activeStep == 1) {
       nextFunctionCallback = handleFacilityUpdate();
     }
-
     nextFunctionCallback.then(async response => {
-      setLoading(false); // console.log(response.data);
-
+      setLoading(false);
+      // console.log(response.data);
       let newSkipped = skipped;
-
       if (isStepSkipped(activeStep)) {
         newSkipped = new Set(newSkipped.values());
         newSkipped.delete(activeStep);
       }
-
       setActiveStep(prevActiveStep => prevActiveStep + 1);
       setSkipped(newSkipped);
     }).catch(e => {
@@ -52717,13 +51511,11 @@ function HorizontalLinearStepper() {
       });
     });
   };
-
   const handleBack = () => {
     var _updateReviewRequest;
-
     (_updateReviewRequest = updateReviewRequest(activeStep - 1)) === null || _updateReviewRequest === void 0 ? void 0 : _updateReviewRequest.then(async response => {
-      setLoading(false); // console.log(response.data);
-
+      setLoading(false);
+      // console.log(response.data);
       setActiveStep(prevActiveStep => prevActiveStep - 1);
     }).catch(e => {
       console.error(e);
@@ -52733,14 +51525,12 @@ function HorizontalLinearStepper() {
       });
     });
   };
-
   const handleSkip = () => {
     if (!isStepOptional(activeStep)) {
       // You probably want to guard against something like this,
       // it should never occur unless someone's actively trying to break something.
       throw new Error("You can't skip a step that isn't optional.");
     }
-
     setActiveStep(prevActiveStep => prevActiveStep + 1);
     setSkipped(prevSkipped => {
       const newSkipped = new Set(prevSkipped.values());
@@ -52748,11 +51538,9 @@ function HorizontalLinearStepper() {
       return newSkipped;
     });
   };
-
   const handleReset = () => {
     setActiveStep(0);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Grid"], {
     container: true,
     spacing: 3,
@@ -52825,7 +51613,8 @@ function HorizontalLinearStepper() {
       lineNumber: 326,
       columnNumber: 11
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"] // style={{
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"]
+  // style={{
   //   paddingLeft: 20,
   //   paddingRight: 20,
   // }}
@@ -52930,7 +51719,8 @@ function HorizontalLinearStepper() {
       lineNumber: 406,
       columnNumber: 23
     }
-  }) // <Button
+  })
+  // <Button
   //   variant="contained"
   //   color="primary"
   //   onClick={handleSubmission}
@@ -52943,7 +51733,7 @@ function HorizontalLinearStepper() {
     color: "secondary",
     onClick: () => handleNext(false),
     className: classes.button,
-    disabled: loading || !greenLight || !(reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.type),
+    disabled: loading || !greenLight || !(reviewRequest !== null && reviewRequest !== void 0 && reviewRequest.type),
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -52976,16 +51766,15 @@ function HorizontalLinearStepper() {
     }
   }, steps.map((label, index) => {
     const stepProps = {};
-    const labelProps = {}; // if (isStepOptional(index)) {
+    const labelProps = {};
+    // if (isStepOptional(index)) {
     //   labelProps.optional = (
     //     <Typography variant="caption">Optional</Typography>
     //   );
     // }
-
     if (isStepSkipped(index)) {
       stepProps.completed = false;
     }
-
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Step__WEBPACK_IMPORTED_MODULE_6__["default"], Object.assign({
       key: label
     }, stepProps, {
@@ -53012,35 +51801,32 @@ function HorizontalLinearStepper() {
     }, label)));
   }))));
 }
-
 _s(HorizontalLinearStepper, "sow+IpKGQVuxhgx/j8xvCGW2lS0=", false, function () {
   return [useStyles, react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useParams"], react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useNavigate"], notistack__WEBPACK_IMPORTED_MODULE_10__["useSnackbar"]];
 });
-
 _c = HorizontalLinearStepper;
-
 function getStepTitles(reviewType) {
   let steps = ["Select registration type"];
   if (reviewType === "NEW_FACILITY" || reviewType === "NEW_FACILITY_AND_PRODUCTS") steps = [...steps, "Facility details", "Legal Business Documents", "Traceability Plan", "Flowchart of Processing", "Sanitation Standard Operating Procedure", "Recall Plan", "Pest Control"];
   if (reviewType === "NEW_PRODUCTS") steps.push("Select Facility", "Assured Space Check");
-
   if (reviewType === "NEW_PRODUCTS" || reviewType === "NEW_FACILITY_AND_PRODUCTS") {
     steps.push("Finished Products");
     steps.push("Vendor Approval");
-  } // final step
+  }
 
-
+  // final step
   steps.push("Submit Request");
   steps.push("Success");
   return steps;
 }
-
-const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelect, handleAssuredSpaceCheck, facilityStepValues, setFacilityStepValues, onSubmit = () => {}, setGreenLight) => {
+const getStepContent = function (step, reviewRequest, setRequestType, handleFacilitySelect, handleAssuredSpaceCheck, facilityStepValues, setFacilityStepValues) {
+  let onSubmit = arguments.length > 7 && arguments[7] !== undefined ? arguments[7] : () => {};
+  let setGreenLight = arguments.length > 8 ? arguments[8] : undefined;
   // return <SuccessfulSubmissionStep />;
   if (step === 0) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PreStep__WEBPACK_IMPORTED_MODULE_12__["default"], {
     requestType: reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.type,
     setRequestType: setRequestType,
-    __self: undefined,
+    __self: _this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 515,
@@ -53053,107 +51839,98 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         facilityId: reviewRequest.facility_id,
         values: facilityStepValues,
         setValues: setFacilityStepValues,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 525,
           columnNumber: 11
         }
       });
-
     case 2:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_02__WEBPACK_IMPORTED_MODULE_16__["default"], {
         facilityId: reviewRequest.facility_id,
         setGreenLight: setGreenLight,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 533,
           columnNumber: 11
         }
       });
-
     case 3:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_03__WEBPACK_IMPORTED_MODULE_17__["default"], {
         facilityId: reviewRequest.facility_id,
         setGreenLight: setGreenLight,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 540,
           columnNumber: 11
         }
       });
-
     case 4:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_04__WEBPACK_IMPORTED_MODULE_18__["default"], {
         facilityId: reviewRequest.facility_id,
         setGreenLight: setGreenLight,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 547,
           columnNumber: 11
         }
       });
-
     case 5:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_05__WEBPACK_IMPORTED_MODULE_19__["default"], {
         facilityId: reviewRequest.facility_id,
         setGreenLight: setGreenLight,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 554,
           columnNumber: 11
         }
       });
-
     case 6:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_06__WEBPACK_IMPORTED_MODULE_20__["default"], {
         facilityId: reviewRequest.facility_id,
         setGreenLight: setGreenLight,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 561,
           columnNumber: 11
         }
       });
-
     case 7:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_07__WEBPACK_IMPORTED_MODULE_21__["default"], {
         facilityId: reviewRequest.facility_id,
         setGreenLight: setGreenLight,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 568,
           columnNumber: 11
         }
       });
-
     case 8:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SubmitStep__WEBPACK_IMPORTED_MODULE_13__["default"], {
         onSubmit: onSubmit,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 574,
           columnNumber: 16
         }
       });
-
     case 9:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SuccessfulSubmissionStep__WEBPACK_IMPORTED_MODULE_14__["default"], {
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 576,
           columnNumber: 16
         }
       });
-
     default:
       return "Unknown step";
   }
@@ -53162,71 +51939,65 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_09__WEBPACK_IMPORTED_MODULE_23__["default"], {
         selected: (reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.facility_id) || 0,
         handleFacilitySelect: handleFacilitySelect,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 585,
           columnNumber: 11
         }
       });
-
     case 2:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_10__WEBPACK_IMPORTED_MODULE_24__["default"], {
         value: Boolean((reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.assured_space_check) || false),
         handleAssuredSpaceCheck: handleAssuredSpaceCheck,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 592,
           columnNumber: 11
         }
       });
-
     case 3:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_08__WEBPACK_IMPORTED_MODULE_22__["default"], {
         reviewRequest: reviewRequest,
         setGreenLight: setGreenLight,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 599,
           columnNumber: 11
         }
       });
-
     case 4:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_11__WEBPACK_IMPORTED_MODULE_25__["default"], {
         reviewRequest: reviewRequest,
         setGreenLight: setGreenLight,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 606,
           columnNumber: 11
         }
       });
-
     case 5:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SubmitStep__WEBPACK_IMPORTED_MODULE_13__["default"], {
         onSubmit: onSubmit,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 612,
           columnNumber: 16
         }
       });
-
     case 6:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SuccessfulSubmissionStep__WEBPACK_IMPORTED_MODULE_14__["default"], {
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 614,
           columnNumber: 16
         }
       });
-
     default:
       return "Unknown step";
   }
@@ -53236,136 +52007,124 @@ const getStepContent = (step, reviewRequest, setRequestType, handleFacilitySelec
         facilityId: reviewRequest.facility_id,
         values: facilityStepValues,
         setValues: setFacilityStepValues,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 623,
           columnNumber: 11
         }
       });
-
     case 2:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_02__WEBPACK_IMPORTED_MODULE_16__["default"], {
         facilityId: reviewRequest.facility_id,
         setGreenLight: setGreenLight,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 631,
           columnNumber: 11
         }
       });
-
     case 3:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_03__WEBPACK_IMPORTED_MODULE_17__["default"], {
         facilityId: reviewRequest.facility_id,
         setGreenLight: setGreenLight,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 638,
           columnNumber: 11
         }
       });
-
     case 4:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_04__WEBPACK_IMPORTED_MODULE_18__["default"], {
         facilityId: reviewRequest.facility_id,
         setGreenLight: setGreenLight,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 645,
           columnNumber: 11
         }
       });
-
     case 5:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_05__WEBPACK_IMPORTED_MODULE_19__["default"], {
         facilityId: reviewRequest.facility_id,
         setGreenLight: setGreenLight,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 652,
           columnNumber: 11
         }
       });
-
     case 6:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_06__WEBPACK_IMPORTED_MODULE_20__["default"], {
         facilityId: reviewRequest.facility_id,
         setGreenLight: setGreenLight,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 659,
           columnNumber: 11
         }
       });
-
     case 7:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_07__WEBPACK_IMPORTED_MODULE_21__["default"], {
         facilityId: reviewRequest.facility_id,
         setGreenLight: setGreenLight,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 666,
           columnNumber: 11
         }
       });
-
     case 8:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_08__WEBPACK_IMPORTED_MODULE_22__["default"], {
         reviewRequest: reviewRequest,
         setGreenLight: setGreenLight,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 673,
           columnNumber: 11
         }
       });
-
     case 9:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Step_11__WEBPACK_IMPORTED_MODULE_25__["default"], {
         reviewRequest: reviewRequest,
         setGreenLight: setGreenLight,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 680,
           columnNumber: 11
         }
       });
-
     case 10:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SubmitStep__WEBPACK_IMPORTED_MODULE_13__["default"], {
         onSubmit: onSubmit,
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 686,
           columnNumber: 16
         }
       });
-
     case 11:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_SuccessfulSubmissionStep__WEBPACK_IMPORTED_MODULE_14__["default"], {
-        __self: undefined,
+        __self: _this,
         __source: {
           fileName: _jsxFileName,
           lineNumber: 688,
           columnNumber: 16
         }
       });
-
     default:
       return "Unknown step";
   }
 };
-
 const defaults = {
   id: null,
   review_request_id: null,
@@ -53392,9 +52151,7 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["
     paddingTop: 20
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "HorizontalLinearStepper");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -53496,7 +52253,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\SubmitStep.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -53504,12 +52261,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function SubmitStep({
-  onSubmit
-}) {
+function SubmitStep(_ref) {
   _s();
-
+  let {
+    onSubmit
+  } = _ref;
   const classes = useStyles();
   const [promptOpen, setPromptOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
@@ -53619,11 +52375,9 @@ function SubmitStep({
     }
   }));
 }
-
 _s(SubmitStep, "bj6hncr95XTCyyZmI1FB1B7/6f4=", false, function () {
   return [useStyles];
 });
-
 _c = SubmitStep;
 const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["createStyles"])({
   stepBox: {
@@ -53636,9 +52390,7 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["
     width: 500
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "SubmitStep");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -53730,7 +52482,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SuccessfulSubmissionStep; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
@@ -53740,8 +52492,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\SuccessfulSubmissionStep.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -53751,7 +52502,6 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function SuccessfulSubmissionStep() {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     className: classes.stepBox,
@@ -53822,11 +52572,9 @@ function SuccessfulSubmissionStep() {
     }
   }, "Close")));
 }
-
 _s(SuccessfulSubmissionStep, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = SuccessfulSubmissionStep;
 const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["createStyles"])({
   stepBox: {
@@ -53839,9 +52587,7 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
     width: 500
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "SuccessfulSubmissionStep");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -53939,16 +52685,15 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
- // @TODO handle avatar
 
+// @TODO handle avatar
 const ClientNewRequest = () => {
   _s();
-
   const classes = useStyles();
   return (
     /*#__PURE__*/
@@ -53980,11 +52725,9 @@ const ClientNewRequest = () => {
     })))
   );
 };
-
 _s(ClientNewRequest, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = ClientNewRequest;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
   root: {
@@ -53996,9 +52739,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
   }
 }));
 /* harmony default export */ __webpack_exports__["default"] = (ClientNewRequest);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ClientNewRequest");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -54092,7 +52833,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! yup */ "./node_modules/yup/es/index.js");
 /* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
@@ -54102,8 +52843,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\common\\auth\\ForgotPasswordView.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -54114,14 +52854,12 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function ForgotPasswordView() {
   _s();
-
   const classes = useStyles();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [showNextSteps, setShowNextSteps] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"])();
-
   const handleResetPasswordRequest = values => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/forgot-password", {
@@ -54129,7 +52867,6 @@ function ForgotPasswordView() {
     }).then(async response => {
       setLoading(false);
       console.log(response);
-
       if (response.status == 200 || response.status == 201) {
         setShowNextSteps(true);
         enqueueSnackbar("Password reset link sent to your email.", {
@@ -54146,7 +52883,6 @@ function ForgotPasswordView() {
       });
     });
   };
-
   return (
     /*#__PURE__*/
     // @ts-ignore
@@ -54210,124 +52946,125 @@ function ForgotPasswordView() {
         lineNumber: 64,
         columnNumber: 13
       }
-    }, ({
-      errors,
-      handleBlur,
-      handleChange,
-      handleSubmit,
-      isSubmitting,
-      touched,
-      values
-    }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-      onSubmit: handleSubmit,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 83,
-        columnNumber: 17
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
-      mb: 3,
-      style: {
-        paddingBottom: 10
-      },
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 84,
-        columnNumber: 19
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
-      color: "textPrimary",
-      variant: "h2",
-      align: "center",
-      style: {
-        marginBottom: 7
-      },
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 85,
-        columnNumber: 21
-      }
-    }, "Reset Password"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
-      color: "textSecondary",
-      gutterBottom: true,
-      variant: "body2",
-      align: "center",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 93,
-        columnNumber: 21
-      }
-    }, !showNextSteps && "Please enter your email address to receive a password reset link" || "A password reset link has been sent to the email you provided. If you do not see any mail, please check your spam folder.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TextField"], {
-      error: Boolean(touched.email && errors.email),
-      fullWidth: true,
-      helperText: touched.email && errors.email,
-      label: "Email Address",
-      margin: "normal",
-      name: "email",
-      onBlur: handleBlur,
-      onChange: handleChange,
-      type: "email",
-      value: values.email,
-      variant: "outlined",
-      disabled: showNextSteps,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 104,
-        columnNumber: 19
-      }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
-      my: 2,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 118,
-        columnNumber: 19
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Button"], {
-      color: "primary",
-      disabled: isSubmitting,
-      fullWidth: true,
-      size: "large",
-      type: "submit",
-      variant: "contained",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 119,
-        columnNumber: 21
-      }
-    }, "Request Reset")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
-      color: "textSecondary",
-      variant: "body1",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 130,
-        columnNumber: 19
-      }
-    }, "Back to", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Link"], {
-      component: react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"],
-      to: "/login",
-      variant: "h6",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 132,
-        columnNumber: 21
-      }
-    }, "Log In"))))))))
+    }, _ref => {
+      let {
+        errors,
+        handleBlur,
+        handleChange,
+        handleSubmit,
+        isSubmitting,
+        touched,
+        values
+      } = _ref;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+        onSubmit: handleSubmit,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 83,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
+        mb: 3,
+        style: {
+          paddingBottom: 10
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 84,
+          columnNumber: 19
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
+        color: "textPrimary",
+        variant: "h2",
+        align: "center",
+        style: {
+          marginBottom: 7
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 85,
+          columnNumber: 21
+        }
+      }, "Reset Password"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
+        color: "textSecondary",
+        gutterBottom: true,
+        variant: "body2",
+        align: "center",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 93,
+          columnNumber: 21
+        }
+      }, !showNextSteps && "Please enter your email address to receive a password reset link" || "A password reset link has been sent to the email you provided. If you do not see any mail, please check your spam folder.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TextField"], {
+        error: Boolean(touched.email && errors.email),
+        fullWidth: true,
+        helperText: touched.email && errors.email,
+        label: "Email Address",
+        margin: "normal",
+        name: "email",
+        onBlur: handleBlur,
+        onChange: handleChange,
+        type: "email",
+        value: values.email,
+        variant: "outlined",
+        disabled: showNextSteps,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 104,
+          columnNumber: 19
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
+        my: 2,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 118,
+          columnNumber: 19
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Button"], {
+        color: "primary",
+        disabled: isSubmitting,
+        fullWidth: true,
+        size: "large",
+        type: "submit",
+        variant: "contained",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 119,
+          columnNumber: 21
+        }
+      }, "Request Reset")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
+        color: "textSecondary",
+        variant: "body1",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 130,
+          columnNumber: 19
+        }
+      }, "Back to", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Link"], {
+        component: react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"],
+        to: "/login",
+        variant: "h6",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 132,
+          columnNumber: 21
+        }
+      }, "Log In")));
+    })))))
   );
 }
-
 _s(ForgotPasswordView, "eGss5moga43I9NiPqeJ/xgaLMME=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"]];
 });
-
 _c = ForgotPasswordView;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["makeStyles"])(theme => ({
   root: {
@@ -54338,9 +53075,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ForgotPasswordView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -54432,7 +53167,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "redirectLinkFromRole", function() { return redirectLinkFromRole; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! yup */ "./node_modules/yup/es/index.js");
 /* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
@@ -54442,8 +53177,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\common\\auth\\LoginView.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 // @ts-nocheck
 
 
@@ -54453,7 +53187,6 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 const auth = new _api_Auth__WEBPACK_IMPORTED_MODULE_5__["default"]();
-
 function findGetParameter(parameterName) {
   let result = null;
   let tmp = [];
@@ -54463,10 +53196,8 @@ function findGetParameter(parameterName) {
   });
   return result;
 }
-
 const LoginView = props => {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
   const classes = useStyles();
@@ -54481,10 +53212,10 @@ const LoginView = props => {
       });
     }).catch(() => setLoading(false));
   }, []);
-
-  const onSubmitHandler = (values, {
-    setSubmitting
-  }) => {
+  const onSubmitHandler = (values, _ref) => {
+    let {
+      setSubmitting
+    } = _ref;
     setLoading(true);
     auth.login(values).then(user => {
       setSubmitting(false);
@@ -54495,15 +53226,14 @@ const LoginView = props => {
     }).catch(e => {
       console.log(e.response);
       setLoading(false);
-      setSubmitting(false); // @TODO set formik errors
-
+      setSubmitting(false);
+      // @TODO set formik errors
       if (!e.response.data.errors) return;
       let errorMessage = Object.values(e.response.data.errors).map(v => v[0]).join(" ");
       errorMessage += " Username/password incorrect. Please try again.";
       setErrorMessage(errorMessage);
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_6__["default"], {
     className: classes.root,
     title: "Login",
@@ -54568,184 +53298,182 @@ const LoginView = props => {
       lineNumber: 107,
       columnNumber: 13
     }
-  }, ({
-    errors,
-    handleBlur,
-    handleChange,
-    handleSubmit,
-    isSubmitting,
-    touched,
-    values
-  }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    onSubmit: handleSubmit,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 134,
-      columnNumber: 17
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
-    mb: 3,
-    style: {
-      paddingBottom: 10
-    },
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 135,
-      columnNumber: 19
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
-    color: "textPrimary",
-    variant: "h2",
-    align: "center",
-    style: {
-      marginBottom: 7
-    },
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 136,
-      columnNumber: 21
-    }
-  }, "Log in"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
-    color: "textSecondary",
-    gutterBottom: true,
-    variant: "body2",
-    align: "center",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 144,
-      columnNumber: 21
-    }
-  }, "Log in to Halal Watch World's secure portal"), errorMessage && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
-    gutterBottom: true,
-    variant: "body2",
-    align: "center",
-    style: {
-      color: "red"
-    },
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 153,
-      columnNumber: 23
-    }
-  }, errorMessage)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
-    error: Boolean(touched.email && errors.email),
-    fullWidth: true,
-    helperText: touched.email && errors.email,
-    label: "Email Address",
-    margin: "normal",
-    name: "email",
-    onBlur: handleBlur,
-    onChange: handleChange,
-    type: "email",
-    value: values.email,
-    variant: "outlined",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 197,
-      columnNumber: 19
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
-    error: Boolean(touched.password && errors.password),
-    fullWidth: true,
-    helperText: touched.password && errors.password,
-    label: "Password",
-    margin: "normal",
-    name: "password",
-    onBlur: handleBlur,
-    onChange: handleChange,
-    type: "password",
-    value: values.password,
-    variant: "outlined",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 210,
-      columnNumber: 19
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["FormControlLabel"], {
-    control: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Checkbox"], {
-      checked: values.remember,
-      onChange: handleChange,
-      name: "remember",
+  }, _ref2 => {
+    let {
+      errors,
+      handleBlur,
+      handleChange,
+      handleSubmit,
+      isSubmitting,
+      touched,
+      values
+    } = _ref2;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      onSubmit: handleSubmit,
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 225,
+        lineNumber: 134,
+        columnNumber: 17
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
+      mb: 3,
+      style: {
+        paddingBottom: 10
+      },
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 135,
+        columnNumber: 19
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+      color: "textPrimary",
+      variant: "h2",
+      align: "center",
+      style: {
+        marginBottom: 7
+      },
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 136,
+        columnNumber: 21
+      }
+    }, "Log in"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+      color: "textSecondary",
+      gutterBottom: true,
+      variant: "body2",
+      align: "center",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 144,
+        columnNumber: 21
+      }
+    }, "Log in to Halal Watch World's secure portal"), errorMessage && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+      gutterBottom: true,
+      variant: "body2",
+      align: "center",
+      style: {
+        color: "red"
+      },
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 153,
         columnNumber: 23
       }
-    }),
-    label: "Remember me",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 223,
-      columnNumber: 19
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
-    my: 2,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 233,
-      columnNumber: 19
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Button"], {
-    color: "secondary",
-    disabled: isSubmitting,
-    fullWidth: true,
-    size: "large",
-    type: "submit",
-    variant: "contained",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 234,
-      columnNumber: 21
-    }
-  }, "Log in")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
-    color: "textSecondary",
-    variant: "body1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 245,
-      columnNumber: 19
-    }
-  }, "Forgot password?", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Link"], {
-    component: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"],
-    to: "/forgot-password",
-    variant: "h6",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 247,
-      columnNumber: 21
-    }
-  }, "Reset"))))))));
+    }, errorMessage)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
+      error: Boolean(touched.email && errors.email),
+      fullWidth: true,
+      helperText: touched.email && errors.email,
+      label: "Email Address",
+      margin: "normal",
+      name: "email",
+      onBlur: handleBlur,
+      onChange: handleChange,
+      type: "email",
+      value: values.email,
+      variant: "outlined",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 197,
+        columnNumber: 19
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
+      error: Boolean(touched.password && errors.password),
+      fullWidth: true,
+      helperText: touched.password && errors.password,
+      label: "Password",
+      margin: "normal",
+      name: "password",
+      onBlur: handleBlur,
+      onChange: handleChange,
+      type: "password",
+      value: values.password,
+      variant: "outlined",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 210,
+        columnNumber: 19
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["FormControlLabel"], {
+      control: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Checkbox"], {
+        checked: values.remember,
+        onChange: handleChange,
+        name: "remember",
+        __self: undefined,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 225,
+          columnNumber: 23
+        }
+      }),
+      label: "Remember me",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 223,
+        columnNumber: 19
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
+      my: 2,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 233,
+        columnNumber: 19
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Button"], {
+      color: "secondary",
+      disabled: isSubmitting,
+      fullWidth: true,
+      size: "large",
+      type: "submit",
+      variant: "contained",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 234,
+        columnNumber: 21
+      }
+    }, "Log in")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+      color: "textSecondary",
+      variant: "body1",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 245,
+        columnNumber: 19
+      }
+    }, "Forgot password?", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+      component: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"],
+      to: "/forgot-password",
+      variant: "h6",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 247,
+        columnNumber: 21
+      }
+    }, "Reset")));
+  })))));
 };
-
 _s(LoginView, "Vo/+Xhqfv+CAayp5rQVzMeEl34o=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"], useStyles];
 });
-
 _c = LoginView;
 function redirectLinkFromRole(userRole) {
   switch (userRole) {
     case "ADMIN":
       return "/admin/review-requests";
-
     case "MANAGER":
       return "/reviewer/clients";
-
     case "REVIEWER":
       return "/reviewer/clients/requests";
-
     case "CLIENT":
     case "HED":
       return "/client/dashboard";
@@ -54760,9 +53488,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["makeSty
   }
 }));
 /* harmony default export */ __webpack_exports__["default"] = (LoginView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "LoginView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -54853,7 +53579,7 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! yup */ "./node_modules/yup/es/index.js");
 /* harmony import */ var formik__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! formik */ "./node_modules/formik/dist/formik.esm.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
@@ -54862,8 +53588,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\common\\auth\\RegisterView.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -54878,10 +53603,8 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const RegisterView = () => {
   _s();
-
   const classes = useStyles();
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -54938,220 +53661,219 @@ const RegisterView = () => {
       lineNumber: 43,
       columnNumber: 11
     }
-  }, ({
-    errors,
-    handleBlur,
-    handleChange,
-    handleSubmit,
-    isSubmitting,
-    touched,
-    values
-  }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    onSubmit: handleSubmit,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73,
-      columnNumber: 15
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
-    mb: 3,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74,
-      columnNumber: 17
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
-    color: "textPrimary",
-    variant: "h2",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 75,
-      columnNumber: 19
-    }
-  }, "Create new account"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
-    color: "textSecondary",
-    gutterBottom: true,
-    variant: "body2",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 81,
-      columnNumber: 19
-    }
-  }, "Use your email to create new account")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
-    error: Boolean(touched.firstName && errors.firstName),
-    fullWidth: true,
-    helperText: touched.firstName && errors.firstName,
-    label: "First name",
-    margin: "normal",
-    name: "firstName",
-    onBlur: handleBlur,
-    onChange: handleChange,
-    value: values.firstName,
-    variant: "outlined",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89,
-      columnNumber: 17
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
-    error: Boolean(touched.lastName && errors.lastName),
-    fullWidth: true,
-    helperText: touched.lastName && errors.lastName,
-    label: "Last name",
-    margin: "normal",
-    name: "lastName",
-    onBlur: handleBlur,
-    onChange: handleChange,
-    value: values.lastName,
-    variant: "outlined",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 101,
-      columnNumber: 17
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
-    error: Boolean(touched.email && errors.email),
-    fullWidth: true,
-    helperText: touched.email && errors.email,
-    label: "Email Address",
-    margin: "normal",
-    name: "email",
-    onBlur: handleBlur,
-    onChange: handleChange,
-    type: "email",
-    value: values.email,
-    variant: "outlined",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 113,
-      columnNumber: 17
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
-    error: Boolean(touched.password && errors.password),
-    fullWidth: true,
-    helperText: touched.password && errors.password,
-    label: "Password",
-    margin: "normal",
-    name: "password",
-    onBlur: handleBlur,
-    onChange: handleChange,
-    type: "password",
-    value: values.password,
-    variant: "outlined",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 126,
-      columnNumber: 17
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
-    alignItems: "center",
-    display: "flex",
-    ml: -1,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 139,
-      columnNumber: 17
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Checkbox"], {
-    checked: values.policy,
-    name: "policy",
-    onChange: handleChange,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 144,
-      columnNumber: 19
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
-    color: "textSecondary",
-    variant: "body1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 149,
-      columnNumber: 19
-    }
-  }, "I have read the", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Link"], {
-    color: "primary",
-    component: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"],
-    to: "#",
-    underline: "always",
-    variant: "h6",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 155,
-      columnNumber: 21
-    }
-  }, "Terms and Conditions"))), Boolean(touched.policy && errors.policy) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["FormHelperText"], {
-    error: true,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 167,
-      columnNumber: 19
-    }
-  }, errors.policy), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
-    my: 2,
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 171,
-      columnNumber: 17
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Button"], {
-    color: "primary",
-    disabled: isSubmitting,
-    fullWidth: true,
-    size: "large",
-    type: "submit",
-    variant: "contained",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 172,
-      columnNumber: 19
-    }
-  }, "Sign up now")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
-    color: "textSecondary",
-    variant: "body1",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 183,
-      columnNumber: 17
-    }
-  }, "Have an account?", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Link"], {
-    component: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"],
-    to: "/login",
-    variant: "h6",
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 189,
-      columnNumber: 19
-    }
-  }, "Sign in")))))));
+  }, _ref => {
+    let {
+      errors,
+      handleBlur,
+      handleChange,
+      handleSubmit,
+      isSubmitting,
+      touched,
+      values
+    } = _ref;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+      onSubmit: handleSubmit,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 73,
+        columnNumber: 15
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
+      mb: 3,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 74,
+        columnNumber: 17
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+      color: "textPrimary",
+      variant: "h2",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75,
+        columnNumber: 19
+      }
+    }, "Create new account"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+      color: "textSecondary",
+      gutterBottom: true,
+      variant: "body2",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 81,
+        columnNumber: 19
+      }
+    }, "Use your email to create new account")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
+      error: Boolean(touched.firstName && errors.firstName),
+      fullWidth: true,
+      helperText: touched.firstName && errors.firstName,
+      label: "First name",
+      margin: "normal",
+      name: "firstName",
+      onBlur: handleBlur,
+      onChange: handleChange,
+      value: values.firstName,
+      variant: "outlined",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 89,
+        columnNumber: 17
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
+      error: Boolean(touched.lastName && errors.lastName),
+      fullWidth: true,
+      helperText: touched.lastName && errors.lastName,
+      label: "Last name",
+      margin: "normal",
+      name: "lastName",
+      onBlur: handleBlur,
+      onChange: handleChange,
+      value: values.lastName,
+      variant: "outlined",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 101,
+        columnNumber: 17
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
+      error: Boolean(touched.email && errors.email),
+      fullWidth: true,
+      helperText: touched.email && errors.email,
+      label: "Email Address",
+      margin: "normal",
+      name: "email",
+      onBlur: handleBlur,
+      onChange: handleChange,
+      type: "email",
+      value: values.email,
+      variant: "outlined",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 113,
+        columnNumber: 17
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
+      error: Boolean(touched.password && errors.password),
+      fullWidth: true,
+      helperText: touched.password && errors.password,
+      label: "Password",
+      margin: "normal",
+      name: "password",
+      onBlur: handleBlur,
+      onChange: handleChange,
+      type: "password",
+      value: values.password,
+      variant: "outlined",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 126,
+        columnNumber: 17
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
+      alignItems: "center",
+      display: "flex",
+      ml: -1,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 139,
+        columnNumber: 17
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Checkbox"], {
+      checked: values.policy,
+      name: "policy",
+      onChange: handleChange,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 144,
+        columnNumber: 19
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+      color: "textSecondary",
+      variant: "body1",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 149,
+        columnNumber: 19
+      }
+    }, "I have read the", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+      color: "primary",
+      component: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"],
+      to: "#",
+      underline: "always",
+      variant: "h6",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 155,
+        columnNumber: 21
+      }
+    }, "Terms and Conditions"))), Boolean(touched.policy && errors.policy) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["FormHelperText"], {
+      error: true,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 167,
+        columnNumber: 19
+      }
+    }, errors.policy), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
+      my: 2,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 171,
+        columnNumber: 17
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Button"], {
+      color: "primary",
+      disabled: isSubmitting,
+      fullWidth: true,
+      size: "large",
+      type: "submit",
+      variant: "contained",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 172,
+        columnNumber: 19
+      }
+    }, "Sign up now")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+      color: "textSecondary",
+      variant: "body1",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 183,
+        columnNumber: 17
+      }
+    }, "Have an account?", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Link"], {
+      component: react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"],
+      to: "/login",
+      variant: "h6",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 189,
+        columnNumber: 19
+      }
+    }, "Sign in")));
+  }))));
 };
-
 _s(RegisterView, "pvfM4ZXsoMI5DaOvCNwyBjRqjLg=", false, function () {
   return [useStyles, react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
 });
-
 _c = RegisterView;
 /* harmony default export */ __webpack_exports__["default"] = (RegisterView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "RegisterView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -55245,7 +53967,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! query-string */ "./node_modules/query-string/index.js");
 /* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(query_string__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var yup__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! yup */ "./node_modules/yup/es/index.js");
@@ -55257,8 +53979,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\common\\auth\\ResetPasswordView.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -55270,7 +53991,6 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function PasswordResetView() {
   _s();
-
   const classes = useStyles();
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useNavigate"])();
   const {
@@ -55288,7 +54008,6 @@ function PasswordResetView() {
       replace: true
     });
   }, []);
-
   const handleResetPasswordRequest = values => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/reset-password", {
@@ -55299,7 +54018,6 @@ function PasswordResetView() {
     }).then(async response => {
       setLoading(false);
       console.log(response);
-
       if (response.status == 200 || response.status == 201) {
         setStatusMessage(response.data.message);
         enqueueSnackbar("Password reset successfully.", {
@@ -55322,7 +54040,6 @@ function PasswordResetView() {
       setStatusMessage(errorMessage);
     });
   };
-
   return (
     /*#__PURE__*/
     // @ts-ignore
@@ -55388,141 +54105,142 @@ function PasswordResetView() {
         lineNumber: 88,
         columnNumber: 13
       }
-    }, ({
-      errors,
-      handleBlur,
-      handleChange,
-      handleSubmit,
-      isSubmitting,
-      touched,
-      values
-    }) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-      onSubmit: handleSubmit,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 111,
-        columnNumber: 17
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Box"], {
-      mb: 3,
-      style: {
-        paddingBottom: 10
-      },
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 112,
-        columnNumber: 19
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Typography"], {
-      color: "textPrimary",
-      variant: "h2",
-      align: "center",
-      style: {
-        marginBottom: 7
-      },
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 113,
-        columnNumber: 21
-      }
-    }, "Reset Password"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Typography"], {
-      color: "textSecondary",
-      gutterBottom: true,
-      variant: "body2",
-      align: "center",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 121,
-        columnNumber: 21
-      }
-    }, statusMessage && statusMessage || "Please enter and confirm your new password.")), !statusMessage && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TextField"], {
-      error: Boolean(touched.password && errors.password),
-      fullWidth: true,
-      helperText: touched.password && errors.password,
-      label: "New Password",
-      margin: "normal",
-      name: "password",
-      onBlur: handleBlur,
-      onChange: handleChange,
-      type: "password",
-      value: values.password,
-      variant: "outlined",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 133,
-        columnNumber: 23
-      }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TextField"], {
-      error: Boolean(touched.password_confirmation && errors.password_confirmation),
-      fullWidth: true,
-      helperText: touched.password_confirmation && errors.password_confirmation,
-      label: "Confirm New Password",
-      margin: "normal",
-      name: "password_confirmation",
-      onBlur: handleBlur,
-      onChange: handleChange,
-      type: "password",
-      value: values.password_confirmation,
-      variant: "outlined",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 146,
-        columnNumber: 23
-      }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Box"], {
-      my: 2,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 165,
-        columnNumber: 23
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Button"], {
-      color: "primary",
-      disabled: isSubmitting,
-      fullWidth: true,
-      size: "large",
-      type: "submit",
-      variant: "contained",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 166,
-        columnNumber: 25
-      }
-    }, "Reset Password"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Typography"], {
-      color: "textSecondary",
-      variant: "body1",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 179,
-        columnNumber: 19
-      }
-    }, "Back to", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Link"], {
-      component: react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"],
-      to: "/login",
-      variant: "h6",
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 181,
-        columnNumber: 21
-      }
-    }, "Log In"))))))))
+    }, _ref => {
+      let {
+        errors,
+        handleBlur,
+        handleChange,
+        handleSubmit,
+        isSubmitting,
+        touched,
+        values
+      } = _ref;
+      return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+        onSubmit: handleSubmit,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 111,
+          columnNumber: 17
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Box"], {
+        mb: 3,
+        style: {
+          paddingBottom: 10
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 112,
+          columnNumber: 19
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Typography"], {
+        color: "textPrimary",
+        variant: "h2",
+        align: "center",
+        style: {
+          marginBottom: 7
+        },
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 113,
+          columnNumber: 21
+        }
+      }, "Reset Password"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Typography"], {
+        color: "textSecondary",
+        gutterBottom: true,
+        variant: "body2",
+        align: "center",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 121,
+          columnNumber: 21
+        }
+      }, statusMessage && statusMessage || "Please enter and confirm your new password.")), !statusMessage && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TextField"], {
+        error: Boolean(touched.password && errors.password),
+        fullWidth: true,
+        helperText: touched.password && errors.password,
+        label: "New Password",
+        margin: "normal",
+        name: "password",
+        onBlur: handleBlur,
+        onChange: handleChange,
+        type: "password",
+        value: values.password,
+        variant: "outlined",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 133,
+          columnNumber: 23
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TextField"], {
+        error: Boolean(touched.password_confirmation && errors.password_confirmation),
+        fullWidth: true,
+        helperText: touched.password_confirmation && errors.password_confirmation,
+        label: "Confirm New Password",
+        margin: "normal",
+        name: "password_confirmation",
+        onBlur: handleBlur,
+        onChange: handleChange,
+        type: "password",
+        value: values.password_confirmation,
+        variant: "outlined",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 146,
+          columnNumber: 23
+        }
+      }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Box"], {
+        my: 2,
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 165,
+          columnNumber: 23
+        }
+      }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Button"], {
+        color: "primary",
+        disabled: isSubmitting,
+        fullWidth: true,
+        size: "large",
+        type: "submit",
+        variant: "contained",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 166,
+          columnNumber: 25
+        }
+      }, "Reset Password"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Typography"], {
+        color: "textSecondary",
+        variant: "body1",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 179,
+          columnNumber: 19
+        }
+      }, "Back to", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Link"], {
+        component: react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"],
+        to: "/login",
+        variant: "h6",
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 181,
+          columnNumber: 21
+        }
+      }, "Log In")));
+    })))))
   );
 }
-
 _s(PasswordResetView, "rD2XXBQPI7mrmdq539aupfQj5EM=", false, function () {
   return [useStyles, react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useNavigate"], notistack__WEBPACK_IMPORTED_MODULE_8__["useSnackbar"]];
 });
-
 _c = PasswordResetView;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["makeStyles"])(theme => ({
   root: {
@@ -55533,9 +54251,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "PasswordResetView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -55635,18 +54351,17 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\common\\auth\\profile\\ChangePasswordView.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
- // @TODO handle avatar
 
+// @TODO handle avatar
 const ChangePasswordView = () => {
   _s();
-
   const classes = useStyles();
   return (
     /*#__PURE__*/
@@ -55698,11 +54413,9 @@ const ChangePasswordView = () => {
     })))))
   );
 };
-
 _s(ChangePasswordView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = ChangePasswordView;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
   root: {
@@ -55714,27 +54427,23 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
   }
 }));
 /* harmony default export */ __webpack_exports__["default"] = (ChangePasswordView);
-
 const ChangePassword = () => {
   _s2();
-
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaults);
-
   const handleChange = event => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [event.target.name]: event.target.value
     });
   };
-
   const onSubmitHandler = () => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put("/api/profile/change-password", values).then(async response => {
       setLoading(false);
-
       if (response.status == 200) {
         setValues(defaults);
         console.log(response.data);
@@ -55753,7 +54462,6 @@ const ChangePassword = () => {
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     autoComplete: "off",
     noValidate: true,
@@ -55920,20 +54628,16 @@ const ChangePassword = () => {
     }
   }, "Update"))));
 };
-
 _s2(ChangePassword, "jDPNhUSqlZ9jVaVo1xA3jeGPUBk=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c2 = ChangePassword;
 const defaults = {
   current_password: "",
   new_password: "",
   confirm_new_password: ""
 };
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "ChangePasswordView");
 __webpack_require__.$Refresh$.register(_c2, "ChangePassword");
 
@@ -56031,8 +54735,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\common\\errors\\NotFoundView.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -56050,10 +54753,8 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     width: 560
   }
 }));
-
 const NotFoundView = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
@@ -56109,16 +54810,12 @@ const NotFoundView = () => {
     }
   }, "The page you are looking for isn\u2019t here. You either tried some shady route or you got here by chance. Whichever it is, try using the navigation, or simply contact the super admin."))));
 };
-
 _s(NotFoundView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = NotFoundView;
 /* harmony default export */ __webpack_exports__["default"] = (NotFoundView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "NotFoundView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -56219,20 +54916,17 @@ function getStyleByStatus(status) {
         backgroundColor: "#1c854b",
         color: "#fff"
       };
-
     case "SUSPENDED":
       return {
         backgroundColor: "#f6ba23",
         color: "rgba(0, 0, 0, 0.87)"
       };
-
     case "REJECTED":
     case "DECOMMISSIONED":
       return {
         backgroundColor: "#f50057",
         color: "#fff"
       };
-
     case "PENDING":
     case "NOT_APPLICABLE":
       return {
@@ -56331,7 +55025,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Results; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_3__);
@@ -56344,8 +55038,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\approved-reviews\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -56362,19 +55055,17 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["makeSty
     cursor: "pointer"
   }
 }));
-function Results({
-  className,
-  data,
-  ...rest
-}) {
+function Results(_ref) {
   _s();
-
+  let {
+    className,
+    data,
+    ...rest
+  } = _ref;
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
   const classes = useStyles();
   const [reviews] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(data);
-
   const handleRowClick = id => navigate(`/reviewer/client/${id}`);
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Card"], Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(classes.root, className)
   }, rest, {
@@ -56590,15 +55281,11 @@ function Results({
     }
   }, "View More")));
 }
-
 _s(Results, "oCfE2LuQ9bBVdIwGSIHWUjsHF5I=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"], useStyles];
 });
-
 _c = Results;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -56697,13 +55384,12 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\approved-reviews\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
- // import Toolbar from "../common/Toolbar";
-
+// import Toolbar from "../common/Toolbar";
 
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
   root: {
@@ -56714,14 +55400,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
   }
 }));
 let reversedData = [..._common_data__WEBPACK_IMPORTED_MODULE_4__["reviews"]].reverse();
-
 const ReviewListView = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Reviews" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Reviews"
+    // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -56768,16 +55453,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -56881,9 +55562,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\auditor\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -56902,17 +55582,16 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const AuditorView = () => {
   _s();
-
   const classes = useStyles();
   return (
     /*#__PURE__*/
     // @ts-ignore
     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_7__["default"], {
       className: classes.root,
-      title: "Auditor" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+      title: "Auditor"
+      // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
       ,
       __self: undefined,
       __source: {
@@ -56959,19 +55638,14 @@ const AuditorView = () => {
     })))))
   );
 };
-
 _s(AuditorView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = AuditorView;
 /* harmony default export */ __webpack_exports__["default"] = (AuditorView);
-
 function Auditor() {
   _s2();
-
   var _clients$filter$0$fac;
-
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_6__["useSnackbar"])();
@@ -56981,8 +55655,8 @@ function Auditor() {
   const [clients, setClients] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/clients").then(async response => {
-      setLoading(false); // console.log(response.data);
-
+      setLoading(false);
+      // console.log(response.data);
       setClients(response.data);
     }).catch(e => {
       // @TODO handle
@@ -56990,21 +55664,17 @@ function Auditor() {
       setLoading(false);
     });
   }, []);
-
   const handleClientSelectionChange = event => {
     setSelectedClient(event.target.value);
   };
-
   const handleFacilitySelectionChange = event => {
     setSelectedFacility(event.target.value);
   };
-
   const handleAuditPrintout = e => {
     if (selectedFacility === "") return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/facility/${selectedFacility}/audit-printout`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setSelectedClient("");
         setSelectedFacility("");
@@ -57025,7 +55695,6 @@ function Auditor() {
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Card"], {
     __self: this,
     __source: {
@@ -57263,15 +55932,11 @@ function Auditor() {
     }
   }, "Send Printout"))))));
 }
-
 _s2(Auditor, "FUD9u4g9Fnx3ahHwBdYZ0VjKOlo=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_6__["useSnackbar"]];
 });
-
 _c2 = Auditor;
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "AuditorView");
 __webpack_require__.$Refresh$.register(_c2, "Auditor");
 
@@ -57377,7 +56042,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\ClientMenu.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -57385,23 +56050,20 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ClientMenu({
-  client
-}) {
+function ClientMenu(_ref) {
   _s();
-
+  let {
+    client
+  } = _ref;
   const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_6__["default"]().user;
   const [anchorEl, setAnchorEl] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"])();
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const assumeOwnershipHandler = () => {
     const reviewerNameTableCell = document.querySelector(`#client-${client.id} .client-reviewer`);
     const data = {
@@ -57410,13 +56072,11 @@ function ClientMenu({
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/${client.id}/assign-reviewer`, data).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         if (reviewerNameTableCell) {
           reviewerNameTableCell.textContent = user === null || user === void 0 ? void 0 : user.name;
           client.reviewer_id = user === null || user === void 0 ? void 0 : user.id;
         }
-
         enqueueSnackbar("Self assigned client successfully.", {
           variant: "success"
         });
@@ -57432,7 +56092,6 @@ function ClientMenu({
     });
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
     edge: "end",
     size: "small",
@@ -57500,15 +56159,11 @@ function ClientMenu({
     }
   }, "Assign"))));
 }
-
 _s(ClientMenu, "Kh4oUkK0hUzKoWViLjoEjnZYZck=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"]];
 });
-
 _c = ClientMenu;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ClientMenu");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -57600,7 +56255,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Results; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_3__);
@@ -57618,7 +56273,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -57627,6 +56282,8 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
+
+// import { getColorByClientStatus } from "./utils";
 
 
 
@@ -57637,14 +56294,14 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["makeSty
     justifyContent: "flex-end"
   }
 }));
-function Results({
-  className,
-  data,
-  rowClick,
-  ...rest
-}) {
+function Results(_ref) {
   _s();
-
+  let {
+    className,
+    data,
+    rowClick,
+    ...rest
+  } = _ref;
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const classes = useStyles();
@@ -57652,8 +56309,8 @@ function Results({
   const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_10__["default"]().user;
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_7___default.a.post("/api/clients").then(async response => {
-      setLoading(false); // console.log(response.data);
-
+      setLoading(false);
+      // console.log(response.data);
       setClients(response.data);
     }).catch(e => {
       // @TODO handle
@@ -57661,9 +56318,7 @@ function Results({
       setLoading(false);
     });
   }, []);
-
   const handleRowClick = id => navigate(`/reviewer/client/${id}`);
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Card"], Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(classes.root, className)
   }, rest, {
@@ -57899,12 +56554,13 @@ function Results({
     }
   }, clients.map((client, i) => {
     var _client$reviewer;
-
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TableRow"], {
-      hover: true // @ts-ignore
+      hover: true
+      // @ts-ignore
       ,
       key: client.id,
-      id: `client-${client.id}` // @ts-ignore
+      id: `client-${client.id}`
+      // @ts-ignore
       ,
       style: {
         cursor: "pointer"
@@ -58004,7 +56660,8 @@ function Results({
         lineNumber: 166,
         columnNumber: 19
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Chip"] // color={getColorByClientStatus(client.status)}
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Chip"]
+    // color={getColorByClientStatus(client.status)}
     , {
       label: client.status,
       style: Object(_common_utils__WEBPACK_IMPORTED_MODULE_9__["getStyleByStatus"])(client.status),
@@ -58089,7 +56746,8 @@ function Results({
         lineNumber: 202,
         columnNumber: 17
       }
-    }, // @ts-ignore
+    },
+    // @ts-ignore
     moment__WEBPACK_IMPORTED_MODULE_3___default()(client.date_updated).format("DD/MM/YY")), (user === null || user === void 0 ? void 0 : user.role) === "REVIEWER" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TableCell"], {
       __self: this,
       __source: {
@@ -58136,15 +56794,11 @@ function Results({
     }
   }, "View More")));
 }
-
 _s(Results, "pYvdweKh1MR360BQr5eEV3GyimA=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"], useStyles];
 });
-
 _c = Results;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -58237,14 +56891,13 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-let ReviewStatus;
-
-(function (ReviewStatus) {
+let ReviewStatus = /*#__PURE__*/function (ReviewStatus) {
   ReviewStatus["APPROVED"] = "APPROVED";
   ReviewStatus["PENDING"] = "PENDING";
   ReviewStatus["REJECTED"] = "REJECTED";
   ReviewStatus["NOT_APPLICABLE"] = "NOT APPLICABLE";
-})(ReviewStatus || (ReviewStatus = {}));
+  return ReviewStatus;
+}({});
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -58335,7 +56988,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AuditReports; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
@@ -58355,8 +57008,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\AuditReports.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -58373,13 +57025,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function AuditReports() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [_loading, _setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // clientId
-
   const [reports, setReports] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/${id}/reports/audit`).then(async response => {
@@ -58391,8 +57041,9 @@ function AuditReports() {
       console.error(e);
       setLoading(false);
     });
-  }, []); // file related
+  }, []);
 
+  // file related
   const [docUploadLoading, setDocUploadLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
@@ -58400,21 +57051,17 @@ function AuditReports() {
   const [doc, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const documentCopy = document && Object.assign({}, document) || null;
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpload = e => {
     const _doc = e.target.files[0];
     if (!_doc) return;
-
     if (_doc.size > _config__WEBPACK_IMPORTED_MODULE_10__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setDocUploadLoading(true);
     const formData = new FormData();
     formData.append("document", _doc);
@@ -58424,7 +57071,6 @@ function AuditReports() {
       }
     }).then(async response => {
       setDocUploadLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDoc(response.data);
@@ -58448,11 +57094,9 @@ function AuditReports() {
       });
     });
   };
-
   const handleReportDelete = id => {
     setReports(reports.filter(r => r.id != id));
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
     p: 3,
     style: {
@@ -58778,7 +57422,8 @@ function AuditReports() {
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -58812,15 +57457,11 @@ function AuditReports() {
     }
   }, "Audit Report")));
 }
-
 _s(AuditReports, "YZhVQIZBXMmSwyv05lxzTwqMR+8=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_8__["useSnackbar"]];
 });
-
 _c = AuditReports;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "AuditReports");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -58928,42 +57569,40 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\FacilitiesView.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
- // import { Link } from "react-router-dom";
-
-
+// import { Link } from "react-router-dom";
 
 
 
 
- // import UploadDocumentationView from "./UploadDocumentationView";
-
- // import { facilities as data } from "../../common/data";
 
 
-function FacilitiesView({
-  facilities,
-  setLoading
-}) {
+
+// import UploadDocumentationView from "./UploadDocumentationView";
+
+// import { facilities as data } from "../../common/data";
+
+
+function FacilitiesView(_ref) {
   _s();
-
+  let {
+    facilities,
+    setLoading
+  } = _ref;
   const classes = useStyles();
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_6__["useSnackbar"])();
   const [facilitys, setFacilities] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(facilities);
-
   const addFacilityHandler = facility => {
     setFacilities([facility, ...facilitys]);
   };
-
   const handleFacilityUpdate = (facility, i) => {
     const newFacilities = Object(_common_utils__WEBPACK_IMPORTED_MODULE_7__["insert"])(facilitys, i, facility);
     setFacilities(newFacilities);
   };
-
   const handleFacilityDelete = facilityId => {
     const answer = window.confirm("Are you sure you would like to delete this facility?");
     if (!answer) return;
@@ -58971,7 +57610,6 @@ function FacilitiesView({
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/facility/" + facilityId).then(async response => {
       // console.log(response);
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setFacilities(facilitys.filter(p => p.id != facilityId));
         enqueueSnackbar("Facility deleted successfully.", {
@@ -58988,7 +57626,6 @@ function FacilitiesView({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     __self: this,
     __source: {
@@ -59044,37 +57681,30 @@ function FacilitiesView({
     }
   }))));
 }
-
 _s(FacilitiesView, "4psuY4k8yo3NGVEsR4zghlc7x1o=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_6__["useSnackbar"]];
 });
-
 _c = FacilitiesView;
-function FacilityItem({
-  divider = false,
-  facility,
-  onFacilityAdd,
-  onFacilityUpdate,
-  onFacilityDelete
-}) {
+function FacilityItem(_ref2) {
   _s2();
-
+  let {
+    divider = false,
+    facility,
+    onFacilityAdd,
+    onFacilityUpdate,
+    onFacilityDelete
+  } = _ref2;
   const [open, setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
-
   const handleFacilityItemClick = () => setOpen(true);
-
   const handleFacilityDialogClose = () => setOpen(false);
-
   const _onFacilityAdd = facility => {
     setOpen(false);
     onFacilityAdd(facility);
   };
-
   const _onFacilityUpdate = facility => {
     setOpen(false);
     onFacilityUpdate(facility);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
     key: facility.id,
     divider: divider,
@@ -59147,9 +57777,7 @@ function FacilityItem({
     }
   }));
 }
-
 _s2(FacilityItem, "xG1TONbKtDWtdOTrXaTAsNhPg/Q=");
-
 _c2 = FacilityItem;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(() => ({
   header: {
@@ -59157,9 +57785,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeSty
     justifyContent: "space-between"
   }
 }));
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "FacilitiesView");
 __webpack_require__.$Refresh$.register(_c2, "FacilityItem");
 
@@ -59261,24 +57887,25 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-function FacilityDetails({
-  mode,
-  edit,
-  values,
-  setValues
-}) {
+function FacilityDetails(_ref) {
+  let {
+    mode,
+    edit,
+    values,
+    setValues
+  } = _ref;
   const handleChange = event => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [event.target.name]: event.target.value
     });
   };
-
   const handleCategorySelect = id => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       category_id: id
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
     container: true,
     spacing: 3,
@@ -59298,7 +57925,8 @@ function FacilityDetails({
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
-    fullWidth: true // helperText="Please specify the facility name"
+    fullWidth: true
+    // helperText="Please specify the facility name"
     ,
     label: "Enter Facility Name",
     name: "name",
@@ -59322,7 +57950,8 @@ function FacilityDetails({
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
-    fullWidth: true // helperText="Please specify the address"
+    fullWidth: true
+    // helperText="Please specify the address"
     ,
     label: "Enter Street Address",
     name: "address",
@@ -59457,9 +58086,7 @@ function FacilityDetails({
   })));
 }
 _c = FacilityDetails;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "FacilityDetails");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -59552,7 +58179,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return FacilityDialog; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
@@ -59566,8 +58193,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\FacilityDialog.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -59592,23 +58218,21 @@ const Transition = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.for
   }));
 });
 _c2 = Transition;
-let FacilityDialogMode;
-
-(function (FacilityDialogMode) {
+let FacilityDialogMode = /*#__PURE__*/function (FacilityDialogMode) {
   FacilityDialogMode[FacilityDialogMode["EDIT"] = 0] = "EDIT";
   FacilityDialogMode[FacilityDialogMode["ADD"] = 1] = "ADD";
-})(FacilityDialogMode || (FacilityDialogMode = {}));
-
-function FacilityDialog({
-  onFacilityAdd,
-  onFacilityUpdate,
-  mode,
-  open = false,
-  onClose,
-  edit
-}) {
+  return FacilityDialogMode;
+}({});
+function FacilityDialog(_ref) {
   _s();
-
+  let {
+    onFacilityAdd,
+    onFacilityUpdate,
+    mode,
+    open = false,
+    onClose,
+    edit
+  } = _ref;
   const classes = useStyles();
   const {
     id: clientId
@@ -59619,27 +58243,21 @@ function FacilityDialog({
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [_open, _setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false); // internal
-
   const [currentTab, setCurrentTab] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
   const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(mode === FacilityDialogMode.ADD && defaults || edit);
   let breadcrumbsList = [];
   if (edit) breadcrumbsList.push(edit.name || edit.address);
-
   const handleTabChange = (event, newValue) => {
     setCurrentTab(newValue);
   };
-
   const handleFacilityAdd = () => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.put(`/api/client/${clientId}/facility`, values).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setValues(defaults);
         onFacilityAdd(response.data);
-
         _setOpen(false);
-
         enqueueSnackbar("Facility added successfully.", {
           variant: "success"
         });
@@ -59657,17 +58275,13 @@ function FacilityDialog({
       });
     });
   };
-
   const handleFacilityUpdate = () => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.put(`/api/client/facility/${facilityId}`, values).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onFacilityUpdate(response.data);
-
         _setOpen(false);
-
         enqueueSnackbar("Facility updated successfully.", {
           variant: "success"
         });
@@ -59685,15 +58299,12 @@ function FacilityDialog({
       });
     });
   };
-
   const handleClickOpen = () => {
     _setOpen(true);
   };
-
   const handleClose = () => {
     _setOpen(false);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, mode === FacilityDialogMode.ADD && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
     color: "primary",
     variant: "contained",
@@ -59779,7 +58390,8 @@ function FacilityDialog({
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["AppBar"], {
     position: "static",
-    color: "default" // style={{ marginTop: 20 }}
+    color: "default"
+    // style={{ marginTop: 20 }}
     ,
     __self: this,
     __source: {
@@ -59789,12 +58401,14 @@ function FacilityDialog({
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tabs"], {
     value: currentTab,
-    onChange: handleTabChange // variant="scrollable"
+    onChange: handleTabChange
+    // variant="scrollable"
     // scrollButtons="auto"
     ,
     indicatorColor: "primary",
     textColor: "primary",
-    centered: true // aria-label="simple tabs example"
+    centered: true
+    // aria-label="simple tabs example"
     ,
     __self: this,
     __source: {
@@ -59927,11 +58541,9 @@ function FacilityDialog({
     }
   }, mode === FacilityDialogMode.ADD && "Add" || "Update", " Facility"))));
 }
-
 _s(FacilityDialog, "+8TUZ52jN4fkt8CCzZncCTo4Zd4=", false, function () {
   return [useStyles, react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c3 = FacilityDialog;
 const defaults = {
   id: null,
@@ -59946,7 +58558,6 @@ const defaults = {
   updated_at: "",
   created_at: ""
 };
-
 function TabPanel(props) {
   const {
     children,
@@ -59981,24 +58592,19 @@ function TabPanel(props) {
     }
   }, children));
 }
-
 _c4 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`
   };
 }
-
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(() => ({
   dialogContentRoot: {
     overflowY: "hidden"
   }
 }));
-
 var _c, _c2, _c3, _c4;
-
 __webpack_require__.$Refresh$.register(_c, "Transition$React.forwardRef");
 __webpack_require__.$Refresh$.register(_c2, "Transition");
 __webpack_require__.$Refresh$.register(_c3, "FacilityDialog");
@@ -60105,7 +58711,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\FacilityDocs.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -60113,13 +58719,12 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function FacilityDocs({
-  facilityId,
-  style = {}
-}) {
+function FacilityDocs(_ref) {
   _s();
-
+  let {
+    facilityId,
+    style = {}
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
@@ -60128,7 +58733,6 @@ function FacilityDocs({
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/facility/${facilityId}/documents`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setDocs(response.data);
       } else {
@@ -60145,12 +58749,10 @@ function FacilityDocs({
       });
     });
   }, []);
-
   const setDocumentHandler = document => {
     setDocs([...docs, document]);
     console.log(docs);
   };
-
   const uploadDocHandler = (doc, docType, expiresAt) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -60162,7 +58764,6 @@ function FacilityDocs({
       }
     });
   };
-
   const updateDocHandler = (doc, documentId) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -60172,25 +58773,21 @@ function FacilityDocs({
       }
     });
   };
-
   const deleteDocHandler = documentId => {
     setDocs(docs.filter(d => d.id !== documentId));
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/facility/document/" + documentId);
   };
-
   const changeDateHandler = (documentId, expiresAt) => {
     const _docs = docs.map(d => {
       if (d.id !== documentId) return d;
       d.expires_at = moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss");
       return d;
     });
-
     setDocs(_docs);
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/facility/document/${documentId}/expires-at`, {
       expires_at: moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss")
     });
   };
-
   if (loading) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
     __self: this,
     __source: {
@@ -60361,15 +58958,11 @@ function FacilityDocs({
     }
   })));
 }
-
 _s(FacilityDocs, "4tBsjWqY7xCp7qlQhCB1s/bzrNk=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c = FacilityDocs;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "FacilityDocs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -60470,32 +59063,28 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\Header.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
- // import RemoveCircleIcon from "@material-ui/icons/RemoveCircle";
+// import RemoveCircleIcon from "@material-ui/icons/RemoveCircle";
 // import { FilePlus as FilePlusIcon } from "react-feather";
 // import { FileMinus as FileMinusIcon } from "react-feather";
-
-function Header({
-  client,
-  setClientStatus
-}) {
+function Header(_ref) {
   _s();
-
+  let {
+    client,
+    setClientStatus
+  } = _ref;
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleClose = clientStatus => {
     setClientStatus(clientStatus);
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CardHeader"], {
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       style: {
@@ -60588,13 +59177,9 @@ function Header({
     }
   });
 }
-
 _s(Header, "+aMDa7FPcESUyQDF1vq0RSMn4/k=");
-
 _c = Header;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Header");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -60704,8 +59289,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\IngredientDialog.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -60742,55 +59326,46 @@ const defaults = {
   recommendation: "",
   source: ""
 };
-let IngredientDialogMode;
-
-(function (IngredientDialogMode) {
+let IngredientDialogMode = /*#__PURE__*/function (IngredientDialogMode) {
   IngredientDialogMode[IngredientDialogMode["EDIT"] = 0] = "EDIT";
   IngredientDialogMode[IngredientDialogMode["ADD"] = 1] = "ADD";
-})(IngredientDialogMode || (IngredientDialogMode = {}));
-
-function IngredientDialog({
-  onIngredientUpdate,
-  productId,
-  mode,
-  open = false,
-  onClose,
-  edit,
-  breadcrumbsList
-}) {
+  return IngredientDialogMode;
+}({});
+function IngredientDialog(_ref) {
   _s();
-
   var _edit$manufacturer;
-
+  let {
+    onIngredientUpdate,
+    productId,
+    mode,
+    open = false,
+    onClose,
+    edit,
+    breadcrumbsList
+  } = _ref;
   if (edit) edit.manufacturer_name = (_edit$manufacturer = edit.manufacturer) === null || _edit$manufacturer === void 0 ? void 0 : _edit$manufacturer.name;
   const [_open, _setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false); // internal
-
   const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(mode === IngredientDialogMode.ADD && defaults || edit);
   const ingredientId = edit === null || edit === void 0 ? void 0 : edit.id;
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
-  } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])(); // inject appropriate facility id
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
 
+  // inject appropriate facility id
   values.product_id = productId;
-
   if (breadcrumbsList) {
     breadcrumbsList = [...breadcrumbsList]; // copy
-
     breadcrumbsList.push(values.name);
   }
-
   const addIngredientHandler = ingredient => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/ingredient`, ingredient).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onIngredientUpdate(response.data);
         setValues(defaults);
-
         _setOpen(false);
-
         enqueueSnackbar("Ingredient added successfully.", {
           variant: "success"
         });
@@ -60808,19 +59383,15 @@ function IngredientDialog({
       });
     });
   };
-
   const updateIngredientHandler = ingredient => {
     // if (mode === IngredientDialogMode.ADD)
     //   ingredient.manufacturer_name = ingredient.manufacturer?.name;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/ingredient/${ingredient.id}`, ingredient).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onIngredientUpdate(response.data);
-
         _setOpen(false);
-
         enqueueSnackbar("Ingredient updated successfully.", {
           variant: "success"
         });
@@ -60838,19 +59409,17 @@ function IngredientDialog({
       });
     });
   };
-
   const handleIngredientUpdate = () => {
-    if (mode === IngredientDialogMode.ADD) addIngredientHandler(values);else updateIngredientHandler(values); // _setOpen(false);
+    if (mode === IngredientDialogMode.ADD) addIngredientHandler(values);else updateIngredientHandler(values);
+    // _setOpen(false);
   };
 
   const handleClickOpen = () => {
     _setOpen(true);
   };
-
   const handleClose = () => {
     _setOpen(false);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, mode === IngredientDialogMode.ADD && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
     color: "primary",
     variant: "contained",
@@ -60952,42 +59521,42 @@ function IngredientDialog({
     }
   }, mode === IngredientDialogMode.ADD && "Add" || "Update", " ", "Ingredient"))));
 }
-
 _s(IngredientDialog, "EUIsv66h3vZjn3NK/h2zcHzYD84=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c3 = IngredientDialog;
-function IngredientDetails({
-  values,
-  setValues,
-  mode
-}) {
+function IngredientDetails(_ref2) {
   var _values$manufacturer, _values$manufacturer2;
-
+  let {
+    values,
+    setValues,
+    mode
+  } = _ref2;
   const handleChange = event => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [event.target.name]: event.target.value
     });
   };
-
   const handleRecommendationSelect = value => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       recommendation: value
     });
   };
-
   const handleSourceSelect = value => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       source: value
     });
   };
-
   const handleManufacturerSelect = manufacturer => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       manufacturer_name: (manufacturer === null || manufacturer === void 0 ? void 0 : manufacturer.name) || manufacturer,
       manufacturer
-    }); // console.log(values);
+    });
+    // console.log(values);
   };
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
@@ -61161,7 +59730,6 @@ function IngredientDetails({
   }, "Add Ingredient"), " button to create ingredient.")));
 }
 _c4 = IngredientDetails;
-
 function PaperComponent(props) {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_draggable__WEBPACK_IMPORTED_MODULE_3___default.a, {
     handle: "#draggable-dialog-title",
@@ -61181,11 +59749,8 @@ function PaperComponent(props) {
     }
   })));
 }
-
 _c5 = PaperComponent;
-
 var _c, _c2, _c3, _c4, _c5;
-
 __webpack_require__.$Refresh$.register(_c, "Transition$React.forwardRef");
 __webpack_require__.$Refresh$.register(_c2, "Transition");
 __webpack_require__.$Refresh$.register(_c3, "IngredientDialog");
@@ -61294,8 +59859,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\IngredientsView.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -61303,23 +59868,20 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function IngredientsView({
-  productId,
-  breadcrumbsList
-}) {
+function IngredientsView(_ref) {
   _s();
-
+  let {
+    productId,
+    breadcrumbsList
+  } = _ref;
   const classes = useStyles();
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [ingredients, setIngredients] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
-
   const load = () => axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/product/${productId}/ingredients`).then(async response => {
     setLoading(false);
-
     if (response.status == 200 || response.status == 201) {
       setIngredients(response.data.reverse());
     } else {
@@ -61335,26 +59897,21 @@ function IngredientsView({
       variant: "error"
     });
   });
-
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     load();
   }, []);
-
   const handleIngredientAdd = product => {
     // setIngredients([product, ...ingredients]);
     load();
   };
-
   const handleIngredientUpdate = (product, i) => {
     // const newIngredients = insert<Ingredient>(ingredients, i, product);
     // setIngredients(newIngredients);
     load();
   };
-
   const handleIngredientDelete = productId => {
     setIngredients(ingredients.filter(p => p.id != productId));
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
     __self: this,
     __source: {
@@ -61426,45 +59983,37 @@ function IngredientsView({
     }
   }, "This product has no ingredients.")));
 }
-
 _s(IngredientsView, "JdglbgM/ea8AGlpmYB9irX/K1YI=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"]];
 });
-
 _c = IngredientsView;
-function IngredientItem({
-  divider = false,
-  ingredient,
-  onIngredientUpdate,
-  onIngredientDelete,
-  breadcrumbsList
-}) {
+function IngredientItem(_ref2) {
   _s2();
-
   var _ingredient$manufactu;
-
+  let {
+    divider = false,
+    ingredient,
+    onIngredientUpdate,
+    onIngredientDelete,
+    breadcrumbsList
+  } = _ref2;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [open, setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
-
   const handleIngredientItemClick = () => setOpen(true);
-
   const handleIngredientDialogClose = () => setOpen(false);
-
   const _onIngredientUpdate = ingredient => {
     setOpen(false);
     onIngredientUpdate(ingredient);
   };
-
   const handleIngredientDelete = () => {
     const answer = window.confirm("Are you sure you would like to delete this ingredient?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/ingredient/" + ingredient.id).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onIngredientDelete(ingredient.id);
         enqueueSnackbar("Ingredient deleted successfully.", {
@@ -61481,7 +60030,6 @@ function IngredientItem({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["ListItem"], {
     key: ingredient.id,
     divider: divider,
@@ -61502,7 +60050,8 @@ function IngredientItem({
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["ListItemText"], {
     primary: ingredient.name,
-    secondary: (_ingredient$manufactu = ingredient.manufacturer) === null || _ingredient$manufactu === void 0 ? void 0 : _ingredient$manufactu.name // secondary={moment(ingredient.date).format("DD/MM/YY")}
+    secondary: (_ingredient$manufactu = ingredient.manufacturer) === null || _ingredient$manufactu === void 0 ? void 0 : _ingredient$manufactu.name
+    // secondary={moment(ingredient.date).format("DD/MM/YY")}
     ,
     __self: this,
     __source: {
@@ -61548,11 +60097,9 @@ function IngredientItem({
     }
   }));
 }
-
 _s2(IngredientItem, "ltc5vh2PxhGd/dY+MsbrRfgYBLs=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"]];
 });
-
 _c2 = IngredientItem;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(() => ({
   header: {
@@ -61566,9 +60113,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     marginTop: 15
   }
 }));
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "IngredientsView");
 __webpack_require__.$Refresh$.register(_c2, "IngredientItem");
 
@@ -61673,7 +60218,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ManufacturerDocs.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -61681,12 +60226,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ManufacturerDocs({
-  manufacturerId
-}) {
+function ManufacturerDocs(_ref) {
   _s();
-
+  let {
+    manufacturerId
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
@@ -61695,7 +60239,6 @@ function ManufacturerDocs({
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/manufacturer/${manufacturerId}/documents`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setDocs(response.data);
       } else {
@@ -61712,9 +60255,9 @@ function ManufacturerDocs({
       });
     });
   }, []);
-
   const setDocumentHandler = document => {
-    setDocs([...docs, document]); // console.log(docs);
+    setDocs([...docs, document]);
+    // console.log(docs);
   };
 
   const uploadDocHandler = (doc, docType, expiresAt) => {
@@ -61728,7 +60271,6 @@ function ManufacturerDocs({
       }
     });
   };
-
   const updateDocHandler = (doc, documentId) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -61738,25 +60280,21 @@ function ManufacturerDocs({
       }
     });
   };
-
   const deleteDocHandler = documentId => {
     setDocs(docs.filter(d => d.id !== documentId));
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/manufacturer/document/" + documentId);
   };
-
   const changeDateHandler = (documentId, expiresAt) => {
     const _docs = docs.map(d => {
       if (d.id !== documentId) return d;
       d.expires_at = moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss");
       return d;
     });
-
     setDocs(_docs);
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/manufacturer/document/${documentId}/expires-at`, {
       expires_at: moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss")
     });
   };
-
   if (loading) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
     __self: this,
     __source: {
@@ -61770,8 +60308,8 @@ function ManufacturerDocs({
       maxHeight: "calc(100vh - 276px)",
       overflowY: "auto",
       overflowX: "hidden",
-      width: "100%" // padding: "20px 0",
-
+      width: "100%"
+      // padding: "20px 0",
     },
     __self: this,
     __source: {
@@ -61805,15 +60343,11 @@ function ManufacturerDocs({
     }
   })));
 }
-
 _s(ManufacturerDocs, "Com8Tm2l9GPyUhb/9m8aOUbSi3M=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c = ManufacturerDocs;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ManufacturerDocs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -61914,34 +60448,29 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ManufacturerSelector.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
-
-function ManufacturerSelector({
-  defaultValue,
-  onSelect
-}) {
+function ManufacturerSelector(_ref) {
   _s();
-
+  let {
+    defaultValue,
+    onSelect
+  } = _ref;
   const [open, setOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [options, setOptions] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const loading = open && options.length === 0;
-
   const handleChange = event => {
     onSelect(event.target.value);
   };
-
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     let active = true;
-
     if (!loading) {
       return undefined;
     }
-
     (async () => {
       axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/manufacturers`).then(async response => {
         if (response.status == 200 || response.status == 201) {
@@ -61954,7 +60483,6 @@ function ManufacturerSelector({
         console.error(e);
       });
     })();
-
     return () => {
       active = false;
     };
@@ -61990,7 +60518,8 @@ function ManufacturerSelector({
         variant: "outlined",
         required: true,
         onChange: handleChange,
-        InputProps: { ...params.InputProps,
+        InputProps: {
+          ...params.InputProps,
           endAdornment: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, loading ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_4__["default"], {
             color: "inherit",
             size: 20,
@@ -62018,13 +60547,9 @@ function ManufacturerSelector({
     }
   });
 }
-
 _s(ManufacturerSelector, "NAnsH/wQUpBOztFs1nPXEavBw+I=");
-
 _c = ManufacturerSelector;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ManufacturerSelector");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -62126,23 +60651,22 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProductDetails.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
- // import UploadImageInput from "../../common/UploadImageInput";
+// import UploadImageInput from "../../common/UploadImageInput";
 
 
-
-function ProductDetails({
-  mode,
-  edit,
-  values,
-  setValues
-}) {
+function ProductDetails(_ref) {
   _s();
-
+  let {
+    mode,
+    edit,
+    values,
+    setValues
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"])();
@@ -62150,7 +60674,6 @@ function ProductDetails({
   const formData = new FormData();
   const [imgSrc, setImgSrc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(edit && edit.preview_image && `/${edit.preview_image}` || null);
   const id = edit === null || edit === void 0 ? void 0 : edit.id;
-
   const handlePreviewImageSelection = imgSrc => {
     setLoading(true);
     fetch(imgSrc).then(async res => {
@@ -62161,7 +60684,6 @@ function ProductDetails({
         }
       }).then(async response => {
         setLoading(false);
-
         if (response.status == 200 || response.status == 201) {
           setImgSrc(imgSrc);
           enqueueSnackbar("Preview image updated successfully.", {
@@ -62182,19 +60704,18 @@ function ProductDetails({
       });
     });
   };
-
   const handleChange = event => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [event.target.name]: event.target.value
     });
   };
-
   const handleCategorySelect = id => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       category_id: id
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
     style: {
       maxHeight: "calc(100vh - 276px)",
@@ -62327,15 +60848,11 @@ function ProductDetails({
     }
   })));
 }
-
 _s(ProductDetails, "ZdvmFqSKfzbqStbfsNsBXC++lhI=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"]];
 });
-
 _c = ProductDetails;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProductDetails");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -62441,8 +60958,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProductDialog.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -62466,28 +60982,25 @@ const Transition = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.for
   }));
 });
 _c2 = Transition;
-let ProductDialogMode;
-
-(function (ProductDialogMode) {
+let ProductDialogMode = /*#__PURE__*/function (ProductDialogMode) {
   ProductDialogMode[ProductDialogMode["EDIT"] = 0] = "EDIT";
   ProductDialogMode[ProductDialogMode["ADD"] = 1] = "ADD";
-})(ProductDialogMode || (ProductDialogMode = {}));
-
-function ProductDialog({
-  onProductUpdate,
-  facilityId,
-  mode,
-  open = false,
-  onClose,
-  edit,
-  breadcrumbsList
-}) {
+  return ProductDialogMode;
+}({});
+function ProductDialog(_ref) {
   _s();
-
+  let {
+    onProductUpdate,
+    facilityId,
+    mode,
+    open = false,
+    onClose,
+    edit,
+    breadcrumbsList
+  } = _ref;
   const classes = useStyles();
   const productId = edit === null || edit === void 0 ? void 0 : edit.id;
   const [_open, _setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false); // internal
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
@@ -62495,31 +61008,25 @@ function ProductDialog({
   const [currentTab, setCurrentTab] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
   const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(mode === ProductDialogMode.ADD && defaults || edit);
   console.log("values");
-  console.log(values); // inject appropriate facility id
+  console.log(values);
 
+  // inject appropriate facility id
   values.facility_id = facilityId;
-
   if (breadcrumbsList) {
     breadcrumbsList = [...breadcrumbsList]; // copy
-
     breadcrumbsList.push(values.name);
   }
-
   const handleTabChange = (event, newValue) => {
     setCurrentTab(newValue);
   };
-
   const addProductHandler = product => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/product`, product).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onProductUpdate(response.data);
         setValues(defaults);
-
         _setOpen(false);
-
         enqueueSnackbar("Product added successfully.", {
           variant: "success"
         });
@@ -62537,17 +61044,13 @@ function ProductDialog({
       });
     });
   };
-
   const updateProductHandler = product => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/product/${product.id}`, product).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onProductUpdate(response.data);
-
         _setOpen(false);
-
         enqueueSnackbar("Product updated successfully.", {
           variant: "success"
         });
@@ -62565,19 +61068,15 @@ function ProductDialog({
       });
     });
   };
-
   const handleProductUpdate = () => {
     if (mode === ProductDialogMode.ADD) addProductHandler(values);else updateProductHandler(values);
   };
-
   const handleClickOpen = () => {
     _setOpen(true);
   };
-
   const handleClose = () => {
     _setOpen(false);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, mode === ProductDialogMode.ADD && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
     color: "primary",
     variant: "contained",
@@ -62672,12 +61171,14 @@ function ProductDialog({
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Tabs"], {
     value: currentTab,
-    onChange: handleTabChange // variant="scrollable"
+    onChange: handleTabChange
+    // variant="scrollable"
     // scrollButtons="auto"
     ,
     indicatorColor: "primary",
     textColor: "primary",
-    centered: true // aria-label="simple tabs example"
+    centered: true
+    // aria-label="simple tabs example"
     ,
     __self: this,
     __source: {
@@ -62810,11 +61311,9 @@ function ProductDialog({
     }
   }, mode === ProductDialogMode.ADD && "Add" || "Update", " Product"))));
 }
-
 _s(ProductDialog, "f91YQWbJDU/s4LW5A+/iCV16c4s=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c3 = ProductDialog;
 const defaults = {
   id: null,
@@ -62827,7 +61326,6 @@ const defaults = {
   date: Date.now(),
   ingredients: []
 };
-
 function TabPanel(props) {
   const {
     children,
@@ -62862,24 +61360,19 @@ function TabPanel(props) {
     }
   }, children));
 }
-
 _c4 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`
   };
 }
-
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(() => ({
   dialogContentRoot: {
     overflowY: "hidden"
   }
 }));
-
 var _c, _c2, _c3, _c4;
-
 __webpack_require__.$Refresh$.register(_c, "Transition$React.forwardRef");
 __webpack_require__.$Refresh$.register(_c2, "Transition");
 __webpack_require__.$Refresh$.register(_c3, "ProductDialog");
@@ -62986,7 +61479,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProductDocs.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -62994,12 +61487,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ProductDocs({
-  productId
-}) {
+function ProductDocs(_ref) {
   _s();
-
+  let {
+    productId
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
@@ -63008,7 +61500,6 @@ function ProductDocs({
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/product/${productId}/documents`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setDocs(response.data);
       } else {
@@ -63025,12 +61516,10 @@ function ProductDocs({
       });
     });
   }, []);
-
   const setDocumentHandler = document => {
     setDocs([...docs, document]);
     console.log(docs);
   };
-
   const uploadDocHandler = (doc, docType, expiresAt) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -63042,7 +61531,6 @@ function ProductDocs({
       }
     });
   };
-
   const updateDocHandler = (doc, documentId) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -63052,25 +61540,21 @@ function ProductDocs({
       }
     });
   };
-
   const deleteDocHandler = documentId => {
     setDocs(docs.filter(d => d.id !== documentId));
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/product/document/" + documentId);
   };
-
   const changeDateHandler = (documentId, expiresAt) => {
     const _docs = docs.map(d => {
       if (d.id !== documentId) return d;
       d.expires_at = moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss");
       return d;
     });
-
     setDocs(_docs);
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/product/document/${documentId}/expires-at`, {
       expires_at: moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss")
     });
   };
-
   if (loading) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
     __self: this,
     __source: {
@@ -63084,8 +61568,8 @@ function ProductDocs({
       maxHeight: "calc(100vh - 276px)",
       overflowY: "auto",
       overflowX: "hidden",
-      width: "100%" // padding: "20px 0",
-
+      width: "100%"
+      // padding: "20px 0",
     },
     __self: this,
     __source: {
@@ -63149,15 +61633,11 @@ function ProductDocs({
     }
   })));
 }
-
 _s(ProductDocs, "Com8Tm2l9GPyUhb/9m8aOUbSi3M=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c = ProductDocs;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProductDocs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -63268,8 +61748,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProductsView.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -63281,13 +61761,12 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ProductsView({
-  facilityId,
-  breadcrumbsList
-}) {
+function ProductsView(_ref) {
   _s();
-
+  let {
+    facilityId,
+    breadcrumbsList
+  } = _ref;
   const classes = useStyles();
   const {
     enqueueSnackbar
@@ -63297,7 +61776,6 @@ function ProductsView({
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/facility/${facilityId}/products`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setProducts(response.data.reverse());
       } else {
@@ -63314,27 +61792,22 @@ function ProductsView({
       });
     });
   }, []);
-
   const handleProductAdd = product => {
     setProducts([product, ...products]);
   };
-
   const handleProductUpdate = (product, i) => {
     const newProducts = Object(_common_utils__WEBPACK_IMPORTED_MODULE_9__["insert"])(products, i, product);
     setProducts(newProducts);
   };
-
   const handleProductDelete = productId => {
     setProducts(products.filter(p => p.id != productId));
   };
-
   const handleProductDuplicate = (product, i) => {
     // setProducts([]);
     // let i = products.map((p) => p.id).indexOf(productId);
     products.splice(i, 0, product);
     setProducts([...products]);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     __self: this,
     __source: {
@@ -63407,44 +61880,37 @@ function ProductsView({
     }
   }, "This facility has no products.")));
 }
-
 _s(ProductsView, "XXwoG49eCs1J1cukKGKYuZTU+/I=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"]];
 });
-
 _c = ProductsView;
-function ProductItem({
-  divider = false,
-  product,
-  onProductUpdate,
-  onProductDelete,
-  onProductDuplicate,
-  breadcrumbsList
-}) {
+function ProductItem(_ref2) {
   _s2();
-
+  let {
+    divider = false,
+    product,
+    onProductUpdate,
+    onProductDelete,
+    onProductDuplicate,
+    breadcrumbsList
+  } = _ref2;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [open, setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
-
   const handleProductItemClick = () => setOpen(true);
-
   const handleProductDialogClose = () => setOpen(false);
-
   const _onProductUpdate = product => {
     setOpen(false);
     onProductUpdate(product);
   };
-
   const handleProductDelete = () => {
     const answer = window.confirm("Are you sure you would like to delete this product?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/product/" + product.id).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onProductDelete(product.id);
         enqueueSnackbar("Product deleted successfully.", {
@@ -63461,7 +61927,6 @@ function ProductItem({
       });
     });
   };
-
   const handleProductDuplicate = () => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/product/${product.id}/duplicate`).then(async response => {
@@ -63476,7 +61941,6 @@ function ProductItem({
           variant: "error"
         });
       }
-
       setLoading(false);
     }).catch(e => {
       console.error(e);
@@ -63486,7 +61950,6 @@ function ProductItem({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
     key: product.id,
     divider: divider,
@@ -63581,11 +62044,9 @@ function ProductItem({
     }
   }));
 }
-
 _s2(ProductItem, "ltc5vh2PxhGd/dY+MsbrRfgYBLs=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"]];
 });
-
 _c2 = ProductItem;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(() => ({
   header: {
@@ -63599,9 +62060,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeSty
     marginTop: 15
   }
 }));
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "ProductsView");
 __webpack_require__.$Refresh$.register(_c2, "ProductItem");
 
@@ -63693,7 +62152,7 @@ if (true) {
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
@@ -63707,10 +62166,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProfileDetails.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
-
-
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -63721,47 +62178,44 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 const ProfileDetails = () => {
   _s();
-
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // clientId
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaults);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_3___default.a.post(`/api/client/${id}/profile`).then(async response => {
       console.log(response.data);
       setLoading(false);
-      setValues(response.data); // setProfile(response.data);
+      setValues(response.data);
+      // setProfile(response.data);
     }).catch(e => {
       // @TODO handle
       console.error(e);
       setLoading(false);
     });
   }, []);
-
   const handleChange = event => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [event.target.name]: event.target.value
     });
   };
-
   const setHeds = heds => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       heds: JSON.stringify(heds)
     });
   };
-
   const onSubmitHandler = () => {
-    setLoading(true); // @ts-ignore
-
+    setLoading(true);
+    // @ts-ignore
     delete values.avatar;
     axios__WEBPACK_IMPORTED_MODULE_3___default.a.put(`/api/client/${id}/profile`, values).then(async response => {
       setLoading(false);
-
       if (response.status == 200) {
         const profileNameTag = document.getElementById("profile-nametag");
         if (profileNameTag) profileNameTag.textContent = `${values.first_name} ${values.last_name}`;
@@ -63780,7 +62234,6 @@ const ProfileDetails = () => {
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
     p: 3,
     style: {
@@ -64084,58 +62537,48 @@ const ProfileDetails = () => {
     }
   }, "Update")));
 };
-
 _s(ProfileDetails, "8mdw2mr8UeJpAgftEl/8dF9uJns=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"]];
 });
-
 _c = ProfileDetails;
-
-function HedSelector({
-  defaultHeds = [],
-  setHeds
-}) {
+function HedSelector(_ref) {
   _s2();
+  let {
+    defaultHeds = [],
+    setHeds
+  } = _ref;
+  const [heds, _setHeds] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaultHeds);
 
-  const [heds, _setHeds] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaultHeds); // useEffect(() => {
+  // useEffect(() => {
   //   _setHeds(defaultHeds);
   // }, [defaultHeds]);
 
   console.log(defaultHeds);
   console.log(heds);
-
   const addHed = () => {
     let update = [...heds, {
       name: "",
       phone_number: "",
       email: ""
     }];
-
     _setHeds(update);
-
     setHeds(update);
   };
-
   const deleteHed = i => {
     heds.splice(i, 1);
     let update = [...heds];
-
     _setHeds(update);
-
     setHeds(update);
   };
-
   const handleChange = (i, event) => {
     const prevHed = heds[i];
-    const update = Object(_reviewer_common_utils__WEBPACK_IMPORTED_MODULE_7__["insert"])(heds, i, { ...prevHed,
+    const update = Object(_reviewer_common_utils__WEBPACK_IMPORTED_MODULE_7__["insert"])(heds, i, {
+      ...prevHed,
       [event.target.name]: event.target.value
     });
-
     _setHeds(update);
-
     setHeds(update);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
     variant: "h3",
     __self: this,
@@ -64239,7 +62682,8 @@ function HedSelector({
     fullWidth: true,
     label: "Halal Enforcement Director Name",
     name: "name",
-    onChange: e => handleChange(i, e) // // required
+    onChange: e => handleChange(i, e)
+    // // required
     ,
     value: hed.name,
     variant: "outlined",
@@ -64331,7 +62775,8 @@ function HedSelector({
         lineNumber: 344,
         columnNumber: 22
       }
-    }) // style={{ marginTop: 20 }}
+    })
+    // style={{ marginTop: 20 }}
     ,
     __self: this,
     __source: {
@@ -64341,9 +62786,7 @@ function HedSelector({
     }
   }, heds.length > 0 && "More Directors" || "Halal Enforcement Director")));
 }
-
 _s2(HedSelector, "Avglf2AvPkh64mMJLevFHYaOpn8=");
-
 _c2 = HedSelector;
 const defaults = {
   id: 0,
@@ -64367,9 +62810,7 @@ const defaults = {
   hed_email: ""
 };
 /* harmony default export */ __webpack_exports__["default"] = (ProfileDetails);
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "ProfileDetails");
 __webpack_require__.$Refresh$.register(_c2, "HedSelector");
 
@@ -64462,7 +62903,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReportMenu; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
@@ -64490,7 +62931,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ReportMenu.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -64507,13 +62948,12 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ReportMenu({
-  report,
-  onDeleteReport
-}) {
+function ReportMenu(_ref) {
   _s();
-
+  let {
+    report,
+    onDeleteReport
+  } = _ref;
   const [anchorEl, setAnchorEl] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
@@ -64521,11 +62961,9 @@ function ReportMenu({
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_12__["useSnackbar"])();
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
   const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_15__["default"]().user;
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const updateStatus = status => {
     const statusTableCell = document.querySelector(`#report-${report.id} .report-status`);
     let statusStr = status.toString();
@@ -64535,7 +62973,6 @@ function ReportMenu({
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.put(`/api/client/report/${report.id}/status`, data).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         if (statusTableCell) statusTableCell.textContent = statusStr;
         enqueueSnackbar("Report status updated successfully.", {
@@ -64547,7 +62984,6 @@ function ReportMenu({
     }).catch(e => {
       console.error(e);
       setLoading(false);
-
       if (e.response) {
         enqueueSnackbar(e.response.data.message, {
           variant: "error"
@@ -64560,14 +62996,12 @@ function ReportMenu({
     });
     setAnchorEl(null);
   };
-
   const deleteReport = () => {
     const answer = window.confirm("Are you sure you would like to delete this report?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.delete(`/api/client/review-request/reports/${report.id}`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onDeleteReport(report.id);
         enqueueSnackbar("Report deleted successfully.", {
@@ -64585,7 +63019,6 @@ function ReportMenu({
     });
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
     edge: "end",
     size: "small",
@@ -64812,15 +63245,11 @@ function ReportMenu({
     }
   }, "Delete"))));
 }
-
 _s(ReportMenu, "zvSaOP1yWrte1ZkMurojDOus2/0=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_12__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
 });
-
 _c = ReportMenu;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReportMenu");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -64912,7 +63341,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReviewReports; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
@@ -64932,8 +63361,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ReviewReports.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -64950,13 +63378,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function ReviewReports() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [_loading, _setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // clientId
-
   const [reports, setReports] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/${id}/reports/review`).then(async response => {
@@ -64968,8 +63394,9 @@ function ReviewReports() {
       console.error(e);
       setLoading(false);
     });
-  }, []); // file related
+  }, []);
 
+  // file related
   const [docUploadLoading, setDocUploadLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
@@ -64977,21 +63404,17 @@ function ReviewReports() {
   const [doc, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const documentCopy = document && Object.assign({}, document) || null;
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpload = e => {
     const _doc = e.target.files[0];
     if (!_doc) return;
-
     if (_doc.size > _config__WEBPACK_IMPORTED_MODULE_10__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setDocUploadLoading(true);
     const formData = new FormData();
     formData.append("document", _doc);
@@ -65001,7 +63424,6 @@ function ReviewReports() {
       }
     }).then(async response => {
       setDocUploadLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDoc(response.data);
@@ -65025,11 +63447,9 @@ function ReviewReports() {
       });
     });
   };
-
   const handleReportDelete = id => {
     setReports(reports.filter(r => r.id != id));
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
     p: 3,
     style: {
@@ -65355,7 +63775,8 @@ function ReviewReports() {
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -65389,15 +63810,11 @@ function ReviewReports() {
     }
   }, "Registration Report")));
 }
-
 _s(ReviewReports, "YZhVQIZBXMmSwyv05lxzTwqMR+8=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_8__["useSnackbar"]];
 });
-
 _c = ReviewReports;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewReports");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -65489,7 +63906,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReviewerClientView; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
@@ -65503,15 +63920,15 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
 
- // import Toolbar from "../../common/Toolbar";
+// import Toolbar from "../../common/Toolbar";
 
 
 
@@ -65529,14 +63946,14 @@ const useStyles1 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeSt
 }));
 function ReviewerClientView() {
   _s();
-
   const classes = useStyles1();
   return (
     /*#__PURE__*/
     // @ts-ignore
     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_4__["default"], {
       className: classes.root,
-      title: "Client" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+      title: "Client"
+      // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
       ,
       __self: this,
       __source: {
@@ -65583,11 +64000,9 @@ function ReviewerClientView() {
     })))))
   );
 }
-
 _s(ReviewerClientView, "iUcwKsj7H3p1LotITUwukOjPOtY=", false, function () {
   return [useStyles1];
 });
-
 _c = ReviewerClientView;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(theme => Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["createStyles"])({
   button: {
@@ -65601,27 +64016,27 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeSty
     padding: theme.spacing(3)
   }
 }));
-const defaults = {}; // @TODO add report section
+const defaults = {};
 
+// @TODO add report section
 function ClientProfile() {
   _s2();
-
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const classes = useStyles();
-  const params = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // const reviewId = Number.parseInt(params.id);
+  const params = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
+  // const reviewId = Number.parseInt(params.id);
   // const review: Client = data[reviewId];
   // const [form, setForm] = useState<Client>(review);
-
   const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({});
   const [value, setValue] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("/api/client/" + id).then(async response => {
-      setLoading(false); // console.log(response.data);
-
+      setLoading(false);
+      // console.log(response.data);
       response.data.facilities.reverse();
       setValues(response.data);
     }).catch(e => {
@@ -65630,19 +64045,19 @@ function ClientProfile() {
       setLoading(false);
     });
   }, []);
-
   const handleTabChange = (event, newValue) => {
     setValue(newValue);
-  }; // const handleChange = (event: any) => {
+  };
+
+  // const handleChange = (event: any) => {
   //   setForm({
   //     ...form,
   //     [event.target.name]: event.target.value,
   //   });
   // };
 
-
-  const setClientStatus = status => {}; // setValues({ ...values, status });
-
+  const setClientStatus = status => {};
+  // setValues({ ...values, status });
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     autoComplete: "off",
@@ -65701,7 +64116,8 @@ function ClientProfile() {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tabs"], {
     value: value,
-    onChange: handleTabChange // variant="scrollable"
+    onChange: handleTabChange
+    // variant="scrollable"
     // scrollButtons="auto"
     ,
     indicatorColor: "primary",
@@ -65857,13 +64273,10 @@ function ClientProfile() {
     }
   })))));
 }
-
 _s2(ClientProfile, "uEu2A0NPnD+YWMEXijD0+a2QH9Q=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"], useStyles, react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"]];
 });
-
 _c2 = ClientProfile;
-
 function TabPanel(props) {
   const {
     children,
@@ -65885,18 +64298,14 @@ function TabPanel(props) {
     }
   }), value === index && children);
 }
-
 _c3 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `full-width-tab-${index}`,
     "aria-controls": `full-width-tabpanel-${index}`
   };
 }
-
 var _c, _c2, _c3;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewerClientView");
 __webpack_require__.$Refresh$.register(_c2, "ClientProfile");
 __webpack_require__.$Refresh$.register(_c3, "TabPanel");
@@ -65998,15 +64407,14 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
- // import Results from "./Results";
+// import Results from "./Results";
 
 
- // import Toolbar from "./Toolbar";
-
+// import Toolbar from "./Toolbar";
 
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
   root: {
@@ -66016,23 +64424,20 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ReviewListView = () => {
   _s();
-
-  const classes = useStyles(); // const [customers] = useState(data);
-
+  const classes = useStyles();
+  // const [customers] = useState(data);
   const [viewing, setViewing] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
-
-  const handleReviewClick = review => {}; // const handleReviewClick = (review) => setViewing(review);
-
-
-  const handleViewCancel = () => setViewing(null); // const handleAddReview = () => setEditing(null);
-
+  const handleReviewClick = review => {};
+  // const handleReviewClick = (review) => setViewing(review);
+  const handleViewCancel = () => setViewing(null);
+  // const handleAddReview = () => setEditing(null);
 
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Reviews" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Reviews"
+    // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -66101,16 +64506,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "6VzI2pxkOwIPUcUozfVIZQ9q8gw=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -66217,10 +64618,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-function CertificateView({
-  review,
-  certStatus
-}) {
+function CertificateView(_ref) {
+  let {
+    review,
+    certStatus
+  } = _ref;
   switch (certStatus) {
     case CertificateStatus.ISSUED:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_2__["Alert"], {
@@ -66260,7 +64662,6 @@ function CertificateView({
           columnNumber: 11
         }
       }));
-
     case CertificateStatus.SUSPENDED:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_2__["Alert"], {
         severity: "error",
@@ -66292,7 +64693,6 @@ function CertificateView({
           columnNumber: 11
         }
       }, review.businessName), "'s certificate has been suspended. Use the drop down menu to issue certificate.");
-
     case CertificateStatus.PENDING:
     default:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_2__["Alert"], {
@@ -66328,14 +64728,12 @@ function CertificateView({
   }
 }
 _c = CertificateView;
-let CertificateStatus;
-
-(function (CertificateStatus) {
+let CertificateStatus = /*#__PURE__*/function (CertificateStatus) {
   CertificateStatus[CertificateStatus["ISSUED"] = 0] = "ISSUED";
   CertificateStatus[CertificateStatus["PENDING"] = 1] = "PENDING";
   CertificateStatus[CertificateStatus["SUSPENDED"] = 2] = "SUSPENDED";
-})(CertificateStatus || (CertificateStatus = {}));
-
+  return CertificateStatus;
+}({});
 function CertificateList() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["List"], {
     style: {
@@ -66457,11 +64855,8 @@ function CertificateList() {
     }
   })))));
 }
-
 _c2 = CertificateList;
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "CertificateView");
 __webpack_require__.$Refresh$.register(_c2, "CertificateList");
 
@@ -66567,12 +64962,14 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import { Download as DownloadIcon } from "react-feather";
+
+// import { Download as DownloadIcon } from "react-feather";
 
 
-function DocumentsView({
-  review
-}) {
+function DocumentsView(_ref) {
+  let {
+    review
+  } = _ref;
   const documents = data[15];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["List"], {
     __self: this,
@@ -66647,18 +65044,17 @@ function DocumentsView({
   }))))));
 }
 _c = DocumentsView;
-let DocumentStatus;
-
-(function (DocumentStatus) {
+let DocumentStatus = /*#__PURE__*/function (DocumentStatus) {
   DocumentStatus["APPROVED"] = "APPROVED";
   DocumentStatus["PENDING"] = "PENDING";
   DocumentStatus["REJECTED"] = "REJECTED";
   DocumentStatus["NOT_APPLICABLE"] = "NOT APPLICABLE";
-})(DocumentStatus || (DocumentStatus = {}));
-
-function DocumentHeader({
-  document
-}) {
+  return DocumentStatus;
+}({});
+function DocumentHeader(_ref2) {
+  let {
+    document
+  } = _ref2;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       display: "flex",
@@ -66700,7 +65096,6 @@ function DocumentHeader({
     }
   })));
 }
-
 _c2 = DocumentHeader;
 const data = {
   15: [{
@@ -66755,9 +65150,7 @@ const data = {
     expire_date: Date.now()
   }]
 };
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "DocumentsView");
 __webpack_require__.$Refresh$.register(_c2, "DocumentHeader");
 
@@ -66864,7 +65257,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\Header.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -66874,25 +65267,21 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function Header({
-  review,
-  certStatus,
-  setCertStatus
-}) {
+function Header(_ref) {
   _s();
-
+  let {
+    review,
+    certStatus,
+    setCertStatus
+  } = _ref;
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleClose = certStatus => {
     setCertStatus(certStatus);
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CardHeader"], {
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       style: {
@@ -67090,13 +65479,9 @@ function Header({
     }
   });
 }
-
 _s(Header, "+aMDa7FPcESUyQDF1vq0RSMn4/k=");
-
 _c = Header;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Header");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -67202,11 +65587,13 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import { Download as DownloadIcon } from "react-feather";
 
-function ProductsView({
-  review
-}) {
+// import { Download as DownloadIcon } from "react-feather";
+
+function ProductsView(_ref) {
+  let {
+    review
+  } = _ref;
   const documents = data[15];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["List"], {
     __self: this,
@@ -67290,9 +65677,7 @@ const data = {
     date: Date.now()
   }]
 };
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProductsView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -67397,12 +65782,14 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import { Download as DownloadIcon } from "react-feather";
+
+// import { Download as DownloadIcon } from "react-feather";
 
 
-function ReportsView({
-  review
-}) {
+function ReportsView(_ref) {
+  let {
+    review
+  } = _ref;
   const reports = data[15];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["List"], {
     __self: this,
@@ -67477,18 +65864,17 @@ function ReportsView({
   }))))));
 }
 _c = ReportsView;
-let ReportStatus;
-
-(function (ReportStatus) {
+let ReportStatus = /*#__PURE__*/function (ReportStatus) {
   ReportStatus["APPROVED"] = "APPROVED";
   ReportStatus["PENDING"] = "PENDING";
   ReportStatus["REJECTED"] = "REJECTED";
   ReportStatus["NOT_APPLICABLE"] = "NOT APPLICABLE";
-})(ReportStatus || (ReportStatus = {}));
-
-function ReportHeader({
-  report
-}) {
+  return ReportStatus;
+}({});
+function ReportHeader(_ref2) {
+  let {
+    report
+  } = _ref2;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       display: "flex",
@@ -67530,7 +65916,6 @@ function ReportHeader({
     }
   })));
 }
-
 _c2 = ReportHeader;
 const data = {
   15: [{
@@ -67555,9 +65940,7 @@ const data = {
     expire_date: Date.now()
   }]
 };
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "ReportsView");
 __webpack_require__.$Refresh$.register(_c2, "ReportHeader");
 
@@ -67661,7 +66044,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -67671,23 +66054,20 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ViewReview({
-  className,
-  review,
-  onCancel,
-  ...rest
-}) {
+function ViewReview(_ref) {
   _s();
-
+  let {
+    className,
+    review,
+    onCancel,
+    ...rest
+  } = _ref;
   // const classes = useStyles();
   const [value, setValue] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
   const [certStatus, setCertStatus] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(_CertificateView__WEBPACK_IMPORTED_MODULE_7__["CertificateStatus"].PENDING);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
     __self: this,
     __source: {
@@ -67716,12 +66096,14 @@ function ViewReview({
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tabs"], {
     value: value,
-    onChange: handleChange // variant="scrollable"
+    onChange: handleChange
+    // variant="scrollable"
     // scrollButtons="auto"
     ,
     indicatorColor: "primary",
     textColor: "primary",
-    centered: true // aria-label="simple tabs example"
+    centered: true
+    // aria-label="simple tabs example"
     ,
     __self: this,
     __source: {
@@ -67859,11 +66241,8 @@ function ViewReview({
     }
   }))));
 }
-
 _s(ViewReview, "2ECjX3f3pMZZ+NPctQVXElvqix4=");
-
 _c = ViewReview;
-
 function TabPanel(props) {
   const {
     children,
@@ -67897,18 +66276,14 @@ function TabPanel(props) {
     }
   }, children));
 }
-
 _c2 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`
   };
 }
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "ViewReview");
 __webpack_require__.$Refresh$.register(_c2, "TabPanel");
 
@@ -68015,11 +66390,9 @@ function getColorByReviewStatus(status) {
     case _Review__WEBPACK_IMPORTED_MODULE_1__["ReviewStatus"].APPROVED:
     case _review_DocumentsView__WEBPACK_IMPORTED_MODULE_2__["DocumentStatus"].APPROVED:
       return "primary";
-
     case _Review__WEBPACK_IMPORTED_MODULE_1__["ReviewStatus"].REJECTED:
     case _review_DocumentsView__WEBPACK_IMPORTED_MODULE_2__["DocumentStatus"].REJECTED:
       return "secondary";
-
     case _Review__WEBPACK_IMPORTED_MODULE_1__["ReviewStatus"].PENDING:
     case _review_DocumentsView__WEBPACK_IMPORTED_MODULE_2__["DocumentStatus"].PENDING:
     case _review_DocumentsView__WEBPACK_IMPORTED_MODULE_2__["DocumentStatus"].NOT_APPLICABLE:
@@ -68126,9 +66499,10 @@ __webpack_require__.$Refresh$.setup(module.i);
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\Breadcrumbs.tsx";
 
 
-function Breadcrumbs({
-  list
-}) {
+function Breadcrumbs(_ref) {
+  let {
+    list
+  } = _ref;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Breadcrumbs"], {
     separator: "\u203A",
     "aria-label": "breadcrumb",
@@ -68149,9 +66523,7 @@ function Breadcrumbs({
   }, item)));
 }
 _c = Breadcrumbs;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Breadcrumbs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -68253,8 +66625,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\CategorySelector.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -68265,13 +66636,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     backgroundColor: theme.palette.background.paper
   }
 }));
-function CategorySelector({
-  categoriesSource,
-  onSelect,
-  selected
-}) {
+function CategorySelector(_ref) {
   _s();
-
+  let {
+    categoriesSource,
+    onSelect,
+    selected
+  } = _ref;
   const classes = useStyles();
   const [categories, setCategories] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
@@ -68283,12 +66654,10 @@ function CategorySelector({
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     getCategories();
   }, []);
-
   const getCategories = () => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(categoriesSource).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setCategories(response.data);
       } else {
@@ -68305,28 +66674,23 @@ function CategorySelector({
       });
     });
   };
-
   const handleClickListItem = event => {
     getCategories();
     setAnchorEl(event.currentTarget);
   };
-
   const handleMenuItemClick = id => {
     setSelectedCategory(id);
     onSelect(id);
     setAnchorEl(null);
   };
-
   const handleClose = () => {
     setAnchorEl(null);
   };
-
   const selectedText = () => {
     if (!categories.length) return "Select category";
     const selected = categories.filter(i => i.id === selectedCategory)[0];
     return selected && `${selected.code} (${selected.title})` || "Select category";
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.root,
     __self: this,
@@ -68360,7 +66724,8 @@ function CategorySelector({
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["ListItemText"], {
-    primary: selectedText() // secondary="Select category"
+    primary: selectedText()
+    // secondary="Select category"
     ,
     __self: this,
     __source: {
@@ -68439,15 +66804,11 @@ function CategorySelector({
     }
   }, category.code), " ", `(${category.title})`)))));
 }
-
 _s(CategorySelector, "DRtd31n/33sz5E/McQvZY+sNRQk=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c = CategorySelector;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "CategorySelector");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -68550,8 +66911,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\EnumSelector.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -68565,37 +66925,31 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["
     backgroundColor: theme.palette.background.paper
   }
 }));
-function EnumSelector({
-  enumerator,
-  defaultValue = null,
-  onSelect,
-  description = "Select an option"
-}) {
+function EnumSelector(_ref) {
   _s();
-
+  let {
+    enumerator,
+    defaultValue = null,
+    onSelect,
+    description = "Select an option"
+  } = _ref;
   const classes = useStyles();
   const enumKeys = Object(_utils__WEBPACK_IMPORTED_MODULE_7__["arrayFromEnumKeys"])(enumerator);
   const enumValues = Object(_utils__WEBPACK_IMPORTED_MODULE_7__["arrayFromEnumValues"])(enumerator);
-
   const _defaultValue = enumKeys.indexOf(defaultValue);
-
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
   const [selected, setSelected] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(_defaultValue);
-
   const handleClickListItem = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleMenuItemClick = selected => {
     onSelect && onSelect(enumKeys[selected] || "");
     setSelected(selected);
     setAnchorEl(null);
   };
-
   const handleClose = () => {
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.root,
     __self: this,
@@ -68659,7 +67013,8 @@ function EnumSelector({
       columnNumber: 9
     }
   }, "None"), enumValues.map((value, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    key: value // disabled={i === 0}
+    key: value
+    // disabled={i === 0}
     ,
     selected: selected != null && i === selected,
     onClick: event => handleMenuItemClick(i),
@@ -68671,15 +67026,11 @@ function EnumSelector({
     }
   }, value && value || "None"))));
 }
-
 _s(EnumSelector, "Uv8xTU/jlysrafhde0/HwcRGlRY=", false, function () {
   return [useStyles];
 });
-
 _c = EnumSelector;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "EnumSelector");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -68781,25 +67132,24 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
 const styles = theme => ({
   button: {
     margin: theme.spacing.unit
   }
 });
-
-const LoadingButton = ({
-  loading,
-  loadingText = "Uploading...",
-  done,
-  startIcon,
-  variant,
-  color = "default",
-  disabled = false,
-  onClick,
-  children,
-  ...rest
-}) => {
+const LoadingButton = _ref => {
+  let {
+    loading,
+    loadingText = "Uploading...",
+    done,
+    startIcon,
+    variant,
+    color = "default",
+    disabled = false,
+    onClick,
+    children,
+    ...rest
+  } = _ref;
   if (done) {
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__["default"], Object.assign({}, rest, {
       startIcon: startIcon || null,
@@ -68847,12 +67197,9 @@ const LoadingButton = ({
     }), children);
   }
 };
-
 _c = LoadingButton;
 /* harmony default export */ __webpack_exports__["default"] = (Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_1__["withStyles"])(styles)(LoadingButton));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "LoadingButton");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -68954,8 +67301,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\ModelSelector.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -68966,16 +67312,16 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     backgroundColor: theme.palette.background.paper
   }
 }));
-function ModelSelector({
-  modelName = "model",
-  modelNamePlural = "models",
-  modelSource,
-  onSelect,
-  selected = 0,
-  style
-}) {
+function ModelSelector(_ref) {
   _s();
-
+  let {
+    modelName = "model",
+    modelNamePlural = "models",
+    modelSource,
+    onSelect,
+    selected = 0,
+    style
+  } = _ref;
   const classes = useStyles();
   const [models, setModels] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
@@ -68987,12 +67333,10 @@ function ModelSelector({
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     getModels();
   }, []);
-
   const getModels = () => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(modelSource).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setModels(response.data);
       } else {
@@ -69009,28 +67353,23 @@ function ModelSelector({
       });
     });
   };
-
   const handleClickListItem = event => {
     getModels();
     setAnchorEl(event.currentTarget);
   };
-
   const handleMenuItemClick = id => {
     setSelectedModel(id);
     onSelect(id);
     setAnchorEl(null);
   };
-
   const handleClose = () => {
     setAnchorEl(null);
   };
-
   const selectedText = () => {
     if (!models.length) return `Select ${modelName}`;
     const selected = models.filter(i => i.id === selectedModel)[0];
     return selected && (selected.name.length && selected.name || selected.address) || `Select ${modelName}`;
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.root,
     style: style,
@@ -69065,7 +67404,8 @@ function ModelSelector({
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["ListItemText"], {
-    primary: selectedText() // secondary="Select model"
+    primary: selectedText()
+    // secondary="Select model"
     ,
     __self: this,
     __source: {
@@ -69140,15 +67480,11 @@ function ModelSelector({
     }, model.name || model.address || `Facility #${model.id}`));
   })));
 }
-
 _s(ModelSelector, "fzJmc8K7CQqh6eOzwXugZAPPGDA=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c = ModelSelector;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ModelSelector");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -69249,8 +67585,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\NestedMenuItem.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -69263,14 +67598,13 @@ const useMenuItemStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODU
     backgroundColor: props.open ? theme.palette.action.hover : TRANSPARENT
   })
 }));
+
 /**
  * Use as a drop-in replacement for `<MenuItem>` when you need to add cascading
  * menu elements as children to this component.
  */
-
 const NestedMenuItem = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(_c = _s(function NestedMenuItem(props, ref) {
   _s();
-
   const {
     parentMenuOpen,
     component = "div",
@@ -69304,88 +67638,69 @@ const NestedMenuItem = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useImperativeHandle"])(containerRefProp, () => containerRef.current);
   const menuContainerRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const [isSubMenuOpen, setIsSubMenuOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-
   const handleMouseEnter = event => {
     setIsSubMenuOpen(true);
-
-    if (ContainerProps === null || ContainerProps === void 0 ? void 0 : ContainerProps.onMouseEnter) {
+    if (ContainerProps !== null && ContainerProps !== void 0 && ContainerProps.onMouseEnter) {
       ContainerProps.onMouseEnter(event);
     }
   };
-
   const handleMouseLeave = event => {
     setIsSubMenuOpen(false);
-
-    if (ContainerProps === null || ContainerProps === void 0 ? void 0 : ContainerProps.onMouseLeave) {
+    if (ContainerProps !== null && ContainerProps !== void 0 && ContainerProps.onMouseLeave) {
       ContainerProps.onMouseLeave(event);
     }
-  }; // Check if any immediate children are active
+  };
 
-
+  // Check if any immediate children are active
   const isSubmenuFocused = () => {
     var _containerRef$current, _containerRef$current2;
-
-    const active = (_containerRef$current = containerRef.current) === null || _containerRef$current === void 0 ? void 0 : (_containerRef$current2 = _containerRef$current.ownerDocument) === null || _containerRef$current2 === void 0 ? void 0 : _containerRef$current2.activeElement; // @ts-ignore
-
+    const active = (_containerRef$current = containerRef.current) === null || _containerRef$current === void 0 ? void 0 : (_containerRef$current2 = _containerRef$current.ownerDocument) === null || _containerRef$current2 === void 0 ? void 0 : _containerRef$current2.activeElement;
+    // @ts-ignore
     for (const child of (_menuContainerRef$cur = (_menuContainerRef$cur2 = menuContainerRef.current) === null || _menuContainerRef$cur2 === void 0 ? void 0 : _menuContainerRef$cur2.children) !== null && _menuContainerRef$cur !== void 0 ? _menuContainerRef$cur : []) {
       var _menuContainerRef$cur, _menuContainerRef$cur2;
-
       if (child === active) {
         return true;
       }
     }
-
     return false;
   };
-
   const handleFocus = event => {
     if (event.target === containerRef.current) {
       setIsSubMenuOpen(true);
     }
-
-    if (ContainerProps === null || ContainerProps === void 0 ? void 0 : ContainerProps.onFocus) {
+    if (ContainerProps !== null && ContainerProps !== void 0 && ContainerProps.onFocus) {
       ContainerProps.onFocus(event);
     }
   };
-
   const handleKeyDown = event => {
     var _containerRef$current3, _containerRef$current4;
-
     if (event.key === "Escape") {
       return;
     }
-
     if (isSubmenuFocused()) {
       event.stopPropagation();
     }
-
     const active = (_containerRef$current3 = containerRef.current) === null || _containerRef$current3 === void 0 ? void 0 : (_containerRef$current4 = _containerRef$current3.ownerDocument) === null || _containerRef$current4 === void 0 ? void 0 : _containerRef$current4.activeElement;
-
     if (event.key === "ArrowLeft" && isSubmenuFocused()) {
       var _containerRef$current5;
-
       (_containerRef$current5 = containerRef.current) === null || _containerRef$current5 === void 0 ? void 0 : _containerRef$current5.focus();
     }
-
     if (event.key === "ArrowRight" && event.target === containerRef.current && event.target === active) {
       var _menuContainerRef$cur3;
-
       const firstChild = (_menuContainerRef$cur3 = menuContainerRef.current) === null || _menuContainerRef$cur3 === void 0 ? void 0 : _menuContainerRef$cur3.children[0];
       firstChild === null || firstChild === void 0 ? void 0 : firstChild.focus();
     }
   };
-
   const open = isSubMenuOpen && parentMenuOpen;
   const menuItemClasses = useMenuItemStyles({
     open
-  }); // Root element must have a `tabIndex` attribute for keyboard navigation
+  });
 
+  // Root element must have a `tabIndex` attribute for keyboard navigation
   let tabIndex;
-
   if (!props.disabled) {
     tabIndex = tabIndexProp !== undefined ? tabIndexProp : -1;
   }
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", Object.assign({}, ContainerProps, {
     ref: containerRef,
     onFocus: handleFocus,
@@ -69408,7 +67723,8 @@ const NestedMenuItem = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a
       lineNumber: 166,
       columnNumber: 7
     }
-  }), label, rightIcon), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Menu__WEBPACK_IMPORTED_MODULE_2__["default"] // Set pointer events to 'none' to prevent the invisible Popover div
+  }), label, rightIcon), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Menu__WEBPACK_IMPORTED_MODULE_2__["default"]
+  // Set pointer events to 'none' to prevent the invisible Popover div
   // from capturing events for clicks and hovers
   , {
     style: {
@@ -69453,9 +67769,7 @@ const NestedMenuItem = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a
 }));
 _c2 = NestedMenuItem;
 /* harmony default export */ __webpack_exports__["default"] = (NestedMenuItem);
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "NestedMenuItem$React.forwardRef");
 __webpack_require__.$Refresh$.register(_c2, "NestedMenuItem");
 
@@ -69567,18 +67881,20 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-function PromptDialog({
-  open = false,
-  title = "Confirm Prompt",
-  message,
-  onOk,
-  onCancel,
-  maxWidth = "sm",
-  okText = "Ok",
-  cancelText = "Cancel"
-}) {
+function PromptDialog(_ref) {
+  let {
+    open = false,
+    title = "Confirm Prompt",
+    message,
+    onOk,
+    onCancel,
+    maxWidth = "sm",
+    okText = "Ok",
+    cancelText = "Cancel"
+  } = _ref;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_2__["default"], {
-    open: open // onClose={handleClose}
+    open: open
+    // onClose={handleClose}
     ,
     "aria-labelledby": "prompt-dialog-title",
     "aria-describedby": "prompt-dialog-description",
@@ -69650,9 +67966,7 @@ function PromptDialog({
   }, okText)));
 }
 _c = PromptDialog;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "PromptDialog");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -69751,8 +68065,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\Toolbar.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 // @ts-nocheck
 
 
@@ -69770,34 +68083,29 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     marginRight: theme.spacing(1)
   }
 }));
-function Toolbar({
-  className,
-  onAddReview,
-  ...rest
-}) {
+function Toolbar(_ref) {
   _s();
-
+  let {
+    className,
+    onAddReview,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   let value = -1;
-
   switch (window.location.pathname) {
     case "/reviews-queue":
       value = 0;
       break;
-
     case "/approved-reviews":
       value = 1;
       break;
-
     case "/drafted-reviews":
       value = 2;
       break;
-
     case "/reviewer/register-client":
       value = 3;
       break;
   }
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_1__["default"])(classes.root, className)
   }, rest, {
@@ -69824,7 +68132,8 @@ function Toolbar({
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Tabs"], {
-    value: value // onChange={handleChange}
+    value: value
+    // onChange={handleChange}
     ,
     indicatorColor: "primary",
     textColor: "primary",
@@ -69928,11 +68237,9 @@ function Toolbar({
     }
   })))));
 }
-
 _s(Toolbar, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = Toolbar;
 const styles = {
   toolbar: {
@@ -69947,16 +68254,13 @@ const styles = {
     minHeight: "auto"
   }
 };
-
 function a11yProps(index) {
   return {
     id: `nav-tab-${index}`,
     "aria-controls": `nav-tabpanel-${index}`
   };
 }
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Toolbar");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -70071,7 +68375,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\UploadDocumentListItem.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -70086,21 +68390,20 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function UploadDocumentListItem({
-  fileTypeName,
-  document,
-  setDocument,
-  uploadHandler,
-  updateHandler,
-  deleteHandler,
-  dateChangeHandler,
-  requireExpirationDate = true,
-  showNote = false,
-  divider = false
-}) {
+function UploadDocumentListItem(_ref) {
   _s();
-
+  let {
+    fileTypeName,
+    document,
+    setDocument,
+    uploadHandler,
+    updateHandler,
+    deleteHandler,
+    dateChangeHandler,
+    requireExpirationDate = true,
+    showNote = false,
+    divider = false
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"])();
@@ -70112,7 +68415,8 @@ function UploadDocumentListItem({
   const documentCopy = document && Object.assign({}, document) || null;
   const [file, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(documentCopy);
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
-  const filename = file && "✓ Document uploaded" || document && "✓ Document uploaded" || "No file selected"; // const filename =
+  const filename = file && "✓ Document uploaded" || document && "✓ Document uploaded" || "No file selected";
+  // const filename =
   //   (file && file.path.substring(10)) ||
   //   (document && document.path.substring(10)) ||
   //   "No file selected";
@@ -70120,12 +68424,10 @@ function UploadDocumentListItem({
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleDateChange = date => {
     setLoading(true);
     if (dateChangeHandler) dateChangeHandler(document === null || document === void 0 ? void 0 : document.id, date).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // setSelectedDate(date as Date);
         enqueueSnackbar(`Document expiration date updated successfully.`, {
@@ -70145,20 +68447,16 @@ function UploadDocumentListItem({
       });
     });
   };
-
   const handleDocumentUpload = e => {
     const doc = e.target.files[0];
     if (!doc) return;
-
     if (doc.size > _config__WEBPACK_IMPORTED_MODULE_13__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setLoading(true);
     if (uploadHandler) uploadHandler(doc, defaultExpireDate).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDocs(response.data);
@@ -70181,30 +68479,24 @@ function UploadDocumentListItem({
       });
     });
   };
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpdateButton = () => {
     // @ts-ignore
     if (inputRef) updateInputRef.current.click();
   };
-
   const handleUpdateDocument = e => {
     const doc = e.target.files[0];
     if (!doc) return;
-
     if (doc.size > _config__WEBPACK_IMPORTED_MODULE_13__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setLoading(true);
     if (updateHandler) updateHandler(doc, document === null || document === void 0 ? void 0 : document.id).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDocs(response.data);
@@ -70226,21 +68518,17 @@ function UploadDocumentListItem({
       });
     });
   };
-
   const handleDeleteDocument = () => {
     const answer = window.confirm("Are you sure you would like to delete this document?");
     if (!answer) return;
     setLoading(true);
-
     if (!document || !document.id) {
       setDoc(null);
       return;
     }
-
     if (deleteHandler) deleteHandler(document.id).then(async response => {
       // console.log(response);
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setDoc(null);
         enqueueSnackbar("Document deleted successfully.", {
@@ -70257,7 +68545,6 @@ function UploadDocumentListItem({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItem"], {
     style: {
       backgroundColor: (file || document) && "#fff" || "#f5f5f5"
@@ -70313,8 +68600,7 @@ function UploadDocumentListItem({
         lineNumber: 257,
         columnNumber: 15
       }
-    }, filename),
-    /* Expiration Date Field */
+    }, filename), /* Expiration Date Field */
     requireExpirationDate && (file || document) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       style: {
         display: "flex",
@@ -70343,7 +68629,8 @@ function UploadDocumentListItem({
         columnNumber: 19
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_pickers__WEBPACK_IMPORTED_MODULE_5__["KeyboardDatePicker"], {
-      id: "date-picker-dialog" // label="Date picker dialog"
+      id: "date-picker-dialog"
+      // label="Date picker dialog"
       ,
       format: "MM/dd/yyyy",
       value: defaultExpireDate,
@@ -70397,7 +68684,8 @@ function UploadDocumentListItem({
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -70555,15 +68843,11 @@ function UploadDocumentListItem({
     }
   }))));
 }
-
 _s(UploadDocumentListItem, "Qa1FDSUyXT3uJchlahseMtZ4c/g=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"]];
 });
-
 _c = UploadDocumentListItem;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "UploadDocumentListItem");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -70689,7 +68973,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\UploadDocumentTableRow.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -70710,21 +68994,20 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function UploadDocumentListItem({
-  nameField,
-  documentType,
-  fileTypeName,
-  document,
-  setDocument,
-  uploadHandler,
-  updateHandler,
-  deleteHandler,
-  dateChangeHandler,
-  requireExpirationDate = true
-}) {
+function UploadDocumentListItem(_ref) {
   _s();
-
+  let {
+    nameField,
+    documentType,
+    fileTypeName,
+    document,
+    setDocument,
+    uploadHandler,
+    updateHandler,
+    deleteHandler,
+    dateChangeHandler,
+    requireExpirationDate = true
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
@@ -70737,7 +69020,8 @@ function UploadDocumentListItem({
   const [file, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(documentCopy);
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
   const filename = nameField && nameField || file && "✓ Document uploaded" || document && "✓ Document uploaded" || "No file selected";
-  const [note, setNote] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(document === null || document === void 0 ? void 0 : document.note); // const filename =
+  const [note, setNote] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(document === null || document === void 0 ? void 0 : document.note);
+  // const filename =
   //   (file && file.path.substring(10)) ||
   //   (document && document.path.substring(10)) ||
   //   "No file selected";
@@ -70745,16 +69029,13 @@ function UploadDocumentListItem({
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     setNote(document === null || document === void 0 ? void 0 : document.note);
   }, [document]);
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleDateChange = date => {
     setLoading(true);
     if (dateChangeHandler) dateChangeHandler(document === null || document === void 0 ? void 0 : document.id, date).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // setSelectedDate(date as Date);
         enqueueSnackbar(`Document expiration date updated successfully.`, {
@@ -70774,20 +69055,16 @@ function UploadDocumentListItem({
       });
     });
   };
-
   const handleDocumentUpload = e => {
     const doc = e.target.files[0];
     if (!doc) return;
-
     if (doc.size > _config__WEBPACK_IMPORTED_MODULE_18__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setLoading(true);
     if (uploadHandler) uploadHandler(doc, defaultExpireDate).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDocs(response.data);
@@ -70810,30 +69087,24 @@ function UploadDocumentListItem({
       });
     });
   };
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpdateButton = () => {
     // @ts-ignore
     if (inputRef) updateInputRef.current.click();
   };
-
   const handleUpdateDocument = e => {
     const doc = e.target.files[0];
     if (!doc) return;
-
     if (doc.size > _config__WEBPACK_IMPORTED_MODULE_18__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setLoading(true);
     if (updateHandler) updateHandler(doc, document === null || document === void 0 ? void 0 : document.id).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDocs(response.data);
@@ -70855,7 +69126,6 @@ function UploadDocumentListItem({
       });
     });
   };
-
   const updateStatus = (id, status) => {
     const statusTableCell = window.document.querySelector(`#document-${id} .status`);
     let statusStr = status.toString();
@@ -70865,7 +69135,6 @@ function UploadDocumentListItem({
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/${documentType}/document/${id}/status`, data).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         if (statusTableCell) statusTableCell.textContent = statusStr;
         enqueueSnackbar("Document status updated successfully.", {
@@ -70883,14 +69152,12 @@ function UploadDocumentListItem({
     });
     setAnchorEl(null);
   };
-
   const updateNote = id => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/${documentType}/document/${id}/note`, {
       note
     }).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         enqueueSnackbar("Document note saved successfully.", {
           variant: "success"
@@ -70907,21 +69174,17 @@ function UploadDocumentListItem({
     });
     setAnchorEl(null);
   };
-
   const handleDeleteDocument = () => {
     const answer = window.confirm("Are you sure you would like to delete this document?");
     if (!answer) return;
     setLoading(true);
-
     if (!document || !document.id) {
       setDoc(null);
       return;
     }
-
     if (deleteHandler) deleteHandler(document.id).then(async response => {
       // console.log(response);
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setDoc(null);
         enqueueSnackbar("Document deleted successfully.", {
@@ -70938,7 +69201,6 @@ function UploadDocumentListItem({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableRow"], {
     style: {
       backgroundColor: (file || document) && "#fff" || "#f5f5f5"
@@ -71013,8 +69275,7 @@ function UploadDocumentListItem({
       lineNumber: 341,
       columnNumber: 7
     }
-  },
-  /* Expiration Date Field */
+  }, /* Expiration Date Field */
   requireExpirationDate && (file || document) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_pickers__WEBPACK_IMPORTED_MODULE_6__["MuiPickersUtilsProvider"], {
     utils: _date_io_date_fns__WEBPACK_IMPORTED_MODULE_5__["default"],
     __self: this,
@@ -71024,7 +69285,8 @@ function UploadDocumentListItem({
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_pickers__WEBPACK_IMPORTED_MODULE_6__["KeyboardDatePicker"], {
-    id: "date-picker-dialog" // label="Date picker dialog"
+    id: "date-picker-dialog"
+    // label="Date picker dialog"
     ,
     format: "MM/dd/yyyy",
     value: defaultExpireDate,
@@ -71075,7 +69337,8 @@ function UploadDocumentListItem({
       columnNumber: 7
     }
   }, (file || document) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
-    fullWidth: true // label="Comments"
+    fullWidth: true
+    // label="Comments"
     // name="description"
     ,
     onChange: e => setNote(e.target.value),
@@ -71108,7 +69371,8 @@ function UploadDocumentListItem({
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -71372,15 +69636,11 @@ function UploadDocumentListItem({
     }
   }))));
 }
-
 _s(UploadDocumentListItem, "dBZFBQH5qP388pZWcwdkelKGNds=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = UploadDocumentListItem;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "UploadDocumentListItem");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -71891,59 +70151,70 @@ __webpack_require__.$Refresh$.setup(module.i);
 /**
  * Common
  */
-let DocumentStatus;
+
+let DocumentStatus = /*#__PURE__*/function (DocumentStatus) {
+  DocumentStatus["SUBMITTED"] = "SUBMITTED";
+  DocumentStatus["APPROVED"] = "APPROVED";
+  DocumentStatus["REJECTED"] = "REJECTED";
+  return DocumentStatus;
+}({});
+
 /**
  * Client types
  */
 
-(function (DocumentStatus) {
-  DocumentStatus["SUBMITTED"] = "SUBMITTED";
-  DocumentStatus["APPROVED"] = "APPROVED";
-  DocumentStatus["REJECTED"] = "REJECTED";
-})(DocumentStatus || (DocumentStatus = {}));
+/**
+ * Client types
+ */
 
-let ClientStatus;
-
-(function (ClientStatus) {
+let ClientStatus = /*#__PURE__*/function (ClientStatus) {
   ClientStatus["APPROVED"] = "APPROVED";
   ClientStatus["PENDING"] = "PENDING";
   ClientStatus["REJECTED"] = "REJECTED";
   ClientStatus["NOT_APPLICABLE"] = "NOT APPLICABLE";
-})(ClientStatus || (ClientStatus = {}));
+  return ClientStatus;
+}({});
 
-let ReviewRequestStatus;
+/**
+ * Review types
+ */
 
-(function (ReviewRequestStatus) {
+let ReviewRequestStatus = /*#__PURE__*/function (ReviewRequestStatus) {
   ReviewRequestStatus["DRAFT"] = "DRAFT";
   ReviewRequestStatus["SUBMITTED"] = "SUBMITTED";
   ReviewRequestStatus["IN_REVIEW"] = "IN REVIEW";
   ReviewRequestStatus["APPROVED"] = "APPROVED";
   ReviewRequestStatus["REJECTED"] = "REJECTED";
-})(ReviewRequestStatus || (ReviewRequestStatus = {}));
-
-let ReviewStatus;
-/**
- * Certificate types
- */
-
-(function (ReviewStatus) {
+  return ReviewRequestStatus;
+}({});
+let ReviewStatus = /*#__PURE__*/function (ReviewStatus) {
   ReviewStatus["APPROVED"] = "APPROVED";
   ReviewStatus["PENDING"] = "PENDING";
   ReviewStatus["REJECTED"] = "REJECTED";
   ReviewStatus["NOT_APPLICABLE"] = "NOT APPLICABLE";
-})(ReviewStatus || (ReviewStatus = {}));
+  return ReviewStatus;
+}({});
 
-let ReportStatus;
+/**
+ * Certificate types
+ */
 
-(function (ReportStatus) {
+/**
+ * Report types
+ */
+
+let ReportStatus = /*#__PURE__*/function (ReportStatus) {
   ReportStatus["PENDING"] = "PENDING";
   ReportStatus["APPROVED"] = "APPROVED";
   ReportStatus["REJECTED"] = "REJECTED";
-})(ReportStatus || (ReportStatus = {}));
+  return ReportStatus;
+}({});
 
-let FacilityDocumentType;
+/**
+ * Facility Category types
+ */
 
-(function (FacilityDocumentType) {
+let FacilityDocumentType = /*#__PURE__*/function (FacilityDocumentType) {
   FacilityDocumentType["PEST_CONTROL"] = "PEST_CONTROL";
   FacilityDocumentType["INSPECTION_SHEET"] = "INSPECTION_SHEET";
   FacilityDocumentType["HIP"] = "HIP";
@@ -71953,56 +70224,61 @@ let FacilityDocumentType;
   FacilityDocumentType["LEGAL_BUSINESS_DOCUMENTS"] = "LEGAL_BUSINESS_DOCUMENTS";
   FacilityDocumentType["TRACEABILITY_PLAN"] = "TRACEABILITY_PLAN";
   FacilityDocumentType["FLOWCHART_OF_PROCESSING"] = "FLOWCHART_OF_PROCESSING";
-})(FacilityDocumentType || (FacilityDocumentType = {}));
+  return FacilityDocumentType;
+}({});
 
-let ProductDocumentType;
+/**
+ * Product types
+ */
 
-(function (ProductDocumentType) {
+let ProductDocumentType = /*#__PURE__*/function (ProductDocumentType) {
   ProductDocumentType["SPEC_SHEETS"] = "SPEC_SHEETS";
   ProductDocumentType["CERTIFICATE_OF_ANALYSIS"] = "CERTIFICATE_OF_ANALYSIS";
   ProductDocumentType["TESTING"] = "TESTING";
-})(ProductDocumentType || (ProductDocumentType = {}));
+  return ProductDocumentType;
+}({});
 
-let IngredientRecommendation;
+/**
+ * Ingredient types
+ */
 
-(function (IngredientRecommendation) {
+let IngredientRecommendation = /*#__PURE__*/function (IngredientRecommendation) {
   IngredientRecommendation["HALAL_ASLAN"] = "Halal Aslan";
   IngredientRecommendation["MASHBUH"] = "Mashbuh";
   IngredientRecommendation["HARAM"] = "Haram";
-})(IngredientRecommendation || (IngredientRecommendation = {}));
-
-let IngredientSource;
-
-(function (IngredientSource) {
+  return IngredientRecommendation;
+}({});
+let IngredientSource = /*#__PURE__*/function (IngredientSource) {
   IngredientSource["ANIMAL"] = "Animal";
   IngredientSource["PLANT"] = "Plant";
   IngredientSource["SYNTHETIC"] = "Synthetic";
   IngredientSource["MINERAL"] = "Mineral";
   IngredientSource["GAS"] = "Gas";
-})(IngredientSource || (IngredientSource = {}));
-
-let IngredientDocumentType;
-
-(function (IngredientDocumentType) {
+  return IngredientSource;
+}({});
+let IngredientDocumentType = /*#__PURE__*/function (IngredientDocumentType) {
   IngredientDocumentType["CERTIFICATE_OR_DISCLOSURE"] = "CERTIFICATE_OR_DISCLOSURE";
-})(IngredientDocumentType || (IngredientDocumentType = {}));
+  return IngredientDocumentType;
+}({});
 
-let ManufacturerDocumentType;
+/**
+ * Manufacturer types
+ */
+
+let ManufacturerDocumentType = /*#__PURE__*/function (ManufacturerDocumentType) {
+  ManufacturerDocumentType["CERTIFICATE_OR_DISCLOSURE"] = "CERTIFICATE_OR_DISCLOSURE";
+  return ManufacturerDocumentType;
+}({});
+
 /**
  * Certificate types
  */
-
-(function (ManufacturerDocumentType) {
-  ManufacturerDocumentType["CERTIFICATE_OR_DISCLOSURE"] = "CERTIFICATE_OR_DISCLOSURE";
-})(ManufacturerDocumentType || (ManufacturerDocumentType = {}));
-
-let CertificateStatus;
-
-(function (CertificateStatus) {
+let CertificateStatus = /*#__PURE__*/function (CertificateStatus) {
   CertificateStatus[CertificateStatus["ISSUED"] = 0] = "ISSUED";
   CertificateStatus[CertificateStatus["PENDING"] = 1] = "PENDING";
   CertificateStatus[CertificateStatus["SUSPENDED"] = 2] = "SUSPENDED";
-})(CertificateStatus || (CertificateStatus = {}));
+  return CertificateStatus;
+}({});
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -72112,11 +70388,9 @@ function getColorByReviewStatus(status) {
     case _types__WEBPACK_IMPORTED_MODULE_1__["ReviewStatus"].APPROVED:
     case _reviews_queue_review_DocumentsView__WEBPACK_IMPORTED_MODULE_2__["DocumentStatus"].APPROVED:
       return "primary";
-
     case _types__WEBPACK_IMPORTED_MODULE_1__["ReviewStatus"].REJECTED:
     case _reviews_queue_review_DocumentsView__WEBPACK_IMPORTED_MODULE_2__["DocumentStatus"].REJECTED:
       return "secondary";
-
     case _types__WEBPACK_IMPORTED_MODULE_1__["ReviewStatus"].PENDING:
     case _reviews_queue_review_DocumentsView__WEBPACK_IMPORTED_MODULE_2__["DocumentStatus"].PENDING:
     case _reviews_queue_review_DocumentsView__WEBPACK_IMPORTED_MODULE_2__["DocumentStatus"].NOT_APPLICABLE:
@@ -72127,9 +70401,12 @@ function expireText(date) {
   return `${date > Date.now() && "Expires " || "Expired"} ${moment__WEBPACK_IMPORTED_MODULE_0___default()(date).fromNow()}`;
 }
 function insert(arr, index, item) {
-  return [// part of the array before the specified index
-  ...arr.slice(0, index), // inserted item
-  item, // part of the array after the specified index
+  return [
+  // part of the array before the specified index
+  ...arr.slice(0, index),
+  // inserted item
+  item,
+  // part of the array after the specified index
   ...arr.slice(index + 1)];
 }
 function arrayFromEnumKeys(enumerator) {
@@ -72138,13 +70415,14 @@ function arrayFromEnumKeys(enumerator) {
 function arrayFromEnumValues(enumerator) {
   return Object.values(enumerator);
 }
+
 /**
  * Returns a random number between min (inclusive) and max (exclusive)
  */
-
 function getRandomArbitrary(min, max) {
   return Math.random() * (max - min) + min;
 }
+
 /**
  * Returns a random integer between min (inclusive) and max (inclusive).
  * The value is no lower than min (or the next integer greater than min
@@ -72152,7 +70430,6 @@ function getRandomArbitrary(min, max) {
  * lower than max if max isn't an integer).
  * Using Math.round() will give you a non-uniform distribution!
  */
-
 function getRandomInt(min, max) {
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -72248,7 +70525,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Results; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_3__);
@@ -72261,8 +70538,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\drafted-reviews\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -72279,19 +70555,17 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["makeSty
     cursor: "pointer"
   }
 }));
-function Results({
-  className,
-  data,
-  ...rest
-}) {
+function Results(_ref) {
   _s();
-
+  let {
+    className,
+    data,
+    ...rest
+  } = _ref;
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
   const classes = useStyles();
   const [reviews] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(data);
-
   const handleRowClick = id => navigate(`/reviewer/review/${id}`);
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Card"], Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(classes.root, className)
   }, rest, {
@@ -72486,15 +70760,11 @@ function Results({
     }
   }, "View More")));
 }
-
 _s(Results, "oCfE2LuQ9bBVdIwGSIHWUjsHF5I=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"], useStyles];
 });
-
 _c = Results;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -72594,8 +70864,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\drafted-reviews\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -72611,10 +70880,8 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
   }
 }));
 let reversedData = [..._common_data__WEBPACK_IMPORTED_MODULE_5__["reviews"]].reverse();
-
 const ReviewListView = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
@@ -72676,16 +70943,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -72777,7 +71040,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Results; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
@@ -72792,8 +71055,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\manufacturers\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -72811,25 +71073,23 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["makeSty
     cursor: "pointer"
   }
 }));
-function Results({
-  className,
-  ...rest
-}) {
+function Results(_ref) {
   _s();
-
+  let {
+    className,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [manufacturers, setManufacturers] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
-
   const onDeleteReviewRequest = id => {
     setManufacturers(manufacturers.filter(r => r.id != id));
   };
-
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("/api/manufacturers").then(async response => {
-      setLoading(false); // console.log(response.data);
-
+      setLoading(false);
+      // console.log(response.data);
       setManufacturers(response.data);
     }).catch(e => {
       // @TODO handle
@@ -72837,9 +71097,7 @@ function Results({
       setLoading(false);
     });
   }, []);
-
   const gotoReviewRequestReview = id => navigate(`/reviewer/manufacturer/${id}`);
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Card"], Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.root, className)
   }, rest, {
@@ -73111,15 +71369,11 @@ function Results({
     }
   }, "View More")));
 }
-
 _s(Results, "fOJTk6ZrdonD54YKdlXKtAroGjA=", false, function () {
   return [useStyles, react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
 });
-
 _c = Results;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -73217,8 +71471,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\manufacturers\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -73231,10 +71484,8 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ReviewListView = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
@@ -73283,16 +71534,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -73390,7 +71637,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/Add */ "./node_modules/@material-ui/icons/Add.js");
 /* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_6__);
@@ -73402,8 +71649,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\manufacturers\\manufacturer\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -73415,7 +71662,7 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import ManufacturerDocs from "../../requests/review/ManufacturerDocs";
+// import ManufacturerDocs from "../../requests/review/ManufacturerDocs";
 
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["makeStyles"])(theme => ({
   root: {
@@ -73428,7 +71675,6 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["makeSty
 }));
 function SingleManufacturerView() {
   _s();
-
   const classes = useStyles();
   return (
     /*#__PURE__*/
@@ -73481,15 +71727,12 @@ function SingleManufacturerView() {
     })))))
   );
 }
-
 _s(SingleManufacturerView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = SingleManufacturerView;
 function ManufacturerDetails() {
   _s2();
-
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_4__["useParams"])();
@@ -73506,7 +71749,6 @@ function ManufacturerDetails() {
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/manufacturer/" + id).then(async response => {
       var _response$data;
-
       setLoading(false);
       setManufacturer(response.data);
       setDocs(((_response$data = response.data) === null || _response$data === void 0 ? void 0 : _response$data.documents).reverse() || []);
@@ -73516,18 +71758,16 @@ function ManufacturerDetails() {
       setLoading(false);
     });
   }, []);
-
   const handleChange = e => {
-    setManufacturer({ ...manufacturer,
+    setManufacturer({
+      ...manufacturer,
       [e.target.name]: e.target.value
     });
   };
-
   const onSubmitHandler = () => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put("/api/manufacturer/" + id, manufacturer).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         enqueueSnackbar("Manufacturer updated successfully.", {
           variant: "success"
@@ -73543,32 +71783,26 @@ function ManufacturerDetails() {
       });
     });
   };
-
   const setDocumentHandler = document => {
     setDocs([...docs, document]);
     console.log(docs);
   };
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpload = e => {
     const doc = e.target.files[0];
     if (!doc) return;
-
     if (doc.size > _config__WEBPACK_IMPORTED_MODULE_10__["MAX_ALLOWED_SIZE"]) {
       enqueueSnackbar(`File exceeds the maximum allowed size of 10 MB.`, {
         variant: "error"
       });
       return;
     }
-
     setLoading(true);
     uploadDocHandler(doc, _common_types__WEBPACK_IMPORTED_MODULE_7__["ManufacturerDocumentType"].CERTIFICATE_OR_DISCLOSURE, defaultExpireDate).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setDocs([response.data, ...docs]);
         enqueueSnackbar(`Uploaded document successfully.`, {
@@ -73588,7 +71822,6 @@ function ManufacturerDetails() {
       });
     });
   };
-
   const uploadDocHandler = (doc, docType, expiresAt) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -73600,7 +71833,6 @@ function ManufacturerDetails() {
       }
     });
   };
-
   const updateDocHandler = (doc, documentId) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -73610,25 +71842,21 @@ function ManufacturerDetails() {
       }
     });
   };
-
   const deleteDocHandler = documentId => {
     setDocs(docs.filter(d => d.id !== documentId));
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/manufacturer/document/" + documentId);
   };
-
   const changeDateHandler = (documentId, expiresAt) => {
     const _docs = docs.map(d => {
       if (d.id !== documentId) return d;
       d.expires_at = moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss");
       return d;
     });
-
     setDocs(_docs);
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/manufacturer/document/${documentId}/expires-at`, {
       expires_at: moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss")
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     autoComplete: "off",
     noValidate: true,
@@ -73907,7 +72135,8 @@ function ManufacturerDetails() {
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -73955,15 +72184,11 @@ function ManufacturerDetails() {
     }
   }, "Update"))));
 }
-
 _s2(ManufacturerDetails, "1dtyd2x5bYCnVEeFwv8QmNv/wy4=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_4__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c2 = ManufacturerDetails;
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "SingleManufacturerView");
 __webpack_require__.$Refresh$.register(_c2, "ManufacturerDetails");
 
@@ -74056,7 +72281,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return BusinessInfoStep; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
 /* harmony import */ var _material_ui_core_List__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/List */ "./node_modules/@material-ui/core/esm/List/index.js");
 /* harmony import */ var _material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/ListItem */ "./node_modules/@material-ui/core/esm/ListItem/index.js");
@@ -74068,7 +72293,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\new-review\\BusinessInfoStep.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -74078,7 +72303,8 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import CategorySelector from "../common/CategorySelector";
+
+// import CategorySelector from "../common/CategorySelector";
 
 const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["createStyles"])({
   root: {
@@ -74112,27 +72338,21 @@ function BusinessInfoStep() {
   }, "creating it"), "."));
 }
 _c = BusinessInfoStep;
-
 function SelectBusiness() {
   _s();
-
   const classes = useStyles();
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
   const [selectedIndex, setSelectedIndex] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
-
   const handleClickListItem = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleMenuItemClick = (event, index) => {
     setSelectedIndex(index);
     setAnchorEl(null);
   };
-
   const handleClose = () => {
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.root,
     __self: this,
@@ -74195,18 +72415,15 @@ function SelectBusiness() {
       columnNumber: 11
     }
   }, option))));
-} // @TODO get online
+}
 
-
+// @TODO get online
 _s(SelectBusiness, "PCSPNO1uxcJTwPtzo2HJIw7QUQU=", false, function () {
   return [useStyles];
 });
-
 _c2 = SelectBusiness;
 const businesses = ["None", "Fancy Food", "One Drug Store", "Freshy Meats", "Foultry", "Candy Land", "Bazaar Foods", "Faster Foods", "Medi Mart", "Foo", "Bar"];
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "BusinessInfoStep");
 __webpack_require__.$Refresh$.register(_c2, "SelectBusiness");
 
@@ -74309,9 +72526,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\new-review\\ReviewDetails.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -74336,16 +72552,14 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["
 const defaults = {};
 function ReviewDetails() {
   _s();
-
   const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaults);
   const [isDone, setIsDone] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-
   const handleChange = event => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [event.target.name]: event.target.value
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     autoComplete: "off",
     noValidate: true,
@@ -74416,7 +72630,8 @@ function ReviewDetails() {
       lineNumber: 74,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"] // disabled={!isDone}
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"]
+  // disabled={!isDone}
   , {
     variant: "contained",
     style: {
@@ -74440,34 +72655,28 @@ function ReviewDetails() {
     }
   }, "Submit"))));
 }
-
 _s(ReviewDetails, "JUAzq0ALdfu4EZohFRtILWseCm0=");
-
 _c = ReviewDetails;
-function VerticalLinearStepper({
-  setIsDone
-}) {
+function VerticalLinearStepper(_ref) {
   _s2();
-
+  let {
+    setIsDone
+  } = _ref;
   const classes = useStyles();
   const [activeStep, setActiveStep] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
   const steps = getSteps();
-
   const handleNext = () => {
     setActiveStep(prevActiveStep => prevActiveStep + 1);
     if (activeStep + 1 == steps.length) setIsDone(true);
   };
-
   const handleBack = () => {
     setActiveStep(prevActiveStep => prevActiveStep - 1);
     setIsDone(false);
   };
-
   const handleReset = () => {
     setActiveStep(0);
     setIsDone(false);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.root,
     __self: this,
@@ -74594,17 +72803,13 @@ function VerticalLinearStepper({
     }
   }, "Reset")));
 }
-
 _s2(VerticalLinearStepper, "5/ANSN4aidVPv0P4apAyeUUfwXQ=", false, function () {
   return [useStyles];
 });
-
 _c2 = VerticalLinearStepper;
-
 function getSteps() {
   return ["Business Information", "Upload Documentation"];
 }
-
 function getStepContent(step) {
   switch (step) {
     case 0:
@@ -74616,7 +72821,6 @@ function getStepContent(step) {
           columnNumber: 14
         }
       });
-
     case 1:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UploadDocumentationStep__WEBPACK_IMPORTED_MODULE_5__["default"], {
         __self: this,
@@ -74626,14 +72830,11 @@ function getStepContent(step) {
           columnNumber: 14
         }
       });
-
     default:
       return "Unknown step";
   }
 }
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewDetails");
 __webpack_require__.$Refresh$.register(_c2, "VerticalLinearStepper");
 
@@ -74736,9 +72937,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\new-review\\UploadDocumentationStep.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -74746,13 +72946,10 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function UploadDocumentationStep() {
   _s();
-
   const [value, setValue] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["AppBar"], {
     position: "static",
     color: "default",
@@ -74767,12 +72964,14 @@ function UploadDocumentationStep() {
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tabs"], {
     value: value,
-    onChange: handleChange // variant="scrollable"
+    onChange: handleChange
+    // variant="scrollable"
     // scrollButtons="auto"
     ,
     indicatorColor: "primary",
     textColor: "primary",
-    centered: true // aria-label="simple tabs example"
+    centered: true
+    // aria-label="simple tabs example"
     ,
     __self: this,
     __source: {
@@ -74860,11 +73059,8 @@ function UploadDocumentationStep() {
     }
   })));
 }
-
 _s(UploadDocumentationStep, "qPBOvRc2Co1iWTsdTL0g7j/rpjU=");
-
 _c = UploadDocumentationStep;
-
 function FacilityDocs() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["List"], {
     __self: this,
@@ -74928,9 +73124,7 @@ function FacilityDocs() {
     }
   }));
 }
-
 _c2 = FacilityDocs;
-
 function ProductDocs() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["List"], {
     __self: this,
@@ -74976,9 +73170,7 @@ function ProductDocs() {
     }
   }));
 }
-
 _c3 = ProductDocs;
-
 function MiscDocs() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["List"], {
     __self: this,
@@ -74997,33 +73189,25 @@ function MiscDocs() {
     }
   }));
 }
-
 _c4 = MiscDocs;
-
-function UploadFileListItem({
-  fileTypeName,
-  ...rest
-}) {
+function UploadFileListItem(_ref) {
   _s2();
-
+  let {
+    fileTypeName,
+    ...rest
+  } = _ref;
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const [files, setFiles] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
-
   const handleFilesUpload = e => {
     const files = [];
-
     for (const file of e.target.files) files.push(file);
-
     setFiles(files);
   };
-
   const handleClearFiles = () => setFiles([]);
-
   const handleFilesUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const selectedFiles = files.map((f, i) => `${i + 1}) ${f.name}`).join(", ") || "[N/A]";
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["ListItem"], Object.assign({}, rest, {
     style: {
@@ -75132,9 +73316,7 @@ function UploadFileListItem({
     }
   }))));
 }
-
 _s2(UploadFileListItem, "ngpHGH/d/O7/aJfxxYIz9JIvHgU=");
-
 _c5 = UploadFileListItem;
 const documents = [{
   id: 1,
@@ -75177,7 +73359,6 @@ const documents = [{
   name: "Testing",
   expire_date: Date.now()
 }];
-
 function TabPanel(props) {
   const {
     children,
@@ -75207,18 +73388,14 @@ function TabPanel(props) {
     }
   }, children));
 }
-
 _c6 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`
   };
 }
-
 var _c, _c2, _c3, _c4, _c5, _c6;
-
 __webpack_require__.$Refresh$.register(_c, "UploadDocumentationStep");
 __webpack_require__.$Refresh$.register(_c2, "FacilityDocs");
 __webpack_require__.$Refresh$.register(_c3, "ProductDocs");
@@ -75323,8 +73500,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\new-review\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -75341,7 +73517,6 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
 }));
 function NewReview() {
   _s();
-
   const classes = useStyles();
   return (
     /*#__PURE__*/
@@ -75406,15 +73581,11 @@ function NewReview() {
     })))))
   );
 }
-
 _s(NewReview, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = NewReview;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "NewReview");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -75516,20 +73687,19 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\profile\\ProfileCard.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
 
-
-function ProfileCard({
-  profile,
-  role
-}) {
+function ProfileCard(_ref) {
   _s();
-
+  let {
+    profile,
+    role
+  } = _ref;
   const classes = useStyles();
   const {
     enqueueSnackbar
@@ -75538,7 +73708,6 @@ function ProfileCard({
   const [imgSrc, setImgSrc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const sidenavAvatarEl = document.getElementById("sidenav-avatar");
   const formData = new FormData();
-
   const handleImageSelect = imgSrc => {
     setLoading(true);
     fetch(imgSrc).then(async res => {
@@ -75549,7 +73718,6 @@ function ProfileCard({
         }
       }).then(async response => {
         setLoading(false);
-
         if (response.status == 200 || response.status == 201) {
           setImgSrc(imgSrc);
           if (sidenavAvatarEl) sidenavAvatarEl.innerHTML = `<img src="${imgSrc}" class="MuiAvatar-img">`;
@@ -75571,7 +73739,6 @@ function ProfileCard({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Card"], {
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(classes.root),
     __self: this,
@@ -75673,11 +73840,9 @@ function ProfileCard({
     }
   })));
 }
-
 _s(ProfileCard, "XGd1nRtBumYEmI6L1ABr9SvzaoM=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c = ProfileCard;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(() => ({
   root: {},
@@ -75686,9 +73851,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeSty
     width: 100
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProfileCard");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -75787,18 +73950,16 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\profile\\ProfileDetails.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
-
-
-const ProfileDetails = ({
-  setProfile
-}) => {
+const ProfileDetails = _ref => {
   _s();
-
+  let {
+    setProfile
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
@@ -75815,19 +73976,17 @@ const ProfileDetails = ({
       setLoading(false);
     });
   }, []);
-
   const handleChange = event => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [event.target.name]: event.target.value
     });
   };
-
   const onSubmitHandler = () => {
     setLoading(true);
     setProfile(values);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.put("/api/profile", values).then(async response => {
       setLoading(false);
-
       if (response.status == 200) {
         const profileNameTag = document.getElementById("profile-nametag");
         if (profileNameTag) profileNameTag.textContent = `${values.first_name} ${values.last_name}`;
@@ -75846,7 +74005,6 @@ const ProfileDetails = ({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     autoComplete: "off",
     noValidate: true,
@@ -76151,11 +74309,9 @@ const ProfileDetails = ({
     }
   }, "Update"))));
 };
-
 _s(ProfileDetails, "2lzOAqwYl6gQYwJbeaG+VRJ216E=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = ProfileDetails;
 const defaults = {
   id: 0,
@@ -76174,9 +74330,7 @@ const defaults = {
   updated_at: ""
 };
 /* harmony default export */ __webpack_exports__["default"] = (ProfileDetails);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProfileDetails");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -76275,9 +74429,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\profile\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -76286,7 +74438,6 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 // @TODO handle avatar
 const ReviewerProfile = () => {
   _s();
-
   const [profile, setProfile] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaults);
   const classes = useStyles();
   return (
@@ -76358,13 +74509,12 @@ const ReviewerProfile = () => {
       }
     })))))
   );
-}; // @TODO move to common data
+};
 
-
+// @TODO move to common data
 _s(ReviewerProfile, "K+FDwPqDl7w8AMhoIfFuikioAqA=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewerProfile;
 const defaults = {
   id: 0,
@@ -76392,9 +74542,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
   }
 }));
 /* harmony default export */ __webpack_exports__["default"] = (ReviewerProfile);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewerProfile");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -76495,32 +74643,29 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\register-client\\BusinessDetails.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 function BusinessDetails() {
   _s();
-
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaults);
-
   const handleChange = e => {
-    setValues({ ...values,
+    setValues({
+      ...values,
       [e.target.name]: e.target.value
     });
   };
-
   const onSubmitHandler = () => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put("/api/reviewer/register-client", values).then(async response => {
-      setLoading(false); // console.log(response);
-
+      setLoading(false);
+      // console.log(response);
       if (response.status == 200 || response.status == 201) {
         console.log(response.data);
         enqueueSnackbar("Client registered successfully.", {
@@ -76537,7 +74682,6 @@ function BusinessDetails() {
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     autoComplete: "off",
     noValidate: true,
@@ -77002,11 +75146,9 @@ function BusinessDetails() {
     }
   }, "Create"))));
 }
-
 _s(BusinessDetails, "jDPNhUSqlZ9jVaVo1xA3jeGPUBk=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"]];
 });
-
 _c = BusinessDetails;
 const defaults = {
   id: "",
@@ -77026,9 +75168,7 @@ const defaults = {
   password: "",
   confirm_password: ""
 };
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "BusinessDetails");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -77126,8 +75266,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\register-client\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -77141,10 +75280,8 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ReviewerNewBusinessView = () => {
   _s();
-
   const classes = useStyles();
   return (
     /*#__PURE__*/
@@ -77196,16 +75333,12 @@ const ReviewerNewBusinessView = () => {
     })))))
   );
 };
-
 _s(ReviewerNewBusinessView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewerNewBusinessView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewerNewBusinessView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewerNewBusinessView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -77297,7 +75430,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Results; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
@@ -77313,8 +75446,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -77333,25 +75465,23 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["makeSty
     cursor: "pointer"
   }
 }));
-function Results({
-  className,
-  ...rest
-}) {
+function Results(_ref) {
   _s();
-
+  let {
+    className,
+    ...rest
+  } = _ref;
   const classes = useStyles();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [reviewRequests, setReviewRequests] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
-
   const onDeleteReviewRequest = id => {
     setReviewRequests(reviewRequests.filter(r => r.id != id));
   };
-
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post("/api/clients/review-requests").then(async response => {
-      setLoading(false); // console.log(response.data);
-
+      setLoading(false);
+      // console.log(response.data);
       setReviewRequests(response.data);
     }).catch(e => {
       // @TODO handle
@@ -77359,9 +75489,7 @@ function Results({
       setLoading(false);
     });
   }, []);
-
   const gotoReviewRequestReview = id => navigate(`/reviewer/clients/request/${id}/review`);
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Card"], Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_3__["default"])(classes.root, className)
   }, rest, {
@@ -77600,7 +75728,6 @@ function Results({
     }
   }, reviewRequests.map((request, i) => {
     var _request$reviewer, _request$reviewer2, _request$hed, _request$hed2;
-
     return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableRow"], {
       hover: true,
       key: request.id,
@@ -77847,15 +75974,11 @@ function Results({
     }
   }, "View More")));
 }
-
 _s(Results, "R2Q9epISMJLsxzWyTzQTpSlnfwk=", false, function () {
   return [useStyles, react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
 });
-
 _c = Results;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -77947,7 +76070,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReviewRequestMenu; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
@@ -77985,7 +76108,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\ReviewRequestMenu.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -78007,13 +76130,12 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ReviewRequestMenu({
-  reviewRequest,
-  onDeleteReviewRequest
-}) {
+function ReviewRequestMenu(_ref) {
   _s();
-
+  let {
+    reviewRequest,
+    onDeleteReviewRequest
+  } = _ref;
   const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_18__["default"]().user;
   const [anchorEl, setAnchorEl] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
@@ -78021,16 +76143,12 @@ function ReviewRequestMenu({
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_17__["useSnackbar"])();
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const gotoReviewRequestReports = id => navigate(`/reviewer/clients/request/${id}/reports`);
-
   const assumeOwnershipHandler = () => {
     var _document$querySelect;
-
     const data = {
       reviewer_id: user === null || user === void 0 ? void 0 : user.id
     };
@@ -78042,20 +76160,16 @@ function ReviewRequestMenu({
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/review-request/${reviewRequest.id}/assign-reviewer`, data).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         if (reviewerNameTableCell) {
           reviewerNameTableCell.textContent = user === null || user === void 0 ? void 0 : user.name;
-
           if (tableRowAvatar) {
             if (tableRowAvatar.firstChild) tableRowAvatar.removeChild(tableRowAvatar.firstChild);
             tableRowAvatar.appendChild(avatar);
             tableRowAvatar.classList.remove("MuiAvatar-colorDefault");
           }
-
           reviewRequest.reviewer_id = user === null || user === void 0 ? void 0 : user.id;
         }
-
         enqueueSnackbar("Self assigned review request successfully.", {
           variant: "success"
         });
@@ -78071,7 +76185,6 @@ function ReviewRequestMenu({
     });
     setAnchorEl(null);
   };
-
   const contactClient = reviewRequest => {
     let email = reviewRequest.client_email || "";
     let subject = `Halal Watch World | RE: Registration #${reviewRequest.id}`;
@@ -78084,7 +76197,6 @@ function ReviewRequestMenu({
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/review-request/${reviewRequest.id}/send-report`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         enqueueSnackbar("Progress report email sent successfully.", {
           variant: "success"
@@ -78101,7 +76213,6 @@ function ReviewRequestMenu({
     });
     setAnchorEl(null);
   };
-
   const updateStatus = (id, status) => {
     const statusTableCell = document.querySelector(`#review-request-${id} .request-status`);
     let statusStr = status.toString();
@@ -78111,7 +76222,6 @@ function ReviewRequestMenu({
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.put(`/api/client/review-request/${reviewRequest.id}/status`, data).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         if (statusTableCell) statusTableCell.textContent = statusStr;
         enqueueSnackbar("Review request status updated successfully.", {
@@ -78123,7 +76233,6 @@ function ReviewRequestMenu({
     }).catch(e => {
       console.error(e);
       setLoading(false);
-
       if (e.response) {
         enqueueSnackbar(e.response.data.message, {
           variant: "error"
@@ -78136,14 +76245,12 @@ function ReviewRequestMenu({
     });
     setAnchorEl(null);
   };
-
   const deleteReviewRequest = () => {
     const answer = window.confirm("Are you sure you would like to delete this review request?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.delete(`/api/client/review-request/${reviewRequest.id}`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onDeleteReviewRequest(reviewRequest.id);
         enqueueSnackbar("Review request deleted successfully.", {
@@ -78161,7 +76268,6 @@ function ReviewRequestMenu({
     });
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
     edge: "end",
     size: "small",
@@ -78201,7 +76307,8 @@ function ReviewRequestMenu({
       columnNumber: 21
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
-    onClick: () => gotoReviewRequestReports(reviewRequest.id) // disabled={reviewRequest.status !== "DRAFT"}
+    onClick: () => gotoReviewRequestReports(reviewRequest.id)
+    // disabled={reviewRequest.status !== "DRAFT"}
     // disabled
     ,
     __self: this,
@@ -78519,7 +76626,8 @@ function ReviewRequestMenu({
       columnNumber: 13
     }
   }, "REJECTED"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
-    onClick: deleteReviewRequest // disabled={reviewRequest.status !== "DRAFT"}
+    onClick: deleteReviewRequest
+    // disabled={reviewRequest.status !== "DRAFT"}
     ,
     __self: this,
     __source: {
@@ -78547,15 +76655,11 @@ function ReviewRequestMenu({
     }
   }, "Delete"))));
 }
-
 _s(ReviewRequestMenu, "zvSaOP1yWrte1ZkMurojDOus2/0=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_17__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
 });
-
 _c = ReviewRequestMenu;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewRequestMenu");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -78653,8 +76757,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -78667,14 +76770,13 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ReviewListView = () => {
   _s();
-
   const classes = useStyles();
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Registrations" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Registrations"
+    // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -78720,16 +76822,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -78821,7 +76919,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return AuditReports; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
@@ -78839,8 +76937,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\reports\\AuditReports.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -78855,12 +76952,10 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function AuditReports() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // reviewRequestId
-
   const [reports, setReports] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/review-request/${id}/audit-reports`).then(async response => {
@@ -78872,8 +76967,9 @@ function AuditReports() {
       console.error(e);
       setLoading(false);
     });
-  }, []); // file related
+  }, []);
 
+  // file related
   const [docUploadLoading, setDocUploadLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
@@ -78881,21 +76977,17 @@ function AuditReports() {
   const [doc, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const documentCopy = document && Object.assign({}, document) || null;
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpload = e => {
     const _doc = e.target.files[0];
     if (!_doc) return;
-
     if (_doc.size > _config__WEBPACK_IMPORTED_MODULE_10__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setDocUploadLoading(true);
     const formData = new FormData();
     formData.append("document", _doc);
@@ -78905,7 +76997,6 @@ function AuditReports() {
       }
     }).then(async response => {
       setDocUploadLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDoc(response.data);
@@ -78929,11 +77020,9 @@ function AuditReports() {
       });
     });
   };
-
   const handleReportDelete = id => {
     setReports(reports.filter(r => r.id != id));
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
     p: 3,
     style: {
@@ -79180,7 +77269,8 @@ function AuditReports() {
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -79214,15 +77304,11 @@ function AuditReports() {
     }
   }, "Audit Report")));
 }
-
 _s(AuditReports, "zHlaEeEJxUwX9qtBq1VfImq2zDg=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_8__["useSnackbar"]];
 });
-
 _c = AuditReports;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "AuditReports");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -79314,7 +77400,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReportMenu; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
@@ -79329,7 +77415,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\reports\\ReportMenu.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -79338,31 +77424,27 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ReportMenu({
-  report,
-  onDeleteReport
-}) {
+function ReportMenu(_ref) {
   _s();
-
+  let {
+    report,
+    onDeleteReport
+  } = _ref;
   const [anchorEl, setAnchorEl] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"])();
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const deleteReport = () => {
     const answer = window.confirm("Are you sure you would like to delete this report?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.delete(`/api/client/review-request/reports/${report.id}`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         onDeleteReport(report.id);
         enqueueSnackbar("Report deleted successfully.", {
@@ -79380,7 +77462,6 @@ function ReportMenu({
     });
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
     edge: "end",
     size: "small",
@@ -79474,15 +77555,11 @@ function ReportMenu({
     }
   }, "Delete"))));
 }
-
 _s(ReportMenu, "zvSaOP1yWrte1ZkMurojDOus2/0=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
 });
-
 _c = ReportMenu;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReportMenu");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -79574,7 +77651,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReviewReports; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
@@ -79592,8 +77669,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\reports\\ReviewReports.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -79608,12 +77684,10 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 function ReviewReports() {
   _s();
-
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // reviewRequestId
-
   const [reports, setReports] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/review-request/${id}/review-reports`).then(async response => {
@@ -79625,8 +77699,9 @@ function ReviewReports() {
       console.error(e);
       setLoading(false);
     });
-  }, []); // file related
+  }, []);
 
+  // file related
   const [docUploadLoading, setDocUploadLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
@@ -79634,21 +77709,17 @@ function ReviewReports() {
   const [doc, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
   const documentCopy = document && Object.assign({}, document) || null;
-
   const handleDocumentUploadButton = () => {
     // @ts-ignore
     if (inputRef) inputRef.current.click();
   };
-
   const handleDocumentUpload = e => {
     const _doc = e.target.files[0];
     if (!_doc) return;
-
     if (_doc.size > _config__WEBPACK_IMPORTED_MODULE_10__["MAX_ALLOWED_SIZE"]) {
       alert("File exceeds the maximum allowed size of 10 MB.");
       return;
     }
-
     setDocUploadLoading(true);
     const formData = new FormData();
     formData.append("document", _doc);
@@ -79658,7 +77729,6 @@ function ReviewReports() {
       }
     }).then(async response => {
       setDocUploadLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         // setDoc(response.data);
@@ -79682,11 +77752,9 @@ function ReviewReports() {
       });
     });
   };
-
   const handleReportDelete = id => {
     setReports(reports.filter(r => r.id != id));
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
     p: 3,
     style: {
@@ -79933,7 +78001,8 @@ function ReviewReports() {
     name: "file",
     id: Math.random().toString(),
     accept: "application/msword, application/pdf",
-    "data-title": "Upload" // multiple
+    "data-title": "Upload"
+    // multiple
     // data-multiple-caption="{count} files selected"
     ,
     onChange: handleDocumentUpload,
@@ -79967,15 +78036,11 @@ function ReviewReports() {
     }
   }, "Registration Report")));
 }
-
 _s(ReviewReports, "zHlaEeEJxUwX9qtBq1VfImq2zDg=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_8__["useSnackbar"]];
 });
-
 _c = ReviewReports;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewReports");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -80068,7 +78133,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SingleReviewRequestTabs", function() { return SingleReviewRequestTabs; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
 /* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../components/Page */ "./src/components/Page.js");
 /* harmony import */ var _AuditReports__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./AuditReports */ "./src/views/reviewer/requests/reports/AuditReports.tsx");
@@ -80077,16 +78142,16 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\reports\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature(),
-    _s3 = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature(),
+  _s3 = __webpack_require__.$Refresh$.signature();
 
 
- // import SwipeableViews from "react-swipeable-views";
+// import SwipeableViews from "react-swipeable-views";
 
 
- // import Toolbar from "../../common/Toolbar";
 
+// import Toolbar from "../../common/Toolbar";
 
 
 const useStyles1 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
@@ -80100,14 +78165,14 @@ const useStyles1 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSt
 }));
 function SingleReviewRequestView() {
   _s();
-
   const classes = useStyles1();
   return (
     /*#__PURE__*/
     // @ts-ignore
     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
       className: classes.root,
-      title: "Client" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+      title: "Client"
+      // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
       ,
       __self: this,
       __source: {
@@ -80154,11 +78219,9 @@ function SingleReviewRequestView() {
     })))))
   );
 }
-
 _s(SingleReviewRequestView, "iUcwKsj7H3p1LotITUwukOjPOtY=", false, function () {
   return [useStyles1];
 });
-
 _c = SingleReviewRequestView;
 const useStyles2 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["createStyles"])({
   root: {
@@ -80175,11 +78238,11 @@ const useStyles2 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSt
     padding: theme.spacing(3)
   }
 }));
-const defaults = {}; // @TODO add report section
+const defaults = {};
 
+// @TODO add report section
 function SingleReviewRequest() {
   _s2();
-
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
@@ -80187,9 +78250,11 @@ function SingleReviewRequest() {
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const classes = useStyles2();
   const params = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
-  const requestId = Number.parseInt(params.id); // const review: Client = data[reviewId];
+  const requestId = Number.parseInt(params.id);
+  // const review: Client = data[reviewId];
   // const [form, setForm] = useState<Client>(review);
   // const [values, setValues] = useState<Client>({} as Client);
+
   // useEffect(() => {
   //   axios
   //     .post("/api/client/" + id)
@@ -80205,6 +78270,7 @@ function SingleReviewRequest() {
   //       setLoading(false);
   //     });
   // }, []);
+
   // const handleChange = (event: any) => {
   //   setForm({
   //     ...form,
@@ -80260,13 +78326,10 @@ function SingleReviewRequest() {
     }
   })));
 }
-
 _s2(SingleReviewRequest, "P1vxp22ynd5xfSbyRe4gcs6likE=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"], useStyles2, react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"]];
 });
-
 _c2 = SingleReviewRequest;
-
 function TabPanel(props) {
   const {
     children,
@@ -80288,16 +78351,13 @@ function TabPanel(props) {
     }
   }), value === index && children);
 }
-
 _c3 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `full-width-tab-${index}`,
     "aria-controls": `full-width-tabpanel-${index}`
   };
 }
-
 const useStyles3 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
   root: {
     backgroundColor: theme.palette.background.paper
@@ -80305,19 +78365,15 @@ const useStyles3 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSt
 }));
 function SingleReviewRequestTabs() {
   _s3();
-
   const classes = useStyles3();
   const theme = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"])();
   const [value, setValue] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   const handleChangeIndex = index => {
     setValue(index);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: classes.root,
     __self: this,
@@ -80403,15 +78459,11 @@ function SingleReviewRequestTabs() {
     }
   })));
 }
-
 _s3(SingleReviewRequestTabs, "67ZhIY4U/gr9mAurA18r85H/UwI=", false, function () {
   return [useStyles3, _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"]];
 });
-
 _c4 = SingleReviewRequestTabs;
-
 var _c, _c2, _c3, _c4;
-
 __webpack_require__.$Refresh$.register(_c, "SingleReviewRequestView");
 __webpack_require__.$Refresh$.register(_c2, "SingleReviewRequest");
 __webpack_require__.$Refresh$.register(_c3, "TabPanel");
@@ -80518,7 +78570,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\FacilityDocs.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -80526,13 +78578,12 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function FacilityDocs({
-  facilityId,
-  style = {}
-}) {
+function FacilityDocs(_ref) {
   _s();
-
+  let {
+    facilityId,
+    style = {}
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
@@ -80541,7 +78592,6 @@ function FacilityDocs({
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/facility/${facilityId}/documents`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setDocs(response.data);
       } else {
@@ -80558,12 +78608,10 @@ function FacilityDocs({
       });
     });
   }, []);
-
   const setDocumentHandler = document => {
     setDocs([...docs, document]);
     console.log(docs);
   };
-
   const uploadDocHandler = (doc, docType, expiresAt) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -80575,7 +78623,6 @@ function FacilityDocs({
       }
     });
   };
-
   const updateDocHandler = (doc, documentId) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -80585,25 +78632,21 @@ function FacilityDocs({
       }
     });
   };
-
   const deleteDocHandler = documentId => {
     setDocs(docs.filter(d => d.id !== documentId));
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/facility/document/" + documentId);
   };
-
   const changeDateHandler = (documentId, expiresAt) => {
     const _docs = docs.map(d => {
       if (d.id !== documentId) return d;
       d.expires_at = moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss");
       return d;
     });
-
     setDocs(_docs);
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/facility/document/${documentId}/expires-at`, {
       expires_at: moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss")
     });
   };
-
   if (loading) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
     __self: this,
     __source: {
@@ -80862,15 +78905,11 @@ function FacilityDocs({
     }
   })));
 }
-
 _s(FacilityDocs, "4tBsjWqY7xCp7qlQhCB1s/bzrNk=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c = FacilityDocs;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "FacilityDocs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -80971,20 +79010,20 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\FacilityView.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
- // import { FacilityDialogMode } from "../../clients/client/FacilityDialog";
+
+// import { FacilityDialogMode } from "../../clients/client/FacilityDialog";
 // import FacilityDetails from "../../clients/client/FacilityDetails";
 
-
-function FacilityView({
-  facilityId
-}) {
+function FacilityView(_ref) {
   _s();
-
+  let {
+    facilityId
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
@@ -80994,7 +79033,6 @@ function FacilityView({
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.get(`/api/client/facility/${facilityId}`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         setValues(response.data);
@@ -81012,12 +79050,10 @@ function FacilityView({
       });
     });
   }, []);
-
   const handleFacilityUpdate = () => {
     setUpdatingFacility(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/facility/${facilityId}`, values).then(async response => {
       setUpdatingFacility(false);
-
       if (response.status == 200 || response.status == 201) {
         setValues(response.data);
         enqueueSnackbar("Facility updated successfully.", {
@@ -81037,7 +79073,6 @@ function FacilityView({
       });
     });
   };
-
   return loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CircularProgress"], {
     __self: this,
     __source: {
@@ -81046,7 +79081,8 @@ function FacilityView({
       columnNumber: 17
     }
   }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FacilityDocs__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    facilityId: facilityId // style={{ maxHeight: "calc(100vh - 328px)" }}
+    facilityId: facilityId
+    // style={{ maxHeight: "calc(100vh - 328px)" }}
     ,
     __self: this,
     __source: {
@@ -81054,7 +79090,8 @@ function FacilityView({
       lineNumber: 86,
       columnNumber: 7
     }
-  }) // <Grid container spacing={3}>
+  })
+  // <Grid container spacing={3}>
   //   {/* <Grid item md={6}>
   //         <FacilityDetails
   //           mode={FacilityDialogMode.EDIT}
@@ -81071,11 +79108,9 @@ function FacilityView({
   // </Grid>
   ;
 }
-
 _s(FacilityView, "Q4Ycm1Qz2SJ7WESdcbY9gvwCeKI=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = FacilityView;
 const defaults = {
   id: null,
@@ -81090,9 +79125,7 @@ const defaults = {
   updated_at: "",
   created_at: ""
 };
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "FacilityView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -81202,9 +79235,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\IngredientsView.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -81217,11 +79249,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 // @TODO handle avatar
-function IngredientsView({
-  reviewRequest
-}) {
+function IngredientsView(_ref) {
   _s();
-
+  let {
+    reviewRequest
+  } = _ref;
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
@@ -81231,7 +79263,6 @@ function IngredientsView({
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/review-request/${reviewRequest.id}/ingredients`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setIngredients(getUniqueItemsByProperties(response.data, ["name", "manufacturer_id"]));
       } else {
@@ -81248,16 +79279,13 @@ function IngredientsView({
       });
     });
   }, []);
-
   const handleIngredientAdd = ingredient => {
     setIngredients([ingredient, ...ingredients]);
   };
-
   const handleIngredientUpdate = (ingredient, i) => {
     const newIngredients = Object(_reviewer_common_utils__WEBPACK_IMPORTED_MODULE_9__["insert"])(ingredients, i, ingredient);
     setIngredients(newIngredients);
   };
-
   const handleIngredientDelete = ingredientId => {
     const answer = window.confirm("Are you sure you would like to delete this ingredient from your request? Warning: this will delete all associated ingredients as well.");
     if (!answer) return;
@@ -81274,7 +79302,6 @@ function IngredientsView({
           variant: "error"
         });
       }
-
       setLoading(false);
     }).catch(e => {
       console.error(e);
@@ -81284,7 +79311,6 @@ function IngredientsView({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: this,
     __source: {
@@ -81400,18 +79426,15 @@ function IngredientsView({
     }
   })))));
 }
-
 _s(IngredientsView, "ijAYDrbRO7reNUnJimzf8MFtFNY=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = IngredientsView;
-
-function IngredientItem({
-  ingredient
-}) {
+function IngredientItem(_ref2) {
   _s2();
-
+  let {
+    ingredient
+  } = _ref2;
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
@@ -81420,7 +79443,6 @@ function IngredientItem({
   const [ingredientRecom, setIngredientRecom] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(ingredient.recommendation);
   const [ingredientSrc, setIngredientSrc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(ingredient.source);
   const [ingredientDesc, setIngredientDesc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(ingredient.description);
-
   const handleRecomChange = e => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/ingredient/${ingredient.id}/recommendation`, {
@@ -81428,7 +79450,6 @@ function IngredientItem({
       recommendation: e.target.value
     }).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setIngredientRecom(e.target.value);
         enqueueSnackbar("Ingredient recommendation(s) updated successfully.", {
@@ -81448,7 +79469,6 @@ function IngredientItem({
       });
     });
   };
-
   const handleSrcChange = e => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/ingredient/${ingredient.id}/source`, {
@@ -81456,7 +79476,6 @@ function IngredientItem({
       source: e.target.value
     }).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         setIngredientSrc(e.target.value);
         enqueueSnackbar("Ingredient source(s) updated successfully.", {
@@ -81476,11 +79495,9 @@ function IngredientItem({
       });
     });
   };
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const updateDescription = id => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/ingredient/${id}/description`, {
@@ -81488,7 +79505,6 @@ function IngredientItem({
       description: ingredientDesc
     }).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         enqueueSnackbar("Ingredient description(s) saved successfully.", {
           variant: "success"
@@ -81504,17 +79520,16 @@ function IngredientItem({
       });
     });
     setAnchorEl(null);
-  }; // @TODO support multi ingredients deletes
+  };
+
+  // @TODO support multi ingredients deletes
   // This operation could delete multiple ingredients. Are you sure you would like to proceed?
-
-
   const handleIngredientDelete = () => {
     const answer = window.confirm("Are you sure you would like to delete this ingredient?");
     if (!answer) return;
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/ingredient/" + ingredient.id).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // onIngredientDelete(ingredient.id as number);
         enqueueSnackbar("Ingredient deleted successfully.", {
@@ -81531,7 +79546,6 @@ function IngredientItem({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableRow"], {
     __self: this,
     __source: {
@@ -81812,19 +79826,18 @@ function IngredientItem({
     }
   }, "Delete Ingredient")))));
 }
-
 _s2(IngredientItem, "twPn+c2GLFflYL5qqSGAR4kqVXg=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c2 = IngredientItem;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
   stepBox: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center" // alignItems: "center",
-
+    justifyContent: "center"
+    // alignItems: "center",
   },
+
   stepBtn: {
     width: 500
   },
@@ -81839,30 +79852,26 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     paddingLeft: theme.spacing(4)
   }
 }));
-
 function isPropValuesEqual(subject, target, propNames) {
   // @ts-ignore
   return propNames.every(propName => subject[propName] === target[propName]);
 }
-
 function getUniqueItemsByProperties(items, propNames) {
   const propNamesArray = Array.from(propNames);
   return items.filter((item, index, array) => {
     const foundIndex = array.findIndex(foundItem => isPropValuesEqual(foundItem, item, propNamesArray));
-
     if (index === foundIndex) {
       return true;
     } else {
       console.log(item);
-      const match = array[array.findIndex(foundItem => isPropValuesEqual(foundItem, item, propNamesArray))]; // @ts-ignore
+      const match = array[array.findIndex(foundItem => isPropValuesEqual(foundItem, item, propNamesArray))];
 
+      // @ts-ignore
       match.ids = match.ids && [...match.ids, item.id] || [match.id, item.id];
     }
   });
 }
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "IngredientsView");
 __webpack_require__.$Refresh$.register(_c2, "IngredientItem");
 
@@ -81967,7 +79976,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ManufacturerDocs.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -81975,24 +79984,21 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ManufacturerDocs({
-  manufacturer,
-  style = {}
-}) {
+function ManufacturerDocs(_ref) {
   _s();
-
+  let {
+    manufacturer,
+    style = {}
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])((manufacturer === null || manufacturer === void 0 ? void 0 : manufacturer.documents) || []);
-
   const setDocumentHandler = document => {
     setDocs([...docs, document]);
     console.log(docs);
   };
-
   const uploadDocHandler = (doc, docType, expiresAt) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -82004,7 +80010,6 @@ function ManufacturerDocs({
       }
     });
   };
-
   const updateDocHandler = (doc, documentId) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -82014,25 +80019,21 @@ function ManufacturerDocs({
       }
     });
   };
-
   const deleteDocHandler = documentId => {
     setDocs(docs.filter(d => d.id !== documentId));
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/manufacturer/document/" + documentId);
   };
-
   const changeDateHandler = (documentId, expiresAt) => {
     const _docs = docs.map(d => {
       if (d.id !== documentId) return d;
       d.expires_at = moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss");
       return d;
     });
-
     setDocs(_docs);
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/manufacturer/document/${documentId}/expires-at`, {
       expires_at: moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss")
     });
   };
-
   if (loading) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
     __self: this,
     __source: {
@@ -82066,15 +80067,11 @@ function ManufacturerDocs({
     }
   })));
 }
-
 _s(ManufacturerDocs, "paVsj12TnPhC//U2b6yPSloXOCw=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c = ManufacturerDocs;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ManufacturerDocs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -82179,8 +80176,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ManufacturersView.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -82191,11 +80187,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 // @TODO handle avatar
-function ManufacturersView({
-  reviewRequest
-}) {
+function ManufacturersView(_ref) {
   _s();
-
+  let {
+    reviewRequest
+  } = _ref;
   const classes = useStyles();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
@@ -82207,12 +80203,10 @@ function ManufacturersView({
     getManufacturers();
     console.log(manufacturers);
   }, []);
-
   const getManufacturers = () => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/review-request/${reviewRequest.id}/manufacturers`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         setManufacturers(response.data);
@@ -82230,16 +80224,13 @@ function ManufacturersView({
       });
     });
   };
-
   const handleManufacturerAdd = product => {
     setManufacturers([product, ...manufacturers]);
   };
-
   const handleManufacturerUpdate = (product, i) => {
     const newManufacturers = Object(_reviewer_common_utils__WEBPACK_IMPORTED_MODULE_5__["insert"])(manufacturers, i, product);
     setManufacturers(newManufacturers);
   };
-
   const handleManufacturerDelete = productId => {
     const answer = window.confirm("Are you sure you would like to delete this product from your request? Warning: this will delete all associated manufacturers as well.");
     if (!answer) return;
@@ -82256,7 +80247,6 @@ function ManufacturersView({
           variant: "error"
         });
       }
-
       setLoading(false);
     }).catch(e => {
       console.error(e);
@@ -82266,7 +80256,6 @@ function ManufacturersView({
       });
     });
   };
-
   console.log(manufacturers);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: this,
@@ -82397,15 +80386,14 @@ function ManufacturersView({
     }
   })))));
 }
-
 _s(ManufacturersView, "TUQ+s5kGYHJsPvgNBFexy1406Wg=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = ManufacturersView;
-function ManufacturerItem({
-  manufacturer
-}) {
+function ManufacturerItem(_ref2) {
+  let {
+    manufacturer
+  } = _ref2;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableRow"], {
     style: {
       backgroundColor: "#f5f5f5"
@@ -82523,9 +80511,10 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
   stepBox: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center" // alignItems: "center",
-
+    justifyContent: "center"
+    // alignItems: "center",
   },
+
   stepBtn: {
     width: 500
   },
@@ -82540,13 +80529,10 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     paddingLeft: theme.spacing(4)
   }
 }));
-
 function sleep(time) {
   return new Promise(resolve => setTimeout(resolve, time));
 }
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "ManufacturersView");
 __webpack_require__.$Refresh$.register(_c2, "ManufacturerItem");
 
@@ -82651,7 +80637,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ProductDocs.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -82659,29 +80645,27 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ProductDocs({
-  products,
-  style = {}
-}) {
+function ProductDocs(_ref) {
   _s();
-
+  let {
+    products,
+    style = {}
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])( // products.map((p: Product) => (p.documents as ProductDocument[])[0])
+  const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(
+  // products.map((p: Product) => (p.documents as ProductDocument[])[0])
   products.map(p => p.documents && p.documents.map(d => {
     // @ts-ignore
     d.product_name = p.name;
     return d;
   }) || []).flat(1));
-
   const setDocumentHandler = document => {
     setDocs([...docs, document]);
     console.log(docs);
   };
-
   const uploadDocHandler = (productId, doc, docType, expiresAt) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -82693,7 +80677,6 @@ function ProductDocs({
       }
     });
   };
-
   const updateDocHandler = (doc, documentId) => {
     const formData = new FormData();
     formData.append("document", doc);
@@ -82703,25 +80686,21 @@ function ProductDocs({
       }
     });
   };
-
   const deleteDocHandler = documentId => {
     setDocs(docs.filter(d => d && d.id !== documentId));
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.delete("/api/client/product/document/" + documentId);
   };
-
   const changeDateHandler = (documentId, expiresAt) => {
     const _docs = docs.map(d => {
       if (!d || d.id !== documentId) return d;
       d.expires_at = moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss");
       return d;
     });
-
     setDocs(_docs);
     return axios__WEBPACK_IMPORTED_MODULE_1___default.a.put(`/api/client/product/document/${documentId}/expires-at`, {
       expires_at: moment__WEBPACK_IMPORTED_MODULE_2___default()(expiresAt).format("YYYY-MM-DD HH:mm:ss")
     });
   };
-
   if (loading) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
     __self: this,
     __source: {
@@ -82842,14 +80821,16 @@ function ProductDocs({
       lineNumber: 135,
       columnNumber: 7
     }
-  }, docs.map((doc, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__["default"] // @ts-ignore
+  }, docs.map((doc, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__["default"]
+  // @ts-ignore
   , {
     nameField: doc.product_name,
     documentType: "product",
     fileTypeName: "Spec Sheet",
     document: docs[i],
     setDocument: setDocumentHandler,
-    uploadHandler: (doc, selectedDate) => uploadDocHandler( // @ts-ignore
+    uploadHandler: (doc, selectedDate) => uploadDocHandler(
+    // @ts-ignore
     doc.product_id, doc, _common_types__WEBPACK_IMPORTED_MODULE_5__["ProductDocumentType"].SPEC_SHEETS, selectedDate),
     updateHandler: updateDocHandler,
     deleteHandler: deleteDocHandler,
@@ -82862,15 +80843,11 @@ function ProductDocs({
     }
   }))));
 }
-
 _s(ProductDocs, "krPagrlJHaMFos2N2y2eH60SqeY=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
-
 _c = ProductDocs;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProductDocs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -82973,8 +80950,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ProductsView.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -82983,11 +80959,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 // @TODO handle avatar
-function ProductsView({
-  reviewRequest
-}) {
+function ProductsView(_ref) {
   _s();
-
+  let {
+    reviewRequest
+  } = _ref;
   const classes = useStyles();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
@@ -82999,12 +80975,10 @@ function ProductsView({
     getProducts();
     console.log(products);
   }, []);
-
   const getProducts = () => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/review-request/${reviewRequest.id}/products/docs`).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         // console.log(response.data);
         setProducts(response.data);
@@ -83022,16 +80996,13 @@ function ProductsView({
       });
     });
   };
-
   const handleProductAdd = product => {
     setProducts([product, ...products]);
   };
-
   const handleProductUpdate = (product, i) => {
     const newProducts = Object(_reviewer_common_utils__WEBPACK_IMPORTED_MODULE_5__["insert"])(products, i, product);
     setProducts(newProducts);
   };
-
   const handleProductDelete = productId => {
     const answer = window.confirm("Are you sure you would like to delete this product from your request? Warning: this will delete all associated ingredients as well.");
     if (!answer) return;
@@ -83048,7 +81019,6 @@ function ProductsView({
           variant: "error"
         });
       }
-
       setLoading(false);
     }).catch(e => {
       console.error(e);
@@ -83058,7 +81028,6 @@ function ProductsView({
       });
     });
   };
-
   console.log(products);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_CircularProgress__WEBPACK_IMPORTED_MODULE_4__["default"], {
     __self: this,
@@ -83077,19 +81046,18 @@ function ProductsView({
     }
   }));
 }
-
 _s(ProductsView, "eoZ39Q2wo4MFiPGMVcysDaGxZV0=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
 });
-
 _c = ProductsView;
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
   stepBox: {
     display: "flex",
     flexDirection: "column",
-    justifyContent: "center" // alignItems: "center",
-
+    justifyContent: "center"
+    // alignItems: "center",
   },
+
   stepBtn: {
     width: 500
   },
@@ -83104,9 +81072,7 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     paddingLeft: theme.spacing(4)
   }
 }));
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProductsView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -83200,7 +81166,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
 /* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/TextField */ "./node_modules/@material-ui/core/esm/TextField/index.js");
 /* harmony import */ var _material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Dialog */ "./node_modules/@material-ui/core/esm/Dialog/index.js");
@@ -83214,7 +81180,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\RequestManufacturerDocs.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -83227,12 +81193,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function RequestManufacturerDocs({
-  manufacturer
-}) {
+function RequestManufacturerDocs(_ref) {
   _s();
-
+  let {
+    manufacturer
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_10__["useSnackbar"])();
@@ -83242,15 +81207,12 @@ function RequestManufacturerDocs({
     id: reviewRequestId
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useParams"])();
   const [email, setEmail] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState("");
-
   const handleClickOpen = () => {
     setOpen(true);
   };
-
   const handleClose = () => {
     setOpen(false);
   };
-
   const requestDocs = () => {
     const data = {
       manufacturer_id: manufacturer.id,
@@ -83259,7 +81221,6 @@ function RequestManufacturerDocs({
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/review-request/${reviewRequestId}/request-docs`, data).then(async response => {
       setLoading(false);
-
       if (response.status == 200 || response.status == 201) {
         enqueueSnackbar("Document request email sent successfully.", {
           variant: "success"
@@ -83277,7 +81238,6 @@ function RequestManufacturerDocs({
       });
     });
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __self: this,
     __source: {
@@ -83286,7 +81246,8 @@ function RequestManufacturerDocs({
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    variant: "contained" // color="primary"
+    variant: "contained"
+    // color="primary"
     // size="small"
     ,
     onClick: handleClickOpen,
@@ -83384,15 +81345,11 @@ function RequestManufacturerDocs({
     }
   }, "Send"))));
 }
-
 _s(RequestManufacturerDocs, "xei7lrwrybOyHIcnzX4qKbefEp0=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_10__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_2__["useParams"]];
 });
-
 _c = RequestManufacturerDocs;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "RequestManufacturerDocs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -83484,7 +81441,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SingleReviewRequestView; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
@@ -83498,9 +81455,8 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature(),
-    _s2 = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -83522,7 +81478,6 @@ const useStyles1 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeSt
 }));
 function SingleReviewRequestView() {
   _s();
-
   const classes = useStyles1();
   return (
     /*#__PURE__*/
@@ -83575,23 +81530,18 @@ function SingleReviewRequestView() {
     })))))
   );
 }
-
 _s(SingleReviewRequestView, "iUcwKsj7H3p1LotITUwukOjPOtY=", false, function () {
   return [useStyles1];
 });
-
 _c = SingleReviewRequestView;
-
 function SingleReviewRequest() {
   _s2();
-
   const classes = useStyles3();
   const params = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
   const requestId = Number.parseInt(params.id);
   const {
     id
   } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // reviewRequestId
-
   const [reviewRequest, setReviewRequest] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(undefined);
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
   const [value, setValue] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
@@ -83599,8 +81549,8 @@ function SingleReviewRequest() {
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/review-request/${id}`).then(async response => {
-      setLoading(false); // console.log(response.data);
-
+      setLoading(false);
+      // console.log(response.data);
       setReviewRequest(response.data);
     }).catch(e => {
       // @TODO handle
@@ -83608,13 +81558,10 @@ function SingleReviewRequest() {
       setLoading(false);
     });
   }, []);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   const onDeleteReviewRequest = () => navigate(`/reviewer/clients/requests`);
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
     autoComplete: "off",
     noValidate: true,
@@ -83866,13 +81813,10 @@ function SingleReviewRequest() {
     }
   }, "Generate Report")))));
 }
-
 _s2(SingleReviewRequest, "nZ0YKmb9UE3NYa1SN7rnfsSN1qg=", false, function () {
   return [useStyles3, react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
 });
-
 _c2 = SingleReviewRequest;
-
 function TabPanel(props) {
   const {
     children,
@@ -83900,25 +81844,20 @@ function TabPanel(props) {
     }
   }), value === index && children);
 }
-
 _c3 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `full-width-tab-${index}`,
     "aria-controls": `full-width-tabpanel-${index}`
   };
 }
-
 const useStyles3 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(theme => ({
   root: {
     height: "calc(100vh - 166px)",
     backgroundColor: theme.palette.background.paper
   }
 }));
-
 var _c, _c2, _c3;
-
 __webpack_require__.$Refresh$.register(_c, "SingleReviewRequestView");
 __webpack_require__.$Refresh$.register(_c2, "SingleReviewRequest");
 __webpack_require__.$Refresh$.register(_c3, "TabPanel");
@@ -84012,7 +81951,7 @@ __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Results; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/index.js");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
 /* harmony import */ var clsx__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! clsx */ "./node_modules/clsx/dist/clsx.m.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_3__);
@@ -84025,8 +81964,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\Results.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
-
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -84035,6 +81973,7 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 // import { getColorByReviewStatus } from "./utils";
+
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["makeStyles"])(() => ({
   root: {},
   actions: {
@@ -84044,19 +81983,17 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["makeSty
     cursor: "pointer"
   }
 }));
-function Results({
-  className,
-  data,
-  ...rest
-}) {
+function Results(_ref) {
   _s();
-
+  let {
+    className,
+    data,
+    ...rest
+  } = _ref;
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
   const classes = useStyles();
   const [reviews] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(data);
-
   const handleRowClick = id => navigate(`/reviewer/client/${id}`);
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Card"], Object.assign({
     className: Object(clsx__WEBPACK_IMPORTED_MODULE_2__["default"])(classes.root, className)
   }, rest, {
@@ -84313,15 +82250,11 @@ function Results({
     }
   }, "View More")));
 }
-
 _s(Results, "oCfE2LuQ9bBVdIwGSIHWUjsHF5I=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"], useStyles];
 });
-
 _c = Results;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Results");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -84421,15 +82354,14 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\index.js",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
- // import Results from "./Results";
+// import Results from "./Results";
 
 
- // import Toolbar from "../common/Toolbar";
-
+// import Toolbar from "../common/Toolbar";
 
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
   root: {
@@ -84439,23 +82371,22 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeSty
     paddingTop: theme.spacing(3)
   }
 }));
-
 const ReviewListView = () => {
   _s();
-
-  const classes = useStyles(); // const [customers] = useState(data);
-
+  const classes = useStyles();
+  // const [customers] = useState(data);
   const [viewing, setViewing] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+  const handleViewCancel = () => setViewing(null);
+  // const handleAddReview = () => setEditing(null);
 
-  const handleViewCancel = () => setViewing(null); // const handleAddReview = () => setEditing(null);
   // window.onload = () => {
   //   setViewing(data[0]);
   // }
 
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
     className: classes.root,
-    title: "Reviews" // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+    title: "Reviews"
+    // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
     ,
     __self: undefined,
     __source: {
@@ -84523,16 +82454,12 @@ const ReviewListView = () => {
     }
   })))));
 };
-
 _s(ReviewListView, "6VzI2pxkOwIPUcUozfVIZQ9q8gw=", false, function () {
   return [useStyles];
 });
-
 _c = ReviewListView;
 /* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -84640,10 +82567,11 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-function CertificateView({
-  review,
-  certStatus
-}) {
+function CertificateView(_ref) {
+  let {
+    review,
+    certStatus
+  } = _ref;
   switch (certStatus) {
     case _common_types__WEBPACK_IMPORTED_MODULE_5__["CertificateStatus"].ISSUED:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_2__["Alert"], {
@@ -84683,7 +82611,6 @@ function CertificateView({
           columnNumber: 11
         }
       }));
-
     case _common_types__WEBPACK_IMPORTED_MODULE_5__["CertificateStatus"].SUSPENDED:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_2__["Alert"], {
         severity: "error",
@@ -84715,7 +82642,6 @@ function CertificateView({
           columnNumber: 11
         }
       }, review.businessName), "'s certificate has been suspended. Use the drop down menu to issue certificate.");
-
     case _common_types__WEBPACK_IMPORTED_MODULE_5__["CertificateStatus"].PENDING:
     default:
       return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_2__["Alert"], {
@@ -84751,7 +82677,6 @@ function CertificateView({
   }
 }
 _c = CertificateView;
-
 function CertificateList() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["List"], {
     style: {
@@ -84873,11 +82798,8 @@ function CertificateList() {
     }
   })))));
 }
-
 _c2 = CertificateList;
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "CertificateView");
 __webpack_require__.$Refresh$.register(_c2, "CertificateList");
 
@@ -84983,12 +82905,14 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import { Download as DownloadIcon } from "react-feather";
+
+// import { Download as DownloadIcon } from "react-feather";
 
 
-function DocumentsView({
-  review
-}) {
+function DocumentsView(_ref) {
+  let {
+    review
+  } = _ref;
   const documents = data[15];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["List"], {
     __self: this,
@@ -85063,18 +82987,17 @@ function DocumentsView({
   }))))));
 }
 _c = DocumentsView;
-let DocumentStatus;
-
-(function (DocumentStatus) {
+let DocumentStatus = /*#__PURE__*/function (DocumentStatus) {
   DocumentStatus["APPROVED"] = "APPROVED";
   DocumentStatus["PENDING"] = "PENDING";
   DocumentStatus["REJECTED"] = "REJECTED";
   DocumentStatus["NOT_APPLICABLE"] = "NOT APPLICABLE";
-})(DocumentStatus || (DocumentStatus = {}));
-
-function DocumentHeader({
-  document
-}) {
+  return DocumentStatus;
+}({});
+function DocumentHeader(_ref2) {
+  let {
+    document
+  } = _ref2;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       display: "flex",
@@ -85116,7 +83039,6 @@ function DocumentHeader({
     }
   })));
 }
-
 _c2 = DocumentHeader;
 const data = {
   15: [{
@@ -85171,9 +83093,7 @@ const data = {
     expire_date: Date.now()
   }]
 };
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "DocumentsView");
 __webpack_require__.$Refresh$.register(_c2, "DocumentHeader");
 
@@ -85280,7 +83200,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\Header.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -85290,25 +83210,21 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function Header({
-  review,
-  certStatus,
-  setCertStatus
-}) {
+function Header(_ref) {
   _s();
-
+  let {
+    review,
+    certStatus,
+    setCertStatus
+  } = _ref;
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
-
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleClose = certStatus => {
     setCertStatus(certStatus);
     setAnchorEl(null);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CardHeader"], {
     title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       style: {
@@ -85506,13 +83422,9 @@ function Header({
     }
   });
 }
-
 _s(Header, "+aMDa7FPcESUyQDF1vq0RSMn4/k=");
-
 _c = Header;
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "Header");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -85618,11 +83530,13 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import { Download as DownloadIcon } from "react-feather";
 
-function ProductsView({
-  review
-}) {
+// import { Download as DownloadIcon } from "react-feather";
+
+function ProductsView(_ref) {
+  let {
+    review
+  } = _ref;
   const documents = data[15];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["List"], {
     __self: this,
@@ -85706,9 +83620,7 @@ const data = {
     date: Date.now()
   }]
 };
-
 var _c;
-
 __webpack_require__.$Refresh$.register(_c, "ProductsView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
@@ -85813,12 +83725,14 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
- // import { Download as DownloadIcon } from "react-feather";
+
+// import { Download as DownloadIcon } from "react-feather";
 
 
-function ReportsView({
-  review
-}) {
+function ReportsView(_ref) {
+  let {
+    review
+  } = _ref;
   const reports = data[15];
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["List"], {
     __self: this,
@@ -85893,18 +83807,17 @@ function ReportsView({
   }))))));
 }
 _c = ReportsView;
-let ReportStatus;
-
-(function (ReportStatus) {
+let ReportStatus = /*#__PURE__*/function (ReportStatus) {
   ReportStatus["APPROVED"] = "APPROVED";
   ReportStatus["PENDING"] = "PENDING";
   ReportStatus["REJECTED"] = "REJECTED";
   ReportStatus["NOT_APPLICABLE"] = "NOT APPLICABLE";
-})(ReportStatus || (ReportStatus = {}));
-
-function ReportHeader({
-  report
-}) {
+  return ReportStatus;
+}({});
+function ReportHeader(_ref2) {
+  let {
+    report
+  } = _ref2;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     style: {
       display: "flex",
@@ -85946,7 +83859,6 @@ function ReportHeader({
     }
   })));
 }
-
 _c2 = ReportHeader;
 const data = {
   15: [{
@@ -85971,9 +83883,7 @@ const data = {
     expire_date: Date.now()
   }]
 };
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "ReportsView");
 __webpack_require__.$Refresh$.register(_c2, "ReportHeader");
 
@@ -86078,7 +83988,7 @@ __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/ru
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\index.tsx",
-    _s = __webpack_require__.$Refresh$.signature();
+  _s = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -86088,23 +83998,20 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 
-
-function ViewReview({
-  className,
-  review,
-  onCancel,
-  ...rest
-}) {
+function ViewReview(_ref) {
   _s();
-
+  let {
+    className,
+    review,
+    onCancel,
+    ...rest
+  } = _ref;
   // const classes = useStyles();
   const [value, setValue] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
   const [certStatus, setCertStatus] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(_common_types__WEBPACK_IMPORTED_MODULE_8__["CertificateStatus"].PENDING);
-
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
-
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
     __self: this,
     __source: {
@@ -86133,12 +84040,14 @@ function ViewReview({
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tabs"], {
     value: value,
-    onChange: handleChange // variant="scrollable"
+    onChange: handleChange
+    // variant="scrollable"
     // scrollButtons="auto"
     ,
     indicatorColor: "primary",
     textColor: "primary",
-    centered: true // aria-label="simple tabs example"
+    centered: true
+    // aria-label="simple tabs example"
     ,
     __self: this,
     __source: {
@@ -86276,11 +84185,8 @@ function ViewReview({
     }
   }))));
 }
-
 _s(ViewReview, "2ECjX3f3pMZZ+NPctQVXElvqix4=");
-
 _c = ViewReview;
-
 function TabPanel(props) {
   const {
     children,
@@ -86314,18 +84220,14 @@ function TabPanel(props) {
     }
   }, children));
 }
-
 _c2 = TabPanel;
-
 function a11yProps(index) {
   return {
     id: `simple-tab-${index}`,
     "aria-controls": `simple-tabpanel-${index}`
   };
 }
-
 var _c, _c2;
-
 __webpack_require__.$Refresh$.register(_c, "ViewReview");
 __webpack_require__.$Refresh$.register(_c2, "TabPanel");
 
