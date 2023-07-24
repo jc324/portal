@@ -3,7 +3,7 @@
 
 {!! $intro !!}
 
-Your registration will be picked up by a review agent shortly. Once assigned, you will be notified via email. Reviews are typically completed between a 2 and 5 week timeframe.
+Your submitted registration is now in queue for review. You will be notified of its progress via email. Reviews are typically completed between a 2 and 5 week timeframe.
 
 For questions/comments, please contact our review team:
 

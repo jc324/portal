@@ -119,7 +119,7 @@ class ProductController extends Controller
         $document->product_id = $productId;
         $document->type = $request['type'];
         $document->status = "SUBMITTED";
-        $document->name = $request['name'];
+        $document->name = $request['name'] ? $request['name'] : '';
         $document->note = "";
         $document->expires_at = $request['expires_at'];
         $document->path = $path;

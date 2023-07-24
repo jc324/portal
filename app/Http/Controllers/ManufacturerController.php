@@ -9,6 +9,8 @@ use App\Models\Client;
 use App\Models\Ingredient;
 use App\Models\Manufacturer;
 use App\Models\ManufacturerDocument;
+use Symfony\Component\HttpFoundation\StreamedResponse;
+
 // use App\Models\Ingredient;
 
 class ManufacturerController extends Controller
@@ -157,6 +159,34 @@ class ManufacturerController extends Controller
     public function download_document_by_id($documentId)
     {
         $document = ManufacturerDocument::findOrFail($documentId);
+        $token = env('PANDADOC_API_TOKEN');
+
+        // generate pandadoc pdf
+        if (str_starts_with($document->path, 'pandadoc:')) {
+            $doc_id = substr($document->path, 9);
+            $client = new \GuzzleHttp\Client();
+            try {
+                $res = $client->request('GET', 'https://api.pandadoc.com/public/v1/documents/' . $doc_id . '/download?separate_files=false', [
+                    'headers' => [
+                        'Authorization' => 'API-Key ' . $token,
+                        'accept' => 'application/json',
+                    ],
+                ]);
+            } catch (\GuzzleHttp\Exception\RequestException $e) {
+                return response('Portal Error: Document not found in Pandadoc.');
+            }
+            
+            $body = $res->getBody();
+            $response = new StreamedResponse(function () use ($body) {
+                while (!$body->eof()) {
+                    echo $body->read(1024);
+                }
+            });
+            $response->headers->set('Content-Type', 'application/pdf');
+
+            return $response;
+        }
+
         $manufacturer_name = $document->manufacturer->name;
         $type = $document->type;
         $created_at = $document->created_at->format('Ymd');

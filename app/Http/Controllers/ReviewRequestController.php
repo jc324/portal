@@ -27,6 +27,7 @@ use App\Models\Manufacturer;
 use App\Models\ProductCategories;
 use App\Models\Report;
 use Illuminate\Support\Facades\Response;
+use GuzzleHttp\Client as GuzzleClient;
 
 const REVIEW_REQUEST_TYPE_COLOR_MAP = array(
     'NEW_FACILITY' => "#0BD074",
@@ -147,16 +148,14 @@ class ReviewRequestController extends Controller
 
     public function add_review_request(Request $request)
     {
-        $data = $request->only(
-            'type'
-        );
-        $data['client_id'] = $request->user()->role === "HED"
-            ? Hed::where('user_id', $request->user()->id)->first()->client->id
-            : Client::where('user_id', $request->user()->id)->first()->id;
+        $client = $request->user()->role === "HED"
+            ? Hed::where('user_id', $request->user()->id)->first()->client
+            : Client::where('user_id', $request->user()->id)->first();
+        $data = $request->only('type');
+        $data['client_id'] = $client->id;
         $data['reviewer_id'] = 0; // starts with no reviewer
         $data['status'] = "DRAFT"; // by default
         $data['current_step_index'] = 1; // next immediate step
-
         $data['hed_id'] = ($request->user()->role === "HED") ? $request->user()->id : null;
 
         if ($data['type'] === "NEW_FACILITY" || $data['type'] === "NEW_FACILITY_AND_PRODUCTS") {
@@ -184,6 +183,26 @@ class ReviewRequestController extends Controller
             $facility->review_request_id = $review_request->id;
             $facility->save();
         }
+
+        // create meister task
+        $token = env('MEISTERTASK_TOKEN');
+        $in_progress_section_id = 18950074;
+        $guzzle = new \GuzzleHttp\Client();
+        $body = json_encode([
+            'name' => $client->business_name,
+            'notes' => 'Registration ID: ' . $review_request->id . "\nType: " . str_replace("_", " ", $review_request->type),
+            'label_ids' => [9347247, 4981805],
+            'status' => 1
+        ]);
+        $response = $guzzle->request('POST', 'https://www.meistertask.com/api/sections/' . $in_progress_section_id . '/tasks', [
+            'headers' => [
+                'Authorization' => 'Bearer ' . $token,
+                'accept' => 'application/json',
+                'content-type' => 'application/json',
+            ],
+            'body' => $body,
+        ]);
+        $response->getBody();
 
         return $review_request;
     }
@@ -647,7 +666,7 @@ class ReviewRequestController extends Controller
                     $clean_doc_type = str_replace("_", " ", $doc->type);
                     if (!array_key_exists($doc->type, $docs_by_type))
                         $docs_by_type[$doc->type] = render_email_table_row($clean_doc_type, $doc->status);
-                    if (!empty($doc->note)) $review_notes []= '**' . $clean_doc_type . "**: " . $doc->note;
+                    if (!empty($doc->note)) $review_notes[] = '**' . $clean_doc_type . "**: " . $doc->note;
                 }
 
                 foreach ($docs_by_type as $doc_stat)
@@ -665,7 +684,7 @@ class ReviewRequestController extends Controller
                     if ($docs = $product->documents)
                         if (count($docs) > 0) foreach ($docs as $doc) {
                             $tb_rows .= render_email_table_row($product->name, $doc->status);
-                            if (!empty($doc->note)) $review_notes []= '**' . $product->name . "**: " . $doc->note;
+                            if (!empty($doc->note)) $review_notes[] = '**' . $product->name . "**: " . $doc->note;
                             break;
                         }
                         else {
@@ -677,7 +696,7 @@ class ReviewRequestController extends Controller
                         if ($manufacturer = $ingredient->manufacturer) {
                             if ($docs = $manufacturer->documents)
                                 if (count($docs) > 0) foreach ($docs as $doc) {
-                                    if (!empty($doc->note)) $review_notes []= '**' . $manufacturer->name . "**: " . $doc->note;
+                                    if (!empty($doc->note)) $review_notes[] = '**' . $manufacturer->name . "**: " . $doc->note;
                                 }
                         }
                     }
@@ -701,6 +720,51 @@ class ReviewRequestController extends Controller
         //     return null;
 
         return $body;
+    }
+
+    public function request_disclosure_statement(Request $request, $review_request_id)
+    {
+        $data = $request->only('id', 'name', 'email');
+        $client = new GuzzleClient();
+        $token = env('PANDADOC_API_TOKEN');
+
+        $TEMP_ID = "RFTk5EQ4yXe3LtU6VD9WBR";
+        $DIR_ID = "CvTjtbc95Xtf6nMmrF6geN";
+        $ingredients = Ingredient::where(
+            ['review_request_id' => $review_request_id, 'manufacturer_id' => $data['id']]
+        )->get()->pluck('name');
+        $_request = new \GuzzleHttp\Psr7\Request(
+            'POST',
+            'https://api.pandadoc.com/public/v1/documents',
+            [
+                'accept' => 'application/json',
+                'Authorization' => 'API-Key ' . $token,
+                'Content-Type' => 'application/json'
+            ],
+            json_encode([
+                'template_uuid' => $TEMP_ID,
+                'folder_uuid' => $DIR_ID,
+                'tags' => ['Portal'],
+                'name' => 'Halal Disclosure Statement (' . $data['name'] . ')',
+                'recipients' => [
+                    ['email' => $data['email'], 'role' => 'Vendor']
+                ],
+                'tokens' => [
+                    ['name' => 'Vendor.Company', 'value' => $data['name']]
+                ],
+                'fields' => [
+                    'ProductList' => ['value' => implode(", ", $ingredients->toArray())]
+                ],
+                'metadata' => [
+                    'review_request_id' => $review_request_id,
+                    'manufacturer_id' => $data['id']
+                ]
+            ])
+        );
+        $promise = $client->sendAsync($_request)->then(function ($response) {
+            return $response->getBody();
+        });
+        $promise->wait();
     }
 
     // reports

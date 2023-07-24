@@ -2700,6 +2700,140 @@ if (true) {
 
 /***/ }),
 
+/***/ "./src/hooks/usePersist.ts":
+/*!*********************************!*\
+  !*** ./src/hooks/usePersist.ts ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return usePersist; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _s = __webpack_require__.$Refresh$.signature();
+
+function usePersist(key, initialValue) {
+  _s();
+  // State to store our value
+  // Pass initial state function to useState so logic is only executed once
+  const [storedValue, setStoredValue] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(() => {
+    if (typeof window === "undefined") {
+      return initialValue;
+    }
+    try {
+      // Get from local storage by key
+      const item = window.localStorage.getItem(key);
+      // Parse stored json or if none return initialValue
+      return item ? JSON.parse(item) : initialValue;
+    } catch (error) {
+      // If error also return initialValue
+      console.log(error);
+      return initialValue;
+    }
+  });
+  // Return a wrapped version of useState's setter function that ...
+  // ... persists the new value to localStorage.
+  const setValue = value => {
+    try {
+      // Allow value to be a function so we have same API as useState
+      const valueToStore = value instanceof Function ? value(storedValue) : value;
+      // Save state
+      setStoredValue(valueToStore);
+      // Save to local storage
+      if (typeof window !== "undefined") {
+        window.localStorage.setItem(key, JSON.stringify(valueToStore));
+      }
+    } catch (error) {
+      // A more advanced implementation would handle the error case
+      console.log(error);
+    }
+  };
+  return [storedValue, setValue];
+}
+_s(usePersist, "Sc/fojU/LiyVTX5FPqPPtjyfVxw=");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
 /***/ "./src/index.css":
 /*!***********************!*\
   !*** ./src/index.css ***!
@@ -46126,7 +46260,7 @@ function ManufacturerDocsDialog(_ref) {
       lineNumber: 143,
       columnNumber: 7
     }
-  }, "Certificates/Disclosures (", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+  }, "Documents (", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     id: `manufacturer-${manufacturerId}-doc-count`,
     __self: this,
     __source: {
@@ -50936,11 +51070,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/icons/CloudDownload */ "./node_modules/@material-ui/icons/CloudDownload.js");
 /* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_14__);
 /* harmony import */ var _ManufacturerDocsDialog__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./ManufacturerDocsDialog */ "./src/views/client/requests/request/ManufacturerDocsDialog.tsx");
+/* harmony import */ var _VendorDisclosureRequest__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./VendorDisclosureRequest */ "./src/views/client/requests/request/VendorDisclosureRequest.tsx");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_11.tsx",
   _s = __webpack_require__.$Refresh$.signature();
+
 
 
 
@@ -50973,13 +51109,21 @@ function VendorApproval(_ref) {
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const [manufacturers, setManufacturers] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   let [count, setCount] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+
+  // const testDisclosureWebhook = () => {
+  //   axios
+  //     .post("/api/webhooks/pandadoc-disclosure-stmt", data)
+  //     .then(async (response) => {
+  //       console.log(response.data);
+  //     })
+  // }
+
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     setGreenLight(true);
     setLoading(true);
     axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/review-request/${reviewRequest.id}/manufacturers`).then(async response => {
       setLoading(false);
       if (response.status == 200 || response.status == 201) {
-        console.log(response.data);
         setManufacturers(response.data);
         let approvedCount = response.data.filter(m => {
           var _m$documents;
@@ -51009,7 +51153,7 @@ function VendorApproval(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
+      lineNumber: 80,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -51024,7 +51168,7 @@ function VendorApproval(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 81,
       columnNumber: 7
     }
   }, "Vendor Approval"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_12__["Alert"], {
@@ -51032,35 +51176,35 @@ function VendorApproval(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 93,
       columnNumber: 7
     }
   }, "The following vendors have been listed as raw material manufacturers for your ingredients", (count === null || count === void 0 ? void 0 : count.approved) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, ". ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90,
+      lineNumber: 98,
       columnNumber: 15
     }
   }, count === null || count === void 0 ? void 0 : count.approved), " ", (count === null || count === void 0 ? void 0 : count.approved) > 1 ? "have" : "has", " been identified as APPROVED") || null, (count === null || count === void 0 ? void 0 : count.nonApproved) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, (count === null || count === void 0 ? void 0 : count.approved) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, ", and") || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, ". "), " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 106,
       columnNumber: 13
     }
   }, count === null || count === void 0 ? void 0 : count.nonApproved), " ", (count === null || count === void 0 ? void 0 : count.nonApproved) > 1 ? "have" : "has", " been identified as NOT APPROVED") || null, ". In order to approve all of your halal certified products, each raw material manufacturer MUST have either a halal certificate, or fill out a halal disclosure statement. You may attach a disclosure statement or halal certificate for the non-approved vendors, or click", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108,
+      lineNumber: 116,
       columnNumber: 9
     }
   }, "NEXT"), " to proceed, and one of our reviewers will assist you with this process.", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("br", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
+      lineNumber: 118,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -51070,7 +51214,7 @@ function VendorApproval(_ref) {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 114,
+        lineNumber: 122,
         columnNumber: 22
       }
     }),
@@ -51083,7 +51227,7 @@ function VendorApproval(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111,
+      lineNumber: 119,
       columnNumber: 9
     }
   }, "Halal Disclosure Template")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_List__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -51093,7 +51237,7 @@ function VendorApproval(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123,
+      lineNumber: 140,
       columnNumber: 7
     }
   }, manufacturers.map((manufacturer, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItem__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -51106,21 +51250,21 @@ function VendorApproval(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129,
+      lineNumber: 146,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemIcon__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135,
+      lineNumber: 152,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Store__WEBPACK_IMPORTED_MODULE_13___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136,
+      lineNumber: 153,
       columnNumber: 15
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemText__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -51131,14 +51275,14 @@ function VendorApproval(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138,
+      lineNumber: 155,
       columnNumber: 13
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_ListItemSecondaryAction__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143,
+      lineNumber: 160,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ManufacturerDocsDialog__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -51147,7 +51291,16 @@ function VendorApproval(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 144,
+      lineNumber: 161,
+      columnNumber: 15
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_VendorDisclosureRequest__WEBPACK_IMPORTED_MODULE_16__["default"], {
+    reviewRequestId: reviewRequest.id,
+    manufacturer: manufacturer,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 165,
       columnNumber: 15
     }
   }))))));
@@ -51178,6 +51331,335 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_3__["
     paddingLeft: theme.spacing(4)
   }
 }));
+
+// const data = [
+//   {
+//     "event": "document_state_changed",
+//     "data": {
+//       "id": "N5CE8pfDcota2vDg5kGpuU",
+//       "name": "[DEV] Halal Disclosure Statement (Schweitzer-Mauduit International, Inc. (SWM))",
+//       "date_created": "2023-07-17T11:08:14.419329Z",
+//       "date_modified": "2023-07-17T11:08:15.291491Z",
+//       "expiration_date": null,
+//       "autonumbering_sequence_name": null,
+//       "created_by": {
+//         "id": "gocmbpku7tME7wV3Jqyeeg",
+//         "email": "support@halalwatchworld.org",
+//         "first_name": "Halal Certification",
+//         "last_name": "Committee",
+//         "avatar": "https://avatars.pandadoc-static.com/users/gocmbpku7tME7wV3Jqyeeg/avatar.png",
+//         "membership_id": "YwV2BBQhywUHjXcYLmPcBc"
+//       },
+//       "metadata": {
+//         "document__created_via_public_api": "true",
+//         "manufacturer_id": "18",
+//         "review_request_id": "195"
+//       },
+//       "tokens": [
+//         {
+//           "Vendor.Company": "Schweitzer-Mauduit International, Inc. (SWM)"
+//         }
+//       ],
+//       "fields": [
+//         {
+//           "field_id": "AttestationCheckbox_6",
+//           "uuid": "0af573e2-9f44-4c3a-b4f6-7106d7d6bf65",
+//           "name": "Checkbox",
+//           "title": "",
+//           "placeholder": null,
+//           "value": false,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "checkbox",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "FacilityAttestation_0",
+//           "uuid": "0c38ea15-f455-406d-adca-27036f4a87a5",
+//           "name": "Radio_buttons",
+//           "title": "",
+//           "placeholder": null,
+//           "value": null,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "radio_buttons",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "FacilityName",
+//           "uuid": "0e0d91e0-fb0a-4693-9d55-bb99d3fce5ce",
+//           "name": "Text",
+//           "title": "",
+//           "placeholder": "Enter Facility Name (if different)",
+//           "value": "",
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "text",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "AttestationCheckbox_7",
+//           "uuid": "133063dc-7173-4084-8d56-2b68b0593a2f",
+//           "name": "Checkbox",
+//           "title": "",
+//           "placeholder": null,
+//           "value": false,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "checkbox",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "Text3_1",
+//           "uuid": "1534825f-e2b7-4271-aaae-f86d029a2f75",
+//           "name": "Text",
+//           "title": "",
+//           "placeholder": "Last Name",
+//           "value": "",
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "text",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "AttestationCheckbox_8",
+//           "uuid": "2cbd36cd-4a6a-45ca-98f7-51cdab2c11f1",
+//           "name": "Checkbox",
+//           "title": "",
+//           "placeholder": null,
+//           "value": false,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "checkbox",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "ProductList",
+//           "uuid": "4f088dee-8ded-4dca-b59f-8040b2128e24",
+//           "name": "ProductList",
+//           "title": "",
+//           "placeholder": "List all products sold to client in consideration",
+//           "value": "Coffee, Beans, Cheeze, Peanuts, Butter",
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "text",
+//           "merge_field": "ProductList"
+//         },
+//         {
+//           "field_id": "AttestationCheckbox_3",
+//           "uuid": "4fa61854-7f9b-43cd-92bc-d97c551a2c74",
+//           "name": "Checkbox",
+//           "title": "",
+//           "placeholder": null,
+//           "value": false,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "checkbox",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "AttestationCheckbox_9",
+//           "uuid": "5b6a8bd5-a03c-4729-aa62-c0fb2bedc7a4",
+//           "name": "Checkbox",
+//           "title": "",
+//           "placeholder": null,
+//           "value": false,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "checkbox",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "Signature1",
+//           "uuid": "6083891e-9685-48e4-8660-b52b0b6c0053",
+//           "name": "Signature",
+//           "title": "",
+//           "placeholder": "Signature",
+//           "value": {},
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "signature"
+//         },
+//         {
+//           "field_id": "Date1",
+//           "uuid": "61693093-7b10-4977-8652-46b718e1f6dd",
+//           "name": "Date",
+//           "title": "",
+//           "placeholder": "Select date",
+//           "value": null,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "date",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "AttestationCheckbox_11",
+//           "uuid": "73e3e3e1-bbb9-4f05-a020-02a542e04b49",
+//           "name": "Checkbox",
+//           "title": "",
+//           "placeholder": null,
+//           "value": false,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "checkbox",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "RadioButtons2",
+//           "uuid": "80252d8e-6e86-4f46-a5c4-6fa126e20c5c",
+//           "name": "Radio_buttons",
+//           "title": "",
+//           "placeholder": null,
+//           "value": null,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "radio_buttons",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "AttestationCheckbox_2",
+//           "uuid": "8b18cc87-0ccf-4224-9e8f-0f7df2d0571f",
+//           "name": "Checkbox",
+//           "title": "",
+//           "placeholder": null,
+//           "value": false,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "checkbox",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "RadioButtons1",
+//           "uuid": "aaa7f3d5-a746-4dda-88e9-5600a6387893",
+//           "name": "Radio_buttons",
+//           "title": "",
+//           "placeholder": null,
+//           "value": null,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "radio_buttons",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "AttestationCheckbox_10",
+//           "uuid": "c2b69c0c-fb97-418c-a43f-973d6c8475f6",
+//           "name": "Checkbox",
+//           "title": "",
+//           "placeholder": null,
+//           "value": false,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "checkbox",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "FirstName",
+//           "uuid": "cdd4a54a-105d-4d07-987d-844dd418384f",
+//           "name": "Text",
+//           "title": "",
+//           "placeholder": "First Name",
+//           "value": "",
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "text",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "FacilityAddress",
+//           "uuid": "ce61adca-be71-431c-ba7f-64284f4b78a4",
+//           "name": "Text",
+//           "title": "",
+//           "placeholder": "Enter Facility Address",
+//           "value": "",
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "text",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "AttestationCheckbox_12",
+//           "uuid": "d63aa55e-72b1-403a-b5df-5b4318fcd477",
+//           "name": "Checkbox",
+//           "title": "",
+//           "placeholder": null,
+//           "value": false,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "checkbox",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "RadioButtons3",
+//           "uuid": "d7586f8d-cbb5-4b2e-8aff-5469f96694ba",
+//           "name": "Radio_buttons",
+//           "title": "",
+//           "placeholder": null,
+//           "value": null,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "radio_buttons",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "Text2",
+//           "uuid": "e71ff748-5037-4e74-92f5-068db5198eaa",
+//           "name": "Text",
+//           "title": "",
+//           "placeholder": "(123) 456-7890",
+//           "value": "",
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "text",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "AttestationCheckbox_5",
+//           "uuid": "e92233cc-3fa3-4407-80ab-a2636673a28e",
+//           "name": "Checkbox",
+//           "title": "",
+//           "placeholder": null,
+//           "value": false,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "checkbox",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "AttestationCheckbox_1",
+//           "uuid": "ebe721eb-c490-4ecc-ad8b-e6a9254419cc",
+//           "name": "Checkbox",
+//           "title": "",
+//           "placeholder": null,
+//           "value": false,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "checkbox",
+//           "merge_field": null
+//         },
+//         {
+//           "field_id": "AttestationCheckbox_4",
+//           "uuid": "f953d388-0f12-40b5-a303-d59581604428",
+//           "name": "Checkbox",
+//           "title": "",
+//           "placeholder": null,
+//           "value": false,
+//           "assignee": "bukhaar.mahamed@halalwatchworld.org",
+//           "type": "checkbox",
+//           "merge_field": null
+//         }
+//       ],
+//       "tags": [
+//         "Portal"
+//       ],
+//       "status": "document.draft",
+//       "recipients": [
+//         {
+//           "id": "VnxfaUoaK7ndwj2eqfWmFa",
+//           "first_name": null,
+//           "last_name": null,
+//           "email": "bukhaar.mahamed@halalwatchworld.org",
+//           "recipient_type": "signer",
+//           "has_completed": false,
+//           "role": "",
+//           "roles": [
+//             "Vendor"
+//           ],
+//           "signing_order": null,
+//           "contact_id": "SbB5ow6RyipbYuRoBcc4LA",
+//           "shared_link": ""
+//         }
+//       ],
+//       "sent_by": null,
+//       "grand_total": {
+//         "amount": "0.00",
+//         "currency": "USD"
+//       },
+//       "template": {
+//         "id": "RFTk5EQ4yXe3LtU6VD9WBR",
+//         "name": "Halal Disclosure Statement Template"
+//       },
+//       "version": "2",
+//       "linked_objects": []
+//     }
+//   }
+// ]
 var _c;
 __webpack_require__.$Refresh$.register(_c, "VendorApproval");
 
@@ -52589,6 +53071,399 @@ const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["
 }));
 var _c;
 __webpack_require__.$Refresh$.register(_c, "SuccessfulSubmissionStep");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/client/requests/request/VendorDisclosureRequest.tsx":
+/*!***********************************************************************!*\
+  !*** ./src/views/client/requests/request/VendorDisclosureRequest.tsx ***!
+  \***********************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return VendorDisclosureRequest; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var _material_ui_lab__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/lab */ "./node_modules/@material-ui/lab/esm/index.js");
+/* harmony import */ var _material_ui_icons_AlternateEmail__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/AlternateEmail */ "./node_modules/@material-ui/icons/AlternateEmail.js");
+/* harmony import */ var _material_ui_icons_AlternateEmail__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_AlternateEmail__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_icons_Send__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/Send */ "./node_modules/@material-ui/icons/Send.js");
+/* harmony import */ var _material_ui_icons_Send__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Send__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _material_ui_icons_Done__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/Done */ "./node_modules/@material-ui/icons/Done.js");
+/* harmony import */ var _material_ui_icons_Done__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Done__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _hooks_usePersist__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../../hooks/usePersist */ "./src/hooks/usePersist.ts");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\VendorDisclosureRequest.tsx",
+  _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+
+
+const Transition = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.forwardRef(_c = function Transition(props, ref) {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Slide"], Object.assign({
+    direction: "up",
+    ref: ref
+  }, props, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 10
+    }
+  }));
+});
+_c2 = Transition;
+function VendorDisclosureRequest(_ref) {
+  _s();
+  let {
+    reviewRequestId,
+    manufacturer,
+    onClose
+  } = _ref;
+  const classes = useStyles();
+  const {
+    enqueueSnackbar
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
+  const [_open, _setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false); // internal
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const [requestSent, setRequestSent] = Object(_hooks_usePersist__WEBPACK_IMPORTED_MODULE_8__["default"])(`isDisclosureSent_${manufacturer.id}`, false);
+  const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    ...manufacturer,
+    documents: [],
+    // lighten load
+    email: ""
+  });
+  const onSendDisclosureStatementRequest = () => {
+    setLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/review-request/${reviewRequestId}/request-disclosure`, values).then(async response => {
+      setLoading(false);
+      if (response.status == 200 || response.status == 201) {
+        // onSend(response.data);
+        setValues({
+          ...manufacturer,
+          email: ""
+        });
+        _setOpen(false);
+        setRequestSent(true);
+        enqueueSnackbar("Vendor disclosure statement request sent successfully.", {
+          variant: "success"
+        });
+      } else {
+        console.log(response);
+        enqueueSnackbar("Failed to send vendor disclosure statement request. Contact the support.", {
+          variant: "error"
+        });
+      }
+    }).catch(e => {
+      console.error(e);
+      setLoading(false);
+      enqueueSnackbar("Failed to send vendor disclosure statement request. Check your network connection and try again.", {
+        variant: "error"
+      });
+    });
+  };
+  const handleChange = event => {
+    setValues({
+      ...values,
+      [event.target.name]: event.target.value
+    });
+  };
+  const handleClickOpen = () => {
+    _setOpen(true);
+  };
+  const handleClose = () => {
+    _setOpen(false);
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    variant: "contained",
+    color: requestSent && "primary" || "secondary",
+    startIcon: requestSent && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Done__WEBPACK_IMPORTED_MODULE_7___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 119,
+        columnNumber: 35
+      }
+    }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_AlternateEmail__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 119,
+        columnNumber: 51
+      }
+    }),
+    style: {
+      marginLeft: 10
+    },
+    onClick: handleClickOpen,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116,
+      columnNumber: 7
+    }
+  }, requestSent && "Disclosure Requested" || "Request Disclosure"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Dialog"], {
+    keepMounted: true,
+    open: _open,
+    onClose: onClose,
+    TransitionComponent: Transition,
+    maxWidth: "xs",
+    fullWidth: true,
+    "aria-labelledby": "vendor-form-dialog-title",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125,
+      columnNumber: 7
+    }
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["LinearProgress"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134,
+      columnNumber: 21
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["DialogTitle"], {
+    id: "form-dialog-title",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
+    variant: "h4",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 136,
+      columnNumber: 11
+    }
+  }, "Vendor Disclosure Statement Request")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["DialogContent"], {
+    classes: {
+      root: classes.dialogContentRoot
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 140,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+    container: true,
+    spacing: 3,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 141,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+    item: true,
+    md: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 142,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+    container: true,
+    spacing: 3,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 143,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_4__["Alert"], {
+    severity: "info",
+    style: {
+      marginBottom: 20
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 144,
+      columnNumber: 17
+    }
+  }, "Please add vendor email to have a disclosure statement form sent automatically."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+    item: true,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 148,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
+    fullWidth: true,
+    label: "Vendor name",
+    name: "name"
+    // onChange={handleChange}
+    ,
+    required: true,
+    value: values.name,
+    variant: "outlined",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 149,
+      columnNumber: 19
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+    item: true,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 159,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
+    fullWidth: true,
+    label: "Vendor email",
+    name: "email",
+    onChange: handleChange,
+    required: true,
+    value: values.email,
+    variant: "outlined",
+    type: "email",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 160,
+      columnNumber: 19
+    }
+  })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["DialogActions"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 176,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    variant: "contained",
+    color: "primary",
+    startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Send__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 180,
+        columnNumber: 24
+      }
+    }),
+    onClick: onSendDisclosureStatementRequest,
+    disabled: !values.name || !values.email,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 177,
+      columnNumber: 11
+    }
+  }, "Send"))));
+}
+_s(VendorDisclosureRequest, "zc4n+iiUmRK1nSSn+l+xzgO/940=", false, function () {
+  return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"], _hooks_usePersist__WEBPACK_IMPORTED_MODULE_8__["default"]];
+});
+_c3 = VendorDisclosureRequest;
+const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(() => ({
+  dialogContentRoot: {
+    overflowY: "hidden"
+  }
+}));
+var _c, _c2, _c3;
+__webpack_require__.$Refresh$.register(_c, "Transition$React.forwardRef");
+__webpack_require__.$Refresh$.register(_c2, "Transition");
+__webpack_require__.$Refresh$.register(_c3, "VendorDisclosureRequest");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -80043,14 +80918,20 @@ function ManufacturerDocs(_ref) {
     }
   });
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, docs.map(d => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_UploadDocumentTableRow__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    nameField: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    nameField: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, d.name || manufacturer.name, /^pandadoc:/.test(d.path) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Chip"], {
+      label: "Pandadoc",
+      color: "primary",
+      style: {
+        marginLeft: 10
+      },
+      size: "small",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 112,
-        columnNumber: 22
+        lineNumber: 114,
+        columnNumber: 43
       }
-    }, manufacturer.name),
+    })),
     documentType: "manufacturer",
     fileTypeName: "Certificate or Disclosure",
     document: d,

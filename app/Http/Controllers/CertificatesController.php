@@ -109,11 +109,31 @@ class CertificatesController extends Controller
 
     public function request_hard_copy(Request $request, $certificate_id)
     {
+        $token = env('MEISTERTASK_TOKEN');
+        $certification_section_id = 19222911;
         $client = $request->user()->role === "HED"
             ? Hed::where('user_id', $request->user()->id)->first()->client
             : Client::where('user_id', $request->user()->id)->first();
         $client_name = $client->business_name;
         $to = $client->get_emails();
+
+        // create meister task
+        $guzzle = new \GuzzleHttp\Client();
+        $body = json_encode([
+            'name' => $client_name,
+            'notes' => 'Certificate ID: ' . $certificate_id . "\nEmails: " . implode(", ", $to),
+            'label_ids' => [9347247, 4981805],
+            'status' => 1
+        ]);
+        $response = $guzzle->request('POST', 'https://www.meistertask.com/api/sections/' . $certification_section_id . '/tasks', [
+            'headers' => [
+                'Authorization' => 'Bearer ' . $token,
+                'accept' => 'application/json',
+                'content-type' => 'application/json',
+            ],
+            'body' => $body,
+        ]);
+        $response->getBody();
 
         Mail::to($to)->bcc(['Rafiq.umar@halalwatchworld.org'])->send(new CertificateHardCopyRequest($client_name, $certificate_id));
 
@@ -186,7 +206,6 @@ class CertificatesController extends Controller
             $form_d_link = $client->risk_type === "HIGH"
                 ? "https://www.halalwatchworld.org/docsubmit/form-d-highrisk"
                 : "https://www.halalwatchworld.org/docsubmit/form-d-lowrisk";
-            // $form_d_link = "https://www.halalwatchworld.org/docsubmit/form-d-highrisk";
 
             // to client
             Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new CertificateRenewal($cert->id, $client_name, $form_d_link));

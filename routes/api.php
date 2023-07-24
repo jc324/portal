@@ -14,6 +14,7 @@ use App\Http\Controllers\ManufacturerController;
 use App\Http\Controllers\ReviewRequestController;
 use App\Http\Controllers\ReportsController;
 use App\Http\Controllers\CertificatesController;
+use App\Http\Controllers\WebhooksController;
 
 /*
 |--------------------------------------------------------------------------
@@ -104,6 +105,7 @@ Route::middleware('auth:sanctum')->post('/client/review-request/{id}/review-repo
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/audit-report', [ReviewRequestController::class, 'add_review_request_audit_report']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/review-report', [ReviewRequestController::class, 'add_review_request_review_report']);
 Route::middleware('auth:sanctum')->delete('/client/review-request/reports/{id}', [ReviewRequestController::class, 'delete_review_request_report']);
+Route::middleware('auth:sanctum')->post('/client/review-request/{id}/request-disclosure', [ReviewRequestController::class, 'request_disclosure_statement']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/certificates', [ReviewRequestController::class, 'get_review_request_certificates']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/certificate', [ReviewRequestController::class, 'add_review_request_certificate']);
 Route::middleware('auth:sanctum')->delete('/client/review-request/certificates/{id}', [ReviewRequestController::class, 'delete_review_request_certificate']);
@@ -168,6 +170,8 @@ Route::middleware('auth:sanctum')->put('/manufacturer/document/{id}/expires-at',
 
 // Webhooks
 Route::post('/webhooks/audit-report', [ReportsController::class, 'audit_report_webhook']);
+Route::post('/webhooks/pandadoc-disclosure-stmt', [WebhooksController::class, 'pandadoc_disclosure_stmt']);
+Route::post('/webhooks/call-form-proposal', [WebhooksController::class, 'call_form_proposal']);
 
 // Crons
 // https://portal.halalwatchworld.org/api/cron/reports/pending-status-notification
