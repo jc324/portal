@@ -19,6 +19,7 @@
         "laravel/tinker": "^2.5",
         "mll-lab/laravel-graphql-playground": "^2.5",
         "nuwave/lighthouse": "^5.25",
+        "phpoffice/phpword": "^1.1",
         "sendgrid/sendgrid": "^8.0",
         "shetabit/visitor": "^3.1"
     },

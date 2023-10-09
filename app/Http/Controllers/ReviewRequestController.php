@@ -28,6 +28,8 @@ use App\Models\ProductCategories;
 use App\Models\Report;
 use Illuminate\Support\Facades\Response;
 use GuzzleHttp\Client as GuzzleClient;
+use PhpOffice\PhpWord\Element\TextRun;
+use PhpOffice\PhpWord\TemplateProcessor;
 
 const REVIEW_REQUEST_TYPE_COLOR_MAP = array(
     'NEW_FACILITY' => "#0BD074",
@@ -184,25 +186,28 @@ class ReviewRequestController extends Controller
             $facility->save();
         }
 
-        // create meister task
-        $token = env('MEISTERTASK_TOKEN');
-        $in_progress_section_id = 18950074;
-        $guzzle = new \GuzzleHttp\Client();
-        $body = json_encode([
-            'name' => $client->business_name,
-            'notes' => 'Registration ID: ' . $review_request->id . "\nType: " . str_replace("_", " ", $review_request->type),
-            'label_ids' => [9347247, 4981805],
-            'status' => 1
-        ]);
-        $response = $guzzle->request('POST', 'https://www.meistertask.com/api/sections/' . $in_progress_section_id . '/tasks', [
-            'headers' => [
-                'Authorization' => 'Bearer ' . $token,
-                'accept' => 'application/json',
-                'content-type' => 'application/json',
-            ],
-            'body' => $body,
-        ]);
-        $response->getBody();
+        $has_appr_req = ReviewRequest::where(['client_id' => $client->id, 'status' => 'APPROVED'])->first() ? true : false;
+
+        if ($has_appr_req) { // create meister task
+            $token = env('MEISTERTASK_TOKEN');
+            $new_registration_section_id = 31732922; // 18950074
+            $guzzle = new \GuzzleHttp\Client();
+            $body = json_encode([
+                'name' => $client->business_name,
+                'notes' => 'Registration ID: ' . $review_request->id . "\nType: " . str_replace("_", " ", $review_request->type),
+                'label_ids' => [9347247, 4981805],
+                'status' => 1
+            ]);
+            $response = $guzzle->request('POST', 'https://www.meistertask.com/api/sections/' . $new_registration_section_id . '/tasks', [
+                'headers' => [
+                    'Authorization' => 'Bearer ' . $token,
+                    'accept' => 'application/json',
+                    'content-type' => 'application/json',
+                ],
+                'body' => $body,
+            ]);
+            $response->getBody();
+        }
 
         return $review_request;
     }
@@ -462,7 +467,11 @@ class ReviewRequestController extends Controller
         if ($zip->open($path, \ZipArchive::CREATE) == TRUE) {
             $zip->addFromString('review_request_information.md', $review_request_info);
             foreach ($documents as $doc) {
-                $zip->addFile(storage_path('app/' . $doc->path), $doc->entry_name);
+                try {
+                    $zip->addFile(storage_path('app/' . $doc->path), $doc->entry_name);
+                } catch (\Throwable $th) {
+                    continue;
+                }
             }
             $zip->close();
         }
@@ -470,11 +479,11 @@ class ReviewRequestController extends Controller
         return response()->download($path, $file_name, $headers)->deleteFileAfterSend(true);
     }
 
-    public function generate_report($review_request_id)
+    public function generate_progress_report($review_request_id)
     {
         $review_request = ReviewRequest::findOrFail($review_request_id);
         $progress = self::get_progress($review_request_id);
-        $file_name = 'document_submission_' . $review_request_id . '_report.md';
+        $file_name = 'registration_' . $review_request_id . '_progress_report.md';
         $review_request_info = "# Registration " . $review_request_id . " Auto Report\n\n";
         $review_request_info .= "**REGISTRATION TYPE**: `" . $review_request->type . "`\n";
         $review_request_info .= "**PROGRESS**: `" . floor($progress) . "%`\n";
@@ -529,6 +538,32 @@ class ReviewRequestController extends Controller
         return response()->streamDownload(function () use ($content) {
             echo $content;
         }, $file_name);
+    }
+
+    public function generate_registration_report($review_request_id)
+    {
+        $file_name = 'registration_' . $review_request_id . '_registration_report.docx';
+        $registration_report_temp = resource_path() . '/templates/registration_report_tmp.docx';
+        $review_request = ReviewRequest::findOrFail($review_request_id);
+        $client = $review_request->client;
+        $tp = new TemplateProcessor($registration_report_temp);
+        $manufacturers = array_add_count('ManufacturersIndex', $review_request->manufacturers()->toArray());
+        $products = array_rename_key('name', 'ProductsName', $review_request->products()->get()->toArray());
+        // return dd($products, $manufacturers);
+        // set_template_value($tp, 'ClientName', $client->business_name);
+        $tp->setValues([
+            'ClientName' => $client->business_name,
+            'CompanyDescription' => $client->description,
+            'ProductName' => "Haram Potatoe Salad",
+            'ProductType' => "Chemical",
+            'ProductsCount' => $review_request->products->count(),
+            'IngredientsCount' => $review_request->ingredients->count()
+        ]);
+        $tp->cloneRowAndSetValues('manufacturersIndex', $manufacturers);
+        $tp->cloneRowAndSetValues('ProductsName', $products);
+        $tp->saveAs($file_name);
+
+        return response()->download($file_name)->deleteFileAfterSend(true);
     }
 
     public function get_progress($review_request_id)
@@ -634,7 +669,7 @@ class ReviewRequestController extends Controller
         return response('', 200);
     }
 
-    public function generate_progress_report($review_request_id)
+    public function email_progress_report($review_request_id)
     {
         $review_request = ReviewRequest::findOrFail($review_request_id);
         $body = $this->generate_progress_report_email($review_request);
@@ -649,7 +684,7 @@ class ReviewRequestController extends Controller
         $client_name = $review_request->client->business_name;
         $time_type = $is_final ? "final" : "weekly";
         $review_request_info = "Dear " . $client_name . ",\n\n";
-        $review_request_info .= $is_final ? "Congratulations! You have successfully passed the document review.\n\n" : "";
+        $review_request_info .= $is_final ? "Congratulations! You have completed registration of your facility and products. All associated documents have passed review. \n\n" : "";
         // @TODO Below is your halal product/facility registration progress report
         $review_request_info .= "Below is your " . $time_type . " document review progress report:";
         $document_statuses = "";
@@ -861,7 +896,11 @@ class ReviewRequestController extends Controller
 
     public function step_eight_check(Request $request, $review_request_id)
     {
-        return false;
+        // has only one product return true, else return false
+        $review_request = ReviewRequest::findOrFail($review_request_id);
+        $products = $review_request->products;
+
+        return $products->count() == 1 ? true : false;
     }
 }
 
@@ -1028,7 +1067,7 @@ function render_email_next_phase()
     text-align: left;
   "
 >
-  Next phase:
+  Next Phase:
   <span
     style="
       box-sizing: border-box;
@@ -1235,4 +1274,26 @@ function status_to_bgcolor($status)
         default: // NONE
             return "#e7e6e6";
     }
+}
+
+function array_add_count(string $keyName, array $arr): array
+{
+    $i = 1;
+    $formatted = array_map(function ($item) use ($keyName, &$i) {
+        $item[$keyName] = $i++;
+        return $item;
+    }, $arr);
+
+    return $formatted;
+}
+
+function array_rename_key(string $oldKey, string $newKey, array $arr): array
+{
+    $formatted = array_map(function ($item) use ($oldKey, $newKey) {
+        $item[$newKey] = $item[$oldKey];
+        unset($item[$oldKey]);
+        return $item;
+    }, $arr);
+
+    return $formatted;
 }

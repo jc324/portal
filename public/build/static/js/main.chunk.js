@@ -955,7 +955,6 @@ function NavListItem(_ref2) {
     ...rest
   } = _ref2;
   const classes = useStyles();
-  console.log("expand: ", typeof expand);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItem"]
   // @ts-ignore
   , Object.assign({
@@ -965,7 +964,7 @@ function NavListItem(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105,
+      lineNumber: 103,
       columnNumber: 5
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"]
@@ -981,7 +980,7 @@ function NavListItem(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111,
+      lineNumber: 109,
       columnNumber: 7
     }
   }, Icon &&
@@ -993,7 +992,7 @@ function NavListItem(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121,
+      lineNumber: 119,
       columnNumber: 11
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -1001,21 +1000,21 @@ function NavListItem(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124,
+      lineNumber: 122,
       columnNumber: 9
     }
   }, title), typeof expand === "boolean" && expand && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandLess__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125,
+      lineNumber: 123,
       columnNumber: 51
     }
   }), typeof expand === "boolean" && !expand && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ExpandMore__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126,
+      lineNumber: 124,
       columnNumber: 52
     }
   })));
@@ -51110,9 +51109,9 @@ function VendorApproval(_ref) {
   const [manufacturers, setManufacturers] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
   let [count, setCount] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
 
-  // const testDisclosureWebhook = () => {
+  // const testWebhook = () => {
   //   axios
-  //     .post("/api/webhooks/pandadoc-disclosure-stmt", data)
+  //     .post("https://portal.halalwatchworld.org/api/webhooks/meister-naq-card", data)
   //     .then(async (response) => {
   //       console.log(response.data);
   //     })
@@ -51952,7 +51951,8 @@ function HorizontalLinearStepper() {
   const handleNext = function () {
     let confirm = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
     if (!confirm) {
-      if ((reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.type) === "NEW_PRODUCTS" && activeStep == 2 || (reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.type) === "NEW_FACILITY_AND_PRODUCTS" && activeStep == 8) {
+      if ((reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.type) === "NEW_PRODUCTS" && activeStep == 3 || (reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.type) === "NEW_FACILITY_AND_PRODUCTS" && activeStep == 8) {
+        setLoading(true);
         axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/review-request/${reviewRequest === null || reviewRequest === void 0 ? void 0 : reviewRequest.id}/step-eight-check`).then(async response => {
           setLoading(false);
           console.log(response.data);
@@ -52029,7 +52029,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 308,
+      lineNumber: 309,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_PromptDialog__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -52039,18 +52039,20 @@ function HorizontalLinearStepper() {
       setPromptOpen(false);
     },
     onCancel: () => setPromptOpen(false),
+    okText: "Yes",
+    cancelText: "Add more products",
     message: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 317,
+        lineNumber: 320,
         columnNumber: 11
       }
-    }, "Some products and ingredients are missing documents. Are you sure you would like to proceed to the next step?"),
+    }, "You have only added one product. Are you sure you would like to proceed to the next step?"),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 309,
+      lineNumber: 310,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Grid"], {
@@ -52061,7 +52063,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 323,
+      lineNumber: 326,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Card"], {
@@ -52069,7 +52071,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 324,
+      lineNumber: 327,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["CardHeader"], {
@@ -52078,21 +52080,21 @@ function HorizontalLinearStepper() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 325,
+        lineNumber: 328,
         columnNumber: 30
       }
     }),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 325,
+      lineNumber: 328,
       columnNumber: 11
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Divider"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 326,
+      lineNumber: 329,
       columnNumber: 11
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"]
@@ -52104,14 +52106,14 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 327,
+      lineNumber: 330,
       columnNumber: 11
     }
   }, activeStep === steps.length ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 334,
+      lineNumber: 337,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -52119,7 +52121,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 335,
+      lineNumber: 338,
       columnNumber: 17
     }
   }, "All steps completed - you're finished"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -52128,7 +52130,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 338,
+      lineNumber: 341,
       columnNumber: 17
     }
   }, "Reset")) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -52141,7 +52143,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 343,
+      lineNumber: 346,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
@@ -52155,14 +52157,14 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 351,
+      lineNumber: 354,
       columnNumber: 17
     }
   }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["LinearProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 360,
+      lineNumber: 363,
       columnNumber: 32
     }
   }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -52170,7 +52172,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 362,
+      lineNumber: 365,
       columnNumber: 23
     }
   }, getStepContent(activeStep, reviewRequest, setRequestType, handleFacilitySelect, handleAssuredSpaceCheck, facilityStepValues, setFacilityStepValues, handleSubmission, setGreenLight)))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -52181,7 +52183,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 378,
+      lineNumber: 381,
       columnNumber: 17
     }
   }, activeStep !== 0 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -52191,14 +52193,14 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 380,
+      lineNumber: 383,
       columnNumber: 21
     }
   }, "Back"), activeStep === steps.length - 1 || activeStep === steps.length - 2 && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 406,
+      lineNumber: 409,
       columnNumber: 23
     }
   })
@@ -52219,7 +52221,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 416,
+      lineNumber: 419,
       columnNumber: 23
     }
   }, "Next")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Grid"], {
@@ -52230,7 +52232,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 434,
+      lineNumber: 437,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Stepper__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -52243,7 +52245,7 @@ function HorizontalLinearStepper() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 435,
+      lineNumber: 438,
       columnNumber: 9
     }
   }, steps.map((label, index) => {
@@ -52263,21 +52265,21 @@ function HorizontalLinearStepper() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 452,
+        lineNumber: 455,
         columnNumber: 15
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_StepLabel__WEBPACK_IMPORTED_MODULE_7__["default"], Object.assign({}, labelProps, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 453,
+        lineNumber: 456,
         columnNumber: 17
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 454,
+        lineNumber: 457,
         columnNumber: 19
       }
     }, label)));
@@ -52311,7 +52313,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
     __self: _this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 515,
+      lineNumber: 518,
       columnNumber: 7
     }
   });
@@ -52324,7 +52326,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 525,
+          lineNumber: 528,
           columnNumber: 11
         }
       });
@@ -52335,7 +52337,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 533,
+          lineNumber: 536,
           columnNumber: 11
         }
       });
@@ -52346,7 +52348,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 540,
+          lineNumber: 543,
           columnNumber: 11
         }
       });
@@ -52357,7 +52359,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 547,
+          lineNumber: 550,
           columnNumber: 11
         }
       });
@@ -52368,7 +52370,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 554,
+          lineNumber: 557,
           columnNumber: 11
         }
       });
@@ -52379,7 +52381,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 561,
+          lineNumber: 564,
           columnNumber: 11
         }
       });
@@ -52390,7 +52392,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 568,
+          lineNumber: 571,
           columnNumber: 11
         }
       });
@@ -52400,7 +52402,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 574,
+          lineNumber: 577,
           columnNumber: 16
         }
       });
@@ -52409,7 +52411,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 576,
+          lineNumber: 579,
           columnNumber: 16
         }
       });
@@ -52424,7 +52426,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 585,
+          lineNumber: 588,
           columnNumber: 11
         }
       });
@@ -52435,7 +52437,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 592,
+          lineNumber: 595,
           columnNumber: 11
         }
       });
@@ -52446,7 +52448,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 599,
+          lineNumber: 602,
           columnNumber: 11
         }
       });
@@ -52457,7 +52459,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 606,
+          lineNumber: 609,
           columnNumber: 11
         }
       });
@@ -52467,7 +52469,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 612,
+          lineNumber: 615,
           columnNumber: 16
         }
       });
@@ -52476,7 +52478,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 614,
+          lineNumber: 617,
           columnNumber: 16
         }
       });
@@ -52492,7 +52494,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 623,
+          lineNumber: 626,
           columnNumber: 11
         }
       });
@@ -52503,7 +52505,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 631,
+          lineNumber: 634,
           columnNumber: 11
         }
       });
@@ -52514,7 +52516,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 638,
+          lineNumber: 641,
           columnNumber: 11
         }
       });
@@ -52525,7 +52527,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 645,
+          lineNumber: 648,
           columnNumber: 11
         }
       });
@@ -52536,7 +52538,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 652,
+          lineNumber: 655,
           columnNumber: 11
         }
       });
@@ -52547,7 +52549,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 659,
+          lineNumber: 662,
           columnNumber: 11
         }
       });
@@ -52558,7 +52560,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 666,
+          lineNumber: 669,
           columnNumber: 11
         }
       });
@@ -52569,7 +52571,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 673,
+          lineNumber: 676,
           columnNumber: 11
         }
       });
@@ -52580,7 +52582,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 680,
+          lineNumber: 683,
           columnNumber: 11
         }
       });
@@ -52590,7 +52592,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 686,
+          lineNumber: 689,
           columnNumber: 16
         }
       });
@@ -52599,7 +52601,7 @@ const getStepContent = function (step, reviewRequest, setRequestType, handleFaci
         __self: _this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 688,
+          lineNumber: 691,
           columnNumber: 16
         }
       });
@@ -53763,7 +53765,7 @@ function ForgotPasswordView() {
     // @ts-ignore
     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_6__["default"], {
       className: classes.root,
-      title: "Login",
+      title: "Reset Password",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -53782,32 +53784,40 @@ function ForgotPasswordView() {
         columnNumber: 7
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Container"], {
-      maxWidth: "sm",
+      maxWidth: "xs",
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 61,
         columnNumber: 9
       }
-    }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["LinearProgress"], {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 62,
-        columnNumber: 23
-      }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Paper"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Paper"], {
       style: {
+        position: "relative",
+        overflow: "hidden",
         padding: 20,
         paddingTop: 30
       },
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 63,
+        lineNumber: 62,
         columnNumber: 11
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_4__["Formik"], {
+    }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["LinearProgress"], {
+      style: {
+        position: "absolute",
+        top: 0,
+        left: 0,
+        right: 0
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 71,
+        columnNumber: 15
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_4__["Formik"], {
       initialValues: {
         email: ""
       },
@@ -53818,7 +53828,7 @@ function ForgotPasswordView() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64,
+        lineNumber: 75,
         columnNumber: 13
       }
     }, _ref => {
@@ -53836,7 +53846,7 @@ function ForgotPasswordView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83,
+          lineNumber: 94,
           columnNumber: 17
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
@@ -53847,7 +53857,7 @@ function ForgotPasswordView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84,
+          lineNumber: 95,
           columnNumber: 19
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
@@ -53860,7 +53870,7 @@ function ForgotPasswordView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 85,
+          lineNumber: 96,
           columnNumber: 21
         }
       }, "Reset Password"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
@@ -53871,10 +53881,10 @@ function ForgotPasswordView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93,
+          lineNumber: 104,
           columnNumber: 21
         }
-      }, !showNextSteps && "Please enter your email address to receive a password reset link" || "A password reset link has been sent to the email you provided. If you do not see any mail, please check your spam folder.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TextField"], {
+      }, !showNextSteps && "Enter your email address to get a password reset link" || "A password reset link has been sent to the email you provided. If you do not see any mail, please check your spam folder.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TextField"], {
         error: Boolean(touched.email && errors.email),
         fullWidth: true,
         helperText: touched.email && errors.email,
@@ -53890,7 +53900,7 @@ function ForgotPasswordView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104,
+          lineNumber: 115,
           columnNumber: 19
         }
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
@@ -53898,7 +53908,7 @@ function ForgotPasswordView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118,
+          lineNumber: 129,
           columnNumber: 19
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Button"], {
@@ -53911,7 +53921,7 @@ function ForgotPasswordView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 119,
+          lineNumber: 130,
           columnNumber: 21
         }
       }, "Request Reset")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
@@ -53920,7 +53930,7 @@ function ForgotPasswordView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 130,
+          lineNumber: 141,
           columnNumber: 19
         }
       }, "Back to", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Link"], {
@@ -53930,7 +53940,7 @@ function ForgotPasswordView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 132,
+          lineNumber: 143,
           columnNumber: 21
         }
       }, "Log In")));
@@ -54130,32 +54140,40 @@ const LoginView = props => {
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Container"], {
-    maxWidth: "sm",
+    maxWidth: "xs",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 104,
       columnNumber: 9
     }
-  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["LinearProgress"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 105,
-      columnNumber: 23
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Paper"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Paper"], {
     style: {
+      position: "relative",
+      overflow: "hidden",
       padding: 20,
       paddingTop: 30
     },
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 105,
       columnNumber: 11
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_3__["Formik"], {
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["LinearProgress"], {
+    style: {
+      position: "absolute",
+      top: 0,
+      left: 0,
+      right: 0
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114,
+      columnNumber: 15
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_3__["Formik"], {
     initialValues: {
       email: "",
       password: "",
@@ -54170,7 +54188,7 @@ const LoginView = props => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107,
+      lineNumber: 118,
       columnNumber: 13
     }
   }, _ref2 => {
@@ -54188,7 +54206,7 @@ const LoginView = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 134,
+        lineNumber: 145,
         columnNumber: 17
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
@@ -54199,7 +54217,7 @@ const LoginView = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 135,
+        lineNumber: 146,
         columnNumber: 19
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
@@ -54212,7 +54230,7 @@ const LoginView = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 136,
+        lineNumber: 147,
         columnNumber: 21
       }
     }, "Log in"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
@@ -54223,7 +54241,7 @@ const LoginView = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 144,
+        lineNumber: 155,
         columnNumber: 21
       }
     }, "Log in to Halal Watch World's secure portal"), errorMessage && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
@@ -54236,7 +54254,7 @@ const LoginView = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 153,
+        lineNumber: 164,
         columnNumber: 23
       }
     }, errorMessage)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
@@ -54254,7 +54272,7 @@ const LoginView = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 197,
+        lineNumber: 208,
         columnNumber: 19
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TextField"], {
@@ -54272,7 +54290,7 @@ const LoginView = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 210,
+        lineNumber: 221,
         columnNumber: 19
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["FormControlLabel"], {
@@ -54283,7 +54301,7 @@ const LoginView = props => {
         __self: undefined,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 225,
+          lineNumber: 236,
           columnNumber: 23
         }
       }),
@@ -54291,7 +54309,7 @@ const LoginView = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 223,
+        lineNumber: 234,
         columnNumber: 19
       }
     }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
@@ -54299,7 +54317,7 @@ const LoginView = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 233,
+        lineNumber: 244,
         columnNumber: 19
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Button"], {
@@ -54312,7 +54330,7 @@ const LoginView = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 234,
+        lineNumber: 245,
         columnNumber: 21
       }
     }, "Log in")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
@@ -54321,7 +54339,7 @@ const LoginView = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 245,
+        lineNumber: 256,
         columnNumber: 19
       }
     }, "Forgot password?", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Link"], {
@@ -54331,7 +54349,7 @@ const LoginView = props => {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 247,
+        lineNumber: 258,
         columnNumber: 21
       }
     }, "Reset")));
@@ -54920,7 +54938,7 @@ function PasswordResetView() {
     // @ts-ignore
     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_7__["default"], {
       className: classes.root,
-      title: "Login",
+      title: "Reset Password",
       __self: this,
       __source: {
         fileName: _jsxFileName,
@@ -54939,32 +54957,40 @@ function PasswordResetView() {
         columnNumber: 7
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Container"], {
-      maxWidth: "sm",
+      maxWidth: "xs",
       __self: this,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 85,
         columnNumber: 9
       }
-    }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["LinearProgress"], {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 86,
-        columnNumber: 23
-      }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Paper"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Paper"], {
       style: {
+        position: "relative",
+        overflow: "hidden",
         padding: 20,
         paddingTop: 30
       },
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 87,
+        lineNumber: 86,
         columnNumber: 11
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_5__["Formik"], {
+    }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["LinearProgress"], {
+      style: {
+        position: "absolute",
+        top: 0,
+        left: 0,
+        right: 0
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 95,
+        columnNumber: 15
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(formik__WEBPACK_IMPORTED_MODULE_5__["Formik"], {
       initialValues: {
         password: "",
         password_confirmation: ""
@@ -54977,7 +55003,7 @@ function PasswordResetView() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 88,
+        lineNumber: 99,
         columnNumber: 13
       }
     }, _ref => {
@@ -54995,7 +55021,7 @@ function PasswordResetView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111,
+          lineNumber: 122,
           columnNumber: 17
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Box"], {
@@ -55006,7 +55032,7 @@ function PasswordResetView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 112,
+          lineNumber: 123,
           columnNumber: 19
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Typography"], {
@@ -55019,7 +55045,7 @@ function PasswordResetView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 113,
+          lineNumber: 124,
           columnNumber: 21
         }
       }, "Reset Password"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Typography"], {
@@ -55030,7 +55056,7 @@ function PasswordResetView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121,
+          lineNumber: 132,
           columnNumber: 21
         }
       }, statusMessage && statusMessage || "Please enter and confirm your new password.")), !statusMessage && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TextField"], {
@@ -55048,7 +55074,7 @@ function PasswordResetView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 133,
+          lineNumber: 144,
           columnNumber: 23
         }
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TextField"], {
@@ -55066,7 +55092,7 @@ function PasswordResetView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 146,
+          lineNumber: 157,
           columnNumber: 23
         }
       }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Box"], {
@@ -55074,7 +55100,7 @@ function PasswordResetView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 165,
+          lineNumber: 176,
           columnNumber: 23
         }
       }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Button"], {
@@ -55087,7 +55113,7 @@ function PasswordResetView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 166,
+          lineNumber: 177,
           columnNumber: 25
         }
       }, "Reset Password"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Typography"], {
@@ -55096,7 +55122,7 @@ function PasswordResetView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 179,
+          lineNumber: 190,
           columnNumber: 19
         }
       }, "Back to", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Link"], {
@@ -55106,7 +55132,7 @@ function PasswordResetView() {
         __self: this,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 181,
+          lineNumber: 192,
           columnNumber: 21
         }
       }, "Log In")));
@@ -76946,36 +76972,36 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
-/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/MoreVert */ "./node_modules/@material-ui/icons/MoreVert.js");
-/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/Delete */ "./node_modules/@material-ui/icons/Delete.js");
-/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/CloudDownload */ "./node_modules/@material-ui/icons/CloudDownload.js");
-/* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var _material_ui_icons_AlternateEmailOutlined__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/AlternateEmailOutlined */ "./node_modules/@material-ui/icons/AlternateEmailOutlined.js");
-/* harmony import */ var _material_ui_icons_AlternateEmailOutlined__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_AlternateEmailOutlined__WEBPACK_IMPORTED_MODULE_7__);
-/* harmony import */ var _material_ui_icons_InsertDriveFile__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/InsertDriveFile */ "./node_modules/@material-ui/icons/InsertDriveFile.js");
-/* harmony import */ var _material_ui_icons_InsertDriveFile__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_InsertDriveFile__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var _material_ui_icons_Assignment__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/Assignment */ "./node_modules/@material-ui/icons/Assignment.js");
-/* harmony import */ var _material_ui_icons_Assignment__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Assignment__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var _material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/AssignmentTurnedIn */ "./node_modules/@material-ui/icons/AssignmentTurnedIn.js");
-/* harmony import */ var _material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var _material_ui_icons_SaveOutlined__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/SaveOutlined */ "./node_modules/@material-ui/icons/SaveOutlined.js");
-/* harmony import */ var _material_ui_icons_SaveOutlined__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_SaveOutlined__WEBPACK_IMPORTED_MODULE_11__);
-/* harmony import */ var _material_ui_icons_VisibilityOutlined__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons/VisibilityOutlined */ "./node_modules/@material-ui/icons/VisibilityOutlined.js");
-/* harmony import */ var _material_ui_icons_VisibilityOutlined__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_VisibilityOutlined__WEBPACK_IMPORTED_MODULE_12__);
-/* harmony import */ var _material_ui_icons_CheckCircleOutline__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/icons/CheckCircleOutline */ "./node_modules/@material-ui/icons/CheckCircleOutline.js");
-/* harmony import */ var _material_ui_icons_CheckCircleOutline__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CheckCircleOutline__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _material_ui_icons_RestorePage__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/icons/RestorePage */ "./node_modules/@material-ui/icons/RestorePage.js");
-/* harmony import */ var _material_ui_icons_RestorePage__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_RestorePage__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _material_ui_icons_NotificationsNone__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/icons/NotificationsNone */ "./node_modules/@material-ui/icons/NotificationsNone.js");
-/* harmony import */ var _material_ui_icons_NotificationsNone__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_NotificationsNone__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/icons/Block */ "./node_modules/@material-ui/icons/Block.js");
-/* harmony import */ var _material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/MoreVert */ "./node_modules/@material-ui/icons/MoreVert.js");
+/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/Delete */ "./node_modules/@material-ui/icons/Delete.js");
+/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/CloudDownload */ "./node_modules/@material-ui/icons/CloudDownload.js");
+/* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_icons_AlternateEmailOutlined__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/AlternateEmailOutlined */ "./node_modules/@material-ui/icons/AlternateEmailOutlined.js");
+/* harmony import */ var _material_ui_icons_AlternateEmailOutlined__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_AlternateEmailOutlined__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _material_ui_icons_InsertDriveFile__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/InsertDriveFile */ "./node_modules/@material-ui/icons/InsertDriveFile.js");
+/* harmony import */ var _material_ui_icons_InsertDriveFile__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_InsertDriveFile__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _material_ui_icons_Assignment__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/Assignment */ "./node_modules/@material-ui/icons/Assignment.js");
+/* harmony import */ var _material_ui_icons_Assignment__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Assignment__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/icons/AssignmentTurnedIn */ "./node_modules/@material-ui/icons/AssignmentTurnedIn.js");
+/* harmony import */ var _material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _material_ui_icons_SaveOutlined__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/icons/SaveOutlined */ "./node_modules/@material-ui/icons/SaveOutlined.js");
+/* harmony import */ var _material_ui_icons_SaveOutlined__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_SaveOutlined__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _material_ui_icons_VisibilityOutlined__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/icons/VisibilityOutlined */ "./node_modules/@material-ui/icons/VisibilityOutlined.js");
+/* harmony import */ var _material_ui_icons_VisibilityOutlined__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_VisibilityOutlined__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _material_ui_icons_CheckCircleOutline__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/icons/CheckCircleOutline */ "./node_modules/@material-ui/icons/CheckCircleOutline.js");
+/* harmony import */ var _material_ui_icons_CheckCircleOutline__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CheckCircleOutline__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var _material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/icons/Block */ "./node_modules/@material-ui/icons/Block.js");
+/* harmony import */ var _material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _material_ui_icons_DonutLarge__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/icons/DonutLarge */ "./node_modules/@material-ui/icons/DonutLarge.js");
+/* harmony import */ var _material_ui_icons_DonutLarge__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_DonutLarge__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _material_ui_icons_ContactMail__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @material-ui/icons/ContactMail */ "./node_modules/@material-ui/icons/ContactMail.js");
+/* harmony import */ var _material_ui_icons_ContactMail__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ContactMail__WEBPACK_IMPORTED_MODULE_17__);
 /* harmony import */ var _api_Auth__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../../api/Auth */ "./src/api/Auth.ts");
 /* harmony import */ var _reviewer_common_types__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../reviewer/common/types */ "./src/views/reviewer/common/types.ts");
 /* harmony import */ var _reviewer_common_NestedMenuItem__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../reviewer/common/NestedMenuItem */ "./src/views/reviewer/common/NestedMenuItem.tsx");
@@ -77016,7 +77042,7 @@ function ReviewRequestMenu(_ref) {
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
     enqueueSnackbar
-  } = Object(notistack__WEBPACK_IMPORTED_MODULE_17__["useSnackbar"])();
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"])();
   const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
   const handleClick = event => {
     setAnchorEl(event.currentTarget);
@@ -77033,7 +77059,7 @@ function ReviewRequestMenu(_ref) {
     avatar.className = "MuiAvatar-img";
     avatar.setAttribute("src", ((_document$querySelect = document.querySelector("#sidenav-avatar .MuiAvatar-img")) === null || _document$querySelect === void 0 ? void 0 : _document$querySelect.getAttribute("src")) || "");
     setLoading(true);
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/review-request/${reviewRequest.id}/assign-reviewer`, data).then(async response => {
+    axios__WEBPACK_IMPORTED_MODULE_3___default.a.post(`/api/client/review-request/${reviewRequest.id}/assign-reviewer`, data).then(async response => {
       setLoading(false);
       if (response.status == 200 || response.status == 201) {
         if (reviewerNameTableCell) {
@@ -77070,7 +77096,7 @@ function ReviewRequestMenu(_ref) {
     const answer = window.confirm("Are you sure you would like to manually send this client a progress report email?");
     if (!answer) return;
     setLoading(true);
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/review-request/${reviewRequest.id}/send-report`).then(async response => {
+    axios__WEBPACK_IMPORTED_MODULE_3___default.a.post(`/api/client/review-request/${reviewRequest.id}/email-progress`).then(async response => {
       setLoading(false);
       if (response.status == 200 || response.status == 201) {
         enqueueSnackbar("Progress report email sent successfully.", {
@@ -77095,7 +77121,7 @@ function ReviewRequestMenu(_ref) {
       status: statusStr.replace(/\s/g, "_")
     };
     setLoading(true);
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.put(`/api/client/review-request/${reviewRequest.id}/status`, data).then(async response => {
+    axios__WEBPACK_IMPORTED_MODULE_3___default.a.put(`/api/client/review-request/${reviewRequest.id}/status`, data).then(async response => {
       setLoading(false);
       if (response.status == 200 || response.status == 201) {
         if (statusTableCell) statusTableCell.textContent = statusStr;
@@ -77124,7 +77150,7 @@ function ReviewRequestMenu(_ref) {
     const answer = window.confirm("Are you sure you would like to delete this review request?");
     if (!answer) return;
     setLoading(true);
-    axios__WEBPACK_IMPORTED_MODULE_2___default.a.delete(`/api/client/review-request/${reviewRequest.id}`).then(async response => {
+    axios__WEBPACK_IMPORTED_MODULE_3___default.a.delete(`/api/client/review-request/${reviewRequest.id}`).then(async response => {
       setLoading(false);
       if (response.status == 200 || response.status == 201) {
         onDeleteReviewRequest(reviewRequest.id);
@@ -77143,7 +77169,7 @@ function ReviewRequestMenu(_ref) {
     });
     setAnchorEl(null);
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["IconButton"], {
     edge: "end",
     size: "small",
     "aria-controls": "review-request-menu",
@@ -77152,17 +77178,17 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 250,
+      lineNumber: 252,
       columnNumber: 7
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_4___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 257,
+      lineNumber: 259,
       columnNumber: 9
     }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Menu"], {
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Menu"], {
     id: "review-request-menu",
     anchorEl: anchorEl,
     keepMounted: true,
@@ -77171,17 +77197,17 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 259,
+      lineNumber: 261,
       columnNumber: 7
     }
-  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["LinearProgress"], {
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["LinearProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 266,
+      lineNumber: 268,
       columnNumber: 21
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
     onClick: () => gotoReviewRequestReports(reviewRequest.id)
     // disabled={reviewRequest.status !== "DRAFT"}
     // disabled
@@ -77189,17 +77215,17 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 267,
+      lineNumber: 269,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_InsertDriveFile__WEBPACK_IMPORTED_MODULE_8___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_InsertDriveFile__WEBPACK_IMPORTED_MODULE_9___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 272,
+      lineNumber: 274,
       columnNumber: 11
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
     variant: "inherit",
     style: {
       marginLeft: 10
@@ -77207,26 +77233,26 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 273,
+      lineNumber: 275,
       columnNumber: 11
     }
-  }, "Reports")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
+  }, "Reports")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
     onClick: assumeOwnershipHandler,
     disabled: reviewRequest.reviewer_id === (user === null || user === void 0 ? void 0 : user.id),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 277,
+      lineNumber: 279,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Assignment__WEBPACK_IMPORTED_MODULE_9___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Assignment__WEBPACK_IMPORTED_MODULE_10___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 281,
+      lineNumber: 283,
       columnNumber: 11
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
     variant: "inherit",
     style: {
       marginLeft: 10
@@ -77234,25 +77260,25 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 282,
+      lineNumber: 284,
       columnNumber: 11
     }
-  }, "Assign")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
+  }, "Assign")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
     onClick: () => contactClient(reviewRequest),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 286,
+      lineNumber: 288,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_AlternateEmailOutlined__WEBPACK_IMPORTED_MODULE_7___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ContactMail__WEBPACK_IMPORTED_MODULE_17___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 287,
+      lineNumber: 289,
       columnNumber: 11
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
     variant: "inherit",
     style: {
       marginLeft: 10
@@ -77260,52 +77286,25 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 288,
+      lineNumber: 290,
       columnNumber: 11
     }
-  }, "Contact Client")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
+  }, "Contact Client")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
     onClick: () => sendProgressReportEmail(reviewRequest),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 292,
-      columnNumber: 9
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_NotificationsNone__WEBPACK_IMPORTED_MODULE_15___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 293,
-      columnNumber: 11
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
-    variant: "inherit",
-    style: {
-      marginLeft: 10
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
       lineNumber: 294,
-      columnNumber: 11
-    }
-  }, "Send Progress Report Email")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
-    component: _material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Link"],
-    href: `/reviewer/clients/request/${reviewRequest.id}/generate-report`,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 298,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_RestorePage__WEBPACK_IMPORTED_MODULE_14___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_AlternateEmailOutlined__WEBPACK_IMPORTED_MODULE_8___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 304,
+      lineNumber: 295,
       columnNumber: 11
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
     variant: "inherit",
     style: {
       marginLeft: 10
@@ -77313,26 +77312,53 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 305,
+      lineNumber: 296,
       columnNumber: 11
     }
-  }, "Generate Progress Report")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
-    component: _material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Link"],
+  }, "Email Progress Report")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
+    component: _material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Link"],
+    href: `/reviewer/clients/request/${reviewRequest.id}/progress-report`,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 300,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_DonutLarge__WEBPACK_IMPORTED_MODULE_16___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 306,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+    variant: "inherit",
+    style: {
+      marginLeft: 10
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 307,
+      columnNumber: 11
+    }
+  }, "Generate Progress Report (.md)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
+    component: _material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Link"],
     href: `/reviewer/clients/request/${reviewRequest.id}/documents`,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 309,
+      lineNumber: 322,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_7___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 315,
+      lineNumber: 328,
       columnNumber: 11
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
     variant: "inherit",
     style: {
       marginLeft: 10
@@ -77340,18 +77366,18 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 316,
+      lineNumber: 329,
       columnNumber: 11
     }
   }, "Download Documents")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_NestedMenuItem__WEBPACK_IMPORTED_MODULE_20__["default"], {
-    label: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_10___default.a, {
+    label: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_11___default.a, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 323,
+        lineNumber: 336,
         columnNumber: 15
       }
-    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
       variant: "inherit",
       style: {
         marginLeft: 10
@@ -77359,7 +77385,7 @@ function ReviewRequestMenu(_ref) {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 324,
+        lineNumber: 337,
         columnNumber: 15
       }
     }, "Set Status")),
@@ -77367,51 +77393,25 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 320,
+      lineNumber: 333,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
     onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_19__["ReviewRequestStatus"].DRAFT),
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 331,
-      columnNumber: 11
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_SaveOutlined__WEBPACK_IMPORTED_MODULE_11___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 339,
-      columnNumber: 13
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
-    variant: "inherit",
-    style: {
-      marginLeft: 10
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 340,
-      columnNumber: 13
-    }
-  }, "DRAFT")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
-    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_19__["ReviewRequestStatus"].SUBMITTED),
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 344,
       columnNumber: 11
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_10___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_SaveOutlined__WEBPACK_IMPORTED_MODULE_12___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 352,
       columnNumber: 13
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
     variant: "inherit",
     style: {
       marginLeft: 10
@@ -77422,22 +77422,22 @@ function ReviewRequestMenu(_ref) {
       lineNumber: 353,
       columnNumber: 13
     }
-  }, "SUBMITTED")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
-    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_19__["ReviewRequestStatus"].IN_REVIEW),
+  }, "DRAFT")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
+    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_19__["ReviewRequestStatus"].SUBMITTED),
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 357,
       columnNumber: 11
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_VisibilityOutlined__WEBPACK_IMPORTED_MODULE_12___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_11___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 365,
       columnNumber: 13
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
     variant: "inherit",
     style: {
       marginLeft: 10
@@ -77448,22 +77448,22 @@ function ReviewRequestMenu(_ref) {
       lineNumber: 366,
       columnNumber: 13
     }
-  }, "IN REVIEW")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
-    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_19__["ReviewRequestStatus"].APPROVED),
+  }, "SUBMITTED")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
+    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_19__["ReviewRequestStatus"].IN_REVIEW),
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 370,
       columnNumber: 11
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CheckCircleOutline__WEBPACK_IMPORTED_MODULE_13___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_VisibilityOutlined__WEBPACK_IMPORTED_MODULE_13___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 378,
       columnNumber: 13
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
     variant: "inherit",
     style: {
       marginLeft: 10
@@ -77474,22 +77474,22 @@ function ReviewRequestMenu(_ref) {
       lineNumber: 379,
       columnNumber: 13
     }
-  }, "APPROVED")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
-    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_19__["ReviewRequestStatus"].REJECTED),
+  }, "IN REVIEW")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
+    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_19__["ReviewRequestStatus"].APPROVED),
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 383,
       columnNumber: 11
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_16___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CheckCircleOutline__WEBPACK_IMPORTED_MODULE_14___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 391,
       columnNumber: 13
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
     variant: "inherit",
     style: {
       marginLeft: 10
@@ -77500,24 +77500,22 @@ function ReviewRequestMenu(_ref) {
       lineNumber: 392,
       columnNumber: 13
     }
-  }, "REJECTED"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
-    onClick: deleteReviewRequest
-    // disabled={reviewRequest.status !== "DRAFT"}
-    ,
+  }, "APPROVED")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
+    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_19__["ReviewRequestStatus"].REJECTED),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 397,
-      columnNumber: 9
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_5___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 401,
+      lineNumber: 396,
       columnNumber: 11
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_15___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 404,
+      columnNumber: 13
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
     variant: "inherit",
     style: {
       marginLeft: 10
@@ -77525,13 +77523,42 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 402,
+      lineNumber: 405,
+      columnNumber: 13
+    }
+  }, "REJECTED"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
+    onClick: deleteReviewRequest
+    // disabled={reviewRequest.status !== "DRAFT"}
+    ,
+    color: "warning",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 410,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 415,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+    variant: "inherit",
+    style: {
+      marginLeft: 10
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 416,
       columnNumber: 11
     }
   }, "Delete"))));
 }
 _s(ReviewRequestMenu, "zvSaOP1yWrte1ZkMurojDOus2/0=", false, function () {
-  return [notistack__WEBPACK_IMPORTED_MODULE_17__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
+  return [notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
 });
 _c = ReviewRequestMenu;
 var _c;

@@ -6,12 +6,42 @@ use App\Models\Ingredient;
 use App\Models\Manufacturer;
 use App\Models\ManufacturerDocument;
 use App\Models\ReviewRequest;
+use DateTime;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Mail;
 use GuzzleHttp\Client as GuzzleClient;
 
 class WebhooksController extends Controller
 {
+    // webhook: https://portal.halalwatchworld.org/api/webhooks/meister-naq-card
+    public function meister_naq_card(Request $request)
+    {
+        $data = $request->all();
+        $token = env('MEISTERTASK_TOKEN');
+        $notes = '';
+
+        foreach ($data as $key => $value)
+            $notes .= $key . ': ' . $value . "\n";
+
+        $new_form_section_id = 19454541;
+        $due_date = (new DateTime())->modify('+1 day')->format('Y-m-d H:i:s');
+        $guzzle = new \GuzzleHttp\Client();
+        $body = json_encode([
+            'name' => $data['Company Name'],
+            'notes' => $notes,
+            'due' => $due_date,
+            'status' => 1
+        ]);
+        $response = $guzzle->request('POST', 'https://www.meistertask.com/api/sections/' . $new_form_section_id . '/tasks', [
+            'headers' => [
+                'Authorization' => 'Bearer ' . $token,
+                'accept' => 'application/json',
+                'content-type' => 'application/json',
+            ],
+            'body' => $body,
+        ]);
+        $response->getBody();
+    }
+
     // webhook: https://portal.halalwatchworld.org/api/webhooks/pandadoc-disclosure-stmt
     public function pandadoc_disclosure_stmt(Request $request)
     {
@@ -99,11 +129,15 @@ class WebhooksController extends Controller
                 'template_uuid' => $TEMP_ID,
                 'folder_uuid' => $DIR_ID,
                 'tags' => ['Portal'],
-                'name' => 'Halal Certification Proposal',
+                'name' => 'Halal Certification Proposal (' . $data['Company Name'] . ')',
                 'recipients' => [
+                    ['email' => 'support@halalwatchworld.org', 'role' => 'Sender'],
                     ['email' => $email, 'role' => 'Client']
                 ],
                 'tokens' => [
+                    ['name' => 'Client.Company', 'value' => $data['Company Name']],
+                    ['name' => 'Client.FirstName', 'value' => $data['First Name']],
+                    ['name' => 'Client.LastName', 'value' => $data['Last Name']],
                     ['name' => 'Risk.Assessment', 'value' => $risk],
                     ['name' => 'Call.Form', 'value' => $formatted_data]
                 ]

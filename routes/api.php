@@ -92,7 +92,7 @@ Route::middleware('auth:sanctum')->post('/client/review-request/{id}/unassign-he
 Route::middleware('auth:sanctum')->delete('/client/review-request/{id}', [ReviewRequestController::class, 'delete_review_request']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/assign-reviewer', [ReviewRequestController::class, 'assign_reviewer']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/request-docs', [ReviewRequestController::class, 'request_docs']);
-Route::middleware('auth:sanctum')->post('/client/review-request/{id}/send-report', [ReviewRequestController::class, 'generate_progress_report']);
+Route::middleware('auth:sanctum')->post('/client/review-request/{id}/email-progress', [ReviewRequestController::class, 'email_progress_report']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/products', [ReviewRequestController::class, 'get_review_request_products']);
 // Route::middleware('auth:sanctum')->post('/client/review-request/{id}/products-step', [ReviewRequestController::class, 'get_review_request_products_step']);
 Route::middleware('auth:sanctum')->post('/client/review-request/{id}/products/docs', [ReviewRequestController::class, 'get_review_request_products_docs']);
@@ -170,6 +170,7 @@ Route::middleware('auth:sanctum')->put('/manufacturer/document/{id}/expires-at',
 
 // Webhooks
 Route::post('/webhooks/audit-report', [ReportsController::class, 'audit_report_webhook']);
+Route::post('/webhooks/meister-naq-card', [WebhooksController::class, 'meister_naq_card']);
 Route::post('/webhooks/pandadoc-disclosure-stmt', [WebhooksController::class, 'pandadoc_disclosure_stmt']);
 Route::post('/webhooks/call-form-proposal', [WebhooksController::class, 'call_form_proposal']);
 

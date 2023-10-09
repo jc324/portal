@@ -208,7 +208,7 @@ class CertificatesController extends Controller
                 : "https://www.halalwatchworld.org/docsubmit/form-d-lowrisk";
 
             // to client
-            Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new CertificateRenewal($cert->id, $client_name, $form_d_link));
+            Mail::to($to)->cc(['support@halalwatchworld.org'])->send(new CertificateRenewal($cert->id, $client_name, $form_d_link));
         }
     }
 }

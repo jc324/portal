@@ -9,6 +9,7 @@ use App\Http\Controllers\ReportsController;
 use App\Http\Controllers\CertificatesController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\ManufacturerController;
+use App\Http\Controllers\TestController;
 
 /*
 |--------------------------------------------------------------------------
@@ -53,7 +54,8 @@ Route::middleware('auth:sanctum')->get('/reports/document/{id}', [ReportsControl
 Route::middleware('auth:sanctum')->get('/certificates/document/{id}', [CertificatesController::class, 'download_document_by_id']);
 // reviewer review request docs
 Route::middleware('auth:sanctum')->get('/reviewer/clients/request/{id}/documents', [ReviewRequestController::class, 'download_documents_by_id']);
-Route::middleware('auth:sanctum')->get('/reviewer/clients/request/{id}/generate-report', [ReviewRequestController::class, 'generate_report']);
+Route::middleware('auth:sanctum')->get('/reviewer/clients/request/{id}/progress-report', [ReviewRequestController::class, 'generate_progress_report']);
+Route::middleware('auth:sanctum')->get('/reviewer/clients/request/{id}/registration-report', [ReviewRequestController::class, 'generate_registration_report']);
 // client facility docs
 Route::middleware('auth:sanctum')->get('/client/facility/document/{id}', [FacilityController::class, 'download_document_by_id']);
 Route::middleware('auth:sanctum')->get('/client/product/document/{id}', [ProductController::class, 'download_document_by_id']);
@@ -61,6 +63,9 @@ Route::middleware('auth:sanctum')->get('/client/manufacturer/document/{id}', [Ma
 
 // Crons (cron-jobs.org)
 Route::get('/cron/certificates', [CertificatesController::class, 'certifcates_cron']);
+
+// test
+Route::get('/test', [TestController::class, 'test']);
 
 Route::any('{all}', function () {
     return view('index');

@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Mail\AuditReportApproved;
 use App\Mail\NewAuditReport;
 use App\Mail\NewRegistrationReport;
 use App\Mail\PendingReportsNotification;
+use App\Mail\ReportsApproved;
 use Illuminate\Http\Request;
 
 use App\Models\Report;
@@ -107,12 +107,12 @@ class ReportsController extends Controller
             ['status', '!=', 'APPROVED']
         ])->count();
 
-        if ($report->type === 'AUDIT_REPORT' && $data['status'] === 'APPROVED' && $non_approved === 0) {
+        if ($report->type === 'REVIEW_REPORT' && $data['status'] === 'APPROVED' && $non_approved === 0) {
             $client = Client::find($report->client_id);
             $client_name = $client->business_name;
             $to = $client->get_emails();
 
-            Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new AuditReportApproved($client_name));
+            Mail::to($to)->cc(['review@halalwatchworld.org'])->send(new ReportsApproved($client_name));
         }
 
         return response('', 200);

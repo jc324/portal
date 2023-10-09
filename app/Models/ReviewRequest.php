@@ -67,6 +67,11 @@ class ReviewRequest extends Model
         return $this->hasMany(Ingredient::class);
     }
 
+    public function manufacturers()
+    {
+        return $this->ingredients()->with('manufacturer')->get()->pluck('manufacturer')->unique();
+    }
+
     public function reports()
     {
         return $this->hasMany(Report::class);
