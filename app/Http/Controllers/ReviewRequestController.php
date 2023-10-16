@@ -544,24 +544,61 @@ class ReviewRequestController extends Controller
     {
         $file_name = 'registration_' . $review_request_id . '_registration_report.docx';
         $registration_report_temp = resource_path() . '/templates/registration_report_tmp.docx';
+        $tp = new TemplateProcessor($registration_report_temp);
         $review_request = ReviewRequest::findOrFail($review_request_id);
         $client = $review_request->client;
-        $tp = new TemplateProcessor($registration_report_temp);
+        $facility = Facility::findOrFail($review_request->facility_id);
+        $facility_category_code = FacilityCategories::find($facility->category_id)->code;
         $manufacturers = array_add_count('ManufacturersIndex', $review_request->manufacturers()->toArray());
-        $products = array_rename_key('name', 'ProductsName', $review_request->products()->get()->toArray());
-        // return dd($products, $manufacturers);
-        // set_template_value($tp, 'ClientName', $client->business_name);
+        // $products_arr = $review_request->products()->with('ingredients')->get()->toArray();
+        $products_arr = array_map(function ($product) use (&$facility, $facility_category_code) {
+            try {
+                $product_category_code = ProductCategories::find($product['category_id'])->code;
+                $qualified_id = $facility_category_code . $facility->id . '_' . $product_category_code . $product['id'];
+                $product['QualifiedID'] = $qualified_id;
+                return $product;
+            } catch (\Throwable $th) {
+                $product['QualifiedID'] = $product['id'];
+                return $product;
+            }
+        }, $review_request->products()->get()->toArray());
+        $products = array_rename_key('name', 'ProductsName', $products_arr);
+
+        // return dd($products_with_ingredients_ref);
         $tp->setValues([
             'ClientName' => $client->business_name,
+            'Date' => date('m/d/y'),
+            'DateFull' => date('F j, Y'),
             'CompanyDescription' => $client->description,
             'ProductName' => "Haram Potatoe Salad",
             'ProductType' => "Chemical",
             'ProductsCount' => $review_request->products->count(),
             'IngredientsCount' => $review_request->ingredients->count()
         ]);
-        $tp->cloneRowAndSetValues('manufacturersIndex', $manufacturers);
+        $tp->cloneRowAndSetValues('ManufacturersIndex', $manufacturers);
         $tp->cloneRowAndSetValues('ProductsName', $products);
+        $tp->cloneBlock('ProductBlock', 0, true, false, $products_arr);
+        $tp->cloneBlock('SupplierBlock', 0, true, false, $manufacturers);
         $tp->saveAs($file_name);
+
+        // second pass
+        // $tp = new TemplateProcessor($file_name);
+        // foreach ($products_arr as $product) {
+        //     $tableId = 'product_' . $product['id'] . '_ing_name';
+        //     $ingredients = array_map(function ($ingredient) use ($tableId) {
+        //         $ingredient[$tableId] = $ingredient['name'];
+        //         $ingredient['ing_recommendation'] = $ingredient['recommendation'];
+        //         $ingredient['ing_description'] = $ingredient['description'] ? $ingredient['description'] : '';
+        //         return $ingredient;
+        //     }, $product['ingredients']);
+        //     // $a = array_rename_key('name', 'ingredient_name', $product['ingredients']);
+        //     // $b = array_rename_key('recommendation', 'ingredient_recommendation', $a);
+        //     // $c = array_rename_key('description', 'ingredient_description', $b);
+        //     // dd($ingredients);
+        //     $tp->cloneRowAndSetValues($tableId, $ingredients);
+        //     // $tp->cloneBlock('product_' . $product['id'] . '_ingredients', 0, true, false, $ingredients);
+        // }
+        // $tp->saveAs($file_name);
 
         return response()->download($file_name)->deleteFileAfterSend(true);
     }

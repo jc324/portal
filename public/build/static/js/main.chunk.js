@@ -76996,20 +76996,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_VisibilityOutlined__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_VisibilityOutlined__WEBPACK_IMPORTED_MODULE_13__);
 /* harmony import */ var _material_ui_icons_CheckCircleOutline__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/icons/CheckCircleOutline */ "./node_modules/@material-ui/icons/CheckCircleOutline.js");
 /* harmony import */ var _material_ui_icons_CheckCircleOutline__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CheckCircleOutline__WEBPACK_IMPORTED_MODULE_14__);
-/* harmony import */ var _material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/icons/Block */ "./node_modules/@material-ui/icons/Block.js");
-/* harmony import */ var _material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_15__);
-/* harmony import */ var _material_ui_icons_DonutLarge__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/icons/DonutLarge */ "./node_modules/@material-ui/icons/DonutLarge.js");
-/* harmony import */ var _material_ui_icons_DonutLarge__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_DonutLarge__WEBPACK_IMPORTED_MODULE_16__);
-/* harmony import */ var _material_ui_icons_ContactMail__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @material-ui/icons/ContactMail */ "./node_modules/@material-ui/icons/ContactMail.js");
-/* harmony import */ var _material_ui_icons_ContactMail__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ContactMail__WEBPACK_IMPORTED_MODULE_17__);
-/* harmony import */ var _api_Auth__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ../../../api/Auth */ "./src/api/Auth.ts");
-/* harmony import */ var _reviewer_common_types__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../reviewer/common/types */ "./src/views/reviewer/common/types.ts");
-/* harmony import */ var _reviewer_common_NestedMenuItem__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../reviewer/common/NestedMenuItem */ "./src/views/reviewer/common/NestedMenuItem.tsx");
+/* harmony import */ var _material_ui_icons_RestorePage__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/icons/RestorePage */ "./node_modules/@material-ui/icons/RestorePage.js");
+/* harmony import */ var _material_ui_icons_RestorePage__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_RestorePage__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/icons/Block */ "./node_modules/@material-ui/icons/Block.js");
+/* harmony import */ var _material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _material_ui_icons_DonutLarge__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @material-ui/icons/DonutLarge */ "./node_modules/@material-ui/icons/DonutLarge.js");
+/* harmony import */ var _material_ui_icons_DonutLarge__WEBPACK_IMPORTED_MODULE_17___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_DonutLarge__WEBPACK_IMPORTED_MODULE_17__);
+/* harmony import */ var _material_ui_icons_ContactMail__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @material-ui/icons/ContactMail */ "./node_modules/@material-ui/icons/ContactMail.js");
+/* harmony import */ var _material_ui_icons_ContactMail__WEBPACK_IMPORTED_MODULE_18___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_ContactMail__WEBPACK_IMPORTED_MODULE_18__);
+/* harmony import */ var _api_Auth__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ../../../api/Auth */ "./src/api/Auth.ts");
+/* harmony import */ var _reviewer_common_types__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ../../reviewer/common/types */ "./src/views/reviewer/common/types.ts");
+/* harmony import */ var _reviewer_common_NestedMenuItem__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ../../reviewer/common/NestedMenuItem */ "./src/views/reviewer/common/NestedMenuItem.tsx");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
 var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\ReviewRequestMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
+
 
 
 
@@ -77037,7 +77040,7 @@ function ReviewRequestMenu(_ref) {
     reviewRequest,
     onDeleteReviewRequest
   } = _ref;
-  const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_18__["default"]().user;
+  const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_19__["default"]().user;
   const [anchorEl, setAnchorEl] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
   const {
@@ -77271,7 +77274,7 @@ function ReviewRequestMenu(_ref) {
       lineNumber: 288,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ContactMail__WEBPACK_IMPORTED_MODULE_17___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_ContactMail__WEBPACK_IMPORTED_MODULE_18___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -77324,7 +77327,7 @@ function ReviewRequestMenu(_ref) {
       lineNumber: 300,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_DonutLarge__WEBPACK_IMPORTED_MODULE_16___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_DonutLarge__WEBPACK_IMPORTED_MODULE_17___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -77343,6 +77346,33 @@ function ReviewRequestMenu(_ref) {
       columnNumber: 11
     }
   }, "Generate Progress Report (.md)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
+    component: _material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Link"],
+    href: `/reviewer/clients/request/${reviewRequest.id}/registration-report`,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 311,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_RestorePage__WEBPACK_IMPORTED_MODULE_15___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 317,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+    variant: "inherit",
+    style: {
+      marginLeft: 10
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 318,
+      columnNumber: 11
+    }
+  }, "Generate Registration Report (.docx)")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
     component: _material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Link"],
     href: `/reviewer/clients/request/${reviewRequest.id}/documents`,
     __self: this,
@@ -77369,7 +77399,7 @@ function ReviewRequestMenu(_ref) {
       lineNumber: 329,
       columnNumber: 11
     }
-  }, "Download Documents")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_NestedMenuItem__WEBPACK_IMPORTED_MODULE_20__["default"], {
+  }, "Download Documents")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_NestedMenuItem__WEBPACK_IMPORTED_MODULE_21__["default"], {
     label: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_AssignmentTurnedIn__WEBPACK_IMPORTED_MODULE_11___default.a, {
       __self: this,
       __source: {
@@ -77397,7 +77427,7 @@ function ReviewRequestMenu(_ref) {
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
-    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_19__["ReviewRequestStatus"].DRAFT),
+    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_20__["ReviewRequestStatus"].DRAFT),
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -77423,7 +77453,7 @@ function ReviewRequestMenu(_ref) {
       columnNumber: 13
     }
   }, "DRAFT")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
-    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_19__["ReviewRequestStatus"].SUBMITTED),
+    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_20__["ReviewRequestStatus"].SUBMITTED),
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -77449,7 +77479,7 @@ function ReviewRequestMenu(_ref) {
       columnNumber: 13
     }
   }, "SUBMITTED")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
-    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_19__["ReviewRequestStatus"].IN_REVIEW),
+    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_20__["ReviewRequestStatus"].IN_REVIEW),
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -77475,7 +77505,7 @@ function ReviewRequestMenu(_ref) {
       columnNumber: 13
     }
   }, "IN REVIEW")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
-    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_19__["ReviewRequestStatus"].APPROVED),
+    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_20__["ReviewRequestStatus"].APPROVED),
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -77501,14 +77531,14 @@ function ReviewRequestMenu(_ref) {
       columnNumber: 13
     }
   }, "APPROVED")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["MenuItem"], {
-    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_19__["ReviewRequestStatus"].REJECTED),
+    onClick: () => updateStatus(reviewRequest.id, _reviewer_common_types__WEBPACK_IMPORTED_MODULE_20__["ReviewRequestStatus"].REJECTED),
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 396,
       columnNumber: 11
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_15___default.a, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Block__WEBPACK_IMPORTED_MODULE_16___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,

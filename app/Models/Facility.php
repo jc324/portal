@@ -58,4 +58,9 @@ class Facility extends Model
     {
         return $this->hasMany(FacilityDocument::class);
     }
+
+    public function category()
+    {
+        return $this->hasOne(FacilityCategories::class);
+    }
 }

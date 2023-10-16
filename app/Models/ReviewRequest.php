@@ -52,6 +52,11 @@ class ReviewRequest extends Model
     //     return $this->belongsTo(User::class);
     // }
 
+    public function facility()
+    {
+        return $this->hasOne(Facility::class);
+    }
+
     public function facilities()
     {
         return $this->hasMany(Facility::class);

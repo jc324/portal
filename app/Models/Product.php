@@ -9,6 +9,7 @@ use App\Models\Client;
 use App\Models\Facility;
 use App\Models\Ingredient;
 use App\Models\ProductDocument;
+use App\ProductCategories;
 
 class Product extends Model
 {
@@ -64,5 +65,10 @@ class Product extends Model
     public function documents()
     {
         return $this->hasMany(ProductDocument::class);
+    }
+
+    public function category()
+    {
+        return $this->hasOne(ProductCategories::class);
     }
 }
