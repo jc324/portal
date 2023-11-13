@@ -25,6 +25,7 @@ use App\Models\FacilityCategories;
 use App\Models\Hed;
 use App\Models\Manufacturer;
 use App\Models\ProductCategories;
+use App\Models\ProductDocument;
 use App\Models\Report;
 use Illuminate\Support\Facades\Response;
 use GuzzleHttp\Client as GuzzleClient;
@@ -550,8 +551,16 @@ class ReviewRequestController extends Controller
         $facility = Facility::findOrFail($review_request->facility_id);
         $facility_category_code = FacilityCategories::find($facility->category_id)->code;
         $manufacturers = array_add_count('ManufacturersIndex', $review_request->manufacturers()->toArray());
-        // $products_arr = $review_request->products()->with('ingredients')->get()->toArray();
         $products_arr = array_map(function ($product) use (&$facility, $facility_category_code) {
+            $product['concerns'] = '';
+            try {
+                $product_docs = ProductDocument::where('product_id', $product['id'])->get();
+                foreach ($product_docs as $doc) {
+                    $product['concerns'] .= $doc->note;
+                }
+                $product['concerns'] = $product['concerns'] ? 'Concerns: ' . $product['concerns'] : '';
+            } catch (\Throwable $th) {
+            }
             try {
                 $product_category_code = ProductCategories::find($product['category_id'])->code;
                 $qualified_id = $facility_category_code . $facility->id . '_' . $product_category_code . $product['id'];
@@ -563,8 +572,14 @@ class ReviewRequestController extends Controller
             }
         }, $review_request->products()->get()->toArray());
         $products = array_rename_key('name', 'ProductsName', $products_arr);
+        $ingredients = array_map(function ($ingredient) {
+            $ingredient['VendorName'] = $ingredient['manufacturer']['name'];
+            unset($ingredient['manufacturer']);
+            return $ingredient;
+        }, $review_request->ingredients()->with('manufacturer')->get()->toArray());
+        $ingredients_unique = array_unique_by('name', $ingredients);
 
-        // return dd($products_with_ingredients_ref);
+        \PhpOffice\PhpWord\Settings::setOutputEscapingEnabled(true);
         $tp->setValues([
             'ClientName' => $client->business_name,
             'Date' => date('m/d/y'),
@@ -578,27 +593,8 @@ class ReviewRequestController extends Controller
         $tp->cloneRowAndSetValues('ManufacturersIndex', $manufacturers);
         $tp->cloneRowAndSetValues('ProductsName', $products);
         $tp->cloneBlock('ProductBlock', 0, true, false, $products_arr);
-        $tp->cloneBlock('SupplierBlock', 0, true, false, $manufacturers);
+        $tp->cloneRowAndSetValues('VendorName', $ingredients_unique);
         $tp->saveAs($file_name);
-
-        // second pass
-        // $tp = new TemplateProcessor($file_name);
-        // foreach ($products_arr as $product) {
-        //     $tableId = 'product_' . $product['id'] . '_ing_name';
-        //     $ingredients = array_map(function ($ingredient) use ($tableId) {
-        //         $ingredient[$tableId] = $ingredient['name'];
-        //         $ingredient['ing_recommendation'] = $ingredient['recommendation'];
-        //         $ingredient['ing_description'] = $ingredient['description'] ? $ingredient['description'] : '';
-        //         return $ingredient;
-        //     }, $product['ingredients']);
-        //     // $a = array_rename_key('name', 'ingredient_name', $product['ingredients']);
-        //     // $b = array_rename_key('recommendation', 'ingredient_recommendation', $a);
-        //     // $c = array_rename_key('description', 'ingredient_description', $b);
-        //     // dd($ingredients);
-        //     $tp->cloneRowAndSetValues($tableId, $ingredients);
-        //     // $tp->cloneBlock('product_' . $product['id'] . '_ingredients', 0, true, false, $ingredients);
-        // }
-        // $tp->saveAs($file_name);
 
         return response()->download($file_name)->deleteFileAfterSend(true);
     }
@@ -1333,4 +1329,17 @@ function array_rename_key(string $oldKey, string $newKey, array $arr): array
     }, $arr);
 
     return $formatted;
+}
+
+function array_unique_by($key, $array)
+{
+    $unique = array();
+
+    foreach ($array as $value) {
+        $unique[$value[$key]] = $value;
+    }
+
+    $data = array_values($unique);
+
+    return $data;
 }
