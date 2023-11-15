@@ -4138,13 +4138,11 @@ let items = [{
   href: "/client/requests",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_5__["Users"],
   title: "Registrations"
-},
-// {
-//   href: "/client/documents",
-//   icon: FolderIcon,
-//   title: "Documents",
-// },
-{
+}, {
+  href: "/client/documents",
+  icon: react_feather__WEBPACK_IMPORTED_MODULE_5__["Folder"],
+  title: "Documents"
+}, {
   href: "/client/facilities",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_5__["MapPin"],
   title: "Facilities"
@@ -6645,19 +6643,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_reviewer_profile_index__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./views/reviewer/profile/index */ "./src/views/reviewer/profile/index.tsx");
 /* harmony import */ var _views_client_dashboard_DashboardView__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./views/client/dashboard/DashboardView */ "./src/views/client/dashboard/DashboardView/index.tsx");
 /* harmony import */ var _views_client_requests__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./views/client/requests */ "./src/views/client/requests/index.js");
-/* harmony import */ var _views_client_help__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./views/client/help */ "./src/views/client/help/index.js");
-/* harmony import */ var _views_client_facilities__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./views/client/facilities */ "./src/views/client/facilities/index.js");
-/* harmony import */ var _views_client_products__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./views/client/products */ "./src/views/client/products/index.js");
-/* harmony import */ var _views_client_heds__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./views/client/heds */ "./src/views/client/heds/index.js");
-/* harmony import */ var _views_client_requests_request__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./views/client/requests/request */ "./src/views/client/requests/request/index.tsx");
-/* harmony import */ var _views_client_requests_request_Corrections__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./views/client/requests/request/Corrections */ "./src/views/client/requests/request/Corrections/index.tsx");
-/* harmony import */ var _views_client_requests_request_RequestCertificates__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./views/client/requests/request/RequestCertificates */ "./src/views/client/requests/request/RequestCertificates.tsx");
-/* harmony import */ var _views_client_reports__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./views/client/reports */ "./src/views/client/reports/index.js");
-/* harmony import */ var _views_client_reports_audit__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./views/client/reports/audit */ "./src/views/client/reports/audit/index.js");
-/* harmony import */ var _views_client_reports_review__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./views/client/reports/review */ "./src/views/client/reports/review/index.js");
-/* harmony import */ var _views_client_certificates__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./views/client/certificates */ "./src/views/client/certificates/index.js");
-/* harmony import */ var _views_client_profile_index__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./views/client/profile/index */ "./src/views/client/profile/index.tsx");
-/* harmony import */ var _views_client_profile_edit_index__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./views/client/profile/edit/index */ "./src/views/client/profile/edit/index.tsx");
+/* harmony import */ var _views_client_documents__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./views/client/documents */ "./src/views/client/documents/index.js");
+/* harmony import */ var _views_client_help__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./views/client/help */ "./src/views/client/help/index.js");
+/* harmony import */ var _views_client_facilities__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./views/client/facilities */ "./src/views/client/facilities/index.js");
+/* harmony import */ var _views_client_products__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./views/client/products */ "./src/views/client/products/index.js");
+/* harmony import */ var _views_client_heds__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./views/client/heds */ "./src/views/client/heds/index.js");
+/* harmony import */ var _views_client_requests_request__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./views/client/requests/request */ "./src/views/client/requests/request/index.tsx");
+/* harmony import */ var _views_client_requests_request_Corrections__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./views/client/requests/request/Corrections */ "./src/views/client/requests/request/Corrections/index.tsx");
+/* harmony import */ var _views_client_requests_request_RequestCertificates__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./views/client/requests/request/RequestCertificates */ "./src/views/client/requests/request/RequestCertificates.tsx");
+/* harmony import */ var _views_client_reports__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./views/client/reports */ "./src/views/client/reports/index.js");
+/* harmony import */ var _views_client_reports_audit__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./views/client/reports/audit */ "./src/views/client/reports/audit/index.js");
+/* harmony import */ var _views_client_reports_review__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./views/client/reports/review */ "./src/views/client/reports/review/index.js");
+/* harmony import */ var _views_client_certificates__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./views/client/certificates */ "./src/views/client/certificates/index.js");
+/* harmony import */ var _views_client_profile_index__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./views/client/profile/index */ "./src/views/client/profile/index.tsx");
+/* harmony import */ var _views_client_profile_edit_index__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./views/client/profile/edit/index */ "./src/views/client/profile/edit/index.tsx");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
@@ -6709,6 +6708,7 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\s
 
 
 // Client screens
+
 
 
 
@@ -7146,11 +7146,19 @@ const routes = [{
         columnNumber: 36
       }
     })
-  },
-  // { path: "documents", element: <ClientDocumentsView /> },
-  {
+  }, {
+    path: "documents",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_documents__WEBPACK_IMPORTED_MODULE_38__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 152,
+        columnNumber: 37
+      }
+    })
+  }, {
     path: "help",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_help__WEBPACK_IMPORTED_MODULE_38__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_help__WEBPACK_IMPORTED_MODULE_39__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7160,7 +7168,7 @@ const routes = [{
     })
   }, {
     path: "facilities",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_facilities__WEBPACK_IMPORTED_MODULE_39__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_facilities__WEBPACK_IMPORTED_MODULE_40__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7170,7 +7178,7 @@ const routes = [{
     })
   }, {
     path: "products",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_products__WEBPACK_IMPORTED_MODULE_40__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_products__WEBPACK_IMPORTED_MODULE_41__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7180,7 +7188,7 @@ const routes = [{
     })
   }, {
     path: "heds",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_heds__WEBPACK_IMPORTED_MODULE_41__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_heds__WEBPACK_IMPORTED_MODULE_42__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7190,7 +7198,7 @@ const routes = [{
     })
   }, {
     path: "request/:id",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request__WEBPACK_IMPORTED_MODULE_42__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request__WEBPACK_IMPORTED_MODULE_43__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7200,7 +7208,7 @@ const routes = [{
     })
   }, {
     path: "request/:id/corrections",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request_Corrections__WEBPACK_IMPORTED_MODULE_43__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request_Corrections__WEBPACK_IMPORTED_MODULE_44__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7210,7 +7218,7 @@ const routes = [{
     })
   }, {
     path: "request/:id/certificates",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request_RequestCertificates__WEBPACK_IMPORTED_MODULE_44__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request_RequestCertificates__WEBPACK_IMPORTED_MODULE_45__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7220,7 +7228,7 @@ const routes = [{
     })
   }, {
     path: "reports",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports__WEBPACK_IMPORTED_MODULE_45__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports__WEBPACK_IMPORTED_MODULE_46__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7231,7 +7239,7 @@ const routes = [{
     // children: [],
   }, {
     path: "reports/document",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_review__WEBPACK_IMPORTED_MODULE_47__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_review__WEBPACK_IMPORTED_MODULE_48__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7241,7 +7249,7 @@ const routes = [{
     })
   }, {
     path: "reports/audit",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_audit__WEBPACK_IMPORTED_MODULE_46__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_audit__WEBPACK_IMPORTED_MODULE_47__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7251,7 +7259,7 @@ const routes = [{
     })
   }, {
     path: "certificates",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_certificates__WEBPACK_IMPORTED_MODULE_48__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_certificates__WEBPACK_IMPORTED_MODULE_49__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7261,7 +7269,7 @@ const routes = [{
     })
   }, {
     path: "profile",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_profile_index__WEBPACK_IMPORTED_MODULE_49__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_profile_index__WEBPACK_IMPORTED_MODULE_50__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7271,7 +7279,7 @@ const routes = [{
     })
   }, {
     path: "profile/edit",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_profile_edit_index__WEBPACK_IMPORTED_MODULE_50__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_profile_edit_index__WEBPACK_IMPORTED_MODULE_51__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7306,7 +7314,7 @@ const routes = [{
 // necessary to wrap, to prevent link cache from same comp
 // eg: loading this from /client/request/:id
 function ClientRequestViewNew() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request__WEBPACK_IMPORTED_MODULE_42__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request__WEBPACK_IMPORTED_MODULE_43__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -29590,6 +29598,2669 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
 var _c, _c2;
 __webpack_require__.$Refresh$.register(_c, "Dashboard");
 __webpack_require__.$Refresh$.register(_c2, "AccessBlocker");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/client/documents/DocumentMenu.tsx":
+/*!*****************************************************!*\
+  !*** ./src/views/client/documents/DocumentMenu.tsx ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return DocumentMenu; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/MoreVert */ "./node_modules/@material-ui/icons/MoreVert.js");
+/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/CloudDownload */ "./node_modules/@material-ui/icons/CloudDownload.js");
+/* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/Delete */ "./node_modules/@material-ui/icons/Delete.js");
+/* harmony import */ var _material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\DocumentMenu.tsx",
+  _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+
+
+// import { Document } from "../../common/types";
+
+function DocumentMenu(_ref) {
+  _s();
+  let {
+    document,
+    onDeleteDocument
+  } = _ref;
+  const [anchorEl, setAnchorEl] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    enqueueSnackbar
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"])();
+  const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
+  const handleClick = event => {
+    setAnchorEl(event.currentTarget);
+  };
+  const deleteDocument = () => {
+    const answer = window.confirm("Are you sure you would like to delete this document?");
+    if (!answer) return;
+    setLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.delete(`/api/client/documents/${document.id}`).then(async response => {
+      setLoading(false);
+      if (response.status == 200 || response.status == 201) {
+        onDeleteDocument(document.id);
+        enqueueSnackbar("Document deleted successfully.", {
+          variant: "success"
+        });
+      } else enqueueSnackbar("Failed to delete document.", {
+        variant: "error"
+      });
+    }).catch(e => {
+      console.error(e);
+      setLoading(false);
+      enqueueSnackbar("Failed to delete document. Check your network connection and try again.", {
+        variant: "error"
+      });
+    });
+    setAnchorEl(null);
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
+    edge: "end",
+    size: "small",
+    "aria-controls": "client-menu",
+    "aria-haspopup": "true",
+    onClick: handleClick,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 76,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 83,
+      columnNumber: 9
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Menu"], {
+    id: "client-menu",
+    anchorEl: anchorEl,
+    keepMounted: true,
+    open: Boolean(anchorEl),
+    onClose: () => setAnchorEl(null),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85,
+      columnNumber: 7
+    }
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["LinearProgress"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 92,
+      columnNumber: 21
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
+    component: _material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Link"],
+    href: `/${document.path}`,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 93,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_5___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 94,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+    variant: "inherit",
+    style: {
+      marginLeft: 10
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 95,
+      columnNumber: 11
+    }
+  }, "Download")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
+    onClick: deleteDocument,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Delete__WEBPACK_IMPORTED_MODULE_6___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 100,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+    variant: "inherit",
+    style: {
+      marginLeft: 10
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101,
+      columnNumber: 11
+    }
+  }, "Delete"))));
+}
+_s(DocumentMenu, "zvSaOP1yWrte1ZkMurojDOus2/0=", false, function () {
+  return [notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"]];
+});
+_c = DocumentMenu;
+var _c;
+__webpack_require__.$Refresh$.register(_c, "DocumentMenu");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/client/documents/FacilityDocs.tsx":
+/*!*****************************************************!*\
+  !*** ./src/views/client/documents/FacilityDocs.tsx ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return FacilityDocs; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_lab__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/lab */ "./node_modules/@material-ui/lab/esm/index.js");
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
+/* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/CloudDownload */ "./node_modules/@material-ui/icons/CloudDownload.js");
+/* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\FacilityDocs.tsx",
+  _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+function FacilityDocs() {
+  _s();
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
+  const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/facility/documents`).then(async response => {
+      setLoading(false);
+      // console.log(response.data);
+      setDocs(response.data.reverse());
+    }).catch(e => {
+      // @TODO handle
+      console.error(e);
+      setLoading(false);
+    });
+  }, []);
+  return loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 17
+    }
+  }) || docs.length && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    width: "100%",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Table"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableHead"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 15
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 17
+    }
+  }, "ID")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 17
+    }
+  }, "Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    sortDirection: "desc",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tooltip"], {
+    enterDelay: 300,
+    title: "Sort",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableSortLabel"], {
+    active: true,
+    direction: "desc",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 19
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 21
+    }
+  }, "Created")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75,
+      columnNumber: 15
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableBody"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78,
+      columnNumber: 11
+    }
+  }, docs.map((doc, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
+    hover: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_5__["FileText"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82,
+      columnNumber: 19
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85,
+      columnNumber: 19
+    }
+  }, doc.id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Chip"], {
+    label: doc.type,
+    size: "small",
+    color: "secondary",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88,
+      columnNumber: 19
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90,
+      columnNumber: 17
+    }
+  }, moment__WEBPACK_IMPORTED_MODULE_2___default()(doc.created_at).format("MM/DD/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+    startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 104,
+        columnNumber: 32
+      }
+    }),
+    variant: "contained",
+    href: `/${doc.path}`,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103,
+      columnNumber: 19
+    }
+  }, "Download"))))))) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    flex: 1,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_4__["Alert"], {
+    severity: "info",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118,
+      columnNumber: 9
+    }
+  }, "You currently have no docs. Document Docs will show here once the reviewer adds them."));
+}
+_s(FacilityDocs, "LPiVTm26nLyLgCdY+dbpI96fGHg=");
+_c = FacilityDocs;
+var _c;
+__webpack_require__.$Refresh$.register(_c, "FacilityDocs");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/client/documents/ManufacturerDocs.tsx":
+/*!*********************************************************!*\
+  !*** ./src/views/client/documents/ManufacturerDocs.tsx ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ManufacturerDocs; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_lab__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/lab */ "./node_modules/@material-ui/lab/esm/index.js");
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
+/* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/CloudDownload */ "./node_modules/@material-ui/icons/CloudDownload.js");
+/* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\ManufacturerDocs.tsx",
+  _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+function ManufacturerDocs() {
+  _s();
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
+  const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/manufacturer/documents`).then(async response => {
+      setLoading(false);
+      // console.log(response.data);
+      setDocs(response.data.reverse());
+    }).catch(e => {
+      // @TODO handle
+      console.error(e);
+      setLoading(false);
+    });
+  }, []);
+  return loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 17
+    }
+  }) || docs.length && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    width: "100%",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Table"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableHead"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 15
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 17
+    }
+  }, "ID")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 17
+    }
+  }, "Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    sortDirection: "desc",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tooltip"], {
+    enterDelay: 300,
+    title: "Sort",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableSortLabel"], {
+    active: true,
+    direction: "desc",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 19
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 21
+    }
+  }, "Created")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75,
+      columnNumber: 15
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableBody"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78,
+      columnNumber: 11
+    }
+  }, docs.map((doc, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
+    hover: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_5__["FileText"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82,
+      columnNumber: 19
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85,
+      columnNumber: 19
+    }
+  }, doc.id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Chip"], {
+    label: doc.type,
+    size: "small",
+    color: "secondary",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88,
+      columnNumber: 19
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90,
+      columnNumber: 17
+    }
+  }, moment__WEBPACK_IMPORTED_MODULE_2___default()(doc.created_at).format("MM/DD/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+    startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 104,
+        columnNumber: 32
+      }
+    }),
+    variant: "contained",
+    href: `/${doc.path}`,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103,
+      columnNumber: 19
+    }
+  }, "Download"))))))) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    flex: 1,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_4__["Alert"], {
+    severity: "info",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118,
+      columnNumber: 9
+    }
+  }, "You currently have no docs. Document Docs will show here once the reviewer adds them."));
+}
+_s(ManufacturerDocs, "LPiVTm26nLyLgCdY+dbpI96fGHg=");
+_c = ManufacturerDocs;
+var _c;
+__webpack_require__.$Refresh$.register(_c, "ManufacturerDocs");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/client/documents/ProductDocs.tsx":
+/*!****************************************************!*\
+  !*** ./src/views/client/documents/ProductDocs.tsx ***!
+  \****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ProductDocs; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_lab__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/lab */ "./node_modules/@material-ui/lab/esm/index.js");
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
+/* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/CloudDownload */ "./node_modules/@material-ui/icons/CloudDownload.js");
+/* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\ProductDocs.tsx",
+  _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+function ProductDocs() {
+  _s();
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
+  const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/product/documents`).then(async response => {
+      setLoading(false);
+      // console.log(response.data);
+      setDocs(response.data.reverse());
+    }).catch(e => {
+      // @TODO handle
+      console.error(e);
+      setLoading(false);
+    });
+  }, []);
+  return loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 17
+    }
+  }) || docs.length && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    width: "100%",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Table"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableHead"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 15
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 17
+    }
+  }, "ID")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 17
+    }
+  }, "Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    sortDirection: "desc",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tooltip"], {
+    enterDelay: 300,
+    title: "Sort",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableSortLabel"], {
+    active: true,
+    direction: "desc",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 19
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 21
+    }
+  }, "Created")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75,
+      columnNumber: 15
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableBody"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78,
+      columnNumber: 11
+    }
+  }, docs.map((doc, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
+    hover: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_5__["FileText"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82,
+      columnNumber: 19
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85,
+      columnNumber: 19
+    }
+  }, doc.id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Chip"], {
+    label: doc.type,
+    size: "small",
+    color: "secondary",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88,
+      columnNumber: 19
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90,
+      columnNumber: 17
+    }
+  }, moment__WEBPACK_IMPORTED_MODULE_2___default()(doc.created_at).format("MM/DD/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+    startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 104,
+        columnNumber: 32
+      }
+    }),
+    variant: "contained",
+    href: `/${doc.path}`,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103,
+      columnNumber: 19
+    }
+  }, "Download"))))))) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    flex: 1,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_4__["Alert"], {
+    severity: "info",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118,
+      columnNumber: 9
+    }
+  }, "You currently have no docs. Document Docs will show here once the reviewer adds them."));
+}
+_s(ProductDocs, "LPiVTm26nLyLgCdY+dbpI96fGHg=");
+_c = ProductDocs;
+var _c;
+__webpack_require__.$Refresh$.register(_c, "ProductDocs");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/client/documents/RecentDocs.tsx":
+/*!***************************************************!*\
+  !*** ./src/views/client/documents/RecentDocs.tsx ***!
+  \***************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return RecentDocs; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_lab__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/lab */ "./node_modules/@material-ui/lab/esm/index.js");
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
+/* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/CloudDownload */ "./node_modules/@material-ui/icons/CloudDownload.js");
+/* harmony import */ var _material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6__);
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\RecentDocs.tsx",
+  _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+function RecentDocs() {
+  _s();
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
+  const [docs, setDocs] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/documents/recent`).then(async response => {
+      setLoading(false);
+      // console.log(response.data);
+      setDocs(response.data);
+    }).catch(e => {
+      // @TODO handle
+      console.error(e);
+      setLoading(false);
+    });
+  }, []);
+  return loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 17
+    }
+  }) || docs.length && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    width: "100%",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 50,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Table"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 51,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableHead"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 52,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 53,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 54,
+      columnNumber: 15
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 17
+    }
+  }, "ID")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 59,
+      columnNumber: 17
+    }
+  }, "Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    sortDirection: "desc",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tooltip"], {
+    enterDelay: 300,
+    title: "Sort",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableSortLabel"], {
+    active: true,
+    direction: "desc",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 19
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 21
+    }
+  }, "Created")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 75,
+      columnNumber: 15
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableBody"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78,
+      columnNumber: 11
+    }
+  }, docs.map((doc, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
+    hover: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 80,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_5__["FileText"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82,
+      columnNumber: 19
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85,
+      columnNumber: 19
+    }
+  }, doc.id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Chip"], {
+    label: doc.type,
+    size: "small",
+    color: "secondary",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88,
+      columnNumber: 19
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90,
+      columnNumber: 17
+    }
+  }, moment__WEBPACK_IMPORTED_MODULE_2___default()(doc.created_at).format("MM/DD/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+    startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 104,
+        columnNumber: 32
+      }
+    }),
+    variant: "contained",
+    href: `/${doc.path}`,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103,
+      columnNumber: 19
+    }
+  }, "Download"))))))) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    flex: 1,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_4__["Alert"], {
+    severity: "info",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118,
+      columnNumber: 9
+    }
+  }, "You currently have no docs. Document Docs will show here once the reviewer adds them."));
+}
+_s(RecentDocs, "LPiVTm26nLyLgCdY+dbpI96fGHg=");
+_c = RecentDocs;
+var _c;
+__webpack_require__.$Refresh$.register(_c, "RecentDocs");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/client/documents/Results.tsx":
+/*!************************************************!*\
+  !*** ./src/views/client/documents/Results.tsx ***!
+  \************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return Reports; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _FacilityDocs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./FacilityDocs */ "./src/views/client/documents/FacilityDocs.tsx");
+/* harmony import */ var _ProductDocs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./ProductDocs */ "./src/views/client/documents/ProductDocs.tsx");
+/* harmony import */ var _ManufacturerDocs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ManufacturerDocs */ "./src/views/client/documents/ManufacturerDocs.tsx");
+/* harmony import */ var _RecentDocs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./RecentDocs */ "./src/views/client/documents/RecentDocs.tsx");
+/* harmony import */ var _UploadedDocs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./UploadedDocs */ "./src/views/client/documents/UploadedDocs.tsx");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\Results.tsx",
+  _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+function Reports() {
+  _s();
+  const [value, setValue] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardHeader"], {
+    title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+      children: "Document Repository",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 26
+      }
+    }),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Divider"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["AppBar"], {
+    position: "static",
+    color: "default",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tabs"], {
+    value: value,
+    onChange: handleChange
+    // variant="scrollable"
+    // scrollButtons="auto"
+    ,
+    indicatorColor: "primary",
+    textColor: "primary",
+    centered: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tab"], Object.assign({
+    label: "Recent"
+  }, a11yProps(0), {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tab"], Object.assign({
+    label: "Facility"
+  }, a11yProps(0), {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 41,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tab"], Object.assign({
+    label: "Product"
+  }, a11yProps(0), {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tab"], Object.assign({
+    label: "Manufacturer"
+  }, a11yProps(0), {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tab"], Object.assign({
+    label: "Uploaded"
+  }, a11yProps(0), {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 44,
+      columnNumber: 11
+    }
+  })), " ")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    p: 3,
+    minWidth: 800,
+    style: {
+      height: "calc(100vh - 214px)",
+      overflowY: "auto",
+      display: "flex",
+      justifyContent: "center"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 47,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
+    value: value,
+    index: 0,
+    style: {
+      width: "100%"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_RecentDocs__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
+    value: value,
+    index: 1,
+    style: {
+      width: "100%"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 60,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_FacilityDocs__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 61,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
+    value: value,
+    index: 2,
+    style: {
+      width: "100%"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 63,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductDocs__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 64,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
+    value: value,
+    index: 3,
+    style: {
+      width: "100%"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ManufacturerDocs__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
+    value: value,
+    index: 4,
+    style: {
+      width: "100%"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 69,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_UploadedDocs__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 70,
+      columnNumber: 11
+    }
+  }))));
+}
+_s(Reports, "qPBOvRc2Co1iWTsdTL0g7j/rpjU=");
+_c = Reports;
+function TabPanel(props) {
+  const {
+    children,
+    value,
+    index,
+    ...other
+  } = props;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", Object.assign({
+    role: "tabpanel",
+    hidden: value !== index,
+    id: `simple-tabpanel-${index}`,
+    "aria-labelledby": `simple-tab-${index}`
+  }, other, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81,
+      columnNumber: 5
+    }
+  }), value === index && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88,
+      columnNumber: 27
+    }
+  }, children));
+}
+_c2 = TabPanel;
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    "aria-controls": `simple-tabpanel-${index}`
+  };
+}
+var _c, _c2;
+__webpack_require__.$Refresh$.register(_c, "Reports");
+__webpack_require__.$Refresh$.register(_c2, "TabPanel");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/client/documents/UploadedDocs.tsx":
+/*!*****************************************************!*\
+  !*** ./src/views/client/documents/UploadedDocs.tsx ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return UploadedDocs; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_lab__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/lab */ "./node_modules/@material-ui/lab/esm/index.js");
+/* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/icons/Add */ "./node_modules/@material-ui/icons/Add.js");
+/* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var _reviewer_common_LoadingButton__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../reviewer/common/LoadingButton */ "./src/views/reviewer/common/LoadingButton.tsx");
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../../../config */ "./src/config.ts");
+/* harmony import */ var _DocumentMenu__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./DocumentMenu */ "./src/views/client/documents/DocumentMenu.tsx");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\UploadedDocs.tsx",
+  _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+
+
+
+
+function UploadedDocs() {
+  _s();
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
+  const [documents, setDocuments] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/documents/uploaded`).then(async response => {
+      setLoading(false);
+      console.log(response.data);
+      setDocuments(response.data.reverse());
+    }).catch(e => {
+      // @TODO handle
+      console.error(e);
+      setLoading(false);
+    });
+  }, []);
+
+  // file related
+  const [docUploadLoading, setDocUploadLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    enqueueSnackbar
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"])();
+  const [doc, setDoc] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+  const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+  const documentCopy = document && Object.assign({}, document) || null;
+  const handleDocumentUploadButton = () => {
+    // @ts-ignore
+    if (inputRef) inputRef.current.click();
+  };
+  const handleDocumentUpload = e => {
+    const _doc = e.target.files[0];
+    if (!_doc) return;
+    if (_doc.size > _config__WEBPACK_IMPORTED_MODULE_9__["MAX_ALLOWED_SIZE"]) {
+      alert("File exceeds the maximum allowed size of 10 MB.");
+      return;
+    }
+    setDocUploadLoading(true);
+    const formData = new FormData();
+    formData.append("document", _doc);
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/documents/add`, formData, {
+      headers: {
+        "Content-Type": "multipart/form-data"
+      }
+    }).then(async response => {
+      setDocUploadLoading(false);
+      if (response.status == 200 || response.status == 201) {
+        // console.log(response.data);
+        // setDoc(response.data);
+        // setDocument(response.data);
+        setDoc(response.data);
+        setDocuments([response.data, ...documents]);
+        enqueueSnackbar(`Uploaded document successfully.`, {
+          variant: "success"
+        });
+      } else {
+        console.log(response);
+        enqueueSnackbar(`Document upload failed.`, {
+          variant: "error"
+        });
+      }
+    }).catch(e => {
+      console.error(e);
+      setDocUploadLoading(false);
+      enqueueSnackbar(`Document upload failed.`, {
+        variant: "error"
+      });
+    });
+  };
+  const handleDocumentDelete = id => {
+    setDocuments(documents.filter(r => r.id != id));
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    style: {
+      height: "calc(100vh - 317px)",
+      display: "flex",
+      justifyContent: "center",
+      overflowX: "auto"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 115,
+      columnNumber: 7
+    }
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123,
+      columnNumber: 22
+    }
+  }) || documents.length && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    width: "100%",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Table"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableHead"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 128,
+      columnNumber: 19
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 129,
+      columnNumber: 21
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 130,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 131,
+      columnNumber: 23
+    }
+  }, "ID")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 133,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134,
+      columnNumber: 23
+    }
+  }, "Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    sortDirection: "desc",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 136,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tooltip"], {
+    enterDelay: 300,
+    title: "Sort",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 137,
+      columnNumber: 23
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableSortLabel"], {
+    active: true,
+    direction: "desc",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 138,
+      columnNumber: 25
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 139,
+      columnNumber: 27
+    }
+  }, "Created")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 150,
+      columnNumber: 21
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableBody"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 153,
+      columnNumber: 17
+    }
+  }, documents.map((document, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableRow"], {
+    hover: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 155,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 156,
+      columnNumber: 23
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_6__["FileText"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 157,
+      columnNumber: 25
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 159,
+      columnNumber: 23
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 160,
+      columnNumber: 25
+    }
+  }, document.id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 162,
+      columnNumber: 23
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Chip"]
+  // label={document.type}
+  , {
+    label: "NONE",
+    size: "small",
+    color: "secondary",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 163,
+      columnNumber: 25
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 170,
+      columnNumber: 23
+    }
+  }, moment__WEBPACK_IMPORTED_MODULE_2___default()(document.created_at).format("DD/MM/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 182,
+      columnNumber: 23
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_DocumentMenu__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    document: document,
+    onDeleteDocument: handleDocumentDelete,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 183,
+      columnNumber: 25
+    }
+  }))))))) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    flex: 1,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 194,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_4__["Alert"], {
+    severity: "info",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 195,
+      columnNumber: 15
+    }
+  }, "This request has no documents. Use the control below to add some."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 202,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    display: "flex",
+    justifyContent: "flex-end",
+    pt: 2,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 203,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    ref: inputRef,
+    type: "file",
+    name: "file",
+    id: Math.random().toString(),
+    accept: "application/msword, application/pdf",
+    "data-title": "Upload"
+    // multiple
+    // data-multiple-caption="{count} files selected"
+    ,
+    onChange: handleDocumentUpload,
+    style: {
+      display: "none"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 204,
+      columnNumber: 9
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_LoadingButton__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    loading: docUploadLoading,
+    done: false,
+    onClick: handleDocumentUploadButton,
+    startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_5___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 220,
+        columnNumber: 22
+      }
+    }),
+    variant: "contained",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 216,
+      columnNumber: 9
+    }
+  }, "Document")));
+}
+_s(UploadedDocs, "1wg0/4AlKIuBQQBuGbU5TnqrzYQ=", false, function () {
+  return [notistack__WEBPACK_IMPORTED_MODULE_7__["useSnackbar"]];
+});
+_c = UploadedDocs;
+var _c;
+__webpack_require__.$Refresh$.register(_c, "UploadedDocs");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/client/documents/index.js":
+/*!*********************************************!*\
+  !*** ./src/views/client/documents/index.js ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/Page */ "./src/components/Page.js");
+/* harmony import */ var _Results__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./Results */ "./src/views/client/documents/Results.tsx");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\index.js",
+  _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
+  root: {
+    backgroundColor: theme.palette.background.dark,
+    minHeight: "100%",
+    paddingBottom: theme.spacing(3),
+    paddingTop: theme.spacing(3)
+  }
+}));
+const ReviewListView = () => {
+  _s();
+  const classes = useStyles();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    className: classes.root,
+    title: "Documents",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+    maxWidth: "md",
+    style: {
+      marginLeft: 0
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    container: true,
+    spacing: 2,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    md: 12,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Results__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 13
+    }
+  })))));
+};
+_s(ReviewListView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
+  return [useStyles];
+});
+_c = ReviewListView;
+/* harmony default export */ __webpack_exports__["default"] = (ReviewListView);
+var _c;
+__webpack_require__.$Refresh$.register(_c, "ReviewListView");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -67004,7 +69675,7 @@ function UploadDocumentListItem(_ref) {
     }
   }, "Update Document")), (file || document) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
     component: _material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Link"],
-    href: `/client/facility/document/${document === null || document === void 0 ? void 0 : document.id}`,
+    href: `/${document === null || document === void 0 ? void 0 : document.path}`,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -67015,7 +69686,7 @@ function UploadDocumentListItem(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 349,
+      lineNumber: 346,
       columnNumber: 19
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
@@ -67026,7 +69697,7 @@ function UploadDocumentListItem(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 350,
+      lineNumber: 347,
       columnNumber: 19
     }
   }, "Download Document")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
@@ -67034,14 +69705,14 @@ function UploadDocumentListItem(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 355,
+      lineNumber: 352,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_DeleteForever__WEBPACK_IMPORTED_MODULE_9___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 356,
+      lineNumber: 353,
       columnNumber: 17
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
@@ -67052,7 +69723,7 @@ function UploadDocumentListItem(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 357,
+      lineNumber: 354,
       columnNumber: 17
     }
   }, "Delete Document")))) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
@@ -67061,14 +69732,14 @@ function UploadDocumentListItem(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 364,
+      lineNumber: 361,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudUpload__WEBPACK_IMPORTED_MODULE_7___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 365,
+      lineNumber: 362,
       columnNumber: 13
     }
   }))));

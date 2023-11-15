@@ -46,7 +46,12 @@ Route::get('/login', function () {
 
 // private resources
 Route::middleware('auth:sanctum')->get('/documents/{filename}', function ($filename) {
-    return Storage::download('documents/' . $filename);
+    try {
+        $name = 'HWWD_' . $filename;
+        return Storage::download('documents/' . $filename, $name);
+    } catch (\Throwable $th) {
+        abort(404);
+    }
 });
 // http://127.0.0.1:8000/reports/document/3
 Route::middleware('auth:sanctum')->get('/client/document/{id}', [DocumentController::class, 'download_document_by_id']);
