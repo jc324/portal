@@ -7,7 +7,7 @@ We appreciate your being transparent and cooperative throughout the process. You
 
 Please feel free to reach out with any questions that you may have. Thank you for your cooperation, and for your trust in our services.
 
-@component('mail::button', ['url' => 'https://www.halalwatchworld.org/requirements/halal-audit-preparation-instructions'])
+@component('mail::button', ['url' => 'https://live.vcita.com/site/HalalWatchWorldLLC/online-scheduling?service=pzxq2ukoafarrvrp'])
 Schedule Audit
 @endcomponent
 

@@ -57,6 +57,8 @@ Route::middleware('auth:sanctum')->get('/documents/{filename}', function ($filen
 Route::middleware('auth:sanctum')->get('/client/document/{id}', [DocumentController::class, 'download_document_by_id']);
 Route::middleware('auth:sanctum')->get('/reports/document/{id}', [ReportsController::class, 'download_document_by_id']);
 Route::middleware('auth:sanctum')->get('/certificates/document/{id}', [CertificatesController::class, 'download_document_by_id']);
+Route::middleware('auth:sanctum')->get('/certificates/facility/{id}', [CertificatesController::class, 'generate_facility_certificate']);
+Route::middleware('auth:sanctum')->get('/certificates/facility/{id}/products', [CertificatesController::class, 'generate_products_certificate']);
 // reviewer review request docs
 Route::middleware('auth:sanctum')->get('/reviewer/clients/request/{id}/documents', [ReviewRequestController::class, 'download_documents_by_id']);
 Route::middleware('auth:sanctum')->get('/reviewer/clients/request/{id}/progress-report', [ReviewRequestController::class, 'generate_progress_report']);

@@ -199,15 +199,18 @@ class ReviewRequestController extends Controller
                 'label_ids' => [9347247, 4981805],
                 'status' => 1
             ]);
-            $response = $guzzle->request('POST', 'https://www.meistertask.com/api/sections/' . $new_registration_section_id . '/tasks', [
-                'headers' => [
-                    'Authorization' => 'Bearer ' . $token,
-                    'accept' => 'application/json',
-                    'content-type' => 'application/json',
-                ],
-                'body' => $body,
-            ]);
-            $response->getBody();
+            try {
+                $response = $guzzle->request('POST', 'https://www.meistertask.com/api/sections/' . $new_registration_section_id . '/tasks', [
+                    'headers' => [
+                        'Authorization' => 'Bearer ' . $token,
+                        'accept' => 'application/json',
+                        'content-type' => 'application/json',
+                    ],
+                    'body' => $body,
+                ]);
+                $response->getBody();
+            } catch (\Throwable $th) {
+            }
         }
 
         return $review_request;
@@ -544,21 +547,30 @@ class ReviewRequestController extends Controller
     public function generate_registration_report($review_request_id)
     {
         $file_name = 'registration_' . $review_request_id . '_registration_report.docx';
-        $registration_report_temp = resource_path() . '/templates/registration_report_tmp.docx';
+        $registration_report_temp = resource_path() . '/templates/registration_report.docx';
         $tp = new TemplateProcessor($registration_report_temp);
         $review_request = ReviewRequest::findOrFail($review_request_id);
         $client = $review_request->client;
         $facility = Facility::findOrFail($review_request->facility_id);
         $facility_category_code = FacilityCategories::find($facility->category_id)->code;
-        $manufacturers = array_add_count('ManufacturersIndex', $review_request->manufacturers()->toArray());
-        $products_arr = array_map(function ($product) use (&$facility, $facility_category_code) {
+        $manufacturers = array_add_count(
+            'ManufacturersI',
+            array_values($review_request->manufacturers()->toArray()) // reindex
+        );
+        $manufacturers_clean = array_map(function ($manufacturer) {
+            $manufacturer['name'] = htmlspecialchars($manufacturer['name']);
+            return $manufacturer;
+        }, $manufacturers);
+        $products_arr_clean = array_map(function ($product) use (&$facility, $facility_category_code) {
             $product['concerns'] = '';
+            $product['name'] = htmlspecialchars($product['name']);
+            $product['description'] = htmlspecialchars($product['description']);
             try {
                 $product_docs = ProductDocument::where('product_id', $product['id'])->get();
                 foreach ($product_docs as $doc) {
                     $product['concerns'] .= $doc->note;
                 }
-                $product['concerns'] = $product['concerns'] ? 'Concerns: ' . $product['concerns'] : '';
+                $product['concerns'] = $product['concerns'] ? htmlspecialchars('Concerns: ' . $product['concerns']) : '';
             } catch (\Throwable $th) {
             }
             try {
@@ -570,30 +582,31 @@ class ReviewRequestController extends Controller
                 $product['QualifiedID'] = $product['id'];
                 return $product;
             }
-        }, $review_request->products()->get()->toArray());
-        $products = array_rename_key('name', 'ProductsName', $products_arr);
-        $ingredients = array_map(function ($ingredient) {
-            $ingredient['VendorName'] = $ingredient['manufacturer']['name'];
+        }, array_values($review_request->products()->get()->toArray()));
+        $products_clean = array_rename_key('name', 'ProductsName', $products_arr_clean);
+        $ingredients_clean = array_map(function ($ingredient) {
+            $ingredient['name'] = htmlspecialchars($ingredient['name']);
+            $ingredient['VendorName'] = htmlspecialchars($ingredient['manufacturer']['name']);
             unset($ingredient['manufacturer']);
             return $ingredient;
-        }, $review_request->ingredients()->with('manufacturer')->get()->toArray());
-        $ingredients_unique = array_unique_by('name', $ingredients);
+        }, array_values($review_request->ingredients()->with('manufacturer')->get()->toArray()));
+        $ingredients_unique_clean = array_unique_by('name', $ingredients_clean);
 
         \PhpOffice\PhpWord\Settings::setOutputEscapingEnabled(true);
         $tp->setValues([
-            'ClientName' => $client->business_name,
+            'ClientName' => htmlspecialchars($client->business_name),
             'Date' => date('m/d/y'),
             'DateFull' => date('F j, Y'),
-            'CompanyDescription' => $client->description,
+            'CompanyDescription' => htmlspecialchars($client->description),
             'ProductName' => "Haram Potatoe Salad",
             'ProductType' => "Chemical",
             'ProductsCount' => $review_request->products->count(),
             'IngredientsCount' => $review_request->ingredients->count()
         ]);
-        $tp->cloneRowAndSetValues('ManufacturersIndex', $manufacturers);
-        $tp->cloneRowAndSetValues('ProductsName', $products);
-        $tp->cloneBlock('ProductBlock', 0, true, false, $products_arr);
-        $tp->cloneRowAndSetValues('VendorName', $ingredients_unique);
+        $tp->cloneRowAndSetValues('ManufacturersI', $manufacturers_clean);
+        $tp->cloneRowAndSetValues('ProductsName', $products_clean);
+        $tp->cloneBlock('ProductBlock', 0, true, false, $products_arr_clean);
+        $tp->cloneRowAndSetValues('VendorName', $ingredients_unique_clean);
         $tp->saveAs($file_name);
 
         return response()->download($file_name)->deleteFileAfterSend(true);

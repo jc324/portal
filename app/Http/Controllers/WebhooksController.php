@@ -48,6 +48,8 @@ class WebhooksController extends Controller
         $docs = $request->all();
 
         foreach ($docs as $doc) {
+            if (!isset($doc['data'])) continue;
+
             $data = $doc['data'];
 
             if ($data['status'] !== 'document.draft' || !isset($data['metadata']['review_request_id'])) continue;
@@ -95,6 +97,8 @@ class WebhooksController extends Controller
             });
             $promise->wait();
         }
+
+        return response('', 200);
     }
 
     // webhook: https://portal.halalwatchworld.org/api/webhooks/call-form-proposal

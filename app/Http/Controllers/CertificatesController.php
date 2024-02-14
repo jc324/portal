@@ -2,19 +2,24 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
 use App\Mail\CertificateHardCopyRequest;
 use App\Mail\NewCertificate;
 use App\Mail\CertificateExpiresToday;
 use App\Mail\CertificateRenewal;
 use App\Mail\ExpiringCertificates;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
-use Illuminate\Support\Facades\DB;
-
 use App\Models\Certificate;
 use App\Models\Client;
 use App\Models\Hed;
-use Illuminate\Support\Facades\Mail;
+use App\Models\Facility;
+use App\Models\Product;
+use App\Models\FacilityCategories;
+use App\Models\ProductCategories;
+use App\Models\ReviewRequest;
+use PhpOffice\PhpWord\TemplateProcessor;
 
 class CertificatesController extends Controller
 {
@@ -147,6 +152,83 @@ class CertificatesController extends Controller
         $certificate->save();
 
         return response($certificate, 200);
+    }
+
+    public function generate_facility_certificate($facility_id)
+    {
+        $facility = Facility::findOrFail($facility_id);
+        $client = $facility->client;
+        $file_name = $client->business_name . ' - facility_certificate_' . time() . '.docx';
+        $registration_report_temp = resource_path() . '/templates/certificate_facility.docx';
+        $tp = new TemplateProcessor($registration_report_temp);
+        $facility_category_code = FacilityCategories::find($facility->category_id)->code;
+        $qualified_id = $facility_category_code . $facility->id;
+        $address = $facility->address . ', ' . $facility->city . ', ' . $facility->state . ', ' . $facility->zip;
+
+        \PhpOffice\PhpWord\Settings::setOutputEscapingEnabled(true);
+        $tp->setValues([
+            'ClientName' => htmlspecialchars($client->business_name),
+            'FacilityAddress' => htmlspecialchars($address),
+            'FacilityID' => $qualified_id,
+            'DateStamped' => date("m/d/Y|g:iA T"),
+            'DateIssued' => date('M jS, Y'),
+            'DateExpires' => date('M jS, Y', strtotime('+1 year - 1 day'))
+        ]);
+        $tp->saveAs($file_name);
+
+        return response()->download($file_name)->deleteFileAfterSend(true);
+    }
+
+    public function generate_products_certificate(Request $request, $facility_id)
+    {
+        $facility = Facility::findOrFail($facility_id);
+        $client = $facility->client;
+        $file_name = $client->business_name . ' - products_certificate_' . time() . '.docx';
+        $registration_report_temp = resource_path() . '/templates/certificate_products.docx';
+        $tp = new TemplateProcessor($registration_report_temp);
+        $facility_category_code = FacilityCategories::find($facility->category_id)->code;
+        $qualified_id = $facility_category_code . $facility->id;
+        $address = $facility->address . ', ' . $facility->city . ', ' . $facility->state . ', ' . $facility->zip;
+        $product_ids = $request->get('ids');
+        $products_list = $product_ids
+            ? Product::findMany(explode(',', $request->get('ids')))->toArray()
+            : $facility->products()->get()->toArray();
+        // $products_list = array_merge(
+        //     $products_list,
+        //     $products_list,
+        //     $products_list,
+        // );
+        $products = array_add_count(
+            'P',
+            array_values($products_list) // reindex
+        );
+        $products_arr_clean = array_map(function ($product) use (&$facility, $facility_category_code) {
+            $product['name'] = htmlspecialchars($product['name']);
+
+            try {
+                $product_category_code = ProductCategories::find($product['category_id'])->code;
+                $qualified_id = $facility_category_code . $facility->id . '_' . $product_category_code . $product['id'];
+                $product['QualifiedID'] = $qualified_id;
+                return $product;
+            } catch (\Throwable $th) {
+                $product['QualifiedID'] = $product['id'];
+                return $product;
+            }
+        }, $products);
+
+        \PhpOffice\PhpWord\Settings::setOutputEscapingEnabled(true);
+        $tp->setValues([
+            'ClientName' => htmlspecialchars($client->business_name),
+            'FacilityAddress' => htmlspecialchars($address),
+            'FacilityID' => $qualified_id,
+            'DateStamped' => date("m/d/Y|g:iA T"),
+            'DateIssued' => date('M jS, Y'),
+            'DateExpires' => date('M jS, Y', strtotime('+1 year - 1 day'))
+        ]);
+        $tp->cloneRowAndSetValues('P', $products_arr_clean);
+        $tp->saveAs($file_name);
+
+        return response()->download($file_name)->deleteFileAfterSend(true);
     }
 
     /**

@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\App.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\App.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -366,7 +366,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\components\\AuthenticateByUserId.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\components\\AuthenticateByUserId.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -718,7 +718,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\components\\Logo.js";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\components\\Logo.js";
 
 const Logo = props => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", Object.assign({
@@ -841,7 +841,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\components\\NavList.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\components\\NavList.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -1172,7 +1172,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\components\\NotificationsDialog.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\components\\NotificationsDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -1554,7 +1554,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\components\\Page.js";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\components\\Page.js";
 
 
 
@@ -1866,7 +1866,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\components\\PicSelector\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\components\\PicSelector\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 // @ts-nocheck
 
@@ -2288,7 +2288,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\components\\TagsInput.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\components\\TagsInput.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -2497,7 +2497,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\components\\TagsView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\components\\TagsView.tsx";
 
 
 function TagsView(_ref) {
@@ -2946,7 +2946,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\index.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\index.tsx";
 
 
 
@@ -3078,7 +3078,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\AdminDashboardLayout\\NavBar\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\AdminDashboardLayout\\NavBar\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -3489,7 +3489,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\AdminDashboardLayout\\TopBar.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\AdminDashboardLayout\\TopBar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -3764,7 +3764,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\AdminDashboardLayout\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\AdminDashboardLayout\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -3971,7 +3971,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\ClientDashboardLayout\\NavBar\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\ClientDashboardLayout\\NavBar\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -4323,7 +4323,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\ClientDashboardLayout\\TopBar.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\ClientDashboardLayout\\TopBar.js",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -4727,7 +4727,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\ClientDashboardLayout\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\ClientDashboardLayout\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -4929,7 +4929,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\MainLayout\\TopBar.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\MainLayout\\TopBar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -5090,7 +5090,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\MainLayout\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\MainLayout\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -5277,7 +5277,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\ReviewerDashboardLayout\\NavBar\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\ReviewerDashboardLayout\\NavBar\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -5697,7 +5697,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\ReviewerDashboardLayout\\TopBar.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\ReviewerDashboardLayout\\TopBar.js",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -6033,7 +6033,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\layouts\\ReviewerDashboardLayout\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\ReviewerDashboardLayout\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -6660,7 +6660,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\routes.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\routes.tsx";
 
 
 
@@ -7884,7 +7884,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\account\\AccountView\\Profile.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\account\\AccountView\\Profile.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -8141,7 +8141,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\account\\AccountView\\ProfileDetails.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\account\\AccountView\\ProfileDetails.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -8669,7 +8669,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\account\\AccountView\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\account\\AccountView\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -8859,7 +8859,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\ClientMenu.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\ClientMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -9063,7 +9063,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -9978,7 +9978,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\AuditReports.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\AuditReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -10431,6 +10431,460 @@ if (true) {
 
 /***/ }),
 
+/***/ "./src/views/admin/clients/client/CertificateGenerator.tsx":
+/*!*****************************************************************!*\
+  !*** ./src/views/admin/clients/client/CertificateGenerator.tsx ***!
+  \*****************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CertificateGenerator; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+/* harmony import */ var _material_ui_core_Box__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Box */ "./node_modules/@material-ui/core/esm/Box/index.js");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
+/* harmony import */ var _material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/DialogTitle */ "./node_modules/@material-ui/core/esm/DialogTitle/index.js");
+/* harmony import */ var _material_ui_core_DialogContent__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/DialogContent */ "./node_modules/@material-ui/core/esm/DialogContent/index.js");
+/* harmony import */ var _material_ui_core_DialogActions__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/DialogActions */ "./node_modules/@material-ui/core/esm/DialogActions/index.js");
+/* harmony import */ var _material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Dialog */ "./node_modules/@material-ui/core/esm/Dialog/index.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+/* harmony import */ var _material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/core/FormControl */ "./node_modules/@material-ui/core/esm/FormControl/index.js");
+/* harmony import */ var _material_ui_core_Select__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/Select */ "./node_modules/@material-ui/core/esm/Select/index.js");
+/* harmony import */ var _material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/MenuItem */ "./node_modules/@material-ui/core/esm/MenuItem/index.js");
+/* harmony import */ var _material_ui_icons_RotateLeft__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/icons/RotateLeft */ "./node_modules/@material-ui/icons/RotateLeft.js");
+/* harmony import */ var _material_ui_icons_RotateLeft__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_RotateLeft__WEBPACK_IMPORTED_MODULE_13__);
+/* harmony import */ var _material_ui_data_grid__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/data-grid */ "./node_modules/@material-ui/data-grid/dist/index-esm.js");
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/core/Link */ "./node_modules/@material-ui/core/esm/Link/index.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\CertificateGenerator.tsx",
+  _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+const columns = [{
+  field: "id",
+  headerName: "ID",
+  width: 90,
+  sortable: false,
+  hide: true
+}, {
+  field: "name",
+  headerName: "Product Name",
+  width: 200,
+  sortable: true
+}];
+const products = [{
+  id: 1,
+  lastName: "Snow",
+  name: "Jon",
+  age: 35
+}, {
+  id: 2,
+  lastName: "Lannister",
+  name: "Cersei",
+  age: 42
+}, {
+  id: 3,
+  lastName: "Lannister",
+  name: "Jaime",
+  age: 45
+}, {
+  id: 4,
+  lastName: "Stark",
+  name: "Arya",
+  age: 16
+}, {
+  id: 5,
+  lastName: "Targaryen",
+  name: "Daenerys",
+  age: null
+}, {
+  id: 6,
+  lastName: "Melisandre",
+  name: null,
+  age: 150
+}, {
+  id: 7,
+  lastName: "Clifford",
+  name: "Ferrara",
+  age: 44
+}, {
+  id: 8,
+  lastName: "Frances",
+  name: "Rossini",
+  age: 36
+}, {
+  id: 9,
+  lastName: "Roxie",
+  name: "Harvey",
+  age: 65
+}];
+function CertificateGenerator(_ref) {
+  _s();
+  var _client$facilities;
+  let {
+    client
+  } = _ref;
+  const {
+    enqueueSnackbar
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_15__["useSnackbar"])();
+  const [open, setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
+  const [loading, setLoading] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
+  const [selectedFacility, setSelectedFacility] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState("");
+  const [products, setProducts] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState([]);
+  const [selectionModel, setSelectionModel] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState([]);
+  const handleClickOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleFacilitySelectionChange = event => {
+    setSelectedFacility(event.target.value);
+    if (!event.target.value) {
+      setProducts([]);
+      return;
+    }
+    setLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/facility/${event.target.value}/products`).then(async response => {
+      setLoading(false);
+      if (response.status == 200 || response.status == 201) {
+        setProducts(response.data);
+        setSelectionModel(response.data.map(p => p.id));
+      } else {
+        console.log(response);
+        enqueueSnackbar("Failed to retrieve facility products.", {
+          variant: "error"
+        });
+      }
+    }).catch(e => {
+      console.error(e);
+      setLoading(false);
+      enqueueSnackbar("Failed to retrieve facility products.", {
+        variant: "error"
+      });
+    });
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    onClick: handleClickOpen,
+    disabled: !client,
+    startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_RotateLeft__WEBPACK_IMPORTED_MODULE_13___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 112,
+        columnNumber: 20
+      }
+    }),
+    variant: "contained",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109,
+      columnNumber: 7
+    }
+  }, "Generate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    open: open,
+    onClose: handleClose,
+    maxWidth: "xs",
+    "aria-labelledby": "certificate-generator",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    id: "certificate-generator",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    variant: "h4",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124,
+      columnNumber: 11
+    }
+  }, "Generate Certificate")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogContent__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    dividers: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 127,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    style: {
+      marginBottom: 5
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 128,
+      columnNumber: 13
+    }
+  }, "Select Facility"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 129,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Select__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    displayEmpty: true,
+    inputProps: {
+      "aria-label": "Without label"
+    },
+    variant: "outlined",
+    style: {
+      width: 400
+    },
+    value: selectedFacility,
+    disabled: !client,
+    onChange: handleFacilitySelectionChange,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 130,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    value: "",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 139,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 140,
+      columnNumber: 19
+    }
+  }, "None")), client && ((_client$facilities = client.facilities) === null || _client$facilities === void 0 ? void 0 : _client$facilities.map(facility => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    value: facility.id,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 144,
+      columnNumber: 21
+    }
+  }, facility.name))) || null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    sx: {
+      mt: 4,
+      width: "100%"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 152,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    style: {
+      marginBottom: 5
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 153,
+      columnNumber: 13
+    }
+  }, "Select Products"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledDataGrid, {
+    columns: columns,
+    rows: products,
+    checkboxSelection: true,
+    onSelectionModelChange: newModel => setSelectionModel(newModel),
+    selectionModel: selectionModel,
+    loading: loading
+    // headerHeight={40}
+    // rowHeight={40}
+    ,
+    disableSelectionOnClick: true,
+    disableColumnMenu: true,
+    autoHeight: true,
+    hideFooter: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 154,
+      columnNumber: 13
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogActions__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 170,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_16__["default"], {
+    href: !selectionModel.length ? "#" : `/certificates/facility/${selectedFacility}/products${
+    // selective inclusion, eg: ?ids=1,2,3
+    selectionModel.length < products.length ? "?ids=" + selectionModel.join() : ""}`,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 171,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    variant: "contained",
+    color: "secondary",
+    disabled: !selectionModel.length,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 183,
+      columnNumber: 13
+    }
+  }, "Products Certificate")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_16__["default"], {
+    href: !selectedFacility ? "#" : `/certificates/facility/${selectedFacility}`,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 192,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    variant: "contained",
+    color: "secondary",
+    disabled: !selectedFacility,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 199,
+      columnNumber: 13
+    }
+  }, "Facility Certificate")))));
+}
+_s(CertificateGenerator, "P94iR3nzXGe/A7tdPfpXgoNhB/E=", false, function () {
+  return [notistack__WEBPACK_IMPORTED_MODULE_15__["useSnackbar"]];
+});
+_c = CertificateGenerator;
+const StyledDataGrid = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["withStyles"])({
+  root: {
+    border: 0,
+    "& .MuiDataGrid-cell": {
+      borderBottom: "none !important"
+    }
+  }
+})(_material_ui_data_grid__WEBPACK_IMPORTED_MODULE_14__["DataGrid"]);
+var _c;
+__webpack_require__.$Refresh$.register(_c, "CertificateGenerator");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
 /***/ "./src/views/admin/clients/client/CertificateMenu.tsx":
 /*!************************************************************!*\
   !*** ./src/views/admin/clients/client/CertificateMenu.tsx ***!
@@ -10457,7 +10911,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\CertificateMenu.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\CertificateMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -10713,12 +11167,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _reviewer_common_PromptDialog__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../../reviewer/common/PromptDialog */ "./src/views/reviewer/common/PromptDialog.tsx");
 /* harmony import */ var _CertificateMenu__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./CertificateMenu */ "./src/views/admin/clients/client/CertificateMenu.tsx");
 /* harmony import */ var _components_TagsInput__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../../components/TagsInput */ "./src/components/TagsInput.tsx");
+/* harmony import */ var _CertificateGenerator__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./CertificateGenerator */ "./src/views/admin/clients/client/CertificateGenerator.tsx");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\Certificates.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\Certificates.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
+
 
 
 
@@ -10843,14 +11299,14 @@ function RequestCertificates() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 164,
+        lineNumber: 165,
         columnNumber: 11
       }
     }, "Would you like to automatically email the client after uploading the new certificate?"),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155,
+      lineNumber: 156,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
@@ -10864,14 +11320,14 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 170,
+      lineNumber: 171,
       columnNumber: 7
     }
   }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["CircularProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 179,
+      lineNumber: 180,
       columnNumber: 22
     }
   }) || certificates.length && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
@@ -10879,49 +11335,49 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 181,
+      lineNumber: 182,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Table"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 182,
+      lineNumber: 183,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableHead"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 183,
+      lineNumber: 184,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableRow"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 184,
+      lineNumber: 185,
       columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 185,
+      lineNumber: 186,
       columnNumber: 21
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 186,
+      lineNumber: 187,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 187,
+      lineNumber: 188,
       columnNumber: 23
     }
   }, "ID")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
@@ -10929,7 +11385,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 189,
+      lineNumber: 190,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Tooltip"], {
@@ -10938,7 +11394,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 190,
+      lineNumber: 191,
       columnNumber: 23
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableSortLabel"], {
@@ -10947,14 +11403,14 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 191,
+      lineNumber: 192,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 192,
+      lineNumber: 193,
       columnNumber: 27
     }
   }, "Created")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
@@ -10962,7 +11418,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 196,
+      lineNumber: 197,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Tooltip"], {
@@ -10971,7 +11427,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 197,
+      lineNumber: 198,
       columnNumber: 23
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableSortLabel"], {
@@ -10980,42 +11436,42 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 198,
+      lineNumber: 199,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 199,
+      lineNumber: 200,
       columnNumber: 27
     }
   }, "Expires")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 210,
+      lineNumber: 211,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 211,
+      lineNumber: 212,
       columnNumber: 23
     }
   }, "Tags")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 213,
+      lineNumber: 214,
       columnNumber: 21
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableBody"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 216,
+      lineNumber: 217,
       columnNumber: 17
     }
   }, certificates.map((certificate, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableRow"], {
@@ -11024,49 +11480,49 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 218,
+      lineNumber: 219,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 219,
+      lineNumber: 220,
       columnNumber: 23
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_9__["FileText"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 220,
+      lineNumber: 221,
       columnNumber: 25
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 222,
+      lineNumber: 223,
       columnNumber: 23
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 223,
+      lineNumber: 224,
       columnNumber: 25
     }
   }, certificate.id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 225,
+      lineNumber: 226,
       columnNumber: 23
     }
   }, moment__WEBPACK_IMPORTED_MODULE_3___default()(certificate.created_at).format("MM/DD/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 228,
+      lineNumber: 229,
       columnNumber: 23
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CertificateDateCell, {
@@ -11074,14 +11530,14 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229,
+      lineNumber: 230,
       columnNumber: 25
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 240,
+      lineNumber: 241,
       columnNumber: 23
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_TagsInput__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -11091,14 +11547,14 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 241,
+      lineNumber: 242,
       columnNumber: 25
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 247,
+      lineNumber: 248,
       columnNumber: 23
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CertificateMenu__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -11107,7 +11563,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 248,
+      lineNumber: 249,
       columnNumber: 25
     }
   }))))))) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
@@ -11115,7 +11571,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 259,
+      lineNumber: 260,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_8__["Alert"], {
@@ -11123,14 +11579,14 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 260,
+      lineNumber: 261,
       columnNumber: 15
     }
   }, "This request has no certificates. Use the control below to add some."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Divider"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 267,
+      lineNumber: 268,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
@@ -11140,7 +11596,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 268,
+      lineNumber: 269,
       columnNumber: 7
     }
   }, (client === null || client === void 0 ? void 0 : client.approved_report_count) !== (client === null || client === void 0 ? void 0 : client.report_count) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -11151,7 +11607,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 270,
+      lineNumber: 271,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_8__["Alert"], {
@@ -11162,14 +11618,14 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 271,
+      lineNumber: 272,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 272,
+      lineNumber: 273,
       columnNumber: 15
     }
   }, "Please note that this client has reports that need to be approved."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -11189,7 +11645,23 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 279,
+      lineNumber: 280,
+      columnNumber: 9
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CertificateGenerator__WEBPACK_IMPORTED_MODULE_16__["default"], {
+    client: client,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 292,
+      columnNumber: 9
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
+    width: 10,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 293,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_LoadingButton__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -11200,18 +11672,19 @@ function RequestCertificates() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 295,
+        lineNumber: 298,
         columnNumber: 22
       }
     }),
     variant: "contained",
+    color: "primary",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 291,
+      lineNumber: 294,
       columnNumber: 9
     }
-  }, "Certificate")));
+  }, "Upload")));
 }
 _s(RequestCertificates, "ehQEzxShocRfjYb74xjt9ru0f9A=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_10__["useSnackbar"]];
@@ -11260,7 +11733,7 @@ function CertificateDateCell(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 348,
+      lineNumber: 352,
       columnNumber: 9
     }
   }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_pickers__WEBPACK_IMPORTED_MODULE_6__["MuiPickersUtilsProvider"], {
@@ -11268,7 +11741,7 @@ function CertificateDateCell(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 351,
+      lineNumber: 355,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_pickers__WEBPACK_IMPORTED_MODULE_6__["KeyboardDatePicker"], {
@@ -11284,7 +11757,7 @@ function CertificateDateCell(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 352,
+      lineNumber: 356,
       columnNumber: 13
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Chip"], {
@@ -11299,7 +11772,7 @@ function CertificateDateCell(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 366,
+      lineNumber: 370,
       columnNumber: 11
     }
   })));
@@ -11408,7 +11881,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\ClientProfile.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\ClientProfile.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -12049,7 +12522,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\ReportMenu.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\ReportMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -12303,7 +12776,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\ReviewReports.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\ReviewReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -12779,7 +13252,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature(),
   _s3 = __webpack_require__.$Refresh$.signature();
@@ -13046,7 +13519,7 @@ function SingleClientTabs() {
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Tab"], Object.assign({
-    label: "Client"
+    label: "Profile"
   }, a11yProps(0), {
     __self: this,
     __source: {
@@ -13257,7 +13730,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -13463,7 +13936,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\CertificateView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\CertificateView.tsx";
 
 
 
@@ -13809,7 +14282,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\DocumentsView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\DocumentsView.tsx";
 
 
 
@@ -14107,7 +14580,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\Header.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\Header.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -14433,7 +14906,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\ProductsView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\ProductsView.tsx";
 
 
 
@@ -14629,7 +15102,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\ReportsView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\ReportsView.tsx";
 
 
 
@@ -14894,7 +15367,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -15347,7 +15820,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\facility-categories\\EditFacilityCategory.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\facility-categories\\EditFacilityCategory.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -15694,7 +16167,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\facility-categories\\Results.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\facility-categories\\Results.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -16031,7 +16504,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\facility-categories\\Toolbar.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\facility-categories\\Toolbar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -16389,7 +16862,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\facility-categories\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\facility-categories\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -16596,7 +17069,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\product-categories\\EditProductCategory.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\product-categories\\EditProductCategory.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -16943,7 +17416,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\product-categories\\Results.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\product-categories\\Results.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -17280,7 +17753,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\product-categories\\Toolbar.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\product-categories\\Toolbar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -17670,7 +18143,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\product-categories\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\product-categories\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -17887,7 +18360,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -18387,7 +18860,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\ReviewRequestMenu.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\ReviewRequestMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -18484,14 +18957,14 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155,
+      lineNumber: 156,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 162,
+      lineNumber: 163,
       columnNumber: 9
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Menu"], {
@@ -18503,14 +18976,14 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 164,
+      lineNumber: 165,
       columnNumber: 7
     }
   }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["LinearProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 171,
+      lineNumber: 172,
       columnNumber: 21
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
@@ -18518,14 +18991,14 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 173,
+      lineNumber: 174,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_6___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 174,
+      lineNumber: 175,
       columnNumber: 11
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
@@ -18536,7 +19009,7 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 175,
+      lineNumber: 176,
       columnNumber: 11
     }
   }, "View Request")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
@@ -18545,14 +19018,14 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 179,
+      lineNumber: 198,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CloudDownload__WEBPACK_IMPORTED_MODULE_5___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 185,
+      lineNumber: 204,
       columnNumber: 11
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
@@ -18563,7 +19036,7 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 186,
+      lineNumber: 205,
       columnNumber: 11
     }
   }, "Download Documents")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["MenuItem"], {
@@ -18571,14 +19044,14 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 190,
+      lineNumber: 209,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_FileCopy__WEBPACK_IMPORTED_MODULE_7___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 193,
+      lineNumber: 212,
       columnNumber: 11
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
@@ -18589,7 +19062,7 @@ function ReviewRequestMenu(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 194,
+      lineNumber: 213,
       columnNumber: 11
     }
   }, "Client Certificate Repository Link"))));
@@ -18695,7 +19168,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -18875,7 +19348,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\AuditReports.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\AuditReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -19354,7 +19827,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\CertificateMenu.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\CertificateMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -19605,7 +20078,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\ReportMenu.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\ReportMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -19859,7 +20332,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\RequestCertificates.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\RequestCertificates.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -20362,7 +20835,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\ReviewReports.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\ReviewReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -20837,7 +21310,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature(),
   _s3 = __webpack_require__.$Refresh$.signature();
@@ -21285,7 +21758,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviewers\\EditReviewer.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviewers\\EditReviewer.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -21803,7 +22276,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviewers\\Results.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviewers\\Results.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -22318,7 +22791,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviewers\\Toolbar.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviewers\\Toolbar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -22804,7 +23277,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviewers\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviewers\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -23019,7 +23492,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -23496,7 +23969,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\Toolbar.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\Toolbar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -23877,7 +24350,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -24089,7 +24562,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\CertificateView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\CertificateView.tsx";
 
 
 
@@ -24435,7 +24908,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\DocumentsView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\DocumentsView.tsx";
 
 
 
@@ -24733,7 +25206,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\Header.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\Header.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -25059,7 +25532,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\ProductsView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\ProductsView.tsx";
 
 
 
@@ -25255,7 +25728,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\ReportsView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\ReportsView.tsx";
 
 
 
@@ -25520,7 +25993,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -25979,7 +26452,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\certificates\\RequestHardCopyButton.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\certificates\\RequestHardCopyButton.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -26167,7 +26640,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\certificates\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\certificates\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -26685,7 +27158,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\certificates\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\certificates\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -27268,7 +27741,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\CurrentRequestProgress.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\CurrentRequestProgress.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -27825,7 +28298,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\FacilitiesStat.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\FacilitiesStat.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -28078,7 +28551,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\LatestReviews.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\LatestReviews.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -28522,7 +28995,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\ProductsStat.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\ProductsStat.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -28778,7 +29251,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\Tasks.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\Tasks.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -29281,7 +29754,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 // @ts-nocheck
 
@@ -29702,7 +30175,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\DocumentMenu.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\documents\\DocumentMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -29954,7 +30427,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\FacilityDocs.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\documents\\FacilityDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -30304,7 +30777,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\ManufacturerDocs.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\documents\\ManufacturerDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -30654,7 +31127,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\ProductDocs.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\documents\\ProductDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -31004,7 +31477,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\RecentDocs.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\documents\\RecentDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -31351,7 +31824,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\documents\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -31723,7 +32196,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\UploadedDocs.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\documents\\UploadedDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -32190,7 +32663,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\documents\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\documents\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -32365,7 +32838,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\facilities\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\facilities\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -32880,7 +33353,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\facilities\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\facilities\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -33052,7 +33525,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\heds\\AddHed.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\heds\\AddHed.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -33497,7 +33970,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\heds\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\heds\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -34110,7 +34583,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\heds\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\heds\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -34277,7 +34750,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\help\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\help\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -34526,7 +34999,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\products\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\products\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -34957,7 +35430,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\products\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\products\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -35129,7 +35602,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\profile\\ProfileCard.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\profile\\ProfileCard.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -35400,7 +35873,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\profile\\ProfileDetails.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\profile\\ProfileDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -35862,7 +36335,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\profile\\edit\\ProfileCard.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\profile\\edit\\ProfileCard.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -36131,7 +36604,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\profile\\edit\\ProfileDetails.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\profile\\edit\\ProfileDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -36897,7 +37370,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\profile\\edit\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\profile\\edit\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -37109,7 +37582,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\profile\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\profile\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -37321,7 +37794,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\reports\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\reports\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -37613,7 +38086,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\reports\\audit\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\reports\\audit\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -38187,7 +38660,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\reports\\audit\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\reports\\audit\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -38355,7 +38828,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\reports\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\reports\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -38531,7 +39004,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\reports\\review\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\reports\\review\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -39008,7 +39481,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\reports\\review\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\reports\\review\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -39192,7 +39665,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -39864,7 +40337,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\ReviewRequestMenu.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\ReviewRequestMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -40256,7 +40729,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -40431,7 +40904,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\AddManufacturerDoc.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\AddManufacturerDoc.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -40651,7 +41124,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\AddProductDialog.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\AddProductDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -41032,7 +41505,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\AddProductDoc.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\AddProductDoc.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -41255,7 +41728,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\FacilityDocs.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\FacilityDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -41499,7 +41972,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\FacilityView.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\FacilityView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -41718,7 +42191,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\ManufacturerDocs.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\ManufacturerDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -41909,7 +42382,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\ManufacturersView.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\ManufacturersView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -42098,7 +42571,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\ProductDocs.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\ProductDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -42289,7 +42762,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\ProductsView.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\ProductsView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -42485,7 +42958,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\UploadDocumentListItem_1.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\UploadDocumentListItem_1.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -43059,7 +43532,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\UploadDocumentListItem_2.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\UploadDocumentListItem_2.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -43588,7 +44061,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\UploadDocumentListItem_3.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\UploadDocumentListItem_3.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -44111,7 +44584,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -44557,7 +45030,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\FacilityDetails.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\FacilityDetails.tsx";
 
 
 
@@ -44870,7 +45343,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\FacilityDocsView.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\FacilityDocsView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -45284,7 +45757,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\IngredientDialog.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\IngredientDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -45757,7 +46230,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\IngredientsView.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\IngredientsView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -46139,7 +46612,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\ManufacturerDocsDialog.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\ManufacturerDocsDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -46562,7 +47035,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\PreStep.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\PreStep.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -46919,7 +47392,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\ProductDialog.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\ProductDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -47359,7 +47832,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\ProductDocsDialog.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\ProductDocsDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -47762,7 +48235,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\RequestCertificates.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\RequestCertificates.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -48285,7 +48758,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_01.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_01.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -48533,7 +49006,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_02.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_02.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -48763,7 +49236,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_03.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_03.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -49026,7 +49499,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_04.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_04.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -49256,7 +49729,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_05.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_05.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -49530,7 +50003,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_06.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_06.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -49760,7 +50233,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_07.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_07.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -50046,7 +50519,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_08.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_08.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -50540,9 +51013,6 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     paddingLeft: theme.spacing(4)
   }
 }));
-function sleep(time) {
-  return new Promise(resolve => setTimeout(resolve, time));
-}
 var _c, _c2;
 __webpack_require__.$Refresh$.register(_c, "FinishedProductsStep");
 __webpack_require__.$Refresh$.register(_c2, "ProductItem");
@@ -50644,7 +51114,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_09.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_09.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -50834,7 +51304,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_10.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_10.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -51073,7 +51543,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_11.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_11.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -51780,7 +52250,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Stepper.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Stepper.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _this = undefined;
 
@@ -52736,7 +53206,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\SubmitStep.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\SubmitStep.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -52975,7 +53445,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\SuccessfulSubmissionStep.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\SuccessfulSubmissionStep.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -53178,7 +53648,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\VendorDisclosureRequest.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\VendorDisclosureRequest.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -53197,7 +53667,7 @@ const Transition = /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.for
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32,
+      lineNumber: 31,
       columnNumber: 10
     }
   }));
@@ -53271,14 +53741,14 @@ function VendorDisclosureRequest(_ref) {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 119,
+        lineNumber: 118,
         columnNumber: 35
       }
     }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_AlternateEmail__WEBPACK_IMPORTED_MODULE_5___default.a, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 119,
+        lineNumber: 118,
         columnNumber: 51
       }
     }),
@@ -53289,7 +53759,7 @@ function VendorDisclosureRequest(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116,
+      lineNumber: 115,
       columnNumber: 7
     }
   }, requestSent && "Disclosure Requested" || "Request Disclosure"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Dialog"], {
@@ -53303,14 +53773,14 @@ function VendorDisclosureRequest(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125,
+      lineNumber: 124,
       columnNumber: 7
     }
   }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["LinearProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134,
+      lineNumber: 133,
       columnNumber: 21
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["DialogTitle"], {
@@ -53318,7 +53788,7 @@ function VendorDisclosureRequest(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135,
+      lineNumber: 134,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
@@ -53326,7 +53796,7 @@ function VendorDisclosureRequest(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136,
+      lineNumber: 135,
       columnNumber: 11
     }
   }, "Vendor Disclosure Statement Request")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["DialogContent"], {
@@ -53336,7 +53806,7 @@ function VendorDisclosureRequest(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140,
+      lineNumber: 139,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
@@ -53345,7 +53815,7 @@ function VendorDisclosureRequest(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 141,
+      lineNumber: 140,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
@@ -53354,7 +53824,7 @@ function VendorDisclosureRequest(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142,
+      lineNumber: 141,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
@@ -53363,7 +53833,7 @@ function VendorDisclosureRequest(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 143,
+      lineNumber: 142,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_4__["Alert"], {
@@ -53374,7 +53844,7 @@ function VendorDisclosureRequest(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 144,
+      lineNumber: 143,
       columnNumber: 17
     }
   }, "Please add vendor email to have a disclosure statement form sent automatically."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
@@ -53383,7 +53853,7 @@ function VendorDisclosureRequest(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148,
+      lineNumber: 147,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
@@ -53398,7 +53868,7 @@ function VendorDisclosureRequest(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149,
+      lineNumber: 148,
       columnNumber: 19
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
@@ -53407,7 +53877,7 @@ function VendorDisclosureRequest(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 159,
+      lineNumber: 158,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
@@ -53422,14 +53892,14 @@ function VendorDisclosureRequest(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 160,
+      lineNumber: 159,
       columnNumber: 19
     }
   })))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["DialogActions"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 176,
+      lineNumber: 175,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
@@ -53439,7 +53909,7 @@ function VendorDisclosureRequest(_ref) {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 180,
+        lineNumber: 179,
         columnNumber: 24
       }
     }),
@@ -53448,7 +53918,7 @@ function VendorDisclosureRequest(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 177,
+      lineNumber: 176,
       columnNumber: 11
     }
   }, "Send"))));
@@ -53561,7 +54031,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -53719,7 +54189,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\common\\auth\\ForgotPasswordView.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\common\\auth\\ForgotPasswordView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -54061,7 +54531,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\common\\auth\\LoginView.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\common\\auth\\LoginView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 // @ts-nocheck
 
@@ -54480,7 +54950,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\common\\auth\\RegisterView.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\common\\auth\\RegisterView.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -54871,7 +55341,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\common\\auth\\ResetPasswordView.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\common\\auth\\ResetPasswordView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -55251,7 +55721,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\common\\auth\\profile\\ChangePasswordView.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\common\\auth\\profile\\ChangePasswordView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -55635,7 +56105,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\common\\errors\\NotFoundView.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\common\\errors\\NotFoundView.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -55938,7 +56408,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\approved-reviews\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\approved-reviews\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -56284,7 +56754,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\approved-reviews\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\approved-reviews\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -56462,7 +56932,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\auditor\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\auditor\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -56942,7 +57412,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\ClientMenu.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\ClientMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -57173,7 +57643,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -57908,7 +58378,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\AuditReports.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\AuditReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -58469,7 +58939,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\FacilitiesView.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\FacilitiesView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -58784,7 +59254,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\FacilityDetails.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\FacilityDetails.tsx";
 
 
 
@@ -59093,7 +59563,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\FacilityDialog.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\FacilityDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -59611,7 +60081,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\FacilityDocs.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\FacilityDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -59963,7 +60433,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\Header.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\Header.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -60189,7 +60659,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\IngredientDialog.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\IngredientDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -60759,7 +61229,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\IngredientsView.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\IngredientsView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -61118,7 +61588,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ManufacturerDocs.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ManufacturerDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -61348,7 +61818,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ManufacturerSelector.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ManufacturerSelector.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -61551,7 +62021,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProductDetails.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProductDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -61858,7 +62328,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProductDialog.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProductDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -62379,7 +62849,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProductDocs.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProductDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -62648,7 +63118,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProductsView.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProductsView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -63066,7 +63536,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProfileDetails.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProfileDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -63831,7 +64301,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ReportMenu.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ReportMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -64261,7 +64731,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ReviewReports.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ReviewReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -64820,7 +65290,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -65307,7 +65777,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -65513,7 +65983,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\CertificateView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\CertificateView.tsx";
 
 
 
@@ -65859,7 +66329,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\DocumentsView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\DocumentsView.tsx";
 
 
 
@@ -66157,7 +66627,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\Header.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\Header.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -66483,7 +66953,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\ProductsView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\ProductsView.tsx";
 
 
 
@@ -66679,7 +67149,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\ReportsView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\ReportsView.tsx";
 
 
 
@@ -66944,7 +67414,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -67397,7 +67867,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\Breadcrumbs.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\Breadcrumbs.tsx";
 
 
 function Breadcrumbs(_ref) {
@@ -67525,7 +67995,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\CategorySelector.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\CategorySelector.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -67811,7 +68281,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\EnumSelector.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\EnumSelector.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -68028,7 +68498,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\LoadingButton.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\LoadingButton.tsx";
 
 
 
@@ -68201,7 +68671,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\ModelSelector.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\ModelSelector.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -68485,7 +68955,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\NestedMenuItem.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\NestedMenuItem.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -68773,7 +69243,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\PromptDialog.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\PromptDialog.tsx";
 
 
 
@@ -68965,7 +69435,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\Toolbar.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\Toolbar.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 // @ts-nocheck
 
@@ -69275,7 +69745,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\UploadDocumentListItem.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\UploadDocumentListItem.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -69873,7 +70343,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\UploadDocumentTableRow.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\UploadDocumentTableRow.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -71438,7 +71908,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\drafted-reviews\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\drafted-reviews\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -71764,7 +72234,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\drafted-reviews\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\drafted-reviews\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -71955,7 +72425,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\manufacturers\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\manufacturers\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -72371,7 +72841,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\manufacturers\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\manufacturers\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -72549,7 +73019,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\manufacturers\\manufacturer\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\manufacturers\\manufacturer\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -73193,7 +73663,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\new-review\\BusinessInfoStep.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\new-review\\BusinessInfoStep.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -73426,7 +73896,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\new-review\\ReviewDetails.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\new-review\\ReviewDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -73837,7 +74307,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\new-review\\UploadDocumentationStep.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\new-review\\UploadDocumentationStep.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -74400,7 +74870,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\new-review\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\new-review\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -74587,7 +75057,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\profile\\ProfileCard.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\profile\\ProfileCard.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -74850,7 +75320,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\profile\\ProfileDetails.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\profile\\ProfileDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -75329,7 +75799,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\profile\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\profile\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -75543,7 +76013,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\register-client\\BusinessDetails.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\register-client\\BusinessDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -76166,7 +76636,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\register-client\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\register-client\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -76346,7 +76816,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -77010,7 +77480,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\ReviewRequestMenu.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\ReviewRequestMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -77688,7 +78158,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -77868,7 +78338,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\reports\\AuditReports.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\reports\\AuditReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -78346,7 +78816,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\reports\\ReportMenu.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\reports\\ReportMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -78600,7 +79070,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\reports\\ReviewReports.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\reports\\ReviewReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -79073,7 +79543,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\reports\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\reports\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature(),
   _s3 = __webpack_require__.$Refresh$.signature();
@@ -79501,7 +79971,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\FacilityDocs.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\FacilityDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -79941,7 +80411,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\FacilityView.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\FacilityView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -80166,7 +80636,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\IngredientsView.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\IngredientsView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -80907,7 +81377,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ManufacturerDocs.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ManufacturerDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -81113,7 +81583,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ManufacturersView.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ManufacturersView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -81467,9 +81937,6 @@ const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeSty
     paddingLeft: theme.spacing(4)
   }
 }));
-function sleep(time) {
-  return new Promise(resolve => setTimeout(resolve, time));
-}
 var _c, _c2;
 __webpack_require__.$Refresh$.register(_c, "ManufacturersView");
 __webpack_require__.$Refresh$.register(_c2, "ManufacturerItem");
@@ -81574,7 +82041,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ProductDocs.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ProductDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -81887,7 +82354,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ProductsView.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ProductsView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -82117,7 +82584,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\RequestManufacturerDocs.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\RequestManufacturerDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -82392,7 +82859,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -82901,7 +83368,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\Results.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -83291,7 +83758,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\index.js",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -83498,7 +83965,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\CertificateView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\CertificateView.tsx";
 
 
 
@@ -83839,7 +84306,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\DocumentsView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\DocumentsView.tsx";
 
 
 
@@ -84137,7 +84604,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\Header.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\Header.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -84463,7 +84930,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\ProductsView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\ProductsView.tsx";
 
 
 
@@ -84659,7 +85126,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\ReportsView.tsx";
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\ReportsView.tsx";
 
 
 
@@ -84925,7 +85392,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\index.tsx",
+var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -85253,10 +85720,10 @@ if (true) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\bukha\Documents\work\halalwatchworld-portal\node_modules\webpack\hot\dev-server.js */"./node_modules/webpack/hot/dev-server.js");
-__webpack_require__(/*! C:\Users\bukha\Documents\work\halalwatchworld-portal\node_modules\@pmmmwh\react-refresh-webpack-plugin\client\ReactRefreshEntry.js */"./node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js");
-__webpack_require__(/*! C:\Users\bukha\Documents\work\halalwatchworld-portal\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
-module.exports = __webpack_require__(/*! C:\Users\bukha\Documents\work\halalwatchworld-portal\src\index.tsx */"./src/index.tsx");
+__webpack_require__(/*! C:\Users\bukha\Documents\Work\halalwatchworld-portal\node_modules\webpack\hot\dev-server.js */"./node_modules/webpack/hot/dev-server.js");
+__webpack_require__(/*! C:\Users\bukha\Documents\Work\halalwatchworld-portal\node_modules\@pmmmwh\react-refresh-webpack-plugin\client\ReactRefreshEntry.js */"./node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js");
+__webpack_require__(/*! C:\Users\bukha\Documents\Work\halalwatchworld-portal\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! C:\Users\bukha\Documents\Work\halalwatchworld-portal\src\index.tsx */"./src/index.tsx");
 
 
 /***/ })
