@@ -31,7 +31,8 @@ class Client extends Model
         'status',
         'heds',
         'check_expired_certs',
-        'check_new_certs'
+        'check_new_certs',
+        'qrcode',
     ];
 
     public static function create(array $data)
@@ -69,6 +70,7 @@ class Client extends Model
         $client->heds = '[]';
         $client->check_expired_certs = false;
         $client->check_new_certs = false;
+        $client->qrcode = null;
         $client->save();
 
         return $client;

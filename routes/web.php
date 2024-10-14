@@ -36,6 +36,10 @@ Route::get('/avatars/{filename}', function ($filename) {
     return Storage::response('avatars/' . $filename);
 });
 
+Route::get('/qrcodes/{filename}', function ($filename) {
+    return Storage::response('qrcodes/' . $filename);
+});
+
 Route::get('/previews/{filename}', function ($filename) {
     return Storage::response('previews/' . $filename);
 });

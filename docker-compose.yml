@@ -1,29 +1,14 @@
 version: "3.1"
 
 services:
-  # hww_portal:
-  #   image: docker.io/bitnami/laravel:10
-  #   ports:
-  #     - '8000:8000'
-  #   environment:
-  #     - DB_HOST=mariadb
-  #     - DB_PORT=3306
-  #     - DB_USERNAME=root
-  #     - DB_DATABASE=hww_portal
-  #   volumes:
-  #     - '.:/app'
-  #   depends_on:
-  #     - mariadb
-  mariadb:
-    image: docker.io/bitnami/mariadb:11.2
-    ports:
-      - 3306:3306
+  db:
+    image: mariadb
+    restart: always
     environment:
-      - ALLOW_EMPTY_PASSWORD=yes
-      # - MARIADB_USER=root
-      - MARIADB_DATABASE=hww_portal
+      MARIADB_ALLOW_EMPTY_ROOT_PASSWORD: true
+    ports: [3306:3306]
     volumes:
-      - mariadbdata:/bitnami/mariadb/data
+      - mariadbdata:/var/lib/mysql
 
 volumes:
   mariadbdata:

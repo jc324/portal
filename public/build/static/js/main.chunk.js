@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "body {\r\n  margin: 0;\r\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\r\n    \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\r\n    sans-serif;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\ncode {\r\n  font-family: source-code-pro, Menlo, Monaco, Consolas, \"Courier New\",\r\n    monospace;\r\n}\r\n\r\n.MuiTab-wrapper {\r\n  flex-direction: row !important;\r\n}\r\n\r\n/* reviewer styles */\r\n.tabPanel > div {\r\n  padding-left: 0;\r\n  padding-right: 0;\r\n}\r\n\r\n/* profile read-only view */\r\n.profile-view-field .MuiInputBase-root,\r\n.profile-view-field .MuiSelect-select.MuiSelect-select {\r\n  color: #263238 !important;\r\n}\r\n\r\n/* Dashboard Stat Cards */\r\n.dashboard-stat-card:hover {\r\n  box-shadow: 0 0 7px 5px rgb(63 63 68 / 10%), 0 1px 2px 0 rgb(63 63 68 / 15%);\r\n}\r\n\r\n.dashboard-stat-card .MuiStepConnector-alternativeLabel {\r\n    top: 23px;\r\n    left: calc(-50% + 25px);\r\n    right: calc(50% + 25px);\r\n}\r\n", "",{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT;;cAEY;EACZ,mCAAmC;EACnC,kCAAkC;AACpC;;AAEA;EACE;aACW;AACb;;AAEA;EACE,8BAA8B;AAChC;;AAEA,oBAAoB;AACpB;EACE,eAAe;EACf,gBAAgB;AAClB;;AAEA,2BAA2B;AAC3B;;EAEE,yBAAyB;AAC3B;;AAEA,yBAAyB;AACzB;EACE,4EAA4E;AAC9E;;AAEA;IACI,SAAS;IACT,uBAAuB;IACvB,uBAAuB;AAC3B","sourcesContent":["body {\r\n  margin: 0;\r\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\r\n    \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\r\n    sans-serif;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\ncode {\r\n  font-family: source-code-pro, Menlo, Monaco, Consolas, \"Courier New\",\r\n    monospace;\r\n}\r\n\r\n.MuiTab-wrapper {\r\n  flex-direction: row !important;\r\n}\r\n\r\n/* reviewer styles */\r\n.tabPanel > div {\r\n  padding-left: 0;\r\n  padding-right: 0;\r\n}\r\n\r\n/* profile read-only view */\r\n.profile-view-field .MuiInputBase-root,\r\n.profile-view-field .MuiSelect-select.MuiSelect-select {\r\n  color: #263238 !important;\r\n}\r\n\r\n/* Dashboard Stat Cards */\r\n.dashboard-stat-card:hover {\r\n  box-shadow: 0 0 7px 5px rgb(63 63 68 / 10%), 0 1px 2px 0 rgb(63 63 68 / 15%);\r\n}\r\n\r\n.dashboard-stat-card .MuiStepConnector-alternativeLabel {\r\n    top: 23px;\r\n    left: calc(-50% + 25px);\r\n    right: calc(50% + 25px);\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n    \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, \"Courier New\",\n    monospace;\n}\n\n.MuiTab-wrapper {\n  flex-direction: row !important;\n}\n\n/* reviewer styles */\n.tabPanel > div {\n  padding-left: 0;\n  padding-right: 0;\n}\n\n/* profile read-only view */\n.profile-view-field .MuiInputBase-root,\n.profile-view-field .MuiSelect-select.MuiSelect-select {\n  color: #263238 !important;\n}\n\n/* Dashboard Stat Cards */\n.dashboard-stat-card:hover {\n  box-shadow: 0 0 7px 5px rgb(63 63 68 / 10%), 0 1px 2px 0 rgb(63 63 68 / 15%);\n}\n\n.dashboard-stat-card .MuiStepConnector-alternativeLabel {\n    top: 23px;\n    left: calc(-50% + 25px);\n    right: calc(50% + 25px);\n}\n", "",{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT;;cAEY;EACZ,mCAAmC;EACnC,kCAAkC;AACpC;;AAEA;EACE;aACW;AACb;;AAEA;EACE,8BAA8B;AAChC;;AAEA,oBAAoB;AACpB;EACE,eAAe;EACf,gBAAgB;AAClB;;AAEA,2BAA2B;AAC3B;;EAEE,yBAAyB;AAC3B;;AAEA,yBAAyB;AACzB;EACE,4EAA4E;AAC9E;;AAEA;IACI,SAAS;IACT,uBAAuB;IACvB,uBAAuB;AAC3B","sourcesContent":["body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n    \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, \"Courier New\",\n    monospace;\n}\n\n.MuiTab-wrapper {\n  flex-direction: row !important;\n}\n\n/* reviewer styles */\n.tabPanel > div {\n  padding-left: 0;\n  padding-right: 0;\n}\n\n/* profile read-only view */\n.profile-view-field .MuiInputBase-root,\n.profile-view-field .MuiSelect-select.MuiSelect-select {\n  color: #263238 !important;\n}\n\n/* Dashboard Stat Cards */\n.dashboard-stat-card:hover {\n  box-shadow: 0 0 7px 5px rgb(63 63 68 / 10%), 0 1px 2px 0 rgb(63 63 68 / 15%);\n}\n\n.dashboard-stat-card .MuiStepConnector-alternativeLabel {\n    top: 23px;\n    left: calc(-50% + 25px);\n    right: calc(50% + 25px);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\App.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/App.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -366,7 +366,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\components\\AuthenticateByUserId.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/components/AuthenticateByUserId.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -718,7 +718,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\components\\Logo.js";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/components/Logo.js";
 
 const Logo = props => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", Object.assign({
@@ -841,7 +841,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\components\\NavList.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/components/NavList.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -1172,7 +1172,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\components\\NotificationsDialog.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/components/NotificationsDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -1554,7 +1554,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\components\\Page.js";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/components/Page.js";
 
 
 
@@ -1866,7 +1866,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\components\\PicSelector\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/components/PicSelector/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 // @ts-nocheck
 
@@ -1883,7 +1883,9 @@ function PicSelector(_ref) {
   _s();
   let {
     onSelect,
-    cropOptions
+    cropOptions,
+    btnText = "Upload picture",
+    btnProps = {}
   } = _ref;
   const classes = useStyles();
   const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
@@ -1941,7 +1943,7 @@ function PicSelector(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89,
+      lineNumber: 94,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["DialogTitle"], {
@@ -1949,7 +1951,7 @@ function PicSelector(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
+      lineNumber: 101,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
@@ -1957,7 +1959,7 @@ function PicSelector(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 102,
       columnNumber: 11
     }
   }, "Crop your picture")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["DialogContent"], {
@@ -1968,7 +1970,7 @@ function PicSelector(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99,
+      lineNumber: 104,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_easy_crop__WEBPACK_IMPORTED_MODULE_1__["default"], Object.assign({
@@ -1988,14 +1990,14 @@ function PicSelector(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 100,
+      lineNumber: 105,
       columnNumber: 11
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["DialogContent"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115,
+      lineNumber: 120,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -2003,7 +2005,7 @@ function PicSelector(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116,
+      lineNumber: 121,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -2011,7 +2013,7 @@ function PicSelector(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117,
+      lineNumber: 122,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
@@ -2021,7 +2023,7 @@ function PicSelector(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 123,
       columnNumber: 15
     }
   }, "Zoom"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Slider"], {
@@ -2037,7 +2039,7 @@ function PicSelector(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121,
+      lineNumber: 126,
       columnNumber: 15
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -2045,7 +2047,7 @@ function PicSelector(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131,
+      lineNumber: 136,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
@@ -2055,7 +2057,7 @@ function PicSelector(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132,
+      lineNumber: 137,
       columnNumber: 15
     }
   }, "Rotate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Slider"], {
@@ -2071,14 +2073,14 @@ function PicSelector(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 135,
+      lineNumber: 140,
       columnNumber: 15
     }
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["DialogActions"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147,
+      lineNumber: 152,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Button"], {
@@ -2087,7 +2089,7 @@ function PicSelector(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148,
+      lineNumber: 153,
       columnNumber: 11
     }
   }, "Cancel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Button"], {
@@ -2100,7 +2102,7 @@ function PicSelector(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 151,
+      lineNumber: 156,
       columnNumber: 11
     }
   }, "Save"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -2115,21 +2117,22 @@ function PicSelector(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 161,
+      lineNumber: 166,
       columnNumber: 7
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Button"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Button"], Object.assign({
     color: "secondary",
     fullWidth: true,
     variant: "text",
-    onClick: handleImageUploadButton,
+    onClick: handleImageUploadButton
+  }, btnProps, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 169,
+      lineNumber: 174,
       columnNumber: 7
     }
-  }, "Upload picture"));
+  }), btnText));
 }
 _s(PicSelector, "CdAxVhEbbTdeaAwRU/8YSYPyWcc=", false, function () {
   return [useStyles];
@@ -2288,7 +2291,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\components\\TagsInput.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/components/TagsInput.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -2497,7 +2500,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\components\\TagsView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/components/TagsView.tsx";
 
 
 function TagsView(_ref) {
@@ -2754,7 +2757,7 @@ function usePersist(key, initialValue) {
   };
   return [storedValue, setValue];
 }
-_s(usePersist, "Sc/fojU/LiyVTX5FPqPPtjyfVxw=");
+_s(usePersist, "/S7ymPtM/vniwjghHN7MS1NUl4g=");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -2946,7 +2949,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\index.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/index.tsx";
 
 
 
@@ -3078,7 +3081,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\AdminDashboardLayout\\NavBar\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/layouts/AdminDashboardLayout/NavBar/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -3110,7 +3113,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42,
+      lineNumber: 43,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
@@ -3121,7 +3124,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 43,
+      lineNumber: 44,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Avatar"], {
@@ -3133,7 +3136,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44,
+      lineNumber: 45,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
@@ -3142,7 +3145,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 51,
       columnNumber: 9
     }
   }, user === null || user === void 0 ? void 0 : user.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
@@ -3152,7 +3155,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 53,
+      lineNumber: 54,
       columnNumber: 9
     }
   }, user === null || user === void 0 ? void 0 : user.role)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
@@ -3164,7 +3167,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 62,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_AuthenticateByUserId__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -3172,14 +3175,14 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 68,
+      lineNumber: 69,
       columnNumber: 9
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Divider"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
+      lineNumber: 73,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
@@ -3187,7 +3190,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 74,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_NavList__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -3195,7 +3198,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74,
+      lineNumber: 75,
       columnNumber: 9
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
@@ -3205,7 +3208,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 77,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
@@ -3215,7 +3218,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 78,
       columnNumber: 9
     }
   }, "Need help?"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
@@ -3224,7 +3227,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 81,
       columnNumber: 9
     }
   }, "Feel free to address any issues to the admin"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
@@ -3234,7 +3237,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 84,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
@@ -3245,7 +3248,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 85,
       columnNumber: 11
     }
   }, "Contact Admin"))));
@@ -3254,7 +3257,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94,
+      lineNumber: 95,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Drawer"], {
@@ -3268,7 +3271,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95,
+      lineNumber: 96,
       columnNumber: 9
     }
   }, content)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Hidden"], {
@@ -3276,7 +3279,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105,
+      lineNumber: 106,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Drawer"], {
@@ -3289,7 +3292,7 @@ const NavBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 107,
       columnNumber: 9
     }
   }, content)));
@@ -3342,6 +3345,10 @@ const items = [
     icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["ShoppingBag"],
     title: "Products"
   }]
+}, {
+  href: "/admin/auditor",
+  icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["Edit"],
+  title: "Auditor"
 }, {
   href: "/admin/account",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["User"],
@@ -3489,7 +3496,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\AdminDashboardLayout\\TopBar.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/layouts/AdminDashboardLayout/TopBar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -3764,7 +3771,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\AdminDashboardLayout\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/layouts/AdminDashboardLayout/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -3971,7 +3978,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\ClientDashboardLayout\\NavBar\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/layouts/ClientDashboardLayout/NavBar/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -4323,7 +4330,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\ClientDashboardLayout\\TopBar.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/layouts/ClientDashboardLayout/TopBar.js",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -4727,7 +4734,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\ClientDashboardLayout\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/layouts/ClientDashboardLayout/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -4929,7 +4936,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\MainLayout\\TopBar.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/layouts/MainLayout/TopBar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -5090,7 +5097,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\MainLayout\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/layouts/MainLayout/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -5277,7 +5284,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\ReviewerDashboardLayout\\NavBar\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/layouts/ReviewerDashboardLayout/NavBar/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -5530,7 +5537,7 @@ const items = [{
     icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["FileText"],
     title: "All Profiles"
   }, {
-    href: "/reviewer/register-client",
+    href: "/reviewer/clients/register",
     icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["UserPlus"],
     title: "New Profile"
   }
@@ -5697,7 +5704,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\ReviewerDashboardLayout\\TopBar.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/layouts/ReviewerDashboardLayout/TopBar.js",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -6033,7 +6040,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\layouts\\ReviewerDashboardLayout\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/layouts/ReviewerDashboardLayout/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -6626,41 +6633,42 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_admin_reviews__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./views/admin/reviews */ "./src/views/admin/reviews/index.js");
 /* harmony import */ var _views_admin_reviewers__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./views/admin/reviewers */ "./src/views/admin/reviewers/index.js");
 /* harmony import */ var _views_admin_facility_categories__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./views/admin/facility-categories */ "./src/views/admin/facility-categories/index.js");
-/* harmony import */ var _views_admin_product_categories__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./views/admin/product-categories */ "./src/views/admin/product-categories/index.js");
-/* harmony import */ var _views_reviewer_requests__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./views/reviewer/requests */ "./src/views/reviewer/requests/index.js");
-/* harmony import */ var _views_reviewer_requests_review__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./views/reviewer/requests/review */ "./src/views/reviewer/requests/review/index.tsx");
-/* harmony import */ var _views_reviewer_requests_reports__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./views/reviewer/requests/reports */ "./src/views/reviewer/requests/reports/index.tsx");
-/* harmony import */ var _views_reviewer_clients__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./views/reviewer/clients */ "./src/views/reviewer/clients/index.js");
-/* harmony import */ var _views_reviewer_manufacturers__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./views/reviewer/manufacturers */ "./src/views/reviewer/manufacturers/index.js");
-/* harmony import */ var _views_reviewer_manufacturers_manufacturer__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./views/reviewer/manufacturers/manufacturer */ "./src/views/reviewer/manufacturers/manufacturer/index.tsx");
-/* harmony import */ var _views_reviewer_register_client__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./views/reviewer/register-client */ "./src/views/reviewer/register-client/index.tsx");
-/* harmony import */ var _views_reviewer_reviews_queue__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./views/reviewer/reviews-queue */ "./src/views/reviewer/reviews-queue/index.js");
-/* harmony import */ var _views_reviewer_approved_reviews__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./views/reviewer/approved-reviews */ "./src/views/reviewer/approved-reviews/index.js");
-/* harmony import */ var _views_reviewer_drafted_reviews__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./views/reviewer/drafted-reviews */ "./src/views/reviewer/drafted-reviews/index.js");
-/* harmony import */ var _views_reviewer_new_review__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./views/reviewer/new-review */ "./src/views/reviewer/new-review/index.tsx");
-/* harmony import */ var _views_reviewer_clients_client__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./views/reviewer/clients/client */ "./src/views/reviewer/clients/client/index.tsx");
-/* harmony import */ var _views_reviewer_auditor__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./views/reviewer/auditor */ "./src/views/reviewer/auditor/index.tsx");
-/* harmony import */ var _views_reviewer_profile_index__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./views/reviewer/profile/index */ "./src/views/reviewer/profile/index.tsx");
-/* harmony import */ var _views_client_dashboard_DashboardView__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./views/client/dashboard/DashboardView */ "./src/views/client/dashboard/DashboardView/index.tsx");
-/* harmony import */ var _views_client_requests__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./views/client/requests */ "./src/views/client/requests/index.js");
-/* harmony import */ var _views_client_documents__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./views/client/documents */ "./src/views/client/documents/index.js");
-/* harmony import */ var _views_client_help__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./views/client/help */ "./src/views/client/help/index.js");
-/* harmony import */ var _views_client_facilities__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./views/client/facilities */ "./src/views/client/facilities/index.js");
-/* harmony import */ var _views_client_products__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./views/client/products */ "./src/views/client/products/index.js");
-/* harmony import */ var _views_client_heds__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./views/client/heds */ "./src/views/client/heds/index.js");
-/* harmony import */ var _views_client_requests_request__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./views/client/requests/request */ "./src/views/client/requests/request/index.tsx");
-/* harmony import */ var _views_client_requests_request_Corrections__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./views/client/requests/request/Corrections */ "./src/views/client/requests/request/Corrections/index.tsx");
-/* harmony import */ var _views_client_requests_request_RequestCertificates__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./views/client/requests/request/RequestCertificates */ "./src/views/client/requests/request/RequestCertificates.tsx");
-/* harmony import */ var _views_client_reports__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./views/client/reports */ "./src/views/client/reports/index.js");
-/* harmony import */ var _views_client_reports_audit__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./views/client/reports/audit */ "./src/views/client/reports/audit/index.js");
-/* harmony import */ var _views_client_reports_review__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./views/client/reports/review */ "./src/views/client/reports/review/index.js");
-/* harmony import */ var _views_client_certificates__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./views/client/certificates */ "./src/views/client/certificates/index.js");
-/* harmony import */ var _views_client_profile_index__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./views/client/profile/index */ "./src/views/client/profile/index.tsx");
-/* harmony import */ var _views_client_profile_edit_index__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./views/client/profile/edit/index */ "./src/views/client/profile/edit/index.tsx");
+/* harmony import */ var _views_admin_auditor__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./views/admin/auditor */ "./src/views/admin/auditor/index.tsx");
+/* harmony import */ var _views_admin_product_categories__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./views/admin/product-categories */ "./src/views/admin/product-categories/index.js");
+/* harmony import */ var _views_reviewer_requests__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./views/reviewer/requests */ "./src/views/reviewer/requests/index.js");
+/* harmony import */ var _views_reviewer_requests_review__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./views/reviewer/requests/review */ "./src/views/reviewer/requests/review/index.tsx");
+/* harmony import */ var _views_reviewer_requests_reports__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./views/reviewer/requests/reports */ "./src/views/reviewer/requests/reports/index.tsx");
+/* harmony import */ var _views_reviewer_clients__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./views/reviewer/clients */ "./src/views/reviewer/clients/index.js");
+/* harmony import */ var _views_reviewer_clients_register__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./views/reviewer/clients/register */ "./src/views/reviewer/clients/register/index.tsx");
+/* harmony import */ var _views_reviewer_clients_client__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./views/reviewer/clients/client */ "./src/views/reviewer/clients/client/index.tsx");
+/* harmony import */ var _views_reviewer_manufacturers__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./views/reviewer/manufacturers */ "./src/views/reviewer/manufacturers/index.js");
+/* harmony import */ var _views_reviewer_manufacturers_manufacturer__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./views/reviewer/manufacturers/manufacturer */ "./src/views/reviewer/manufacturers/manufacturer/index.tsx");
+/* harmony import */ var _views_reviewer_reviews_queue__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./views/reviewer/reviews-queue */ "./src/views/reviewer/reviews-queue/index.js");
+/* harmony import */ var _views_reviewer_approved_reviews__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./views/reviewer/approved-reviews */ "./src/views/reviewer/approved-reviews/index.js");
+/* harmony import */ var _views_reviewer_drafted_reviews__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./views/reviewer/drafted-reviews */ "./src/views/reviewer/drafted-reviews/index.js");
+/* harmony import */ var _views_reviewer_new_review__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./views/reviewer/new-review */ "./src/views/reviewer/new-review/index.tsx");
+/* harmony import */ var _views_reviewer_auditor__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./views/reviewer/auditor */ "./src/views/reviewer/auditor/index.tsx");
+/* harmony import */ var _views_reviewer_profile_index__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./views/reviewer/profile/index */ "./src/views/reviewer/profile/index.tsx");
+/* harmony import */ var _views_client_dashboard_DashboardView__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./views/client/dashboard/DashboardView */ "./src/views/client/dashboard/DashboardView/index.tsx");
+/* harmony import */ var _views_client_requests__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./views/client/requests */ "./src/views/client/requests/index.js");
+/* harmony import */ var _views_client_documents__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./views/client/documents */ "./src/views/client/documents/index.js");
+/* harmony import */ var _views_client_help__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./views/client/help */ "./src/views/client/help/index.js");
+/* harmony import */ var _views_client_facilities__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./views/client/facilities */ "./src/views/client/facilities/index.js");
+/* harmony import */ var _views_client_products__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./views/client/products */ "./src/views/client/products/index.js");
+/* harmony import */ var _views_client_heds__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./views/client/heds */ "./src/views/client/heds/index.js");
+/* harmony import */ var _views_client_requests_request__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./views/client/requests/request */ "./src/views/client/requests/request/index.tsx");
+/* harmony import */ var _views_client_requests_request_Corrections__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./views/client/requests/request/Corrections */ "./src/views/client/requests/request/Corrections/index.tsx");
+/* harmony import */ var _views_client_requests_request_RequestCertificates__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./views/client/requests/request/RequestCertificates */ "./src/views/client/requests/request/RequestCertificates.tsx");
+/* harmony import */ var _views_client_reports__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./views/client/reports */ "./src/views/client/reports/index.js");
+/* harmony import */ var _views_client_reports_audit__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./views/client/reports/audit */ "./src/views/client/reports/audit/index.js");
+/* harmony import */ var _views_client_reports_review__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./views/client/reports/review */ "./src/views/client/reports/review/index.js");
+/* harmony import */ var _views_client_certificates__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./views/client/certificates */ "./src/views/client/certificates/index.js");
+/* harmony import */ var _views_client_profile_index__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./views/client/profile/index */ "./src/views/client/profile/index.tsx");
+/* harmony import */ var _views_client_profile_edit_index__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./views/client/profile/edit/index */ "./src/views/client/profile/edit/index.tsx");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\routes.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/routes.tsx";
 
 
 
@@ -6680,6 +6688,7 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\s
 
 
 // Admin screens
+
 
 
 
@@ -6741,7 +6750,7 @@ const routes = [{
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82,
+      lineNumber: 83,
       columnNumber: 14
     }
   }),
@@ -6751,7 +6760,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 84,
+        lineNumber: 85,
         columnNumber: 33
       }
     })
@@ -6761,7 +6770,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85,
+        lineNumber: 86,
         columnNumber: 43
       }
     })
@@ -6771,7 +6780,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 86,
+        lineNumber: 87,
         columnNumber: 42
       }
     })
@@ -6781,7 +6790,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 87,
+        lineNumber: 88,
         columnNumber: 36
       }
     })
@@ -6791,7 +6800,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 88,
+        lineNumber: 89,
         columnNumber: 31
       }
     })
@@ -6801,7 +6810,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 89,
+        lineNumber: 90,
         columnNumber: 29
       }
     })
@@ -6814,7 +6823,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 90,
+        lineNumber: 91,
         columnNumber: 29
       }
     })
@@ -6828,7 +6837,7 @@ const routes = [{
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96,
+      lineNumber: 97,
       columnNumber: 14
     }
   }),
@@ -6838,7 +6847,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98,
+        lineNumber: 99,
         columnNumber: 43
       }
     })
@@ -6848,7 +6857,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 99,
+        lineNumber: 100,
         columnNumber: 35
       }
     })
@@ -6858,7 +6867,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 100,
+        lineNumber: 101,
         columnNumber: 38
       }
     })
@@ -6868,7 +6877,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 103,
+        lineNumber: 104,
         columnNumber: 18
       }
     })
@@ -6878,7 +6887,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 105,
+        lineNumber: 106,
         columnNumber: 35
       }
     })
@@ -6888,7 +6897,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 106,
+        lineNumber: 107,
         columnNumber: 35
       }
     })
@@ -6898,7 +6907,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 107,
+        lineNumber: 108,
         columnNumber: 37
       }
     })
@@ -6908,18 +6917,28 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 108,
+        lineNumber: 109,
         columnNumber: 47
       }
     })
   }, {
     path: "product-categories",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_product_categories__WEBPACK_IMPORTED_MODULE_21__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_product_categories__WEBPACK_IMPORTED_MODULE_22__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 109,
+        lineNumber: 110,
         columnNumber: 46
+      }
+    })
+  }, {
+    path: "auditor",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_auditor__WEBPACK_IMPORTED_MODULE_21__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 111,
+        columnNumber: 35
       }
     })
   },
@@ -6933,7 +6952,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 113,
+        lineNumber: 115,
         columnNumber: 29
       }
     })
@@ -6947,33 +6966,43 @@ const routes = [{
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 119,
+      lineNumber: 121,
       columnNumber: 14
     }
   }),
   children: [{
-    path: "clients/requests",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_requests__WEBPACK_IMPORTED_MODULE_22__["default"], {
+    path: "clients",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_clients__WEBPACK_IMPORTED_MODULE_26__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 121,
+        lineNumber: 123,
+        columnNumber: 35
+      }
+    })
+  }, {
+    path: "clients/register",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_clients_register__WEBPACK_IMPORTED_MODULE_27__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 124,
+        columnNumber: 44
+      }
+    })
+  }, {
+    path: "clients/requests",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_requests__WEBPACK_IMPORTED_MODULE_23__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 125,
         columnNumber: 44
       }
     })
   }, {
     path: "clients/request/:id/review",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_requests_review__WEBPACK_IMPORTED_MODULE_23__["default"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 124,
-        columnNumber: 18
-      }
-    })
-  }, {
-    path: "clients/request/:id/reports",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_requests_reports__WEBPACK_IMPORTED_MODULE_24__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_requests_review__WEBPACK_IMPORTED_MODULE_24__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -6982,48 +7011,18 @@ const routes = [{
       }
     })
   }, {
-    path: "clients",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_clients__WEBPACK_IMPORTED_MODULE_25__["default"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 130,
-        columnNumber: 35
-      }
-    })
-  }, {
-    path: "register-client",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_register_client__WEBPACK_IMPORTED_MODULE_28__["default"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 131,
-        columnNumber: 43
-      }
-    })
-  }, {
-    path: "manufacturers",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_manufacturers__WEBPACK_IMPORTED_MODULE_26__["default"], {
+    path: "clients/request/:id/reports",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_requests_reports__WEBPACK_IMPORTED_MODULE_25__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 132,
-        columnNumber: 41
+        columnNumber: 18
       }
     })
   }, {
-    path: "manufacturer/:id",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_manufacturers_manufacturer__WEBPACK_IMPORTED_MODULE_27__["default"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 133,
-        columnNumber: 44
-      }
-    })
-  }, {
-    path: "reviews-queue",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_reviews_queue__WEBPACK_IMPORTED_MODULE_29__["default"], {
+    path: "manufacturers",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_manufacturers__WEBPACK_IMPORTED_MODULE_29__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7032,8 +7031,8 @@ const routes = [{
       }
     })
   }, {
-    path: "approved-reviews",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_approved_reviews__WEBPACK_IMPORTED_MODULE_30__["default"], {
+    path: "manufacturer/:id",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_manufacturers_manufacturer__WEBPACK_IMPORTED_MODULE_30__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7042,52 +7041,72 @@ const routes = [{
       }
     })
   }, {
-    path: "drafted-reviews",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_drafted_reviews__WEBPACK_IMPORTED_MODULE_31__["default"], {
+    path: "reviews-queue",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_reviews_queue__WEBPACK_IMPORTED_MODULE_31__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 136,
+        columnNumber: 41
+      }
+    })
+  }, {
+    path: "approved-reviews",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_approved_reviews__WEBPACK_IMPORTED_MODULE_32__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 137,
+        columnNumber: 44
+      }
+    })
+  }, {
+    path: "drafted-reviews",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_drafted_reviews__WEBPACK_IMPORTED_MODULE_33__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 138,
         columnNumber: 43
       }
     })
   }, {
     path: "new-review",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_new_review__WEBPACK_IMPORTED_MODULE_32__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_new_review__WEBPACK_IMPORTED_MODULE_34__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 137,
+        lineNumber: 139,
         columnNumber: 38
       }
     })
   }, {
     path: "client/:id",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_clients_client__WEBPACK_IMPORTED_MODULE_33__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_clients_client__WEBPACK_IMPORTED_MODULE_28__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 138,
+        lineNumber: 140,
         columnNumber: 38
       }
     })
   }, {
     path: "auditor",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_auditor__WEBPACK_IMPORTED_MODULE_34__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_auditor__WEBPACK_IMPORTED_MODULE_35__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 139,
+        lineNumber: 141,
         columnNumber: 35
       }
     })
   }, {
     path: "profile",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_profile_index__WEBPACK_IMPORTED_MODULE_35__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_profile_index__WEBPACK_IMPORTED_MODULE_36__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 140,
+        lineNumber: 142,
         columnNumber: 35
       }
     })
@@ -7098,7 +7117,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 141,
+        lineNumber: 143,
         columnNumber: 29
       }
     })
@@ -7112,17 +7131,17 @@ const routes = [{
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147,
+      lineNumber: 149,
       columnNumber: 14
     }
   }),
   children: [{
     path: "dashboard",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_dashboard_DashboardView__WEBPACK_IMPORTED_MODULE_36__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_dashboard_DashboardView__WEBPACK_IMPORTED_MODULE_37__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 149,
+        lineNumber: 151,
         columnNumber: 37
       }
     })
@@ -7132,158 +7151,158 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 150,
+        lineNumber: 152,
         columnNumber: 39
       }
     })
   }, {
     path: "requests",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests__WEBPACK_IMPORTED_MODULE_37__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests__WEBPACK_IMPORTED_MODULE_38__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 151,
+        lineNumber: 153,
         columnNumber: 36
       }
     })
   }, {
     path: "documents",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_documents__WEBPACK_IMPORTED_MODULE_38__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_documents__WEBPACK_IMPORTED_MODULE_39__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 152,
+        lineNumber: 154,
         columnNumber: 37
       }
     })
   }, {
     path: "help",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_help__WEBPACK_IMPORTED_MODULE_39__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_help__WEBPACK_IMPORTED_MODULE_40__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 153,
+        lineNumber: 155,
         columnNumber: 32
       }
     })
   }, {
     path: "facilities",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_facilities__WEBPACK_IMPORTED_MODULE_40__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_facilities__WEBPACK_IMPORTED_MODULE_41__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 154,
+        lineNumber: 156,
         columnNumber: 38
       }
     })
   }, {
     path: "products",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_products__WEBPACK_IMPORTED_MODULE_41__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_products__WEBPACK_IMPORTED_MODULE_42__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 155,
+        lineNumber: 157,
         columnNumber: 36
       }
     })
   }, {
     path: "heds",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_heds__WEBPACK_IMPORTED_MODULE_42__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_heds__WEBPACK_IMPORTED_MODULE_43__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 156,
+        lineNumber: 158,
         columnNumber: 32
       }
     })
   }, {
     path: "request/:id",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request__WEBPACK_IMPORTED_MODULE_43__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request__WEBPACK_IMPORTED_MODULE_44__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 157,
+        lineNumber: 159,
         columnNumber: 39
       }
     })
   }, {
     path: "request/:id/corrections",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request_Corrections__WEBPACK_IMPORTED_MODULE_44__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request_Corrections__WEBPACK_IMPORTED_MODULE_45__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 160,
+        lineNumber: 162,
         columnNumber: 18
       }
     })
   }, {
     path: "request/:id/certificates",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request_RequestCertificates__WEBPACK_IMPORTED_MODULE_45__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request_RequestCertificates__WEBPACK_IMPORTED_MODULE_46__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 164,
+        lineNumber: 166,
         columnNumber: 18
       }
     })
   }, {
     path: "reports",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports__WEBPACK_IMPORTED_MODULE_46__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports__WEBPACK_IMPORTED_MODULE_47__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 168,
+        lineNumber: 170,
         columnNumber: 18
       }
     })
     // children: [],
   }, {
     path: "reports/document",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_review__WEBPACK_IMPORTED_MODULE_48__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_review__WEBPACK_IMPORTED_MODULE_49__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 171,
+        lineNumber: 173,
         columnNumber: 44
       }
     })
   }, {
     path: "reports/audit",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_audit__WEBPACK_IMPORTED_MODULE_47__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_audit__WEBPACK_IMPORTED_MODULE_48__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 172,
+        lineNumber: 174,
         columnNumber: 41
       }
     })
   }, {
     path: "certificates",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_certificates__WEBPACK_IMPORTED_MODULE_49__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_certificates__WEBPACK_IMPORTED_MODULE_50__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 173,
+        lineNumber: 175,
         columnNumber: 40
       }
     })
   }, {
     path: "profile",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_profile_index__WEBPACK_IMPORTED_MODULE_50__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_profile_index__WEBPACK_IMPORTED_MODULE_51__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 174,
+        lineNumber: 176,
         columnNumber: 35
       }
     })
   }, {
     path: "profile/edit",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_profile_edit_index__WEBPACK_IMPORTED_MODULE_51__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_profile_edit_index__WEBPACK_IMPORTED_MODULE_52__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 175,
+        lineNumber: 177,
         columnNumber: 40
       }
     })
@@ -7293,7 +7312,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 176,
+        lineNumber: 178,
         columnNumber: 43
       }
     })
@@ -7304,7 +7323,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 177,
+        lineNumber: 179,
         columnNumber: 29
       }
     })
@@ -7314,11 +7333,11 @@ const routes = [{
 // necessary to wrap, to prevent link cache from same comp
 // eg: loading this from /client/request/:id
 function ClientRequestViewNew() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request__WEBPACK_IMPORTED_MODULE_43__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request__WEBPACK_IMPORTED_MODULE_44__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 185,
+      lineNumber: 187,
       columnNumber: 10
     }
   });
@@ -7337,7 +7356,7 @@ function PrivateRoute(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 194,
+      lineNumber: 196,
       columnNumber: 5
     }
   })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Navigate"], {
@@ -7348,7 +7367,7 @@ function PrivateRoute(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 196,
+      lineNumber: 198,
       columnNumber: 5
     }
   });
@@ -7884,7 +7903,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\account\\AccountView\\Profile.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/account/AccountView/Profile.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -8141,7 +8160,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\account\\AccountView\\ProfileDetails.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/account/AccountView/ProfileDetails.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -8669,7 +8688,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\account\\AccountView\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/account/AccountView/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -8836,31 +8855,32 @@ if (true) {
 
 /***/ }),
 
-/***/ "./src/views/admin/clients/ClientMenu.tsx":
-/*!************************************************!*\
-  !*** ./src/views/admin/clients/ClientMenu.tsx ***!
-  \************************************************/
+/***/ "./src/views/admin/auditor/index.tsx":
+/*!*******************************************!*\
+  !*** ./src/views/admin/auditor/index.tsx ***!
+  \*******************************************/
 /*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ClientMenu; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
-/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/MoreVert */ "./node_modules/@material-ui/icons/MoreVert.js");
-/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _material_ui_icons_SupervisedUserCircle__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/SupervisedUserCircle */ "./node_modules/@material-ui/icons/SupervisedUserCircle.js");
-/* harmony import */ var _material_ui_icons_SupervisedUserCircle__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_SupervisedUserCircle__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
-/* harmony import */ var _api_Auth__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../api/Auth */ "./src/api/Auth.ts");
+/* harmony import */ var _material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/MenuItem */ "./node_modules/@material-ui/core/esm/MenuItem/index.js");
+/* harmony import */ var _material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/FormControl */ "./node_modules/@material-ui/core/esm/FormControl/index.js");
+/* harmony import */ var _material_ui_core_Select__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/Select */ "./node_modules/@material-ui/core/esm/Select/index.js");
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../components/Page */ "./src/components/Page.js");
+/* harmony import */ var _material_ui_lab__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/lab */ "./node_modules/@material-ui/lab/esm/index.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\ClientMenu.tsx",
-  _s = __webpack_require__.$Refresh$.signature();
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/auditor/index.tsx",
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 
@@ -8868,94 +8888,374 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\s
 
 
 
-function ClientMenu(_ref) {
+
+
+const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
+  root: {
+    // @ts-ignore
+    backgroundColor: theme.palette.background.dark,
+    minHeight: "100%",
+    paddingBottom: theme.spacing(3),
+    paddingTop: theme.spacing(3)
+  }
+}));
+const AuditorView = () => {
   _s();
-  let {
-    client
-  } = _ref;
-  const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
-  const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_6__["default"]().user;
-  const [anchorEl, setAnchorEl] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
-  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const classes = useStyles();
+  return (
+    /*#__PURE__*/
+    // @ts-ignore
+    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_7__["default"], {
+      className: classes.root,
+      title: "Auditor"
+      // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
+      ,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 38,
+        columnNumber: 5
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Container"], {
+      maxWidth: "md",
+      style: {
+        marginLeft: 0
+      },
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43,
+        columnNumber: 7
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+      container: true,
+      spacing: 2,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 9
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+      item: true,
+      md: 12,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 46,
+        columnNumber: 11
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Auditor, {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 47,
+        columnNumber: 13
+      }
+    })))))
+  );
+};
+_s(AuditorView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
+  return [useStyles];
+});
+_c = AuditorView;
+/* harmony default export */ __webpack_exports__["default"] = (AuditorView);
+function Auditor() {
+  _s2();
+  var _clients$filter$0$fac;
   const {
     enqueueSnackbar
-  } = Object(notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"])();
-  const viewClient = () => navigate(`/admin/client/${client.id}`);
-  const handleClick = event => {
-    setAnchorEl(event.currentTarget);
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_6__["useSnackbar"])();
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
+  const [selectedClient, setSelectedClient] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
+  const [selectedFacility, setSelectedFacility] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
+  const [clients, setClients] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])([]);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post("/api/clients").then(async response => {
+      setLoading(false);
+      // console.log(response.data);
+      setClients(response.data);
+    }).catch(e => {
+      // @TODO handle
+      console.error(e);
+      setLoading(false);
+    });
+  }, []);
+  const handleClientSelectionChange = event => {
+    setSelectedClient(event.target.value);
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
-    edge: "end",
-    size: "small",
-    "aria-controls": "client-menu",
-    "aria-haspopup": "true",
-    onClick: handleClick,
+  const handleFacilitySelectionChange = event => {
+    setSelectedFacility(event.target.value);
+  };
+  const handleAuditPrintout = e => {
+    if (selectedFacility === "") return;
+    setLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/client/facility/${selectedFacility}/audit-printout`).then(async response => {
+      setLoading(false);
+      if (response.status == 200 || response.status == 201) {
+        setSelectedClient("");
+        setSelectedFacility("");
+        enqueueSnackbar("Audit printout sent successfully.", {
+          variant: "success"
+        });
+      } else {
+        console.log(response);
+        enqueueSnackbar("Failed to send audit printout.", {
+          variant: "error"
+        });
+      }
+    }).catch(e => {
+      console.error(e);
+      setLoading(false);
+      enqueueSnackbar("Failed to send audit printout.", {
+        variant: "error"
+      });
+    });
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Card"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 40,
+      lineNumber: 122,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CardHeader"], {
+    title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+      children: "Auditor Printout",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 123,
+        columnNumber: 26
+      }
+    }),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 123,
       columnNumber: 7
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Divider"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47,
-      columnNumber: 9
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Menu"], {
-    id: "client-menu",
-    anchorEl: anchorEl,
-    keepMounted: true,
-    open: Boolean(anchorEl),
-    onClose: () => setAnchorEl(null),
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 124,
       columnNumber: 7
     }
-  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["LinearProgress"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 56,
-      columnNumber: 21
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
-    onClick: viewClient,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 57,
-      columnNumber: 9
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_SupervisedUserCircle__WEBPACK_IMPORTED_MODULE_4___default.a, {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 58,
-      columnNumber: 11
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
-    variant: "inherit",
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+    minWidth: 800,
     style: {
-      marginLeft: 10
+      height: "calc(100vh - 166px)",
+      overflowY: "hidden",
+      display: "flex",
+      flexDirection: "column",
+      justifyContent: "center",
+      alignItems: "center"
+    },
+    p: 5,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 125,
+      columnNumber: 7
+    }
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CircularProgress"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 137,
+      columnNumber: 22
+    }
+  }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_8__["Alert"], {
+    severity: "info",
+    style: {
+      marginBottom: 40
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59,
-      columnNumber: 11
+      lineNumber: 139,
+      columnNumber: 13
     }
-  }, "View Client"))));
+  }, "Use the below controls to generate an up-to-date audit printout for a specific client facility. The printout will be sent to", " ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 142,
+      columnNumber: 15
+    }
+  }, "audits@halalwatchworld.org")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      display: "flex",
+      flexDirection: "row",
+      justifyContent: "space-around",
+      width: "100%"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 144,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 152,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    style: {
+      marginBottom: 5
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 153,
+      columnNumber: 17
+    }
+  }, "Select Client"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 154,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Select__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    displayEmpty: true,
+    inputProps: {
+      "aria-label": "Without label"
+    },
+    variant: "outlined",
+    style: {
+      width: 200
+    },
+    value: selectedClient,
+    onChange: handleClientSelectionChange,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 155,
+      columnNumber: 19
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    value: "",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 163,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 164,
+      columnNumber: 23
+    }
+  }, "None")), clients.map(client => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    value: client.id,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 167,
+      columnNumber: 23
+    }
+  }, client.business_name))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 174,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    style: {
+      marginBottom: 5
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 175,
+      columnNumber: 17
+    }
+  }, "Select Facility"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 176,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Select__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    displayEmpty: true,
+    inputProps: {
+      "aria-label": "Without label"
+    },
+    variant: "outlined",
+    style: {
+      width: 300
+    },
+    disabled: selectedClient === "",
+    value: selectedFacility,
+    onChange: handleFacilitySelectionChange,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 177,
+      columnNumber: 19
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    value: "",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 186,
+      columnNumber: 21
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 187,
+      columnNumber: 23
+    }
+  }, "None")), selectedClient !== "" && ((_clients$filter$0$fac = clients.filter(c => c.id === selectedClient)[0].facilities) === null || _clients$filter$0$fac === void 0 ? void 0 : _clients$filter$0$fac.map(facility => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    value: facility.id,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 193,
+      columnNumber: 27
+    }
+  }, facility.name))) || null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    style: {
+      paddingTop: 35
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 201,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    variant: "contained",
+    color: "primary",
+    disabled: selectedFacility === "",
+    onClick: handleAuditPrintout,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 202,
+      columnNumber: 17
+    }
+  }, "Send Printout"))))));
 }
-_s(ClientMenu, "lFiqq0ykb9m24LKKt0ZblVImzrM=", false, function () {
-  return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"], notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"]];
+_s2(Auditor, "FUD9u4g9Fnx3ahHwBdYZ0VjKOlo=", false, function () {
+  return [notistack__WEBPACK_IMPORTED_MODULE_6__["useSnackbar"]];
 });
-_c = ClientMenu;
-var _c;
-__webpack_require__.$Refresh$.register(_c, "ClientMenu");
+_c2 = Auditor;
+var _c, _c2;
+__webpack_require__.$Refresh$.register(_c, "AuditorView");
+__webpack_require__.$Refresh$.register(_c2, "Auditor");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -9059,11 +9359,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
-/* harmony import */ var _ClientMenu__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./ClientMenu */ "./src/views/admin/clients/ClientMenu.tsx");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -9074,10 +9373,6 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\s
 
 
 
-
-
-
-// import { getColorByClientStatus } from "./utils";
 
 
 const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["makeStyles"])(() => ({
@@ -9114,14 +9409,14 @@ function Results(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 76,
+      lineNumber: 73,
       columnNumber: 5
     }
   }), loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["LinearProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 74,
       columnNumber: 19
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["CardHeader"], {
@@ -9130,21 +9425,21 @@ function Results(_ref) {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 78,
+        lineNumber: 75,
         columnNumber: 26
       }
     }),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78,
+      lineNumber: 75,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Divider"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79,
+      lineNumber: 76,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Box"], {
@@ -9156,38 +9451,52 @@ function Results(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80,
+      lineNumber: 77,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Table"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 81,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableHead"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 82,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableRow"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 83,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 84,
       columnNumber: 15
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 89,
+      columnNumber: 17
+    }
+  }, "Business Name")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -9201,7 +9510,7 @@ function Results(_ref) {
       lineNumber: 92,
       columnNumber: 17
     }
-  }, "Business Name")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
+  }, "Owner Name")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -9215,21 +9524,22 @@ function Results(_ref) {
       lineNumber: 95,
       columnNumber: 17
     }
-  }, "Owner Name")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
+  }, "Reviewer Name")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
+    align: "center",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 100,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 101,
       columnNumber: 17
     }
-  }, "Reviewer Name")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
+  }, "Facilities")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
     align: "center",
     __self: this,
     __source: {
@@ -9244,8 +9554,7 @@ function Results(_ref) {
       lineNumber: 104,
       columnNumber: 17
     }
-  }, "Facilities")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
-    align: "center",
+  }, "Products")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -9259,7 +9568,7 @@ function Results(_ref) {
       lineNumber: 107,
       columnNumber: 17
     }
-  }, "Products")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
+  }, "Risk Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -9273,26 +9582,12 @@ function Results(_ref) {
       lineNumber: 110,
       columnNumber: 17
     }
-  }, "Risk Type")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 112,
-      columnNumber: 15
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 113,
-      columnNumber: 17
-    }
   }, "Profile Status")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
     sortDirection: "desc",
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115,
+      lineNumber: 112,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Tooltip"], {
@@ -9301,7 +9596,7 @@ function Results(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116,
+      lineNumber: 113,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableSortLabel"], {
@@ -9310,28 +9605,21 @@ function Results(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117,
+      lineNumber: 114,
       columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 115,
       columnNumber: 21
     }
-  }, "Date Created")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
+  }, "Date Created")))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableBody"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122,
-      columnNumber: 15
-    }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableBody"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 125,
+      lineNumber: 121,
       columnNumber: 11
     }
   }, clients.map(client => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ClientItem, {
@@ -9339,7 +9627,7 @@ function Results(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127,
+      lineNumber: 123,
       columnNumber: 15
     }
   }))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Box"], {
@@ -9349,7 +9637,7 @@ function Results(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132,
+      lineNumber: 128,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Button"], {
@@ -9358,7 +9646,7 @@ function Results(_ref) {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 135,
+        lineNumber: 131,
         columnNumber: 20
       }
     }),
@@ -9367,7 +9655,7 @@ function Results(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133,
+      lineNumber: 129,
       columnNumber: 9
     }
   }, "View More")));
@@ -9453,14 +9741,14 @@ function ClientItem(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 218,
+      lineNumber: 214,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 226,
+      lineNumber: 222,
       columnNumber: 7
     }
   }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["CircularProgress"], {
@@ -9471,14 +9759,14 @@ function ClientItem(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 228,
+      lineNumber: 224,
       columnNumber: 11
     }
   }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_9__["User"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229,
+      lineNumber: 225,
       columnNumber: 15
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
@@ -9486,14 +9774,14 @@ function ClientItem(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 232,
+      lineNumber: 228,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 233,
+      lineNumber: 229,
       columnNumber: 9
     }
   }, client.business_name)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
@@ -9501,7 +9789,7 @@ function ClientItem(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 235,
+      lineNumber: 231,
       columnNumber: 7
     }
   }, client.user.profile.first_name, " ", client.user.profile.last_name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
@@ -9510,7 +9798,7 @@ function ClientItem(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 238,
+      lineNumber: 234,
       columnNumber: 7
     }
   }, client.reviewer.profile.first_name, " ", client.reviewer.profile.last_name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
@@ -9519,33 +9807,49 @@ function ClientItem(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 253,
+      lineNumber: 249,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 257,
+      lineNumber: 253,
       columnNumber: 9
     }
-  }, client.facility_count)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Chip"], {
+    label: client.facility_count,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 254,
+      columnNumber: 11
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
     align: "center",
     onClick: e => handleRowClick(client.id),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 259,
+      lineNumber: 257,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 263,
+      lineNumber: 261,
       columnNumber: 9
     }
-  }, "_")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["Chip"], {
+    label: client.product_count,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 262,
+      columnNumber: 11
+    }
+  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -9749,22 +10053,7 @@ function ClientItem(_ref2) {
     }
   },
   // @ts-ignore
-  moment__WEBPACK_IMPORTED_MODULE_3___default()(client.date_updated).format("MM/DD/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_6__["TableCell"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 337,
-      columnNumber: 7
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ClientMenu__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    client: client,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 338,
-      columnNumber: 9
-    }
-  })));
+  moment__WEBPACK_IMPORTED_MODULE_3___default()(client.created_at).format("MM/DD/YY")));
 }
 _s2(ClientItem, "AfORq/KOmzrvVkXVFJzTkbisddA=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"], notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"]];
@@ -9978,7 +10267,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\AuditReports.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/client/AuditReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -10068,7 +10357,7 @@ function AuditReports() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
     p: 3,
     style: {
-      height: "calc(100vh - 283px)",
+      height: "calc(100vh - 318px)",
       display: "flex",
       justifyContent: "center"
     },
@@ -10458,14 +10747,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/MenuItem */ "./node_modules/@material-ui/core/esm/MenuItem/index.js");
 /* harmony import */ var _material_ui_icons_RotateLeft__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/icons/RotateLeft */ "./node_modules/@material-ui/icons/RotateLeft.js");
 /* harmony import */ var _material_ui_icons_RotateLeft__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_RotateLeft__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _material_ui_data_grid__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/data-grid */ "./node_modules/@material-ui/data-grid/dist/index-esm.js");
-/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
-/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/core/Link */ "./node_modules/@material-ui/core/esm/Link/index.js");
+/* harmony import */ var _material_ui_core_Link__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core/Link */ "./node_modules/@material-ui/core/esm/Link/index.js");
+/* harmony import */ var _material_ui_data_grid__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/data-grid */ "./node_modules/@material-ui/data-grid/dist/index-esm.js");
+/* harmony import */ var _material_ui_lab_Alert__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/lab/Alert */ "./node_modules/@material-ui/lab/esm/Alert/index.js");
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\CertificateGenerator.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/client/CertificateGenerator.tsx",
   _s = __webpack_require__.$Refresh$.signature();
+
 
 
 
@@ -10495,52 +10786,6 @@ const columns = [{
   width: 200,
   sortable: true
 }];
-const products = [{
-  id: 1,
-  lastName: "Snow",
-  name: "Jon",
-  age: 35
-}, {
-  id: 2,
-  lastName: "Lannister",
-  name: "Cersei",
-  age: 42
-}, {
-  id: 3,
-  lastName: "Lannister",
-  name: "Jaime",
-  age: 45
-}, {
-  id: 4,
-  lastName: "Stark",
-  name: "Arya",
-  age: 16
-}, {
-  id: 5,
-  lastName: "Targaryen",
-  name: "Daenerys",
-  age: null
-}, {
-  id: 6,
-  lastName: "Melisandre",
-  name: null,
-  age: 150
-}, {
-  id: 7,
-  lastName: "Clifford",
-  name: "Ferrara",
-  age: 44
-}, {
-  id: 8,
-  lastName: "Frances",
-  name: "Rossini",
-  age: 36
-}, {
-  id: 9,
-  lastName: "Roxie",
-  name: "Harvey",
-  age: 65
-}];
 function CertificateGenerator(_ref) {
   _s();
   var _client$facilities;
@@ -10549,7 +10794,7 @@ function CertificateGenerator(_ref) {
   } = _ref;
   const {
     enqueueSnackbar
-  } = Object(notistack__WEBPACK_IMPORTED_MODULE_15__["useSnackbar"])();
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_17__["useSnackbar"])();
   const [open, setOpen] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
   const [loading, setLoading] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
   const [selectedFacility, setSelectedFacility] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState("");
@@ -10594,7 +10839,7 @@ function CertificateGenerator(_ref) {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 112,
+        lineNumber: 101,
         columnNumber: 20
       }
     }),
@@ -10602,7 +10847,7 @@ function CertificateGenerator(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109,
+      lineNumber: 98,
       columnNumber: 7
     }
   }, "Generate"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_8__["default"], {
@@ -10613,7 +10858,7 @@ function CertificateGenerator(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 117,
+      lineNumber: 106,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_5__["default"], {
@@ -10621,7 +10866,7 @@ function CertificateGenerator(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 123,
+      lineNumber: 112,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_9__["default"], {
@@ -10629,7 +10874,7 @@ function CertificateGenerator(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124,
+      lineNumber: 113,
       columnNumber: 11
     }
   }, "Generate Certificate")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogContent__WEBPACK_IMPORTED_MODULE_6__["default"], {
@@ -10637,31 +10882,49 @@ function CertificateGenerator(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 126,
+      lineNumber: 115,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127,
+      lineNumber: 116,
       columnNumber: 11
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+  }, !(client !== null && client !== void 0 && client.qrcode) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
+    style: {
+      marginBottom: 20
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab_Alert__WEBPACK_IMPORTED_MODULE_16__["default"], {
+    severity: "warning",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119,
+      columnNumber: 17
+    }
+  }, "This client has no QR Code assigned. Please assign a QR Code before generating certificates.")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
     style: {
       marginBottom: 5
     },
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 128,
+      lineNumber: 124,
       columnNumber: 13
     }
   }, "Select Facility"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 129,
+      lineNumber: 125,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Select__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -10679,7 +10942,7 @@ function CertificateGenerator(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 130,
+      lineNumber: 126,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -10687,14 +10950,14 @@ function CertificateGenerator(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139,
+      lineNumber: 135,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("em", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140,
+      lineNumber: 136,
       columnNumber: 19
     }
   }, "None")), client && ((_client$facilities = client.facilities) === null || _client$facilities === void 0 ? void 0 : _client$facilities.map(facility => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_12__["default"], {
@@ -10702,7 +10965,7 @@ function CertificateGenerator(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 144,
+      lineNumber: 140,
       columnNumber: 21
     }
   }, facility.name))) || null))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Box__WEBPACK_IMPORTED_MODULE_3__["default"], {
@@ -10713,7 +10976,7 @@ function CertificateGenerator(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 152,
+      lineNumber: 148,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", {
@@ -10723,7 +10986,7 @@ function CertificateGenerator(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 153,
+      lineNumber: 149,
       columnNumber: 13
     }
   }, "Select Products"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(StyledDataGrid, {
@@ -10743,24 +11006,24 @@ function CertificateGenerator(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154,
+      lineNumber: 150,
       columnNumber: 13
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogActions__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 170,
+      lineNumber: 166,
       columnNumber: 9
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_16__["default"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_14__["default"], {
     href: !selectionModel.length ? "#" : `/certificates/facility/${selectedFacility}/products${
     // selective inclusion, eg: ?ids=1,2,3
     selectionModel.length < products.length ? "?ids=" + selectionModel.join() : ""}`,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 171,
+      lineNumber: 167,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -10770,15 +11033,15 @@ function CertificateGenerator(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 183,
+      lineNumber: 179,
       columnNumber: 13
     }
-  }, "Products Certificate")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_16__["default"], {
+  }, "Products Certificate")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Link__WEBPACK_IMPORTED_MODULE_14__["default"], {
     href: !selectedFacility ? "#" : `/certificates/facility/${selectedFacility}`,
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 192,
+      lineNumber: 188,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_4__["default"], {
@@ -10788,13 +11051,13 @@ function CertificateGenerator(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 199,
+      lineNumber: 195,
       columnNumber: 13
     }
   }, "Facility Certificate")))));
 }
 _s(CertificateGenerator, "P94iR3nzXGe/A7tdPfpXgoNhB/E=", false, function () {
-  return [notistack__WEBPACK_IMPORTED_MODULE_15__["useSnackbar"]];
+  return [notistack__WEBPACK_IMPORTED_MODULE_17__["useSnackbar"]];
 });
 _c = CertificateGenerator;
 const StyledDataGrid = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["withStyles"])({
@@ -10804,7 +11067,7 @@ const StyledDataGrid = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_
       borderBottom: "none !important"
     }
   }
-})(_material_ui_data_grid__WEBPACK_IMPORTED_MODULE_14__["DataGrid"]);
+})(_material_ui_data_grid__WEBPACK_IMPORTED_MODULE_15__["DataGrid"]);
 var _c;
 __webpack_require__.$Refresh$.register(_c, "CertificateGenerator");
 
@@ -10911,7 +11174,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\CertificateMenu.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/client/CertificateMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -11171,7 +11434,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\Certificates.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/client/Certificates.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -11312,9 +11575,10 @@ function RequestCertificates() {
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
     p: 3,
     style: {
-      height: "calc(100vh - 283px)",
+      height: "calc(100vh - 318px)",
       display: "flex",
       justifyContent: "center",
+      // alignItems: "center", @TODO impl
       overflow: "auto"
     },
     __self: this,
@@ -11327,7 +11591,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 180,
+      lineNumber: 181,
       columnNumber: 22
     }
   }) || certificates.length && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
@@ -11335,49 +11599,49 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 182,
+      lineNumber: 183,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Table"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 183,
+      lineNumber: 184,
       columnNumber: 15
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableHead"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 184,
+      lineNumber: 185,
       columnNumber: 17
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableRow"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 185,
+      lineNumber: 186,
       columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 186,
+      lineNumber: 187,
       columnNumber: 21
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 187,
+      lineNumber: 188,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 188,
+      lineNumber: 189,
       columnNumber: 23
     }
   }, "ID")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
@@ -11385,7 +11649,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 190,
+      lineNumber: 191,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Tooltip"], {
@@ -11394,7 +11658,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 191,
+      lineNumber: 192,
       columnNumber: 23
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableSortLabel"], {
@@ -11403,14 +11667,14 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 192,
+      lineNumber: 193,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 193,
+      lineNumber: 194,
       columnNumber: 27
     }
   }, "Created")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
@@ -11418,7 +11682,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 197,
+      lineNumber: 198,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Tooltip"], {
@@ -11427,7 +11691,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 198,
+      lineNumber: 199,
       columnNumber: 23
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableSortLabel"], {
@@ -11436,42 +11700,42 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 199,
+      lineNumber: 200,
       columnNumber: 25
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 200,
+      lineNumber: 201,
       columnNumber: 27
     }
   }, "Expires")))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 211,
+      lineNumber: 212,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 212,
+      lineNumber: 213,
       columnNumber: 23
     }
   }, "Tags")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 214,
+      lineNumber: 215,
       columnNumber: 21
     }
   }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableBody"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 217,
+      lineNumber: 218,
       columnNumber: 17
     }
   }, certificates.map((certificate, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableRow"], {
@@ -11480,49 +11744,49 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 219,
+      lineNumber: 220,
       columnNumber: 21
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 220,
+      lineNumber: 221,
       columnNumber: 23
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_9__["FileText"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 221,
+      lineNumber: 222,
       columnNumber: 25
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 223,
+      lineNumber: 224,
       columnNumber: 23
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 224,
+      lineNumber: 225,
       columnNumber: 25
     }
   }, certificate.id)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 226,
+      lineNumber: 227,
       columnNumber: 23
     }
   }, moment__WEBPACK_IMPORTED_MODULE_3___default()(certificate.created_at).format("MM/DD/YY")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229,
+      lineNumber: 230,
       columnNumber: 23
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(CertificateDateCell, {
@@ -11530,14 +11794,14 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 230,
+      lineNumber: 231,
       columnNumber: 25
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 241,
+      lineNumber: 242,
       columnNumber: 23
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_TagsInput__WEBPACK_IMPORTED_MODULE_15__["default"], {
@@ -11547,14 +11811,14 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 242,
+      lineNumber: 243,
       columnNumber: 25
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["TableCell"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 248,
+      lineNumber: 249,
       columnNumber: 23
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CertificateMenu__WEBPACK_IMPORTED_MODULE_14__["default"], {
@@ -11563,7 +11827,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 249,
+      lineNumber: 250,
       columnNumber: 25
     }
   }))))))) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
@@ -11571,7 +11835,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 260,
+      lineNumber: 261,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_8__["Alert"], {
@@ -11579,14 +11843,14 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 261,
+      lineNumber: 262,
       columnNumber: 15
     }
-  }, "This request has no certificates. Use the control below to add some."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Divider"], {
+  }, "This client has no certificates assigned. Use the control below to add certificates."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Divider"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 268,
+      lineNumber: 269,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
@@ -11596,7 +11860,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 269,
+      lineNumber: 270,
       columnNumber: 7
     }
   }, (client === null || client === void 0 ? void 0 : client.approved_report_count) !== (client === null || client === void 0 ? void 0 : client.report_count) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
@@ -11607,7 +11871,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 271,
+      lineNumber: 272,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_8__["Alert"], {
@@ -11618,14 +11882,14 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 272,
+      lineNumber: 273,
       columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 273,
+      lineNumber: 274,
       columnNumber: 15
     }
   }, "Please note that this client has reports that need to be approved."))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
@@ -11645,7 +11909,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 280,
+      lineNumber: 281,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CertificateGenerator__WEBPACK_IMPORTED_MODULE_16__["default"], {
@@ -11653,7 +11917,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 292,
+      lineNumber: 293,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
@@ -11661,7 +11925,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 293,
+      lineNumber: 294,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_common_LoadingButton__WEBPACK_IMPORTED_MODULE_11__["default"], {
@@ -11672,7 +11936,7 @@ function RequestCertificates() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 298,
+        lineNumber: 299,
         columnNumber: 22
       }
     }),
@@ -11681,7 +11945,7 @@ function RequestCertificates() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 294,
+      lineNumber: 295,
       columnNumber: 9
     }
   }, "Upload")));
@@ -11733,7 +11997,7 @@ function CertificateDateCell(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 352,
+      lineNumber: 353,
       columnNumber: 9
     }
   }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_pickers__WEBPACK_IMPORTED_MODULE_6__["MuiPickersUtilsProvider"], {
@@ -11741,8 +12005,8 @@ function CertificateDateCell(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 355,
-      columnNumber: 11
+      lineNumber: 356,
+      columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_pickers__WEBPACK_IMPORTED_MODULE_6__["KeyboardDatePicker"], {
     id: "date-picker-dialog"
@@ -11757,8 +12021,8 @@ function CertificateDateCell(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 356,
-      columnNumber: 13
+      lineNumber: 357,
+      columnNumber: 15
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Chip"], {
     label: (() => {
@@ -11772,8 +12036,8 @@ function CertificateDateCell(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 370,
-      columnNumber: 11
+      lineNumber: 371,
+      columnNumber: 13
     }
   })));
 }
@@ -11784,6 +12048,212 @@ _c2 = CertificateDateCell;
 var _c, _c2;
 __webpack_require__.$Refresh$.register(_c, "RequestCertificates");
 __webpack_require__.$Refresh$.register(_c2, "CertificateDateCell");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/admin/clients/client/ClientMenu.tsx":
+/*!*******************************************************!*\
+  !*** ./src/views/admin/clients/client/ClientMenu.tsx ***!
+  \*******************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ClientMenu; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/MoreVert */ "./node_modules/@material-ui/icons/MoreVert.js");
+/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/Edit */ "./node_modules/@material-ui/icons/Edit.js");
+/* harmony import */ var _material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var _api_Auth__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../../../../api/Auth */ "./src/api/Auth.ts");
+/* harmony import */ var _CredentialsManager__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./CredentialsManager */ "./src/views/admin/clients/client/CredentialsManager.tsx");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/client/ClientMenu.tsx",
+  _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+
+function ClientMenu(_ref) {
+  _s();
+  let {
+    client
+  } = _ref;
+  const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
+  const user = new _api_Auth__WEBPACK_IMPORTED_MODULE_6__["default"]().user;
+  const [anchorEl, setAnchorEl] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const {
+    enqueueSnackbar
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"])();
+  const handleClick = event => {
+    setAnchorEl(event.currentTarget);
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"]
+  // edge="end"
+  , {
+    size: "small",
+    "aria-controls": "client-menu",
+    "aria-haspopup": "true",
+    onClick: handleClick,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_3___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 46,
+      columnNumber: 9
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Menu"], {
+    id: "client-menu",
+    anchorEl: anchorEl,
+    keepMounted: true,
+    open: Boolean(anchorEl),
+    onClose: () => setAnchorEl(null),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 48,
+      columnNumber: 7
+    }
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["LinearProgress"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 55,
+      columnNumber: 21
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["MenuItem"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 56,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Edit__WEBPACK_IMPORTED_MODULE_4___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 57,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
+    variant: "inherit",
+    style: {
+      marginLeft: 10
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 58,
+      columnNumber: 11
+    }
+  }, "Edit Account")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_CredentialsManager__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 62,
+      columnNumber: 9
+    }
+  })));
+}
+_s(ClientMenu, "lFiqq0ykb9m24LKKt0ZblVImzrM=", false, function () {
+  return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"], notistack__WEBPACK_IMPORTED_MODULE_5__["useSnackbar"]];
+});
+_c = ClientMenu;
+var _c;
+__webpack_require__.$Refresh$.register(_c, "ClientMenu");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -11878,38 +12348,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
 /* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var _QRCodeDialog__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./QRCodeDialog */ "./src/views/admin/clients/client/QRCodeDialog.tsx");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\ClientProfile.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/client/ClientProfile.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
 
 
 
-// interface ProfileDetailsProps {
-//   setProfile: React.Dispatch<React.SetStateAction<Profile>>;
-// }
-const ProfileDetails = () => {
+
+const ProfileDetails = _ref => {
   _s();
+  let {
+    qrcode
+  } = _ref;
   const {
     enqueueSnackbar
   } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
-  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
-  // const [profile, setProfile] = useState<Profile>(defaults);
-  const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaults);
   const {
     id
-  } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
+  } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // clientId
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
+  const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaults);
   Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
     axios__WEBPACK_IMPORTED_MODULE_3___default.a.post(`/api/client/${id}/profile`).then(async response => {
       console.log(response.data);
-      setLoading(false);
       setValues(response.data);
-      // setProfile(response.data);
+      setLoading(false);
     }).catch(e => {
-      // @TODO handle
       console.error(e);
       setLoading(false);
     });
@@ -11922,8 +12391,9 @@ const ProfileDetails = () => {
   };
   const onSubmitHandler = () => {
     setLoading(true);
-    // setProfile(values);
-    axios__WEBPACK_IMPORTED_MODULE_3___default.a.put("/api/profile", values).then(async response => {
+    // @ts-ignore
+    delete values.avatar;
+    axios__WEBPACK_IMPORTED_MODULE_3___default.a.put(`/api/client/${id}/profile`, values).then(async response => {
       setLoading(false);
       if (response.status == 200) {
         const profileNameTag = document.getElementById("profile-nametag");
@@ -11946,32 +12416,31 @@ const ProfileDetails = () => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
     p: 3,
     style: {
-      height: "calc(100vh - 283px)",
+      height: "calc(100vh - 317px)",
       display: "flex",
       justifyContent: "center",
-      overflow: "auto"
+      overflowX: "auto"
     },
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 75,
       columnNumber: 7
     }
-  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["LinearProgress"], {
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CircularProgress"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92,
-      columnNumber: 21
+      lineNumber: 84,
+      columnNumber: 22
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    autoComplete: "off",
-    noValidate: true,
+  }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
+    width: "100%",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93,
-      columnNumber: 9
+      lineNumber: 85,
+      columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
     container: true,
@@ -11979,50 +12448,78 @@ const ProfileDetails = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94,
-      columnNumber: 11
+      lineNumber: 86,
+      columnNumber: 13
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
     item: true,
+    lg: 3,
+    md: 6,
+    xs: 12,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 87,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+    id: "qrcode-img",
+    src: qrcode ? `/${qrcode}` : "/static/images/qr-code-placeholder.png",
+    title: "QR Code",
+    style: {
+      width: "100%",
+      height: "auto"
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88,
+      columnNumber: 17
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+    item: true,
+    lg: 9,
+    md: 6,
     xs: 12,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 95,
-      columnNumber: 13
+      columnNumber: 15
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
-    variant: "h3",
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+    container: true,
+    spacing: 3,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 96,
-      columnNumber: 15
+      columnNumber: 17
     }
-  }, "Profile Details")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
     item: true,
     md: 6,
     xs: 12,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
-      columnNumber: 13
+      lineNumber: 97,
+      columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
-    className: "profile-view-field",
     fullWidth: true,
+    helperText: "Please specify the first name",
     label: "First name",
     name: "first_name",
     onChange: handleChange,
     required: true,
     value: values.first_name,
-    disabled: true,
+    variant: "outlined",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99,
-      columnNumber: 15
+      lineNumber: 98,
+      columnNumber: 21
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
     item: true,
@@ -12031,23 +12528,22 @@ const ProfileDetails = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110,
-      columnNumber: 13
+      lineNumber: 109,
+      columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
-    className: "profile-view-field",
     fullWidth: true,
     label: "Last name",
     name: "last_name",
     onChange: handleChange,
     required: true,
     value: values.last_name,
-    disabled: true,
+    variant: "outlined",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111,
-      columnNumber: 15
+      lineNumber: 110,
+      columnNumber: 21
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
     item: true,
@@ -12056,22 +12552,21 @@ const ProfileDetails = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133,
-      columnNumber: 13
+      lineNumber: 120,
+      columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
-    className: "profile-view-field",
     fullWidth: true,
     label: "Phone Number",
     name: "phone_number",
     onChange: handleChange,
     value: values.phone_number,
-    disabled: true,
+    variant: "outlined",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 134,
-      columnNumber: 15
+      lineNumber: 121,
+      columnNumber: 21
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
     item: true,
@@ -12080,22 +12575,21 @@ const ProfileDetails = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 144,
-      columnNumber: 13
+      lineNumber: 130,
+      columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
-    className: "profile-view-field",
     fullWidth: true,
     label: "Cell Number",
     name: "cell_number",
     onChange: handleChange,
     value: values.cell_number,
-    disabled: true,
+    variant: "outlined",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 145,
-      columnNumber: 15
+      lineNumber: 131,
+      columnNumber: 21
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
     item: true,
@@ -12103,23 +12597,23 @@ const ProfileDetails = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155,
-      columnNumber: 13
+      lineNumber: 140,
+      columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
-    className: "profile-view-field",
     fullWidth: true,
+    helperText: "Please specify the address",
     label: "Street Address",
     name: "address",
     onChange: handleChange,
     required: true,
     value: values.address,
-    disabled: true,
+    variant: "outlined",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 156,
-      columnNumber: 15
+      lineNumber: 141,
+      columnNumber: 21
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
     item: true,
@@ -12128,23 +12622,22 @@ const ProfileDetails = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 167,
-      columnNumber: 13
+      lineNumber: 152,
+      columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
-    className: "profile-view-field",
     fullWidth: true,
     label: "Country",
     name: "country",
     onChange: handleChange,
     required: true,
     value: values.country,
-    disabled: true,
+    variant: "outlined",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 168,
-      columnNumber: 15
+      lineNumber: 153,
+      columnNumber: 21
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
     item: true,
@@ -12153,23 +12646,22 @@ const ProfileDetails = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 179,
-      columnNumber: 13
+      lineNumber: 163,
+      columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
-    className: "profile-view-field",
     fullWidth: true,
     label: "City",
     name: "city",
     onChange: handleChange,
     required: true,
     value: values.city,
-    disabled: true,
+    variant: "outlined",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 180,
-      columnNumber: 15
+      lineNumber: 164,
+      columnNumber: 21
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
     item: true,
@@ -12178,23 +12670,22 @@ const ProfileDetails = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 191,
-      columnNumber: 13
+      lineNumber: 174,
+      columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
-    className: "profile-view-field",
     fullWidth: true,
     label: "State",
     name: "state",
     onChange: handleChange,
     required: true,
     value: values.state,
-    disabled: true,
+    variant: "outlined",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 192,
-      columnNumber: 15
+      lineNumber: 175,
+      columnNumber: 21
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
     item: true,
@@ -12203,196 +12694,64 @@ const ProfileDetails = () => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 203,
-      columnNumber: 13
+      lineNumber: 185,
+      columnNumber: 19
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
-    className: "profile-view-field",
     fullWidth: true,
     label: "ZIP",
     name: "zip",
     onChange: handleChange,
     required: true,
     value: values.zip,
-    disabled: true,
+    variant: "outlined",
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 204,
-      columnNumber: 15
+      lineNumber: 186,
+      columnNumber: 21
     }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Divider"], {
-    style: {
-      marginTop: 30,
-      marginBottom: 20
-    },
+  }))))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Divider"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 240,
-      columnNumber: 11
-    }
-  }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Divider"], {
-    __self: undefined,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 247,
+      lineNumber: 202,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Box"], {
     display: "flex",
-    justifyContent: "flex-end",
+    justifyContent: "space-between",
     p: 2,
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 248,
+      lineNumber: 203,
       columnNumber: 7
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
-    color: "secondary",
-    variant: "contained",
-    disabled: true,
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_QRCodeDialog__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 249,
+      lineNumber: 204,
+      columnNumber: 9
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Button"], {
+    color: "secondary",
+    variant: "contained",
+    disabled: loading,
+    onClick: onSubmitHandler,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 205,
       columnNumber: 9
     }
   }, "Update")));
 };
-_s(ProfileDetails, "7HjmktgJhl+Ryl80N7ZEaG3mLXg=", false, function () {
+_s(ProfileDetails, "8mdw2mr8UeJpAgftEl/8dF9uJns=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"]];
 });
 _c = ProfileDetails;
-function HedViewer(_ref) {
-  let {
-    heds = []
-  } = _ref;
-  if (!heds.length) return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Typography"], {
-    variant: "h3",
-    style: {
-      marginBottom: 30
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 266,
-      columnNumber: 7
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
-    "aria-hidden": "true",
-    href: "#hed",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 267,
-      columnNumber: 9
-    }
-  }), "Halal Enforcement Directors"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 269,
-      columnNumber: 7
-    }
-  }, heds.map((hed, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, i && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Divider"], {
-    style: {
-      marginBottom: 20
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 272,
-      columnNumber: 20
-    }
-  }) || null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
-    container: true,
-    spacing: 2,
-    style: {
-      marginBottom: 10
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 273,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
-    item: true,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 274,
-      columnNumber: 15
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
-    fullWidth: true,
-    label: "Halal Enforcement Director Name",
-    name: "name"
-    // // required
-    ,
-    value: hed.name,
-    disabled: true,
-    variant: "outlined",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 275,
-      columnNumber: 17
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
-    item: true,
-    md: 6,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 285,
-      columnNumber: 15
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
-    fullWidth: true,
-    label: "Contact Number",
-    name: "phone_number",
-    value: hed.phone_number,
-    variant: "outlined",
-    disabled: true,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 286,
-      columnNumber: 17
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
-    item: true,
-    md: 6,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 295,
-      columnNumber: 15
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TextField"], {
-    fullWidth: true,
-    label: "Email",
-    name: "email",
-    type: "email",
-    value: hed.email,
-    variant: "outlined",
-    disabled: true,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 296,
-      columnNumber: 17
-    }
-  })))))));
-}
-_c2 = HedViewer;
 const defaults = {
   id: 0,
   user_id: 0,
@@ -12408,16 +12767,627 @@ const defaults = {
   avatar: "",
   created_at: "",
   updated_at: "",
-  heds: "[]",
+  heds: "",
   hed_type: "INDIVIDUAL",
   hed_name: "",
   hed_phone_number: "",
   hed_email: ""
 };
 /* harmony default export */ __webpack_exports__["default"] = (ProfileDetails);
-var _c, _c2;
+var _c;
 __webpack_require__.$Refresh$.register(_c, "ProfileDetails");
-__webpack_require__.$Refresh$.register(_c2, "HedViewer");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/admin/clients/client/CredentialsManager.tsx":
+/*!***************************************************************!*\
+  !*** ./src/views/admin/clients/client/CredentialsManager.tsx ***!
+  \***************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return CredentialsManager; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var _material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/Button */ "./node_modules/@material-ui/core/esm/Button/index.js");
+/* harmony import */ var _material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/Dialog */ "./node_modules/@material-ui/core/esm/Dialog/index.js");
+/* harmony import */ var _material_ui_core_DialogActions__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/DialogActions */ "./node_modules/@material-ui/core/esm/DialogActions/index.js");
+/* harmony import */ var _material_ui_core_DialogContent__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core/DialogContent */ "./node_modules/@material-ui/core/esm/DialogContent/index.js");
+/* harmony import */ var _material_ui_core_DialogContentText__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/DialogContentText */ "./node_modules/@material-ui/core/esm/DialogContentText/index.js");
+/* harmony import */ var _material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/core/DialogTitle */ "./node_modules/@material-ui/core/esm/DialogTitle/index.js");
+/* harmony import */ var _material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/core/Typography */ "./node_modules/@material-ui/core/esm/Typography/index.js");
+/* harmony import */ var _material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/core/MenuItem */ "./node_modules/@material-ui/core/esm/MenuItem/index.js");
+/* harmony import */ var _material_ui_icons_VerifiedUser__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/VerifiedUser */ "./node_modules/@material-ui/icons/VerifiedUser.js");
+/* harmony import */ var _material_ui_icons_VerifiedUser__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_VerifiedUser__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _material_ui_core_OutlinedInput__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @material-ui/core/OutlinedInput */ "./node_modules/@material-ui/core/esm/OutlinedInput/index.js");
+/* harmony import */ var _material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @material-ui/core/TextField */ "./node_modules/@material-ui/core/esm/TextField/index.js");
+/* harmony import */ var _material_ui_core_InputAdornment__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @material-ui/core/InputAdornment */ "./node_modules/@material-ui/core/esm/InputAdornment/index.js");
+/* harmony import */ var _material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @material-ui/core/IconButton */ "./node_modules/@material-ui/core/esm/IconButton/index.js");
+/* harmony import */ var _material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @material-ui/icons/Visibility */ "./node_modules/@material-ui/icons/Visibility.js");
+/* harmony import */ var _material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_15__);
+/* harmony import */ var _material_ui_icons_VisibilityOff__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @material-ui/icons/VisibilityOff */ "./node_modules/@material-ui/icons/VisibilityOff.js");
+/* harmony import */ var _material_ui_icons_VisibilityOff__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_VisibilityOff__WEBPACK_IMPORTED_MODULE_16__);
+/* harmony import */ var _material_ui_core_LinearProgress__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @material-ui/core/LinearProgress */ "./node_modules/@material-ui/core/esm/LinearProgress/index.js");
+/* harmony import */ var _material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @material-ui/core/FormControlLabel */ "./node_modules/@material-ui/core/esm/FormControlLabel/index.js");
+/* harmony import */ var _material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @material-ui/core/Checkbox */ "./node_modules/@material-ui/core/esm/Checkbox/index.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/client/CredentialsManager.tsx",
+  _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function CredentialsManager() {
+  _s();
+  const {
+    enqueueSnackbar
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_1__["useSnackbar"])();
+  const [open, setOpen] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])({
+    email: "",
+    // john.doe@example.com
+    password: "12345678",
+    notify: true
+  });
+  const [showPassword, setShowPassword] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const handleOpen = () => setOpen(true);
+  const handleCancel = () => setOpen(false);
+  const handleUpdate = async () => {
+    setLoading(true);
+    new Promise(r => setTimeout(r, 2000)).then(() => {
+      setLoading(false);
+      setOpen(false);
+      enqueueSnackbar("Client credentials updated successfully.", {
+        variant: "success"
+      });
+    });
+  };
+  const handleChange = event => {
+    setValues({
+      ...values,
+      [event.target.name]: event.target.value
+    });
+  };
+  const handleClickShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_MenuItem__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    onClick: handleOpen,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 65,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_VerifiedUser__WEBPACK_IMPORTED_MODULE_10___default.a, {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 66,
+      columnNumber: 9
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    variant: "inherit",
+    style: {
+      marginLeft: 10
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 67,
+      columnNumber: 9
+    }
+  }, "Manage Credentials")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Dialog__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    open: open,
+    "aria-labelledby": "prompt-dialog-title",
+    "aria-describedby": "prompt-dialog-description",
+    maxWidth: "xs",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 71,
+      columnNumber: 7
+    }
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_LinearProgress__WEBPACK_IMPORTED_MODULE_17__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77,
+      columnNumber: 21
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogTitle__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    id: "prompt-dialog-title",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Typography__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    variant: "h4",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 79,
+      columnNumber: 11
+    }
+  }, "Manage Credentials")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogContent__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 81,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogContentText__WEBPACK_IMPORTED_MODULE_6__["default"], {
+    id: "prompt-dialog-description",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 82,
+      columnNumber: 11
+    }
+  }, "Use this dialog to manage client's credentials."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    className: "profile-view-field",
+    fullWidth: true,
+    label: "Email Address",
+    name: "email",
+    onChange: handleChange,
+    required: true,
+    variant: "outlined",
+    style: {
+      marginTop: 20
+    },
+    value: values.email,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_OutlinedInput__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    className: "profile-view-field",
+    fullWidth: true,
+    name: "password",
+    onChange: handleChange,
+    required: true,
+    style: {
+      marginTop: 10
+    },
+    type: showPassword ? "text" : "password",
+    value: values.password,
+    endAdornment: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_InputAdornment__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      position: "end",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 106,
+        columnNumber: 15
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_IconButton__WEBPACK_IMPORTED_MODULE_14__["default"], {
+      "aria-label": "toggle password visibility",
+      onClick: handleClickShowPassword
+      // onMouseDown={handleMouseDownPassword}
+      ,
+      edge: "end",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 107,
+        columnNumber: 17
+      }
+    }, showPassword ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Visibility__WEBPACK_IMPORTED_MODULE_15___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 113,
+        columnNumber: 35
+      }
+    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_VisibilityOff__WEBPACK_IMPORTED_MODULE_16___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 113,
+        columnNumber: 56
+      }
+    }))),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 96,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_FormControlLabel__WEBPACK_IMPORTED_MODULE_18__["default"], {
+    control: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Checkbox__WEBPACK_IMPORTED_MODULE_19__["default"]
+    // checked={values.notify}
+    // onChange={handleChange}
+    , {
+      name: "notify",
+      color: "primary",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 120,
+        columnNumber: 15
+      }
+    }),
+    label: "Notify client about the updates via email.",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_DialogActions__WEBPACK_IMPORTED_MODULE_4__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 130,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    onClick: handleCancel,
+    variant: "contained",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 131,
+      columnNumber: 11
+    }
+  }, "Cancel"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core_Button__WEBPACK_IMPORTED_MODULE_2__["default"], {
+    onClick: handleUpdate,
+    color: "primary",
+    variant: "contained",
+    autoFocus: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134,
+      columnNumber: 11
+    }
+  }, "Update"))));
+}
+_s(CredentialsManager, "mJrPhgeGwgFvKKDElZk3RGcOB84=", false, function () {
+  return [notistack__WEBPACK_IMPORTED_MODULE_1__["useSnackbar"]];
+});
+_c = CredentialsManager;
+var _c;
+__webpack_require__.$Refresh$.register(_c, "CredentialsManager");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/admin/clients/client/QRCodeDialog.tsx":
+/*!*********************************************************!*\
+  !*** ./src/views/admin/clients/client/QRCodeDialog.tsx ***!
+  \*********************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return QRCodeDialog; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var _material_ui_icons_CropFree__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/CropFree */ "./node_modules/@material-ui/icons/CropFree.js");
+/* harmony import */ var _material_ui_icons_CropFree__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CropFree__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/client/QRCodeDialog.tsx",
+  _s = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+function QRCodeDialog() {
+  _s();
+  const {
+    id
+  } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])(); // clientId
+  const {
+    enqueueSnackbar
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"])();
+  const inputRef = Object(react__WEBPACK_IMPORTED_MODULE_0__["useRef"])(null);
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const qrFormData = new FormData();
+  const qrCodeImgEl = document.getElementById("qrcode-img");
+  const handleImageUploadButton = () => {
+    // @ts-ignore
+    if (inputRef) inputRef.current.click();
+  };
+  const onFileChange = async e => {
+    if (e.target.files && e.target.files.length > 0) {
+      const file = e.target.files[0];
+      let imageDataUrl = await new Promise(resolve => {
+        const reader = new FileReader();
+        reader.addEventListener("load", () => resolve(reader.result), false);
+        reader.readAsDataURL(file);
+      });
+      setLoading(true);
+      fetch(imageDataUrl).then(async res => {
+        const blob = await res.blob();
+
+        // Check if the blob is an SVG
+        if (blob.type === 'image/svg+xml') {
+          // Convert SVG to PNG
+          const img = new Image();
+          img.onload = () => {
+            const canvas = document.createElement('canvas');
+            canvas.width = 392;
+            canvas.height = 509;
+            const ctx = canvas.getContext('2d');
+            ctx === null || ctx === void 0 ? void 0 : ctx.drawImage(img, 0, 0, 392, 509);
+            canvas.toBlob(pngBlob => {
+              qrFormData.append("qrcode", pngBlob, "qrcode.png");
+              uploadQRCode(imageDataUrl);
+            }, 'image/png');
+          };
+          img.src = URL.createObjectURL(blob);
+        } else {
+          qrFormData.append("qrcode", blob);
+          uploadQRCode(imageDataUrl);
+        }
+      });
+    }
+  };
+  const uploadQRCode = imageDataUrl => {
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/${id}/qrcode`, qrFormData, {
+      headers: {
+        "Content-Type": "multipart/form-data"
+      }
+    }).then(async response => {
+      setLoading(false);
+      if (response.status == 200 || response.status == 201) {
+        if (qrCodeImgEl) qrCodeImgEl.setAttribute("src", imageDataUrl);
+        enqueueSnackbar("QR Code updated successfully.", {
+          variant: "success"
+        });
+      } else {
+        console.log(response);
+        enqueueSnackbar("Failed to update QR Code. Contact the developer.", {
+          variant: "error"
+        });
+      }
+    }).catch(e => {
+      console.error(e);
+      setLoading(false);
+      enqueueSnackbar("Failed to update QR Code. Check your network connection and try again.", {
+        variant: "error"
+      });
+    });
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+    ref: inputRef,
+    type: "file",
+    name: "img",
+    accept: "image/*",
+    onChange: onFileChange,
+    style: {
+      display: "none"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Button"], {
+    onClick: handleImageUploadButton,
+    startIcon: loading ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["CircularProgress"], {
+      style: {
+        color: "rgba(0, 0, 0, 0.87)",
+        width: 24,
+        height: 24
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 107,
+        columnNumber: 30
+      }
+    }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CropFree__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 107,
+        columnNumber: 117
+      }
+    }),
+    color: "default",
+    variant: "contained",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 105,
+      columnNumber: 7
+    }
+  }, "Update QR Code"));
+}
+_s(QRCodeDialog, "WEhoF64QA1xv1Ekaf74XgnTjUNw=", false, function () {
+  return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
+});
+_c = QRCodeDialog;
+;
+var _c;
+__webpack_require__.$Refresh$.register(_c, "QRCodeDialog");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -12522,7 +13492,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\ReportMenu.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/client/ReportMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -12776,7 +13746,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\ReviewReports.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/client/ReviewReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -12866,7 +13836,7 @@ function ReviewReports() {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Box"], {
     p: 3,
     style: {
-      height: "calc(100vh - 283px)",
+      height: "calc(100vh - 318px)",
       display: "flex",
       justifyContent: "center"
     },
@@ -13233,41 +14203,46 @@ if (true) {
 /*!**************************************************!*\
   !*** ./src/views/admin/clients/client/index.tsx ***!
   \**************************************************/
-/*! exports provided: default, SingleClientTabs */
+/*! exports provided: default */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return SingleClientView; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SingleClientTabs", function() { return SingleClientTabs; });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react-router-dom */ "./node_modules/react-router-dom/dist/index.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
-/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../../../components/Page */ "./src/components/Page.js");
-/* harmony import */ var _ClientProfile__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./ClientProfile */ "./src/views/admin/clients/client/ClientProfile.tsx");
-/* harmony import */ var _Certificates__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./Certificates */ "./src/views/admin/clients/client/Certificates.tsx");
-/* harmony import */ var _AuditReports__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./AuditReports */ "./src/views/admin/clients/client/AuditReports.tsx");
-/* harmony import */ var _ReviewReports__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./ReviewReports */ "./src/views/admin/clients/client/ReviewReports.tsx");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../../../../components/Page */ "./src/components/Page.js");
+/* harmony import */ var _reviewer_clients_client_Header__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../reviewer/clients/client/Header */ "./src/views/reviewer/clients/client/Header.tsx");
+/* harmony import */ var _ClientMenu__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./ClientMenu */ "./src/views/admin/clients/client/ClientMenu.tsx");
+/* harmony import */ var _reviewer_clients_client_FacilitiesView__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../../../reviewer/clients/client/FacilitiesView */ "./src/views/reviewer/clients/client/FacilitiesView.tsx");
+/* harmony import */ var _ClientProfile__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ./ClientProfile */ "./src/views/admin/clients/client/ClientProfile.tsx");
+/* harmony import */ var _Certificates__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./Certificates */ "./src/views/admin/clients/client/Certificates.tsx");
+/* harmony import */ var _AuditReports__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./AuditReports */ "./src/views/admin/clients/client/AuditReports.tsx");
+/* harmony import */ var _ReviewReports__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./ReviewReports */ "./src/views/admin/clients/client/ReviewReports.tsx");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\client\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/client/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
-  _s2 = __webpack_require__.$Refresh$.signature(),
-  _s3 = __webpack_require__.$Refresh$.signature();
+  _s2 = __webpack_require__.$Refresh$.signature();
 
 
 // import SwipeableViews from "react-swipeable-views";
 
 
 
-// import Toolbar from "../../common/Toolbar";
 
 
 
 
-const useStyles1 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
+
+
+
+const useStyles1 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(theme => ({
   root: {
     // @ts-ignore
     backgroundColor: theme.palette.background.dark,
@@ -13282,18 +14257,16 @@ function SingleClientView() {
   return (
     /*#__PURE__*/
     // @ts-ignore
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_3__["default"], {
+    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_4__["default"], {
       className: classes.root,
-      title: "Client"
-      // style={{ paddingTop: 0, paddingBottom: 0, overflow: "hidden" }}
-      ,
+      title: "Client",
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 47,
+        lineNumber: 50,
         columnNumber: 5
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Container"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Container"], {
       maxWidth: "lg",
       style: {
         marginLeft: 0
@@ -13301,32 +14274,32 @@ function SingleClientView() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52,
+        lineNumber: 51,
         columnNumber: 7
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
       container: true,
       spacing: 3,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54,
+        lineNumber: 52,
         columnNumber: 9
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Grid"], {
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
       item: true,
       md: 12,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56,
+        lineNumber: 53,
         columnNumber: 11
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SingleClient, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57,
+        lineNumber: 54,
         columnNumber: 13
       }
     })))))
@@ -13336,111 +14309,273 @@ _s(SingleClientView, "iUcwKsj7H3p1LotITUwukOjPOtY=", false, function () {
   return [useStyles1];
 });
 _c = SingleClientView;
-const useStyles2 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["createStyles"])({
-  root: {
-    maxWidth: 960
-  },
-  button: {
-    marginTop: theme.spacing(1),
-    marginRight: theme.spacing(1)
-  },
-  actionsContainer: {
-    marginBottom: theme.spacing(2)
-  },
-  resetContainer: {
-    padding: theme.spacing(3)
-  }
-}));
-const defaults = {};
-
-// @TODO add report section
 function SingleClient() {
   _s2();
-  const {
-    id
-  } = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
-  const navigate = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"])();
   const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
-  const classes = useStyles2();
   const params = Object(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"])();
   const clientId = Number.parseInt(params.id);
-  // const review: Client = data[reviewId];
-  // const [form, setForm] = useState<Client>(review);
-  // const [values, setValues] = useState<Client>({} as Client);
-
-  // useEffect(() => {
-  //   axios
-  //     .post("/api/client/" + id)
-  //     .then(async (response) => {
-  //       setLoading(false);
-  //       // console.log(response.data);
-  //       response.data.facilities.reverse();
-  //       setValues(response.data);
-  //     })
-  //     .catch((e) => {
-  //       // @TODO handle
-  //       console.error(e);
-  //       setLoading(false);
-  //     });
-  // }, []);
-
-  // const handleChange = (event: any) => {
-  //   setForm({
-  //     ...form,
-  //     [event.target.name]: event.target.value,
-  //   });
-  // };
-
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    autoComplete: "off",
-    noValidate: true,
+  const [client, setClient] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+  const classes = useStyles3();
+  const theme = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["useTheme"])();
+  const [value, setValue] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    axios__WEBPACK_IMPORTED_MODULE_2___default.a.post(`/api/client/${clientId}`).then(async response => {
+      setLoading(false);
+      setClient(response.data);
+    }).catch(e => {
+      // @TODO handle
+      console.error(e);
+      setLoading(false);
+    });
+  }, []);
+  const handleChange = (_e, newValue) => {
+    setValue(newValue);
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Card"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121,
+      lineNumber: 90,
       columnNumber: 5
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Card"], {
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["LinearProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122,
-      columnNumber: 7
+      lineNumber: 91,
+      columnNumber: 19
     }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CardHeader"], {
-    title: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
-      children: `Client ${clientId}`,
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_clients_client_Header__WEBPACK_IMPORTED_MODULE_5__["default"], {
+    client: client,
+    action: client && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ClientMenu__WEBPACK_IMPORTED_MODULE_6__["default"], {
+      client: client,
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 124,
-        columnNumber: 28
+        lineNumber: 94,
+        columnNumber: 27
       }
     }),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 124,
-      columnNumber: 9
+      lineNumber: 92,
+      columnNumber: 7
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Divider"], {
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125,
+      lineNumber: 96,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: classes.root,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["AppBar"], {
+    position: "static",
+    color: "default",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98,
       columnNumber: 9
     }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(SingleClientTabs, {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tabs"], {
+    value: value,
+    onChange: handleChange,
+    indicatorColor: "primary",
+    textColor: "primary",
+    variant: "fullWidth",
+    "aria-label": "full width tabs example",
+    centered: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 99,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tab"], Object.assign({
+    label: "Profile"
+  }, a11yProps(0), {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 108,
+      columnNumber: 13
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tab"], Object.assign({
+    label: "Facilities"
+  }, a11yProps(1), {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109,
+      columnNumber: 13
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tab"], Object.assign({
+    label: "Certificates"
+  }, a11yProps(2), {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 110,
+      columnNumber: 13
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tab"], Object.assign({
+    label: "Audit Reports"
+  }, a11yProps(3), {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 111,
+      columnNumber: 13
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tab"], Object.assign({
+    label: "Review Reports"
+  }, a11yProps(4), {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 112,
+      columnNumber: 13
+    }
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
+    value: value,
+    index: 0,
+    dir: theme.direction,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ClientProfile__WEBPACK_IMPORTED_MODULE_8__["default"], {
+    qrcode: client === null || client === void 0 ? void 0 : client.qrcode,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
+    value: value,
+    index: 1,
+    dir: theme.direction,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 120,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    p: 3,
+    style: {
+      height: "calc(100vh - 317px)",
+      overflowX: "auto"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 121,
+      columnNumber: 11
+    }
+  }, (client === null || client === void 0 ? void 0 : client.facilities) && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_reviewer_clients_client_FacilitiesView__WEBPACK_IMPORTED_MODULE_7__["default"], {
+    facilities: client.facilities || [],
+    setLoading: setLoading,
     __self: this,
     __source: {
       fileName: _jsxFileName,
       lineNumber: 126,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 132,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    display: "flex",
+    justifyContent: "flex-end",
+    p: 2,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 133,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+    color: "secondary",
+    variant: "contained",
+    disabled: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134,
+      columnNumber: 13
+    }
+  }, "Update"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
+    value: value,
+    index: 2,
+    dir: theme.direction,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 139,
       columnNumber: 9
     }
-  })));
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Certificates__WEBPACK_IMPORTED_MODULE_9__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 140,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
+    value: value,
+    index: 3,
+    dir: theme.direction,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 142,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AuditReports__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 143,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
+    value: value,
+    index: 4,
+    dir: theme.direction,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 145,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ReviewReports__WEBPACK_IMPORTED_MODULE_11__["default"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 146,
+      columnNumber: 11
+    }
+  }))));
 }
-_s2(SingleClient, "P1vxp22ynd5xfSbyRe4gcs6likE=", false, function () {
-  return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useNavigate"], useStyles2, react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"]];
+_s2(SingleClient, "LaCvc4DkvsTqpYYjXtwEibm7/xE=", false, function () {
+  return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], useStyles3, _material_ui_core__WEBPACK_IMPORTED_MODULE_3__["useTheme"]];
 });
 _c2 = SingleClient;
 function TabPanel(props) {
@@ -13459,7 +14594,7 @@ function TabPanel(props) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155,
+      lineNumber: 167,
       columnNumber: 5
     }
   }), value === index && children);
@@ -13471,168 +14606,15 @@ function a11yProps(index) {
     "aria-controls": `full-width-tabpanel-${index}`
   };
 }
-const useStyles3 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["makeStyles"])(theme => ({
+const useStyles3 = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(theme => ({
   root: {
     backgroundColor: theme.palette.background.paper
   }
 }));
-function SingleClientTabs() {
-  _s3();
-  const classes = useStyles3();
-  const theme = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"])();
-  const [value, setValue] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(0);
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
-  const handleChangeIndex = index => {
-    setValue(index);
-  };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: classes.root,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 194,
-      columnNumber: 5
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["AppBar"], {
-    position: "static",
-    color: "default",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 195,
-      columnNumber: 7
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Tabs"], {
-    value: value,
-    onChange: handleChange,
-    indicatorColor: "primary",
-    textColor: "primary",
-    variant: "fullWidth",
-    "aria-label": "full width tabs example",
-    centered: true,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 196,
-      columnNumber: 9
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Tab"], Object.assign({
-    label: "Profile"
-  }, a11yProps(0), {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 205,
-      columnNumber: 11
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Tab"], Object.assign({
-    label: "Certificates"
-  }, a11yProps(1), {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 206,
-      columnNumber: 11
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Tab"], Object.assign({
-    label: "Audit Reports"
-  }, a11yProps(2), {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 207,
-      columnNumber: 11
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Tab"], Object.assign({
-    label: "Review Reports"
-  }, a11yProps(3), {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 208,
-      columnNumber: 11
-    }
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
-    value: value,
-    index: 0,
-    dir: theme.direction,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 211,
-      columnNumber: 7
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ClientProfile__WEBPACK_IMPORTED_MODULE_4__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 212,
-      columnNumber: 9
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
-    value: value,
-    index: 1,
-    dir: theme.direction,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 214,
-      columnNumber: 7
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Certificates__WEBPACK_IMPORTED_MODULE_5__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 215,
-      columnNumber: 9
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
-    value: value,
-    index: 2,
-    dir: theme.direction,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 217,
-      columnNumber: 7
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_AuditReports__WEBPACK_IMPORTED_MODULE_6__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 218,
-      columnNumber: 9
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
-    value: value,
-    index: 3,
-    dir: theme.direction,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 220,
-      columnNumber: 7
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ReviewReports__WEBPACK_IMPORTED_MODULE_7__["default"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 221,
-      columnNumber: 9
-    }
-  })));
-}
-_s3(SingleClientTabs, "67ZhIY4U/gr9mAurA18r85H/UwI=", false, function () {
-  return [useStyles3, _material_ui_core__WEBPACK_IMPORTED_MODULE_2__["useTheme"]];
-});
-_c4 = SingleClientTabs;
-var _c, _c2, _c3, _c4;
+var _c, _c2, _c3;
 __webpack_require__.$Refresh$.register(_c, "SingleClientView");
 __webpack_require__.$Refresh$.register(_c2, "SingleClient");
 __webpack_require__.$Refresh$.register(_c3, "TabPanel");
-__webpack_require__.$Refresh$.register(_c4, "SingleClientTabs");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -13730,7 +14712,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -13936,7 +14918,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\CertificateView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/review/CertificateView.tsx";
 
 
 
@@ -14282,7 +15264,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\DocumentsView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/review/DocumentsView.tsx";
 
 
 
@@ -14580,7 +15562,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\Header.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/review/Header.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -14906,7 +15888,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\ProductsView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/review/ProductsView.tsx";
 
 
 
@@ -15102,7 +16084,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\ReportsView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/review/ReportsView.tsx";
 
 
 
@@ -15367,7 +16349,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\clients\\review\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/clients/review/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -15820,7 +16802,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\facility-categories\\EditFacilityCategory.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/facility-categories/EditFacilityCategory.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -16167,7 +17149,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\facility-categories\\Results.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/facility-categories/Results.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -16504,7 +17486,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\facility-categories\\Toolbar.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/facility-categories/Toolbar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -16862,7 +17844,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\facility-categories\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/facility-categories/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -17069,7 +18051,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\product-categories\\EditProductCategory.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/product-categories/EditProductCategory.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -17416,7 +18398,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\product-categories\\Results.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/product-categories/Results.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -17753,7 +18735,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\product-categories\\Toolbar.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/product-categories/Toolbar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -18143,7 +19125,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\product-categories\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/product-categories/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -18360,7 +19342,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/requests/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -18860,7 +19842,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\ReviewRequestMenu.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/requests/ReviewRequestMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -19168,7 +20150,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/requests/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -19348,7 +20330,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\AuditReports.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/requests/request/AuditReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -19827,7 +20809,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\CertificateMenu.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/requests/request/CertificateMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -20078,7 +21060,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\ReportMenu.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/requests/request/ReportMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -20332,7 +21314,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\RequestCertificates.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/requests/request/RequestCertificates.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -20835,7 +21817,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\ReviewReports.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/requests/request/ReviewReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -21310,7 +22292,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\requests\\request\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/requests/request/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature(),
   _s3 = __webpack_require__.$Refresh$.signature();
@@ -21758,7 +22740,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviewers\\EditReviewer.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/reviewers/EditReviewer.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -22276,7 +23258,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviewers\\Results.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/reviewers/Results.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -22791,7 +23773,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviewers\\Toolbar.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/reviewers/Toolbar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -23277,7 +24259,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviewers\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/reviewers/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -23492,7 +24474,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/reviews/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -23969,7 +24951,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\Toolbar.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/reviews/Toolbar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -24350,7 +25332,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/reviews/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -24562,7 +25544,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\CertificateView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/reviews/review/CertificateView.tsx";
 
 
 
@@ -24908,7 +25890,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\DocumentsView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/reviews/review/DocumentsView.tsx";
 
 
 
@@ -25206,7 +26188,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\Header.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/reviews/review/Header.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -25532,7 +26514,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\ProductsView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/reviews/review/ProductsView.tsx";
 
 
 
@@ -25728,7 +26710,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\ReportsView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/reviews/review/ReportsView.tsx";
 
 
 
@@ -25993,7 +26975,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\admin\\reviews\\review\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/admin/reviews/review/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -26452,7 +27434,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\certificates\\RequestHardCopyButton.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/certificates/RequestHardCopyButton.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -26640,7 +27622,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\certificates\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/certificates/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -27158,7 +28140,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\certificates\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/certificates/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -27741,7 +28723,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\CurrentRequestProgress.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/dashboard/DashboardView/CurrentRequestProgress.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -28298,7 +29280,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\FacilitiesStat.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/dashboard/DashboardView/FacilitiesStat.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -28551,7 +29533,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\LatestReviews.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/dashboard/DashboardView/LatestReviews.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -28995,7 +29977,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\ProductsStat.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/dashboard/DashboardView/ProductsStat.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -29251,7 +30233,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\Tasks.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/dashboard/DashboardView/Tasks.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -29754,7 +30736,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\dashboard\\DashboardView\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/dashboard/DashboardView/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 // @ts-nocheck
 
@@ -30007,7 +30989,7 @@ function Dashboard() {
     }
   })))));
 }
-_s(Dashboard, "DMFK2J5uF9pdXzsZ1UQA7Vz9F+s=", false, function () {
+_s(Dashboard, "G2KywzI/P4hfTbfjMvSTfBrj9VU=", false, function () {
   return [useStyles];
 });
 _c = Dashboard;
@@ -30175,7 +31157,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\documents\\DocumentMenu.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/documents/DocumentMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -30427,7 +31409,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\documents\\FacilityDocs.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/documents/FacilityDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -30777,7 +31759,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\documents\\ManufacturerDocs.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/documents/ManufacturerDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -31127,7 +32109,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\documents\\ProductDocs.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/documents/ProductDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -31477,7 +32459,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\documents\\RecentDocs.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/documents/RecentDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -31824,7 +32806,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\documents\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/documents/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -32196,7 +33178,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\documents\\UploadedDocs.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/documents/UploadedDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -32663,7 +33645,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\documents\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/documents/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -32838,7 +33820,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\facilities\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/facilities/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -33353,7 +34335,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\facilities\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/facilities/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -33525,7 +34507,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\heds\\AddHed.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/heds/AddHed.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -33970,7 +34952,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\heds\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/heds/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -34583,7 +35565,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\heds\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/heds/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -34750,7 +35732,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\help\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/help/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -34999,7 +35981,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\products\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/products/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -35430,7 +36412,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\products\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/products/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -35602,7 +36584,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\profile\\ProfileCard.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/profile/ProfileCard.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -35873,7 +36855,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\profile\\ProfileDetails.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/profile/ProfileDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -36335,7 +37317,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\profile\\edit\\ProfileCard.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/profile/edit/ProfileCard.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -36604,7 +37586,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\profile\\edit\\ProfileDetails.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/profile/edit/ProfileDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -37370,7 +38352,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\profile\\edit\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/profile/edit/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -37582,7 +38564,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\profile\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/profile/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -37794,7 +38776,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\reports\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/reports/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -38086,7 +39068,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\reports\\audit\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/reports/audit/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -38660,7 +39642,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\reports\\audit\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/reports/audit/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -38828,7 +39810,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\reports\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/reports/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -39004,7 +39986,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\reports\\review\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/reports/review/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -39481,7 +40463,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\reports\\review\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/reports/review/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -39665,7 +40647,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -40337,7 +41319,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\ReviewRequestMenu.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/ReviewRequestMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -40729,7 +41711,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -40904,7 +41886,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\AddManufacturerDoc.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/AddManufacturerDoc.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -41124,7 +42106,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\AddProductDialog.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/AddProductDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -41505,7 +42487,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\AddProductDoc.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/AddProductDoc.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -41728,7 +42710,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\FacilityDocs.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Corrections/FacilityDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -41972,7 +42954,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\FacilityView.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Corrections/FacilityView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -42191,7 +43173,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\ManufacturerDocs.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Corrections/ManufacturerDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -42382,7 +43364,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\ManufacturersView.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Corrections/ManufacturersView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -42571,7 +43553,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\ProductDocs.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Corrections/ProductDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -42762,7 +43744,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\ProductsView.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Corrections/ProductsView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -42958,7 +43940,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\UploadDocumentListItem_1.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Corrections/UploadDocumentListItem_1.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -43532,7 +44514,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\UploadDocumentListItem_2.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Corrections/UploadDocumentListItem_2.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -44061,7 +45043,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\UploadDocumentListItem_3.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Corrections/UploadDocumentListItem_3.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -44584,7 +45566,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Corrections\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Corrections/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -45030,7 +46012,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\FacilityDetails.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/FacilityDetails.tsx";
 
 
 
@@ -45343,7 +46325,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\FacilityDocsView.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/FacilityDocsView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -45757,7 +46739,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\IngredientDialog.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/IngredientDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -46230,7 +47212,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\IngredientsView.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/IngredientsView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -46612,7 +47594,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\ManufacturerDocsDialog.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/ManufacturerDocsDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -46724,7 +47706,7 @@ function ManufacturerDocsDialog(_ref) {
     }),
     onClick: handleClickOpen,
     style: {
-      backgroundColor: docCount === 0 && _material_ui_core_colors__WEBPACK_IMPORTED_MODULE_8__["red"][100] || _material_ui_core_colors__WEBPACK_IMPORTED_MODULE_8__["green"][100]
+      backgroundColor: docCount === 0 && _material_ui_core_colors__WEBPACK_IMPORTED_MODULE_8__["red"][100] || _material_ui_core_colors__WEBPACK_IMPORTED_MODULE_8__["yellow"][200]
     },
     __self: this,
     __source: {
@@ -47035,7 +48017,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\PreStep.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/PreStep.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -47392,7 +48374,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\ProductDialog.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/ProductDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -47832,7 +48814,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\ProductDocsDialog.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/ProductDocsDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -48235,7 +49217,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\RequestCertificates.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/RequestCertificates.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -48758,7 +49740,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_01.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Step_01.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -49006,7 +49988,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_02.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Step_02.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -49236,7 +50218,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_03.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Step_03.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -49499,7 +50481,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_04.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Step_04.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -49729,7 +50711,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_05.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Step_05.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -50003,7 +50985,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_06.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Step_06.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -50233,7 +51215,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_07.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Step_07.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -50519,7 +51501,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_08.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Step_08.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -51114,7 +52096,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_09.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Step_09.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -51304,7 +52286,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_10.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Step_10.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -51543,7 +52525,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Step_11.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Step_11.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -52250,7 +53232,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\Stepper.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/Stepper.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _this = undefined;
 
@@ -53206,7 +54188,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\SubmitStep.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/SubmitStep.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -53445,7 +54427,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\SuccessfulSubmissionStep.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/SuccessfulSubmissionStep.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -53648,7 +54630,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\VendorDisclosureRequest.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/VendorDisclosureRequest.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -53923,7 +54905,7 @@ function VendorDisclosureRequest(_ref) {
     }
   }, "Send"))));
 }
-_s(VendorDisclosureRequest, "zc4n+iiUmRK1nSSn+l+xzgO/940=", false, function () {
+_s(VendorDisclosureRequest, "YTZsp20aIvixgbwfuFXQKMsUszs=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"], _hooks_usePersist__WEBPACK_IMPORTED_MODULE_8__["default"]];
 });
 _c3 = VendorDisclosureRequest;
@@ -54031,7 +55013,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\client\\requests\\request\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/client/requests/request/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -54189,7 +55171,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\common\\auth\\ForgotPasswordView.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/common/auth/ForgotPasswordView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -54531,7 +55513,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\common\\auth\\LoginView.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/common/auth/LoginView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 // @ts-nocheck
 
@@ -54832,7 +55814,7 @@ _c = LoginView;
 function redirectLinkFromRole(userRole) {
   switch (userRole) {
     case "ADMIN":
-      return "/admin/review-requests";
+      return "/admin/clients";
     case "MANAGER":
       return "/reviewer/clients";
     case "REVIEWER":
@@ -54950,7 +55932,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\common\\auth\\RegisterView.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/common/auth/RegisterView.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -55341,7 +56323,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\common\\auth\\ResetPasswordView.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/common/auth/ResetPasswordView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -55721,7 +56703,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\common\\auth\\profile\\ChangePasswordView.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/common/auth/profile/ChangePasswordView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -56105,7 +57087,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\common\\errors\\NotFoundView.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/common/errors/NotFoundView.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -56408,7 +57390,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\approved-reviews\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/approved-reviews/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -56754,7 +57736,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\approved-reviews\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/approved-reviews/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -56932,7 +57914,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\auditor\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/auditor/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -57412,7 +58394,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\ClientMenu.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/ClientMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -57643,7 +58625,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -58378,7 +59360,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\AuditReports.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/AuditReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -58939,7 +59921,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\FacilitiesView.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/FacilitiesView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -59254,7 +60236,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\FacilityDetails.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/FacilityDetails.tsx";
 
 
 
@@ -59305,6 +60287,7 @@ function FacilityDetails(_ref) {
     required: true,
     value: values.name,
     variant: "outlined",
+    error: !!values.name && values.name.length < 1,
     __self: this,
     __source: {
       fileName: _jsxFileName,
@@ -59317,7 +60300,7 @@ function FacilityDetails(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 49,
+      lineNumber: 50,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
@@ -59333,7 +60316,7 @@ function FacilityDetails(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50,
+      lineNumber: 51,
       columnNumber: 9
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -59343,7 +60326,7 @@ function FacilityDetails(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61,
+      lineNumber: 62,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
@@ -59357,7 +60340,7 @@ function FacilityDetails(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62,
+      lineNumber: 63,
       columnNumber: 9
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -59367,7 +60350,7 @@ function FacilityDetails(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 72,
+      lineNumber: 73,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
@@ -59381,7 +60364,7 @@ function FacilityDetails(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73,
+      lineNumber: 74,
       columnNumber: 9
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -59391,7 +60374,7 @@ function FacilityDetails(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 83,
+      lineNumber: 84,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
@@ -59405,7 +60388,7 @@ function FacilityDetails(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84,
+      lineNumber: 85,
       columnNumber: 9
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -59415,7 +60398,7 @@ function FacilityDetails(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94,
+      lineNumber: 95,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
@@ -59429,7 +60412,7 @@ function FacilityDetails(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95,
+      lineNumber: 96,
       columnNumber: 9
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
@@ -59441,7 +60424,7 @@ function FacilityDetails(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105,
+      lineNumber: 106,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_common_CategorySelector__WEBPACK_IMPORTED_MODULE_2__["default"], {
@@ -59451,7 +60434,7 @@ function FacilityDetails(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106,
+      lineNumber: 107,
       columnNumber: 9
     }
   })));
@@ -59563,7 +60546,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\FacilityDialog.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/FacilityDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -60081,7 +61064,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\FacilityDocs.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/FacilityDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -60428,12 +61411,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
-/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/icons/MoreVert */ "./node_modules/@material-ui/icons/MoreVert.js");
-/* harmony import */ var _material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_3__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\Header.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/Header.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -60446,6 +61427,7 @@ function Header(_ref) {
   _s();
   let {
     client,
+    action,
     setClientStatus
   } = _ref;
   const [anchorEl, setAnchorEl] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
@@ -60453,7 +61435,7 @@ function Header(_ref) {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = clientStatus => {
-    setClientStatus(clientStatus);
+    if (setClientStatus) setClientStatus(clientStatus);
     setAnchorEl(null);
   };
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["CardHeader"], {
@@ -60465,43 +61447,24 @@ function Header(_ref) {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38,
+        lineNumber: 43,
         columnNumber: 9
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39,
+        lineNumber: 44,
         columnNumber: 11
       }
-    }, client.business_name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    }, client && client.business_name || ""), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 40,
+        lineNumber: 45,
         columnNumber: 11
       }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["IconButton"], {
-      edge: "end",
-      size: "small",
-      "aria-controls": "simple-menu",
-      "aria-haspopup": "true",
-      onClick: handleClick,
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 48,
-        columnNumber: 13
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_MoreVert__WEBPACK_IMPORTED_MODULE_3___default.a, {
-      __self: this,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 55,
-        columnNumber: 15
-      }
-    })))),
+    }, action && action)),
     subheader: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
       style: {
         display: "flex",
@@ -60510,14 +61473,14 @@ function Header(_ref) {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98,
+        lineNumber: 49,
         columnNumber: 9
       }
-    }, client.user && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    }, client && client.user && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 100,
+        lineNumber: 51,
         columnNumber: 13
       }
     }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
@@ -60525,7 +61488,7 @@ function Header(_ref) {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 101,
+        lineNumber: 52,
         columnNumber: 15
       }
     }, `${client.user.profile.first_name} ${client.user.profile.last_name}`), " ", `<${client.user.email}>`), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("small", {
@@ -60536,14 +61499,14 @@ function Header(_ref) {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 105,
+        lineNumber: 56,
         columnNumber: 11
       }
-    }, moment__WEBPACK_IMPORTED_MODULE_1___default()(client.updated_at).format("MM/DD/YY"))),
+    }, client && moment__WEBPACK_IMPORTED_MODULE_1___default()(client.updated_at).format("MM/DD/YY") || "")),
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36,
+      lineNumber: 41,
       columnNumber: 5
     }
   });
@@ -60659,7 +61622,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\IngredientDialog.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/IngredientDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -61229,7 +62192,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\IngredientsView.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/IngredientsView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -61588,7 +62551,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ManufacturerDocs.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/ManufacturerDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -61818,7 +62781,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ManufacturerSelector.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/ManufacturerSelector.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -62021,7 +62984,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProductDetails.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/ProductDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -62328,7 +63291,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProductDialog.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/ProductDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -62849,7 +63812,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProductDocs.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/ProductDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -63118,7 +64081,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProductsView.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/ProductsView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -63179,11 +64142,14 @@ function ProductsView(_ref) {
     products.splice(i, 0, product);
     setProducts([...products]);
   };
+
+  // @TODO remove
+  products.length = 0;
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85,
+      lineNumber: 88,
       columnNumber: 5
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
@@ -63191,7 +64157,7 @@ function ProductsView(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86,
+      lineNumber: 89,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
@@ -63199,7 +64165,7 @@ function ProductsView(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87,
+      lineNumber: 90,
       columnNumber: 9
     }
   }, "Facility Products"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductDialog__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -63209,14 +64175,14 @@ function ProductsView(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88,
+      lineNumber: 91,
       columnNumber: 9
     }
   })), loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CircularProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 94,
+      lineNumber: 97,
       columnNumber: 20
     }
   }) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["List"], {
@@ -63224,7 +64190,7 @@ function ProductsView(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95,
+      lineNumber: 98,
       columnNumber: 9
     }
   }, products.length && products.map((product, i) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ProductItem, {
@@ -63238,7 +64204,7 @@ function ProductsView(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98,
+      lineNumber: 101,
       columnNumber: 15
     }
   })) || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_4__["Alert"], {
@@ -63246,7 +64212,7 @@ function ProductsView(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 112,
+      lineNumber: 115,
       columnNumber: 13
     }
   }, "This facility has no products.")));
@@ -63329,28 +64295,28 @@ function ProductItem(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 215,
+      lineNumber: 218,
       columnNumber: 7
     }
   }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["LinearProgress"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 221,
+      lineNumber: 224,
       columnNumber: 21
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItemAvatar"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 222,
+      lineNumber: 225,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_feather__WEBPACK_IMPORTED_MODULE_7__["ShoppingBag"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 223,
+      lineNumber: 226,
       columnNumber: 11
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItemText"], {
@@ -63359,14 +64325,14 @@ function ProductItem(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 225,
+      lineNumber: 228,
       columnNumber: 9
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["ListItemSecondaryAction"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 229,
+      lineNumber: 232,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
@@ -63374,14 +64340,14 @@ function ProductItem(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 230,
+      lineNumber: 233,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_FileCopy__WEBPACK_IMPORTED_MODULE_8___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 231,
+      lineNumber: 234,
       columnNumber: 13
     }
   })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["IconButton"], {
@@ -63390,14 +64356,14 @@ function ProductItem(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 233,
+      lineNumber: 236,
       columnNumber: 11
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_DeleteForever__WEBPACK_IMPORTED_MODULE_6___default.a, {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 234,
+      lineNumber: 237,
       columnNumber: 13
     }
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_ProductDialog__WEBPACK_IMPORTED_MODULE_10__["default"], {
@@ -63410,7 +64376,7 @@ function ProductItem(_ref2) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 238,
+      lineNumber: 241,
       columnNumber: 7
     }
   }));
@@ -63536,7 +64502,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ProfileDetails.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/ProfileDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -64179,7 +65145,9 @@ const defaults = {
   hed_name: "",
   hed_phone_number: "",
   hed_email: ""
+  // qrcode: null,
 };
+
 /* harmony default export */ __webpack_exports__["default"] = (ProfileDetails);
 var _c, _c2;
 __webpack_require__.$Refresh$.register(_c, "ProfileDetails");
@@ -64301,7 +65269,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ReportMenu.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/ReportMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -64731,7 +65699,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\ReviewReports.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/ReviewReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -65290,7 +66258,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\client\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/client/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -65777,7 +66745,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -65962,6 +66930,739 @@ if (true) {
 
 /***/ }),
 
+/***/ "./src/views/reviewer/clients/register/index.tsx":
+/*!*******************************************************!*\
+  !*** ./src/views/reviewer/clients/register/index.tsx ***!
+  \*******************************************************/
+/*! exports provided: default, RegisterClientForm, defaults */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return ReviewerClient; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "RegisterClientForm", function() { return RegisterClientForm; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaults", function() { return defaults; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/Add */ "./node_modules/@material-ui/icons/Add.js");
+/* harmony import */ var _material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../../../components/Page */ "./src/components/Page.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/register/index.tsx",
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+function ReviewerClient() {
+  _s();
+  const classes = useStyles();
+  return (
+    /*#__PURE__*/
+    // @ts-ignore
+    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_5__["default"], {
+      className: classes.root,
+      title: "Register Client Account",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 27,
+        columnNumber: 5
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Container"], {
+      maxWidth: "lg",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 28,
+        columnNumber: 7
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+      container: true,
+      spacing: 3,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 29,
+        columnNumber: 9
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+      item: true,
+      lg: 8,
+      md: 6,
+      xs: 12,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 30,
+        columnNumber: 11
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(RegisterClientForm, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 31,
+        columnNumber: 13
+      }
+    })))))
+  );
+}
+_s(ReviewerClient, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
+  return [useStyles];
+});
+_c = ReviewerClient;
+function RegisterClientForm() {
+  _s2();
+  const {
+    enqueueSnackbar
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"])();
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaults);
+  const [showErrors, setShowErrors] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
+  const handleChange = e => {
+    setValues({
+      ...values,
+      [e.target.name]: e.target.value
+    });
+  };
+  const handleSubmit = e => {
+    // @ts-ignore
+    if (!e.currentTarget.form.checkValidity()) {
+      setShowErrors(true);
+      return;
+    }
+    setShowErrors(false);
+    setLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.put("/api/reviewer/register-client", values).then(async response => {
+      setLoading(false);
+      // console.log(response);
+      if (response.status == 200 || response.status == 201) {
+        console.log(response.data);
+        enqueueSnackbar("Client registered successfully.", {
+          variant: "success"
+        });
+      } else enqueueSnackbar("Client registration failed. Contact the developer.", {
+        variant: "error"
+      });
+    }).catch(e => {
+      console.error(e.response.data.message);
+      setLoading(false);
+      enqueueSnackbar("Client registration failed.\n" + e.response.data.message, {
+        variant: "error"
+      });
+    });
+  };
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
+    autoComplete: "off",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 88,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Card"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 89,
+      columnNumber: 7
+    }
+  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["LinearProgress"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 90,
+      columnNumber: 21
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CardHeader"], {
+    title: "Register Client Account",
+    subheader: "Fill in the form below to register a new client account."
+    // titleTypographyProps={{ variant: "h4" }}
+    ,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 91,
+      columnNumber: 9
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 96,
+      columnNumber: 9
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CardContent"], {
+    style: {
+      maxHeight: "calc(100vh - 260px)",
+      overflowY: "auto"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    container: true,
+    spacing: 3,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 100,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    item: true,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 101,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+    variant: "h5",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102,
+      columnNumber: 15
+    }
+  }, "Business Details")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    item: true,
+    md: 6,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 105,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
+    fullWidth: true,
+    helperText: "Specify client business name.",
+    label: "Business name",
+    name: "business_name",
+    onChange: handleChange,
+    required: true,
+    value: values.business_name,
+    variant: "outlined",
+    error: showErrors && values.business_name.length < 1,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 106,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    item: true,
+    md: 6,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 118,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
+    fullWidth: true,
+    helperText: "Specify business's main website.",
+    label: "Website link",
+    name: "website",
+    onChange: handleChange,
+    value: values.website,
+    variant: "outlined",
+    error: showErrors && !!values.website.length && !/^(http|https):\/\/[^ "]+$/.test(values.website),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 119,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    item: true,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 134,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
+    fullWidth: true,
+    label: "Business description",
+    name: "description",
+    onChange: handleChange,
+    value: values.description,
+    variant: "outlined",
+    minRows: 3,
+    multiline: true,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 135,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    item: true,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 147,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
+    fullWidth: true,
+    helperText: "Specify business address.",
+    label: "Street Address",
+    name: "address",
+    onChange: handleChange,
+    required: true,
+    value: values.address,
+    variant: "outlined",
+    error: showErrors && values.address.length < 1,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 148,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    item: true,
+    md: 6,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 160,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
+    fullWidth: true,
+    label: "Country",
+    name: "country",
+    onChange: handleChange,
+    required: true,
+    value: values.country,
+    variant: "outlined",
+    error: showErrors && values.country.length < 1,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 161,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    item: true,
+    md: 6,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 172,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
+    fullWidth: true,
+    label: "City",
+    name: "city",
+    onChange: handleChange,
+    required: true,
+    value: values.city,
+    variant: "outlined",
+    error: showErrors && values.city.length < 1,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 173,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    item: true,
+    md: 6,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 184,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
+    fullWidth: true,
+    label: "State",
+    name: "state",
+    onChange: handleChange,
+    required: true,
+    value: values.state,
+    variant: "outlined",
+    error: showErrors && values.state.length < 1,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 185,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    item: true,
+    md: 6,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 196,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
+    fullWidth: true,
+    label: "ZIP",
+    name: "zip",
+    type: "number",
+    onChange: handleChange,
+    required: true,
+    value: values.zip,
+    variant: "outlined",
+    error: showErrors && values.zip.length < 1,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 197,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    item: true,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 210,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
+    variant: "h5",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 211,
+      columnNumber: 15
+    }
+  }, "Personal Details")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    item: true,
+    md: 6,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 213,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
+    fullWidth: true,
+    helperText: "Specify client first name.",
+    label: "First name",
+    name: "first_name",
+    onChange: handleChange,
+    required: true,
+    value: values.first_name,
+    variant: "outlined",
+    error: showErrors && values.first_name.length < 1,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 214,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    item: true,
+    md: 6,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 226,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
+    fullWidth: true,
+    helperText: "Specify client last name.",
+    label: "Last name",
+    name: "last_name",
+    onChange: handleChange,
+    required: true,
+    value: values.last_name,
+    variant: "outlined",
+    error: showErrors && values.last_name.length < 1,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 227,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    item: true,
+    md: 6,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 239,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
+    fullWidth: true,
+    label: "Email Address",
+    name: "email",
+    onChange: handleChange,
+    required: true,
+    value: values.email,
+    variant: "outlined",
+    autoComplete: "off",
+    error: showErrors && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(values.email),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 240,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    item: true,
+    md: 6,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 254,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
+    fullWidth: true,
+    label: "Phone Number",
+    name: "phone_number",
+    onChange: handleChange,
+    value: values.phone_number,
+    variant: "outlined",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 255,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    item: true,
+    md: 6,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 264,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
+    fullWidth: true,
+    label: "Password",
+    name: "password",
+    onChange: handleChange,
+    required: true,
+    value: values.password,
+    variant: "outlined",
+    type: "password",
+    autoComplete: "new-password",
+    helperText: "We require at leats 8 characters.",
+    error: showErrors && values.password.length < 8,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 265,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
+    item: true,
+    md: 6,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 279,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
+    fullWidth: true,
+    label: "Confirm Password",
+    name: "confirm_password",
+    onChange: handleChange,
+    required: true,
+    value: values.confirm_password,
+    variant: "outlined",
+    type: "password",
+    helperText: "This has to match the password.",
+    error: showErrors && (values.confirm_password.length < 8 || values.password !== values.confirm_password),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 280,
+      columnNumber: 15
+    }
+  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 299,
+      columnNumber: 9
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
+    display: "flex",
+    justifyContent: "flex-end",
+    p: 2,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 300,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
+    type: "submit",
+    color: "secondary",
+    variant: "contained",
+    disabled: loading,
+    onClick: handleSubmit,
+    startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_Add__WEBPACK_IMPORTED_MODULE_4___default.a, {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 307,
+        columnNumber: 24
+      }
+    }),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 301,
+      columnNumber: 11
+    }
+  }, "Account"))));
+}
+_s2(RegisterClientForm, "o79oqEv1ZYmiLIld4j1B8Hnxz+c=", false, function () {
+  return [notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"]];
+});
+_c2 = RegisterClientForm;
+const defaults = {
+  id: "",
+  business_name: "",
+  website: "",
+  description: "",
+  address: "",
+  country: "",
+  city: "",
+  state: "",
+  zip: "",
+  first_name: "",
+  last_name: "",
+  email: "",
+  phone_number: "",
+  cell_number: "",
+  password: "",
+  confirm_password: ""
+};
+const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["makeStyles"])(theme => ({
+  root: {
+    // @ts-ignore
+    backgroundColor: theme.palette.background.dark,
+    minHeight: "100%",
+    paddingBottom: theme.spacing(3),
+    paddingTop: theme.spacing(3)
+  }
+}));
+var _c, _c2;
+__webpack_require__.$Refresh$.register(_c, "ReviewerClient");
+__webpack_require__.$Refresh$.register(_c2, "RegisterClientForm");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
 /***/ "./src/views/reviewer/clients/review/CertificateView.tsx":
 /*!***************************************************************!*\
   !*** ./src/views/reviewer/clients/review/CertificateView.tsx ***!
@@ -65983,7 +67684,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\CertificateView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/review/CertificateView.tsx";
 
 
 
@@ -66329,7 +68030,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\DocumentsView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/review/DocumentsView.tsx";
 
 
 
@@ -66627,7 +68328,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\Header.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/review/Header.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -66953,7 +68654,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\ProductsView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/review/ProductsView.tsx";
 
 
 
@@ -67149,7 +68850,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\ReportsView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/review/ReportsView.tsx";
 
 
 
@@ -67414,7 +69115,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\clients\\review\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/clients/review/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -67867,7 +69568,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\Breadcrumbs.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/common/Breadcrumbs.tsx";
 
 
 function Breadcrumbs(_ref) {
@@ -67995,7 +69696,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\CategorySelector.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/common/CategorySelector.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -68281,7 +69982,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\EnumSelector.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/common/EnumSelector.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -68498,7 +70199,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\LoadingButton.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/common/LoadingButton.tsx";
 
 
 
@@ -68671,7 +70372,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\ModelSelector.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/common/ModelSelector.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -68955,7 +70656,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\NestedMenuItem.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/common/NestedMenuItem.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -69243,7 +70944,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\PromptDialog.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/common/PromptDialog.tsx";
 
 
 
@@ -69435,7 +71136,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\Toolbar.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/common/Toolbar.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 // @ts-nocheck
 
@@ -69745,7 +71446,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\UploadDocumentListItem.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/common/UploadDocumentListItem.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -70343,7 +72044,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\common\\UploadDocumentTableRow.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/common/UploadDocumentTableRow.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -71908,7 +73609,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\drafted-reviews\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/drafted-reviews/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -72234,7 +73935,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\drafted-reviews\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/drafted-reviews/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -72425,7 +74126,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\manufacturers\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/manufacturers/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -72841,7 +74542,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\manufacturers\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/manufacturers/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -73019,7 +74720,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\manufacturers\\manufacturer\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/manufacturers/manufacturer/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -73663,7 +75364,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\new-review\\BusinessInfoStep.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/new-review/BusinessInfoStep.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -73896,7 +75597,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\new-review\\ReviewDetails.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/new-review/ReviewDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -74307,7 +76008,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\new-review\\UploadDocumentationStep.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/new-review/UploadDocumentationStep.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -74870,7 +76571,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\new-review\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/new-review/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -75057,7 +76758,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\profile\\ProfileCard.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/profile/ProfileCard.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -75320,7 +77021,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\profile\\ProfileDetails.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/profile/ProfileDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -75799,7 +77500,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\profile\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/profile/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -75993,802 +77694,6 @@ if (true) {
 
 /***/ }),
 
-/***/ "./src/views/reviewer/register-client/BusinessDetails.tsx":
-/*!****************************************************************!*\
-  !*** ./src/views/reviewer/register-client/BusinessDetails.tsx ***!
-  \****************************************************************/
-/*! exports provided: default, defaults */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return BusinessDetails; });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "defaults", function() { return defaults; });
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
-/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
-__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
-__webpack_require__.$Refresh$.setup(module.i);
-
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\register-client\\BusinessDetails.tsx",
-  _s = __webpack_require__.$Refresh$.signature();
-
-
-
-
-function BusinessDetails() {
-  _s();
-  const {
-    enqueueSnackbar
-  } = Object(notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"])();
-  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(false);
-  const [values, setValues] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(defaults);
-  const handleChange = e => {
-    setValues({
-      ...values,
-      [e.target.name]: e.target.value
-    });
-  };
-  const onSubmitHandler = () => {
-    setLoading(true);
-    axios__WEBPACK_IMPORTED_MODULE_1___default.a.put("/api/reviewer/register-client", values).then(async response => {
-      setLoading(false);
-      // console.log(response);
-      if (response.status == 200 || response.status == 201) {
-        console.log(response.data);
-        enqueueSnackbar("Client registered successfully.", {
-          variant: "success"
-        });
-      } else enqueueSnackbar("Client registration failed. Contact the developer.", {
-        variant: "error"
-      });
-    }).catch(e => {
-      console.error(e.response.data.message);
-      setLoading(false);
-      enqueueSnackbar("Client registration failed.\n" + e.response.data.message, {
-        variant: "error"
-      });
-    });
-  };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("form", {
-    autoComplete: "off",
-    noValidate: true,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 61,
-      columnNumber: 5
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Card"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 62,
-      columnNumber: 7
-    }
-  }, loading && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["LinearProgress"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 63,
-      columnNumber: 21
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CardHeader"], {
-    title: "Create Business User",
-    subheader: "The information can be edited",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 64,
-      columnNumber: 9
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 68,
-      columnNumber: 9
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["CardContent"], {
-    style: {
-      maxHeight: "calc(100vh - 259px)",
-      overflowY: "auto"
-    },
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 69,
-      columnNumber: 9
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    container: true,
-    spacing: 3,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 72,
-      columnNumber: 11
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    item: true,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 73,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
-    variant: "h5",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 74,
-      columnNumber: 15
-    }
-  }, "Business Details")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    item: true,
-    md: 6,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 77,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
-    fullWidth: true,
-    helperText: "Please specify the business name",
-    label: "Business name",
-    name: "business_name",
-    onChange: handleChange,
-    required: true,
-    value: values.business_name,
-    variant: "outlined",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 78,
-      columnNumber: 15
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    item: true,
-    md: 6,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 89,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
-    fullWidth: true,
-    helperText: "Please specify the business's main website",
-    label: "Website link",
-    name: "website",
-    onChange: handleChange,
-    required: true,
-    value: values.website,
-    variant: "outlined",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 90,
-      columnNumber: 15
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    item: true,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 101,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
-    fullWidth: true,
-    label: "Business description",
-    name: "description",
-    onChange: handleChange,
-    value: values.description,
-    variant: "outlined",
-    multiline: true,
-    rows: 4,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 102,
-      columnNumber: 15
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    item: true,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 114,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
-    fullWidth: true,
-    helperText: "Please specify the address",
-    label: "Street Address",
-    name: "address",
-    onChange: handleChange,
-    required: true,
-    value: values.address,
-    variant: "outlined",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 115,
-      columnNumber: 15
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    item: true,
-    md: 6,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 126,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
-    fullWidth: true,
-    label: "Country",
-    name: "country",
-    onChange: handleChange,
-    required: true,
-    value: values.country,
-    variant: "outlined",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 127,
-      columnNumber: 15
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    item: true,
-    md: 6,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 137,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
-    fullWidth: true,
-    label: "City",
-    name: "city",
-    onChange: handleChange,
-    required: true,
-    value: values.city,
-    variant: "outlined",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 138,
-      columnNumber: 15
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    item: true,
-    md: 6,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 148,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
-    fullWidth: true,
-    label: "State",
-    name: "state",
-    onChange: handleChange,
-    required: true,
-    value: values.state,
-    variant: "outlined",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 149,
-      columnNumber: 15
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    item: true,
-    md: 6,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 159,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
-    fullWidth: true,
-    label: "ZIP",
-    name: "zip",
-    onChange: handleChange,
-    required: true,
-    value: values.zip,
-    variant: "outlined",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 160,
-      columnNumber: 15
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    item: true,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 171,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Typography"], {
-    variant: "h5",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 172,
-      columnNumber: 15
-    }
-  }, "Personal Details")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    item: true,
-    md: 6,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 174,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
-    fullWidth: true,
-    helperText: "Please specify the first name",
-    label: "First name",
-    name: "first_name",
-    onChange: handleChange,
-    required: true,
-    value: values.first_name,
-    variant: "outlined",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 175,
-      columnNumber: 15
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    item: true,
-    md: 6,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 186,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
-    fullWidth: true,
-    helperText: "Please specify the last name",
-    label: "Last name",
-    name: "last_name",
-    onChange: handleChange,
-    required: true,
-    value: values.last_name,
-    variant: "outlined",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 187,
-      columnNumber: 15
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    item: true,
-    md: 6,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 198,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
-    fullWidth: true,
-    label: "Email Address",
-    name: "email",
-    onChange: handleChange,
-    required: true,
-    value: values.email,
-    variant: "outlined",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 199,
-      columnNumber: 15
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    item: true,
-    md: 6,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 209,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
-    fullWidth: true,
-    label: "Phone Number",
-    name: "phone_number",
-    onChange: handleChange,
-    value: values.phone_number,
-    variant: "outlined",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 210,
-      columnNumber: 15
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    item: true,
-    md: 6,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 219,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
-    fullWidth: true,
-    label: "Password",
-    name: "password",
-    onChange: handleChange,
-    required: true,
-    value: values.password,
-    variant: "outlined",
-    type: "password",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 220,
-      columnNumber: 15
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Grid"], {
-    item: true,
-    md: 6,
-    xs: 12,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 231,
-      columnNumber: 13
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["TextField"], {
-    fullWidth: true,
-    label: "Confirm Password",
-    name: "confirm_password",
-    onChange: handleChange,
-    required: true,
-    value: values.confirm_password,
-    variant: "outlined",
-    type: "password",
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 232,
-      columnNumber: 15
-    }
-  })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Divider"], {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 245,
-      columnNumber: 9
-    }
-  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Box"], {
-    display: "flex",
-    justifyContent: "flex-end",
-    p: 2,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 246,
-      columnNumber: 9
-    }
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Button"], {
-    color: "secondary",
-    variant: "contained",
-    disabled: loading,
-    onClick: onSubmitHandler,
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 247,
-      columnNumber: 11
-    }
-  }, "Create"))));
-}
-_s(BusinessDetails, "jDPNhUSqlZ9jVaVo1xA3jeGPUBk=", false, function () {
-  return [notistack__WEBPACK_IMPORTED_MODULE_2__["useSnackbar"]];
-});
-_c = BusinessDetails;
-const defaults = {
-  id: "",
-  business_name: "",
-  website: "",
-  description: "",
-  address: "",
-  country: "",
-  city: "",
-  state: "",
-  zip: "",
-  first_name: "",
-  last_name: "",
-  email: "",
-  phone_number: "",
-  cell_number: "",
-  password: "",
-  confirm_password: ""
-};
-var _c;
-__webpack_require__.$Refresh$.register(_c, "BusinessDetails");
-
-const currentExports = __react_refresh_utils__.getModuleExports(module.i);
-__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
-
-if (true) {
-  const isHotUpdate = !!module.hot.data;
-  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
-
-  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
-    module.hot.dispose(
-      /**
-       * A callback to performs a full refresh if React has unrecoverable errors,
-       * and also caches the to-be-disposed module.
-       * @param {*} data A hot module data object from Webpack HMR.
-       * @returns {void}
-       */
-      function hotDisposeCallback(data) {
-        // We have to mutate the data object to get data registered and cached
-        data.prevExports = currentExports;
-      }
-    );
-    module.hot.accept(
-      /**
-       * An error handler to allow self-recovering behaviours.
-       * @param {Error} error An error occurred during evaluation of a module.
-       * @returns {void}
-       */
-      function hotErrorHandler(error) {
-        if (
-          typeof __react_refresh_error_overlay__ !== 'undefined' &&
-          __react_refresh_error_overlay__
-        ) {
-          __react_refresh_error_overlay__.handleRuntimeError(error);
-        }
-
-        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
-          if (window.onHotAcceptError) {
-            window.onHotAcceptError(error.message);
-          }
-        }
-
-        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
-      }
-    );
-
-    if (isHotUpdate) {
-      if (
-        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
-        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
-      ) {
-        module.hot.invalidate();
-      } else {
-        __react_refresh_utils__.enqueueUpdate(
-          /**
-           * A function to dismiss the error overlay after performing React refresh.
-           * @returns {void}
-           */
-          function updateCallback() {
-            if (
-              typeof __react_refresh_error_overlay__ !== 'undefined' &&
-              __react_refresh_error_overlay__
-            ) {
-              __react_refresh_error_overlay__.clearRuntimeErrors();
-            }
-          }
-        );
-      }
-    }
-  } else {
-    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
-      module.hot.invalidate();
-    }
-  }
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
-
-/***/ }),
-
-/***/ "./src/views/reviewer/register-client/index.tsx":
-/*!******************************************************!*\
-  !*** ./src/views/reviewer/register-client/index.tsx ***!
-  \******************************************************/
-/*! exports provided: default */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
-/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../components/Page */ "./src/components/Page.js");
-/* harmony import */ var _BusinessDetails__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./BusinessDetails */ "./src/views/reviewer/register-client/BusinessDetails.tsx");
-__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
-__webpack_require__.$Refresh$.setup(module.i);
-
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\register-client\\index.tsx",
-  _s = __webpack_require__.$Refresh$.signature();
-
-
-
-
-const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
-  root: {
-    // @ts-ignore
-    backgroundColor: theme.palette.background.dark,
-    minHeight: "100%",
-    paddingBottom: theme.spacing(3),
-    paddingTop: theme.spacing(3)
-  }
-}));
-const ReviewerNewBusinessView = () => {
-  _s();
-  const classes = useStyles();
-  return (
-    /*#__PURE__*/
-    // @ts-ignore
-    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_2__["default"], {
-      className: classes.root,
-      title: "Account",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21,
-        columnNumber: 5
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Container"], {
-      maxWidth: "lg",
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 22,
-        columnNumber: 7
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
-      container: true,
-      spacing: 3,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 23,
-        columnNumber: 9
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
-      item: true,
-      lg: 8,
-      md: 6,
-      xs: 12,
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 24,
-        columnNumber: 11
-      }
-    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_BusinessDetails__WEBPACK_IMPORTED_MODULE_3__["default"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 25,
-        columnNumber: 13
-      }
-    })))))
-  );
-};
-_s(ReviewerNewBusinessView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
-  return [useStyles];
-});
-_c = ReviewerNewBusinessView;
-/* harmony default export */ __webpack_exports__["default"] = (ReviewerNewBusinessView);
-var _c;
-__webpack_require__.$Refresh$.register(_c, "ReviewerNewBusinessView");
-
-const currentExports = __react_refresh_utils__.getModuleExports(module.i);
-__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
-
-if (true) {
-  const isHotUpdate = !!module.hot.data;
-  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
-
-  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
-    module.hot.dispose(
-      /**
-       * A callback to performs a full refresh if React has unrecoverable errors,
-       * and also caches the to-be-disposed module.
-       * @param {*} data A hot module data object from Webpack HMR.
-       * @returns {void}
-       */
-      function hotDisposeCallback(data) {
-        // We have to mutate the data object to get data registered and cached
-        data.prevExports = currentExports;
-      }
-    );
-    module.hot.accept(
-      /**
-       * An error handler to allow self-recovering behaviours.
-       * @param {Error} error An error occurred during evaluation of a module.
-       * @returns {void}
-       */
-      function hotErrorHandler(error) {
-        if (
-          typeof __react_refresh_error_overlay__ !== 'undefined' &&
-          __react_refresh_error_overlay__
-        ) {
-          __react_refresh_error_overlay__.handleRuntimeError(error);
-        }
-
-        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
-          if (window.onHotAcceptError) {
-            window.onHotAcceptError(error.message);
-          }
-        }
-
-        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
-      }
-    );
-
-    if (isHotUpdate) {
-      if (
-        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
-        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
-      ) {
-        module.hot.invalidate();
-      } else {
-        __react_refresh_utils__.enqueueUpdate(
-          /**
-           * A function to dismiss the error overlay after performing React refresh.
-           * @returns {void}
-           */
-          function updateCallback() {
-            if (
-              typeof __react_refresh_error_overlay__ !== 'undefined' &&
-              __react_refresh_error_overlay__
-            ) {
-              __react_refresh_error_overlay__.clearRuntimeErrors();
-            }
-          }
-        );
-      }
-    }
-  } else {
-    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
-      module.hot.invalidate();
-    }
-  }
-}
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
-
-/***/ }),
-
 /***/ "./src/views/reviewer/requests/Results.tsx":
 /*!*************************************************!*\
   !*** ./src/views/reviewer/requests/Results.tsx ***!
@@ -76816,7 +77721,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/requests/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -77480,7 +78385,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\ReviewRequestMenu.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/requests/ReviewRequestMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -78158,7 +79063,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/requests/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -78338,7 +79243,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\reports\\AuditReports.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/requests/reports/AuditReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -78816,7 +79721,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\reports\\ReportMenu.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/requests/reports/ReportMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -79070,7 +79975,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\reports\\ReviewReports.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/requests/reports/ReviewReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -79543,7 +80448,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\reports\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/requests/reports/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature(),
   _s3 = __webpack_require__.$Refresh$.signature();
@@ -79971,7 +80876,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\FacilityDocs.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/requests/review/FacilityDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -80411,7 +81316,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\FacilityView.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/requests/review/FacilityView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -80636,7 +81541,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\IngredientsView.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/requests/review/IngredientsView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -81377,7 +82282,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ManufacturerDocs.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/requests/review/ManufacturerDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -81583,7 +82488,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ManufacturersView.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/requests/review/ManufacturersView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -82041,7 +82946,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ProductDocs.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/requests/review/ProductDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -82248,7 +83153,7 @@ function ProductDocs(_ref) {
     }
   }))));
 }
-_s(ProductDocs, "krPagrlJHaMFos2N2y2eH60SqeY=", false, function () {
+_s(ProductDocs, "Vj0qUP7BKSwatvv94+fehed1TSg=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
 _c = ProductDocs;
@@ -82354,7 +83259,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\ProductsView.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/requests/review/ProductsView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -82584,7 +83489,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\RequestManufacturerDocs.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/requests/review/RequestManufacturerDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -82859,7 +83764,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\requests\\review\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/requests/review/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -83368,7 +84273,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\Results.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/reviews-queue/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -83758,7 +84663,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\index.js",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/reviews-queue/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -83965,7 +84870,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\CertificateView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/reviews-queue/review/CertificateView.tsx";
 
 
 
@@ -84306,7 +85211,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\DocumentsView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/reviews-queue/review/DocumentsView.tsx";
 
 
 
@@ -84604,7 +85509,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\Header.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/reviews-queue/review/Header.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -84930,7 +85835,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\ProductsView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/reviews-queue/review/ProductsView.tsx";
 
 
 
@@ -85126,7 +86031,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\ReportsView.tsx";
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/reviews-queue/review/ReportsView.tsx";
 
 
 
@@ -85392,7 +86297,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\halalwatchworld-portal\\src\\views\\reviewer\\reviews-queue\\review\\index.tsx",
+var _jsxFileName = "/home/baeyun/work/hww-portal/src/views/reviewer/reviews-queue/review/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -85720,10 +86625,10 @@ if (true) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\bukha\Documents\Work\halalwatchworld-portal\node_modules\webpack\hot\dev-server.js */"./node_modules/webpack/hot/dev-server.js");
-__webpack_require__(/*! C:\Users\bukha\Documents\Work\halalwatchworld-portal\node_modules\@pmmmwh\react-refresh-webpack-plugin\client\ReactRefreshEntry.js */"./node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js");
-__webpack_require__(/*! C:\Users\bukha\Documents\Work\halalwatchworld-portal\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
-module.exports = __webpack_require__(/*! C:\Users\bukha\Documents\Work\halalwatchworld-portal\src\index.tsx */"./src/index.tsx");
+__webpack_require__(/*! /home/baeyun/work/hww-portal/node_modules/webpack/hot/dev-server.js */"./node_modules/webpack/hot/dev-server.js");
+__webpack_require__(/*! /home/baeyun/work/hww-portal/node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js */"./node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js");
+__webpack_require__(/*! /home/baeyun/work/hww-portal/node_modules/react-dev-utils/webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! /home/baeyun/work/hww-portal/src/index.tsx */"./src/index.tsx");
 
 
 /***/ })

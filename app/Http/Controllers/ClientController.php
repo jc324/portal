@@ -17,6 +17,7 @@ use App\Models\Report;
 use App\Mail\NewAccount;
 use Exception;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Facades\Storage;
 
 class ClientController extends Controller
 {
@@ -380,6 +381,16 @@ class ClientController extends Controller
         $client->save();
 
         return response('', 200);
+    }
+
+    public function update_qrcode(Request $request, $client_id)
+    {
+        $path = Storage::putFile('qrcodes', $request->file('qrcode'));
+        $client = Client::findOrFail($client_id);
+        Storage::delete($client->qrcode); // delete existing qrcode if exists
+        $client->update(['qrcode' => $path]);
+
+        return response($path, 200);
     }
 }
 

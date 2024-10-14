@@ -165,9 +165,9 @@ class CertificatesController extends Controller
         $qualified_id = $facility_category_code . $facility->id;
         $address = $facility->address . ', ' . $facility->city . ', ' . $facility->state . ', ' . $facility->zip;
 
-        \PhpOffice\PhpWord\Settings::setOutputEscapingEnabled(true);
+        // \PhpOffice\PhpWord\Settings::setOutputEscapingEnabled(true);
         $tp->setValues([
-            'ClientName' => htmlspecialchars($client->business_name),
+            'FacilityName' => htmlspecialchars($facility->name),
             'FacilityAddress' => htmlspecialchars($address),
             'FacilityID' => $qualified_id,
             'DateStamped' => date("m/d/Y|g:iA T"),
@@ -175,6 +175,15 @@ class CertificatesController extends Controller
             'DateExpires' => date('M jS, Y', strtotime('+1 year - 1 day'))
         ]);
         $tp->saveAs($file_name);
+
+        // inject QR code
+        if ($facility->client->qrcode) {
+            $qrcode_path = storage_path('app/' . $facility->client->qrcode);
+            $zip = new \ZipArchive();
+            $zip->open($file_name);
+            $zip->addFile($qrcode_path, 'word/media/image3.png');
+            $zip->close();
+        }
 
         return response()->download($file_name)->deleteFileAfterSend(true);
     }
@@ -193,11 +202,6 @@ class CertificatesController extends Controller
         $products_list = $product_ids
             ? Product::findMany(explode(',', $request->get('ids')))->toArray()
             : $facility->products()->get()->toArray();
-        // $products_list = array_merge(
-        //     $products_list,
-        //     $products_list,
-        //     $products_list,
-        // );
         $products = array_add_count(
             'P',
             array_values($products_list) // reindex
@@ -216,19 +220,53 @@ class CertificatesController extends Controller
             }
         }, $products);
 
-        \PhpOffice\PhpWord\Settings::setOutputEscapingEnabled(true);
+        $product_chuncks = array_chunk($products_arr_clean, 10);
+        $i = 0;
+        $pages = array_map(function ($page) use (&$i, &$client, $address, $qualified_id) {
+            $page = [
+                'ClientName' => htmlspecialchars($client->business_name),
+                'FacilityAddress' => htmlspecialchars($address),
+                'FacilityID' => $qualified_id,
+                'P' => '${P' . $i++ . '}',
+            ];
+            return $page;
+        }, $product_chuncks);
+
+        // \PhpOffice\PhpWord\Settings::setOutputEscapingEnabled(true);
+        $tp->cloneBlock('Page', 0, true, false, $pages);
+
+        foreach ($product_chuncks as $i => $products) {
+            $products = $this->array_add_count('P' . $i, $products, 1 + $i * 10);
+            $tp->cloneRowAndSetValues('P' . $i, $products);
+        }
+
         $tp->setValues([
-            'ClientName' => htmlspecialchars($client->business_name),
-            'FacilityAddress' => htmlspecialchars($address),
-            'FacilityID' => $qualified_id,
             'DateStamped' => date("m/d/Y|g:iA T"),
             'DateIssued' => date('M jS, Y'),
             'DateExpires' => date('M jS, Y', strtotime('+1 year - 1 day'))
         ]);
-        $tp->cloneRowAndSetValues('P', $products_arr_clean);
         $tp->saveAs($file_name);
 
+        // inject QR code
+        if ($facility->client->qrcode) {
+            $qrcode_path = storage_path('app/' . $facility->client->qrcode);
+            $zip = new \ZipArchive();
+            $zip->open($file_name);
+            $zip->addFile($qrcode_path, 'word/media/image3.png');
+            $zip->close();
+        }
+
         return response()->download($file_name)->deleteFileAfterSend(true);
+    }
+
+    private function array_add_count(string $keyName, array $arr, int $i = 1): array
+    {
+        $formatted = array_map(function ($item) use ($keyName, &$i) {
+            $item[$keyName] = $i++;
+            return $item;
+        }, $arr);
+
+        return $formatted;
     }
 
     /**
@@ -289,8 +327,38 @@ class CertificatesController extends Controller
                 ? "https://www.halalwatchworld.org/docsubmit/form-d-highrisk"
                 : "https://www.halalwatchworld.org/docsubmit/form-d-lowrisk";
 
+            // create meister task
+            $this->register_meister_card($client);
+
             // to client
-            Mail::to($to)->cc(['support@halalwatchworld.org'])->send(new CertificateRenewal($cert->id, $client_name, $form_d_link));
+            Mail::to($to)->cc(['support@halalwatchworld.org'])->send(
+                new CertificateRenewal($cert->id, $client_name, $form_d_link)
+            );
+        }
+    }
+
+    // create meister task in "Client Renewal Tracking" (8323592)
+    function register_meister_card(Client $client)
+    {
+        $token = env('MEISTERTASK_TOKEN');
+        $section_id = 33153704; // First Contact
+        $guzzle = new \GuzzleHttp\Client();
+        $body = json_encode([
+            'name' => $client->business_name,
+            'notes' => 'Email: ' . $client->user->email,
+            'status' => 1
+        ]);
+        try {
+            $response = $guzzle->request('POST', 'https://www.meistertask.com/api/sections/' . $section_id . '/tasks', [
+                'headers' => [
+                    'Authorization' => 'Bearer ' . $token,
+                    'accept' => 'application/json',
+                    'content-type' => 'application/json',
+                ],
+                'body' => $body,
+            ]);
+            $response->getBody();
+        } catch (\Throwable $th) {
         }
     }
 }

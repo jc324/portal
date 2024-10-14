@@ -9,9 +9,12 @@ use Illuminate\Support\Facades\Mail;
 
 class ReviewerController extends Controller
 {
-    //
     public function register_client(Request $request)
     {
+        return response()->json([
+            'message' => 'This feature is disabled.'
+        ], 200);
+
         $validated = $request->validate([
             'business_name' => '',
             'website' => '',

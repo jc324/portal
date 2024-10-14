@@ -68,6 +68,7 @@ return [
     'links' => [
         public_path('storage') => storage_path('app/public'),
         public_path('avatars') => storage_path('app/public/avatars'),
+        public_path('qrcodes') => storage_path('app/public/qrcodes'),
         public_path('documents') => storage_path('app/public/documents'),
         public_path('previews') => storage_path('app/public/previews'),
     ],
