@@ -133,7 +133,8 @@ Route::middleware('auth:sanctum')->put('/client/product', [ProductController::cl
 Route::middleware('auth:sanctum')->put('/client/product/{id}', [ProductController::class, 'update_product']);
 Route::middleware('auth:sanctum')->post('/client/product/{id}/duplicate', [ProductController::class, 'duplicate_product']);
 Route::middleware('auth:sanctum')->delete('/client/product/{id}', [ProductController::class, 'delete_product']);
-Route::middleware('auth:sanctum')->post('/client/product/categories', [ProductController::class, 'get_categories']);
+// @TODO improve api
+Route::middleware('auth:sanctum', 'throttle:1000,1')->post('/client/product/categories', [ProductController::class, 'get_categories']);
 Route::middleware('auth:sanctum')->post('/client/product/documents', [ProductController::class, 'get_all_documents']);
 Route::middleware('auth:sanctum', 'throttle:300,1')->post('/client/product/{id}/documents', [ProductController::class, 'get_documents']);
 Route::middleware('auth:sanctum')->post('/client/product/{id}/document', [ProductController::class, 'add_document']);
