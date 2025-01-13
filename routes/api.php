@@ -4,6 +4,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\TrashController;
 use App\Http\Controllers\ReviewerController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\DocumentController;
@@ -38,6 +39,8 @@ Route::middleware('auth:sanctum')->post('/profile', [ProfileController::class, '
 Route::middleware('auth:sanctum')->put('/profile', [ProfileController::class, 'update_current_user_profile']);
 Route::middleware('auth:sanctum')->post('/profile/avatar', [ProfileController::class, 'update_avatar']);
 Route::middleware('auth:sanctum')->put('/profile/change-password', [ProfileController::class, 'change_password']);
+Route::middleware('auth:sanctum')->post('/trash', [TrashController::class, 'get_trash']);
+Route::middleware('auth:sanctum')->post('/trash/{dataType}/restore/{id}', [TrashController::class, 'restore']);
 
 // Client
 Route::middleware('auth:sanctum')->post('/client/dashboard', [ClientController::class, 'get_dashboard']);

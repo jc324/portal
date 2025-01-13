@@ -158,7 +158,7 @@ class CertificatesController extends Controller
     {
         $facility = Facility::findOrFail($facility_id);
         $client = $facility->client;
-        $file_name = $client->business_name . ' - facility_certificate_' . time() . '.docx';
+        $file_name = $facility->name . ' - facility_certificate_' . time() . '.docx';
         $registration_report_temp = resource_path() . '/templates/certificate_facility.docx';
         $tp = new TemplateProcessor($registration_report_temp);
         $facility_category_code = FacilityCategories::find($facility->category_id)->code;
