@@ -189,7 +189,7 @@ class FacilityController extends Controller
         $body .= pp_facility_details($facility);
         $body .= pp_relationship_details($facility->products);
 
-        Mail::to("audits@halalwatchworld.org")->send(new NewAuditPrintout($body));
+        Mail::to("audits@halalwatch.us")->send(new NewAuditPrintout($body));
 
         return response('', 200);
     }

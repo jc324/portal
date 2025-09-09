@@ -72,6 +72,9 @@ Route::middleware('auth:sanctum')->get('/client/facility/document/{id}', [Facili
 Route::middleware('auth:sanctum')->get('/client/product/document/{id}', [ProductController::class, 'download_document_by_id']);
 Route::middleware('auth:sanctum')->get('/client/manufacturer/document/{id}', [ManufacturerController::class, 'download_document_by_id']);
 
+// Public
+Route::get('/certificates/client/{id}/download', [CertificatesController::class, 'download_valid_certs']);
+
 // Crons (cron-jobs.org)
 Route::get('/cron/certificates', [CertificatesController::class, 'certifcates_cron']);
 

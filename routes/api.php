@@ -3,6 +3,7 @@
 // use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\AnalyticsController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\TrashController;
 use App\Http\Controllers\ReviewerController;
@@ -41,6 +42,11 @@ Route::middleware('auth:sanctum')->post('/profile/avatar', [ProfileController::c
 Route::middleware('auth:sanctum')->put('/profile/change-password', [ProfileController::class, 'change_password']);
 Route::middleware('auth:sanctum')->post('/trash', [TrashController::class, 'get_trash']);
 Route::middleware('auth:sanctum')->post('/trash/{dataType}/restore/{id}', [TrashController::class, 'restore']);
+Route::middleware('auth:sanctum')->prefix('analytics')->group(function () {
+    Route::get('summary', [AnalyticsController::class, 'summary']);
+    Route::get('timeseries', [AnalyticsController::class, 'timeseries']);
+    Route::get('breakdown', [AnalyticsController::class, 'breakdown']);
+});
 
 // Client
 Route::middleware('auth:sanctum')->post('/client/dashboard', [ClientController::class, 'get_dashboard']);
@@ -173,9 +179,13 @@ Route::middleware('auth:sanctum')->post('/manufacturer/document/{id}', [Manufact
 Route::middleware('auth:sanctum')->delete('/manufacturer/document/{id}', [ManufacturerController::class, 'delete_document']);
 Route::middleware('auth:sanctum')->put('/manufacturer/document/{id}/expires-at', [ManufacturerController::class, 'update_document_expiration']);
 
+// Public
+Route::post('/verify/{id}', [ClientController::class, 'verify']);
+
 // Webhooks
 Route::post('/webhooks/audit-report', [ReportsController::class, 'audit_report_webhook']);
 Route::post('/webhooks/meister-naq-card', [WebhooksController::class, 'meister_naq_card']);
+Route::post('/webhooks/naq', [WebhooksController::class, 'handle_naq']);
 Route::post('/webhooks/pandadoc-disclosure-stmt', [WebhooksController::class, 'pandadoc_disclosure_stmt']);
 Route::post('/webhooks/call-form-proposal', [WebhooksController::class, 'call_form_proposal']);
 

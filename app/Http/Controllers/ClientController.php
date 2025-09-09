@@ -392,6 +392,15 @@ class ClientController extends Controller
 
         return response($path, 200);
     }
+
+    public function verify(Request $request, $client_id)
+    {
+        $client = Client::findOrFail($client_id);
+        $client->facilities;
+        $client->products;
+
+        return response()->json($client, 200);
+    }
 }
 
 function generateRandomString($length = 10)

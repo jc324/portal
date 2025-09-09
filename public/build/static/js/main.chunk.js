@@ -15,7 +15,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(true);
 // Module
-___CSS_LOADER_EXPORT___.push([module.i, "body {\r\n  margin: 0;\r\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\r\n    \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\r\n    sans-serif;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\ncode {\r\n  font-family: source-code-pro, Menlo, Monaco, Consolas, \"Courier New\",\r\n    monospace;\r\n}\r\n\r\n.MuiTab-wrapper {\r\n  flex-direction: row !important;\r\n}\r\n\r\n/* reviewer styles */\r\n.tabPanel > div {\r\n  padding-left: 0;\r\n  padding-right: 0;\r\n}\r\n\r\n/* profile read-only view */\r\n.profile-view-field .MuiInputBase-root,\r\n.profile-view-field .MuiSelect-select.MuiSelect-select {\r\n  color: #263238 !important;\r\n}\r\n\r\n/* Dashboard Stat Cards */\r\n.dashboard-stat-card:hover {\r\n  box-shadow: 0 0 7px 5px rgb(63 63 68 / 10%), 0 1px 2px 0 rgb(63 63 68 / 15%);\r\n}\r\n\r\n.dashboard-stat-card .MuiStepConnector-alternativeLabel {\r\n    top: 23px;\r\n    left: calc(-50% + 25px);\r\n    right: calc(50% + 25px);\r\n}\r\n", "",{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT;;cAEY;EACZ,mCAAmC;EACnC,kCAAkC;AACpC;;AAEA;EACE;aACW;AACb;;AAEA;EACE,8BAA8B;AAChC;;AAEA,oBAAoB;AACpB;EACE,eAAe;EACf,gBAAgB;AAClB;;AAEA,2BAA2B;AAC3B;;EAEE,yBAAyB;AAC3B;;AAEA,yBAAyB;AACzB;EACE,4EAA4E;AAC9E;;AAEA;IACI,SAAS;IACT,uBAAuB;IACvB,uBAAuB;AAC3B","sourcesContent":["body {\r\n  margin: 0;\r\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\r\n    \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\r\n    sans-serif;\r\n  -webkit-font-smoothing: antialiased;\r\n  -moz-osx-font-smoothing: grayscale;\r\n}\r\n\r\ncode {\r\n  font-family: source-code-pro, Menlo, Monaco, Consolas, \"Courier New\",\r\n    monospace;\r\n}\r\n\r\n.MuiTab-wrapper {\r\n  flex-direction: row !important;\r\n}\r\n\r\n/* reviewer styles */\r\n.tabPanel > div {\r\n  padding-left: 0;\r\n  padding-right: 0;\r\n}\r\n\r\n/* profile read-only view */\r\n.profile-view-field .MuiInputBase-root,\r\n.profile-view-field .MuiSelect-select.MuiSelect-select {\r\n  color: #263238 !important;\r\n}\r\n\r\n/* Dashboard Stat Cards */\r\n.dashboard-stat-card:hover {\r\n  box-shadow: 0 0 7px 5px rgb(63 63 68 / 10%), 0 1px 2px 0 rgb(63 63 68 / 15%);\r\n}\r\n\r\n.dashboard-stat-card .MuiStepConnector-alternativeLabel {\r\n    top: 23px;\r\n    left: calc(-50% + 25px);\r\n    right: calc(50% + 25px);\r\n}\r\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.i, "body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n    \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, \"Courier New\",\n    monospace;\n}\n\n.MuiTab-wrapper {\n  flex-direction: row !important;\n}\n\n/* reviewer styles */\n.tabPanel > div {\n  padding-left: 0;\n  padding-right: 0;\n}\n\n/* profile read-only view */\n.profile-view-field .MuiInputBase-root,\n.profile-view-field .MuiSelect-select.MuiSelect-select {\n  color: #263238 !important;\n}\n\n/* Dashboard Stat Cards */\n.dashboard-stat-card:hover {\n  box-shadow: 0 0 7px 5px rgb(63 63 68 / 10%), 0 1px 2px 0 rgb(63 63 68 / 15%);\n}\n\n.dashboard-stat-card .MuiStepConnector-alternativeLabel {\n    top: 23px;\n    left: calc(-50% + 25px);\n    right: calc(50% + 25px);\n}\n", "",{"version":3,"sources":["webpack://src/index.css"],"names":[],"mappings":"AAAA;EACE,SAAS;EACT;;cAEY;EACZ,mCAAmC;EACnC,kCAAkC;AACpC;;AAEA;EACE;aACW;AACb;;AAEA;EACE,8BAA8B;AAChC;;AAEA,oBAAoB;AACpB;EACE,eAAe;EACf,gBAAgB;AAClB;;AAEA,2BAA2B;AAC3B;;EAEE,yBAAyB;AAC3B;;AAEA,yBAAyB;AACzB;EACE,4EAA4E;AAC9E;;AAEA;IACI,SAAS;IACT,uBAAuB;IACvB,uBAAuB;AAC3B","sourcesContent":["body {\n  margin: 0;\n  font-family: -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Roboto\", \"Oxygen\",\n    \"Ubuntu\", \"Cantarell\", \"Fira Sans\", \"Droid Sans\", \"Helvetica Neue\",\n    sans-serif;\n  -webkit-font-smoothing: antialiased;\n  -moz-osx-font-smoothing: grayscale;\n}\n\ncode {\n  font-family: source-code-pro, Menlo, Monaco, Consolas, \"Courier New\",\n    monospace;\n}\n\n.MuiTab-wrapper {\n  flex-direction: row !important;\n}\n\n/* reviewer styles */\n.tabPanel > div {\n  padding-left: 0;\n  padding-right: 0;\n}\n\n/* profile read-only view */\n.profile-view-field .MuiInputBase-root,\n.profile-view-field .MuiSelect-select.MuiSelect-select {\n  color: #263238 !important;\n}\n\n/* Dashboard Stat Cards */\n.dashboard-stat-card:hover {\n  box-shadow: 0 0 7px 5px rgb(63 63 68 / 10%), 0 1px 2px 0 rgb(63 63 68 / 15%);\n}\n\n.dashboard-stat-card .MuiStepConnector-alternativeLabel {\n    top: 23px;\n    left: calc(-50% + 25px);\n    right: calc(50% + 25px);\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ __webpack_exports__["default"] = (___CSS_LOADER_EXPORT___);
 
@@ -45,7 +45,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\App.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/App.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -366,7 +366,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\components\\AuthenticateByUserId.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/components/AuthenticateByUserId.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -718,7 +718,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\components\\Logo.js";
+var _jsxFileName = "/home/baeyun/hww-portal/src/components/Logo.js";
 
 const Logo = props => {
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", Object.assign({
@@ -841,7 +841,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\components\\NavList.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/components/NavList.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -1172,7 +1172,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\components\\NotificationsDialog.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/components/NotificationsDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -1554,7 +1554,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\components\\Page.js";
+var _jsxFileName = "/home/baeyun/hww-portal/src/components/Page.js";
 
 
 
@@ -1866,7 +1866,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\components\\PicSelector\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/components/PicSelector/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 // @ts-nocheck
 
@@ -2291,7 +2291,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\components\\TagsInput.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/components/TagsInput.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -2500,7 +2500,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\components\\TagsView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/components/TagsView.tsx";
 
 
 function TagsView(_ref) {
@@ -2607,23 +2607,30 @@ if (true) {
 /*!***********************!*\
   !*** ./src/config.ts ***!
   \***********************/
-/*! exports provided: MAX_ALLOWED_SIZE */
+/*! exports provided: MAX_ALLOWED_SIZE, DATAGRID_PAGE_SIZE_OPTIONS, DATAGRID_DEFAULT_PAGE_SIZE, DUB_API_KEY */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MAX_ALLOWED_SIZE", function() { return MAX_ALLOWED_SIZE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DATAGRID_PAGE_SIZE_OPTIONS", function() { return DATAGRID_PAGE_SIZE_OPTIONS; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DATAGRID_DEFAULT_PAGE_SIZE", function() { return DATAGRID_DEFAULT_PAGE_SIZE; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DUB_API_KEY", function() { return DUB_API_KEY; });
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
 /**
  * Maximum allowed size in bytes
- * Change first operand(multiplier) for your needs
  */
 const MAX_ALLOWED_SIZE = 10 * 1024 * 1024;
+const DATAGRID_PAGE_SIZE_OPTIONS = [50, 100];
+const DATAGRID_DEFAULT_PAGE_SIZE = 50;
 
 // @TODO, 1 year minus 45 days
-// export const DEFAULT_EXPIRE_DATE =
+// export const DEFAULT_EXPIRE_DATE = 
+
+// API KEYS
+const DUB_API_KEY = Object({"NODE_ENV":"development","PUBLIC_URL":"","WDS_SOCKET_HOST":undefined,"WDS_SOCKET_PATH":undefined,"WDS_SOCKET_PORT":undefined,"FAST_REFRESH":true}).REACT_APP_DUB_API_KEY || "dub_Sls8gIbuZnW7JWJRzWwnchkA";
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -2757,7 +2764,7 @@ function usePersist(key, initialValue) {
   };
   return [storedValue, setValue];
 }
-_s(usePersist, "Sc/fojU/LiyVTX5FPqPPtjyfVxw=");
+_s(usePersist, "/S7ymPtM/vniwjghHN7MS1NUl4g=");
 
 const currentExports = __react_refresh_utils__.getModuleExports(module.i);
 __react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
@@ -2949,7 +2956,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\index.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/index.tsx";
 
 
 
@@ -3081,7 +3088,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\layouts\\AdminDashboardLayout\\NavBar\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/layouts/AdminDashboardLayout/NavBar/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -3302,14 +3309,12 @@ _s(NavBar, "2lzOY2yYzx3UvbUChEh2Zqtbnl0=", false, function () {
 });
 _c = NavBar;
 /* harmony default export */ __webpack_exports__["default"] = (NavBar);
-const items = [
-// {
-//   // @TODO add screen, remove from dummy route
-//   href: "/admin/dashboard",
-//   icon: BarChartIcon,
-//   title: "Dashboard",
-// },
-{
+const items = [{
+  // @TODO add screen, remove from dummy route
+  href: "/admin/dashboard",
+  icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["BarChart"],
+  title: "Dashboard"
+}, {
   href: "/admin/review-requests",
   icon: react_feather__WEBPACK_IMPORTED_MODULE_3__["FileText"],
   title: "Registrations"
@@ -3494,7 +3499,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\layouts\\AdminDashboardLayout\\TopBar.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/layouts/AdminDashboardLayout/TopBar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -3769,7 +3774,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\layouts\\AdminDashboardLayout\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/layouts/AdminDashboardLayout/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -3976,7 +3981,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\layouts\\ClientDashboardLayout\\NavBar\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/layouts/ClientDashboardLayout/NavBar/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -4328,7 +4333,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\layouts\\ClientDashboardLayout\\TopBar.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/layouts/ClientDashboardLayout/TopBar.js",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -4732,7 +4737,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\layouts\\ClientDashboardLayout\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/layouts/ClientDashboardLayout/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -4934,7 +4939,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\layouts\\MainLayout\\TopBar.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/layouts/MainLayout/TopBar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -4962,7 +4967,7 @@ const TopBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23,
+      lineNumber: 24,
       columnNumber: 5
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Toolbar"], {
@@ -4970,25 +4975,42 @@ const TopBar = _ref => {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28,
+      lineNumber: 29,
       columnNumber: 7
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Link"], {
     to: "/",
+    style: {
+      display: "flex",
+      alignItems: "center"
+    },
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29,
+      lineNumber: 30,
       columnNumber: 9
     }
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Logo__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30,
+      lineNumber: 31,
       columnNumber: 11
     }
-  }))));
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_4__["Typography"], {
+    style: {
+      color: "#fff",
+      fontSize: 24,
+      marginLeft: 15
+      // fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
+    },
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 32,
+      columnNumber: 11
+    }
+  }, "Halal Watch World | Portal"))));
 };
 _s(TopBar, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
   return [useStyles];
@@ -5095,7 +5117,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\layouts\\MainLayout\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/layouts/MainLayout/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -5282,7 +5304,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\layouts\\ReviewerDashboardLayout\\NavBar\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/layouts/ReviewerDashboardLayout/NavBar/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -5706,7 +5728,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\layouts\\ReviewerDashboardLayout\\TopBar.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/layouts/ReviewerDashboardLayout/TopBar.js",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -6042,7 +6064,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\layouts\\ReviewerDashboardLayout\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/layouts/ReviewerDashboardLayout/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -6626,53 +6648,55 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _views_common_auth_ResetPasswordView__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ./views/common/auth/ResetPasswordView */ "./src/views/common/auth/ResetPasswordView.tsx");
 /* harmony import */ var _views_common_auth_RegisterView__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! ./views/common/auth/RegisterView */ "./src/views/common/auth/RegisterView.js");
 /* harmony import */ var _views_common_auth_profile_ChangePasswordView__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./views/common/auth/profile/ChangePasswordView */ "./src/views/common/auth/profile/ChangePasswordView.tsx");
-/* harmony import */ var _views_common_errors_NotFoundView__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./views/common/errors/NotFoundView */ "./src/views/common/errors/NotFoundView.js");
-/* harmony import */ var _views_admin_clients__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./views/admin/clients */ "./src/views/admin/clients/index.js");
-/* harmony import */ var _views_admin_clients_client__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./views/admin/clients/client */ "./src/views/admin/clients/client/index.tsx");
-/* harmony import */ var _views_admin_requests__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./views/admin/requests */ "./src/views/admin/requests/index.js");
-/* harmony import */ var _views_admin_requests_request__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./views/admin/requests/request */ "./src/views/admin/requests/request/index.tsx");
-/* harmony import */ var _views_admin_reviews__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./views/admin/reviews */ "./src/views/admin/reviews/index.js");
-/* harmony import */ var _views_admin_reviewers__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./views/admin/reviewers */ "./src/views/admin/reviewers/index.js");
-/* harmony import */ var _views_admin_facility_categories__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./views/admin/facility-categories */ "./src/views/admin/facility-categories/index.js");
-/* harmony import */ var _views_admin_auditor__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./views/admin/auditor */ "./src/views/admin/auditor/index.tsx");
-/* harmony import */ var _views_admin_product_categories__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./views/admin/product-categories */ "./src/views/admin/product-categories/index.js");
-/* harmony import */ var _views_admin_profile_index__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./views/admin/profile/index */ "./src/views/admin/profile/index.tsx");
-/* harmony import */ var _views_admin_profile_edit_index__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./views/admin/profile/edit/index */ "./src/views/admin/profile/edit/index.tsx");
-/* harmony import */ var _views_reviewer_requests__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./views/reviewer/requests */ "./src/views/reviewer/requests/index.js");
-/* harmony import */ var _views_reviewer_requests_review__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./views/reviewer/requests/review */ "./src/views/reviewer/requests/review/index.tsx");
-/* harmony import */ var _views_reviewer_requests_reports__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./views/reviewer/requests/reports */ "./src/views/reviewer/requests/reports/index.tsx");
-/* harmony import */ var _views_reviewer_clients__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./views/reviewer/clients */ "./src/views/reviewer/clients/index.js");
-/* harmony import */ var _views_reviewer_clients_register__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./views/reviewer/clients/register */ "./src/views/reviewer/clients/register/index.tsx");
-/* harmony import */ var _views_reviewer_clients_client__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./views/reviewer/clients/client */ "./src/views/reviewer/clients/client/index.tsx");
-/* harmony import */ var _views_reviewer_manufacturers__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./views/reviewer/manufacturers */ "./src/views/reviewer/manufacturers/index.js");
-/* harmony import */ var _views_reviewer_manufacturers_manufacturer__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./views/reviewer/manufacturers/manufacturer */ "./src/views/reviewer/manufacturers/manufacturer/index.tsx");
-/* harmony import */ var _views_reviewer_reviews_queue__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./views/reviewer/reviews-queue */ "./src/views/reviewer/reviews-queue/index.js");
-/* harmony import */ var _views_reviewer_approved_reviews__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./views/reviewer/approved-reviews */ "./src/views/reviewer/approved-reviews/index.js");
-/* harmony import */ var _views_reviewer_drafted_reviews__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./views/reviewer/drafted-reviews */ "./src/views/reviewer/drafted-reviews/index.js");
-/* harmony import */ var _views_reviewer_new_review__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./views/reviewer/new-review */ "./src/views/reviewer/new-review/index.tsx");
-/* harmony import */ var _views_reviewer_auditor__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./views/reviewer/auditor */ "./src/views/reviewer/auditor/index.tsx");
-/* harmony import */ var _views_reviewer_profile_index__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./views/reviewer/profile/index */ "./src/views/reviewer/profile/index.tsx");
-/* harmony import */ var _views_client_dashboard_DashboardView__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./views/client/dashboard/DashboardView */ "./src/views/client/dashboard/DashboardView/index.tsx");
-/* harmony import */ var _views_client_requests__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./views/client/requests */ "./src/views/client/requests/index.js");
-/* harmony import */ var _views_client_documents__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./views/client/documents */ "./src/views/client/documents/index.js");
-/* harmony import */ var _views_client_help__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./views/client/help */ "./src/views/client/help/index.js");
-/* harmony import */ var _views_client_facilities__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./views/client/facilities */ "./src/views/client/facilities/index.js");
-/* harmony import */ var _views_client_products__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./views/client/products */ "./src/views/client/products/index.js");
-/* harmony import */ var _views_client_heds__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./views/client/heds */ "./src/views/client/heds/index.js");
-/* harmony import */ var _views_client_requests_request__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./views/client/requests/request */ "./src/views/client/requests/request/index.tsx");
-/* harmony import */ var _views_client_requests_request_Corrections__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./views/client/requests/request/Corrections */ "./src/views/client/requests/request/Corrections/index.tsx");
-/* harmony import */ var _views_client_requests_request_RequestCertificates__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./views/client/requests/request/RequestCertificates */ "./src/views/client/requests/request/RequestCertificates.tsx");
-/* harmony import */ var _views_client_reports__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./views/client/reports */ "./src/views/client/reports/index.js");
-/* harmony import */ var _views_client_reports_audit__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./views/client/reports/audit */ "./src/views/client/reports/audit/index.js");
-/* harmony import */ var _views_client_reports_review__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./views/client/reports/review */ "./src/views/client/reports/review/index.js");
-/* harmony import */ var _views_client_certificates__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./views/client/certificates */ "./src/views/client/certificates/index.js");
-/* harmony import */ var _views_client_profile_index__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./views/client/profile/index */ "./src/views/client/profile/index.tsx");
-/* harmony import */ var _views_client_profile_edit_index__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./views/client/profile/edit/index */ "./src/views/client/profile/edit/index.tsx");
-/* harmony import */ var _views_common_trash__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./views/common/trash */ "./src/views/common/trash/index.tsx");
+/* harmony import */ var _views_common_verify__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./views/common/verify */ "./src/views/common/verify/index.tsx");
+/* harmony import */ var _views_common_errors_NotFoundView__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./views/common/errors/NotFoundView */ "./src/views/common/errors/NotFoundView.js");
+/* harmony import */ var _views_admin_dashboard__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./views/admin/dashboard */ "./src/views/admin/dashboard/index.tsx");
+/* harmony import */ var _views_admin_clients__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./views/admin/clients */ "./src/views/admin/clients/index.js");
+/* harmony import */ var _views_admin_clients_client__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./views/admin/clients/client */ "./src/views/admin/clients/client/index.tsx");
+/* harmony import */ var _views_admin_requests__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./views/admin/requests */ "./src/views/admin/requests/index.js");
+/* harmony import */ var _views_admin_requests_request__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! ./views/admin/requests/request */ "./src/views/admin/requests/request/index.tsx");
+/* harmony import */ var _views_admin_reviews__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! ./views/admin/reviews */ "./src/views/admin/reviews/index.js");
+/* harmony import */ var _views_admin_reviewers__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! ./views/admin/reviewers */ "./src/views/admin/reviewers/index.js");
+/* harmony import */ var _views_admin_facility_categories__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./views/admin/facility-categories */ "./src/views/admin/facility-categories/index.js");
+/* harmony import */ var _views_admin_auditor__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! ./views/admin/auditor */ "./src/views/admin/auditor/index.tsx");
+/* harmony import */ var _views_admin_product_categories__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! ./views/admin/product-categories */ "./src/views/admin/product-categories/index.js");
+/* harmony import */ var _views_admin_profile_index__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! ./views/admin/profile/index */ "./src/views/admin/profile/index.tsx");
+/* harmony import */ var _views_admin_profile_edit_index__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! ./views/admin/profile/edit/index */ "./src/views/admin/profile/edit/index.tsx");
+/* harmony import */ var _views_reviewer_requests__WEBPACK_IMPORTED_MODULE_26__ = __webpack_require__(/*! ./views/reviewer/requests */ "./src/views/reviewer/requests/index.js");
+/* harmony import */ var _views_reviewer_requests_review__WEBPACK_IMPORTED_MODULE_27__ = __webpack_require__(/*! ./views/reviewer/requests/review */ "./src/views/reviewer/requests/review/index.tsx");
+/* harmony import */ var _views_reviewer_requests_reports__WEBPACK_IMPORTED_MODULE_28__ = __webpack_require__(/*! ./views/reviewer/requests/reports */ "./src/views/reviewer/requests/reports/index.tsx");
+/* harmony import */ var _views_reviewer_clients__WEBPACK_IMPORTED_MODULE_29__ = __webpack_require__(/*! ./views/reviewer/clients */ "./src/views/reviewer/clients/index.js");
+/* harmony import */ var _views_reviewer_clients_register__WEBPACK_IMPORTED_MODULE_30__ = __webpack_require__(/*! ./views/reviewer/clients/register */ "./src/views/reviewer/clients/register/index.tsx");
+/* harmony import */ var _views_reviewer_clients_client__WEBPACK_IMPORTED_MODULE_31__ = __webpack_require__(/*! ./views/reviewer/clients/client */ "./src/views/reviewer/clients/client/index.tsx");
+/* harmony import */ var _views_reviewer_manufacturers__WEBPACK_IMPORTED_MODULE_32__ = __webpack_require__(/*! ./views/reviewer/manufacturers */ "./src/views/reviewer/manufacturers/index.js");
+/* harmony import */ var _views_reviewer_manufacturers_manufacturer__WEBPACK_IMPORTED_MODULE_33__ = __webpack_require__(/*! ./views/reviewer/manufacturers/manufacturer */ "./src/views/reviewer/manufacturers/manufacturer/index.tsx");
+/* harmony import */ var _views_reviewer_reviews_queue__WEBPACK_IMPORTED_MODULE_34__ = __webpack_require__(/*! ./views/reviewer/reviews-queue */ "./src/views/reviewer/reviews-queue/index.js");
+/* harmony import */ var _views_reviewer_approved_reviews__WEBPACK_IMPORTED_MODULE_35__ = __webpack_require__(/*! ./views/reviewer/approved-reviews */ "./src/views/reviewer/approved-reviews/index.js");
+/* harmony import */ var _views_reviewer_drafted_reviews__WEBPACK_IMPORTED_MODULE_36__ = __webpack_require__(/*! ./views/reviewer/drafted-reviews */ "./src/views/reviewer/drafted-reviews/index.js");
+/* harmony import */ var _views_reviewer_new_review__WEBPACK_IMPORTED_MODULE_37__ = __webpack_require__(/*! ./views/reviewer/new-review */ "./src/views/reviewer/new-review/index.tsx");
+/* harmony import */ var _views_reviewer_auditor__WEBPACK_IMPORTED_MODULE_38__ = __webpack_require__(/*! ./views/reviewer/auditor */ "./src/views/reviewer/auditor/index.tsx");
+/* harmony import */ var _views_reviewer_profile_index__WEBPACK_IMPORTED_MODULE_39__ = __webpack_require__(/*! ./views/reviewer/profile/index */ "./src/views/reviewer/profile/index.tsx");
+/* harmony import */ var _views_client_dashboard_DashboardView__WEBPACK_IMPORTED_MODULE_40__ = __webpack_require__(/*! ./views/client/dashboard/DashboardView */ "./src/views/client/dashboard/DashboardView/index.tsx");
+/* harmony import */ var _views_client_requests__WEBPACK_IMPORTED_MODULE_41__ = __webpack_require__(/*! ./views/client/requests */ "./src/views/client/requests/index.js");
+/* harmony import */ var _views_client_documents__WEBPACK_IMPORTED_MODULE_42__ = __webpack_require__(/*! ./views/client/documents */ "./src/views/client/documents/index.js");
+/* harmony import */ var _views_client_help__WEBPACK_IMPORTED_MODULE_43__ = __webpack_require__(/*! ./views/client/help */ "./src/views/client/help/index.js");
+/* harmony import */ var _views_client_facilities__WEBPACK_IMPORTED_MODULE_44__ = __webpack_require__(/*! ./views/client/facilities */ "./src/views/client/facilities/index.js");
+/* harmony import */ var _views_client_products__WEBPACK_IMPORTED_MODULE_45__ = __webpack_require__(/*! ./views/client/products */ "./src/views/client/products/index.js");
+/* harmony import */ var _views_client_heds__WEBPACK_IMPORTED_MODULE_46__ = __webpack_require__(/*! ./views/client/heds */ "./src/views/client/heds/index.js");
+/* harmony import */ var _views_client_requests_request__WEBPACK_IMPORTED_MODULE_47__ = __webpack_require__(/*! ./views/client/requests/request */ "./src/views/client/requests/request/index.tsx");
+/* harmony import */ var _views_client_requests_request_Corrections__WEBPACK_IMPORTED_MODULE_48__ = __webpack_require__(/*! ./views/client/requests/request/Corrections */ "./src/views/client/requests/request/Corrections/index.tsx");
+/* harmony import */ var _views_client_requests_request_RequestCertificates__WEBPACK_IMPORTED_MODULE_49__ = __webpack_require__(/*! ./views/client/requests/request/RequestCertificates */ "./src/views/client/requests/request/RequestCertificates.tsx");
+/* harmony import */ var _views_client_reports__WEBPACK_IMPORTED_MODULE_50__ = __webpack_require__(/*! ./views/client/reports */ "./src/views/client/reports/index.js");
+/* harmony import */ var _views_client_reports_audit__WEBPACK_IMPORTED_MODULE_51__ = __webpack_require__(/*! ./views/client/reports/audit */ "./src/views/client/reports/audit/index.js");
+/* harmony import */ var _views_client_reports_review__WEBPACK_IMPORTED_MODULE_52__ = __webpack_require__(/*! ./views/client/reports/review */ "./src/views/client/reports/review/index.js");
+/* harmony import */ var _views_client_certificates__WEBPACK_IMPORTED_MODULE_53__ = __webpack_require__(/*! ./views/client/certificates */ "./src/views/client/certificates/index.js");
+/* harmony import */ var _views_client_profile_index__WEBPACK_IMPORTED_MODULE_54__ = __webpack_require__(/*! ./views/client/profile/index */ "./src/views/client/profile/index.tsx");
+/* harmony import */ var _views_client_profile_edit_index__WEBPACK_IMPORTED_MODULE_55__ = __webpack_require__(/*! ./views/client/profile/edit/index */ "./src/views/client/profile/edit/index.tsx");
+/* harmony import */ var _views_common_trash__WEBPACK_IMPORTED_MODULE_56__ = __webpack_require__(/*! ./views/common/trash */ "./src/views/common/trash/index.tsx");
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\routes.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/routes.tsx";
 
 
 
@@ -6691,7 +6715,9 @@ var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\routes.t
 
 
 
+
 // Admin screens
+
 
 
 
@@ -6751,7 +6777,7 @@ const routes = [{
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77,
+      lineNumber: 79,
       columnNumber: 14
     }
   }),
@@ -6761,7 +6787,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 79,
+        lineNumber: 81,
         columnNumber: 33
       }
     })
@@ -6771,7 +6797,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 80,
+        lineNumber: 82,
         columnNumber: 43
       }
     })
@@ -6781,7 +6807,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 81,
+        lineNumber: 83,
         columnNumber: 42
       }
     })
@@ -6791,17 +6817,27 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 82,
+        lineNumber: 84,
         columnNumber: 36
       }
     })
   }, {
-    path: "404",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_common_errors_NotFoundView__WEBPACK_IMPORTED_MODULE_12__["default"], {
+    path: "verify/:id",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_common_verify__WEBPACK_IMPORTED_MODULE_12__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 83,
+        lineNumber: 85,
+        columnNumber: 38
+      }
+    })
+  }, {
+    path: "404",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_common_errors_NotFoundView__WEBPACK_IMPORTED_MODULE_13__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 86,
         columnNumber: 31
       }
     })
@@ -6811,7 +6847,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 84,
+        lineNumber: 87,
         columnNumber: 29
       }
     })
@@ -6824,7 +6860,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 85,
+        lineNumber: 88,
         columnNumber: 29
       }
     })
@@ -6838,47 +6874,57 @@ const routes = [{
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91,
+      lineNumber: 94,
       columnNumber: 14
     }
   }),
   children: [{
-    path: "review-requests",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_requests__WEBPACK_IMPORTED_MODULE_15__["default"], {
+    path: "dashboard",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_dashboard__WEBPACK_IMPORTED_MODULE_14__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 93,
+        lineNumber: 96,
+        columnNumber: 37
+      }
+    })
+  }, {
+    path: "review-requests",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_requests__WEBPACK_IMPORTED_MODULE_17__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 97,
         columnNumber: 43
       }
     })
   }, {
     path: "clients",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_clients__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_clients__WEBPACK_IMPORTED_MODULE_15__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 94,
+        lineNumber: 98,
         columnNumber: 35
       }
     })
   }, {
     path: "client/:id",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_clients_client__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_clients_client__WEBPACK_IMPORTED_MODULE_16__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 95,
+        lineNumber: 99,
         columnNumber: 38
       }
     })
   }, {
     path: "clients/request/:id",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_requests_request__WEBPACK_IMPORTED_MODULE_16__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_requests_request__WEBPACK_IMPORTED_MODULE_18__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 98,
+        lineNumber: 102,
         columnNumber: 18
       }
     })
@@ -6886,51 +6932,51 @@ const routes = [{
   // { path: "account", element: <AdminAccountView /> }, // @TODO remove
   {
     path: "reviews",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_reviews__WEBPACK_IMPORTED_MODULE_17__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_reviews__WEBPACK_IMPORTED_MODULE_19__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 101,
+        lineNumber: 105,
         columnNumber: 35
       }
     })
   }, {
     path: "reviewers",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_reviewers__WEBPACK_IMPORTED_MODULE_18__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_reviewers__WEBPACK_IMPORTED_MODULE_20__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 102,
+        lineNumber: 106,
         columnNumber: 37
       }
     })
   }, {
     path: "facility-categories",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_facility_categories__WEBPACK_IMPORTED_MODULE_19__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_facility_categories__WEBPACK_IMPORTED_MODULE_21__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 103,
+        lineNumber: 107,
         columnNumber: 47
       }
     })
   }, {
     path: "product-categories",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_product_categories__WEBPACK_IMPORTED_MODULE_21__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_product_categories__WEBPACK_IMPORTED_MODULE_23__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 104,
+        lineNumber: 108,
         columnNumber: 46
       }
     })
   }, {
     path: "auditor",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_auditor__WEBPACK_IMPORTED_MODULE_20__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_auditor__WEBPACK_IMPORTED_MODULE_22__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 105,
+        lineNumber: 109,
         columnNumber: 35
       }
     })
@@ -6940,21 +6986,21 @@ const routes = [{
   // { path: "settings", element: <SettingsView /> },
   {
     path: "profile",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_profile_index__WEBPACK_IMPORTED_MODULE_22__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_profile_index__WEBPACK_IMPORTED_MODULE_24__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 109,
+        lineNumber: 113,
         columnNumber: 35
       }
     })
   }, {
     path: "profile/edit",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_profile_edit_index__WEBPACK_IMPORTED_MODULE_23__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_admin_profile_edit_index__WEBPACK_IMPORTED_MODULE_25__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 110,
+        lineNumber: 114,
         columnNumber: 40
       }
     })
@@ -6964,7 +7010,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 111,
+        lineNumber: 115,
         columnNumber: 43
       }
     })
@@ -6975,7 +7021,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 112,
+        lineNumber: 116,
         columnNumber: 29
       }
     })
@@ -6989,53 +7035,43 @@ const routes = [{
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118,
+      lineNumber: 122,
       columnNumber: 14
     }
   }),
   children: [{
     path: "clients",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_clients__WEBPACK_IMPORTED_MODULE_27__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_clients__WEBPACK_IMPORTED_MODULE_29__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 120,
+        lineNumber: 124,
         columnNumber: 35
       }
     })
   }, {
     path: "clients/register",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_clients_register__WEBPACK_IMPORTED_MODULE_28__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_clients_register__WEBPACK_IMPORTED_MODULE_30__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 121,
+        lineNumber: 125,
         columnNumber: 44
       }
     })
   }, {
     path: "clients/requests",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_requests__WEBPACK_IMPORTED_MODULE_24__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_requests__WEBPACK_IMPORTED_MODULE_26__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 122,
+        lineNumber: 126,
         columnNumber: 44
       }
     })
   }, {
     path: "clients/request/:id/review",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_requests_review__WEBPACK_IMPORTED_MODULE_25__["default"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 125,
-        columnNumber: 18
-      }
-    })
-  }, {
-    path: "clients/request/:id/reports",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_requests_reports__WEBPACK_IMPORTED_MODULE_26__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_requests_review__WEBPACK_IMPORTED_MODULE_27__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7044,102 +7080,112 @@ const routes = [{
       }
     })
   }, {
-    path: "manufacturers",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_manufacturers__WEBPACK_IMPORTED_MODULE_30__["default"], {
+    path: "clients/request/:id/reports",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_requests_reports__WEBPACK_IMPORTED_MODULE_28__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 131,
+        lineNumber: 133,
+        columnNumber: 18
+      }
+    })
+  }, {
+    path: "manufacturers",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_manufacturers__WEBPACK_IMPORTED_MODULE_32__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 135,
         columnNumber: 41
       }
     })
   }, {
     path: "manufacturer/:id",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_manufacturers_manufacturer__WEBPACK_IMPORTED_MODULE_31__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_manufacturers_manufacturer__WEBPACK_IMPORTED_MODULE_33__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 132,
+        lineNumber: 136,
         columnNumber: 44
       }
     })
   }, {
     path: "reviews-queue",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_reviews_queue__WEBPACK_IMPORTED_MODULE_32__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_reviews_queue__WEBPACK_IMPORTED_MODULE_34__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 133,
+        lineNumber: 137,
         columnNumber: 41
       }
     })
   }, {
     path: "approved-reviews",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_approved_reviews__WEBPACK_IMPORTED_MODULE_33__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_approved_reviews__WEBPACK_IMPORTED_MODULE_35__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 134,
+        lineNumber: 138,
         columnNumber: 44
       }
     })
   }, {
     path: "drafted-reviews",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_drafted_reviews__WEBPACK_IMPORTED_MODULE_34__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_drafted_reviews__WEBPACK_IMPORTED_MODULE_36__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 135,
+        lineNumber: 139,
         columnNumber: 43
       }
     })
   }, {
     path: "new-review",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_new_review__WEBPACK_IMPORTED_MODULE_35__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_new_review__WEBPACK_IMPORTED_MODULE_37__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 136,
+        lineNumber: 140,
         columnNumber: 38
       }
     })
   }, {
     path: "client/:id",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_clients_client__WEBPACK_IMPORTED_MODULE_29__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_clients_client__WEBPACK_IMPORTED_MODULE_31__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 137,
+        lineNumber: 141,
         columnNumber: 38
       }
     })
   }, {
     path: "auditor",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_auditor__WEBPACK_IMPORTED_MODULE_36__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_auditor__WEBPACK_IMPORTED_MODULE_38__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 138,
+        lineNumber: 142,
         columnNumber: 35
       }
     })
   }, {
     path: "profile",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_profile_index__WEBPACK_IMPORTED_MODULE_37__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_reviewer_profile_index__WEBPACK_IMPORTED_MODULE_39__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 139,
+        lineNumber: 143,
         columnNumber: 35
       }
     })
   }, {
     path: "trash",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_common_trash__WEBPACK_IMPORTED_MODULE_54__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_common_trash__WEBPACK_IMPORTED_MODULE_56__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 140,
+        lineNumber: 144,
         columnNumber: 33
       }
     })
@@ -7150,7 +7196,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 141,
+        lineNumber: 145,
         columnNumber: 29
       }
     })
@@ -7164,17 +7210,17 @@ const routes = [{
     __self: undefined,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147,
+      lineNumber: 151,
       columnNumber: 14
     }
   }),
   children: [{
     path: "dashboard",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_dashboard_DashboardView__WEBPACK_IMPORTED_MODULE_38__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_dashboard_DashboardView__WEBPACK_IMPORTED_MODULE_40__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 149,
+        lineNumber: 153,
         columnNumber: 37
       }
     })
@@ -7184,53 +7230,13 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 150,
+        lineNumber: 154,
         columnNumber: 39
       }
     })
   }, {
     path: "requests",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests__WEBPACK_IMPORTED_MODULE_39__["default"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 151,
-        columnNumber: 36
-      }
-    })
-  }, {
-    path: "documents",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_documents__WEBPACK_IMPORTED_MODULE_40__["default"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 152,
-        columnNumber: 37
-      }
-    })
-  }, {
-    path: "help",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_help__WEBPACK_IMPORTED_MODULE_41__["default"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 153,
-        columnNumber: 32
-      }
-    })
-  }, {
-    path: "facilities",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_facilities__WEBPACK_IMPORTED_MODULE_42__["default"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 154,
-        columnNumber: 38
-      }
-    })
-  }, {
-    path: "products",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_products__WEBPACK_IMPORTED_MODULE_43__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests__WEBPACK_IMPORTED_MODULE_41__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7239,38 +7245,68 @@ const routes = [{
       }
     })
   }, {
-    path: "heds",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_heds__WEBPACK_IMPORTED_MODULE_44__["default"], {
+    path: "documents",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_documents__WEBPACK_IMPORTED_MODULE_42__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
         lineNumber: 156,
+        columnNumber: 37
+      }
+    })
+  }, {
+    path: "help",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_help__WEBPACK_IMPORTED_MODULE_43__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 157,
+        columnNumber: 32
+      }
+    })
+  }, {
+    path: "facilities",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_facilities__WEBPACK_IMPORTED_MODULE_44__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 158,
+        columnNumber: 38
+      }
+    })
+  }, {
+    path: "products",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_products__WEBPACK_IMPORTED_MODULE_45__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 159,
+        columnNumber: 36
+      }
+    })
+  }, {
+    path: "heds",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_heds__WEBPACK_IMPORTED_MODULE_46__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 160,
         columnNumber: 32
       }
     })
   }, {
     path: "request/:id",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request__WEBPACK_IMPORTED_MODULE_45__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request__WEBPACK_IMPORTED_MODULE_47__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 157,
+        lineNumber: 161,
         columnNumber: 39
       }
     })
   }, {
     path: "request/:id/corrections",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request_Corrections__WEBPACK_IMPORTED_MODULE_46__["default"], {
-      __self: undefined,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 160,
-        columnNumber: 18
-      }
-    })
-  }, {
-    path: "request/:id/certificates",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request_RequestCertificates__WEBPACK_IMPORTED_MODULE_47__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request_Corrections__WEBPACK_IMPORTED_MODULE_48__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7279,8 +7315,8 @@ const routes = [{
       }
     })
   }, {
-    path: "reports",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports__WEBPACK_IMPORTED_MODULE_48__["default"], {
+    path: "request/:id/certificates",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request_RequestCertificates__WEBPACK_IMPORTED_MODULE_49__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
@@ -7288,54 +7324,64 @@ const routes = [{
         columnNumber: 18
       }
     })
-    // children: [],
   }, {
-    path: "reports/document",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_review__WEBPACK_IMPORTED_MODULE_50__["default"], {
+    path: "reports",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports__WEBPACK_IMPORTED_MODULE_50__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 171,
+        lineNumber: 172,
+        columnNumber: 18
+      }
+    })
+    // children: [],
+  }, {
+    path: "reports/document",
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_review__WEBPACK_IMPORTED_MODULE_52__["default"], {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 175,
         columnNumber: 44
       }
     })
   }, {
     path: "reports/audit",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_audit__WEBPACK_IMPORTED_MODULE_49__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_reports_audit__WEBPACK_IMPORTED_MODULE_51__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 172,
+        lineNumber: 176,
         columnNumber: 41
       }
     })
   }, {
     path: "certificates",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_certificates__WEBPACK_IMPORTED_MODULE_51__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_certificates__WEBPACK_IMPORTED_MODULE_53__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 173,
+        lineNumber: 177,
         columnNumber: 40
       }
     })
   }, {
     path: "profile",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_profile_index__WEBPACK_IMPORTED_MODULE_52__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_profile_index__WEBPACK_IMPORTED_MODULE_54__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 174,
+        lineNumber: 178,
         columnNumber: 35
       }
     })
   }, {
     path: "profile/edit",
-    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_profile_edit_index__WEBPACK_IMPORTED_MODULE_53__["default"], {
+    element: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_profile_edit_index__WEBPACK_IMPORTED_MODULE_55__["default"], {
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 175,
+        lineNumber: 179,
         columnNumber: 40
       }
     })
@@ -7345,7 +7391,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 176,
+        lineNumber: 180,
         columnNumber: 43
       }
     })
@@ -7356,7 +7402,7 @@ const routes = [{
       __self: undefined,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 177,
+        lineNumber: 181,
         columnNumber: 29
       }
     })
@@ -7366,11 +7412,11 @@ const routes = [{
 // necessary to wrap, to prevent link cache from same comp
 // eg: loading this from /client/request/:id
 function ClientRequestViewNew() {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request__WEBPACK_IMPORTED_MODULE_45__["default"], {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_views_client_requests_request__WEBPACK_IMPORTED_MODULE_47__["default"], {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 185,
+      lineNumber: 189,
       columnNumber: 10
     }
   });
@@ -7389,7 +7435,7 @@ function PrivateRoute(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 194,
+      lineNumber: 198,
       columnNumber: 5
     }
   })) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_1__["Navigate"], {
@@ -7400,7 +7446,7 @@ function PrivateRoute(_ref) {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 196,
+      lineNumber: 200,
       columnNumber: 5
     }
   });
@@ -7939,7 +7985,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\auditor\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/auditor/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -8423,7 +8469,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -9328,7 +9374,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\client\\AuditReports.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/client/AuditReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -9815,7 +9861,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\client\\CertificateGenerator.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/client/CertificateGenerator.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -10235,7 +10281,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\client\\CertificateMenu.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/client/CertificateMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -10495,7 +10541,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\client\\Certificates.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/client/Certificates.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -11211,7 +11257,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\client\\ClientMenu.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/client/ClientMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -11413,7 +11459,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\client\\ClientProfile.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/client/ClientProfile.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -11952,7 +11998,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\client\\CredentialsManager.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/client/CredentialsManager.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -12204,7 +12250,7 @@ function CredentialsManager() {
     }
   }, "Update"))));
 }
-_s(CredentialsManager, "kKl8sG7QZY04Ai2oxBkE0VroBq0=", false, function () {
+_s(CredentialsManager, "mJrPhgeGwgFvKKDElZk3RGcOB84=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_1__["useSnackbar"]];
 });
 _c = CredentialsManager;
@@ -12319,7 +12365,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\client\\LinkedClients.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/client/LinkedClients.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature(),
   _s3 = __webpack_require__.$Refresh$.signature();
@@ -12885,11 +12931,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _material_ui_icons_CropFree__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/icons/CropFree */ "./node_modules/@material-ui/icons/CropFree.js");
 /* harmony import */ var _material_ui_icons_CropFree__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_CropFree__WEBPACK_IMPORTED_MODULE_4__);
 /* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_icons_OpenInNew__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/icons/OpenInNew */ "./node_modules/@material-ui/icons/OpenInNew.js");
+/* harmony import */ var _material_ui_icons_OpenInNew__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_OpenInNew__WEBPACK_IMPORTED_MODULE_6__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\client\\QRCodeDialog.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/client/QRCodeDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
+
 
 
 
@@ -12973,7 +13022,14 @@ function QRCodeDialog() {
       });
     });
   };
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
     ref: inputRef,
     type: "file",
     name: "img",
@@ -12985,7 +13041,7 @@ function QRCodeDialog() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 97,
+      lineNumber: 98,
       columnNumber: 7
     }
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Button"], {
@@ -12999,14 +13055,14 @@ function QRCodeDialog() {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 107,
+        lineNumber: 108,
         columnNumber: 30
       }
     }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_CropFree__WEBPACK_IMPORTED_MODULE_4___default.a, {
       __self: this,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 107,
+        lineNumber: 108,
         columnNumber: 117
       }
     }),
@@ -13015,10 +13071,32 @@ function QRCodeDialog() {
     __self: this,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105,
+      lineNumber: 106,
       columnNumber: 7
     }
-  }, "Update QR Code"));
+  }, "Update QR Code"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Button"], {
+    href: `/verify/${id}`,
+    target: "_blank",
+    rel: "noopener",
+    endIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_OpenInNew__WEBPACK_IMPORTED_MODULE_6___default.a, {
+      fontSize: "small",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 118,
+        columnNumber: 18
+      }
+    }),
+    style: {
+      marginLeft: 10
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 114,
+      columnNumber: 7
+    }
+  }, "Preview"));
 }
 _s(QRCodeDialog, "WEhoF64QA1xv1Ekaf74XgnTjUNw=", false, function () {
   return [react_router_dom__WEBPACK_IMPORTED_MODULE_1__["useParams"], notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"]];
@@ -13131,7 +13209,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\client\\ReportMenu.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/client/ReportMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -13385,7 +13463,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\client\\ReviewReports.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/client/ReviewReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -13866,7 +13944,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\client\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/client/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -14084,15 +14162,6 @@ function SingleClient() {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 112,
-      columnNumber: 13
-    }
-  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_3__["Tab"], Object.assign({
-    label: "Linked"
-  }, a11yProps(5), {
-    __self: this,
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 113,
       columnNumber: 13
     }
   })))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(TabPanel, {
@@ -14379,7 +14448,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -14585,7 +14654,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\review\\CertificateView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/review/CertificateView.tsx";
 
 
 
@@ -14931,7 +15000,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\review\\DocumentsView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/review/DocumentsView.tsx";
 
 
 
@@ -15229,7 +15298,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\review\\Header.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/review/Header.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -15555,7 +15624,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\review\\ProductsView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/review/ProductsView.tsx";
 
 
 
@@ -15751,7 +15820,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\review\\ReportsView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/review/ReportsView.tsx";
 
 
 
@@ -16016,7 +16085,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\clients\\review\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/clients/review/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -16453,6 +16522,1498 @@ if (true) {
 
 /***/ }),
 
+/***/ "./src/views/admin/dashboard/index.tsx":
+/*!*********************************************!*\
+  !*** ./src/views/admin/dashboard/index.tsx ***!
+  \*********************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+/* harmony import */ var _material_ui_core_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @material-ui/core/styles/colorManipulator */ "./node_modules/@material-ui/core/styles/colorManipulator.js");
+/* harmony import */ var _material_ui_core_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_material_ui_core_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _material_ui_core_useMediaQuery__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @material-ui/core/useMediaQuery */ "./node_modules/@material-ui/core/esm/useMediaQuery/index.js");
+/* harmony import */ var _material_ui_lab__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/lab */ "./node_modules/@material-ui/lab/esm/index.js");
+/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! react-chartjs-2 */ "./node_modules/react-chartjs-2/es/index.js");
+/* harmony import */ var react_chartjs_2__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(react_chartjs_2__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var react_feather__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! react-feather */ "./node_modules/react-feather/dist/index.js");
+/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../../../components/Page */ "./src/components/Page.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/dashboard/index.tsx",
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature(),
+  _s3 = __webpack_require__.$Refresh$.signature(),
+  _s4 = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+
+
+const AdminDashboardView = () => {
+  _s();
+  const classes = useStyles();
+  return (
+    /*#__PURE__*/
+    // @ts-ignore
+    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_8__["default"], {
+      className: classes.root,
+      title: "Dashboard",
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 41,
+        columnNumber: 5
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Container"], {
+      maxWidth: "lg",
+      style: {
+        marginLeft: 0
+      },
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 42,
+        columnNumber: 7
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+      container: true,
+      spacing: 2,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 43,
+        columnNumber: 9
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+      item: true,
+      md: 12,
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 44,
+        columnNumber: 11
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Dashboard, {
+      __self: undefined,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 45,
+        columnNumber: 13
+      }
+    })))))
+  );
+};
+_s(AdminDashboardView, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
+  return [useStyles];
+});
+_c = AdminDashboardView;
+/* harmony default export */ __webpack_exports__["default"] = (AdminDashboardView);
+function Dashboard() {
+  _s2();
+  var _data$timeseries;
+  const [preset, setPreset] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("7d");
+  const [customStart, setCustomStart] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
+  const [customEnd, setCustomEnd] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])("");
+  const {
+    start,
+    end
+  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useMemo"])(() => getDateRange(preset, customStart, customEnd), [preset, customStart, customEnd]);
+  const {
+    data,
+    loading,
+    error,
+    refetch
+  } = useAnalyticsData({
+    start,
+    end
+  });
+
+  // Theme + responsive settings for better chart UX (Chart.js 2.9.4 compatible)
+  const theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["useTheme"])();
+  const downSm = Object(_material_ui_core_useMediaQuery__WEBPACK_IMPORTED_MODULE_4__["default"])(theme.breakpoints.down("sm"));
+  const chartOptions = Object(react__WEBPACK_IMPORTED_MODULE_0__["useMemo"])(() => buildLineOptions(theme, (data === null || data === void 0 ? void 0 : data.timeseries) || [], downSm), [theme, data === null || data === void 0 ? void 0 : data.timeseries, downSm]);
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 77,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    mb: 2,
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 78,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "h4",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 84,
+      columnNumber: 9
+    }
+  }, "Analytics Dashboard"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(DateRangeControls, {
+    preset: preset,
+    setPreset: setPreset,
+    customStart: customStart,
+    customEnd: customEnd,
+    setCustomStart: setCustomStart,
+    setCustomEnd: setCustomEnd,
+    onApply: () => refetch(),
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 85,
+      columnNumber: 9
+    }
+  })), error && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    mb: 2,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 97,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_5__["Alert"], {
+    severity: "error",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 98,
+      columnNumber: 11
+    }
+  }, error)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    container: true,
+    spacing: 2,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 102,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 103,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(KpiRow, {
+    loading: loading,
+    summary: data === null || data === void 0 ? void 0 : data.summary,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 104,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 107,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 108,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardContent"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 109,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    mb: 1,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 110,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "h6",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 116,
+      columnNumber: 17
+    }
+  }, "Clicks over time"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "body2",
+    color: "textSecondary",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 117,
+      columnNumber: 17
+    }
+  }, formatRangeLabel(start, end))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Divider"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 121,
+      columnNumber: 15
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    mt: 2,
+    style: {
+      height: 260
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 122,
+      columnNumber: 15
+    }
+  }, loading ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_5__["Skeleton"], {
+    variant: "rect",
+    width: "100%",
+    height: 220,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 124,
+      columnNumber: 19
+    }
+  }) : data !== null && data !== void 0 && (_data$timeseries = data.timeseries) !== null && _data$timeseries !== void 0 && _data$timeseries.length ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_chartjs_2__WEBPACK_IMPORTED_MODULE_6__["Line"], {
+    data: canvas => toLineChartDataWithGradient(canvas, data.timeseries, theme),
+    options: {
+      ...chartOptions,
+      tooltips: {
+        ...chartOptions.tooltips,
+        mode: "index"
+      },
+      hover: {
+        ...chartOptions.hover,
+        mode: "index"
+      }
+    },
+    height: 220,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 126,
+      columnNumber: 19
+    }
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    color: "textSecondary",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 148,
+      columnNumber: 19
+    }
+  }, "No data for selected range."))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    md: 6,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 157,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BreakdownCard, {
+    title: "Top Links",
+    loading: loading,
+    rows: data === null || data === void 0 ? void 0 : data.topLinks,
+    emptyLabel: "No link data for selected range.",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 158,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    md: 6,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 165,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BreakdownCard, {
+    title: "Top Referrers",
+    loading: loading,
+    rows: data === null || data === void 0 ? void 0 : data.topReferrers,
+    emptyLabel: "No referrer data for selected range.",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 166,
+      columnNumber: 11
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    item: true,
+    md: 6,
+    xs: 12,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 173,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(BreakdownCard, {
+    title: "Top Countries",
+    loading: loading,
+    rows: data === null || data === void 0 ? void 0 : data.topCountries,
+    emptyLabel: "No country data for selected range.",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 174,
+      columnNumber: 11
+    }
+  }))));
+}
+_s2(Dashboard, "sx9TmIzYuXxMZNf+LGLhuuUj+6w=", false, function () {
+  return [useAnalyticsData, _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["useTheme"], _material_ui_core_useMediaQuery__WEBPACK_IMPORTED_MODULE_4__["default"]];
+});
+_c2 = Dashboard;
+function DateRangeControls(_ref) {
+  let {
+    preset,
+    setPreset,
+    customStart,
+    customEnd,
+    setCustomStart,
+    setCustomEnd,
+    onApply
+  } = _ref;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    display: "flex",
+    alignItems: "center",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 204,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
+    select: true,
+    variant: "outlined",
+    size: "small",
+    label: "Range",
+    value: preset,
+    onChange: e => setPreset(e.target.value),
+    style: {
+      minWidth: 140,
+      marginRight: 12
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 205,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["MenuItem"], {
+    value: "24h",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 214,
+      columnNumber: 9
+    }
+  }, "Last 24 hours"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["MenuItem"], {
+    value: "7d",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 215,
+      columnNumber: 9
+    }
+  }, "Last 7 days"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["MenuItem"], {
+    value: "30d",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 216,
+      columnNumber: 9
+    }
+  }, "Last 30 days"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["MenuItem"], {
+    value: "90d",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 217,
+      columnNumber: 9
+    }
+  }, "Last 90 days"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["MenuItem"], {
+    value: "custom",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 218,
+      columnNumber: 9
+    }
+  }, "Custom")), preset === "custom" && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
+    type: "date",
+    variant: "outlined",
+    size: "small",
+    label: "Start",
+    value: customStart,
+    onChange: e => setCustomStart(e.target.value),
+    InputLabelProps: {
+      shrink: true
+    },
+    style: {
+      marginRight: 8
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 223,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TextField"], {
+    type: "date",
+    variant: "outlined",
+    size: "small",
+    label: "End",
+    value: customEnd,
+    onChange: e => setCustomEnd(e.target.value),
+    InputLabelProps: {
+      shrink: true
+    },
+    style: {
+      marginRight: 12
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 233,
+      columnNumber: 11
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Button"], {
+    variant: "outlined",
+    size: "small",
+    onClick: onApply,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 243,
+      columnNumber: 11
+    }
+  }, "Apply")));
+}
+_c3 = DateRangeControls;
+function KpiRow(_ref2) {
+  _s3();
+  var _summary$clicks, _summary$leads, _summary$sales;
+  let {
+    loading,
+    summary
+  } = _ref2;
+  const theme = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["useTheme"])();
+  const items = [{
+    label: "Clicks",
+    icon: react_feather__WEBPACK_IMPORTED_MODULE_7__["MousePointer"],
+    value: (_summary$clicks = summary === null || summary === void 0 ? void 0 : summary.clicks) !== null && _summary$clicks !== void 0 ? _summary$clicks : 0
+  }, {
+    label: "Leads",
+    icon: react_feather__WEBPACK_IMPORTED_MODULE_7__["Activity"],
+    value: (_summary$leads = summary === null || summary === void 0 ? void 0 : summary.leads) !== null && _summary$leads !== void 0 ? _summary$leads : 0
+  }, {
+    label: "Sales",
+    icon: react_feather__WEBPACK_IMPORTED_MODULE_7__["BarChart"],
+    value: (_summary$sales = summary === null || summary === void 0 ? void 0 : summary.sales) !== null && _summary$sales !== void 0 ? _summary$sales : 0
+  }, {
+    label: "Sales Amount",
+    icon: react_feather__WEBPACK_IMPORTED_MODULE_7__["DollarSign"],
+    value: summary ? `$${summary.saleAmount.toFixed(2)}` : "$0.00"
+  }];
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    container: true,
+    spacing: 2,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 266,
+      columnNumber: 5
+    }
+  }, items.map(item => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Grid"], {
+    key: item.label,
+    item: true,
+    xs: 12,
+    sm: 6,
+    md: 3,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 268,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 269,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardContent"], {
+    style: {
+      paddingTop: 12,
+      paddingBottom: 12
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 270,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    sx: {
+      display: "flex",
+      justifyContent: "space-between",
+      alignItems: "center"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 271,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    color: "textSecondary",
+    variant: "overline",
+    style: {
+      letterSpacing: 0.6,
+      fontSize: 14
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 272,
+      columnNumber: 17
+    }
+  }, item.label), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Avatar"], {
+    variant: "rounded",
+    color: "secondary",
+    style: {
+      backgroundColor: theme.palette.secondary.main,
+      height: 36,
+      width: 36
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 278,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(item.icon, {
+    size: 18,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 283,
+      columnNumber: 19
+    }
+  }))), loading ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_5__["Skeleton"], {
+    variant: "text",
+    width: 80,
+    height: 32,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 287,
+      columnNumber: 17
+    }
+  }) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    color: "textPrimary",
+    variant: "h3",
+    style: {
+      lineHeight: 1.1,
+      fontSize: 42,
+      fontWeight: "bold"
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 289,
+      columnNumber: 17
+    }
+  }, formatNumber(item.value)))))));
+}
+_s3(KpiRow, "VrMvFCCB9Haniz3VCRPNUiCauHs=", false, function () {
+  return [_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_2__["useTheme"]];
+});
+_c4 = KpiRow;
+function BreakdownCard(_ref3) {
+  let {
+    title,
+    rows,
+    loading,
+    emptyLabel
+  } = _ref3;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Card"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 314,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["CardContent"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 315,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    variant: "h6",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 316,
+      columnNumber: 9
+    }
+  }, title), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Divider"], {
+    style: {
+      marginTop: 8,
+      marginBottom: 8
+    },
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 317,
+      columnNumber: 9
+    }
+  }), loading ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_5__["Skeleton"], {
+    variant: "rect",
+    height: 36,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 320,
+      columnNumber: 13
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    mt: 1,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 321,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_5__["Skeleton"], {
+    variant: "rect",
+    height: 36,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 322,
+      columnNumber: 15
+    }
+  })), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Box"], {
+    mt: 1,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 324,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_lab__WEBPACK_IMPORTED_MODULE_5__["Skeleton"], {
+    variant: "rect",
+    height: 36,
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 325,
+      columnNumber: 15
+    }
+  }))) : rows && rows.length ? /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Table"], {
+    size: "small",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 329,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TableHead"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 330,
+      columnNumber: 13
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TableRow"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 331,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 332,
+      columnNumber: 17
+    }
+  }, "Label"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TableCell"], {
+    align: "right",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 333,
+      columnNumber: 17
+    }
+  }, "Clicks"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TableCell"], {
+    align: "right",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 334,
+      columnNumber: 17
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Tooltip"], {
+    title: "Unique visitors for this row",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 335,
+      columnNumber: 19
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 336,
+      columnNumber: 21
+    }
+  }, "Uniques"))))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TableBody"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 341,
+      columnNumber: 13
+    }
+  }, rows.map((r, idx) => {
+    var _r$leads;
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TableRow"], {
+      key: `${r.label}-${idx}`,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 343,
+        columnNumber: 17
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TableCell"], {
+      style: {
+        maxWidth: 260,
+        whiteSpace: "nowrap",
+        overflow: "hidden",
+        textOverflow: "ellipsis"
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 344,
+        columnNumber: 19
+      }
+    }, title !== "Top Countries" && r.label || /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      style: {
+        display: "flex",
+        alignItems: "center"
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 353,
+        columnNumber: 23
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("img", {
+      src: `https://flagcdn.com/${r.label.toLowerCase()}.svg`,
+      width: "30",
+      style: {
+        borderRadius: 3
+      },
+      alt: r.label,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 354,
+        columnNumber: 25
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", {
+      "aria-label": r.label,
+      style: {
+        verticalAlign: "middle",
+        marginLeft: 8
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 360,
+        columnNumber: 25
+      }
+    }, r.label))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TableCell"], {
+      align: "right",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 369,
+        columnNumber: 19
+      }
+    }, formatNumber(r.clicks)), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["TableCell"], {
+      align: "right",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 372,
+        columnNumber: 19
+      }
+    }, formatNumber((_r$leads = r.leads) !== null && _r$leads !== void 0 ? _r$leads : 0)));
+  }))) : /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["Typography"], {
+    color: "textSecondary",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 380,
+      columnNumber: 11
+    }
+  }, emptyLabel)));
+}
+_c5 = BreakdownCard;
+function useAnalyticsData(_ref4) {
+  _s4();
+  let {
+    start,
+    end
+  } = _ref4;
+  const [data, setData] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+  const [loading, setLoading] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(true);
+  const [error, setError] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(null);
+  const fetchAll = async () => {
+    setLoading(true);
+    setError(null);
+    try {
+      var _combined$points;
+      const [summary, combined] = await Promise.all([analyticsService.fetchSummary({
+        start,
+        end
+      }), analyticsService.fetchTimeSeriesCombined({
+        start,
+        end
+      })]);
+      const timeseries = (_combined$points = combined.points) !== null && _combined$points !== void 0 ? _combined$points : [];
+      let topLinks = [];
+      let topReferrers = [];
+      let topCountries = [];
+      if (combined.events && combined.events.length > 0) {
+        topLinks = aggregateEventsToTopLinks(combined.events);
+        topReferrers = aggregateEventsToTopReferrers(combined.events);
+        topCountries = aggregateEventsToTopCountries(combined.events);
+      } else {
+        // Fallback if backend returns only aggregated points (no raw events)
+        const [links, refs, countries] = await Promise.all([analyticsService.fetchBreakdown({
+          start,
+          end,
+          by: "link"
+        }), analyticsService.fetchBreakdown({
+          start,
+          end,
+          by: "referrer"
+        }), analyticsService.fetchBreakdown({
+          start,
+          end,
+          by: "country"
+        })]);
+        topLinks = links;
+        topReferrers = refs;
+        topCountries = countries;
+      }
+      setData({
+        summary,
+        timeseries,
+        topLinks,
+        topReferrers,
+        topCountries
+      });
+    } catch (e) {
+      setError((e === null || e === void 0 ? void 0 : e.message) || "Failed to load analytics");
+      setData(null);
+    } finally {
+      setLoading(false);
+    }
+  };
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    fetchAll();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [start, end]);
+  return {
+    data,
+    loading,
+    error,
+    refetch: fetchAll
+  };
+}
+_s4(useAnalyticsData, "RiL7vLwmC7ZWXKL/bXt2EIBjBYk=");
+const analyticsService = {
+  async fetchSummary(_ref5) {
+    var _res$clicks, _res$leads, _res$sales, _res$saleAmount;
+    let {
+      start,
+      end
+    } = _ref5;
+    const res = await apiGet(`/analytics/summary?start=${encodeURIComponent(start)}&end=${encodeURIComponent(end)}&event=clicks&interval=24h`);
+    if (!res || res.mock) {
+      return mockSummary();
+    }
+    return {
+      clicks: (_res$clicks = res.clicks) !== null && _res$clicks !== void 0 ? _res$clicks : 0,
+      leads: (_res$leads = res.leads) !== null && _res$leads !== void 0 ? _res$leads : 0,
+      sales: (_res$sales = res.sales) !== null && _res$sales !== void 0 ? _res$sales : 0,
+      saleAmount: (_res$saleAmount = res.saleAmount) !== null && _res$saleAmount !== void 0 ? _res$saleAmount : 0
+    };
+  },
+  // Single call that returns both raw events (when available) and aggregated points
+  async fetchTimeSeriesCombined(_ref6) {
+    let {
+      start,
+      end
+    } = _ref6;
+    const res = await apiGet(`/analytics/timeseries?start=${encodeURIComponent(start)}&end=${encodeURIComponent(end)}&event=clicks&interval=24h`);
+    if (!res || res.mock) {
+      return {
+        events: [],
+        points: mockTimeSeries(start, end)
+      };
+    }
+
+    // If the API returns an array, assume it's raw events
+    if (Array.isArray(res)) {
+      const events = res;
+      return {
+        events,
+        points: aggregateEventsToDailyPoints(events, start, end)
+      };
+    }
+
+    // Common wrapper: { data: [...] }
+    if (Array.isArray(res.data)) {
+      const events = res.data;
+      return {
+        events,
+        points: aggregateEventsToDailyPoints(events, start, end)
+      };
+    }
+
+    // Backward compatibility: aggregated shape with points
+    if (Array.isArray(res.points)) {
+      const points = (res.points || []).map(p => {
+        var _p$clicks, _p$leads, _p$sales;
+        return {
+          date: p.date,
+          clicks: (_p$clicks = p.clicks) !== null && _p$clicks !== void 0 ? _p$clicks : 0,
+          leads: (_p$leads = p.leads) !== null && _p$leads !== void 0 ? _p$leads : undefined,
+          sales: (_p$sales = p.sales) !== null && _p$sales !== void 0 ? _p$sales : undefined
+        };
+      });
+      return {
+        events: [],
+        points
+      };
+    }
+
+    // Fallback
+    return {
+      events: [],
+      points: []
+    };
+  },
+  async fetchBreakdown(_ref7) {
+    let {
+      start,
+      end,
+      by
+    } = _ref7;
+    const res = await apiGet(`/analytics/breakdown?start=${encodeURIComponent(start)}&end=${encodeURIComponent(end)}&by=${encodeURIComponent(by)}&limit=10`);
+    if (!res || res.mock) {
+      return mockBreakdown(by);
+    }
+    return (res.rows || []).map(r => {
+      var _r$clicks, _r$leads2;
+      return {
+        label: r.label,
+        clicks: (_r$clicks = r.clicks) !== null && _r$clicks !== void 0 ? _r$clicks : 0,
+        leads: (_r$leads2 = r.leads) !== null && _r$leads2 !== void 0 ? _r$leads2 : 0
+      };
+    });
+  }
+};
+
+// Point the frontend at your Laravel API (same origin assumed; adjust if needed)
+const baseUrl = "/api";
+async function apiGet(path) {
+  try {
+    const res = await fetch(`${baseUrl}${path}`, {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      credentials: "same-origin"
+    });
+    if (!res.ok) {
+      const text = await res.text();
+      throw new Error(text || `HTTP ${res.status}`);
+    }
+    return res.json();
+  } catch (e) {
+    // Return a mock flag to keep the UI working in development if backend is down
+    return {
+      mock: true
+    };
+  }
+}
+function getDateRange(preset, customStart, customEnd) {
+  const today = new Date();
+  const endDate = new Date(Date.UTC(today.getUTCFullYear(), today.getUTCMonth(), today.getUTCDate()));
+  let startDate = new Date(endDate);
+  if (preset === "7d") startDate.setUTCDate(endDate.getUTCDate() - 6);
+  if (preset === "30d") startDate.setUTCDate(endDate.getUTCDate() - 29);
+  if (preset === "90d") startDate.setUTCDate(endDate.getUTCDate() - 89);
+  if (preset === "custom") {
+    const s = customStart ? new Date(customStart) : endDate;
+    const e = customEnd ? new Date(customEnd) : endDate;
+    return {
+      start: toISODate(s),
+      end: toISODate(e)
+    };
+  }
+  return {
+    start: toISODate(startDate),
+    end: toISODate(endDate)
+  };
+}
+function toISODate(d) {
+  const yyyy = d.getUTCFullYear();
+  const mm = String(d.getUTCMonth() + 1).padStart(2, "0");
+  const dd = String(d.getUTCDate()).padStart(2, "0");
+  return `${yyyy}-${mm}-${dd}`;
+}
+function formatRangeLabel(start, end) {
+  return `${start} → ${end}`;
+}
+function formatNumber(v) {
+  if (typeof v === "string") return v;
+  return new Intl.NumberFormat().format(v);
+}
+
+// Nicer label formatting for x-axis ticks and tooltips
+function formatDayLabel(isoDate) {
+  const d = new Date(`${isoDate}T00:00:00Z`);
+  return new Intl.DateTimeFormat(undefined, {
+    month: "short",
+    day: "numeric"
+  }).format(d);
+}
+function formatTooltipDate(isoDate) {
+  const d = new Date(`${isoDate}T00:00:00Z`);
+  return new Intl.DateTimeFormat(undefined, {
+    weekday: "short",
+    month: "short",
+    day: "numeric",
+    year: "numeric"
+  }).format(d);
+}
+function getMax(points) {
+  return points.reduce((m, p) => Math.max(m, p.clicks), 0);
+}
+function niceCeil(v) {
+  if (v <= 10) return 10;
+  const pow = Math.pow(10, Math.floor(Math.log10(v)));
+  return Math.ceil(v / pow) * pow;
+}
+
+// Chart data with theme-driven gradient fill (Chart.js 2.9.4 compatible)
+function toLineChartDataWithGradient(canvas, points, theme) {
+  const ctx = canvas.getContext("2d");
+  const height = canvas.height || 260;
+  const gradient = ctx.createLinearGradient(0, 0, 0, height);
+  gradient.addColorStop(0, Object(_material_ui_core_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_3__["fade"])(theme.palette.primary.main, 0.28));
+  gradient.addColorStop(1, Object(_material_ui_core_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_3__["fade"])(theme.palette.primary.main, 0.02));
+  return {
+    labels: points.map(p => p.date),
+    datasets: [{
+      label: "Clicks",
+      data: points.map(p => p.clicks),
+      borderColor: theme.palette.primary.main,
+      backgroundColor: gradient,
+      borderWidth: 2,
+      lineTension: 0.25,
+      pointRadius: 1.5,
+      pointHoverRadius: 4,
+      pointHitRadius: 12,
+      fill: true
+    }]
+  };
+}
+
+// Cleaner chart options with nicer grid, ticks, and tooltips (Chart.js 2.9.4)
+function buildLineOptions(theme, points, downSm) {
+  const textColor = theme.palette.text.secondary;
+  const gridColor = Object(_material_ui_core_styles_colorManipulator__WEBPACK_IMPORTED_MODULE_3__["fade"])(theme.palette.text.primary, 0.08);
+  const max = getMax(points);
+  const suggestedMax = niceCeil(max * 1.15);
+  const maxTicks = downSm ? 5 : 9;
+  return {
+    responsive: true,
+    maintainAspectRatio: false,
+    legend: {
+      display: false
+    },
+    layout: {
+      padding: {
+        left: 2,
+        right: 10,
+        top: 6,
+        bottom: 0
+      }
+    },
+    elements: {
+      point: {
+        borderWidth: 0
+      }
+    },
+    hover: {
+      intersect: false,
+      mode: "index"
+    },
+    tooltips: {
+      mode: "index",
+      intersect: false,
+      backgroundColor: theme.palette.grey[900],
+      titleFontSize: 12,
+      bodyFontSize: 12,
+      xPadding: 10,
+      yPadding: 10,
+      cornerRadius: 6,
+      displayColors: false,
+      callbacks: {
+        title: items => {
+          var _items$0$index, _items$, _points$idx;
+          const idx = (_items$0$index = items === null || items === void 0 ? void 0 : (_items$ = items[0]) === null || _items$ === void 0 ? void 0 : _items$.index) !== null && _items$0$index !== void 0 ? _items$0$index : 0;
+          const date = (_points$idx = points[idx]) === null || _points$idx === void 0 ? void 0 : _points$idx.date;
+          return date ? formatTooltipDate(date) : "";
+        },
+        label: item => `Clicks: ${formatNumber(Number(item.value))}`
+      }
+    },
+    scales: {
+      xAxes: [{
+        gridLines: {
+          display: false,
+          color: gridColor,
+          zeroLineColor: gridColor
+        },
+        ticks: {
+          fontColor: textColor,
+          maxTicksLimit: maxTicks,
+          callback: value => formatDayLabel(String(value))
+        }
+      }],
+      yAxes: [{
+        gridLines: {
+          color: gridColor,
+          zeroLineColor: gridColor,
+          drawBorder: false
+        },
+        ticks: {
+          fontColor: textColor,
+          beginAtZero: true,
+          suggestedMax,
+          maxTicksLimit: 6,
+          callback: value => typeof value === "number" ? formatNumber(Math.round(value)) : value
+        }
+      }]
+    }
+  };
+}
+
+// Helpers to support new timeseries shape (array of raw click events)
+function eachDayISO(start, end) {
+  const from = new Date(start);
+  const to = new Date(end);
+  const days = [];
+  const d = new Date(Date.UTC(from.getUTCFullYear(), from.getUTCMonth(), from.getUTCDate()));
+  const endUTC = new Date(Date.UTC(to.getUTCFullYear(), to.getUTCMonth(), to.getUTCDate()));
+  while (d <= endUTC) {
+    days.push(toISODate(d));
+    d.setUTCDate(d.getUTCDate() + 1);
+  }
+  return days;
+}
+function aggregateEventsToDailyPoints(events, start, end) {
+  const counts = new Map();
+  for (const e of events) {
+    var _e$click, _counts$get;
+    // Use precise ISO if available; otherwise fallback to top-level timestamp
+    const ts = (e === null || e === void 0 ? void 0 : (_e$click = e.click) === null || _e$click === void 0 ? void 0 : _e$click.timestamp) || (e === null || e === void 0 ? void 0 : e.timestamp);
+    if (!ts) continue;
+    const day = toISODate(new Date(ts));
+    counts.set(day, ((_counts$get = counts.get(day)) !== null && _counts$get !== void 0 ? _counts$get : 0) + 1);
+  }
+  const days = eachDayISO(start, end);
+  return days.map(day => {
+    var _counts$get2;
+    return {
+      date: day,
+      clicks: (_counts$get2 = counts.get(day)) !== null && _counts$get2 !== void 0 ? _counts$get2 : 0
+    };
+  });
+}
+function aggregateEventsToTopLinks(events) {
+  const counts = new Map();
+  for (const e of events) {
+    var _e$click2;
+    const link = e === null || e === void 0 ? void 0 : e.link;
+    if (!link) continue;
+    const label = e.client_business_name || link.title || link.key || link.url || "Unknown";
+    const entry = counts.get(label) || {
+      clicks: 0,
+      leads: 0
+    };
+    entry.clicks += 1;
+    if ((e === null || e === void 0 ? void 0 : (_e$click2 = e.click) === null || _e$click2 === void 0 ? void 0 : _e$click2.trigger) === "lead") {
+      entry.leads += 1;
+    }
+    counts.set(label, entry);
+  }
+  const rows = [];
+  for (const [label, {
+    clicks,
+    leads
+  }] of Array.from(counts)) {
+    rows.push({
+      label,
+      clicks,
+      leads
+    });
+  }
+  rows.sort((a, b) => b.clicks - a.clicks);
+  return rows.slice(0, 10);
+}
+function aggregateEventsToTopReferrers(events) {
+  const counts = new Map();
+  for (const e of events) {
+    var _e$click3, _e$click4;
+    const referrer = (e === null || e === void 0 ? void 0 : (_e$click3 = e.click) === null || _e$click3 === void 0 ? void 0 : _e$click3.referer) || "Unknown";
+    const entry = counts.get(referrer) || {
+      clicks: 0,
+      leads: 0
+    };
+    entry.clicks += 1;
+    if ((e === null || e === void 0 ? void 0 : (_e$click4 = e.click) === null || _e$click4 === void 0 ? void 0 : _e$click4.trigger) === "lead") {
+      entry.leads += 1;
+    }
+    counts.set(referrer, entry);
+  }
+  const rows = [];
+  for (const [label, {
+    clicks,
+    leads
+  }] of Array.from(counts)) {
+    rows.push({
+      label,
+      clicks,
+      leads
+    });
+  }
+  rows.sort((a, b) => b.clicks - a.clicks);
+  return rows.slice(0, 10);
+}
+function aggregateEventsToTopCountries(events) {
+  const counts = new Map();
+  for (const e of events) {
+    var _e$click5, _e$click6;
+    const country = (e === null || e === void 0 ? void 0 : (_e$click5 = e.click) === null || _e$click5 === void 0 ? void 0 : _e$click5.country) || "Unknown";
+    const entry = counts.get(country) || {
+      clicks: 0,
+      leads: 0
+    };
+    entry.clicks += 1;
+    if ((e === null || e === void 0 ? void 0 : (_e$click6 = e.click) === null || _e$click6 === void 0 ? void 0 : _e$click6.trigger) === "lead") {
+      entry.leads += 1;
+    }
+    counts.set(country, entry);
+  }
+  const rows = [];
+  for (const [label, {
+    clicks,
+    leads
+  }] of Array.from(counts)) {
+    rows.push({
+      label,
+      clicks,
+      leads
+    });
+  }
+  rows.sort((a, b) => b.clicks - a.clicks);
+  return rows.slice(0, 10);
+}
+function mockSummary() {
+  return {
+    clicks: 18423,
+    leads: 13210,
+    sales: 734,
+    saleAmount: 3.24
+  };
+}
+function mockTimeSeries(start, end) {
+  const from = new Date(start);
+  const to = new Date(end);
+  const days = Math.floor((+to - +from) / (24 * 3600 * 1000)) + 1;
+  const arr = [];
+  for (let i = 0; i < days; i++) {
+    const d = new Date(from);
+    d.setUTCDate(from.getUTCDate() + i);
+    arr.push({
+      date: toISODate(d),
+      clicks: Math.max(0, Math.round(300 + 100 * Math.sin(i / 3) + (Math.random() - 0.5) * 80))
+    });
+  }
+  return arr;
+}
+function mockBreakdown(by) {
+  const seeds = {
+    link: ["summer-sale", "landing", "promo-2025", "blog-post", "newsletter", "black-friday", "signup", "release-notes"],
+    referrer: ["google.com", "twitter.com", "linkedin.com", "producthunt.com", "direct", "newsletter"],
+    country: ["US", "GB", "DE", "IN", "CA", "AU", "FR", "BR"]
+  };
+  return seeds[by].slice(0, 8).map((label, i) => ({
+    label,
+    clicks: 5000 - i * 420 + Math.round(Math.random() * 120),
+    leads: 4000 - i * 350 + Math.round(Math.random() * 80)
+  }));
+}
+const useStyles = Object(_material_ui_core__WEBPACK_IMPORTED_MODULE_1__["makeStyles"])(theme => ({
+  root: {
+    // @ts-ignore
+    backgroundColor: theme.palette.background.dark,
+    minHeight: "100%",
+    paddingBottom: theme.spacing(3),
+    paddingTop: theme.spacing(3)
+  }
+}));
+
+// Types
+var _c, _c2, _c3, _c4, _c5;
+__webpack_require__.$Refresh$.register(_c, "AdminDashboardView");
+__webpack_require__.$Refresh$.register(_c2, "Dashboard");
+__webpack_require__.$Refresh$.register(_c3, "DateRangeControls");
+__webpack_require__.$Refresh$.register(_c4, "KpiRow");
+__webpack_require__.$Refresh$.register(_c5, "BreakdownCard");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
 /***/ "./src/views/admin/facility-categories/EditFacilityCategory.tsx":
 /*!**********************************************************************!*\
   !*** ./src/views/admin/facility-categories/EditFacilityCategory.tsx ***!
@@ -16469,7 +18030,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\facility-categories\\EditFacilityCategory.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/facility-categories/EditFacilityCategory.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -16816,7 +18377,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\facility-categories\\Results.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/facility-categories/Results.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -17153,7 +18714,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\facility-categories\\Toolbar.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/facility-categories/Toolbar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -17511,7 +19072,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\facility-categories\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/facility-categories/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -17718,7 +19279,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\product-categories\\EditProductCategory.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/product-categories/EditProductCategory.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -18065,7 +19626,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\product-categories\\Results.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/product-categories/Results.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -18402,7 +19963,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\product-categories\\Toolbar.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/product-categories/Toolbar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -18792,7 +20353,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\product-categories\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/product-categories/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -19004,7 +20565,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\profile\\ProfileCard.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/profile/ProfileCard.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -19266,7 +20827,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\profile\\ProfileDetails.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/profile/ProfileDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -19728,7 +21289,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\profile\\edit\\ProfileCard.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/profile/edit/ProfileCard.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -19988,7 +21549,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\profile\\edit\\ProfileDetails.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/profile/edit/ProfileDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -20754,7 +22315,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\profile\\edit\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/profile/edit/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -20966,7 +22527,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\profile\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/profile/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -21186,7 +22747,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\requests\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/requests/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -21686,7 +23247,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\requests\\ReviewRequestMenu.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/requests/ReviewRequestMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -21994,7 +23555,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\requests\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/requests/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -22174,7 +23735,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\requests\\request\\AuditReports.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/requests/request/AuditReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -22653,7 +24214,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\requests\\request\\CertificateMenu.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/requests/request/CertificateMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -22904,7 +24465,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\requests\\request\\ReportMenu.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/requests/request/ReportMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -23158,7 +24719,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\requests\\request\\RequestCertificates.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/requests/request/RequestCertificates.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -23661,7 +25222,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\requests\\request\\ReviewReports.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/requests/request/ReviewReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -24136,7 +25697,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\requests\\request\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/requests/request/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature(),
   _s3 = __webpack_require__.$Refresh$.signature();
@@ -24584,7 +26145,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\reviewers\\EditReviewer.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/reviewers/EditReviewer.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -25102,7 +26663,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\reviewers\\Results.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/reviewers/Results.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -25617,7 +27178,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\reviewers\\Toolbar.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/reviewers/Toolbar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -26103,7 +27664,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\reviewers\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/reviewers/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -26318,7 +27879,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\reviews\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/reviews/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -26795,7 +28356,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\reviews\\Toolbar.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/reviews/Toolbar.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -27176,7 +28737,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\reviews\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/reviews/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -27388,7 +28949,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\reviews\\review\\CertificateView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/reviews/review/CertificateView.tsx";
 
 
 
@@ -27734,7 +29295,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\reviews\\review\\DocumentsView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/reviews/review/DocumentsView.tsx";
 
 
 
@@ -28032,7 +29593,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\reviews\\review\\Header.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/reviews/review/Header.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -28358,7 +29919,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\reviews\\review\\ProductsView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/reviews/review/ProductsView.tsx";
 
 
 
@@ -28554,7 +30115,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\reviews\\review\\ReportsView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/reviews/review/ReportsView.tsx";
 
 
 
@@ -28819,7 +30380,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\admin\\reviews\\review\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/admin/reviews/review/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -29278,7 +30839,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\certificates\\RequestHardCopyButton.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/certificates/RequestHardCopyButton.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -29466,7 +31027,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\certificates\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/certificates/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -29984,7 +31545,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\certificates\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/certificates/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -30567,7 +32128,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\dashboard\\DashboardView\\CurrentRequestProgress.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/dashboard/DashboardView/CurrentRequestProgress.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -31124,7 +32685,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\dashboard\\DashboardView\\FacilitiesStat.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/dashboard/DashboardView/FacilitiesStat.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -31377,7 +32938,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\dashboard\\DashboardView\\LatestReviews.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/dashboard/DashboardView/LatestReviews.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -31821,7 +33382,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\dashboard\\DashboardView\\ProductsStat.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/dashboard/DashboardView/ProductsStat.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -32077,7 +33638,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\dashboard\\DashboardView\\Tasks.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/dashboard/DashboardView/Tasks.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -32519,7 +34080,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\dashboard\\DashboardView\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/dashboard/DashboardView/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 // @ts-nocheck
 
@@ -32772,7 +34333,7 @@ function Dashboard() {
     }
   })))));
 }
-_s(Dashboard, "DMFK2J5uF9pdXzsZ1UQA7Vz9F+s=", false, function () {
+_s(Dashboard, "G2KywzI/P4hfTbfjMvSTfBrj9VU=", false, function () {
   return [useStyles];
 });
 _c = Dashboard;
@@ -32940,7 +34501,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\documents\\DocumentMenu.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/documents/DocumentMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -33192,7 +34753,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\documents\\FacilityDocs.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/documents/FacilityDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -33542,7 +35103,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\documents\\ManufacturerDocs.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/documents/ManufacturerDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -33892,7 +35453,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\documents\\ProductDocs.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/documents/ProductDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -34242,7 +35803,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\documents\\RecentDocs.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/documents/RecentDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -34589,7 +36150,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\documents\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/documents/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -34961,7 +36522,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\documents\\UploadedDocs.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/documents/UploadedDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -35428,7 +36989,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\documents\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/documents/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -35603,7 +37164,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\facilities\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/facilities/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -36118,7 +37679,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\facilities\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/facilities/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -36291,7 +37852,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\heds\\AddHed.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/heds/AddHed.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -36739,7 +38300,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\heds\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/heds/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -37333,7 +38894,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\heds\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/heds/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -37500,7 +39061,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\help\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/help/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -37749,7 +39310,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\products\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/products/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -38180,7 +39741,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\products\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/products/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -38352,7 +39913,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\profile\\ProfileCard.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/profile/ProfileCard.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -38623,7 +40184,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\profile\\ProfileDetails.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/profile/ProfileDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -39085,7 +40646,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\profile\\edit\\ProfileCard.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/profile/edit/ProfileCard.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -39354,7 +40915,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\profile\\edit\\ProfileDetails.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/profile/edit/ProfileDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -40120,7 +41681,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\profile\\edit\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/profile/edit/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -40332,7 +41893,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\profile\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/profile/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -40544,7 +42105,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\reports\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/reports/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -40836,7 +42397,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\reports\\audit\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/reports/audit/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -41410,7 +42971,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\reports\\audit\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/reports/audit/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -41578,7 +43139,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\reports\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/reports/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -41754,7 +43315,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\reports\\review\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/reports/review/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -42231,7 +43792,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\reports\\review\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/reports/review/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -42415,7 +43976,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -43087,7 +44648,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\ReviewRequestMenu.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/ReviewRequestMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -43479,7 +45040,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -43654,7 +45215,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\AddManufacturerDoc.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/AddManufacturerDoc.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -43874,7 +45435,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\AddProductDialog.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/AddProductDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -44255,7 +45816,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\AddProductDoc.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/AddProductDoc.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -44478,7 +46039,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Corrections\\FacilityDocs.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Corrections/FacilityDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -44722,7 +46283,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Corrections\\FacilityView.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Corrections/FacilityView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -44941,7 +46502,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Corrections\\ManufacturerDocs.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Corrections/ManufacturerDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -45132,7 +46693,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Corrections\\ManufacturersView.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Corrections/ManufacturersView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -45321,7 +46882,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Corrections\\ProductDocs.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Corrections/ProductDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -45512,7 +47073,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Corrections\\ProductsView.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Corrections/ProductsView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -45708,7 +47269,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Corrections\\UploadDocumentListItem_1.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Corrections/UploadDocumentListItem_1.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -46282,7 +47843,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Corrections\\UploadDocumentListItem_2.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Corrections/UploadDocumentListItem_2.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -46811,7 +48372,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Corrections\\UploadDocumentListItem_3.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Corrections/UploadDocumentListItem_3.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -47334,7 +48895,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Corrections\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Corrections/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -47780,7 +49341,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\FacilityDetails.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/FacilityDetails.tsx";
 
 
 
@@ -48093,7 +49654,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\FacilityDocsView.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/FacilityDocsView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -48507,7 +50068,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\IngredientDialog.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/IngredientDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -48980,7 +50541,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\IngredientsView.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/IngredientsView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -49362,7 +50923,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\ManufacturerDocsDialog.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/ManufacturerDocsDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -49785,7 +51346,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\PreStep.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/PreStep.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -50142,7 +51703,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\ProductDialog.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/ProductDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -50582,7 +52143,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\ProductDocsDialog.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/ProductDocsDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -50985,7 +52546,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\RequestCertificates.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/RequestCertificates.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -51508,7 +53069,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Step_01.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Step_01.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -51756,7 +53317,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Step_02.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Step_02.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -51986,7 +53547,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Step_03.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Step_03.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -52249,7 +53810,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Step_04.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Step_04.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -52479,7 +54040,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Step_05.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Step_05.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -52753,7 +54314,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Step_06.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Step_06.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -52983,7 +54544,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Step_07.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Step_07.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -53269,7 +54830,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Step_08.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Step_08.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -53864,7 +55425,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Step_09.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Step_09.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -54054,7 +55615,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Step_10.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Step_10.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -54293,7 +55854,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Step_11.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Step_11.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -55000,7 +56561,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\Stepper.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/Stepper.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _this = undefined;
 
@@ -55956,7 +57517,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\SubmitStep.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/SubmitStep.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -56195,7 +57756,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\SuccessfulSubmissionStep.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/SuccessfulSubmissionStep.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -56398,7 +57959,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\VendorDisclosureRequest.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/VendorDisclosureRequest.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -56673,7 +58234,7 @@ function VendorDisclosureRequest(_ref) {
     }
   }, "Send"))));
 }
-_s(VendorDisclosureRequest, "zc4n+iiUmRK1nSSn+l+xzgO/940=", false, function () {
+_s(VendorDisclosureRequest, "YTZsp20aIvixgbwfuFXQKMsUszs=", false, function () {
   return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_3__["useSnackbar"], _hooks_usePersist__WEBPACK_IMPORTED_MODULE_8__["default"]];
 });
 _c3 = VendorDisclosureRequest;
@@ -56781,7 +58342,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\client\\requests\\request\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/client/requests/request/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -56939,7 +58500,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\common\\auth\\ForgotPasswordView.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/common/auth/ForgotPasswordView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -57281,7 +58842,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\common\\auth\\LoginView.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/common/auth/LoginView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 // @ts-nocheck
 
@@ -57582,7 +59143,7 @@ _c = LoginView;
 function redirectLinkFromRole(userRole) {
   switch (userRole) {
     case "ADMIN":
-      return "/admin/clients";
+      return "/admin/dashboard";
     case "MANAGER":
       return "/reviewer/clients";
     case "REVIEWER":
@@ -57700,7 +59261,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\common\\auth\\RegisterView.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/common/auth/RegisterView.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -58091,7 +59652,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\common\\auth\\ResetPasswordView.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/common/auth/ResetPasswordView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -58471,7 +60032,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\common\\auth\\profile\\ChangePasswordView.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/common/auth/profile/ChangePasswordView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -58855,7 +60416,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\common\\errors\\NotFoundView.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/common/errors/NotFoundView.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -59053,7 +60614,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\common\\trash\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/common/trash/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -59780,6 +61341,789 @@ if (true) {
 
 /***/ }),
 
+/***/ "./src/views/common/verify/PartialProducts.tsx":
+/*!*****************************************************!*\
+  !*** ./src/views/common/verify/PartialProducts.tsx ***!
+  \*****************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return PartialProducts; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/common/verify/PartialProducts.tsx";
+
+
+
+function PartialProducts(_ref) {
+  let {
+    data
+  } = _ref;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableContainer"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 21,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["Table"], {
+    stickyHeader: true,
+    "aria-label": "products table",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 22,
+      columnNumber: 7
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableHead"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 23,
+      columnNumber: 9
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableRow"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 24,
+      columnNumber: 11
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25,
+      columnNumber: 13
+    }
+  }, "ID"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26,
+      columnNumber: 13
+    }
+  }, "Product Name"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27,
+      columnNumber: 13
+    }
+  }, "Description"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28,
+      columnNumber: 13
+    }
+  }, "Registered"))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableBody"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31,
+      columnNumber: 9
+    }
+  }, data.map(row => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableRow"], {
+    key: row.id,
+    className: "data-grid-row",
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 34,
+      columnNumber: 15
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35,
+      columnNumber: 17
+    }
+  }, row.id), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36,
+      columnNumber: 17
+    }
+  }, row.name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37,
+      columnNumber: 17
+    }
+  }, row.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_2__["TableCell"], {
+    __self: this,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 38,
+      columnNumber: 17
+    }
+  }, moment__WEBPACK_IMPORTED_MODULE_1___default()(row.created_at).format("DD/MM/YY")))))));
+}
+_c = PartialProducts;
+var _c;
+__webpack_require__.$Refresh$.register(_c, "PartialProducts");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
+/***/ "./src/views/common/verify/index.tsx":
+/*!*******************************************!*\
+  !*** ./src/views/common/verify/index.tsx ***!
+  \*******************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* WEBPACK VAR INJECTION */(function(__react_refresh_utils__, __react_refresh_error_overlay__) {/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return VerifyCertificatePage; });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! axios */ "./node_modules/axios/index.js");
+/* harmony import */ var axios__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(axios__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
+/* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var react_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! react-router */ "./node_modules/react-router/dist/index.js");
+/* harmony import */ var notistack__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! notistack */ "./node_modules/notistack/dist/notistack.esm.js");
+/* harmony import */ var _material_ui_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @material-ui/core */ "./node_modules/@material-ui/core/esm/index.js");
+/* harmony import */ var _material_ui_core_styles__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @material-ui/core/styles */ "./node_modules/@material-ui/core/esm/styles/index.js");
+/* harmony import */ var _material_ui_icons_SecurityOutlined__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @material-ui/icons/SecurityOutlined */ "./node_modules/@material-ui/icons/SecurityOutlined.js");
+/* harmony import */ var _material_ui_icons_SecurityOutlined__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_SecurityOutlined__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var _material_ui_icons_OpenInNew__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @material-ui/icons/OpenInNew */ "./node_modules/@material-ui/icons/OpenInNew.js");
+/* harmony import */ var _material_ui_icons_OpenInNew__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_OpenInNew__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _material_ui_icons_InfoOutlined__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @material-ui/icons/InfoOutlined */ "./node_modules/@material-ui/icons/InfoOutlined.js");
+/* harmony import */ var _material_ui_icons_InfoOutlined__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_InfoOutlined__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var _material_ui_icons_KeyboardArrowDown__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @material-ui/icons/KeyboardArrowDown */ "./node_modules/@material-ui/icons/KeyboardArrowDown.js");
+/* harmony import */ var _material_ui_icons_KeyboardArrowDown__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(_material_ui_icons_KeyboardArrowDown__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var _components_Page__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../../../components/Page */ "./src/components/Page.js");
+/* harmony import */ var _PartialProducts__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./PartialProducts */ "./src/views/common/verify/PartialProducts.tsx");
+__webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
+__webpack_require__.$Refresh$.setup(module.i);
+
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/common/verify/index.tsx",
+  _s = __webpack_require__.$Refresh$.signature(),
+  _s2 = __webpack_require__.$Refresh$.signature(),
+  _s3 = __webpack_require__.$Refresh$.signature(),
+  _s4 = __webpack_require__.$Refresh$.signature();
+
+
+
+
+
+
+
+
+
+
+
+
+
+function VerifyCertificatePage() {
+  _s();
+  const classes = useStyles();
+  const {
+    enqueueSnackbar
+  } = Object(notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"])();
+  const [loading, setLoading] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
+  const {
+    id: clientId
+  } = Object(react_router__WEBPACK_IMPORTED_MODULE_3__["useParams"])();
+  const [client, setClient] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(null);
+  const [showProducts, setShowProducts] = react__WEBPACK_IMPORTED_MODULE_0___default.a.useState(false);
+  Object(react__WEBPACK_IMPORTED_MODULE_0__["useEffect"])(() => {
+    setLoading(true);
+    axios__WEBPACK_IMPORTED_MODULE_1___default.a.post(`/api/verify/${clientId}`).then(async response => {
+      setLoading(false);
+      if (response.status == 200 || response.status == 201) {
+        setClient(response.data);
+      } else {
+        console.log(response);
+        enqueueSnackbar("Unable to verify certificate.", {
+          variant: "error"
+        });
+      }
+    }).catch(e => {
+      console.error(e);
+      setLoading(false);
+      enqueueSnackbar("Unable to verify certificate.", {
+        variant: "error"
+      });
+    });
+  }, []);
+
+  // if not client show loading
+  if (!client) {
+    return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["LinearProgress"], {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 62,
+        columnNumber: 12
+      }
+    });
+  }
+  return (
+    /*#__PURE__*/
+    // @ts-ignore
+    react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_components_Page__WEBPACK_IMPORTED_MODULE_11__["default"], {
+      className: classes.root,
+      title: `Verify ${client.business_name}`,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 67,
+        columnNumber: 5
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Container"], {
+      maxWidth: "md",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 71,
+        columnNumber: 7
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Paper"], {
+      elevation: 1,
+      className: classes.card,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 72,
+        columnNumber: 9
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: classes.companyRow,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 74,
+        columnNumber: 11
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: classes.companyInfo,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 75,
+        columnNumber: 13
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Avatar"], {
+      className: classes.avatar,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 76,
+        columnNumber: 15
+      }
+    }, "V"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 77,
+        columnNumber: 15
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
+      variant: "subtitle1",
+      style: {
+        fontWeight: 700
+      },
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 78,
+        columnNumber: 17
+      }
+    }, client.business_name), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
+      variant: "body2",
+      className: classes.memberSince,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 81,
+        columnNumber: 17
+      }
+    }, `Member since ${moment__WEBPACK_IMPORTED_MODULE_2___default()(client.created_at).format("DD/MM/YY")}`))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Link"], {
+      href: client.website,
+      target: "_blank",
+      rel: "noopener",
+      color: "primary",
+      underline: "none",
+      className: classes.visitWebsite,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 87,
+        columnNumber: 13
+      }
+    }, "VISIT WEBSITE ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_OpenInNew__WEBPACK_IMPORTED_MODULE_8___default.a, {
+      fontSize: "small",
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 95,
+        columnNumber: 29
+      }
+    }))), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
+      variant: "body1",
+      className: classes.description,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 100,
+        columnNumber: 11
+      }
+    }, client.description), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(InfoBanner, {
+      clientName: client.business_name,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 105,
+        columnNumber: 11
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FacilitiesList, {
+      facilities: client.facilities || [],
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 108,
+        columnNumber: 11
+      }
+    }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+      className: classes.actionsRow,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 111,
+        columnNumber: 11
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Button"], {
+      className: classes.productsBtn,
+      startIcon: /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_KeyboardArrowDown__WEBPACK_IMPORTED_MODULE_10___default.a, {
+        __self: this,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 126,
+          columnNumber: 26
+        }
+      }),
+      onClick: () => setShowProducts(s => !s),
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 124,
+        columnNumber: 13
+      }
+    }, showProducts ? 'HIDE PRODUCTS' : 'SHOW PRODUCTS')), showProducts && /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
+      className: classes.productsPanel,
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 135,
+        columnNumber: 13
+      }
+    }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_PartialProducts__WEBPACK_IMPORTED_MODULE_12__["default"], {
+      data: client.products || [],
+      __self: this,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 136,
+        columnNumber: 15
+      }
+    })))))
+  );
+}
+_s(VerifyCertificatePage, "XnfF/Jgu+ECwRSIj3HV7ks/GgUc=", false, function () {
+  return [useStyles, notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"], react_router__WEBPACK_IMPORTED_MODULE_3__["useParams"]];
+});
+_c = VerifyCertificatePage;
+;
+const useStyles = Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_6__["makeStyles"])(theme => Object(_material_ui_core_styles__WEBPACK_IMPORTED_MODULE_6__["createStyles"])({
+  root: {
+    // @ts-ignore
+    backgroundColor: theme.palette.background.dark,
+    minHeight: "100%",
+    paddingBottom: theme.spacing(3),
+    paddingTop: theme.spacing(3)
+  },
+  pageHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: theme.spacing(1.5),
+    marginTop: theme.spacing(4),
+    marginBottom: theme.spacing(2)
+  },
+  pageTitleIcon: {
+    color: theme.palette.primary.main,
+    fontSize: 36
+  },
+  card: {
+    borderRadius: 10,
+    padding: theme.spacing(3)
+  },
+  companyRow: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    marginBottom: theme.spacing(2)
+  },
+  companyInfo: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    gap: theme.spacing(2)
+  },
+  avatar: {
+    backgroundColor: '#ef5350',
+    width: 48,
+    height: 48,
+    fontSize: 24
+  },
+  memberSince: {
+    color: theme.palette.text.secondary
+  },
+  visitWebsite: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: theme.spacing(0.5),
+    fontWeight: 600
+  },
+  description: {
+    color: theme.palette.text.primary,
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(3),
+    lineHeight: 1.7
+  },
+  infoBanner: {
+    backgroundColor: '#e8f4fb',
+    borderRadius: 8,
+    padding: theme.spacing(2),
+    display: 'flex',
+    alignItems: 'flex-start',
+    gap: theme.spacing(2),
+    marginBottom: theme.spacing(3)
+  },
+  infoIcon: {
+    color: theme.palette.primary.main,
+    marginTop: 2
+  },
+  facilitiesHeader: {
+    marginTop: theme.spacing(1),
+    marginBottom: theme.spacing(1.5),
+    fontWeight: 700
+  },
+  facilityField: {
+    marginBottom: theme.spacing(2)
+  },
+  actionsRow: {
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    marginTop: theme.spacing(2)
+  },
+  downloadBtn: {
+    borderRadius: 999,
+    paddingLeft: theme.spacing(2),
+    paddingRight: theme.spacing(2),
+    fontWeight: 700
+  },
+  productsBtn: {
+    fontWeight: 600,
+    color: theme.palette.text.secondary
+  },
+  productsPanel: {
+    borderTop: `1px dashed ${theme.palette.divider}`,
+    marginTop: theme.spacing(2),
+    paddingTop: theme.spacing(2)
+  }
+}));
+const Header = () => {
+  _s2();
+  const classes = useStyles();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
+    className: classes.pageHeader,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 249,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_SecurityOutlined__WEBPACK_IMPORTED_MODULE_7___default.a, {
+    className: classes.pageTitleIcon,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 251,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
+    variant: "h4",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 252,
+      columnNumber: 7
+    }
+  }, "Halal Certificate Verification"));
+};
+_s2(Header, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
+  return [useStyles];
+});
+_c2 = Header;
+const InfoBanner = _ref => {
+  _s3();
+  let {
+    clientName
+  } = _ref;
+  const classes = useStyles();
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
+    className: classes.infoBanner,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 260,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_icons_InfoOutlined__WEBPACK_IMPORTED_MODULE_9___default.a, {
+    className: classes.infoIcon,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 262,
+      columnNumber: 7
+    }
+  }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
+    variant: "body1",
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 263,
+      columnNumber: 7
+    }
+  }, "You may download all valid certificates for ", clientName, " using the", ' ', /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("strong", {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 265,
+      columnNumber: 9
+    }
+  }, "DOWNLOAD CERTIFICATES"), " button below. This certificate, and its benefits, expire on the date listed in the downloaded certificate files. Products may no longer be sold as halal certified after the expiration date without renewal."));
+};
+_s3(InfoBanner, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
+  return [useStyles];
+});
+_c3 = InfoBanner;
+const FacilitiesList = _ref2 => {
+  _s4();
+  let {
+    facilities
+  } = _ref2;
+  const classes = useStyles();
+  if (!facilities || facilities.length === 0) return null;
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Box"], {
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 281,
+      columnNumber: 5
+    }
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["Typography"], {
+    variant: "h6",
+    className: classes.facilitiesHeader,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 283,
+      columnNumber: 7
+    }
+  }, "Facilities"), facilities.map((facility, idx) => /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_material_ui_core__WEBPACK_IMPORTED_MODULE_5__["TextField"], {
+    key: idx,
+    className: classes.facilityField,
+    variant: "outlined",
+    fullWidth: true,
+    label: "Facility",
+    InputProps: {
+      readOnly: true
+    },
+    value: `${facility.address}`,
+    __self: undefined,
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 288,
+      columnNumber: 9
+    }
+  })));
+};
+_s4(FacilitiesList, "8g5FPXexvSEOsxdmU7HicukHGqY=", false, function () {
+  return [useStyles];
+});
+_c4 = FacilitiesList;
+var _c, _c2, _c3, _c4;
+__webpack_require__.$Refresh$.register(_c, "VerifyCertificatePage");
+__webpack_require__.$Refresh$.register(_c2, "Header");
+__webpack_require__.$Refresh$.register(_c3, "InfoBanner");
+__webpack_require__.$Refresh$.register(_c4, "FacilitiesList");
+
+const currentExports = __react_refresh_utils__.getModuleExports(module.i);
+__react_refresh_utils__.registerExportsForReactRefresh(currentExports, module.i);
+
+if (true) {
+  const isHotUpdate = !!module.hot.data;
+  const prevExports = isHotUpdate ? module.hot.data.prevExports : null;
+
+  if (__react_refresh_utils__.isReactRefreshBoundary(currentExports)) {
+    module.hot.dispose(
+      /**
+       * A callback to performs a full refresh if React has unrecoverable errors,
+       * and also caches the to-be-disposed module.
+       * @param {*} data A hot module data object from Webpack HMR.
+       * @returns {void}
+       */
+      function hotDisposeCallback(data) {
+        // We have to mutate the data object to get data registered and cached
+        data.prevExports = currentExports;
+      }
+    );
+    module.hot.accept(
+      /**
+       * An error handler to allow self-recovering behaviours.
+       * @param {Error} error An error occurred during evaluation of a module.
+       * @returns {void}
+       */
+      function hotErrorHandler(error) {
+        if (
+          typeof __react_refresh_error_overlay__ !== 'undefined' &&
+          __react_refresh_error_overlay__
+        ) {
+          __react_refresh_error_overlay__.handleRuntimeError(error);
+        }
+
+        if (typeof __react_refresh_test__ !== 'undefined' && __react_refresh_test__) {
+          if (window.onHotAcceptError) {
+            window.onHotAcceptError(error.message);
+          }
+        }
+
+        __webpack_require__.c[module.i].hot.accept(hotErrorHandler);
+      }
+    );
+
+    if (isHotUpdate) {
+      if (
+        __react_refresh_utils__.isReactRefreshBoundary(prevExports) &&
+        __react_refresh_utils__.shouldInvalidateReactRefreshBoundary(prevExports, currentExports)
+      ) {
+        module.hot.invalidate();
+      } else {
+        __react_refresh_utils__.enqueueUpdate(
+          /**
+           * A function to dismiss the error overlay after performing React refresh.
+           * @returns {void}
+           */
+          function updateCallback() {
+            if (
+              typeof __react_refresh_error_overlay__ !== 'undefined' &&
+              __react_refresh_error_overlay__
+            ) {
+              __react_refresh_error_overlay__.clearRuntimeErrors();
+            }
+          }
+        );
+      }
+    }
+  } else {
+    if (isHotUpdate && __react_refresh_utils__.isReactRefreshBoundary(prevExports)) {
+      module.hot.invalidate();
+    }
+  }
+}
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js */ "./node_modules/@pmmmwh/react-refresh-webpack-plugin/lib/runtime/RefreshUtils.js"), __webpack_require__(/*! ./node_modules/react-dev-utils/refreshOverlayInterop.js */ "./node_modules/react-dev-utils/refreshOverlayInterop.js")))
+
+/***/ }),
+
 /***/ "./src/views/reviewer/approved-reviews/Results.tsx":
 /*!*********************************************************!*\
   !*** ./src/views/reviewer/approved-reviews/Results.tsx ***!
@@ -59804,7 +62148,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\approved-reviews\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/approved-reviews/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -60150,7 +62494,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\approved-reviews\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/approved-reviews/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -60328,7 +62672,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\auditor\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/auditor/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -60808,7 +63152,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\ClientMenu.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/ClientMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -61039,7 +63383,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -61774,7 +64118,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\AuditReports.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/AuditReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -62335,7 +64679,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\FacilitiesView.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/FacilitiesView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -62650,7 +64994,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\FacilityDetails.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/FacilityDetails.tsx";
 
 
 
@@ -62960,7 +65304,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\FacilityDialog.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/FacilityDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -63478,7 +65822,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\FacilityDocs.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/FacilityDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -63828,7 +66172,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\Header.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/Header.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -64036,7 +66380,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\IngredientDialog.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/IngredientDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -64606,7 +66950,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\IngredientsView.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/IngredientsView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -64965,7 +67309,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\ManufacturerDocs.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/ManufacturerDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -65195,7 +67539,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\ManufacturerSelector.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/ManufacturerSelector.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -65398,7 +67742,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\ProductDetails.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/ProductDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -65705,7 +68049,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\ProductDialog.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/ProductDialog.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -66226,7 +68570,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\ProductDocs.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/ProductDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -66495,7 +68839,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\ProductsView.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/ProductsView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -66913,7 +69257,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\ProfileDetails.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/ProfileDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -67680,7 +70024,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\ReportMenu.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/ReportMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -68110,7 +70454,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\ReviewReports.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/ReviewReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -68669,7 +71013,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\client\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/client/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -69156,7 +71500,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -69365,7 +71709,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\register\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/register/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -70095,7 +72439,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\review\\CertificateView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/review/CertificateView.tsx";
 
 
 
@@ -70441,7 +72785,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\review\\DocumentsView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/review/DocumentsView.tsx";
 
 
 
@@ -70739,7 +73083,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\review\\Header.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/review/Header.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -71065,7 +73409,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\review\\ProductsView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/review/ProductsView.tsx";
 
 
 
@@ -71261,7 +73605,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\review\\ReportsView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/review/ReportsView.tsx";
 
 
 
@@ -71526,7 +73870,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\clients\\review\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/clients/review/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -71979,7 +74323,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\common\\Breadcrumbs.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/common/Breadcrumbs.tsx";
 
 
 function Breadcrumbs(_ref) {
@@ -72107,7 +74451,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\common\\CategorySelector.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/common/CategorySelector.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -72393,7 +74737,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\common\\EnumSelector.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/common/EnumSelector.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -72610,7 +74954,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\common\\LoadingButton.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/common/LoadingButton.tsx";
 
 
 
@@ -72783,7 +75127,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\common\\ModelSelector.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/common/ModelSelector.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -73067,7 +75411,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\common\\NestedMenuItem.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/common/NestedMenuItem.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -73355,7 +75699,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\common\\PromptDialog.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/common/PromptDialog.tsx";
 
 
 
@@ -73547,7 +75891,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\common\\Toolbar.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/common/Toolbar.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 // @ts-nocheck
 
@@ -73857,7 +76201,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\common\\UploadDocumentListItem.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/common/UploadDocumentListItem.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -74455,7 +76799,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\common\\UploadDocumentTableRow.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/common/UploadDocumentTableRow.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -76020,7 +78364,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\drafted-reviews\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/drafted-reviews/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -76346,7 +78690,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\drafted-reviews\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/drafted-reviews/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -76537,7 +78881,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\manufacturers\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/manufacturers/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -76953,7 +79297,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\manufacturers\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/manufacturers/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -77131,7 +79475,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\manufacturers\\manufacturer\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/manufacturers/manufacturer/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -77775,7 +80119,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\new-review\\BusinessInfoStep.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/new-review/BusinessInfoStep.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -78008,7 +80352,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\new-review\\ReviewDetails.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/new-review/ReviewDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -78419,7 +80763,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\new-review\\UploadDocumentationStep.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/new-review/UploadDocumentationStep.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -78982,7 +81326,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\new-review\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/new-review/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -79169,7 +81513,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\profile\\ProfileCard.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/profile/ProfileCard.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -79432,7 +81776,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\profile\\ProfileDetails.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/profile/ProfileDetails.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -79911,7 +82255,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\profile\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/profile/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -80132,7 +82476,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\requests\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/requests/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -80796,7 +83140,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\requests\\ReviewRequestMenu.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/requests/ReviewRequestMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -81474,7 +83818,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\requests\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/requests/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -81654,7 +83998,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\requests\\reports\\AuditReports.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/requests/reports/AuditReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -82132,7 +84476,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\requests\\reports\\ReportMenu.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/requests/reports/ReportMenu.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -82386,7 +84730,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\requests\\reports\\ReviewReports.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/requests/reports/ReviewReports.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -82859,7 +85203,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\requests\\reports\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/requests/reports/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature(),
   _s3 = __webpack_require__.$Refresh$.signature();
@@ -83287,7 +85631,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\requests\\review\\FacilityDocs.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/requests/review/FacilityDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -83727,7 +86071,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\requests\\review\\FacilityView.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/requests/review/FacilityView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -83952,7 +86296,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\requests\\review\\IngredientsView.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/requests/review/IngredientsView.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -84693,7 +87037,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\requests\\review\\ManufacturerDocs.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/requests/review/ManufacturerDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -84899,7 +87243,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\requests\\review\\ManufacturersView.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/requests/review/ManufacturersView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -85357,7 +87701,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\requests\\review\\ProductDocs.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/requests/review/ProductDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -85564,7 +87908,7 @@ function ProductDocs(_ref) {
     }
   }))));
 }
-_s(ProductDocs, "krPagrlJHaMFos2N2y2eH60SqeY=", false, function () {
+_s(ProductDocs, "Vj0qUP7BKSwatvv94+fehed1TSg=", false, function () {
   return [notistack__WEBPACK_IMPORTED_MODULE_4__["useSnackbar"]];
 });
 _c = ProductDocs;
@@ -85670,7 +88014,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\requests\\review\\ProductsView.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/requests/review/ProductsView.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -85900,7 +88244,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\requests\\review\\RequestManufacturerDocs.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/requests/review/RequestManufacturerDocs.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -86175,7 +88519,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\requests\\review\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/requests/review/index.tsx",
   _s = __webpack_require__.$Refresh$.signature(),
   _s2 = __webpack_require__.$Refresh$.signature();
 
@@ -86684,7 +89028,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\reviews-queue\\Results.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/reviews-queue/Results.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -87074,7 +89418,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\reviews-queue\\index.js",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/reviews-queue/index.js",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -87281,7 +89625,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\reviews-queue\\review\\CertificateView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/reviews-queue/review/CertificateView.tsx";
 
 
 
@@ -87622,7 +89966,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\reviews-queue\\review\\DocumentsView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/reviews-queue/review/DocumentsView.tsx";
 
 
 
@@ -87920,7 +90264,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\reviews-queue\\review\\Header.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/reviews-queue/review/Header.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -88246,7 +90590,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\reviews-queue\\review\\ProductsView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/reviews-queue/review/ProductsView.tsx";
 
 
 
@@ -88442,7 +90786,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\reviews-queue\\review\\ReportsView.tsx";
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/reviews-queue/review/ReportsView.tsx";
 
 
 
@@ -88708,7 +91052,7 @@ __webpack_require__.r(__webpack_exports__);
 __webpack_require__.$Refresh$.runtime = __webpack_require__(/*! react-refresh/runtime */ "./node_modules/react-refresh/runtime.js");
 __webpack_require__.$Refresh$.setup(module.i);
 
-var _jsxFileName = "C:\\Users\\bukha\\Documents\\Work\\hww-portal\\src\\views\\reviewer\\reviews-queue\\review\\index.tsx",
+var _jsxFileName = "/home/baeyun/hww-portal/src/views/reviewer/reviews-queue/review/index.tsx",
   _s = __webpack_require__.$Refresh$.signature();
 
 
@@ -89036,10 +91380,10 @@ if (true) {
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\bukha\Documents\Work\hww-portal\node_modules\webpack\hot\dev-server.js */"./node_modules/webpack/hot/dev-server.js");
-__webpack_require__(/*! C:\Users\bukha\Documents\Work\hww-portal\node_modules\@pmmmwh\react-refresh-webpack-plugin\client\ReactRefreshEntry.js */"./node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js");
-__webpack_require__(/*! C:\Users\bukha\Documents\Work\hww-portal\node_modules\react-dev-utils\webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
-module.exports = __webpack_require__(/*! C:\Users\bukha\Documents\Work\hww-portal\src\index.tsx */"./src/index.tsx");
+__webpack_require__(/*! /home/baeyun/hww-portal/node_modules/webpack/hot/dev-server.js */"./node_modules/webpack/hot/dev-server.js");
+__webpack_require__(/*! /home/baeyun/hww-portal/node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js */"./node_modules/@pmmmwh/react-refresh-webpack-plugin/client/ReactRefreshEntry.js");
+__webpack_require__(/*! /home/baeyun/hww-portal/node_modules/react-dev-utils/webpackHotDevClient.js */"./node_modules/react-dev-utils/webpackHotDevClient.js");
+module.exports = __webpack_require__(/*! /home/baeyun/hww-portal/src/index.tsx */"./src/index.tsx");
 
 
 /***/ })

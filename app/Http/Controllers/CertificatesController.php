@@ -167,6 +167,7 @@ class CertificatesController extends Controller
 
         // \PhpOffice\PhpWord\Settings::setOutputEscapingEnabled(true);
         $tp->setValues([
+            'BusinessName' => htmlspecialchars($client->business_name),
             'FacilityName' => htmlspecialchars($facility->name),
             'FacilityAddress' => htmlspecialchars($address),
             'FacilityID' => $qualified_id,
@@ -257,6 +258,31 @@ class CertificatesController extends Controller
         }
 
         return response()->download($file_name)->deleteFileAfterSend(true);
+    }
+
+    // @TODO: fix bulk download
+    public function download_valid_certs($client_id)
+    {
+        $client = Client::findOrFail($client_id);
+        $certificates = Certificate::where(['client_id' => $client_id])->get();
+        $zip_file_name = $client->business_name . " Certificates - " . time() . ".zip";
+        $zip = new \ZipArchive();
+        $zip->open($zip_file_name, \ZipArchive::CREATE | \ZipArchive::OVERWRITE);
+
+        foreach ($certificates as $certificate) {
+            // sckip if certificate expired
+            if ($certificate->expires_at < date('Y-m-d H:i:s')) {
+                continue;
+            }
+
+            $path = storage_path('app/' . $certificate->path);
+            $file_name = pathinfo($path, PATHINFO_BASENAME);
+            $zip->addFile($path, $file_name);
+        }
+
+        $zip->close();
+
+        return response()->download($zip_file_name)->deleteFileAfterSend(true);
     }
 
     private function array_add_count(string $keyName, array $arr, int $i = 1): array
